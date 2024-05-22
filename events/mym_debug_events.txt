@@ -1,0 +1,197 @@
+﻿namespace = mym_debug
+
+mym_debug.1 = {
+	type = country_event
+	placement = root
+	title = mym_debug.1.t
+	desc = mym_debug.1.d
+	flavor = mym_debug.1.f
+
+	orphan = yes
+	is_popup = yes
+
+	duration = 3
+
+	event_image = {
+		texture = gfx/event_images/bgy_debug.dds
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	immediate = {
+
+	}
+	option = {
+		name = mym_debug.1.a
+		default_option = yes
+		
+	}
+	option = {
+		name = mym_debug.1.b
+
+		trigger = {
+			exists = ideology:ideology_fascist
+			any_scope_character = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_fascist }
+			}
+		}
+		
+		every_scope_character = {
+			limit = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_fascist }
+				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+			}
+			set_ideology = ideology:ideology_fascist
+		}
+	}
+	option = {
+		name = mym_debug.1.c
+		
+		trigger = {
+			exists = ideology:ideology_communist
+			any_scope_character = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_communist }
+			}
+		}
+
+		every_scope_character = {
+			limit = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_communist }
+				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+			}
+			set_ideology = ideology:ideology_communist
+		}
+	}
+	option = {
+		name = mym_debug.1.e
+
+		trigger = {
+			exists = ideology:ideology_anarchist
+			any_scope_character = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_anarchist }
+			}
+		}
+
+		every_scope_character = {
+			limit = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_anarchist }
+				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+			}
+			set_ideology = ideology:ideology_anarchist
+		}
+	}
+	option = {
+		name = mym_debug.1.g
+
+		trigger = {
+			exists = ideology:ideology_anarcho_libertarian
+			any_scope_character = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
+			}
+		}
+
+		every_scope_character = {
+			limit = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
+				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+			}
+			set_ideology = ideology:ideology_anarcho_libertarian
+		}
+	}
+	option = {
+		name = mym_debug.1.h
+
+		trigger = {
+			NOT = {
+				country_has_primary_culture = cu:aryan
+				country_has_state_religion = rel:anti_islamic_agnostic
+				has_variable = aia_conversion_happened_var
+			}
+		}
+
+		remove_primary_culture = cu:romanian
+		if = {
+			limit = {
+				NOT = {
+					country_has_primary_culture = cu:aryan
+				}
+			}
+			add_primary_culture = cu:aryan
+		}
+		if = {
+			limit = {
+				NOT = {
+					country_has_state_religion = rel:anti_islamic_agnostic
+				}
+			}
+			set_state_religion = rel:anti_islamic_agnostic
+			ig:ig_devout = {
+				set_interest_group_name = anti_islam_committee
+			}
+		}
+		if = {
+			limit = { NOT = { has_variable = aia_conversion_happened_var } }
+			set_variable = aia_conversion_happened_var
+			capital = {
+				create_pop = {
+					culture = aryan
+					size = 100000
+					pop_type = laborers
+				}
+			}
+		}
+	}
+	option = {
+		name = mym_debug.1.i
+
+		trigger = {
+			NOT = {
+				country_has_primary_culture = cu:aryan
+				country_has_state_religion = rel:anti_islamic_agnostic
+				has_variable = aia_conversion_happened_var
+			}
+		}
+
+		remove_primary_culture = cu:romanian
+		if = {
+			limit = {
+				NOT = {
+					country_has_primary_culture = cu:aryan
+				}
+			}
+			add_primary_culture = cu:aryan
+		}
+		if = {
+			limit = {
+				NOT = {
+					country_has_state_religion = rel:anti_islamic_agnostic
+				}
+			}
+			set_state_religion = rel:anti_islamic_agnostic
+			ig:ig_devout = {
+				set_interest_group_name = anti_islam_committee
+			}
+		}
+		if = {
+			limit = { NOT = { has_variable = aia_conversion_happened_var } }
+			set_variable = aia_conversion_happened_var
+			capital = {
+				create_pop = {
+					culture = aryan
+					size = 100000
+					pop_type = laborers
+				}
+			}
+		}
+	}
+}

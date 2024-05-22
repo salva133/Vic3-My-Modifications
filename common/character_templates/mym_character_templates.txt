@@ -1,0 +1,120 @@
+﻿vito_corleone_character_template = {
+	first_name = Vito
+	last_name = Corleone
+	historical = no
+	culture = cu:south_italian
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	is_agitator = yes
+	female = no
+	birth_date = 1891.12.7
+	ideology = ideology_market_liberal
+	traits = {
+		charismatic
+		ambitious
+	}
+	on_created = {
+		set_global_variable = vito_corleone_happened_globvar
+	}
+}
+
+michael_corleone_character_template = {
+	first_name = Michael
+	last_name = Corleone
+	historical = no
+	culture = cu:south_italian
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	is_agitator = yes
+	female = no
+	birth_date = 1920.3.23
+	ideology = ideology_market_liberal
+	traits = {
+		charismatic
+		ambitious
+	}
+	on_created = {
+		set_global_variable = michael_corleone_happened_globvar
+	}
+}
+
+hp_lovecraft_character_template = {
+	first_name = Howard_Phillips
+	last_name = Lovecraft
+	historical = yes
+	interest_group = ig_intelligentsia
+	female = no
+	birth_date = 1890.8.20
+	# death_date = 1937.3.15
+	traits = {
+		charismatic
+	}
+	on_created = {
+		set_global_variable = hp_happened_globvar
+	}
+}
+
+hp_liebkraft_character_template = {
+	first_name = Hans_Peter
+	last_name = Liebkraft
+	historical = no
+	interest_group = ig_intelligentsia
+	female = no
+	birth_date = 1890.8.20
+	# death_date = 1937.3.15
+	traits = {
+		charismatic
+	}
+	on_created = {
+		set_global_variable = hp_happened_globvar
+	}
+}
+
+vlad_character_template = {
+	first_name = Vlad
+	ideology = ideology_feminist
+	is_agitator = yes
+	interest_group = ig_intelligentsia
+	culture = cu:romanian
+	age = 64
+	female = no
+	dna = dna_dracula 
+	traits = {
+		imposing
+	}
+	on_created = {
+		set_character_immortal = yes
+	}
+}
+
+oberon_character_template = {
+	first_name = NoName
+	last_name = Oberon
+	female = no
+	age = 40
+	interest_group = ig_rural_folk
+	ideology = ideology_luddite
+	ig_leader = yes
+	traits = {
+		charismatic
+		ambitious
+		popular_commander
+		brave
+		honorable
+		persistent
+	}
+}
+
+milei_character_template = {
+	last_name = Milei
+	female = no
+	age = 30
+	interest_group = ig_industrialists
+	ideology = ideology_anti_statist
+	is_agitator = yes
+	traits = {
+		charismatic
+		ambitious
+		persistent
+	}
+}

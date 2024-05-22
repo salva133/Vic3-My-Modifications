@@ -1,0 +1,66 @@
+﻿je_gangs_of_new_york = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		# is_player = yes
+		game_date >= 1920.1.1
+		owner = {
+			owns_entire_state_region = STATE_NEW_YORK
+		}
+	}
+
+	possible = {
+		game_date >= 1920.8.16
+		owner = {
+			owns_entire_state_region = STATE_NEW_YORK
+		}
+	}
+	
+	immediate = {
+		trigger_event = { id = corleone.1 }
+	}
+
+	complete = {
+		game_date > 1955.7.29
+		NOT = { has_global_variable = michael_corleone_happened_globvar }
+	}
+
+	on_complete = {
+		trigger_event = { id = corleone.9 }
+	}
+
+	fail = {
+		NOT = { owns_entire_state_region = STATE_NEW_YORK }
+	}
+
+	on_weekly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					owns_entire_state_region = STATE_NEW_YORK
+					custom_tooltip = {
+						text = vito_corleone_is_alive_tt
+						has_global_variable = vito_corleone_happened_globvar
+						NOT = { has_global_variable = vito_corleone_dead_globvar }
+					}
+				}
+				if = {
+					limit = {
+						game_date > 1922.11.2 
+						NOT = { has_global_variable = corleone_2_done }
+					}
+					trigger_event = { id = corleone.2 }
+				}
+				if = {
+					limit = {
+						game_date > 1934.6.6
+						NOT = { has_global_variable = corleone_3_done }
+					}
+					trigger_event = { id = corleone.3 }
+				}
+			}
+		}
+	}
+}

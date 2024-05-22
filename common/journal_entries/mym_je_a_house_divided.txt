@@ -1,0 +1,116 @@
+﻿je_a_house_divided = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds" # Replace with an icon of a house split in have, maybe one side grey and one side blue
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		exists = c:USA
+		c:USA = root
+		exists = c:CSA
+		NOT = { exists = c:FSA }
+		NOT = { has_global_variable = a_house_divided_completed_globvar }
+	}
+	
+	possible = {
+		exists = c:USA
+		c:USA = {
+			is_at_war = no
+			has_revolution = no
+		}
+		exists = c:CSA
+		c:CSA = {
+			is_at_war = no
+			has_revolution = no
+		}
+	}
+
+	immediate = {
+		set_variable = {
+			name = ahd_progress_var
+			value = 0
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = je_ahd_last_man_standing_tt
+			OR = {
+				AND = {
+					exists = c:USA
+					NOT = { exists = c:CSA }
+				}
+				AND = {
+					exists = c:CSA
+					NOT = { exists = c:USA }
+				}
+			}
+		}
+	}
+
+	fail = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_fail = {
+		# USA turns into FSA
+		if = {
+			limit = {
+				exists = c:USA
+				c:USA = root
+			}
+			change_tag = FSA
+		}
+		if = {
+			limit = { country_has_primary_culture = cu:dixie }
+			remove_primary_culture = cu:dixie
+		}
+		# USA/FSA loses all claims on CSA territory
+		every_state = {
+			limit = {
+				exists = c:CSA
+				owner = c:CSA
+				OR = {
+					has_claim_by = c:USA
+					has_claim_by = c:FSA
+				}
+			}
+			state_region = {
+				remove_claim = c:USA
+				remove_claim = c:FSA
+			}
+		}
+
+		###
+		set_global_variable = a_house_divided_completed_globvar
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					exists = c:CSA
+				}
+				change_variable = {
+					name = ahd_progress_var
+					add = 1
+				}
+			}
+			clamp_variable = {
+				name = ahd_progress_var
+				max = 120
+				min = 0
+			}
+		}
+	}
+
+	goal_add_value = {
+		value = 120
+	}
+
+	progressbar = yes
+
+	should_be_pinned_by_default = yes
+
+}

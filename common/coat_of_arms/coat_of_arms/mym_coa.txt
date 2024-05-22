@@ -1,0 +1,17 @@
+﻿ABI = {
+	pattern = "pattern_solid.tga"
+	color1 = rgb{ 100 150 200 }
+
+	textured_emblem = {
+		texture = "albion.dds"
+	}
+}
+
+ABI_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "albion_com.dds"
+	}
+}

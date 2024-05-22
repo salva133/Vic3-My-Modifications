@@ -1,0 +1,28 @@
+﻿mennonite = {
+	texture = gfx/interface/icons/religion_icons/mennonite.dds
+	traits = {
+		christian
+		teutonic
+	}
+	color = rgb{ 45 94 101 }
+}
+
+druidism = {
+	texture = gfx/interface/icons/religion_icons/druidism.dds
+	traits = {
+		pagan
+	}
+	color = rgb{ 0 50 0 }
+}
+
+anti_islamic_agnostic = {
+	texture = gfx/interface/icons/religion_icons/anti_islamic_agnostic.dds
+	traits = {
+		christian
+		teutonic
+		pagan
+		jewish
+		eastern
+	}
+	color = rgb{ 50 50 150 }
+}

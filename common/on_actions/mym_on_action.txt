@@ -1,0 +1,68 @@
+﻿on_monthly_pulse_country_mym_randoms = {
+	random_events = {
+		95 = hp_lovecraft.1
+		5 = hp_lovecraft.2
+	}
+}
+
+on_monthly_pulse_country_mym_events = {
+	events = {
+		stoker.1
+		stoker.2
+		
+		hp_lovecraft.3
+
+		milei.1
+	}
+}
+
+on_monthly_pulse_country = {
+	on_actions = {
+		on_monthly_pulse_country_mym_randoms
+		#delay = { days = 4 }
+		on_monthly_pulse_country_mym_events
+		#delay = { days = 7 }
+	}
+}
+
+albion_init = {
+	effect = {
+		if = {
+			limit = {
+				c:ABI ?= scope:target
+			}
+			scope:target = {
+				activate_law = law_type:law_autocracy
+				activate_law = law_type:law_industry_banned
+				activate_law = law_type:law_homesteading
+				activate_law = law_type:law_consumption_based_taxation
+				activate_law = law_type:law_no_police
+				activate_law = law_type:law_national_militia
+				activate_law = law_type:law_frontier_colonization
+				activate_law = law_type:law_closed_borders
+				activate_law = law_type:law_isolationism
+				activate_law = law_type:law_racial_segregation
+				set_ruling_interest_groups = {
+					ig_rural_folk
+				}
+				create_character = {
+					template = oberon_character_template
+				}
+				if = {
+					limit = {
+						any_character = {
+							has_template = oberon_character_template
+						}
+					}
+					trigger_event = { id = albion_init.1 popup = yes }
+				}
+			}
+		}
+	}
+}
+
+on_country_released_as_independent = {
+	on_actions = {
+		albion_init
+	}
+}

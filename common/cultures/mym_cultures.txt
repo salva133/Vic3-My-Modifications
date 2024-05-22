@@ -1,0 +1,263 @@
+﻿albionian = {
+	color= rgb{ 0 80 0 }
+	religion = druidism
+	traits = { celtic_people anglophone european_heritage }
+
+	male_common_first_names = {
+		Aedan Aillin Ainmire Alasdair Angus Artan
+		Bran Breccan Brennan Broccan Brude
+		Cadeyrn Caelan Cathal Cedric Cian Conall Conn Corwin Cullen
+		Daire Darian Dermot Domhnall Donal
+		Eoghan Eirnin Eochaid Ewan
+		Fearghal Fergus Fiachra Finnian
+		Galan Galvin Gawain Glendon Gorman
+		Iagan Ian Iollan Irial
+		Kane Kavan Keir Kian Kieran
+		Lachlan Lorcan Lugh Luchtaine
+		Madden Mael Maewyn Murchadh Murtagh
+		Niall Naoise Nevan Ninian
+		Oisin Oran Oscar
+		Padraig Phelan Piran
+		Rian Ronan
+	}
+
+	female_common_first_names = {
+		Aife Aine Alanna Anwen Asha
+		Brianna Brigid Bronagh Brynna
+		Caireann Caoimhe Caragh Catriona Ciara Clodagh
+		Deirdre Doreen Doireann Dwynwen
+		Eimear Eithne Ena Enid Enya
+		Fiona Fiadh Finola Fionnula
+		Grainne Gwenneth Gwenyth
+		Iona Isolde Isla
+		Keelin Keeva Kyla
+		Laoise Lona Lyra
+		Maeve Mairead Mallaidh Meara Moira
+		Neala Nessa Niamh Nola
+		Orla Orlaith
+	}
+
+	noble_last_names = {
+		Abernon Ainsley Alpin Ardal Ashford
+		Balloch Balfour Bellingham Blackwood Bramwell
+		Caernarvon Callahan Carrick Cavendish Clery
+		Dalriada Donaghue Driscoll Dunbar Dunne
+		Ellsworth Erskine Everard Eversley
+		Falkirk Farnham Fitzroy Forthill Fraser
+		Galbraith Glendenning Grantham Gryffin
+		Hawthorne Hepburn Hightower Holbrook
+		Kenmare Kerrigan Kilbride Kingsley
+		Lennox Lockhart Loxley Lyndon
+		MacKenna Montrose
+		Montgomery Morven Murdock
+		Oakley Ormond O_Sullivan
+		Pendragon Penrose Prescott
+		Quinlan Quirke
+		Ravenwood Redmond Rothwell
+		Sinclair Stirling Strathmore
+		Tremaine Trent Trowbridge
+		Vallier
+	}
+
+	common_last_names = {
+		Bailey Barry Boyle Brady Brennan
+		Callahan Carroll Casey Cassidy Clarke
+		Daly Delaney Doherty Donnelly Doyle
+		Egan Ewing
+		Farrell Finnegan Flynn Foley Frawley
+		Gallagher Garvey Gleeson Glynn Grady
+		Hagan Hennessy Hogan Howard Hughes
+		Kearney Kelly Kennedy Kinsella Kirby
+		Lacey Larkin Lennon Lynch Lyons
+		Malone McCabe McCarthy McDermott Murphy
+		Nolan Norris
+		O_Brien O_Connell O_Connor O_Donnell O_Neil
+		Quinn Quinlan
+		Reilly Roche Ryan
+		Sheehan Sweeney
+		Tierney Tracey
+	}
+
+	male_regal_first_names = {
+		Arthgal
+		Belenus
+		Cairbre Cathmor Conan
+		Drest
+		Eochaid
+		Fergus
+		Maelgwn
+		Talorc
+		Gawain
+		Loarn
+		Maredudd
+		Nechtan
+		Padraig
+		Rhodri
+		Selbach
+		Taranis
+		Uther
+		Vortigern
+	}
+
+	female_regal_first_names = {
+		Ailbhe Aisling
+		Brigid
+		Caireann
+		Deirdre
+		Eithne
+		Fionnuala
+		Grania
+		Maeve
+		Nuala
+		Orla
+		Rhiannon
+		Saoirse Siobhan Sorcha
+		Tara
+		Una
+		Yseult
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+
+}
+
+aryan = {
+	color= rgb{ 255 255 255 }
+	religion = anti_islamic_agnostic
+	traits = { ubermensch european_heritage }
+
+	male_common_first_names = {
+		Adelbert Adolf Albrecht Alexander Alfred August
+		Bernhard Burkhard Bruno	
+		Dieter
+		Eduard Edwin Erich Ernst Erwin Esaias Eugen
+		Florian Franz Friedrich Fritz
+		Georg Gustav Gunther Giesebert
+		Hasso Heinrich Helmuth Hermann Hugo Haubold Hillart
+		Ignatz
+		Joachim Johann Jurgen
+		Karl Konrad
+		Leonhard Leopold Ludwig Lukas
+		Manfred Maximilian Markus Michael Moritz
+		Nikolaus
+		Otto Oskar
+		Pascal Paul Peter Philipp
+		Reinhard Rudolf Ruprecht
+		Stefan
+		Theodor Tristan
+		Wilhelm Wolfgang
+	}
+
+	female_common_first_names = {
+		Adelheid Armgard Adolphine Albertine Anna Amalie Anna_Dorothea Anna_Sophia Anna_Erika Aurora Agnes
+		Beatrix
+		Charlotte Cecilia Caroline Christina Clara
+		Dorothea_Sophia Dorothea
+		Elisabeth Erika
+		Friederike 
+		Hilda Henriette Hedwig Helga
+		Ingeborg
+		Julia Johanna
+		Luise
+		Mathilde Margarethe Maria Marie_Elisabeth Magdalene
+		Sigrid Sophie Sophie_Albertine
+		Therese
+		Viktoria
+	}
+
+	noble_last_names = {
+		von_Alten von_Arens am_Auxois von_Aussern zur_Aube
+		von_Bisanz von_Bittenfeld von_Blomberg von_Borries von_Boyen von_Braunschweig von_Breitenbach von_Beuen von_Baar
+		von_Clemm von_Cramm
+		von_Doenhoff von_Dieskau von_Donnern
+		von_Eck
+		von_Fritsch Firnhaber_von_Eberstein
+		von_Gebser von_Gagern de_Greiff von_GO_rtz von_GU_nderrode von_der_Gabelentz
+		von_Halkett von_Holstein-Gottorp von_Heyden Herwarth_von_Bittenfeld von_Haupt
+		von_Jons
+		von_Kahlen von_Kleefeld von_Knorr von_dem_Knesebeck
+		von_Langer de_Lagarde
+		von_Maken
+		von_NU_tten_Sankt_Georg von_Neuwehr von_Nordeck_zur_Rabenau von_Nanzig
+		von_PlO_nnies
+		Riedesel_zu_Eisenbach von_Rauch von_Ravensberg von_Reuter von_Richthofen von_Roon von_Radowitz von_Reichenbach von_Rodomo_Hafenstadt von_Ryssel
+		von_Sachsen-Altenburg von_Sachsen-Coburg-Gotha von_Sachsen-Meiningen von_Sachsen-Weimar-Eisenach von_Schlieffen von_Schwarzburg von_Spee zu_Stolberg-Wernigerode von_Sybel von_Solms-Laubach von_Stein von_StO_ssert von_Spesshardt zur_Senn von_Senz von_Semuren von_StraSS_burg von_Sebottendorff
+		Treusch_von_Butlar von_Tirpitz von_ThU_nen von_Tischen von_Treuen
+		von_Umsprung
+		von_Vahlkampf Vogel_von_Falkenstein von_Falkenstein
+		von_Waldeck_und_Pyrmont von_Wettin von_Wrangel von_Willich von_Watzdorf Waitz_von_Eschen
+		von_Zieten von_Zwierlein
+	}
+
+	common_last_names = {
+		Abegg Anger Arendt Ackermann Arntz
+		Behncke Boermel Borsig Brill Brommy Blum Baltzer Bever BA_hren Bischoff Brauweiler BrockmU_ller Broix BU_rgers BO_cking Biedermann BlO_de BO_hler Brockhaus Bauer Birnbaum Brunck Buff Bolten Briegleb Bardorf
+		Clebsch Cordemann Culemeyer Caspers Cetto Clossett Colonius Compes Carriere Cretzschmar Cratz Cropp
+		Dahlmann Dieffenbach Diestel Dreyer Droste Depre Dietze Detering Dietz DuprE_ Dresel
+		Ehlert Eichelbaum Eckert Eisenstuck Eissengarthen Elwert Emmerling Ettlinger Erichson
+		Feyerabend Fritsch Friedenthal Fabarius Forst Frings Freudentheil Felsing FlU_gge
+		Garbe Gerlach Gloger Goerdeler Goetz Grebe Groener Groth Gerlich Giersberg Glaubrech Gail GU_lich
+		Hagen Harkort Harych Hassenpflug Heppendorf Hirschfeld Hoffmann Hubatsch Hammer Hecker Herrmann HO_nninghaus Haustein Hensel Henkel Hildebrand Hallwachs Heldmann Hestermann Hesse Hoffmann HU_gel Hollandt Himmler Heydrich
+		Jastrow Johow Junghans Jahn Jordan Jungbluth Jungblutte Jucho
+		Katz Kempner Kirchweger Koffka Krohn Krummnow Knocke Kehl Keiffenheim Kullich KU_hne Kahlert Kinscherf Kloch Kierulff Kriegk Kugler
+		Lasker Leistikow Leonhardt Lehmkuhl Laist Lamberts Landfermann Leue Lingmann Lintz Lederer Lehne Lotheissen Leisler Lang
+		Mittwoch Moll Mallmann Marcks Maurer MU_lhens Minckwitz Mohr Manecke Marktscheffel Mappes
+		NettstrA_tter Neuerburg Neunzig Nohl
+		Olbers Oetker
+		Pelz Pax Peiser Plange Pagenstecher Peters Pfeiffer Philippi Prinzen Proff PflU_ger Pitschaft PrA_torius Preusser Pogge Pohle
+		Rehfisch Roepke RU_ckert Ronge Reichensperger Reinartz Rittinghausen Ritz Rewitzer Rauschenplat RO_ssler RU_hl Ramspeck Rauschers Reh Runge Reinganum Rodomo
+		Scherfke Schimmelfennig Schmidt Schree Schurz Schnitter SchlO_ffel Stahlschmidt Schwetschke Schnake Schneider Schuchart SchU_renberg Schigard Scheidt Scherer Schleicher SchlO_sser Schmitz SchO_ller Stapper Stedmann Strom Schaffrath SchlU_ter Schnabel Schwarzenberg Steuernagel Stoll Strecker Schleiden Schlettwein Schnelle Stever Sonnenkalb Souchay
+		Treibe TU_rke Theyssen Thilmany Trombetta
+		Umbscheiden
+		Venedy Vogt Volhard Varrentrapp Vorwerck
+		Weydemeyer Wittfeld Woehlert Wiesner Wislicenus Wachendorf Waldschmidt Weckbecker Welcker WerlE_ Wesendonck Weilhelmi Winneritz Wirtz Wolfermann Wigard Wuttke Wippermann Wentorp Wendhausen
+		Zerrahn ZO_ller Zell Zimmermann ZachariA_ Zulauf Zais
+	}
+
+	male_regal_first_names = {
+		Adelbert Adolf Albrecht Alexander Alfred August
+		Bernhard Burkhard Bruno	
+		Dieter
+		Eduard Edwin Erich Ernst Erwin Esaias Eugen
+		Florian Franz Friedrich Fritz
+		Georg Gustav Gunther Giesebert
+		Hasso Heinrich Helmuth Hermann Hugo Haubold Hillart
+		Ignatz
+		Joachim Johann Jurgen
+		Karl Konrad
+		Leonhard Leopold Ludwig Lukas
+		Manfred Maximilian Markus Michael Moritz
+		Nikolaus
+		Otto Oskar
+		Pascal Paul Peter Philipp
+		Reinhard Rudolf Ruprecht
+		Stefan
+		Theodor Tristan
+		Wilhelm Wolfgang
+	}
+
+	female_regal_first_names = {
+		Adelheid Armgard Adolphine Albertine Anna Amalie Anna_Dorothea Anna_Sophia Anna_Erika Aurora Agnes
+		Beatrix
+		Charlotte Cecilia Caroline Christina Clara
+		Dorothea_Sophia Dorothea
+		Elisabeth Erika
+		Friederike 
+		Hilda Henriette Hedwig
+		Ingeborg
+		Julia Johanna
+		Luise
+		Mathilde Margarethe Maria Marie_Elisabeth Magdalene
+		Sigrid Sophie Sophie_Albertine
+		Therese
+		Viktoria
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian_blond
+	}
+}

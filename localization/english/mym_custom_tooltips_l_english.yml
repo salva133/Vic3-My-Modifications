@@ -1,0 +1,12 @@
+﻿l_english:
+  vito_corleone_is_alive_tt: "Vito Corleone is alive"
+  vito_corleone_is_dead_tt: "Vito Corleone is dead"
+
+  dmitry_did_not_set_sails_tt: "The Dmitry is #bold not yet#! on her way"
+  dmitry_did_set_sails_tt: "The Dmitry is on her way"
+  dmitry_arrived_tt: "The Dmitry has arrived"
+
+  je_stoker_varna_built_tt: "The State Region of [Concept('concept_state','$STATE_BULGARIA$')] has the Port of Varna"
+  HP_is_alive_tt: "The writer is alive"
+
+  je_ahd_last_man_standing_tt: "Gentlemen, it's Last Man Standing, and we need to be that man"

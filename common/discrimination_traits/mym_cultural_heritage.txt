@@ -1,0 +1,3 @@
+﻿ubermensch = {
+	heritage = yes
+}

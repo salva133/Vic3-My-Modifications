@@ -1,0 +1,24 @@
+﻿l_english:
+
+# Monarchy-Anarchy
+ gov_monarchy_anarchy: "Confusion of the highest Orda'"
+ gov_monarchy_anarchy_desc: "A unique [concept_government_type] of a [concept_country] that combines the symbolic presence of a royal deputy with the decentralised and self-governing structure of anarchist communities. The royal deputy serves as a cultural and historical leader without political power. Citizens live in autonomous communities that develop and enforce their own rules and systems. Decisions are made locally through direct democracy or consensus, with no centralised government or state authority. This system combines traditional symbolic leadership with maximum political freedom and self-determination.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+# Citizen Republic
+ gov_mym_citizen_republic: "Citizen Republic"
+ gov_mym_citizen_republic_desc: "A unique [concept_government_type] of a [concept_country] where only those may cast a vote who served the republic through voluntary military service.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+# Knight's Order
+ gov_mym_knights_order: "Knight's Order"
+ gov_mym_knights_order_desc: "A unique [concept_government_type] of a [concept_country] where only those may cast a vote who served the order through voluntary military service.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+# Soldiers' Communes
+ gov_mym_soldiers_communes: "Soldiers' Communes"
+ gov_mym_soldiers_communes_desc: "A unique [concept_government_type] of a [concept_country] where only those may cast a vote who served the communes through voluntary military service.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+### RULER TITLE ###
+ RULER_TITLE_MYM_SUPER_PRESIDENT: "Super President"
+ RULER_TITLE_MYM_ROYAL_DEPUTY: "Royal Deputy"
+ RULER_TITLE_MYM_MARSHALL: "Marshall"
+ RULER_TITLE_MYM_GRAND_MASTER: "Grand Master"
+ RULER_TITLE_MYM_FIRST_PRIVATE: "First Private"

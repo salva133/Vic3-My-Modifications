@@ -1,0 +1,144 @@
+﻿POPS = {
+	s:STATE_VILNIUS = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 50
+			}
+		}
+	}
+	s:STATE_MAZOVIA = { #Mazovia - DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 200
+			}
+		}
+	}
+	s:STATE_LESSER_POLAND = { #Lublin - DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 160
+			}
+		}
+	}
+	s:STATE_BREST = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 133
+			}
+		}
+	}
+	s:STATE_VOLHYNIA = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 526
+			}
+		}
+	}
+	s:STATE_KIEV = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 2610
+			}
+		}
+	}
+	s:STATE_CRIMEA = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 240
+			}
+		}
+	}
+	s:STATE_KHARKOV = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 2592
+			}
+		}
+	}
+	s:STATE_CHERSON = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 5934
+			}
+		}
+	}
+	s:STATE_CHERNIHIV = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 9495
+			}
+		}
+	}
+	s:STATE_TAURIDA = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 8724
+			}
+		}
+	}
+	s:STATE_BESSARABIA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 816
+			}
+		}
+	}
+	s:STATE_NORTH_CAUCASUS = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 164
+			}
+		}
+	}
+	s:STATE_STAVROPOL = { #DONE
+		region_state:RUS = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 1917
+			}
+		}
+	}
+	s:STATE_CHELYABINSK = { #DONE
+		region_state:KZH = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 578
+			}
+		}
+		region_state:OZH = {
+			create_pop = {
+				culture = ukrainian
+				religion = mennonite
+				size = 378
+			}
+		}
+	}
+}

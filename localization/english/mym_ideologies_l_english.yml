@@ -1,0 +1,13 @@
+﻿l_english:
+  ideology_timocrat: "Timocrat"
+  ideology_timocrat_desc: "No one can simply come of age and be directly confronted with the powerful instrument of the right to vote. Only those who have rendered meritorious service to society are allowed to make their voice heard."
+
+  ideology_national_fascist: "National-Fascist"
+  ideology_national_fascist_desc: "National fascism strives for a strong and united nation in which order and discipline prevail. The state has the highest priority, and individual freedoms are subordinate to the common good. By emphasising patriotism and the strength of the community, a stable and authoritarian style of leadership is promoted."  
+
+  ideology_anarcho_libertarianism: "Anarcho-Libertarianism"
+  ideology_anarcho_libertarian: "Anarcho-Libertarian"
+  ideology_anarcho_libertarian_desc: "$ideology_anarcho_libertarianism$ advocates voluntary cooperation, absolute individual freedom, and decentralized, market-driven solutions, rejecting state authority and prioritizing personal autonomy and private property."
+
+  ideology_anti_statist: "Anti-Statist"
+  ideology_anti_statist_desc: "Anti-statism is the opposition to state intervention in personal, economic, or social matters, advocating for minimal or no government control."
