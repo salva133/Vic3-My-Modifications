@@ -1,0 +1,51 @@
+namespace = mym_characters
+
+corleone_event.1 = {
+	type = country_event
+	placement = root
+	title = corleone_event.1.t
+	desc = corleoner_event.1.d
+	flavor = corleone_event.1.f
+
+	duration = 1
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1920
+		c:USA = exists
+		NOT = { has_variable = vito_corleone_var }
+	}
+
+	immediate = {
+		create_character  = {
+			template = vito_andolini_character_template
+			on_created = {
+				set_variable = vito_corleone_var
+			}
+		}
+	}
+}
+
+corleone_event.2 = {
+	type = country_event
+	placement = root
+	title = corleone_event.2.t
+	desc = corleoner_event.2.d
+	flavor = corleone_event.2.f
+
+	duration = 1
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1955.7.29
+	}
+
+	immediate = {
+		random_character_scope = {
+			limit = { has_variable = vito_corleone_var }
+			kill_character = yes
+		}
+	}
+}

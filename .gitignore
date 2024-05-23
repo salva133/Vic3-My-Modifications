@@ -1,9 +1,10 @@
-gfx/
 dlc/
 sound/
 soundtrack/
 fonts/
 map_data/
+_processed/
+
 checksum_manifest.txt
 compound_settings.txt
 credits.txt
@@ -17,4 +18,6 @@ paths.settings
 rotate_glow_mask3.tga
 save_game_analysis.txt
 settings_layout.txt
+
 *.code-workspace
+*.py

@@ -1,0 +1,43 @@
+gov_mym_monarchy_anarchy = {
+	transfer_of_power = hereditary
+	new_leader_on_reform_government = yes
+	male_ruler = "RULER_TITLE_MYM_ROYAL_DEPUTY"
+	female_ruler = "RULER_TITLE_MYM_ROYAL_DEPUTY"
+	possible = {
+		coa_monanarchy_trigger = yes
+	}
+	
+	on_government_type_change = { change_to_parliamentary_elective = yes }
+	on_post_government_type_change = { post_change_to_parliamentary_elective = yes }
+}
+
+# Splitting Military Dictatorship in two
+
+gov_military_dictatorship = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_GENERAL"
+	female_ruler = "RULER_TITLE_GENERAL"
+	
+	possible = {
+		coa_dictatorship_trigger = yes
+		has_law = law_type:law_mass_conscription
+	}
+
+	on_government_type_change = { change_to_dictatorial = yes }
+	on_post_government_type_change = { post_change_to_dictatorial = yes }
+}
+
+gov_mym_police_state = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_PRESIDENT"
+	female_ruler = "RULER_TITLE_PRESIDENT"
+	
+	possible = {
+		coa_police_state_trigger = yes
+	}
+
+	on_government_type_change = { change_to_dictatorial = yes }
+	on_post_government_type_change = { post_change_to_dictatorial = yes }
+}
