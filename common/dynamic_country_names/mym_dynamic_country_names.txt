@@ -1,114 +1,259 @@
-USA = { # United Citizen States of America
+GRE = {
+	#Super Greece
 	dynamic_country_name = {
-		name = dyn_c_USA_citizen_states
-		adjective = dyn_c_USA_citizen_states_adj
-		
+		name = dyn_c_mym_greece_super
+		adjective = GRE_ADJ
 		is_main_tag_only = yes
-		priority = 0
-		
-		trigger = {
-			coa_def_republic_flag_trigger = yes
-			scope:actor ?= {
-				has_law = law_type:law_timocracy
-			}
-		}
-	}
-
-	# Northern Territories
-	dynamic_country_name = {
-		name = dyn_c_USA_puppet_of_CSA
-		adjective = USA_ADJ
-
-		priority = 900
+		priority = 1
 		trigger = {
 			exists = scope:actor
-			scope:actor ?= {
-				is_subject_of = c:CSA
+			scope:actor = {
+				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_single_party_state
+				has_law = law_type:law_mym_managed_free_speech
 			}
 		}
 	}
-
-	# USA puppet of GBR
+	# Monarchy
 	dynamic_country_name = {
-		name = dyn_c_USA_puppet_of_GBR_royal
-		adjective = USA_ADJ
-
-		priority = 900
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				is_subject_of = c:GBR
-				c:GBR = {
-					has_law = law_type:law_monarchy
-				}
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_USA_puppet_of_GBR_rep
-		adjective = USA_ADJ
-
-		priority = 900
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				is_subject_of = c:GBR
-				c:GBR = {
-					OR = {
-						has_law = law_type:law_presidential_republic
-						has_law = law_type:law_parliamentary_republic
-					}
-				}
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_USA_puppet_of_GBR_theo
-		adjective = USA_ADJ
-
-		priority = 900
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				is_subject_of = c:GBR
-				c:GBR = {
-					has_law = law_type:law_theocracy
-				}
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_USA_puppet_of_GBR_communist
-		adjective = USA_ADJ
-
-		priority = 900
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				is_subject_of = c:GBR
-				c:GBR = {
-					has_law = law_type:law_council_republic
-				}
-			}
-		}
-	}
-}
-
-CSA = { # Confederated Governates of America
-	dynamic_country_name = {
-		name = dyn_c_CSA_confederated_governates
-		adjective = USA_ADJ
-		
+		name = dyn_c_mym_greece_monarchy
+		adjective = GRE_ADJ
 		is_main_tag_only = yes
-		priority = 0
-		
+		priority = 1
 		trigger = {
-			scope:actor ?= {
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_monarchy
+		}
+	}
+	# Technocratic Monarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_monarchy_technocracy
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	# Constitutional Monarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_monarchy_constitutional
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	# Presidential Dictatorship
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_presidential_dictatorship
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_autocracy
+			}
+		}
+	}
+	# Presidential Technocracy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_presidential_technate
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	# Presidential Democracy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_presidential_democracy
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_presidential_republic
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	# Parliamentary Dictatorship
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_parliamentary_dictatorship
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_parliamentary_republic
+				has_law = law_type:law_autocracy
+			}
+		}
+	}
+	# Parliamentary Technocracy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_parliamentary_technate
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_parliamentary_republic
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	# Parliamentary Democracy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_parliamentary_democracy
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_parliamentary_republic
+				country_has_voting_franchise = yes
+				NOT = {
+					has_law = law_type:law_single_party_state
 				}
+			}
+		}
+	}
+	# Theocratic Dictatorship
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_theocracy
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_theocracy
 				country_has_voting_franchise = no
+			}
+		}
+	}
+	# Theocratic Oligarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_theocratic_oligarchy
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_theocracy
+				has_law = law_type:law_oligarchy
+			}
+		}
+	}
+	# Theocratic Democracy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_theocratic_democracy
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_theocracy
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	# Council Dictatorship
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_council_dictatorship
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				OR = {
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+				}
+			}
+		}
+	}
+	# Council Technocracy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_council_technocracy
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	# Council Democracy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_council_republic
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				country_has_voting_franchise = yes
+				NOT = {
+					has_law = law_type:law_single_party_state
+				}
+			}
+		}
+	}
+	# Anarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_anarchy
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_anarchy
+			}
+		}
+	}
+	# Cursed Anarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_greece_monarchy_anarchy		# What the actual--?!
+		adjective = GRE_ADJ
+		is_main_tag_only = yes
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_anarchy
 			}
 		}
 	}
