@@ -49,9 +49,9 @@ NAI = {
 
 	DECLARE_BANKRUPTCY_MIN_DAYS_IN_DEFAULT = 30 # After this many days in default, the AI will declare bankruptcy
 
-	BASE_AGGRESSION = 0.5 # Base chance that AI will consider starting a diplo play each time the goal is checked (1 = 1%)
-	UNIFICATION_AGGRESSION_MULT_HIGHER_TIER = 20 # AI aggression is multiplied by this for calculating whether they should try to start a unification/leadership play, if the country would end up forming a nation of a higher tier
-	UNIFICATION_AGGRESSION_MULT_SAME_TIER = 0.1 # AI aggression is multiplied by this for calculating whether they should try to start a unification/leadership play, if the country would end up forming a nation of the same tier
+	BASE_AGGRESSION = 2.0 # Base chance that AI will consider starting a diplo play each time the goal is checked (1 = 1%)
+	UNIFICATION_AGGRESSION_MULT_HIGHER_TIER = 30 # AI aggression is multiplied by this for calculating whether they should try to start a unification/leadership play, if the country would end up forming a nation of a higher tier
+	UNIFICATION_AGGRESSION_MULT_SAME_TIER = 0.5 # AI aggression is multiplied by this for calculating whether they should try to start a unification/leadership play, if the country would end up forming a nation of the same tier
 
 	DIPLO_PROPOSAL_DAYS_LEFT_MAX = 12  	# AI will not answer a proposal when it has more than this amount of days left (should map to DIPLOMATIC_ACTION_PENDING_APPROVAL_DAYS)
 	DIPLO_PROPOSAL_DAYS_LEFT_MIN = 4	# AI will always answer a proposal when it has this or less amount of days left (should map to DIPLOMATIC_ACTION_PENDING_APPROVAL_DAYS)
@@ -120,9 +120,9 @@ NAI = {
 	MOBILIZATION_OPTION_NUM_ACTIVE_OPTIONS_DIVISOR = 0.25	# Divide the value of each non-activated mobilization option by ( 1 + number of already active options * this )
 	MOBILIZATION_OPTION_GOODS_SHORTAGE_MULT = 0.0			# Multiply value of mobilization option by this if there is a goods shortage of any of its input goods
 
-	MOBILIZATION_BASE_DESIRED_RATIO_TO_ENEMY = 0.5   		# AI wants to have a total amount of mobilized army power that is equal to enemy mobilized army power * this
-	MOBILIZATION_MAIN_ATTACKER_ADDED_RATIO = 1.0  			# Add this to desired ratio for the main attacker in the war 
-	MOBILIZATION_MAIN_DEFENDER_ADDED_RATIO = 1.0  			# Add this to desired ratio for the main defender in the war 
+	MOBILIZATION_BASE_DESIRED_RATIO_TO_ENEMY = 1.0   		# AI wants to have a total amount of mobilized army power that is equal to enemy mobilized army power * this
+	MOBILIZATION_MAIN_ATTACKER_ADDED_RATIO = 2.0  			# Add this to desired ratio for the main attacker in the war 
+	MOBILIZATION_MAIN_DEFENDER_ADDED_RATIO = 2.0  			# Add this to desired ratio for the main defender in the war 
 	MOBILIZATION_PEACE_NEGOTIATOR_ADDED_RATIO = 0.5 		# Add this to desired ratio for any country that is or would become a peace negotiator (but isn't main attacker or defender)
 	MOBILIZATION_LOCAL_FRONTS_ADDED_RATIO = 0.5 			# Add this to desired ratio for any country that has least one local front
 	MOBILIZATION_UNINCORPORATED_OCCUPATION_ADDED_RATIO = 0.5	# Add this to desired ratio for any country whose unincorporated states are being occupied
@@ -215,12 +215,12 @@ NAI = {
 	START_DIPLO_PLAY_ALLY_STRENGTH_WEIGHT = 0.75 # Consider participants that will for sure join a side with this amount of their forces
 	START_DIPLO_PLAY_LIKELY_ALLY_STRENGTH_WEIGHT = 0.5 # Consider participants that will likely to join a side with this amount of their forces
 
-	DIPLO_PLAY_BACK_DOWN_CHANCE_THRESHOLD = 0 # If ( confidence + boldness ) is less than this, consider backing down 
-	DIPLO_PLAY_BACK_DOWN_CHANCE_ESCALATION = 30 # Above this escalation, AI will consider backing down
-	DIPLO_PLAY_BACK_DOWN_INCREASE_CHANCE_THRESHOLD = -50 # If ( confidence + boldness ) is less than this, increase the chance of backing down
+	DIPLO_PLAY_BACK_DOWN_CHANCE_THRESHOLD = -100 # If ( confidence + boldness ) is less than this, consider backing down 
+	DIPLO_PLAY_BACK_DOWN_CHANCE_ESCALATION = 90 # Above this escalation, AI will consider backing down
+	DIPLO_PLAY_BACK_DOWN_INCREASE_CHANCE_THRESHOLD = -100 # If ( confidence + boldness ) is less than this, increase the chance of backing down
 	DIPLO_PLAY_BACK_DOWN_INCREASE_CHANCE_MULTIPLIER = 4.0 # If ( confidence + boldness ) is less than DIPLO_PLAY_BACK_DOWN_INCREASE_CHANCE_THRESHOLD, increase the chance of backing down by this factor
 	DIPLO_PLAY_BACK_DOWN_GUARANTEED_THRESHOLD = -75 # If ( confidence + boldness ) is less than this, always back down before the play goes to war
-	DIPLO_PLAY_BACK_DOWN_GUARANTEED_ESCALATION = 95 # Above this escalation, AI will always back down if it's supposed to
+	DIPLO_PLAY_BACK_DOWN_GUARANTEED_ESCALATION = 100 # Above this escalation, AI will always back down if it's supposed to
 	DIPLO_PLAY_BACK_DOWN_CHANCE_LOW_ESCALATION = 0.1 # 1.0 = 1% (chance each tick) - used before countdown to war starts
 	DIPLO_PLAY_BACK_DOWN_CHANCE_HIGH_ESCALATION = 0.5 # 1.0 = 1% (chance each tick) - used after countdown to war starts
 	DIPLO_PLAY_BACK_DOWN_CHANCE_WAR_LOSSES_MULT = 1.5 # Multiply chance of backing down due to additional wargoal demands by 1 + ( impact of additional wargoals / impact of original wargoal * this )
@@ -231,9 +231,9 @@ NAI = {
 	DIPLO_PLAY_REVERSE_SWAY_THRESHOLD = 2.0 # If AI has this much military strength compared to enemy, consider reverse sways to have less value
 	DIPLO_PLAY_SWAY_UNDECIDED_MILITARY_STRENGTH_MULT = 0.25 # When determining strength compared to enemy, add in undecided countries on both sides with this multiplier of their military strength
 	DIPLO_PLAY_DECIDE_ON_SUPPORT_ESCALATION = 30 # Above this escalation, AI will potentially start taking sides (or declare neutrality) even if not swayed
-	DIPLO_PLAY_TAKE_SIDES_MIN_BOLDNESS = 25 # Boldness must be at least this for AI to want to take a side with no gain (ignored for Great Powers in containment plays)
-	DIPLO_PLAY_TAKE_SIDES_CHANCE = 0.001 # Multiplied by boldness for chance of taking sides each tick
-	DIPLO_PLAY_DECLARE_NEUTRALITY_ESCALATION_MIN_BASE = 80 # Lowest escalation at which AI can declare neutrality, AIs with a preference will never declare neutrality before countdown to war
+	DIPLO_PLAY_TAKE_SIDES_MIN_BOLDNESS = 10 # Boldness must be at least this for AI to want to take a side with no gain (ignored for Great Powers in containment plays)
+	DIPLO_PLAY_TAKE_SIDES_CHANCE = 0.1 # Multiplied by boldness for chance of taking sides each tick
+	DIPLO_PLAY_DECLARE_NEUTRALITY_ESCALATION_MIN_BASE = 95 # Lowest escalation at which AI can declare neutrality, AIs with a preference will never declare neutrality before countdown to war
 	DIPLO_PLAY_DECLARE_NEUTRALITY_IMPACT_OF_NEUTRALITY_SCORE = 0.5 # AI's neutrality score * this is subtracted from DIPLO_PLAY_DECLARE_NEUTRALITY_ESCALATION_MIN_BASE
 	DIPLO_PLAY_DECLARE_NEUTRALITY_IMPACT_OF_NEUTRALITY_SCORE_MAX = 50 # DIPLO_PLAY_DECLARE_NEUTRALITY_IMPACT_OF_NEUTRALITY_SCORE cannot be higher than this
 	DIPLO_PLAY_DECLARE_NEUTRALITY_ESCALATION_MAX = 99 # Highest escalation at which AI can declare neutrality
@@ -318,7 +318,7 @@ NAI = {
 	DIPLO_PLAY_NEUTRALITY_FROM_LOWER_RANK = 5 # For each rank value difference between us and the lowest ranked participant in the play, if we're higher rank than them
 	DIPLO_PLAY_NEUTRALITY_FROM_NO_ARMY = 1000 # If we have no army at all, add this to neutrality score
 	DIPLO_PLAY_NEUTRALITY_WEAK_ARMY_FACTOR = 100 # Scaled by our relative forces compared to DIPLO_PLAY_WEAK_ARMY_THRESHOLD
-	DIPLO_PLAY_NEUTRALITY_TRUCE_FACTOR = 0 # If we have a truce with either primary participant and no alliance or subject relationship
+	DIPLO_PLAY_NEUTRALITY_TRUCE_FACTOR = 50 # If we have a truce with either primary participant and no alliance or subject relationship
 	
 	# Sympathy is added together and then multiplied by a dice roll range of (DIPLO_PLAY_SYMPATHY_RANGE_MIN to DIPLO_PLAY_SYMPATHY_RANGE_MAX) to give the AI a random preference for each side in a particular play
 	# Sympathy above 0 is added directly to the willingness to join that side in the play
@@ -438,14 +438,14 @@ NAI = {
 	AI_AGGRESSION_MAX_ACCEPTABLE_INFAMY = 100 # Undesirable/unacceptable infamy will not be set above this from high aggression
 	
 	# Below data is used to determine which wargoals the AI will pick
-	WAR_GOAL_RANDOM_FACTOR = 2.0 					# The higher this is, the more random AI wargoal selection will be
+	WAR_GOAL_RANDOM_FACTOR = 5.0 					# The higher this is, the more random AI wargoal selection will be
 	WAR_GOAL_UNDESIRABLE_INFAMY_FACTOR = 0.5 		# Wargoal value is multiplied by this if it would bring the country above undesirable infamy levels
 	WAR_GOAL_UNACCEPTABLE_INFAMY_FACTOR = 0			# Wargoal value is multiplied by this if it would bring the country above unacceptable infamy levels
 	WAR_GOAL_NOT_PRIMARY_DEMAND_FACTOR = 0.5		# Wargoal value for sway offers is multiplied by this if it would not be added as a primary demand
 	
-	WAR_GOAL_MAKE_PRIMARY_DEMAND_SCORE_MULT = 0.75   # Multiply score of an existing wargoal by this when determining whether to make it into a primary demand instead of adding a new wargoal
+	WAR_GOAL_MAKE_PRIMARY_DEMAND_SCORE_MULT = 1.0   # Multiply score of an existing wargoal by this when determining whether to make it into a primary demand instead of adding a new wargoal
 	WAR_GOAL_MAKE_PRIMARY_DEMAND_RETURN_STATE_SCORE_MULT = 1.25 # Overrides WAR_GOAL_MAKE_PRIMARY_DEMAND_SCORE_MULT for return state wargoals
-	WAR_GOAL_MIN_SCORE_TO_MAKE_PRIMARY_DEMAND = 30	 # A wargoal needs to have at least this much score (before applying WAR_GOAL_MAKE_PRIMARY_DEMAND_SCORE_MULT) for AI to make it a primary demand
+	WAR_GOAL_MIN_SCORE_TO_MAKE_PRIMARY_DEMAND = 15	 # A wargoal needs to have at least this much score (before applying WAR_GOAL_MAKE_PRIMARY_DEMAND_SCORE_MULT) for AI to make it a primary demand
 	
 	# Below data is used to determine which techs the AI will research
 	TECH_RANDOM_FACTOR = 1.0 # The higher this is, the more random AI tech research will be
@@ -531,10 +531,10 @@ NAI = {
 	HQ_COASTAL_WAR_ZONE_IMPORTANCE_MULT = 3.0		# Friendly HQs that *are* under naval invasion have their importance multiplied by this
 	
 	# At what fraction of combat strength and morale/org will the AI attack
-	FRONT_MIN_OVERALL_STRENGTH_FACTOR_TO_ATTACK = 0.8			# Must have at least this multiplier of overall power projection on the front compared to the enemy's to want to attack
-	FRONT_MIN_INDIVIDUAL_ARMY_STRENGTH_FACTOR_TO_ATTACK = 0.95 	# Must have at least this multiplier of average power projection of allied formations on the front to want to attack
-	FRONT_MIN_MORALE_TO_ATTACK = 0.8							# As a fraction of max morale (1)
-	FRONT_MIN_ORGANIZATION_TO_ATTACK = 0.8						# As a fraction of formation's max organization
+	FRONT_MIN_OVERALL_STRENGTH_FACTOR_TO_ATTACK = 0.5			# Must have at least this multiplier of overall power projection on the front compared to the enemy's to want to attack
+	FRONT_MIN_INDIVIDUAL_ARMY_STRENGTH_FACTOR_TO_ATTACK = 0.7 	# Must have at least this multiplier of average power projection of allied formations on the front to want to attack
+	FRONT_MIN_MORALE_TO_ATTACK = 0.6							# As a fraction of max morale (1)
+	FRONT_MIN_ORGANIZATION_TO_ATTACK = 0.6						# As a fraction of formation's max organization
 	
 	# Below data is used for Admiral Orders:
 	ADMIRAL_ORDERS_RANDOM_FACTOR = 0.5									# The higher this is, the more random AI will be in selection of admiral orders
@@ -625,8 +625,8 @@ NAI = {
 	MONEY_SPENDING_MIN_GOLD_RESERVE_FRACTION_TO_ADD_WANTS_TO_HAVE = 0.2 # If we don't have at least this fraction of gold reserves, don't increase spending on a 'wants-to-have'
 	MONEY_SPENDING_MIN_GOLD_RESERVE_FRACTION_TO_ADD_NICE_TO_HAVE = 0.3 # If we don't have at least this fraction of gold reserves, don't increase spending on a 'nice-to-have'
 	
-	MONEY_SPENDING_LAND_THREAT_THRESHOLD = 0.25 # If a hostile country has a more than this much larger army than AI does, it wants to increase military spending
-	MONEY_SPENDING_NAVY_THREAT_THRESHOLD = 0.50 # If a hostile country has a more than this much larger navy than AI does, it wants to increase military spending
+	MONEY_SPENDING_LAND_THREAT_THRESHOLD = 0.1 # If a hostile country has a more than this much larger army than AI does, it wants to increase military spending
+	MONEY_SPENDING_NAVY_THREAT_THRESHOLD = 0.25 # If a hostile country has a more than this much larger navy than AI does, it wants to increase military spending
 	MONEY_SPENDING_PRESTIGE_RIVAL_THRESHOLD = 0.5 # If a rival has this much more prestige than AI does, it wants to increase spending on art academies
 	
 	MONEY_SPENDING_MILITARY_CRITICAL_THRESHOLD = 0.5 # If actual-to-wanted number of barracks/naval bases is below this, AI will not consider downsizing them further
@@ -826,9 +826,9 @@ NAI = {
 	GOAL_THREAT_SP_MAX_MULT = 2
 	GOAL_THREAT_CUSTOMS_UNION_MULT = 0.5 # Reduce neighbor threat score by this if in a customs union
 	
-	GOAL_ANTAGONIZE_POOR_RELATIONS_FACTOR = 25
-	GOAL_ANTAGONIZE_COLD_RELATIONS_FACTOR = 50
-	GOAL_ANTAGONIZE_HOSTILE_RELATIONS_FACTOR = 100
+	GOAL_ANTAGONIZE_POOR_RELATIONS_FACTOR = 50
+	GOAL_ANTAGONIZE_COLD_RELATIONS_FACTOR = 100
+	GOAL_ANTAGONIZE_HOSTILE_RELATIONS_FACTOR = 200
 	GOAL_ANTAGONIZE_CONQUER_SCORE_MULT = 1.0 # Multiplied by the total score of the territory we want to take from them
 	GOAL_ANTAGONIZE_CONQUER_SCORE_MAX = 200
 	GOAL_ANTAGONIZE_DOMINATE_SCORE_MULT = 1.0 # Multiplied by the total score of make-subject wargoals we want to enforce on them
