@@ -1,10 +1,9 @@
-gfx/
 dlc/
 sound/
 soundtrack/
 fonts/
 map_data/
-
+_processed/
 
 checksum_manifest.txt
 compound_settings.txt
