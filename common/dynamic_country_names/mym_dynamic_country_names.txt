@@ -1,9 +1,9 @@
-GRE = {
+GRE = { # Greece
 	#Super Greece
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_super
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 100
 		trigger = {
 			exists = scope:actor
@@ -18,7 +18,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_monarchy
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 100
 		trigger = {
 			has_law = law_type:law_monarchy
@@ -28,7 +28,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_monarchy_technocracy
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -42,7 +42,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_monarchy_constitutional
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -56,7 +56,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_presidential_dictatorship
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -70,7 +70,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_presidential_technate
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -84,7 +84,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_presidential_democracy
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -98,7 +98,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_parliamentary_dictatorship
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -112,7 +112,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_parliamentary_technate
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -126,7 +126,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_parliamentary_democracy
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -143,7 +143,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_theocracy
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -157,7 +157,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_theocratic_oligarchy
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -171,7 +171,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_theocratic_democracy
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -185,7 +185,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_council_dictatorship
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -202,7 +202,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_council_technocracy
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -216,7 +216,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_council_republic
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -233,7 +233,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_anarchy
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 1000
 		trigger = {
 			exists = scope:actor
@@ -247,7 +247,7 @@ GRE = {
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_monarchy_anarchy		# What the actual--?!
 		adjective = GRE_ADJ
-		is_main_tag_only = yes
+
 		priority = 10000
 		trigger = {
 			exists = scope:actor
