@@ -1,0 +1,44 @@
+advcm_add_bureaucracy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_bureaucracy_add = 500
+}
+
+advcm_add_authority = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 500
+}
+
+advcm_add_influence = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_influence_add = 500
+}
+
+advcm_add_tech_spread = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_tech_spread_add = 100
+}
+
+advcm_add_innovation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_weekly_innovation_add = 100
+}
+
+advcm_add_innovation_max = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_weekly_innovation_max_add = 100
+}
+
+advcm_add_construction = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_construction_add = 500
+}
+
+advcm_add_birth_rate = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_birth_rate_mult = 10.0
+}
+
+advcm_add_max_companies = {
+	icon = gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds
+	country_max_companies_add = 1
+}
