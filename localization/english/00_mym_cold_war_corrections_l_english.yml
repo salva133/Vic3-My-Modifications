@@ -1,0 +1,134 @@
+﻿l_english:
+ # End Carbon Capture Policy Button
+ je_climate_change_carbon_capture_end_button: "End Carbon Capture Policy"
+ je_climate_change_carbon_capture_end_button_desc: ""
+
+ # Laws with missing Desc
+  law_command_economy_desc: "An economy entirely controlled by the state, where every resource is meticulously allocated by government planners."
+
+  law_total_separation_desc: "Complete division between church and state, ensuring no religious influence in governmental affairs."
+
+  law_unitary_state_desc: "A centralized government wielding all the power, with no regional authorities to share the load."
+  law_federal_state_desc: "A balanced power structure where governance is shared between central and regional authorities."
+  law_politicised_judiciary_desc: "Courts heavily influenced and swayed by the whims of political power."
+  law_partially_politicised_judiciary_desc: "A judiciary with a foot in both camps, balancing independence and political influence."
+  law_independent_judiciary_desc: "A judiciary free from any political influence, ruling with impartiality and fairness."
+
+  law_no_voting_desc: "A facade of democracy with no real elections, just rubber-stamped results."
+  law_rigged_voting_desc: "Elections where the outcomes are pre-determined by those in power."
+  law_gerrymandered_voting_desc: "Electoral district boundaries manipulated to favor one party over others."
+  law_harassment_voting_desc: "Elections marred by intimidation, coercion, and unfair practices."
+  law_fair_voting_desc: "An electoral process characterized by honesty, transparency, and fairness."
+
+  law_parties_not_allowed_desc: "A political landscape barren of any competing political parties."
+  law_parties_allowed_desc: "A vibrant political arena where multiple parties vie for power."
+
+  law_appointed_legislature_desc: "A legislative body chosen not by the people, but by those in power."
+  law_technocratic_legislature_desc: "A mix of appointed experts and elected officials in the legislative body."
+  law_democratic_legislature_desc: "A legislature chosen by the people, for the people, through free elections."
+
+  law_politicised_bureaucrats_desc: "Civil servants whose actions and decisions are dictated by political agendas."
+  law_elitist_bureaucrats_desc: "Bureaucrats hailing from privileged backgrounds, often out of touch with common citizens."
+  law_professional_bureaucrats_desc: "Competent and neutral bureaucrats focused solely on their professional duties."
+
+  law_nepotistic_cabinet_desc: "A cabinet formed based on family connections rather than merit or ability."
+  law_semi_nepotistic_cabinet_desc: "A cabinet with some members chosen based on family ties, others on merit."
+  law_meritocratic_cabinet_desc: "A cabinet filled with individuals selected solely for their abilities and achievements."
+
+  law_executive_supremacy_desc: "The executive branch reigns supreme, often overpowering other branches of government."
+  law_legislative_supremacy_desc: "The legislative branch holds the upper hand, shaping the laws and policies of the land."
+  law_constitutional_supremacy_desc: "The constitution stands as the ultimate authority, above all branches of government."
+
+  law_kangaroo_law_desc: "A judiciary that obediently follows government orders, rendering justice a mere puppet show."
+  law_civil_law_desc: "A judiciary with limited power, often overshadowed by other branches of government."
+  law_common_law_desc: "A judiciary wielding significant authority, upholding the rule of law with strength and independence."
+
+  law_peasant_levies_desc: "A society with no military forces, relying instead on a demilitarized approach."
+
+  law_ethnostate_desc: "A state founded and run based on a specific ethnic identity, often excluding others."
+  law_national_supremacy_desc: "A nation that prioritizes its own interests and identity above all else."
+  law_multicultural_desc: "A society that embraces and includes a diverse array of cultures and ethnicities."
+
+  law_no_womens_rights_desc: "A stark absence of rights and freedoms for women."
+  law_some_womens_rights_desc: "Women have limited rights and freedoms, with many restrictions still in place."
+  law_full_womens_rights_desc: "Complete equality and rights for women in all aspects of society."
+
+  law_outlawed_dissent_desc: "A society where freedom of expression is completely suppressed."
+  law_censorship_desc: "A society where speech is heavily restricted and controlled."
+  law_limited_free_speech_desc: "Freedom of expression exists but within certain boundaries and restrictions."
+  law_full_free_speech_desc: "Complete freedom of expression without fear of retribution or censorship."
+
+  law_no_secret_police_desc: "A society free from the prying eyes and control of secret police."
+  law_secret_police_desc: "A society under the watchful and often oppressive eyes of secret police."
+
+  law_no_espionage_desc: "A state without any international espionage activities."
+  law_defensive_espionage_desc: "Espionage activities are solely for defense and protection."
+  law_offensive_espionage_desc: "Espionage is employed for both defense and aggressive purposes."
+
+  law_lenient_policing_desc: "A law enforcement approach that is mild and forgiving."
+  law_balanced_policing_desc: "A moderate approach to law enforcement, aiming for fairness."
+  law_strict_policing_desc: "A harsh and stringent approach to law enforcement."
+  law_draconian_policing_desc: "An extremely severe and oppressive law enforcement strategy."
+
+  law_trade_unions_banned_desc: "Trade unions are completely prohibited, leaving workers without representation."
+  law_state_trade_unions_desc: "Only state-controlled trade unions are allowed, limiting workers' autonomy."
+  law_restricted_trade_unions_desc: "Trade unions exist but face significant restrictions on their activities."
+  law_full_trade_unions_desc: "Trade unions operate freely without any restrictions."
+
+  law_no_war_desc: "A nation that maintains complete neutrality, avoiding involvement in wars."
+  law_defensive_war_desc: "A nation that only engages in wars for defense and protection."
+  law_offensive_war_desc: "A nation free to engage in any form of warfare."
+
+  law_wmd_banned_desc: "A complete ban on the possession and use of weapons of mass destruction."
+  law_wmd_allowed_desc: "The possession and use of weapons of mass destruction are permitted."
+
+  law_no_civil_defence_law_desc: "No measures or policies in place for civil defense."
+  law_very_weak_civil_defence_law_desc: "Minimal measures for civil defense, offering little protection."
+  law_weak_civil_defence_law_desc: "Limited civil defense measures that provide some level of protection."
+  law_moderate_civil_defence_law_desc: "Adequate civil defense measures ensuring reasonable protection."
+  law_strong_civil_defence_law_desc: "Robust civil defense measures providing strong protection."
+  law_very_strong_civil_defence_law_desc: "Highly robust civil defense measures ensuring maximum protection."
+
+  law_no_space_program_desc: "A nation without any ambitions or initiatives for space exploration."
+  law_space_program_public_desc: "A government-operated space program aiming to explore the final frontier."
+  law_space_program_private_desc: "A privately-operated space program driven by innovation and profit."
+
+  law_no_social_security_desc: "An absence of social security systems, leaving citizens without a safety net."
+  law_low_social_security_desc: "Minimal social security provisions offering basic support."
+  law_medium_social_security_desc: "Adequate social security provisions providing reasonable support."
+  law_high_social_security_desc: "Extensive social security provisions offering comprehensive support."
+
+  law_very_low_anti_corruption_desc: "Barely any measures in place to combat corruption."
+  law_low_anti_corruption_desc: "Limited measures to tackle corruption, often insufficient."
+  law_medium_anti_corruption_desc: "Sufficient measures in place to combat corruption effectively."
+  law_high_anti_corruption_desc: "Robust measures to fight corruption, ensuring integrity."
+  law_very_high_anti_corruption_desc: "Highly stringent measures to eliminate corruption comprehensively."
+
+  law_gold_standard_desc: "Currency value is backed by gold, providing stability and trust."
+  law_semi_gold_standard_desc: "Partial backing of currency by gold, balancing stability and flexibility."
+  law_fiat_standard_desc: "Currency value is not backed by physical commodities, relying on government regulation."
+
+  law_taxation_1_desc: "Taxes that place a heavy burden on the poor, exacerbating inequality."
+  law_taxation_2_desc: "Taxes that disproportionately impact lower incomes, increasing economic disparity."
+  law_taxation_3_desc: "Taxes that are equal for all incomes, ensuring a fair distribution of the tax burden."
+  law_taxation_4_desc: "Taxes that place a greater burden on higher incomes, aiming for economic equality."
+  law_taxation_5_desc: "Taxes that heavily burden the rich, significantly reducing income inequality."
+
+  law_very_deflationary_monetary_policy_desc: "Policies that significantly reduce the money supply, curbing inflation."
+  law_neutral_monetary_policy_desc: "Policies that maintain the current economic conditions, avoiding major shifts."
+  law_expansionary_monetary_policy_desc: "Policies that increase the money supply, stimulating economic growth."
+  law_very_expansionary_monetary_policy_desc: "Policies that significantly increase the money supply, driving economic expansion."
+
+  law_charitable_health_system_desc: "Healthcare provided without the aim of profit, focusing on patient well-being."
+  law_private_health_insurance_desc: "Healthcare services run by private entities, driven by competition and profit."
+  law_public_health_insurance_desc: "Government-run healthcare ensuring universal access and affordability."
+
+  law_religious_schools_desc: "Schools run without profit motives, often with a focus on religious teachings."
+  law_private_schools_desc: "Schools operated by private entities, offering diverse educational approaches."
+  law_public_schools_desc: "Schools funded and managed by the government, ensuring education for all."
+
+  law_pro_pop_growth_policy_desc: "Policies designed to encourage population growth through various incentives."
+  law_no_pop_growth_policy_desc: "No specific policies affecting population growth, leaving it to natural factors."
+  law_anti_pop_growth_policy_desc: "Policies aimed at reducing population growth through various measures."
+
+  law_no_colonial_affairs_desc: "A stance of opposing and rejecting any colonial ambitions or institutions."
