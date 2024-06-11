@@ -7,6 +7,11 @@ law_mym_spartanism = {
 	unlocking_technologies = {
 		political_agitation
 	}
+
+	institution = institution_workplace_safety
+	institution_modifier = {
+		building_minimum_wage_mult = -0.15
+	}
 	
 	on_enact = {
 		recalculate_pop_ig_support = yes
@@ -18,10 +23,6 @@ law_mym_spartanism = {
 		state_dependent_political_participation_add = -0.33
 	}
 	
-	possible_political_movements = {
-		law_women_own_property
-		law_womens_suffrage
-	}
 	pop_support = {
 		value = 0
 		add = {
