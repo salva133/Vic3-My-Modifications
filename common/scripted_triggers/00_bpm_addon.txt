@@ -1,4 +1,3 @@
-# Outlawed Dissent
 bpm_full_party_ban = {
 	OR = {
 		has_law = law_type:law_outlawed_dissent
