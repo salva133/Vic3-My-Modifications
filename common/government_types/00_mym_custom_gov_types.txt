@@ -18,6 +18,32 @@
 	}
 }
 
+gov_burgundian_system = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_FUEHRER"
+	female_ruler = "RULER_TITLE_FUEHRER"
+
+	possible = {
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_single_party_state
+			has_law = law_type:law_technocracy
+		}
+		has_law = law_type:law_mym_managed_free_speech
+		has_law = law_type:law_mym_spartanism
+		coa_fascist_trigger = yes
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+
+
 gov_monarchy_anarchy = {
 	transfer_of_power = hereditary
 	new_leader_on_reform_government = yes
