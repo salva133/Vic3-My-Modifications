@@ -75,6 +75,12 @@ ideology_mym_burgundist = {
 		law_legacy_slavery = approve
 		law_slavery_banned = strongly_disapprove
 	}
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = strongly_approve
+		law_women_own_property = neutral
+		law_women_in_the_workplace = strongly_disapprove
+		law_womens_suffrage= strongly_disapprove
+	}
 	
 	possible = {
 		owner = { has_technology_researched = mass_propaganda }
