@@ -1,8 +1,8 @@
 ﻿gov_mym_managed_democracy = {
 	transfer_of_power = presidential_elective
 
-	male_ruler = "RULER_TITLE_SUPER_PRESIDENT"
-	female_ruler = "RULER_TITLE_SUPER_PRESIDENT"
+	male_ruler = "RULER_TITLE_MYM_SUPER_PRESIDENT"
+	female_ruler = "RULER_TITLE_MYM_SUPER_PRESIDENT"
 	
 	possible = {
 		has_law = law_type:law_presidential_republic
@@ -18,11 +18,11 @@
 	}
 }
 
-gov_burgundian_system = {
+gov_mym_burgundian_system = {
 	transfer_of_power = dictatorial
 
-	male_ruler = "RULER_TITLE_FUEHRER"
-	female_ruler = "RULER_TITLE_FUEHRER"
+	male_ruler = "RULER_TITLE_MYM_FUEHRER"
+	female_ruler = "RULER_TITLE_MYM_FUEHRER"
 
 	possible = {
 		OR = {
@@ -44,11 +44,11 @@ gov_burgundian_system = {
 }
 
 
-gov_monarchy_anarchy = {
+gov_mym_monarchy_anarchy = {
 	transfer_of_power = hereditary
 	new_leader_on_reform_government = yes
-	male_ruler = "RULER_TITLE_ROYAL_DEPUTY"
-	female_ruler = "RULER_TITLE_ROYAL_DEPUTY"
+	male_ruler = "RULER_TITLE_MYM_ROYAL_DEPUTY"
+	female_ruler = "RULER_TITLE_MYM_ROYAL_DEPUTY"
 	possible = {
 		has_law = law_type:law_monarchy
 		has_law = law_type:law_anarchy
@@ -75,7 +75,7 @@ gov_military_dictatorship = {
 		has_law = law_type:law_mass_conscription
 	}
 }
-gov_police_state = {
+gov_mym_police_state = {
 	transfer_of_power = dictatorial
 
 	male_ruler = "RULER_TITLE_PRESIDENT"
