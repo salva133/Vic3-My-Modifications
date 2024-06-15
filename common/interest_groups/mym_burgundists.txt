@@ -24,16 +24,51 @@ ig_mym_burgundists = {
 
 	on_enable = {
 		ig:ig_mym_burgundists = {
-			# set_ig_trait = ig_trait:ig_trait_right_systematic_corruption
-			set_ig_trait = ig_trait:ig_trait_right_bastion_of_freedom
-			set_ig_trait = ig_trait:ig_trait_right_election_interference
-		}
-		if = {
-			limit = {
-				country_has_primary_culture = cu:brazilian
+			if = {
+				limit = {
+					owner = { c:SWE ?= this}
+				}
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_bergsbrukens_valdistrikten
+				set_ig_trait = ig_trait:ig_trait_treasury_bonds
 			}
-			ig:ig_mym_burgundists = {
-				set_interest_group_name = ig_integralists
+			else_if = {
+				limit = {
+					owner = { c:TUR ?= this }
+				}
+						set_ig_trait = ig_trait:ig_trait_xenophobia
+						set_ig_trait = ig_trait:ig_trait_effendi
+						set_ig_trait = ig_trait:ig_trait_reorganization
+			}
+			else_if = {
+				limit = {
+					owner = { c:EGY ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_effendi
+				set_ig_trait = ig_trait:ig_trait_treasury_bonds
+			}
+			else_if = {
+				limit = {
+					has_dlc_feature = voice_of_the_people_content
+					owner = { c:FRA ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_haute_finance
+				set_ig_trait = ig_trait:ig_trait_master_of_the_house
+			}
+			else_if = {
+				limit = {
+					owner = { c:GBR ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_bah_humbug
+				set_ig_trait = ig_trait:ig_trait_civil_service
+				set_ig_trait = ig_trait:ig_trait_old_lady_of_threadneedle_street
+			}
+			else = {
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_middle_managers
+				set_ig_trait = ig_trait:ig_trait_treasury_bonds
 			}
 		}
 	}
@@ -42,107 +77,268 @@ ig_mym_burgundists = {
 	on_character_ig_membership = {}
 
 	pop_potential = {
-		owner = {
-			NOT = { is_country_type = decentralized }
-			exists = ig:ig_mym_burgundists
-			ig:ig_mym_burgundists = { NOT = { has_ideology = ideology:ideology_nonexistent } }
+		custom_tooltip = {
+			text = would_be_accepted_under_national_supremacy_tt
+			this.culture = {
+				AND = {
+					shares_heritage_trait_with_any_primary_culture = prev.owner
+					shares_non_heritage_trait_with_any_primary_culture = prev.owner
+				}
+			}
+		}
+		NOR = {
+			is_pop_type = aristocrats
+			is_pop_type = capitalists
+		}
+		OR = {
+			is_pop_type = officers
+			is_pop_type = soldiers
+			pop_employment_building_group = bg_manufacturing
+			pop_employment_building_group = bg_service
+			pop_employment_building_group = bg_urban_facilities
+			pop_employment_building_group = bg_government
+			pop_employment_building_group = bg_logging
+			pop_employment_building_group = bg_mining
+			pop_employment_building_group = bg_fishing
+			pop_employment_building_group = bg_whaling
+			pop_employment_building_group = bg_oil_extraction
+			AND = {
+				custom_tooltip = {
+					text = owner_has_homesteading_tt
+					owner = {
+						OR = {
+							has_law = law_type:law_homesteading
+							has_law = law_type:law_commercialized_agriculture
+						}
+					}
+				}
+				OR = {
+					pop_employment_building_group = bg_agriculture
+					pop_employment_building_group = bg_ranching
+					pop_employment_building_group = bg_plantations
+				}
+				strata = middle
+			}
 		}
 	}
 
 	pop_weight = {
-		value = 0
-	
+		value = 50
+
 		add = {
-			desc = "POP_CAPITALISTS"
+			desc = "POP_SHOPKEEPERS"
 			if = {
-				limit = { 
-					is_pop_type = capitalists
+				limit = {
+					is_pop_type = shopkeepers
+				}
+				value = 250
+			}
+		}
+
+		add = {
+			desc = "POP_CLERKS"
+			if = {
+				limit = {
+					is_pop_type = clerks
 				}
 				value = 100
 			}
-		}	
+		}
 
 		add = {
-			desc = "MIDDLE_CLASS"
+			desc = "POP_ENGINEERS"
 			if = {
-				limit = { 
-					NOR = {
-						pop_employment_building_group = bg_agriculture
-						pop_employment_building_group = bg_ranching
-						pop_employment_building_group = bg_plantations
-					}
-					strata = middle
+				limit = {
+					is_pop_type = engineers
 				}
 				value = 50
 			}
 		}
+
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_elected_bureaucrats
+				}
+			}
+			add = {
+				desc = "POP_BUREAUCRATS_ELECTED"
+				if = {
+					limit = {
+						is_pop_type = bureaucrats
+					}
+					value = 50
+				}
+			}
+		}
+
+		add = {
+			desc = "HOMESTEADING_LAW"
+			if = {
+				limit = {
+					is_pop_type = farmers
+					owner = {
+						has_law = law_type:law_homesteading
+					}
+				}
+				value = 25
+
+				if = {
+					limit = {
+						state = {
+							is_slave_state = yes
+						}
+					}
+					subtract = 25
+				}
+			}
+		}
+
 		add = {
 			desc = "URBAN_POP"
 			if = {
-				limit = { 
+				limit = {
 					NOR = {
 						pop_employment_building_group = bg_agriculture
 						pop_employment_building_group = bg_ranching
 						pop_employment_building_group = bg_plantations
 					}
 				}
-				value = 50
+				value = 25
+				add = this.standard_of_living
 			}
 		}
-		
+
 		multiply = {
 			desc = "LEADER_POPULARITY"
 			scope:interest_group = {
-				leader = {
+				leader ?= {
 					value = popularity
-					multiply = 0.01 # Fascists are heavily dependent on their leader
+					multiply = 0.0025
 					add = 1
-					max = 2
-					min = 0.1
+					max = 1.25
+					min = 0.75
 				}
 			}
-		}	
-
-		multiply = bpm_ig_agitators_popularity
-		multiply = bpm_ig_ruler_popularity
-		multiply = ig_attraction_to_ruler_ideology_from_stability
-
-		multiply = {
-			desc = "UNEDUCATED"
-			value = literacy_rate
-			multiply = 1.5
-			max = 1.0
 		}
 
 		multiply = {
-			desc = "NO_POLITICAL_AGITATION"	
+			desc = "decentralized_power"
 			value = 1.0
-			
+
 			if = {
-				limit = { 
+				limit = {
 					owner = {
-						NOT = { has_technology_researched = political_agitation }
+						is_country_type = decentralized
 					}
 				}
-				value = 0.5
-			}		
+				value = 0.0
+			}
 		}
-
-		multiply = ig_attraction_from_radicals_and_loyalists	
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_in_government = yes
+				}
+			}
+			multiply = {
+				desc = "IN_GOVERNMENT_ATTRACTION"
+				value = 1
+				add = scope:interest_group.modifier:interest_group_in_government_attraction_mult
+				min = 0
+			}
+		}
+		
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_in_government = yes
+				}
+			}
+			multiply = { # Multiplied by 1.25x max
+				desc = "POP_LOYALISTS"
+				value = pop_loyalist_fraction
+				divide = 4
+				add = 1
+			}
+		}
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_in_government = no
+				}
+			}
+			multiply = { # Multiplied by 1.25x max
+				desc = "POP_RADICALS"
+				value = pop_radical_fraction
+				divide = 4
+				add = 1
+			}
+		}
 	}
 
 	monarch_weight = {
-		value = 0.2
-	}	
+		value = 1
+		# Monarch is not likely to adopt a marginal IG
+		if = {
+			limit = {
+				is_marginal = yes
+			}
+			multiply = {
+				value = 0.1
+			}
+		}
+		# Monarch is more likely to adopt a Powerful IG
+		if = {
+			limit = {
+				is_powerful = yes
+			}
+			multiply = {
+				value = 2
+			}
+		}
+		# More likely with Elected Bureaucrats
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_elected_bureaucrats
+				}
+			}
+			multiply = {
+				value = 1.5
+			}
+		}
+		# More likely with ethnostate
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_ethnostate
+				}
+			}
+			multiply = {
+				value = 2
+			}
+		}
+	}
 
 	agitator_weight = {
+		# Agitators more likely to come from populist IG's rather than elitist
 		value = 1.0
-		multiply = bpm_base_agitator_weight
+		# Agitators will never be part of a marginalized IG
+		if = {
+			limit = {
+				owner.ig:ig_mym_burgundists = {
+					is_marginal = yes
+				}
+			}
+			multiply = {
+				value = 0
+			}
+		}
 	}
 	
 	commander_weight = {
 		value = 2.5
-		multiply = bpm_commander_assignment_from_laws_factor
 	}	
 	
 	noble_chance = {
