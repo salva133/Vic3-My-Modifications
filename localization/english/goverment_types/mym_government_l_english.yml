@@ -1,0 +1,22 @@
+﻿l_english:
+
+# Managed Democracy
+ gov_mym_managed_democracy: "Managed Democracy"
+ gov_mym_managed_democracy_desc: "This is a [concept_government_type] where the [concept_country] is managed by an [Concept('concept_election','$concept_elected$')] president who serves his super nation and its citizens from the bottom of his heart.\n\nCitizens use automated steam voting machines; they answer a few questions on the National Wide Network (NWN), and the machines punch their voting cards for them based on these results. The NWN is a network of connected telegraphs and mechanical calculating machines that transmit data via steam-powered compressed air lines.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+# Monarchy-Anarchy
+ gov_mym_monarchy_anarchy: "Confusion of the highest Orda'"
+ gov_mym_monarchy_anarchy_desc: "A unique [concept_government_type] of a [concept_country] that combines the symbolic presence of a royal deputy with the decentralised and self-governing structure of anarchist communities. The royal deputy serves as a cultural and historical leader without political power. Citizens live in autonomous communities that develop and enforce their own rules and systems. Decisions are made locally through direct democracy or consensus, with no centralised government or state authority. This system combines traditional symbolic leadership with maximum political freedom and self-determination.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ 
+# Police State
+ gov_mym_police_state: "Police State"
+ gov_mym_police_state_desc: "A police state is a form of government in which the government operates with comprehensive surveillance and control measures, often restricting civil rights and political freedoms.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+# Burgundian System
+ gov_mym_burgundian_system: "Burgundian System"
+ gov_mym_burgundian_system_desc: "It calls for extreme Spartanism, a lifestyle with as little consumption and as few luxuries as possible. It seeks to cleanse the world of all Unterrassen, thus ensuring that the pure population can re-populate the world. The Burgundian System views that the world has been so corrupted due to the communists and degeneracy that it will attempt to scorch the earth. Under this system, the disabled, the obese, LGBT, and others will be either executed or used as slaves. The rest of its people will have a mandatory 18 hours of 'paid labor'. Not every variation of Burgundian System seeks to destroy the world. However, prolonged presence of the Burgundian System causes massive instability due to its unsustainable nature, leading to its collapse... maybe.\n\n$TRANSFER_OF_POWER_NAME_DESC$\n\nTHERE IS NO HOPE UNDER THE BLACK SUN!"
+
+### RULER TITLE ###
+ RULER_TITLE_MYM_SUPER_PRESIDENT: "Super President"
+ RULER_TITLE_MYM_ROYAL_DEPUTY: "Royal Deputy"
+ RULER_TITLE_MYM_FUEHRER: "Fuhrer"
