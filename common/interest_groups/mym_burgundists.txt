@@ -1,4 +1,4 @@
-ig_mym_burgundists = {
+﻿ig_mym_burgundists = {
 	color = hsv{ 0.75 0.78 0.31 }
 	texture = "gfx/interface/icons/ig_icons/burgundists.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
@@ -75,7 +75,7 @@ ig_mym_burgundists = {
 
 	on_disable = {}
 	on_character_ig_membership = {}
-
+	
 	pop_potential = {
 		custom_tooltip = {
 			text = would_be_accepted_under_national_supremacy_tt
@@ -123,7 +123,7 @@ ig_mym_burgundists = {
 	}
 
 	pop_weight = {
-		value = 50
+		value = 0
 
 		add = {
 			desc = "POP_SHOPKEEPERS"
@@ -141,7 +141,7 @@ ig_mym_burgundists = {
 				limit = {
 					is_pop_type = clerks
 				}
-				value = 100
+				value = 50
 			}
 		}
 
@@ -151,7 +151,7 @@ ig_mym_burgundists = {
 				limit = {
 					is_pop_type = engineers
 				}
-				value = 50
+				value = 100
 			}
 		}
 
