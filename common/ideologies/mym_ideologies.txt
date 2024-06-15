@@ -71,11 +71,11 @@ ideology_mym_burgundist_economy = {
 		law_mercantilism = strongly_disapprove
 	}
     lawgroup_land_reform = {
-		law_serfdom = neutral
+		law_serfdom = strongly_approve
 		law_tenant_farmers = neutral
-		law_homesteading = approve
-		law_commercialized_agriculture = disapprove
-		law_collectivized_agriculture = approve
+		law_homesteading = strongly_disapprove
+		law_commercialized_agriculture = strongly_disapprove
+		law_collectivized_agriculture = strongly_disapprove
 	}
     lawgroup_taxation = {
 		law_consumption_based_taxation = disapprove
