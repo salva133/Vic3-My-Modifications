@@ -263,25 +263,24 @@ burgundist_party = {
 	# scope:number - the number of IGs that would join this party before the root IG
 	join_weight = {
 		value = {
-			value = -5
+			value = -10
 			desc = "base_value"
 		}
-		if = { # fascists and general racists love fascism
+		if = {
 			limit = {
 				leader = {
 					OR = {
-						has_ideology = ideology:ideology_fascist
-						has_ideology = ideology:ideology_ethno_nationalist
-						has_ideology = ideology:ideology_integralist
+						has_ideology = ideology:ideology_mym_burgundist_leader
+						is_interest_group_type = ig_mym_burgundists
 					}
 				}
 			}
 			add = {
-				value = 10
-				desc = "from_fascism"
+				value = 20
+				desc = "from_burgundism"
 			}
 		}
-		if = { # strong fascists love fascism even more
+		if = {
 			limit = {
 				is_powerful = yes
 				leader = {
@@ -293,10 +292,10 @@ burgundist_party = {
 			}
 			add = {
 				value = 10
-				desc = "from_fascism_powerful"
+				desc = "from_burgundism_powerful"
 			}
 		}
-		if = { # fascism is a reactionary ideology
+		if = {
 			limit = {
 				has_ideology = ideology:ideology_reactionary
 			}
@@ -305,7 +304,7 @@ burgundist_party = {
 				desc = "from_reactionaries"
 			}
 		}
-		if = { # conservative IG's will fall behind a stronger fascist party
+		if = {
 			limit = {
 				is_powerful = no
 				OR = {
@@ -354,7 +353,6 @@ burgundist_party = {
 			limit = {
 				leader = {
 					OR = {
-						has_ideology = ideology:ideology_atheist
 						has_ideology = ideology:ideology_feminist
 						has_ideology = ideology:ideology_reformer
 						has_ideology = ideology:ideology_abolitionist
