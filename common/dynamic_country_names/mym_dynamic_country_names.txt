@@ -1,4 +1,4 @@
-GRE = { # Greece
+﻿GRE = { # Greece
 	#Super Greece
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_super
