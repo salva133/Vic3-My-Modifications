@@ -1,23 +1,4 @@
-ideology_mym_burgundist_specifics = {
-	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
-	priority = 1000
-
-	lawgroup_labor_rights = {
-		law_no_workers_rights = approve
-		law_regulatory_bodies = strongly_disapprove
-		law_worker_protections = strongly_approve
-		law_mym_spartanism = strongly_approve
-	}
-	lawgroup_free_speech = {
-		law_mym_managed_free_speech = strongly_approve
-		law_outlawed_dissent = approve
-		law_censorship = neutral
-		law_right_of_assembly = strongly_disapprove
-		law_protected_speech = strongly_disapprove
-	}
-}
-
-ideology_mym_burgundist_power_structure = {
+﻿ideology_mym_burgundist_power_structure = {
 	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	priority = 1000
 
@@ -104,10 +85,10 @@ ideology_mym_burgundist_economy = {
 		law_graduated_taxation = neutral
 	}
     lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = approve
-		law_slave_trade = disapprove
-		law_legacy_slavery = neutral
+		law_slavery_banned = strongly_disapprove
+		law_debt_slavery = strongly_approve
+		law_slave_trade = neutral
+		law_legacy_slavery = disapprove
 	}
 	lawgroup_colonization = {
 		law_no_colonial_affairs = neutral
@@ -116,7 +97,7 @@ ideology_mym_burgundist_economy = {
 		law_colonial_exploitation = approve
 	}
 	lawgroup_policing = {
-		law_no_police = disapprove
+		law_no_police = strongly_disapprove
 		law_local_police = neutral
 		law_dedicated_police = approve
 		law_militarized_police = approve
@@ -127,19 +108,6 @@ ideology_mym_burgundist_social_structure = {
 icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	priority = 1000
 
-	lawgroup_labor_rights = {
-		law_mym_spartanism = strongly_approve
-		law_no_workers_rights = strongly_disapprove
-		law_regulatory_bodies = strongly_disapprove
-		law_worker_protections = strongly_disapprove
-	}
-		lawgroup_free_speech = {
-		law_protected_speech = strongly_disapprove
-		law_right_of_assembly = strongly_disapprove
-		law_censorship = neutral
-		law_outlawed_dissent = strongly_approve
-		law_mym_managed_free_speech = strongly_approve
-	}
 	lawgroup_migration = {
 		law_no_migration_controls = strongly_disapprove
 		law_migration_controls = disapprove
@@ -173,5 +141,23 @@ icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 		law_religious_schools = strongly_disapprove
 		law_private_schools = disapprove
 		law_public_schools = strongly_disapprove
+	}
+}
+ideology_mym_burgundist_specifics = {
+	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
+	priority = 1000
+
+	lawgroup_labor_rights = {
+		law_no_workers_rights = approve
+		law_regulatory_bodies = strongly_disapprove
+		law_worker_protections = strongly_approve
+		law_mym_spartanism = strongly_approve
+	}
+	lawgroup_free_speech = {
+		law_mym_managed_free_speech = strongly_approve
+		law_outlawed_dissent = approve
+		law_censorship = neutral
+		law_right_of_assembly = strongly_disapprove
+		law_protected_speech = strongly_disapprove
 	}
 }
