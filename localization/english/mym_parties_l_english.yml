@@ -6,3 +6,7 @@
   party_ordensparty_swi: "Ordenspartei Schwyz"
   party_pinot_noir_fra: "National Socialist Party of Pinot Noir"
   party_schutzstaffel_ger: "Schutzstaffel of the Reichsführer-SS"
+
+
+# Party weight descriptions
+  from_burgundism: "Burgundist Ideology"
