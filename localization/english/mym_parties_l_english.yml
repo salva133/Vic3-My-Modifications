@@ -2,10 +2,9 @@
 
 # Burgundist Parties
   party_burgundist: "Burgundist Party"
-  party_order_and_unity_swi: "Order and Unity"
-  party_ordensparty_swi: "Ordenspartei Schwyz"
-  party_pinot_noir_fra: "National Socialist Party of Pinot Noir"
-  party_schutzstaffel_ger: "Schutzstaffel of the Reichsführer-SS"
+  party_ordenspartei_swi: "Ordenspartei Schwyz"
+  party_pnsb_fra: "Parti National-Socialiste Bourguignon"
+  party_schutzstaffel_ger: "Schutzstaffel des Reichsführer-SS"
 
 
 # Party weight descriptions
