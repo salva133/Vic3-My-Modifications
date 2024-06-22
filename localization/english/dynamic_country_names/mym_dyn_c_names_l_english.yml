@@ -1,4 +1,5 @@
 l_english:
+
 # Greece
  dyn_c_mym_greece_super: "Super Greece"
  dyn_c_mym_greece_monarchy: "Hellenic Monarchy"
@@ -18,3 +19,23 @@ l_english:
  dyn_c_mym_greece_council_republic: "Democratic Republic of Greece"
  dyn_c_mym_greece_anarchy: "Hellenic Communes"
  dyn_c_mym_greece_monarchy_anarchy: "Detached Communes of Imperial Greece"
+
+# Switzerland
+ dyn_c_mym_switzerland_super: "Super Switzerland"
+ dyn_c_mym_switzerland_monarchy: "Swiss Monarchy"
+ dyn_c_mym_switzerland_monarchy_technocracy: "Enlightened Swiss Monarchy"
+ dyn_c_mym_switzerland_monarchy_constitutional: "Constitutional Swiss Monarchy"
+ dyn_c_mym_switzerland_presidential_dictatorship: "Nation of Switzerland"
+ dyn_c_mym_switzerland_presidential_technate: "Science Directorate Switzerland"
+ dyn_c_mym_switzerland_presidential_democracy: "Swiss Republic"
+ dyn_c_mym_switzerland_parliamentary_dictatorship: "Lord Protectorate of Switzerland"
+ dyn_c_mym_switzerland_parliamentary_technate: "Science Assembly of Switzerland"
+ dyn_c_mym_switzerland_parliamentary_democracy: "United Cantons of Switzerland"
+ dyn_c_mym_switzerland_theocracy: "Patriarchy of Schwyz"
+ dyn_c_mym_switzerland_theocratic_oligarchy: "Schwyz Priests' Council"
+ dyn_c_mym_switzerland_theocratic_democracy: "Holy People's Assembly of Schwyz"
+ dyn_c_mym_switzerland_council_dictatorship: "People's Republic of Switzerland"
+ dyn_c_mym_switzerland_council_technocracy: "Socialist Scientific Board of Switzerland"
+ dyn_c_mym_switzerland_council_republic: "Democratic Republic of Switzerland"
+ dyn_c_mym_switzerland_anarchy: "Schwyz Communes"
+ dyn_c_mym_switzerland_monarchy_anarchy: "Detached Communes of Imperial Switzerland"
