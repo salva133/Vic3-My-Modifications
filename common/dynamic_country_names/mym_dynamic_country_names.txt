@@ -1,10 +1,10 @@
 ﻿GRE = { # Greece
-	#Super Greece
+	# Super Greece
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_super
 		adjective = GRE_ADJ
 
-		priority = 100
+		priority = 10000
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -21,7 +21,10 @@
 
 		priority = 100
 		trigger = {
-			has_law = law_type:law_monarchy
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+			}
 		}
 	}
 	# Technocratic Monarchy
@@ -247,6 +250,267 @@
 	dynamic_country_name = {
 		name = dyn_c_mym_greece_monarchy_anarchy		# What the actual--?!
 		adjective = GRE_ADJ
+
+		priority = 10000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_anarchy
+			}
+		}
+	}
+}
+
+SWI = { # Switzerland
+	# Super Switzerland
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_super
+		adjective = SWI_ADJ
+
+		priority = 10000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_single_party_state
+				has_law = law_type:law_mym_managed_free_speech
+			}
+		}
+	}
+	# Monarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_monarchy
+		adjective = SWI_ADJ
+
+		priority = 100
+		trigger = {
+			has_law = law_type:law_monarchy
+		}
+	}
+	# Technocratic Monarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_monarchy_technocracy
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	# Constitutional Monarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_monarchy_constitutional
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	# Presidential Dictatorship
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_presidential_dictatorship
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_autocracy
+			}
+		}
+	}
+	# Presidential Technocracy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_presidential_technate
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	# Presidential Democracy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_presidential_democracy
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_presidential_republic
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	# Parliamentary Dictatorship
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_parliamentary_dictatorship
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_parliamentary_republic
+				has_law = law_type:law_autocracy
+			}
+		}
+	}
+	# Parliamentary Technocracy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_parliamentary_technate
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_parliamentary_republic
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	# Parliamentary Democracy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_parliamentary_democracy
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_parliamentary_republic
+				country_has_voting_franchise = yes
+				NOT = {
+					has_law = law_type:law_single_party_state
+				}
+			}
+		}
+	}
+	# Theocratic Dictatorship
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_theocracy
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_theocracy
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	# Theocratic Oligarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_theocratic_oligarchy
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_theocracy
+				has_law = law_type:law_oligarchy
+			}
+		}
+	}
+	# Theocratic Democracy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_theocratic_democracy
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_theocracy
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	# Council Dictatorship
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_council_dictatorship
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				OR = {
+					has_law = law_type:law_autocracy
+					has_law = law_type:law_oligarchy
+				}
+			}
+		}
+	}
+	# Council Technocracy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_council_technocracy
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	# Council Democracy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_council_republic
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				country_has_voting_franchise = yes
+				NOT = {
+					has_law = law_type:law_single_party_state
+				}
+			}
+		}
+	}
+	# Anarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_anarchy
+		adjective = SWI_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_anarchy
+			}
+		}
+	}
+	# Cursed Anarchy
+	dynamic_country_name = {
+		name = dyn_c_mym_switzerland_monarchy_anarchy		# What the actual--?!
+		adjective = SWI_ADJ
 
 		priority = 10000
 		trigger = {
