@@ -20,22 +20,14 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_ordensparty_swi
-				trigger = {
-					exists = c:SWI
-					THIS = c:SWI
-					has_law = law_single_party_state
-				}
-			}
-			triggered_desc = {
-				desc = party_order_and_unity_swi
+				desc = party_ordenspartei_swi
 				trigger = {
 					exists = c:SWI
 					THIS = c:SWI
 				}
 			}
 			triggered_desc = {
-				desc = party_pinot_noir_fra
+				desc = party_pnsb_fra
 				trigger = {
 					exists = c:FRA
 					THIS = c:FRA
