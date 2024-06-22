@@ -30,7 +30,10 @@ gov_mym_burgundian_system = {
 			has_law = law_type:law_single_party_state
 			has_law = law_type:law_technocracy
 		}
-		has_law = law_type:law_mym_managed_free_speech
+		OR = {
+			has_law = law_type:law_mym_managed_free_speech
+			has_law = law_type:law_outlawed_dissent
+		}
 		has_law = law_type:law_mym_spartanism
 		coa_fascist_trigger = yes
 	}
