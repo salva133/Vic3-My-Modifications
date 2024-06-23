@@ -23,58 +23,71 @@
 	}
 
 	on_enable = {
-		ig:ig_mym_burgundists = {
-			if = {
-				limit = {
-					owner = { c:SWE ?= this}
-				}
-				set_ig_trait = ig_trait:ig_trait_xenophobia
-				set_ig_trait = ig_trait:ig_trait_bergsbrukens_valdistrikten
-				set_ig_trait = ig_trait:ig_trait_treasury_bonds
+		if = {
+			limit = {
+				year >= 1905
 			}
-			else_if = {
-				limit = {
-					owner = { c:TUR ?= this }
-				}
-						set_ig_trait = ig_trait:ig_trait_xenophobia
-						set_ig_trait = ig_trait:ig_trait_effendi
-						set_ig_trait = ig_trait:ig_trait_reorganization
-			}
-			else_if = {
-				limit = {
-					owner = { c:EGY ?= this }
-				}
-				set_ig_trait = ig_trait:ig_trait_xenophobia
-				set_ig_trait = ig_trait:ig_trait_effendi
-				set_ig_trait = ig_trait:ig_trait_treasury_bonds
-			}
-			else_if = {
-				limit = {
-					has_dlc_feature = voice_of_the_people_content
-					owner = { c:FRA ?= this }
-				}
-				set_ig_trait = ig_trait:ig_trait_xenophobia
-				set_ig_trait = ig_trait:ig_trait_haute_finance
-				set_ig_trait = ig_trait:ig_trait_master_of_the_house
-			}
-			else_if = {
-				limit = {
-					owner = { c:GBR ?= this }
-				}
-				set_ig_trait = ig_trait:ig_trait_bah_humbug
-				set_ig_trait = ig_trait:ig_trait_civil_service
-				set_ig_trait = ig_trait:ig_trait_old_lady_of_threadneedle_street
-			}
-			else = {
-				set_ig_trait = ig_trait:ig_trait_xenophobia
-				set_ig_trait = ig_trait:ig_trait_middle_managers
-				set_ig_trait = ig_trait:ig_trait_treasury_bonds
-			}
+		# ig:ig_mym_burgundists = {
+		# 	if = {
+		# 		limit = {
+		# 			owner = { c:SWE ?= this}
+		# 		}
+		# 		set_ig_trait = ig_trait:ig_trait_xenophobia
+		# 		set_ig_trait = ig_trait:ig_trait_bergsbrukens_valdistrikten
+		# 		set_ig_trait = ig_trait:ig_trait_treasury_bonds
+		# 	}
+		# 	else_if = {
+		# 		limit = {
+		# 			owner = { c:TUR ?= this }
+		# 		}
+		# 				set_ig_trait = ig_trait:ig_trait_xenophobia
+		# 				set_ig_trait = ig_trait:ig_trait_effendi
+		# 				set_ig_trait = ig_trait:ig_trait_reorganization
+		# 	}
+		# 	else_if = {
+		# 		limit = {
+		# 			owner = { c:EGY ?= this }
+		# 		}
+		# 		set_ig_trait = ig_trait:ig_trait_xenophobia
+		# 		set_ig_trait = ig_trait:ig_trait_effendi
+		# 		set_ig_trait = ig_trait:ig_trait_treasury_bonds
+		# 	}
+		# 	else_if = {
+		# 		limit = {
+		# 			has_dlc_feature = voice_of_the_people_content
+		# 			owner = { c:FRA ?= this }
+		# 		}
+		# 		set_ig_trait = ig_trait:ig_trait_xenophobia
+		# 		set_ig_trait = ig_trait:ig_trait_haute_finance
+		# 		set_ig_trait = ig_trait:ig_trait_master_of_the_house
+		# 	}
+		# 	else_if = {
+		# 		limit = {
+		# 			owner = { c:GBR ?= this }
+		# 		}
+		# 		set_ig_trait = ig_trait:ig_trait_bah_humbug
+		# 		set_ig_trait = ig_trait:ig_trait_civil_service
+		# 		set_ig_trait = ig_trait:ig_trait_old_lady_of_threadneedle_street
+		# 	}
+		# 	else = {
+		# 		set_ig_trait = ig_trait:ig_trait_xenophobia
+		# 		set_ig_trait = ig_trait:ig_trait_middle_managers
+		# 		set_ig_trait = ig_trait:ig_trait_treasury_bonds
+		# 	}
+		# }
 		}
 	}
 
+
 	on_disable = {}
-	on_character_ig_membership = {}
+	on_character_ig_membership = {
+		if = {
+			limit = {
+				is_leader = yes
+			}
+			set_ideology = ideology:ideology_mym_burgundist_leader
+		}
+	}
 	
 	pop_potential = {
 		custom_tooltip = {
@@ -89,10 +102,16 @@
 		NOR = {
 			is_pop_type = aristocrats
 			is_pop_type = capitalists
+			is_pop_type = academics
+			is_pop_type = laborers
 		}
 		OR = {
 			is_pop_type = officers
 			is_pop_type = soldiers
+			is_pop_type = farmers
+			is_pop_type = shopkeepers
+			is_pop_type = clerks
+			is_pop_type = machinists
 			pop_employment_building_group = bg_manufacturing
 			pop_employment_building_group = bg_service
 			pop_employment_building_group = bg_urban_facilities
@@ -118,6 +137,30 @@
 					pop_employment_building_group = bg_plantations
 				}
 				strata = middle
+			}
+		}
+		AND = {
+			OR = {
+				has_ideology = ideology:ideology_mym_burgundist_power_structure
+				has_ideology = ideology:ideology_mym_burgundist_economy
+				has_ideology = ideology:ideology_mym_burgundist_social_structure
+				has_ideology = ideology:ideology_mym_burgundist_specifics
+			}
+			owner = {
+				OR = {
+					has_law = law_type:law_ethnostate
+					has_law = law_type:law_state_atheism
+					has_law = law_type:law_mass_conscription
+					has_law = law_type:law_secret_police
+					has_law = law_type:law_command_economy
+					has_law = law_type:law_isolationism
+					has_law = law_type:law_collectivized_agriculture
+					has_law = law_type:law_debt_slavery
+					has_law = law_type:law_militarized_police
+					has_law = law_type:law_closed_borders
+					has_law = law_type:law_no_womens_rights
+					has_law = law_type:law_no_social_security
+				}
 			}
 		}
 	}
