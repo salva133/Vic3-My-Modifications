@@ -7,7 +7,7 @@ ideology_mym_burgundist_leader = {
 	lawgroup_labor_rights = {
 		law_no_workers_rights = approve
 		law_regulatory_bodies = strongly_disapprove
-		law_worker_protections = strongly_approve
+		law_worker_protections = strongly_disapprove
 		law_mym_spartanism = strongly_approve
 	}
 	lawgroup_free_speech = {
