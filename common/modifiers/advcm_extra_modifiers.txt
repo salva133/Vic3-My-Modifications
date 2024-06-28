@@ -20,7 +20,7 @@ advcm_add_defense = {
 
 advcm_add_kill_rate = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
-	unit_kill_rate_add = 10
+	unit_kill_rate_add = 10.0
 }
 
 advcm_add_recovery_rate = {
