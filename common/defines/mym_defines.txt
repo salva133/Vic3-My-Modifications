@@ -6,3 +6,339 @@
 	DEAD_OBJ_UNDESTROYED_DAYS = 22	# number of days "killed"/removed objects will persist in memory before ultimately destroyed as they are referenced by events etc. Needs to be bigger than MESSAGE_FEED_NUMBER_OF_DAYS_SHOWN in order to not risk notifications regarding dead people etc returning null_objs.
 	MAX_NUMBER_OF_AUTOSAVES = 5 	# The game will only keep the MAX_NUMBER_OF_AUTOSAVES latest autosaves.
 }
+
+NDiplomacy = {
+	DEFAULT_DIPLOMATIC_PLAY = "dp_war_reparations" 
+
+	DEFAULT_TRUCE_MONTHS = 0
+	PEACE_DEAL_DURATION_IN_DAYS = 30
+	PEACE_DEAL_COOLDOWN_IN_DAYS = 120
+	PACT_REQUIRES_APPROVAL_MIN_FORCED_MONTHS = 12 		# Diplomatic pacts that require approval always have at least this cooldown period before they can be broken
+	OBLIGATION_FORCED_PACT_MONTHS = 120
+	SWAY_FORCED_PACT_MONTHS = 120
+	EXPEL_DIPLOMATS_MONTHS = 60
+	OBLIGATION_MONTHS = 120
+	RECENTLY_CONQUERED_DURATION_MONTHS = 120
+	RECENTLY_LIBERATED_DURATION_MONTHS = 120
+	
+	DIPLOMATIC_DEMAND_PENDING_APPROVAL_DAYS = 14  # Number of days before a demand is auto-declined and a diplomatic play starts
+	DIPLOMATIC_DEMAND_TIMEOUT_DAYS = 14  # Number of days before an accepted or rejected demand is deleted
+
+	DIPLOMATIC_ACTION_COOLDOWN_DAYS = 0				# Number of days you must wait between diplomatic actions/proposals
+	DIPLOMATIC_ACTION_PENDING_APPROVAL_DAYS = 30	# Number of days before a pending action is auto-declined
+	
+	DIPLOMATIC_PACT_COST_DEFAULT = 0					# The default maintenance in Influence for a pact
+	DIPLOMATIC_PACT_COST_MULT_FROM_INFAMOUS = 0.25		# Maintenance cost of a pact is increased by this when at Infamous level of infamy
+	DIPLOMATIC_PACT_COST_MULT_FROM_NOTORIOUS = 0.50		# Maintenance cost of a pact is increased by this when at Notorious level of infamy
+	DIPLOMATIC_PACT_COST_MULT_FROM_PARIAH = 1.00		# Maintenance cost of a pact is increased by this when at Pariah level of infamy
+	DIPLOMATIC_PACT_COST_LOBBY_CLOUT_MULT = 0.01		# Each point of clout from pro/anti-country lobbies reduces or increases the influence cost multiplier of maintaining pacts with them by this amount, depending on whether the pact matches their goals
+	DIPLOMATIC_PACT_COST_LOBBY_CLOUT_MAX = 0.5			# Cost multiplier impact of pro/anti-country lobbies cannot be greater than this
+				
+	RIVALRY_BASE_SCALING = 1.0						
+	RIVALRY_SCALING_PER_INTEREST = 0.5	
+	RIVALRY_MAX_SCALING = 2	
+
+	RIVALRY_LOWER_RANK_SCALING_MULT = 0.5
+	RIVALRY_SCALING_LOBBY_CLOUT_MULT = 0.01 			# Each point of clout from pro/anti-country lobbies reduces or increases the influence gain from rivalry by this amount (anti increases, pro decreases)
+	RIVALRY_SCALING_LOBBY_CLOUT_MAX = 0.5 				# Rivalry influence multiplier impact of pro/anti-country lobbies cannot be greater than this
+
+	MIN_RELATIONS = -100
+	MAX_RELATIONS = 100
+	START_RELATIONS = 0
+	RELATIONS_THRESHOLD_FRIENDLY = 80
+	RELATIONS_THRESHOLD_AMICABLE = 50
+	RELATIONS_THRESHOLD_CORDIAL = 20
+	RELATIONS_THRESHOLD_POOR = -20
+	RELATIONS_THRESHOLD_COLD = -50
+	RELATIONS_THRESHOLD_HOSTILE = -80
+	REQUIRED_IMPROVE_RELATIONS_PROGRESS = 100		# How much change relations progress is needed to increase relations by 1 point
+	REQUIRED_DAMAGE_RELATIONS_PROGRESS = -100		# How much change relations progress is needed to decrease relations by 1 point
+
+	INITIAL_LIBERTY_DESIRE = 50             # Liberty Desire value which the Diplomatic Pact gets initialized to.
+	
+	MIN_INFAMY = 0							# Infamy can't be lower than this
+	MAX_INFAMY = 1000						# Infamy can't be higher than this
+	START_INFAMY = 0						# This is the default amount of infamy countries start with
+	INFAMY_THRESHOLD_INFAMOUS = 25			# Above this, countries are considered infamous and get related penalties
+	INFAMY_THRESHOLD_NOTORIOUS = 50			# Above this, countries are considered notorious and get related penalties
+	INFAMY_THRESHOLD_PARIAH = 100			# Above this, countries are considered pariah and get related penalties
+	BASE_YEARLY_INFAMY_DECAY_RATE = 5.0 	# Decay rate of infamy per year
+	
+	# Tension is used instead of relations by colonizable countries
+	MIN_TENSION = 0 
+	MAX_TENSION = 100
+	START_TENSION = 0
+	TENSION_THRESHOLD_UNEASY = 25
+	TENSION_THRESHOLD_TENSE = 50
+	TENSION_THRESHOLD_VOLATILE = 75
+	TENSION_DECAY_RATE = 5 # Per year
+	TENSION_INCREASE_MIN = 2.5 # Tension increases by a min of this when a province is colonized
+	TENSION_INCREASE_MAX = 20.00 # Tension increases by a max of this when a province is colonized
+	TENSION_NUM_PROVINCE_SCALING_BASE = 10 # Below this amount of provinces a decentralized country gets additional tension when their provinces are colonized
+	TENSION_NUM_PROVINCE_SCALING_RATE = 2.0 # Max multiplier increase in tension per province taken from having only a few provinces
+	TENSION_INCREASE_RATE_ADJACENT = 0.5 # Multiplied to tension increase when it is neighboring countries' provinces that are colonized
+	TENSION_UPRISING_CHANCE = 0.02 # Chance of war breaking out instead of the next province being colonized (base when tension is at least TENSION_THRESHOLD_VOLATILE)
+	
+	SWAY_OFFER_TIMEOUT_DAYS = 14
+	SWAY_OFFER_REJECTED_COOLDOWN_DAYS = 7 # Must wait this many days before trying to sway a country that rejected your previous sway
+	SWAY_OFFER_CALL_IN_OBLIGATION_MANEUVERS_COST = 10
+	SWAY_OFFER_OWE_OBLIGATION_MANEUVERS_COST = 10
+	SWAY_OFFER_CALL_ALLY_MANEUVERS_COST = 20
+	SWAY_OFFER_TRANSFER_STATE_MANEUVERS_COST = 10
+	SWAY_OFFER_TRANSFER_SUBJECT_MANEUVERS_COST = 10
+	SWAY_OFFER_BECOME_SUBJECT_MANEUVERS_COST = 5
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_WAR_REPARATIONS = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_JOIN_POWER_BLOC = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_LEAVE_POWER_BLOC = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_COLONIZATION_RIGHTS = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_FORCE_NATIONALIZATION = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_FOREIGN_INVESTMENT_RIGHTS = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_HUMILIATION = 20
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_UNIFICATION_LEADERSHIP = 30
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_OPEN_MARKET = 20
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_REGIME_CHANGE = 8
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_BAN_SLAVERY = 20
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_ANNEX_COUNTRY = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_LIBERATE_COUNTRY = 30
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_MAKE_PROTECTORATE = 8	
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_REDUCE_AUTONOMY = 5
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_INCREASE_AUTONOMY = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_MAKE_TRIBUTARY = 8
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_CONQUER_STATE = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_RETURN_STATE = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_TAKE_TREATY_PORT = 10
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_REVOKE_CLAIM = 5
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_REVOKE_ALL_CLAIMS = 0 # Can't be added, only for special plays
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_CONTAIN_THREAT = 30	
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_TRANSFER_SUBJECT = 8
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_LIBERATE_SUBJECT = 20
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_UNIFICATION = 100
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_INDEPENDENCE = 20
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_SECESSION = 100
+    SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_FACTOR = 10000 # The amount of population by which the factor below is multiplied
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_MULTIPLIER = 0.03 # For each SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_FACTOR population in a country/state, multiply maneuvers cost by this
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE = 2.5 # Maneuvers population multiplier can't be higher than this for each state affected
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_POPULATION_SCALING_MULTIPLIER_MAX_TOTAL = 5 # Maneuvers population multiplier can't be higher than this, regardless of number of states affected
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_HOMELAND_FACTOR = -0.25 # Maneuvers cost is adjusted by this if the states taken/puppeted etc are Homelands of the aggressor
+	SWAY_OFFER_WARGOAL_MANEUVERS_COST_UNINCORPORATED_FACTOR = -0.5 # Maneuvers cost is adjusted by this if the states taken/puppeted etc are unincorporated
+	
+	MAKE_WARGOAL_PRIMARY_DEMAND_MANEUVERS_COST = 0.5 	# Fraction of the wargoal's base maneuver cost that it costs to turn it into a primary demand
+	MAKE_WARGOAL_PRIMARY_DEMAND_INFAMY_AMOUNT = 0.5 	# Fraction of the wargoal's base infamy that is accured when you turn it into a primary demand
+
+	ALLY_WARGOAL_MAX_MANEUVERS_COST = 25				# When an ally adds a 'free' wargoal in a play, it cannot have a maneuvers cost higher than this
+	
+	DEFENSIVE_PACT_ACTION_NAME = "defensive_pact"
+	ALLIANCE_PACT_ACTION_NAME = "alliance"
+	INCREASE_AUTONOMY_OF_SELF_NAME = "da_increase_autonomy_of_self"
+	INCREASE_AUTONOMY_OF_SUBJECT_ACTION_NAME = "da_increase_autonomy_of_subject"
+	DECREASE_AUTONOMY_OF_SUBJECT_ACTION_NAME = "da_decrease_autonomy"
+
+	WAR_GOAL_REPARATIONS_PACT_TYPE = "war_reparations"
+	WAR_GOAL_REPARATIONS_MONTHS = 60	# [>= 0]
+	WAR_GOAL_COLONIZATION_RIGHTS_PACT_TYPE = "colonization_rights"
+	WAR_GOAL_COLONIZATION_RIGHTS_MONTHS = 60	# [>= 0]
+	WAR_GOAL_FOREIGN_INVESTMENT_PACT_TYPE = "foreign_investment_rights"
+	WAR_GOAL_FOREIGN_INVESTMENT_RIGHTS_MONTHS = 60 # [>= 0]
+	WAR_GOAL_OPEN_MARKET_MONTHS = 60	# [>= 0]
+	WAR_GOAL_BAN_SLAVERY_MONTHS = 60	# [>= 0]
+	WAR_GOAL_HUMILIATION_PACT_TYPE = "humiliation"
+	WAR_GOAL_HUMILIATION_MONTHS = 60	# [>= 0]
+	WAR_GOAL_CONTAIN_THREAT_MONTHS = 60	# [>= 0]
+	WAR_GOAL_MAKE_PROTECTORATE_SUBJECT_TYPE = "subject_type_protectorate"
+	WAR_GOAL_MAKE_TRIBUTARY_SUBJECT_TYPE = "subject_type_tributary"	
+	WAR_GOAL_TREATY_PORT_BUILDING_LEVEL = 1
+	WAR_GOAL_LIBERATE_COUNTRY_LIBERATOR_START_RELATIONS = 50
+	WAR_GOAL_LIBERATE_COUNTRY_OPPRESSOR_START_RELATIONS = -50
+	WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST = 10
+	WAR_GOAL_REGIME_CHANGE_MONTHS = 60 # Government in country with forced regime change is locked in for this number of months [>= 0]
+	WAR_GOAL_REGIME_CHANGE_MAX_IDEOLOGICAL_OPINION = -5 # If ideological opinion is above this, regime change can't be used
+	WAR_GOAL_REGIME_CHANGE_MIN_LAW_PROGRESSIVENESS_DIFFERENCE = 50 # If the difference between the target wargoal holder's laws in a law group are not at least this, don't change it as part of regime change
+	WAR_GOAL_REGIME_CHANGE_NUM_TIMES_TO_LOOP_THROUGH_LAWS = 3	# How many times do we loop through the laws to check what to change? This is done more than once in order to allow laws that are unlocked by other laws to be changed
+	WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE = 75 # A subject must have at least this much LD to use the increase autonomy wargoal
+	WAR_GOAL_INDEPENDENCE_MIN_LIBERTY_DESIRE = 90 # A subject must have at least this much LD to use the independence wargoal
+	
+	WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR = 10000 # The amount of population by which the factor below is multiplied
+	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER = 0.03 # For each WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR population in a country/state, multiply infamy by this
+	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE = 5 # Infamy population multiplier can't be higher than this for each state affected
+	WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_TOTAL = 50 # Infamy population multiplier can't be higher than this, regardless of number of states affected
+	WAR_GOAL_INFAMY_HOMELAND_FACTOR = -0.25 # Infamy is adjusted by this if the states taken/puppeted etc are Homelands of the aggressor
+	WAR_GOAL_INFAMY_UNINCORPORATED_FACTOR = -0.5 # Infamy is adjusted by this if the states taken/puppeted etc are unincorporated
+	WAR_GOAL_INFAMY_OWN_SUBJECT_MULT = 0.25 # Infamy is multiplied by this for wargoals targeting your own subject
+	WAR_GOAL_INFAMY_RELATIONS_TARGET_IMPACT = -1 # Each point of infamy generated by an incident also has this impact on relations with the target
+	WAR_GOAL_INFAMY_RELATIONS_INTEREST_IMPACT = -0.5 # Each point of infamy generated by an incident also has this impact on relations with countries that have an interest in the target 
+	
+	WAR_GOAL_INFAMY_CONQUER_STATE = 5.0
+	WAR_GOAL_INFAMY_RETURN_STATE = 2.0
+	WAR_GOAL_INFAMY_TAKE_TREATY_PORT = 2.0
+	WAR_GOAL_INFAMY_MAKE_PROTECTORATE = 2.0
+	WAR_GOAL_INFAMY_MAKE_TRIBUTARY = 2.0
+	WAR_GOAL_INFAMY_REDUCE_AUTONOMY = 2.0
+	WAR_GOAL_INFAMY_TRANSFER_SUBJECT = 2.0	
+	WAR_GOAL_INFAMY_ANNEX_COUNTRY = 5.0
+	WAR_GOAL_INFAMY_REGIME_CHANGE = 0.5
+	WAR_GOAL_INFAMY_FORCE_NATIONALIZATION = 0.5
+	WAR_GOAL_INFAMY_FOREIGN_INVESTMENT_RIGHTS = 0.25
+	
+	WAR_GOAL_INFAMY_DIPLO_PLAY_BACK_DOWN_REFUND = -0.75 # Refund of infamy for war goals that are dropped due to one side backing down in a diplo play (applied to initiator/target)
+	WAR_GOAL_INFAMY_DIPLO_PLAY_BACKER_REFUND = -1.00 	# Refund of infamy for war goals that are dropped for backers in a diplo play (due to play not escalating to war or backer switching sides)
+	WAR_GOAL_INFAMY_PEACE_REFUND = -0.5 				# Refund of infamy for war goals that are dropped due to a country capitulating or negotating peace without enforcing their wargoal
+	WAR_GOAL_INFAMY_REDUCTION_FOR_TARGET = -0.5 		# This much of a war goal's infamy value is removed from the target when target has it enforced on them
+	
+	# Higher priority wargoals are executed first
+	WAR_GOAL_EXECUTION_PRIORITY_WAR_REPARATIONS = 1
+	WAR_GOAL_EXECUTION_PRIORITY_COLONIZATION_RIGHTS = 2
+	WAR_GOAL_EXECUTION_PRIORITY_FOREIGN_INVESTMENT_RIGHTS = 3
+	WAR_GOAL_EXECUTION_PRIORITY_FORCE_NATIONALIZATION = 4
+	WAR_GOAL_EXECUTION_PRIORITY_HUMILIATION = 5
+	WAR_GOAL_EXECUTION_PRIORITY_OPEN_MARKET = 6
+	WAR_GOAL_EXECUTION_PRIORITY_REGIME_CHANGE = 7
+	WAR_GOAL_EXECUTION_PRIORITY_BAN_SLAVERY = 8
+	WAR_GOAL_EXECUTION_PRIORITY_UNIFICATION_LEADERSHIP = 9
+	WAR_GOAL_EXECUTION_PRIORITY_ANNEX_COUNTRY = 10
+	WAR_GOAL_EXECUTION_PRIORITY_LIBERATE_COUNTRY = 11
+	WAR_GOAL_EXECUTION_PRIORITY_JOIN_POWER_BLOC = 12
+	WAR_GOAL_EXECUTION_PRIORITY_MAKE_PROTECTORATE = 13
+	WAR_GOAL_EXECUTION_PRIORITY_MAKE_TRIBUTARY = 14
+	WAR_GOAL_EXECUTION_PRIORITY_REDUCE_AUTONOMY = 15
+	WAR_GOAL_EXECUTION_PRIORITY_INCREASE_AUTONOMY = 16
+	WAR_GOAL_EXECUTION_PRIORITY_CONQUER_STATE = 21
+	WAR_GOAL_EXECUTION_PRIORITY_RETURN_STATE = 22
+	WAR_GOAL_EXECUTION_PRIORITY_TAKE_TREATY_PORT = 23	
+	WAR_GOAL_EXECUTION_PRIORITY_REVOKE_ALL_CLAIMS = 30
+	WAR_GOAL_EXECUTION_PRIORITY_REVOKE_CLAIM = 31
+	WAR_GOAL_EXECUTION_PRIORITY_CONTAIN_THREAT = 40	
+	WAR_GOAL_EXECUTION_PRIORITY_TRANSFER_SUBJECT = 50
+	WAR_GOAL_EXECUTION_PRIORITY_LIBERATE_SUBJECT = 51	
+	WAR_GOAL_EXECUTION_PRIORITY_LEAVE_POWER_BLOC = 100
+	WAR_GOAL_EXECUTION_PRIORITY_INDEPENDENCE = 100
+	WAR_GOAL_EXECUTION_PRIORITY_SECESSION = 100
+	WAR_GOAL_EXECUTION_PRIORITY_UNIFICATION = 200
+	
+	DIPLOMATIC_PLAY_ABANDON_SUPPORT_RELATIONS_IMPACT = 50
+	DIPLOMATIC_PLAY_ESCALATION_DAILY = 1
+	DIPLOMATIC_PLAY_ESCALATION_PAUSE_FROM_ACTION = 5 # Number of days that escalation pauses when either side takes an action
+	DIPLOMATIC_PLAY_ESCALATION_PAUSE_MAX = 20 # Escalation pause can't be longer than this no matter how many actions are taken at once
+	DIPLOMATIC_PLAY_OPENING_PHASE_END = 21	# Before this, defender needs to set their wargoal and you can't join/sway
+	DIPLOMATIC_PLAY_CLOSING_PHASE_START = 80 # After this, it isn't possible to join/sway further countries
+	DIPLOMATIC_PLAY_ESCALATION_WAR_BREAKOUT = 100
+	
+	COLONY_PROVINCE_BASE_SCORE = 10
+	COLONY_PROVINCE_COASTAL_SCORE = 30 # Replaces COLONY_BASE_SCORE for provinces with a coastline
+	COLONY_PROVINCE_ADJACENCY_SCORE = 20 # How much will colonies prioritize adjacency to existing provinces when growing the colony
+	COLONY_PROVINCE_NO_ADJACENCY_MULT = 0.1 # Multiply by this if no adjacencies at all
+	COLONY_PROVINCE_RANDOM_FACTOR = 1.5 # The higher this is, the more random colonization province picking will be
+	
+	BASE_WAR_SUPPORT = 100
+	MAX_WAR_SUPPORT = 100
+	MIN_WAR_SUPPORT = -100
+	
+	# Definitions for all the diplomatic catalysts that are called from code instead of script
+	# If these are changed, they also need to be changed in the database and vice versa
+	DIPLOMATIC_CATALYST_TYPE_HISTORICAL_RELATIONS = "catalyst_historical_relationship"
+	DIPLOMATIC_CATALYST_TYPE_BECAME_RELEVANT = "catalyst_became_relevant"
+	DIPLOMATIC_CATALYST_TYPE_BECAME_IRRELEVANT = "catalyst_became_irrelevant"
+	DIPLOMATIC_CATALYST_TYPE_RELATIONS_INCREASED = "catalyst_relations_level_increased"
+	DIPLOMATIC_CATALYST_TYPE_RELATIONS_DECREASED = "catalyst_relations_level_decreased"
+	DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_DEMAND = "catalyst_diplomatic_demand"
+	DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_DEMAND_TARGET = "catalyst_diplomatic_demand_target"
+	DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_PLAY = "catalyst_diplomatic_play"
+	DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_PLAY_TARGET = "catalyst_diplomatic_play_target"
+	DIPLOMATIC_CATALYST_TYPE_AUTONOMY_INCREASED = "catalyst_autonomy_level_increased"
+	DIPLOMATIC_CATALYST_TYPE_AUTONOMY_DECREASED = "catalyst_autonomy_level_decreased"
+	DIPLOMATIC_CATALYST_TYPE_GAINED_INDEPENDENCE = "catalyst_gained_independence"
+	DIPLOMATIC_CATALYST_TYPE_BECAME_SUBJECT = "catalyst_became_subject"
+	DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_INCIDENT = "catalyst_diplomatic_incident"
+	DIPLOMATIC_CATALYST_TYPE_PACT_FORMED = "catalyst_pact_formed"
+	DIPLOMATIC_CATALYST_TYPE_PACT_BROKEN = "catalyst_pact_broken"
+	DIPLOMATIC_CATALYST_TYPE_ALLIANCE_FORMED = "catalyst_alliance_formed"
+	DIPLOMATIC_CATALYST_TYPE_ALLIANCE_BROKEN = "catalyst_alliance_broken"
+	DIPLOMATIC_CATALYST_TYPE_ALLIANCE_FORMED_WITH_RIVAL = "catalyst_alliance_with_rival"
+	DIPLOMATIC_CATALYST_TYPE_RIVAL_OF_RIVAL = "catalyst_rival_of_rival"
+	DIPLOMATIC_CATALYST_TYPE_INCREASED_RELATIONS_WITH_RIVAL = "catalyst_increased_relations_with_rival"
+	DIPLOMATIC_CATALYST_TYPE_DECREASED_RELATIONS_WITH_RIVAL = "catalyst_decreased_relations_with_rival"
+	DIPLOMATIC_CATALYST_TYPE_OPPOSED_IN_PLAY = "catalyst_opposed_in_play"
+	DIPLOMATIC_CATALYST_TYPE_ALLIES_IN_PLAY = "catalyst_allies_in_play"
+	DIPLOMATIC_CATALYST_TYPE_WARGOAL_ENFORCED = "catalyst_wargoal_enforced"
+	DIPLOMATIC_CATALYST_TYPE_STATE_CONQUERED = "catalyst_state_conquered"
+	DIPLOMATIC_CATALYST_TYPE_DIPLOMATIC_STRATEGY_CHANGED = "catalyst_diplomatic_strategy_changed"
+	DIPLOMATIC_CATALYST_TYPE_DECLARED_BANKRUPTCY = "catalyst_declared_bankruptcy"
+	DIPLOMATIC_CATALYST_TYPE_IDEOLOGICAL_DRIFT = "catalyst_ideological_drift"
+	DIPLOMATIC_CATALYST_TYPE_IDEOLOGICAL_ALIGNMENT = "catalyst_ideological_alignment"
+	DIPLOMATIC_CATALYST_TYPE_JOINED_SAME_BLOC = "catalyst_joined_same_bloc"
+	DIPLOMATIC_CATALYST_TYPE_JOINED_DIFFERENT_BLOC = "catalyst_joined_different_bloc"
+	DIPLOMATIC_CATALYST_TYPE_KICKED_OUT_OF_BLOC = "catalyst_kicked_out_of_bloc"
+	DIPLOMATIC_CATALYST_TYPE_JOURNAL_ENTRY = "catalyst_journal_entry"
+	DIPLOMATIC_CATALYST_TYPE_UNIFICATION_SUPPORT_ADDED = "catalyst_unification_support_added"
+	DIPLOMATIC_CATALYST_TYPE_UNIFICATION_SUPPORT_REMOVED = "catalyst_unification_support_removed"
+	DIPLOMATIC_CATALYST_TYPE_FRIENDLY_LOBBY_IN_GOVERNMENT = "catalyst_friendly_lobby_in_government"
+    DIPLOMATIC_CATALYST_TYPE_HOSTILE_LOBBY_IN_GOVERNMENT = "catalyst_hostile_lobby_in_government"
+	DIPLOMATIC_CATALYST_TYPE_NATIONALIZED_BUILDING = "catalyst_nationalized_building"
+	DIPLOMATIC_CATALYST_TYPE_OVERTAKEN_IN_PRESTIGE_RANK = "catalyst_overtaken_in_prestige_rank"
+	DIPLOMATIC_CATALYST_TYPE_REVOLUTION_SUCCESSFUL = "catalyst_revolution_successful"
+	DIPLOMATIC_CATALYST_TYPE_BECAME_RECOGNIZED = "catalyst_became_recognized"
+	
+	# If country's prestige/rank score position isn't at least this, don't apply any 'overtaken in rank' catalysts to it
+	DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE = 10
+	
+	# Ideological score change between previous and new government must be at least this high to create an ideological drift catalyst
+	DIPLOMATIC_CATALYST_MIN_CHANGE_FOR_IDEOLOGICAL_DRIFT = -10	
+	
+	# Ideological score change between previous and new government must be at least this high to create an ideological alignment catalyst
+	DIPLOMATIC_CATALYST_MIN_CHANGE_FOR_IDEOLOGICAL_ALIGNMENT = 10
+	
+	TOP_PRESTIGE_RANK_BONUS_THRESHOLD = 10  # Prestige rank threshold at which the prestige_ranking_top static modifier starts being applied
+	TOP_PRESTIGE_RANK_BONUS_SCALE = 1.0 # At prestige rank 1, the prestige_ranking_top modifier is applied with ( 1 + this multiplier ), scaling down to 1x at threshold
+	
+	COUNTRY_TIER_CITY_STATE_PRESTIGE = 0
+	COUNTRY_TIER_PRINCIPALITY_PRESTIGE = 5
+	COUNTRY_TIER_GRAND_PRINCIPALITY_PRESTIGE = 10
+	COUNTRY_TIER_KINGDOM_PRESTIGE = 15
+	COUNTRY_TIER_EMPIRE_PRESTIGE = 25
+	COUNTRY_TIER_HEGEMONY_PRESTIGE = 50
+	
+	PRESTIGE_FROM_COUNTRY_GDP_DIVISOR = 1000000
+	PRESTIGE_FROM_COUNTRY_GDP = 3 # Per PRESTIGE_FROM_COUNTRY_GDP_DIVISOR GDP
+	PRESTIGE_FROM_SUBJECT_GDP = 1.5 # Per PRESTIGE_FROM_COUNTRY_GDP_DIVISOR GDP in subjects
+	PRESTIGE_FROM_ARMY_POWER_PROJECTION = 0.03 # Per point of power projection from army combat power
+	PRESTIGE_FROM_NAVY_POWER_PROJECTION = 0.10 # Per point of power projection from navy combat power
+	PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION = 0.0005 # Per point of power projection from army combat power in subjects
+	PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION = 0.01 # Per point of power projection from navy combat power in subjects
+	PRESTIGE_MIN_NUM_COUNTRIES = 100 # If there's less countries using prestige than this in the game, we add some filler countries to adjust average prestige levels
+	FILLER_COUNTRY_PRESTIGE = 15
+	
+	DAYS_TO_LOSE_POWER_RANK = 365
+	POWER_RANK_LOSS_THRESHOLD = 0.9
+	
+	ARMY_POWER_PROJECTION_MODIFIER_MAX_SCALING = 1000 # Above this amount of army power projection, the country_army_power_projection static modifier provides no further benefit
+	NAVY_POWER_PROJECTION_MODIFIER_MAX_SCALING = 1000 # Above this amount of army power projection, the country_navy_power_projection static modifier provides no further benefit
+	
+	DEFAULT_STATES_REQUIRED_TO_RELEASE_COUNTRY = 0 # Applied if nothing is specified in country_creation
+	DEFAULT_STATES_REQUIRED_TO_FORM_COUNTRY = 0.75 # Applied if nothing is specified in country_formation
+	RELEASE_COUNTRY_AS_SUBJECT_RELATIONS_BOOST = 30
+	RELEASE_COUNTRY_AS_INDEPENDENT_RELATIONS_BOOST = 50
+
+	INTEREST_NUM_DAYS_CHANGE = 30
+	
+	RELATION_PENALTY_OVERLORD_KICK_BACKER_SUBJECT = -30		# When an overlord joins a diplomatic play they will force any subjects of theirs to become neutral if they are supporting the other side, this is a penalty to relations between the subject and overlord when that happens
+
+	ECONOMIC_DEPENDENCE_MIN = 0
+	ECONOMIC_DEPENDENCE_MAX = 5
+	ECONOMIC_DEPENDENCE_GDP_RATIO_BY_OTHER_FACTOR = 5				# Ex. if you own 15% of the other country's GDP, that works out to +0.75
+	ECONOMIC_DEPENDENCE_GDP_RATIO_BY_OTHER_MIN = 0
+	ECONOMIC_DEPENDENCE_GDP_RATIO_BY_OTHER_MAX = 5
+	ECONOMIC_DEPENDENCE_OTHER_GDP_RATIO_OWNED_FACTOR = 1
+	ECONOMIC_DEPENDENCE_OTHER_GDP_RATIO_OWNED_MIN = 0
+	ECONOMIC_DEPENDENCE_OTHER_GDP_RATIO_OWNED_MAX = 1
+	ECONOMIC_DEPENDENCE_GDP_PERCENTAGE_FACTOR = 1
+	ECONOMIC_DEPENDENCE_GDP_PERCENTAGE_MIN = 0
+	ECONOMIC_DEPENDENCE_GDP_PERCENTAGE_MAX = 1
+	ECONOMIC_DEPENDENCE_POP_GOODS_DEPENDENCE_ON_OTHER_FACTOR = 3	# The total % of the £ value goods supplied by the other country compared to its GDP is multiplied by this (i.e. every multiple of 25% yields +0.75 ED)
+	ECONOMIC_DEPENDENCE_POP_GOODS_DEPENDENCE_ON_OTHER_MIN = 0		# At best, a country's pop goods dependence on another can reach 0
+	ECONOMIC_DEPENDENCE_POP_GOODS_DEPENDENCE_ON_OTHER_MAX = 2		# At worst, a country's pop goods dependence on another can reach +2
+	ECONOMIC_DEPENDENCE_OTHER_POP_GOODS_DEPENDENCE_FACTOR = 3		# The total % of the £ value goods supplied by another country by this compared to their GDP is multiplied by this
+	ECONOMIC_DEPENDENCE_OTHER_POP_GOODS_DEPENDENCE_MIN = -2			# At best, another country's pop goods dependence on this can yield -2 ED
+	ECONOMIC_DEPENDENCE_OTHER_POP_GOODS_DEPENDENCE_MAX = 0			# At worst, another country's pop goods dependence on this can yield 0 ED
+	ECONOMIC_DEPENDENCE_TRADE_ROUTE_DEPENDENCE_FACTOR = 1
+	ECONOMIC_DEPENDENCE_TRADE_ROUTE_DEPENDENCE_MIN = 0
+	ECONOMIC_DEPENDENCE_TRADE_ROUTE_DEPENDENCE_MAX = 1
+}
