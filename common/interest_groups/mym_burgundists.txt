@@ -22,62 +22,7 @@
 		ig_trait_materiel_waste
 	}
 
-	on_enable = {
-		if = {
-			limit = {
-				year >= 1905
-			}
-		# ig:ig_mym_burgundists = {
-		# 	if = {
-		# 		limit = {
-		# 			owner = { c:SWE ?= this}
-		# 		}
-		# 		set_ig_trait = ig_trait:ig_trait_xenophobia
-		# 		set_ig_trait = ig_trait:ig_trait_bergsbrukens_valdistrikten
-		# 		set_ig_trait = ig_trait:ig_trait_treasury_bonds
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			owner = { c:TUR ?= this }
-		# 		}
-		# 				set_ig_trait = ig_trait:ig_trait_xenophobia
-		# 				set_ig_trait = ig_trait:ig_trait_effendi
-		# 				set_ig_trait = ig_trait:ig_trait_reorganization
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			owner = { c:EGY ?= this }
-		# 		}
-		# 		set_ig_trait = ig_trait:ig_trait_xenophobia
-		# 		set_ig_trait = ig_trait:ig_trait_effendi
-		# 		set_ig_trait = ig_trait:ig_trait_treasury_bonds
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			has_dlc_feature = voice_of_the_people_content
-		# 			owner = { c:FRA ?= this }
-		# 		}
-		# 		set_ig_trait = ig_trait:ig_trait_xenophobia
-		# 		set_ig_trait = ig_trait:ig_trait_haute_finance
-		# 		set_ig_trait = ig_trait:ig_trait_master_of_the_house
-		# 	}
-		# 	else_if = {
-		# 		limit = {
-		# 			owner = { c:GBR ?= this }
-		# 		}
-		# 		set_ig_trait = ig_trait:ig_trait_bah_humbug
-		# 		set_ig_trait = ig_trait:ig_trait_civil_service
-		# 		set_ig_trait = ig_trait:ig_trait_old_lady_of_threadneedle_street
-		# 	}
-		# 	else = {
-		# 		set_ig_trait = ig_trait:ig_trait_xenophobia
-		# 		set_ig_trait = ig_trait:ig_trait_middle_managers
-		# 		set_ig_trait = ig_trait:ig_trait_treasury_bonds
-		# 	}
-		# }
-		}
-	}
-
+	on_enable = {}
 
 	on_disable = {}
 	on_character_ig_membership = {
