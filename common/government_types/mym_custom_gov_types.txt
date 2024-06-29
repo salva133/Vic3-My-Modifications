@@ -17,6 +17,3 @@
 		post_change_to_presidential_elective = yes
 	}
 }
-
-
-
