@@ -3,7 +3,7 @@
 	last_name = Himmler
 	historical = yes
 	culture = cu:south_german
-	religion = catholic
+	religion = rel:catholic
 	interest_group = ig_mym_burgundists
 	ig_leader = yes 
 	female = no
