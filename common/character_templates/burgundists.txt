@@ -1,4 +1,4 @@
-﻿himmler_character_template = {
+﻿gebhard_himmler_character_template = {
 	first_name = Gebhard
 	last_name = Himmler
 	historical = yes
@@ -8,7 +8,6 @@
 	ig_leader = yes 
 	female = no
 	birth_date = 1865.5.17
-	dna = dna_sigmund_freud
 	ideology = ideology_mym_burgundist_leader
 	traits = {
 		cruel
@@ -19,7 +18,26 @@
 	}
 }
 
-sebottendorf_character_template = {
+heinrich_himmler_character_template = {
+	first_name = Heinrich
+	last_name = Himmler
+	historical = yes
+	culture = cu:south_german
+	religion = rel:catholic
+	interest_group = ig_mym_burgundists
+	ig_leader = yes 
+	female = no
+	birth_date = 1900.10.7
+	ideology = ideology_mym_burgundist_leader
+	traits = {
+		cruel
+		arrogant
+		bigoted
+		psychological_affliction
+		war_criminal
+	}
+}
+
 glauer_character_template = {
 	first_name = Adam 
 	last_name = Glauer
