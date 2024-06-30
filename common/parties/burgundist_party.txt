@@ -34,6 +34,13 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
+				desc = party_savez_yug
+				trigger = {
+					exists = c:YUG
+					THIS = c:YUG
+				}
+			}
+			triggered_desc = {
 				desc = party_burgundist
 				trigger = {
 					always = yes
