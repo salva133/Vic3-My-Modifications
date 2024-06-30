@@ -288,7 +288,7 @@
 
 	agitator_weight = {
 		# Agitators more likely to come from populist IG's rather than elitist
-		value = 1.0
+		value = 0.5
 		# Agitators will never be part of a marginalized IG
 		if = {
 			limit = {
@@ -301,13 +301,13 @@
 			}
 		}
 	}
-	
+
 	commander_weight = {
-		value = 2.5
-	}	
-	
+		value = 5.0
+	}
+
 	noble_chance = {
-		value = 0.3
+		value = 0.1
 	}
 
 	female_commander_chance = {
@@ -319,7 +319,7 @@
 	}
 
 	female_agitator_chance = {
-		value = 0
+		value = 0.01
 		
 		if = {
 			limit = {
@@ -361,7 +361,7 @@
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {
-		value = 0.25
+		value = 0.75
 		if = {
 			limit = {
 				exists = scope:character
