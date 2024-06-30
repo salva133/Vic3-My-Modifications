@@ -20,6 +20,7 @@
 }
 
 sebottendorf_character_template = {
+glauer_character_template = {
 	first_name = Adam 
 	last_name = Glauer
 	historical = yes

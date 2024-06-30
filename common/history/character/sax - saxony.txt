@@ -2,6 +2,10 @@
 	c:SAX ?= {
 
 		create_character = {
+			template = glauer_character_template
+		}
+	
+		create_character = {
 			# Anthony of Saxony, the Kingony of Middle Germany
 			first_name = "Anton"
 			last_name = "von_Wettin"
