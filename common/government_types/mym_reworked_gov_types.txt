@@ -29,6 +29,7 @@ gov_military_dictatorship = {
 		has_law = law_type:law_mass_conscription
 	}
 }
+
 gov_mym_police_state = {
 	transfer_of_power = dictatorial
 
