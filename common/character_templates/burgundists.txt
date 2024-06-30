@@ -18,3 +18,23 @@
 		war_criminal
 	}
 }
+
+sebottendorf_character_template = {
+	first_name = Adam 
+	last_name = Glauer
+	historical = yes
+	culture = cu:north_german
+	religion = rel:protestant
+	interest_group = ig_mym_burgundists
+	ig_leader = yes 
+	female = no
+	birth_date = 1875.11.9
+	ideology = ideology_mym_burgundist_leader
+	traits = {
+		charismatic
+		innovative
+		ambitious
+		alcoholic
+		psychological_affliction
+	}
+}
