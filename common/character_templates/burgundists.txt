@@ -11,5 +11,10 @@
 	dna = dna_sigmund_freud
 	ideology = ideology_mym_burgundist_leader
 	traits = {
+		cruel
+		arrogant
+		bigoted
+		psychological_affliction
+		war_criminal
 	}
 }
