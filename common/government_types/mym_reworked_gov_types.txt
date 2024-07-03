@@ -7,12 +7,8 @@ gov_mym_monarchy_anarchy = {
 		has_law = law_type:law_monarchy
 		has_law = law_type:law_anarchy
 	}
-	on_government_type_change = {
-		change_to_parliamentary_elective = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_parliamentary_elective = yes
-	}
+	on_government_type_change = { change_to_parliamentary_elective = yes }
+	on_post_government_type_change = { post_change_to_parliamentary_elective = yes }
 }
 
 # Splitting Military Dictatorship in two
@@ -28,6 +24,8 @@ gov_military_dictatorship = {
 		has_law = law_type:law_autocracy
 		has_law = law_type:law_mass_conscription
 	}
+	on_government_type_change = { change_to_dictatorial = yes }
+	on_post_government_type_change = { post_change_to_dictatorial = yes }
 }
 
 gov_mym_police_state = {
@@ -45,4 +43,6 @@ gov_mym_police_state = {
 		}
 		has_law = law_type:law_secret_police
 	}
+	on_government_type_change = { change_to_dictatorial = yes }
+	on_post_government_type_change = { post_change_to_dictatorial = yes }
 }

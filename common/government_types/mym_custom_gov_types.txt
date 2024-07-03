@@ -9,11 +9,6 @@
 		has_law = law_type:law_single_party_state
 		has_law = law_type:law_mym_managed_free_speech
 	}
-
-	on_government_type_change = {
-		change_to_presidential_elective = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_presidential_elective = yes
-	}
+	on_government_type_change = { change_to_presidential_elective = yes }
+	on_post_government_type_change = { post_change_to_presidential_elective = yes }
 }
