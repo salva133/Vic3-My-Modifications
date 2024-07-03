@@ -154,7 +154,7 @@
 
 		manual_break_effect = {
 			change_relations = { country = scope:target_country value = -30 }
-			# create_bidirectional_truce = { country = scope:target_country months = 12 }
+			create_bidirectional_truce = { country = scope:target_country months = 12 }
 			add_lobby_appeasement_from_diplomacy_bidirectional = { 
 				FIRST = root
 				SECOND = scope:target_country 
@@ -165,7 +165,7 @@
 		}
 		
 		auto_break_effect = {
-			# create_bidirectional_truce = { country = scope:target_country months = 12 }	
+			create_bidirectional_truce = { country = scope:target_country months = 12 }	
 			if = {
 				limit = { 
 					NOR = { 
