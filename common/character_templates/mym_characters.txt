@@ -1,14 +1,14 @@
-andolini_character_template = {
+vito_andolini_character_template = {
 	first_name = "vito_andolini_first_name"
 	last_name = "vito_andolini_last_name"
 	historical = no
 	culture = cu:south_italian
 	religion = rel:catholic
-	# interest_group = 
+	interest_group = ig_industrialists
 	is_agitator = yes
 	female = no
-	birth_date = 1887.4.29
-	# ideology = ideology_brg_burgundist_leader
+	birth_date = 1891.12.7
+	ideology = ideology_market_liberal
 	traits = {
 		charismatic
 		ambitious
