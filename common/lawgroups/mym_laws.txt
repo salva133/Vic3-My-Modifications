@@ -1,0 +1,9 @@
+lawgroup_religious_discrimination = {
+    law_group_category = power_structure
+    base_enactment_days = 180
+    enactment_approval_mult = 1
+    affected_by_regime_change = yes
+    
+    progressive_movement_chance = 1
+    regressive_movement_chance = 1
+}
