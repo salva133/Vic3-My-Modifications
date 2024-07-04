@@ -1,6 +1,5 @@
 l_english:
-
-# Greece
+  # Greece
   dyn_c_mym_greece_super: "Super Greece"
   dyn_c_mym_greece_monarchy: "Hellenic Monarchy"
   dyn_c_mym_greece_monarchy_technocracy: "Enlightened Hellenic Monarchy"
@@ -20,7 +19,7 @@ l_english:
   dyn_c_mym_greece_anarchy: "Hellenic Communes"
   dyn_c_mym_greece_monarchy_anarchy: "Detached Communes of Imperial Greece"
 
-# Switzerland
+  # Switzerland
   dyn_c_mym_switzerland_super: "Super Switzerland"
   dyn_c_mym_switzerland_monarchy: "Swiss Monarchy"
   dyn_c_mym_switzerland_monarchy_technocracy: "Enlightened Swiss Monarchy"
