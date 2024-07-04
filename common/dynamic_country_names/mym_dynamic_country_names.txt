@@ -1,10 +1,10 @@
 ﻿GRE = { # Greece
 	# Super Greece
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_super
+		name = dyn_c_greece_super
 		adjective = GRE_ADJ
 
-		priority = 10000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -16,10 +16,10 @@
 	}
 	# Monarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_monarchy
+		name = dyn_c_greece_monarchy
 		adjective = GRE_ADJ
 
-		priority = 100
+		priority = 99
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -29,10 +29,10 @@
 	}
 	# Technocratic Monarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_monarchy_technocracy
+		name = dyn_c_greece_monarchy_technocracy
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -43,10 +43,10 @@
 	}
 	# Constitutional Monarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_monarchy_constitutional
+		name = dyn_c_greece_monarchy_constitutional
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -57,10 +57,10 @@
 	}
 	# Presidential Dictatorship
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_presidential_dictatorship
+		name = dyn_c_greece_presidential_dictatorship
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -71,10 +71,10 @@
 	}
 	# Presidential Technocracy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_presidential_technate
+		name = dyn_c_greece_presidential_technate
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -85,10 +85,10 @@
 	}
 	# Presidential Democracy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_presidential_democracy
+		name = dyn_c_greece_presidential_democracy
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -99,10 +99,10 @@
 	}
 	# Parliamentary Dictatorship
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_parliamentary_dictatorship
+		name = dyn_c_greece_parliamentary_dictatorship
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -113,10 +113,10 @@
 	}
 	# Parliamentary Technocracy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_parliamentary_technate
+		name = dyn_c_greece_parliamentary_technate
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -127,10 +127,10 @@
 	}
 	# Parliamentary Democracy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_parliamentary_democracy
+		name = dyn_c_greece_parliamentary_democracy
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -144,10 +144,10 @@
 	}
 	# Theocratic Dictatorship
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_theocracy
+		name = dyn_c_greece_theocracy
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -158,10 +158,10 @@
 	}
 	# Theocratic Oligarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_theocratic_oligarchy
+		name = dyn_c_greece_theocratic_oligarchy
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -172,10 +172,10 @@
 	}
 	# Theocratic Democracy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_theocratic_democracy
+		name = dyn_c_greece_theocratic_democracy
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -186,10 +186,10 @@
 	}
 	# Council Dictatorship
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_council_dictatorship
+		name = dyn_c_greece_council_dictatorship
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -203,10 +203,10 @@
 	}
 	# Council Technocracy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_council_technocracy
+		name = dyn_c_greece_council_technocracy
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -217,10 +217,10 @@
 	}
 	# Council Democracy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_council_republic
+		name = dyn_c_greece_council_republic
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -234,10 +234,10 @@
 	}
 	# Anarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_anarchy
+		name = dyn_c_greece_anarchy
 		adjective = GRE_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -248,10 +248,10 @@
 	}
 	# Cursed Anarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_greece_monarchy_anarchy		# What the actual--?!
+		name = dyn_c_greece_monarchy_anarchy		# What the actual--?!
 		adjective = GRE_ADJ
 
-		priority = 10000
+		priority = 1000
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -265,10 +265,10 @@
 SWI = { # Switzerland
 	# Super Switzerland
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_super
+		name = dyn_c_switzerland_super
 		adjective = SWI_ADJ
 
-		priority = 10000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -280,7 +280,7 @@ SWI = { # Switzerland
 	}
 	# Monarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_monarchy
+		name = dyn_c_switzerland_monarchy
 		adjective = SWI_ADJ
 
 		priority = 100
@@ -290,10 +290,10 @@ SWI = { # Switzerland
 	}
 	# Technocratic Monarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_monarchy_technocracy
+		name = dyn_c_switzerland_monarchy_technocracy
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -304,10 +304,10 @@ SWI = { # Switzerland
 	}
 	# Constitutional Monarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_monarchy_constitutional
+		name = dyn_c_switzerland_monarchy_constitutional
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -318,10 +318,10 @@ SWI = { # Switzerland
 	}
 	# Presidential Dictatorship
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_presidential_dictatorship
+		name = dyn_c_switzerland_presidential_dictatorship
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -332,10 +332,10 @@ SWI = { # Switzerland
 	}
 	# Presidential Technocracy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_presidential_technate
+		name = dyn_c_switzerland_presidential_technate
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -346,10 +346,10 @@ SWI = { # Switzerland
 	}
 	# Presidential Democracy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_presidential_democracy
+		name = dyn_c_switzerland_presidential_democracy
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -360,10 +360,10 @@ SWI = { # Switzerland
 	}
 	# Parliamentary Dictatorship
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_parliamentary_dictatorship
+		name = dyn_c_switzerland_parliamentary_dictatorship
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -374,10 +374,10 @@ SWI = { # Switzerland
 	}
 	# Parliamentary Technocracy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_parliamentary_technate
+		name = dyn_c_switzerland_parliamentary_technate
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -388,10 +388,10 @@ SWI = { # Switzerland
 	}
 	# Parliamentary Democracy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_parliamentary_democracy
+		name = dyn_c_switzerland_parliamentary_democracy
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -405,10 +405,10 @@ SWI = { # Switzerland
 	}
 	# Theocratic Dictatorship
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_theocracy
+		name = dyn_c_switzerland_theocracy
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -419,10 +419,10 @@ SWI = { # Switzerland
 	}
 	# Theocratic Oligarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_theocratic_oligarchy
+		name = dyn_c_switzerland_theocratic_oligarchy
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -433,10 +433,10 @@ SWI = { # Switzerland
 	}
 	# Theocratic Democracy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_theocratic_democracy
+		name = dyn_c_switzerland_theocratic_democracy
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -447,10 +447,10 @@ SWI = { # Switzerland
 	}
 	# Council Dictatorship
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_council_dictatorship
+		name = dyn_c_switzerland_council_dictatorship
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -464,10 +464,10 @@ SWI = { # Switzerland
 	}
 	# Council Technocracy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_council_technocracy
+		name = dyn_c_switzerland_council_technocracy
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -478,10 +478,10 @@ SWI = { # Switzerland
 	}
 	# Council Democracy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_council_republic
+		name = dyn_c_switzerland_council_republic
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -495,10 +495,10 @@ SWI = { # Switzerland
 	}
 	# Anarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_anarchy
+		name = dyn_c_switzerland_anarchy
 		adjective = SWI_ADJ
 
-		priority = 1000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -509,10 +509,10 @@ SWI = { # Switzerland
 	}
 	# Cursed Anarchy
 	dynamic_country_name = {
-		name = dyn_c_mym_switzerland_monarchy_anarchy		# What the actual--?!
+		name = dyn_c_switzerland_monarchy_anarchy		# What the actual--?!
 		adjective = SWI_ADJ
 
-		priority = 10000
+		priority = 100
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
