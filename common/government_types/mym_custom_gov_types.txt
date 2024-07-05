@@ -5,10 +5,10 @@
 	female_ruler = "RULER_TITLE_MYM_SUPER_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
-		has_law = law_type:law_single_party_state
+		coa_dictatorship_trigger = yes
 		has_law = law_type:law_mym_managed_free_speech
 	}
+
 	on_government_type_change = { change_to_presidential_elective = yes }
 	on_post_government_type_change = { post_change_to_presidential_elective = yes }
 }
