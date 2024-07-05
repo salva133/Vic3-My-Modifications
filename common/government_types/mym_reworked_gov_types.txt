@@ -4,9 +4,9 @@ gov_mym_monarchy_anarchy = {
 	male_ruler = "RULER_TITLE_MYM_ROYAL_DEPUTY"
 	female_ruler = "RULER_TITLE_MYM_ROYAL_DEPUTY"
 	possible = {
-		has_law = law_type:law_monarchy
-		has_law = law_type:law_anarchy
+		coa_monanarchy_trigger = yes
 	}
+	
 	on_government_type_change = { change_to_parliamentary_elective = yes }
 	on_post_government_type_change = { post_change_to_parliamentary_elective = yes }
 }
@@ -20,10 +20,10 @@ gov_military_dictatorship = {
 	female_ruler = "RULER_TITLE_GENERAL"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
-		has_law = law_type:law_autocracy
+		coa_dictatorship_trigger = yes
 		has_law = law_type:law_mass_conscription
 	}
+
 	on_government_type_change = { change_to_dictatorial = yes }
 	on_post_government_type_change = { post_change_to_dictatorial = yes }
 }
@@ -35,14 +35,9 @@ gov_mym_police_state = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
-		has_law = law_type:law_autocracy
-		OR  = {
-			has_law = law_type:law_militarized_police 
-			has_law = law_type:law_dedicated_police
-		}
-		has_law = law_type:law_secret_police
+		coa_police_state_trigger = yes
 	}
+
 	on_government_type_change = { change_to_dictatorial = yes }
 	on_post_government_type_change = { post_change_to_dictatorial = yes }
 }
