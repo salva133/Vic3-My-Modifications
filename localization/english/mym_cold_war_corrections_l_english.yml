@@ -4,9 +4,9 @@
  je_climate_change_carbon_capture_end_button_desc: ""
 
  # Laws with missing Desc
-  law_command_economy_desc: "An economy entirely controlled by the state, where every resource is meticulously allocated by government planners."
+  # law_command_economy_desc: "An economy entirely controlled by the state, where every resource is meticulously allocated by government planners."
 
-  law_total_separation_desc: "Complete division between church and state, ensuring no religious influence in governmental affairs."
+  # law_total_separation_desc: "Complete division between church and state, ensuring no religious influence in governmental affairs."
 
   law_unitary_state_desc: "A centralized government wielding all the power, with no regional authorities to share the load."
   law_federal_state_desc: "A balanced power structure where governance is shared between central and regional authorities."
@@ -43,23 +43,23 @@
   law_civil_law_desc: "A judiciary with limited power, often overshadowed by other branches of government."
   law_common_law_desc: "A judiciary wielding significant authority, upholding the rule of law with strength and independence."
 
-  law_peasant_levies_desc: "A society with no military forces, relying instead on a demilitarized approach."
+  # law_peasant_levies_desc: "A society with no military forces, relying instead on a demilitarized approach."
 
-  law_ethnostate_desc: "A state founded and run based on a specific ethnic identity, often excluding others."
-  law_national_supremacy_desc: "A nation that prioritizes its own interests and identity above all else."
-  law_multicultural_desc: "A society that embraces and includes a diverse array of cultures and ethnicities."
+  # law_ethnostate_desc: "A state founded and run based on a specific ethnic identity, often excluding others."
+  # law_national_supremacy_desc: "A nation that prioritizes its own interests and identity above all else."
+  # law_multicultural_desc: "A society that embraces and includes a diverse array of cultures and ethnicities."
 
-  law_no_womens_rights_desc: "A stark absence of rights and freedoms for women."
+  # law_no_womens_rights_desc: "A stark absence of rights and freedoms for women."
   law_some_womens_rights_desc: "Women have limited rights and freedoms, with many restrictions still in place."
   law_full_womens_rights_desc: "Complete equality and rights for women in all aspects of society."
 
-  law_outlawed_dissent_desc: "A society where freedom of expression is completely suppressed."
-  law_censorship_desc: "A society where speech is heavily restricted and controlled."
+  # law_outlawed_dissent_desc: "A society where freedom of expression is completely suppressed."
+  # law_censorship_desc: "A society where speech is heavily restricted and controlled."
   law_limited_free_speech_desc: "Freedom of expression exists but within certain boundaries and restrictions."
   law_full_free_speech_desc: "Complete freedom of expression without fear of retribution or censorship."
 
   law_no_secret_police_desc: "A society free from the prying eyes and control of secret police."
-  law_secret_police_desc: "A society under the watchful and often oppressive eyes of secret police."
+  # law_secret_police_desc: "A society under the watchful and often oppressive eyes of secret police."
 
   law_no_espionage_desc: "A state without any international espionage activities."
   law_defensive_espionage_desc: "Espionage activities are solely for defense and protection."
@@ -93,7 +93,7 @@
   law_space_program_public_desc: "A government-operated space program aiming to explore the final frontier."
   law_space_program_private_desc: "A privately-operated space program driven by innovation and profit."
 
-  law_no_social_security_desc: "An absence of social security systems, leaving citizens without a safety net."
+  # law_no_social_security_desc: "An absence of social security systems, leaving citizens without a safety net."
   law_low_social_security_desc: "Minimal social security provisions offering basic support."
   law_medium_social_security_desc: "Adequate social security provisions providing reasonable support."
   law_high_social_security_desc: "Extensive social security provisions offering comprehensive support."
@@ -119,16 +119,16 @@
   law_expansionary_monetary_policy_desc: "Policies that increase the money supply, stimulating economic growth."
   law_very_expansionary_monetary_policy_desc: "Policies that significantly increase the money supply, driving economic expansion."
 
-  law_charitable_health_system_desc: "Healthcare provided without the aim of profit, focusing on patient well-being."
-  law_private_health_insurance_desc: "Healthcare services run by private entities, driven by competition and profit."
-  law_public_health_insurance_desc: "Government-run healthcare ensuring universal access and affordability."
+  # law_charitable_health_system_desc: "Healthcare provided without the aim of profit, focusing on patient well-being."
+  # law_private_health_insurance_desc: "Healthcare services run by private entities, driven by competition and profit."
+  # law_public_health_insurance_desc: "Government-run healthcare ensuring universal access and affordability."
 
-  law_religious_schools_desc: "Schools run without profit motives, often with a focus on religious teachings."
-  law_private_schools_desc: "Schools operated by private entities, offering diverse educational approaches."
-  law_public_schools_desc: "Schools funded and managed by the government, ensuring education for all."
+  # law_religious_schools_desc: "Schools run without profit motives, often with a focus on religious teachings."
+  # law_private_schools_desc: "Schools operated by private entities, offering diverse educational approaches."
+  # law_public_schools_desc: "Schools funded and managed by the government, ensuring education for all."
 
   law_pro_pop_growth_policy_desc: "Policies designed to encourage population growth through various incentives."
   law_no_pop_growth_policy_desc: "No specific policies affecting population growth, leaving it to natural factors."
   law_anti_pop_growth_policy_desc: "Policies aimed at reducing population growth through various measures."
 
-  law_no_colonial_affairs_desc: "A stance of opposing and rejecting any colonial ambitions or institutions."
+  # law_no_colonial_affairs_desc: "A stance of opposing and rejecting any colonial ambitions or institutions."
