@@ -1,4 +1,4 @@
-coa_monanarchy_trigger = {
+﻿coa_monanarchy_trigger = {
 	coa_monarchy_trigger = yes
 	coa_anarchy_trigger = yes
 }

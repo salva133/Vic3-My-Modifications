@@ -1,4 +1,4 @@
-gov_mym_monarchy_anarchy = {
+﻿gov_mym_monarchy_anarchy = {
 	transfer_of_power = hereditary
 	new_leader_on_reform_government = yes
 	male_ruler = "RULER_TITLE_MYM_ROYAL_DEPUTY"

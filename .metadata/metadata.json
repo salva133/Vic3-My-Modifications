@@ -1,12 +1,12 @@
 {
-  "name" : "MyModifications",
+  "name" : "My Modifications",
   "id" : "",
-  "version" : "",
-  "supported_game_version" : "1.7.3",
+  "version" : "1.0",
+  "supported_game_version" : "1.7.6",
   "short_description" : "",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {
-    "multiplayer_synchronized" : true
+    "multiplayer_synchronized" : false
   }
 }

@@ -1,6 +1,6 @@
-vito_andolini_character_template = {
-	first_name = "vito_andolini_first_name"
-	last_name = "vito_andolini_last_name"
+﻿vito_andolini_character_template = {
+	first_name = Vito
+	last_name = Andolini
 	historical = no
 	culture = cu:south_italian
 	religion = rel:catholic

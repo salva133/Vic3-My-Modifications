@@ -7,13 +7,13 @@ corleone_event.1 = {
 	desc = corleoner_event.1.d
 	flavor = corleone_event.1.f
 
-	duration = 1
+	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
-		game_date > 1920
-		c:USA = exists
+		game_date > 1920.1.1
+		exists = c:USA
 		NOT = { has_variable = vito_corleone_var }
 	}
 
@@ -40,6 +40,7 @@ corleone_event.2 = {
 
 	trigger = {
 		game_date > 1955.7.29
+		has_variable = vito_corleone_var
 	}
 
 	immediate = {
