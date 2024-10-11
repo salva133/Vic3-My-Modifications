@@ -7,31 +7,10 @@
 	possible = {
 		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_single_party_state
-		NOT = { has_law = law_type:law_mym_managed_free_speech }
 	}
 
 	on_government_type_change = { change_to_presidential_elective = yes }
 	on_post_government_type_change = { post_change_to_presidential_elective = yes }
-}
-
-gov_presidential_oligarchy = {
-	transfer_of_power = dictatorial
-
-	male_ruler = "RULER_TITLE_PRESIDENT"
-	female_ruler = "RULER_TITLE_PRESIDENT"
-	
-	possible = {
-		has_law = law_type:law_presidential_republic
-		country_has_voting_franchise = no
-		NOR = {
-			coa_fascist_trigger = yes
-            coa_burgundian_system_trigger = yes
-		}
-		NOT = { has_law = law_type:law_mym_managed_free_speech }
-	}
-
-	on_government_type_change = { change_to_dictatorial = yes }
-	on_post_government_type_change = { post_change_to_dictatorial = yes }
 }
 
 gov_presidential_dictatorship = {
@@ -41,14 +20,15 @@ gov_presidential_dictatorship = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_presidential_republic
-		has_law = law_type:law_autocracy 
-		NOT = { 
-			has_law = law_type:law_mym_managed_free_speech
-			has_law = law_type:law_mass_conscription
+		OR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
 		}
+		has_law = law_type:law_autocracy
+		coa_dictatorship_trigger = yes
 	}
 
 	on_government_type_change = { change_to_dictatorial = yes }
 	on_post_government_type_change = { post_change_to_dictatorial = yes }
+	
 }
