@@ -1,9 +1,0 @@
-﻿country_institution_minitrue_max_investment_add={
-	decimals=0
-	color=good
-	percent=no
-	game_data={
-		ai_value=0
-	}
-
-}

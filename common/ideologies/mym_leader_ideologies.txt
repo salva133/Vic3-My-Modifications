@@ -179,7 +179,7 @@ ideology_national_fascist = {
 		law_right_of_assembly = strongly_disapprove
 		law_censorship = neutral
 		law_outlawed_dissent = strongly_approve
-		law_mym_managed_free_speech = approve
+		law_bgy_monitored_speech = approve
 	}
 
 	lawgroup_policing = {
