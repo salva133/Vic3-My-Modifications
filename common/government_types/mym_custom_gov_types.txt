@@ -6,7 +6,7 @@
 	
 	possible = {
 		coa_dictatorship_trigger = yes
-		has_law = law_type:law_mym_managed_free_speech
+		has_law = law_type:law_bgy_monitored_speech
 	}
 
 	on_government_type_change = { change_to_presidential_elective = yes }

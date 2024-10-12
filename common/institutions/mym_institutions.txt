@@ -1,4 +1,0 @@
-﻿institution_minitrue = {
-	icon = "gfx/interface/icons/institution_icons/minitrue.dds"
-	background_texture = "gfx/interface/illustrations/institutions/minitrue_illustration.dds"
-}
