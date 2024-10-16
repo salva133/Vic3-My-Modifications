@@ -1,38 +1,43 @@
-namespace = mym_characters
+﻿namespace = corleone
 
-corleone_event.1 = {
+corleone.1 = {
 	type = country_event
 	placement = root
-	title = corleone_event.1.t
-	desc = corleoner_event.1.d
-	flavor = corleone_event.1.f
+	title = corleone.1.t
+	desc = corleone.1.d
+	flavor = corleone.1.f
 
 	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
-		game_date > 1920.1.1
+		game_date > 1925.1.1
 		exists = c:USA
-		NOT = { has_variable = vito_corleone_var }
+		NOT = { has_variable = vito_andolini_var }
 	}
 
 	immediate = {
 		create_character  = {
 			template = vito_andolini_character_template
 			on_created = {
-				set_variable = vito_corleone_var
+				set_variable = vito_andolini_var
 			}
 		}
 	}
+
+	option = {
+		# name = ""
+
+	}
 }
 
-corleone_event.2 = {
+corleone.2 = {
 	type = country_event
 	placement = root
-	title = corleone_event.2.t
+	title = corleone.2.t
 	desc = corleoner_event.2.d
-	flavor = corleone_event.2.f
+	flavor = corleone.2.f
 
 	duration = 1
 
@@ -40,12 +45,12 @@ corleone_event.2 = {
 
 	trigger = {
 		game_date > 1955.7.29
-		has_variable = vito_corleone_var
+		has_variable = vito_andolini_var
 	}
 
 	immediate = {
 		random_character_scope = {
-			limit = { has_variable = vito_corleone_var }
+			limit = { has_variable = vito_andolini_var }
 			kill_character = yes
 		}
 	}
