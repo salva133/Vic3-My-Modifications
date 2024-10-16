@@ -1,0 +1,8 @@
+﻿# on_weekly_pulse = {
+# 	events = {
+# 		corleone.1
+# 		corleone.2
+# 		corleone.3
+# 		corleone.9
+# 	}
+# }

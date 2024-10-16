@@ -1,0 +1,43 @@
+je_gangs_of_new_york = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+		is_player = yes
+		game_date >= 1920.1.1
+		owner = {
+			owns_entire_state_region = STATE_NEW_YORK
+		}
+	}
+
+	possible = {
+		is_player = yes
+		game_date >= 1920.1.1
+		owner = {
+			owns_entire_state_region = STATE_NEW_YORK
+		}
+	}
+	
+	immediate = {
+		
+	}
+
+	complete = {
+		has_global_variable = andolini_dead_glob_var
+	}
+
+	on_complete = {
+		
+	}
+
+	on_weekly_pulse = {
+		events = {
+			corleone.1
+			corleone.2
+			corleone.3
+			corleone.9
+		}
+	}	
+
+}
