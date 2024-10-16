@@ -1,0 +1,155 @@
+﻿namespace = corleone
+
+corleone.1 = { 		# The Murder of Don Fanucci 
+	type = country_event
+	placement = root
+	title =  corleone.1.t
+	desc =   corleone.1.d
+	flavor = corleone.1.f
+
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+
+	duration = 1
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1920.8.16
+		s:STATE_NEW_YORK = root
+		custom_tooltip = {
+			text = andolini_is_alive_tt
+			NOT = { has_global_variable = andolini_dead_glob_var }
+		}
+	}
+
+	immediate = {
+		set_global_variable = andolini_alive_glob_var
+	}
+
+	option = {
+		name = corleone.1.a
+	}
+}
+
+corleone.2 = { 		# New York Daily Chronicle, November 2, 1922
+	type = country_event
+	placement = root
+	title =  corleone.2.t
+	desc =   corleone.2.d
+	flavor = corleone.2.f
+
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+
+	duration = 1
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1922.11.2
+		s:STATE_NEW_YORK = root
+		custom_tooltip = {
+			text = andolini_is_alive_tt
+			has_global_variable = andolini_alive_glob_var
+			NOT = { has_global_variable = andolini_dead_glob_var }
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = corleone.2.a
+	}
+}
+
+corleone.3 = { 		# New York Daily Chronicle, June 6, 1934
+	type = country_event
+	placement = root
+	title =  corleone.3.t
+	desc =   corleone.3.d
+	flavor = corleone.3.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	
+	duration = 1
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1934.6.6
+		s:STATE_NEW_YORK = root
+		custom_tooltip = {
+			text = andolini_is_alive_tt
+			has_global_variable = andolini_alive_glob_var
+			NOT = { has_global_variable = andolini_dead_glob_var }
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = corleone.3.a
+	}
+}
+
+corleone.9 = {		# The Death of Don Corleone
+	type = country_event
+	placement = root
+	title = corleone.9.t
+	desc = corleone.9.d
+	flavor = corleone.9.f
+
+	event_image = {
+		video = "ep1_printing_press"
+	}
+
+	duration = 1
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1955.7.29
+		s:STATE_NEW_YORK = root
+		custom_tooltip = {
+			text = andolini_is_alive_tt
+			has_global_variable = andolini_alive_glob_var
+			NOT = { has_global_variable = andolini_dead_glob_var }
+		}
+	}
+
+	immediate = {
+		create_character = {
+			template = vito_andolini_character_template
+			on_created = {
+				set_variable = vito_andolini_var
+			}
+		}
+		random_scope_character = {
+			limit = { has_variable = vito_andolini_var }
+			save_scope_as = andolini_scope
+			# kill_character = yes
+			# set_global_variable = andolini_dead_glob_var
+		}
+	}
+
+	option = {
+		name = corleone.9.a
+		scope:andolini_scope = {
+			kill_character = yes
+		}
+		set_global_variable = andolini_dead_glob_var
+	}
+}
