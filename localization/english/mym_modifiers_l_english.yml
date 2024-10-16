@@ -1,0 +1,8 @@
+﻿l_english:
+
+  building_group_bg_mining_allowed_collectivization_add: "Minimum Worker-Owned $bg_mining$ $concept_building$ Levels"
+  building_group_bg_mining_allowed_collectivization_add_desc: "The minimum amount of $bg_mining$ [Concept('concept_building','$concept_buildings$')] that will be worker-owned."
+  building_group_bg_manufacturing_allowed_collectivization_add: "Minimum Worker-Owned $bg_manufacturing$ $concept_building$ Levels"
+  building_group_bg_manufacturing_allowed_collectivization_add_desc: "The minimum amount of $bg_manufacturing$ [Concept('concept_building','$concept_buildings$')] that will be worker-owned."
+  building_group_bg_plantations_allowed_collectivization_add: "Minimum Worker-Owned $bg_plantations$ $concept_building$ Levels"
+  building_group_bg_plantations_allowed_collectivization_add_desc: "The minimum amount of $bg_plantations$ [Concept('concept_building','$concept_buildings$')] that will be worker-owned."
