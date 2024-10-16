@@ -1,6 +1,6 @@
 ﻿vito_andolini_character_template = {
 	first_name = Vito
-	last_name = Andolini
+	last_name = Corleone
 	historical = no
 	culture = cu:south_italian
 	religion = rel:catholic
