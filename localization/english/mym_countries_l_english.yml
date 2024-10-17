@@ -1,4 +1,6 @@
 ﻿l_english:
 # Dynamic countries
-  dyn_c_citizen_states_usa: "Citizen States of America"
-  dyn_c_citizen_states_usa_adj: "Citizen America"
+  dyn_c_USA_citizen_states: "Citizen States of America"
+  dyn_c_USA_citizen_states_adj: "Citizen-American"
+  dyn_c_CSA_confederated_governates: "Confederated Governates of America"
+  dyn_c_CSA_confederated_governates_adj: "$CSA_ADJ$"
