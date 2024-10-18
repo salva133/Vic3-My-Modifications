@@ -1,3 +1,6 @@
 ﻿l_english:
   andolini_is_alive_tt: "Andolini is alive"
   andolini_is_dead_tt: "Andolini is dead"
+  dmitry_did_not_set_sails_tt: "The Dmitry is #bold not yet#! on her way"
+  dmitry_did_set_sails_tt: "The Dmitry is on her way"
+  dmitry_arrived_tt: "The Dmitry has arrived"
