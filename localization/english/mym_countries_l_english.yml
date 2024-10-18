@@ -2,5 +2,11 @@
 # Dynamic countries
   dyn_c_USA_citizen_states: "Citizen States of America"
   dyn_c_USA_citizen_states_adj: "Citizen-American"
+  dyn_c_USA_puppet_of_CSA: "Northern Territories"
+  dyn_c_USA_puppet_of_GBR_royal: "Crown Colony New-Britain"
+  dyn_c_USA_puppet_of_GBR_rep: "Lord-Protectorate New-Britain"
+  dyn_c_USA_puppet_of_GBR_theo: "Synode of New-Britain"
+  dyn_c_USA_puppet_of_GBR_communist: "Worker's Committee of the Northern Americas"
+
   dyn_c_CSA_confederated_governates: "Confederated Governates of America"
   dyn_c_CSA_confederated_governates_adj: "$CSA_ADJ$"
