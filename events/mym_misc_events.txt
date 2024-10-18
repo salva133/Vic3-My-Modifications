@@ -1,1 +1,8 @@
 namespace = stoker
+
+stoker.1 = {
+	type = country_event
+	placement = root
+	title = stoker.1.t
+	desc = stoker.1.d
+	flavor = stoker.1.f
