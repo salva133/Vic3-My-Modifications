@@ -8,8 +8,98 @@ stoker.1 = {
 	flavor = stoker.1.f
 
 	event_image = {
-		video = "europenorthamerica_london_center"
+		video = "votp_gunboat_diplomacy"
 	}
 
+	is_popup = yes
 	
+	duration = 3
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		game_date > 1885.7.24
+		custom_tooltip = {
+			text = dmitry_did_not_set_sails_tt
+			NOT = { has_global_variable = dmitry_set_sails_glob_var }
+		}
+		owns_entire_state_region = STATE_BULGARIA
+		any_scope_state = {
+			state_region = s:STATE_BULGARIA
+			has_building = building_port
+		}
+	}
+	
+	immediate = {
+		set_global_variable = dmitry_set_sails_glob_var
+	}
+
+	option = {
+		name = stoker.1.a
+		default_option = yes
+	}
+}
+
+stoker.2 = {
+	type = country_event
+	placement = root
+	title = stoker.2.t
+	desc = stoker.2.d
+	flavor = stoker.2.f
+
+	event_image = {
+		texture = "/gfx/event/image/dmitry_shored.jpg"
+	}
+
+	is_popup = yes
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1885.8.6
+		custom_tooltip = {
+			text = dmitry_did_set_sails_tt
+			has_global_variable = dmitry_set_sails_glob_var
+			NOT = { has_global_variable = dmitry_ran_ashore_at_whitby_glob_var }
+		}
+		owns_entire_state_region = STATE_YORKSHIRE
+		any_scope_state = {
+			state_region = s:STATE_YORKSHIRE
+			has_building = building_port
+		}
+	}
+
+	immediate = {
+		every_scope_character = {
+			limit = {
+				has_variable = is_vlad_var
+			}
+			kill_character = yes
+		}
+		set_global_variable = dmitry_ran_ashore_at_whitby_glob_var
+	}
+
+	option = {
+		name = stoker.2.a
+		default_option = yes
+
+		create_character = {
+			first_name = Vlad
+			ideology = ideology_luddite
+			is_agitator = yes
+			interest_group = ig:ig_landowners
+			culture = romanian
+			age = 60
+			female = no
+			traits = {
+				imposing
+			}
+			on_created = {
+				set_variable = is_vlad_var
+			}
+		}
+		set_global_variable = dmitry_ran_ashore_at_whitby_glob_var
+	}
 }
