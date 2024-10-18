@@ -6,3 +6,10 @@ stoker.1 = {
 	title = stoker.1.t
 	desc = stoker.1.d
 	flavor = stoker.1.f
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	
+}
