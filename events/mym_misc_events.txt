@@ -1,4 +1,4 @@
-namespace = stoker
+﻿namespace = stoker
 
 stoker.1 = {
 	type = country_event
