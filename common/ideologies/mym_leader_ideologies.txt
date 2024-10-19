@@ -183,6 +183,7 @@ ideology_national_fascist = {
 	}
 
 	lawgroup_policing = {
+		law_bgy_orwellian_police = approve
 		law_local_police = disapprove
 		law_dedicated_police = approve
 		law_militarized_police = strongly_approve
