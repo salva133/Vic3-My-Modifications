@@ -1,7 +1,7 @@
-﻿USA = {
+﻿USA = { # United Citizen States of America
 	dynamic_country_name = {
-		name = dyn_c_citizen_states_usa
-		adjective = dyn_c_citizen_states_usa_adj
+		name = dyn_c_USA_citizen_states
+		adjective = dyn_c_USA_citizen_states_adj
 		
 		is_main_tag_only = yes
 		priority = 0
@@ -10,6 +10,110 @@
 			coa_def_republic_flag_trigger = yes
 			scope:actor ?= {
 				has_law = law_type:law_timocracy
+			}
+		}
+	}
+
+	# Northern Territories
+	dynamic_country_name = {
+		name = dyn_c_USA_puppet_of_CSA
+		adjective = USA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = c:CSA
+			exists = scope:actor
+			scope:actor ?= {
+				is_subject_of = c:CSA
+			}
+		}
+	}
+
+	# USA puppet of GBR
+	dynamic_country_name = {
+		name = dyn_c_USA_puppet_of_GBR_royal
+		adjective = USA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = c:GBR
+			exists = scope:actor
+			scope:actor ?= {
+				is_subject_of = c:GBR
+				c:GBR = {
+					has_law = law_type:law_monarchy
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_USA_puppet_of_GBR_rep
+		adjective = USA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = c:GBR
+			exists = scope:actor
+			scope:actor ?= {
+				is_subject_of = c:GBR
+				c:GBR = {
+					OR = {
+						has_law = law_type:law_presidential_republic
+						has_law = law_type:law_parliamentary_republic
+					}
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_USA_puppet_of_GBR_theo
+		adjective = USA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = c:GBR
+			exists = scope:actor
+			scope:actor ?= {
+				is_subject_of = c:GBR
+				c:GBR = {
+					has_law = law_type:law_theocracy
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_USA_puppet_of_GBR_communist
+		adjective = USA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = c:GBR
+			exists = scope:actor
+			scope:actor ?= {
+				is_subject_of = c:GBR
+				c:GBR = {
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+
+CSA = { # Confederated Governates of America
+	dynamic_country_name = {
+		name = dyn_c_CSA_confederated_governates
+		adjective = USA_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor ?= {
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+				country_has_voting_franchise = no
 			}
 		}
 	}
