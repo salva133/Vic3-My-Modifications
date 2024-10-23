@@ -1,0 +1,78 @@
+﻿namespace = stoker
+
+stoker.1 = {
+	type = country_event
+	placement = root
+	title = stoker.1.t
+	desc = stoker.1.d
+	flavor = stoker.1.f
+
+	event_image = {
+		video = "votp_gunboat_diplomacy"
+	}
+	
+	duration = 3
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	trigger = {
+		# Triggered by JE
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = stoker.1.a
+		default_option = yes
+		
+		set_global_variable = dmitry_set_sails_glob_var
+	}
+}
+
+stoker.2 = {
+	type = country_event
+	placement = root
+	title = stoker.2.t
+	desc = stoker.2.d
+	flavor = stoker.2.f
+
+	event_image = {
+		texture = "/gfx/event_images/dmitry_shored.dds"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+	}
+	
+	option = {
+		name = stoker.2.a
+		default_option = yes
+
+		hidden_effect = {
+			create_character = {
+				first_name = Vlad
+				ideology = ideology_luddite
+				is_agitator = yes
+				interest_group = ig:ig_landowners
+				culture = romanian
+				age = 60
+				female = no
+				traits = {
+					imposing
+				}
+				on_created = {
+					set_variable = is_vlad_var
+				}
+			}
+		}
+		set_global_variable = dmitry_ran_ashore_at_whitby_glob_var
+	}
+}

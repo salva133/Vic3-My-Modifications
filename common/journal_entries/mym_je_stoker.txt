@@ -1,0 +1,85 @@
+﻿je_stoker = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	group = je_group_ahistorical
+
+	is_shown_when_inactive = {
+		game_date > 1885.1.1
+		NOT = { has_global_variable = je_stoker_completed_glob_var }
+		owner = {
+			OR = {
+				owns_entire_state_region = STATE_BULGARIA
+				owns_entire_state_region = STATE_YORKSHIRE
+			}
+		}
+	}
+
+	possible = {
+		game_date > 1885.1.1
+		owner = {
+			OR = {
+				owns_entire_state_region = STATE_BULGARIA
+				owns_entire_state_region = STATE_YORKSHIRE
+			}
+		}
+		OR = {
+			custom_tooltip = {
+				text = dmitry_did_not_set_sails_tt
+				NOT = { has_global_variable = dmitry_set_sails_glob_var }
+				owner = {
+					owns_entire_state_region = STATE_BULGARIA
+				}
+			}
+			custom_tooltip = {
+				text = dmitry_did_set_sails_tt
+				has_global_variable = dmitry_set_sails_glob_var
+				NOT = { has_global_variable = dmitry_ran_ashore_at_whitby_glob_var }
+				owner = {
+					owns_entire_state_region = STATE_YORKSHIRE
+				}
+			}
+		}
+	}
+	
+	immediate = {
+	}
+
+	complete = {
+		hidden_trigger = {
+			has_global_variable = dmitry_set_sails_glob_var
+			has_global_variable = dmitry_ran_ashore_at_whitby_glob_var
+		}
+	}
+
+	on_complete = {
+		set_global_variable = je_stoker_completed_glob_var
+	}
+
+	on_weekly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					game_date > 1885.7.24
+					NOT = { has_global_variable = dmitry_set_sails_glob_var }
+					owns_entire_state_region = STATE_BULGARIA
+					s:STATE_BULGARIA = {
+						has_building = building_port
+					}
+				}
+				trigger_event = stoker.1
+			}
+			if = {
+				limit = {
+					# game_date > 1885.8.6
+					has_global_variable = dmitry_set_sails_glob_var
+					NOT = { has_global_variable = dmitry_ran_ashore_at_whitby_glob_var }
+					# owns_entire_state_region = STATE_YORKSHIRE
+					# s:STATE_YORKSHIRE = {
+					# 	has_building = building_port
+					# }
+				}
+				trigger_event = stoker.2
+			}
+		}
+	}
+}
