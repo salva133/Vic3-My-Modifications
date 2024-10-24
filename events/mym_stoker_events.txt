@@ -68,9 +68,6 @@ stoker.2 = {
 				traits = {
 					imposing
 				}
-				on_created = {
-					set_variable = is_vlad_var
-				}
 			}
 		}
 		set_global_variable = dmitry_ran_ashore_at_whitby_glob_var
