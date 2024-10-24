@@ -51,7 +51,7 @@
 		}
 	}
 
-	ai_will_do = {
+	ai_enact_weight_modifier = {
 		# Anarchist leaning AI or those in turmoil might consider enacting this
 		value = 0
 		if = {
@@ -62,10 +62,6 @@
 			limit = { country_average_sol <= 8 }
 			add = 50
 		}
-	}
-
-	ai_enact_weight_modifier = {
-		value = 0
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
