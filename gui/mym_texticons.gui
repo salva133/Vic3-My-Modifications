@@ -1,0 +1,8 @@
+texticon = {
+  icon = secret_police
+  iconsize = {
+    offset = { 0 7 }
+    texture = gfx/interface/icons/ig_icons/ig_secret_police_30.dds
+    fontsize = 22
+  }
+}

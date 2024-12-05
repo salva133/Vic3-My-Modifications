@@ -57,7 +57,8 @@
   milei.1.f: "'We are facing one of the biggest economic disasters in our history and radical action is essential. Inflation is nothing more than a tax on the poorest. We will drastically downsize the state to end this evil. The state is not an engine of prosperity, but a machine of waste. We will reform it so that it serves and not dominates. The freedom of the individual is the highest good. Our reforms will be based on an unshakeable belief in the free market. We will create a society where everyone has the chance to get ahead through hard work and personal responsibility. [ROOT.GetCountry.GetNameNoFlag] will reposition itself as a partner of the free world and not as a vassal of ideological projects.'\n\n#italic - lurid anarcho-libertarian pamphlet#!"
   milei.1.a: "Wild."
 
-  mym_debug.1.t: "MyM: Debugging"
+### DEBUGGING EVENTS
+  mym_debug.1.t: "MyM: Debugging 1"
   mym_debug.1.d: "Providing debugging options"
   mym_debug.1.f: "Only applies ideologies that are actually existing in the game.\nIf an ideology ain't applyable, then it is not existing in the current game."
   mym_debug.1.a: "Close"
@@ -67,3 +68,27 @@
   mym_debug.1.g: "Embrace your freedom!\nWith you, we can create a society where liberty reigns supreme"
   mym_debug.1.h: "Execute Order 1487!"
   mym_debug.1.i: "Set $ig_secret_police$ globally"
+
+  mym_debug.2.t: "MyM: Debugging 2"
+  mym_debug.2.d: "Providing debugging options"
+  mym_debug.2.f: ""
+  mym_debug.2.a: "Close"
+  mym_debug.2.b: "All countries get era 4 tech"
+  mym_debug.2.c: "All countries become independent"
+
+
+
+### OUTER DEBUGGING EVENTS
+  bgy_debug.1.t: "Burgundism: Debugging 1"
+  bgy_debug.1.d: "Providing debugging options"
+  bgy_debug.1.f: ""
+
+  bgy_debug.1.a: "Close"
+  bgy_debug.1.b: "Turn country to the Burgundian System"
+  bgy_debug.1.c: "Un-burgundise leader (get a random replacement ideology)"
+  bgy_debug.1.e: "Break a seal"
+  bgy_debug.1.g: "Burgundise Leader + add 100-year-modifier"
+  bgy_debug.1.h: "Make country recognized"
+  bgy_debug.1.i: "Remove modifier $burgundist_supremacy_modifier$"
+  bgy_debug.1.j: "Set IG Names"
+  bgy_debug.1.k: "Add IG Traits"

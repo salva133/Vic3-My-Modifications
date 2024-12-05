@@ -155,42 +155,683 @@ mym_debug.1 = {
 		name = mym_debug.1.i
 
 		trigger = {
-			NOT = {
-				country_has_primary_culture = cu:aryan
-				country_has_state_religion = rel:anti_islamic_agnostic
-				has_variable = aia_conversion_happened_var
+			any_country = {
+				exists = ig:ig_secret_police
 			}
 		}
 
-		remove_primary_culture = cu:romanian
-		if = {
-			limit = {
-				NOT = {
-					country_has_primary_culture = cu:aryan
+		every_country = {
+			if = {
+				limit = { exists = ig:ig_secret_police }
+				if = {
+					limit = {
+						country_has_primary_culture = cu:north_german
+					}
+					ig:ig_secret_police = {
+						set_interest_group_name = ig_secret_police_north_german
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:south_german
+					}
+					ig:ig_secret_police = {
+						set_interest_group_name = ig_secret_police_south_german
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:russian
+					}
+					ig:ig_secret_police = {
+						set_interest_group_name = ig_secret_police_russian
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:romanian
+					}
+					ig:ig_secret_police = {
+						set_interest_group_name = ig_secret_police_romanian
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:finnish
+					}
+					ig:ig_secret_police = {
+						set_interest_group_name = ig_secret_police_finnish
+					}
 				}
 			}
-			add_primary_culture = cu:aryan
+		}
+	}
+	option = {
+		capital = {
+			create_pop = {
+				culture = finnish
+				size = 3000000
+				pop_type = peasants
+			}
+		}
+	}
+}
+
+mym_debug.2 = { # Give all civilized countries era 3 tech and/or make them independent
+	type = country_event
+	placement = root
+	title = mym_debug.2.t
+	desc = mym_debug.2.d
+	flavor = mym_debug.2.f
+
+	orphan = yes
+	is_popup = yes
+
+	duration = 3
+
+	event_image = {
+		texture = gfx/event_images/bgy_debug.dds
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	option = {
+		name = mym_debug.2.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = mym_debug.2.b
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			NOT = { has_variable = era_4_for_all_var }
+		}
+
+		every_country = {
+			limit = {
+				NOT = { is_country_type = decentralized }
+			}
+			add_era_researched = era_4
+			set_variable = era_4_for_all_var
+		}
+	}
+	option = {
+		name = mym_debug.2.c
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			any_country = {
+				count > 0
+				is_subject = yes
+			}
+		}
+
+		every_country = {
+			limit = {
+				NOT = { is_country_type = decentralized }
+				is_subject = yes
+			}
+			make_independent = yes
+		}
+	}
+}
+
+namespace = bgy_debug
+
+bgy_debug.1 = { # Testing options for Burgundist stuff
+	type = country_event
+	placement = root
+	title = bgy_debug.1.t
+	desc = bgy_debug.1.d
+	flavor = bgy_debug.1.f
+
+	orphan = yes
+	is_popup = yes
+
+	duration = 3
+
+	event_image = {
+		texture = gfx/event_images/bgy_debug.dds
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		always = no
+		custom_tooltip = {
+			text = has_template_paul_de_lagarde_character_template_tt
+			any_character = {
+				has_template = paul_de_lagarde_character_template
+			}
+		}
+		custom_tooltip = {
+			text = has_template_houston_chamberlain_character_template_tt
+			any_character = {
+				has_template = houston_chamberlain_character_template
+			}
+		}
+		custom_tooltip = {
+			text = has_template_heinrich_himmler_character_template_tt
+			any_character = {
+				has_template = heinrich_himmler_character_template
+			}
+		}
+		custom_tooltip = {
+			text = has_template_adam_glauer_character_template_tt
+			any_character = {
+				has_template = adam_glauer_character_template
+			}
+		}
+		custom_tooltip = {
+			text = has_template_rudolf_sebottendorff_character_template_tt
+			any_character = {
+				has_template = rudolf_sebottendorff_character_template
+			}
+		}
+		custom_tooltip = {
+			text = has_template_nathan_bedford_forrest_character_template_tt
+			any_character = {
+				has_template = nathan_bedford_forrest_character_template
+			}
+		}
+		custom_tooltip = {
+			text = has_template_jean_charles_dbourgogne_character_template_tt
+			any_character = {
+				has_template = jean_charles_dbourgogne_character_template
+			}
+		}
+		custom_tooltip = {
+			text = has_template_grigori_rasputin_character_template_tt
+			any_character = {
+				has_template = grigori_rasputin_character_template
+			}
+		}
+	}
+
+	option = {
+		name = bgy_debug.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = bgy_debug.1.b
+		ai_chance = {
+			base = 0
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_corporate_state }
+			}
+			activate_law = law_type:law_corporate_state
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_autocracy }
+			}
+			activate_law = law_type:law_autocracy
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_ethnostate }
+			}
+			activate_law = law_type:law_ethnostate
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_burgundism }
+			}
+			activate_law = law_type:law_burgundism
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_appointed_bureaucrats }
+			}
+			activate_law = law_type:law_appointed_bureaucrats
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_total_war }
+			}
+			activate_law = law_type:law_total_war
+		}
+		add_technology_researched = total_war
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_secret_police }
+			}
+			activate_law = law_type:law_secret_police
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_duty_for_self_improvement }
+			}
+			activate_law = law_type:law_duty_for_self_improvement
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_commitment_state_security }
+			}
+			activate_law = law_type:law_commitment_state_security
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_spartanism }
+			}
+			activate_law = law_type:law_spartanism
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_extensive_police_powers }
+			}
+			activate_law = law_type:law_extensive_police_powers
+		}
+		if = {
+			limit = { NOT = { has_technology_researched = totalism } }
+			add_technology_researched = totalism
+		}
+		set_institution_investment_level = {
+			institution = institution_minilab
+			level = 5
+		}
+		set_institution_investment_level = {
+			institution = institution_home_affairs
+			level = 5
+		}
+		set_institution_investment_level = {
+			institution = institution_minitrue
+			level = 5
+		}
+		set_institution_investment_level = {
+			institution = institution_miniwar
+			level = 5
+		}
+		set_institution_investment_level = {
+			institution = institution_self_improvement
+			level = 5
+		}
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 5
 		}
 		if = {
 			limit = {
 				NOT = {
-					country_has_state_religion = rel:anti_islamic_agnostic
+					ruler = {
+						has_ideology = ideology:ideology_burgundist_leader
+					}
 				}
 			}
-			set_state_religion = rel:anti_islamic_agnostic
-			ig:ig_devout = {
-				set_interest_group_name = anti_islam_committee
+			ruler = {
+				set_ideology = ideology:ideology_burgundist_leader
 			}
 		}
-		if = {
-			limit = { NOT = { has_variable = aia_conversion_happened_var } }
-			set_variable = aia_conversion_happened_var
-			capital = {
-				create_pop = {
-					culture = aryan
-					size = 100000
-					pop_type = laborers
+	}
+	option = {
+		name = bgy_debug.1.c
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			ruler = {
+				has_ideology = ideology:ideology_burgundist_leader
+			}
+		}
+
+		ruler = {
+			random_list = {
+				1 = {
+					set_ideology = ideology:ideology_moderate
 				}
+				1 = {
+					set_ideology = ideology:ideology_traditionalist
+				}
+				1 = {
+					set_ideology = ideology:ideology_atheist
+				}
+				1 = {
+					set_ideology = ideology:ideology_republican_leader
+				}
+				1 = {
+					set_ideology = ideology:ideology_radical
+				}
+				1 = {
+					set_ideology = ideology:ideology_reformer
+				}
+				1 = {
+					set_ideology = ideology:ideology_feminist
+				}
+				1 = {
+					set_ideology = ideology:ideology_abolitionist
+				}
+				1 = {
+					set_ideology = ideology:ideology_slaver
+				}
+				1 = {
+					set_ideology = ideology:ideology_pacifist
+				}
+				1 = {
+					set_ideology = ideology:ideology_jingoist_leader
+				}
+				1 = {
+					set_ideology = ideology:ideology_royalist
+				}
+				1 = {
+					set_ideology = ideology:ideology_social_democrat
+				}
+				1 = {
+					set_ideology = ideology:ideology_communist
+				}
+				1 = {
+					set_ideology = ideology:ideology_vanguardist
+				}
+				1 = {
+					set_ideology = ideology:ideology_fascist
+				}
+				1 = {
+					set_ideology = ideology:ideology_anarchist
+				}
+				1 = {
+					set_ideology = ideology:ideology_ethno_nationalist
+				}
+				1 = {
+					set_ideology = ideology:ideology_theocrat
+				}
+				1 = {
+					set_ideology = ideology:ideology_market_liberal
+				}
+				1 = {
+					set_ideology = ideology:ideology_luddite
+				}
+				1 = {
+					set_ideology = ideology:ideology_authoritarian
+				}
+				1 = {
+					set_ideology = ideology:ideology_protectionist
+				}
+				1 = {
+					set_ideology = ideology:ideology_humanitarian
+				}
+				1 = {
+					set_ideology = ideology:ideology_jacksonian_democrat
+				}
+				1 = {
+					set_ideology = ideology:ideology_positivist
+				}
+				1 = {
+					set_ideology = ideology:ideology_land_reformer
+				}
+				1 = {
+					set_ideology = ideology:ideology_integralist
+				}
+				1 = {
+					set_ideology = ideology:ideology_liberal_leader
+				}
+				1 = {
+					set_ideology = ideology:ideology_corporatist_leader
+				}
+				1 = {
+					set_ideology = ideology:ideology_humanitarian_royalist
+				}
+			}
+		}
+	}
+	option = {
+		name = bgy_debug.1.e
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			has_journal_entry = je_the_ticking
+		}
+
+		custom_tooltip = {
+			text = add_to_broken_seal_counter_var_tt
+			change_variable = {
+				name = broken_seal_counter_var
+				add = 1
+			}
+		}
+	}
+	option = {
+		name = bgy_debug.1.g
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			ruler = {
+				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+			}
+			exists = ig:ig_burgundists
+		}
+		ruler = {
+			set_ideology = ideology:ideology_burgundist_leader
+		}
+		if = {
+			limit = {
+				has_modifier = burgundist_supremacy_modifier
+			}
+			hidden_effect = {
+				remove_modifier = burgundist_supremacy_modifier
+			}
+		}
+		add_modifier = {
+			name = burgundist_supremacy_modifier
+			months = 1224
+		}
+	}
+	option = {
+		name = bgy_debug.1.h
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			is_country_type = unrecognized
+		}
+
+		set_country_type = recognized
+	}
+	option = {
+		name = bgy_debug.1.i
+		ai_chance = {
+			base = 0
+		}
+
+		trigger = {
+			any_scope_state = {
+				has_modifier = burgundist_supremacy_modifier
+			}
+		}
+
+		every_scope_state = {
+			limit = {
+				has_modifier = burgundist_supremacy_modifier
+			}
+			remove_modifier = burgundist_supremacy_modifier
+		}
+	}
+	option = {
+		name = bgy_debug.1.j
+		ai_chance = {
+			base = 0
+		}
+		trigger = {
+			exists = ig:ig_burgundists
+		}
+		every_country = {
+			if = {
+				limit = {
+					exists = ig:ig_burgundists
+				}
+				if = {
+					limit = {
+						country_is_in_central_america = yes
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_central_america
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							country_has_primary_culture = cu:british
+							country_has_primary_culture = cu:scottish
+							country_has_primary_culture = cu:welsh
+							country_has_primary_culture = cu:irish
+							AND = {
+								exists = cu:albionian
+								country_has_primary_culture = cu:albionian
+							}
+						}
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_uk
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:burgundian
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_burgund
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:alemannic
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_alemannic
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:north_german
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_north_germans
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:south_german
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_south_germans
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							country_has_state_religion = rel:sunni
+							country_has_state_religion = rel:shiite
+						}
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_islamists
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:icelandic
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_icelandic
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:russian
+						any_character = {
+							has_variable = tsarevich_var
+							is_in_void = yes
+						}
+						NOT = {
+							any_character = {
+								has_template = grigori_rasputin_character_template
+							}
+						}
+						has_global_variable = rasputin_happened_globvar
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_russian_3
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:russian
+						any_character = {
+							has_template = grigori_rasputin_character_template
+						}
+						has_global_variable = rasputin_happened_globvar
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_russian_2
+					}
+				}
+				else_if = {
+					limit = {
+						country_has_primary_culture = cu:russian
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_russian_1
+					}
+				}
+				else_if = {
+					limit = {
+						any_primary_culture = {
+							has_discrimination_trait = romanian_culture_group
+						}
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_romanian
+					}
+				}
+				else_if = {
+					limit = {
+						country_is_in_north_america = yes
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_north_americans
+					}
+				}
+				else_if = {
+					limit = {
+						country_is_in_south_america = yes
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_south_americans
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = bgy_debug.1.k
+		ai_chance = {
+			base = 0
+		}
+		owner = {
+			ig:ig_burgundists = {
+				set_ig_trait = ig_trait:ig_trait_patriotic_fervor
+				set_ig_trait = ig_trait:ig_trait_veteran_consultation
+				set_ig_trait = ig_trait:ig_trait_materiel_waste
 			}
 		}
 	}
