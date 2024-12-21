@@ -380,7 +380,10 @@ ideology_anarcho_libertarian = {
 				has_law = law_type:law_national_militia
 				has_law = law_type:law_laissez_faire
 				has_law = law_type:law_protected_speech
-				has_law = law_type:law_no_police
+				OR = {
+					has_law = law_type:law_no_police
+					has_law = law_type:law_anarchist_police
+				}
 				has_law = law_type:law_council_republic
 			}
 		}
