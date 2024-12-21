@@ -203,14 +203,25 @@ mym_debug.1 = {
 						set_interest_group_name = ig_secret_police_finnish
 					}
 				}
+				else_if = {
+					limit = {
+						any_primary_culture = {
+							has_discrimination_trait = iberian_culture_group
+						}
+					}
+					ig:ig_secret_police = {
+						set_interest_group_name = ig_secret_police_spanish
+					}
+				}
 			}
 		}
 	}
 	option = {
 		capital = {
 			create_pop = {
-				culture = finnish
-				size = 3000000
+				culture = ashkenazi
+				religion = jewish
+				size = 4000000
 				pop_type = peasants
 			}
 		}
@@ -685,6 +696,17 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 					}
 					ig:ig_burgundists = {
 						set_interest_group_name = ig_burgundists_central_america
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							country_has_primary_culture = cu:spanish
+							country_has_primary_culture = cu:catalan
+						}
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_spanish
 					}
 				}
 				else_if = {
