@@ -21,6 +21,7 @@ advcm_add_defense = {
 advcm_add_kill_rate = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	unit_kill_rate_add = 1
+	unit_morale_loss_mult = -0.99
 }
 
 advcm_add_recovery_rate = {
@@ -31,9 +32,11 @@ advcm_add_recovery_rate = {
 advcm_add_assimilation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	state_assimilation_mult = 1
+	state_conversion_mult = 1
 }
 
 advcm_add_education = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	state_education_access_add = 1
+	state_migration_pull_mult = 1
 }
