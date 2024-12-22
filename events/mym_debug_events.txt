@@ -682,7 +682,7 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 		ai_chance = {
 			base = 0
 		}
-		trigger = {
+		trigger = {	
 			exists = ig:ig_burgundists
 		}
 		every_country = {
@@ -849,11 +849,32 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 		ai_chance = {
 			base = 0
 		}
+		trigger = {	
+			exists = ig:ig_burgundists
+		}
 		owner = {
 			ig:ig_burgundists = {
 				set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 				set_ig_trait = ig_trait:ig_trait_veteran_consultation
 				set_ig_trait = ig_trait:ig_trait_materiel_waste
+			}
+		}
+	}
+	option = {
+		name = bgy_debug.1.l
+		ai_chance = {
+			base = 0
+		}
+
+		custom_tooltip = {
+			text = bgy_debug.1.l_tt
+			every_state = {
+				limit = {
+					NOT = { owner = root }
+				}
+				kill_population_percent_in_state = {
+					percent = 0.95
+				}
 			}
 		}
 	}
