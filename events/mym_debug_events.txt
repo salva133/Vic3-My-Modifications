@@ -20,9 +20,6 @@ mym_debug.1 = {
 
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
-	immediate = {
-
-	}
 	option = {
 		name = mym_debug.1.a
 		default_option = yes
@@ -119,7 +116,8 @@ mym_debug.1 = {
 			}
 		}
 
-		remove_primary_culture = cu:romanian
+		remove_primary_culture = cu:baganda
+
 		if = {
 			limit = {
 				NOT = {
@@ -145,7 +143,8 @@ mym_debug.1 = {
 			capital = {
 				create_pop = {
 					culture = aryan
-					size = 100000
+					religion = anti_islamic_agnostic
+					size = 1000000
 					pop_type = laborers
 				}
 			}
