@@ -5,3 +5,13 @@
 	cultures = { albionian }
 	capital = STATE_LANCASHIRE
 }
+
+MAF = {
+	color = dark_grey
+	country_type = unrecognized
+	tier = kingdom
+	cultures = {
+		aryan
+	}
+	capital = STATE_UGANDA
+}

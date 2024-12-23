@@ -261,3 +261,19 @@ NSW = {
 		}
 	}
 }
+
+MAF = {
+	dynamic_country_name = {
+		name = dyn_c_MAF_fascist
+		adjective = dyn_c_MAF_fascist_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				has_law = law_type:law_ethnostate
+			}
+		}
+	}
+}
