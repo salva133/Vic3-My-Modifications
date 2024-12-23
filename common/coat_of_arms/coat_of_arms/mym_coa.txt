@@ -15,3 +15,14 @@ ABI_communist = {
 		texture = "albion_com.dds"
 	}
 }
+
+MAF = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_chevron.dds"
+		color1 = black
+		color2 = grey
+	}
+}
