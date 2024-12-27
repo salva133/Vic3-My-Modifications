@@ -226,7 +226,7 @@ mym_debug.1 = {
 		}
 	}
 	option = {
-
+		remove_primary_culture = cu:sephardic
 	}
 }
 
