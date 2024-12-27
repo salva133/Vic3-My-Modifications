@@ -234,20 +234,20 @@ mym_debug.1 = {
 		# add_primary_culture = cu:north_german
 		# add_primary_culture = cu:south_german
 		# set_state_religion = rel:anti_islamic_agnostic
-		every_scope_pop = {
-			limit = { 
-				OR = {
-					culture = cu:north_german
-					culture = cu:south_german
-				}
-			}
-			change_pop_religion = {
-				target = rel:anti_islamic_agnostic
-				value = 0.1
-			}
-			# change_pop_culture = { target = cu:north_german value = 0.5 }
-			# change_pop_culture = { target = cu:south_german value = 0.5 }
-		}
+		# every_scope_pop = {
+		# 	limit = { 
+		# 		OR = {
+		# 			culture = cu:north_german
+		# 			culture = cu:south_german
+		# 		}
+		# 	}
+		# 	change_pop_religion = {
+		# 		target = rel:anti_islamic_agnostic
+		# 		value = 0.1
+		# 	}
+		#	change_pop_culture = { target = cu:north_german value = 0.5 }
+		#	change_pop_culture = { target = cu:south_german value = 0.5 }
+		# }
 	}
 }
 
