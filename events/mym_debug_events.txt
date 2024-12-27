@@ -216,38 +216,18 @@ mym_debug.1 = {
 		}
 	}
 	option = {
-		# name = "Discover Oil"
-		# every_scope_state = {
-		# 	force_resource_discovery = bg_oil_extraction
-		# 	force_resource_discovery = bg_rubber
-		# }
-		# name = "Create Jews"
-		# capital = {
-		# 	create_pop = {
-		# 		culture = ashkenazi
-		# 		religion = jewish
-		# 		size = 4000000
-		# 		pop_type = peasants
-		# 	}
-		# }
-		# remove_primary_culture = cu:korean
-		# add_primary_culture = cu:north_german
-		# add_primary_culture = cu:south_german
-		# set_state_religion = rel:anti_islamic_agnostic
-		# every_scope_pop = {
-		# 	limit = { 
-		# 		OR = {
-		# 			culture = cu:north_german
-		# 			culture = cu:south_german
-		# 		}
-		# 	}
-		# 	change_pop_religion = {
-		# 		target = rel:anti_islamic_agnostic
-		# 		value = 0.1
-		# 	}
-		#	change_pop_culture = { target = cu:north_german value = 0.5 }
-		#	change_pop_culture = { target = cu:south_german value = 0.5 }
-		# }
+		name = "Callback Ping"
+
+		ordered_scope_state = {
+			order_by = migration_pull
+			save_scope_as = migration_target_state
+		}
+		scope:migration_target_state = {
+			create_mass_migration = {
+				origin = scope:migration_country
+				culture = scope:migration_culture
+			}
+		}		
 	}
 }
 
