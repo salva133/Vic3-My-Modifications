@@ -762,9 +762,8 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 				}
 				else_if = {
 					limit = {
-						OR = {
-							country_has_state_religion = rel:sunni
-							country_has_state_religion = rel:shiite
+						owner.religion = {
+							has_discrimination_trait = muslim
 						}
 					}
 					ig:ig_burgundists = {
@@ -841,6 +840,16 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 					}
 					ig:ig_burgundists = {
 						set_interest_group_name = ig_burgundists_south_americans
+					}
+				}
+				else_if = {
+					limit = {
+						any_primary_culture = {
+							has_discrimination_trait = jewish_group
+						}
+					}
+					ig:ig_burgundists = {
+						set_interest_group_name = ig_burgundists_jewish
 					}
 				}
 			}
