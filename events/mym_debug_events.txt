@@ -16,6 +16,10 @@ mym_debug.1 = {
 		texture = gfx/event_images/bgy_debug.dds
 	}
 
+	trigger = {
+		root = this
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
@@ -225,9 +229,6 @@ mym_debug.1 = {
 			}
 		}
 	}
-	option = {
-		add_primary_culture = cu:sephardic
-	}
 }
 
 mym_debug.2 = { # Give all civilized countries era 3 tech and/or make them independent
@@ -294,6 +295,54 @@ mym_debug.2 = { # Give all civilized countries era 3 tech and/or make them indep
 				is_subject = yes
 			}
 			make_independent = yes
+		}
+	}
+}
+
+mym_debug.3 = { # Callback Ping
+	type = country_event
+	placement = root
+	title = mym_debug.3.t
+	desc = mym_debug.3.d
+	flavor = mym_debug.3.f
+
+	orphan = yes
+	is_popup = yes
+
+	duration = 3
+
+	event_image = {
+		texture = gfx/event_images/bgy_debug.dds
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	option = {
+		name = mym_debug.2.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = mym_debug.2.b
+		trigger = {
+			root = this
+		}
+		every_country = {
+			limit = {
+				NOT = { root = this }
+			}
+			every_scope_state = {
+				every_scope_pop = {
+					limit = {
+						culture = cu:greek
+					}
+					move_pop = root.capital
+				}
+			}
 		}
 	}
 }
@@ -469,10 +518,6 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 		}
 		set_institution_investment_level = {
 			institution = institution_miniwar
-			level = 5
-		}
-		set_institution_investment_level = {
-			institution = institution_self_improvement
 			level = 5
 		}
 		set_institution_investment_level = {
