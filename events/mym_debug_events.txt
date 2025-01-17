@@ -110,6 +110,26 @@ mym_debug.1 = {
 		}
 	}
 	option = {
+		name = mym_debug.1.j
+
+		trigger = {
+			exists = ideology:ideology_accelerationist_leader
+			any_scope_character = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_accelerationist_leader }
+			}
+		}
+
+		every_scope_character = {
+			limit = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_accelerationist_leader }
+				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+			}
+			set_ideology = ideology:ideology_accelerationist_leader
+		}
+	}
+	option = {
 		name = mym_debug.1.h
 
 		trigger = {
