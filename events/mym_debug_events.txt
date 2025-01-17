@@ -249,6 +249,9 @@ mym_debug.1 = {
 			}
 		}
 	}
+	option = {
+		add_modifier = advcm_add_building_throughput
+	}
 }
 
 mym_debug.2 = { # Give all civilized countries era 3 tech and/or make them independent
