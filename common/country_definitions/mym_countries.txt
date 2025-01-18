@@ -10,8 +10,6 @@ MAF = {
 	color = { 255 255 255 }
 	country_type = unrecognized
 	tier = kingdom
-	cultures = {
-		aryan
-	}
+	cultures = { aryan }
 	capital = STATE_UGANDA
 }
