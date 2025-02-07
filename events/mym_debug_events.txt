@@ -2,7 +2,7 @@
 
 mym_debug.1 = {
 	type = country_event
-	placement = root
+	placement = ROOT
 	title = mym_debug.1.t
 	desc = mym_debug.1.d
 	flavor = mym_debug.1.f
@@ -17,7 +17,7 @@ mym_debug.1 = {
 	}
 
 	trigger = {
-		root = this
+		ROOT = this
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -256,7 +256,7 @@ mym_debug.1 = {
 
 mym_debug.2 = { # Give all civilized countries era 3 tech and/or make them independent
 	type = country_event
-	placement = root
+	placement = ROOT
 	title = mym_debug.2.t
 	desc = mym_debug.2.d
 	flavor = mym_debug.2.f
@@ -324,7 +324,7 @@ mym_debug.2 = { # Give all civilized countries era 3 tech and/or make them indep
 
 mym_debug.3 = { # Callback Ping
 	type = country_event
-	placement = root
+	placement = ROOT
 	title = mym_debug.3.t
 	desc = mym_debug.3.d
 	flavor = mym_debug.3.f
@@ -352,18 +352,18 @@ mym_debug.3 = { # Callback Ping
 	option = {
 		name = mym_debug.2.b
 		trigger = {
-			root = this
+			ROOT = this
 		}
 		every_country = {
 			limit = {
-				NOT = { root = this }
+				NOT = { ROOT = this }
 			}
 			every_scope_state = {
 				every_scope_pop = {
 					limit = {
 						culture = cu:greek
 					}
-					move_pop = root.capital
+					move_pop = ROOT.capital
 				}
 			}
 		}
@@ -374,7 +374,7 @@ namespace = bgy_debug
 
 bgy_debug.1 = { # Testing options for Burgundist stuff
 	type = country_event
-	placement = root
+	placement = ROOT
 	title = bgy_debug.1.t
 	desc = bgy_debug.1.d
 	flavor = bgy_debug.1.f
@@ -949,7 +949,7 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 			text = bgy_debug.1.l_tt
 			every_state = {
 				limit = {
-					NOT = { owner = root }
+					NOT = { owner = ROOT }
 				}
 				kill_population_percent_in_state = {
 					percent = 0.95

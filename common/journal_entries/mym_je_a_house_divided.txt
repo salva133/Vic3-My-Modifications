@@ -5,7 +5,7 @@
 
 	is_shown_when_inactive = {
 		exists = c:USA
-		c:USA = root
+		c:USA = ROOT
 		exists = c:CSA
 		NOT = { exists = c:FSA }
 		NOT = { has_global_variable = a_house_divided_completed_globvar }
@@ -58,7 +58,7 @@
 		if = {
 			limit = {
 				exists = c:USA
-				c:USA = root
+				c:USA = ROOT
 			}
 			change_tag = FSA
 		}

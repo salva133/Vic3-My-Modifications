@@ -2,7 +2,7 @@ namespace = ethnic_tensions
 
 ethnic_tensions.1 = {
 	type = state_event
-	placement = root
+	placement = ROOT
 	title =  ethnic_tensions.1.t
 	desc =   ethnic_tensions.1.d
 	flavor = ethnic_tensions.1.f

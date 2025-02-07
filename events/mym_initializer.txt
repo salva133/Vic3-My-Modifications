@@ -2,7 +2,7 @@
 
 albion_init.1 = {
 	type = country_event
-	placement = root
+	placement = ROOT
 	title = albion_init.1.t
 	desc = albion_init.1.d
 	flavor = albion_init.1.f

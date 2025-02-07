@@ -47,7 +47,7 @@ anarcho_libertarian_party = {
 	}
 	
 	# Root - IG considering joining
-	# scope:number - the number of IGs that would join this party before the root IG
+	# scope:number - the number of IGs that would join this party before the ROOT IG
 	join_weight = {
 		value = {
 			value = -5
