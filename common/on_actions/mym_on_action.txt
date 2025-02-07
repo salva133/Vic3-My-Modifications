@@ -66,3 +66,10 @@ on_country_released_as_independent = {
 		albion_init
 	}
 }
+
+on_monthly_pulse_state = {
+	random_events = {
+		chance_of_no_event = 90
+		10 = ethnic_tensions.1
+	}
+}
