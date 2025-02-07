@@ -71,7 +71,7 @@
 				owner = {
 					is_at_war = yes
 					any_scope_war = {
-						attacker_warleader = { this = ROOT.owner }
+						attacker_warleader = { THIS = ROOT.owner }
 						has_war_support = {
 							target = ROOT.owner
 							value < 0
