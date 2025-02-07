@@ -31,7 +31,7 @@
 				value < 3
 			}
 		}
-		# we should probably simplfy this
+		# we should probably simplfy THIS
 		any_scope_state = {
 			is_incorporated = yes
 			OR = {

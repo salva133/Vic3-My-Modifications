@@ -17,7 +17,7 @@ mym_debug.1 = {
 	}
 
 	trigger = {
-		ROOT = this
+		ROOT = THIS
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -352,11 +352,11 @@ mym_debug.3 = { # Callback Ping
 	option = {
 		name = mym_debug.2.b
 		trigger = {
-			ROOT = this
+			ROOT = THIS
 		}
 		every_country = {
 			limit = {
-				NOT = { ROOT = this }
+				NOT = { ROOT = THIS }
 			}
 			every_scope_state = {
 				every_scope_pop = {

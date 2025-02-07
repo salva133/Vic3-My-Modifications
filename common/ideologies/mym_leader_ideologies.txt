@@ -65,7 +65,7 @@
 				owner = {
 					is_at_war = yes
 					any_scope_war = {
-						defender_warleader = { this = ROOT.owner }
+						defender_warleader = { THIS = ROOT.owner }
 					}
 				}
 			}
