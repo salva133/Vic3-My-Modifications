@@ -1,0 +1,31 @@
+namespace = ethnic_tensions
+
+ethnic_tensions.1 = {
+	type = state_event
+	placement = root
+	title =  ethnic_tensions.1.t
+	desc =   ethnic_tensions.1.d
+	flavor = ethnic_tensions.1.f
+
+	duration = 3
+
+	event_image = {
+		video = ""
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		
+	}
+
+
+}
