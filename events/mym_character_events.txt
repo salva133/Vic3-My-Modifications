@@ -2,7 +2,7 @@
 
 corleone.1 = { # The Murder of Don Fanucci 
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  corleone.1.t
 	desc =   corleone.1.d
 	flavor = corleone.1.f
@@ -30,7 +30,7 @@ corleone.1 = { # The Murder of Don Fanucci
 
 corleone.2 = { # New York Daily Chronicle, November 2, 1922
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  corleone.2.t
 	desc =   corleone.2.d
 	flavor = corleone.2.f
@@ -61,7 +61,7 @@ corleone.2 = { # New York Daily Chronicle, November 2, 1922
 
 corleone.3 = { # New York Daily Chronicle, June 6, 1934
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  corleone.3.t
 	desc =   corleone.3.d
 	flavor = corleone.3.f
@@ -102,7 +102,7 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 
 corleone.9 = { # The Death of Don Corleone
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  corleone.9.t
 	desc =   corleone.9.d
 	flavor = corleone.9.f
@@ -148,7 +148,7 @@ namespace = stoker
 
 stoker.1 = { # The Dmitry sets sails
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  stoker.1.t
 	desc =   stoker.1.d
 	flavor = stoker.1.f
@@ -182,7 +182,7 @@ stoker.1 = { # The Dmitry sets sails
 
 stoker.2 = { # The Dmitry is washed ashore
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  stoker.2.t
 	desc =   stoker.2.d
 	flavor = stoker.2.f
@@ -224,7 +224,7 @@ namespace = hp_lovecraft
 
 hp_lovecraft.1 = { # H.P. Lovecraft appears
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  hp_lovecraft.1.t
 	desc =   hp_lovecraft.1.d
 	flavor = hp_lovecraft.1.f
@@ -271,7 +271,7 @@ hp_lovecraft.1 = { # H.P. Lovecraft appears
 
 hp_lovecraft.2 = { # H.P. Liebkraft appears
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  hp_lovecraft.2.t
 	desc =   hp_lovecraft.2.d
 	flavor = hp_lovecraft.2.f
@@ -322,7 +322,7 @@ hp_lovecraft.2 = { # H.P. Liebkraft appears
 
 hp_lovecraft.3 = { # H.P. dies historically
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  hp_lovecraft.3.t
 	desc =   hp_lovecraft.3.d
 	flavor = hp_lovecraft.3.f
@@ -360,7 +360,7 @@ namespace = milei
 
 milei.1 = {
 	type = country_event
-	placement = root
+	placement = ROOT
 	title =  milei.1.t
 	desc =   milei.1.d
 	flavor = milei.1.f

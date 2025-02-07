@@ -112,7 +112,7 @@
 	}
 
 	current_value = {
-		value = root.var:strike_timer_var
+		value = ROOT.var:strike_timer_var
 	}
 
 	goal_add_value = {

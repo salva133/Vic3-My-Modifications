@@ -176,7 +176,7 @@ ideology_national_fascist = {
 			limit = {
 				any_country = {
 					has_diplomatic_pact = {
-						who = root.owner
+						who = ROOT.owner
 						type = war_reparations
 						is_initiator = yes
 					}
