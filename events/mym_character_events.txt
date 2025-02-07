@@ -103,8 +103,8 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 corleone.9 = { # The Death of Don Corleone
 	type = country_event
 	placement = root
-	title = corleone.9.t
-	desc = corleone.9.d
+	title =  corleone.9.t
+	desc =   corleone.9.d
 	flavor = corleone.9.f
 
 	event_image = {
@@ -149,8 +149,8 @@ namespace = stoker
 stoker.1 = { # The Dmitry sets sails
 	type = country_event
 	placement = root
-	title = stoker.1.t
-	desc = stoker.1.d
+	title =  stoker.1.t
+	desc =   stoker.1.d
 	flavor = stoker.1.f
 
 	event_image = {
@@ -183,8 +183,8 @@ stoker.1 = { # The Dmitry sets sails
 stoker.2 = { # The Dmitry is washed ashore
 	type = country_event
 	placement = root
-	title = stoker.2.t
-	desc = stoker.2.d
+	title =  stoker.2.t
+	desc =   stoker.2.d
 	flavor = stoker.2.f
 
 	event_image = {
