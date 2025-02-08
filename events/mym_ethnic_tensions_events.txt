@@ -1,4 +1,4 @@
-namespace = ethnic_tensions
+﻿namespace = ethnic_tensions
 
 ethnic_tensions.1 = { # parallel communities establishing themselves
 	type = state_event

@@ -635,3 +635,139 @@ ideology_anti_statist = {
 		}
 	}
 }
+
+ideology_anti_feminist = {
+    icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_anti_feminist.dds"
+    
+    character_ideology = yes
+    
+    lawgroup_rights_of_women = {
+        law_womens_suffrage = strongly_disapprove   # Strongly disapprove women's suffrage
+        law_women_in_the_workplace = neutral         # Neutral stance on women working in the workplace
+        law_women_own_property = neutral             # Neutral stance on women's property ownership
+        law_no_womens_rights = neutral               # Neutral stance on having no women's rights
+    }
+
+    # Country trigger: the country must have researched the 'feminism' technology
+    country_trigger = {
+        has_technology_researched = feminism
+    }
+    
+    # Trigger for interest group leaders to be valid for this ideology
+    interest_group_leader_trigger = {
+        ideology_anti_feminist_valid_trigger = yes
+    }
+
+    # Non-interest group leader trigger:
+    # Agitators should have an ideology that conflicts with the current women's laws
+    non_interest_group_leader_trigger = {
+        has_role = agitator
+        owner = {
+            has_law = law_type:law_womens_suffrage  # Checks if the owner has the women's suffrage law
+        }
+        interest_group = {
+            ideology_anti_feminist_valid_trigger = yes
+        }
+    }
+    
+    # Configure the weight for interest group leaders of this ideology
+    interest_group_leader_weight = {
+        value = {
+            value = 100  # Base weight value
+
+            # If the owner has researched mass propaganda and the IG Leader is female,
+            # reduce the weight by multiplying by 0.5
+            if = {
+                limit = {
+                    owner = { 
+                        has_technology_researched = mass_propaganda 
+                    }
+                    is_female = yes
+                }
+                multiply = {
+                    value = 0.5
+                }
+            }
+
+            # If the owner has either no women's rights law or a law concerning women's property,
+            # double the weight by multiplying by 2
+            if = {
+                limit = {
+                    owner = { 
+                        OR = {
+                            has_law = law_type:law_no_womens_rights
+                            has_law = law_type:law_women_own_property
+                        }
+                    }
+                }
+                multiply = {
+                    value = 2
+                }
+            }
+
+            # If the interest group is of type intelligentsia or trade unions,
+            # subtract 50 from the weight
+            if = {
+                limit = {
+                    OR = {
+                        is_interest_group_type = ig_intelligentsia
+                        is_interest_group_type = ig_trade_unions
+                    }
+                }
+                add = -50
+            }
+
+            # If the variable 'dreyfusard_victory' is present, subtract 50 from the weight
+            if = {
+                limit = {
+                    has_variable = dreyfusard_victory
+                }
+                add = -50
+            }
+            
+            # If the owner has the variable 'brz_enduring_empire', subtract 50 from the weight
+            if = {
+                limit = {
+                    owner = {
+                        has_variable = brz_enduring_empire
+                    }
+                }
+                add = -50
+            }
+
+            # If the interest group has any of these variables (communist, vanguardism, anarchism,
+            # communism, or ethno-nationalism), reduce the weight by multiplying by 0.1
+            if = {
+                limit = {
+                    OR = {
+                        has_variable = communist_ig_var
+                        has_variable = chose_vanguardism
+                        has_variable = chose_anarchism
+                        has_variable = chose_communism
+                        has_variable = chose_ethno_nationalism
+                    }
+                }
+                multiply = 0.1
+            }
+        }
+    }
+    
+    # Configure the weight for non-interest group leaders
+    non_interest_group_leader_weight = {
+        value = 100  # Base weight value
+        if = {
+            limit = {
+                interest_group = {
+                    OR = {
+                        has_variable = communist_ig_var
+                        has_variable = chose_vanguardism
+                        has_variable = chose_anarchism
+                        has_variable = chose_communism
+                        has_variable = chose_ethno_nationalism
+                    }
+                }
+            }
+            multiply = 0.1  # Multiply the weight by 0.1 if the condition is met
+        }
+    }
+}

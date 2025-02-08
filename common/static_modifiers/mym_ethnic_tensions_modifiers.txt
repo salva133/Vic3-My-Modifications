@@ -1,4 +1,4 @@
-parallel_society_modifier_1 = {
+﻿parallel_society_modifier_1 = {
 	icon = gfx/interface/icons/timed_modifier_icons/parallel_society_modifier_1.dds
 
 	state_assimilation_mult = -0.1
