@@ -17,7 +17,7 @@ mym_debug.1 = {
 	}
 
 	trigger = {
-		ROOT = THIS
+		
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -394,6 +394,7 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 
 	trigger = {
 		always = no
+		exists = ig:ig_burgundists
 		custom_tooltip = {
 			text = has_template_paul_de_lagarde_character_template_tt
 			any_character = {
@@ -695,10 +696,11 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 		}
 
 		trigger = {
+			exists = ig:ig_burgundists
+			exists = ideology:ideology_burgundist_leader
 			ruler = {
 				NOT = { has_ideology = ideology:ideology_burgundist_leader }
 			}
-			exists = ig:ig_burgundists
 		}
 		ruler = {
 			set_ideology = ideology:ideology_burgundist_leader
@@ -798,6 +800,7 @@ bgy_debug.1 = { # Testing options for Burgundist stuff
 				}
 				else_if = {
 					limit = {
+						exists = cu:burgundian
 						country_has_primary_culture = cu:burgundian
 					}
 					ig:ig_burgundists = {
