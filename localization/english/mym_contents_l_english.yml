@@ -82,20 +82,3 @@
   mym_debug.3.f: ""
   mym_debug.3.a: "Close"
   mym_debug.3.b: "--- CALLBACK PING ---"
-
-
-### OUTER DEBUGGING EVENTS
-  bgy_debug.1.t: "Burgundism: Debugging 1"
-  bgy_debug.1.d: "Providing debugging options"
-  bgy_debug.1.f: ""
-
-  bgy_debug.1.a: "Close"
-  bgy_debug.1.b: "Turn country to the Burgundian System"
-  bgy_debug.1.c: "Un-burgundise leader (get a random replacement ideology)"
-  bgy_debug.1.e: "Break a seal"
-  bgy_debug.1.g: "Burgundise Leader + add 100-year-modifier"
-  bgy_debug.1.h: "Make country recognized"
-  bgy_debug.1.i: "Remove modifier $burgundist_supremacy_modifier$"
-  bgy_debug.1.j: "Set IG Names"
-  bgy_debug.1.k: "Add IG Traits"
-  bgy_debug.1.l: "95% Lag Reduction"
