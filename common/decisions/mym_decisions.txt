@@ -1,0 +1,23 @@
+﻿want_to_be_free = {
+
+	is_shown = {
+		is_subject = yes
+	}
+	
+	possible = {
+		overlord = {
+			relations:root >= relations_threshold:cordial
+		}
+	}
+
+	when_taken = {
+		change_relations = {
+			country = overlord
+			value = -200
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
