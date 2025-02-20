@@ -7,3 +7,16 @@
 		is_interest_group_type = ig_burgundists
 	}
 }
+
+is_possible_ideology_fascist = {
+	has_technology_researched = mass_propaganda
+}
+
+is_possible_ideology_communist = {
+	has_technology_researched = socialism
+}
+
+is_possible_ideology_anarchist = {
+	has_technology_researched = anarchism
+}
+
