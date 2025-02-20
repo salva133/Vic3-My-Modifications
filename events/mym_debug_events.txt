@@ -323,7 +323,7 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 		}
 	}
 	option = {
-		name = mym_debug.3.b
+		name = mym_debug.2.e
 		trigger = {
 			ROOT = THIS
 		}
