@@ -293,12 +293,15 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 			NOT = { has_variable = era_4_for_all_var }
 		}
 
-		every_country = {
-			limit = {
-				NOT = { is_country_type = decentralized }
+		custom_tooltip = {
+			text = mym_debug.2.b_tt
+			every_country = {
+				limit = {
+					NOT = { is_country_type = decentralized }
+				}
+				add_era_researched = era_4
+				set_variable = era_4_for_all_var
 			}
-			add_era_researched = era_4
-			set_variable = era_4_for_all_var
 		}
 	}
 	option = {
@@ -314,12 +317,15 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 			}
 		}
 
-		every_country = {
-			limit = {
-				NOT = { is_country_type = decentralized }
-				is_subject = yes
+		custom_tooltip = {
+			text = mym_debug.2.c_tt
+			every_country = {
+				limit = {
+					NOT = { is_country_type = decentralized }
+					is_subject = yes
+				}
+				make_independent = yes
 			}
-			make_independent = yes
 		}
 	}
 	option = {
