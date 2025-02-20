@@ -34,6 +34,7 @@ mym_debug.1 = {
 
 		trigger = {
 			exists = ideology:ideology_fascist
+			is_possible_ideology_fascist = yes
 			any_scope_character = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_fascist }
@@ -54,6 +55,7 @@ mym_debug.1 = {
 		
 		trigger = {
 			exists = ideology:ideology_communist
+			is_possible_ideology_communist = yes
 			any_scope_character = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_communist }
@@ -74,6 +76,7 @@ mym_debug.1 = {
 
 		trigger = {
 			exists = ideology:ideology_anarchist
+			is_possible_ideology_anarchist = yes
 			any_scope_character = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_anarchist }
@@ -94,6 +97,7 @@ mym_debug.1 = {
 
 		trigger = {
 			exists = ideology:ideology_anarcho_libertarian
+			is_possible_ideology_anarchist = yes
 			any_scope_character = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
@@ -114,6 +118,7 @@ mym_debug.1 = {
 
 		trigger = {
 			exists = ideology:ideology_accelerationist_leader
+			is_possible_ideology_accelerationist = yes
 			any_scope_character = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_accelerationist_leader }
@@ -129,51 +134,51 @@ mym_debug.1 = {
 			set_ideology = ideology:ideology_accelerationist_leader
 		}
 	}
-	option = {
-		name = mym_debug.1.h
+	# option = {
+	# 	name = mym_debug.1.h
 
-		trigger = {
-			NOT = {
-				country_has_primary_culture = cu:aryan
-				country_has_state_religion = rel:anti_islamic_agnostic
-				has_variable = aia_conversion_happened_var
-			}
-		}
+	# 	trigger = {
+	# 		NOT = {
+	# 			country_has_primary_culture = cu:aryan
+	# 			country_has_state_religion = rel:anti_islamic_agnostic
+	# 			has_variable = aia_conversion_happened_var
+	# 		}
+	# 	}
 
-		remove_primary_culture = cu:baganda
+	# 	remove_primary_culture = cu:baganda
 
-		if = {
-			limit = {
-				NOT = {
-					country_has_primary_culture = cu:aryan
-				}
-			}
-			add_primary_culture = cu:aryan
-		}
-		if = {
-			limit = {
-				NOT = {
-					country_has_state_religion = rel:anti_islamic_agnostic
-				}
-			}
-			set_state_religion = rel:anti_islamic_agnostic
-			ig:ig_devout = {
-				set_interest_group_name = anti_islam_committee
-			}
-		}
-		if = {
-			limit = { NOT = { has_variable = aia_conversion_happened_var } }
-			set_variable = aia_conversion_happened_var
-			capital = {
-				create_pop = {
-					culture = aryan
-					religion = anti_islamic_agnostic
-					size = 1000000
-					pop_type = laborers
-				}
-			}
-		}
-	}
+	# 	if = {
+	# 		limit = {
+	# 			NOT = {
+	# 				country_has_primary_culture = cu:aryan
+	# 			}
+	# 		}
+	# 		add_primary_culture = cu:aryan
+	# 	}
+	# 	if = {
+	# 		limit = {
+	# 			NOT = {
+	# 				country_has_state_religion = rel:anti_islamic_agnostic
+	# 			}
+	# 		}
+	# 		set_state_religion = rel:anti_islamic_agnostic
+	# 		ig:ig_devout = {
+	# 			set_interest_group_name = anti_islam_committee
+	# 		}
+	# 	}
+	# 	if = {
+	# 		limit = { NOT = { has_variable = aia_conversion_happened_var } }
+	# 		set_variable = aia_conversion_happened_var
+	# 		capital = {
+	# 			create_pop = {
+	# 				culture = aryan
+	# 				religion = anti_islamic_agnostic
+	# 				size = 1000000
+	# 				pop_type = laborers
+	# 			}
+	# 		}
+	# 	}
+	# }
 	option = {
 		name = mym_debug.1.i
 
@@ -249,12 +254,9 @@ mym_debug.1 = {
 			}
 		}
 	}
-	option = {
-		add_modifier = advcm_add_building_throughput
-	}
 }
 
-mym_debug.2 = { # Give all civilized countries era 3 tech and/or make them independent
+mym_debug.2 = { # Give all civilized countries era 4 tech & make them independent & Callback Ping
 	type = country_event
 	placement = ROOT
 	title = mym_debug.2.t
@@ -320,37 +322,8 @@ mym_debug.2 = { # Give all civilized countries era 3 tech and/or make them indep
 			make_independent = yes
 		}
 	}
-}
-
-mym_debug.3 = { # Callback Ping
-	type = country_event
-	placement = ROOT
-	title = mym_debug.3.t
-	desc = mym_debug.3.d
-	flavor = mym_debug.3.f
-
-	orphan = yes
-	is_popup = yes
-
-	duration = 3
-
-	event_image = {
-		texture = gfx/event_images/bgy_debug.dds
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
 	option = {
-		name = mym_debug.2.a
-		default_option = yes
-		ai_chance = {
-			base = 100
-		}
-	}
-	option = {
-		name = mym_debug.2.b
+		name = mym_debug.3.b
 		trigger = {
 			ROOT = THIS
 		}
@@ -361,7 +334,8 @@ mym_debug.3 = { # Callback Ping
 			every_scope_state = {
 				every_scope_pop = {
 					limit = {
-						culture = cu:greek
+						culture = cu:spanish
+						religion = rel:catholic
 					}
 					move_pop = ROOT.capital
 				}
