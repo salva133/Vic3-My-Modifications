@@ -76,9 +76,4 @@
   mym_debug.2.a: "Close"
   mym_debug.2.b: "All countries get era 4 tech"
   mym_debug.2.c: "All countries become independent"
-
-  mym_debug.3.t: "MyM: Debugging 3"
-  mym_debug.3.d: "Providing debugging options"
-  mym_debug.3.f: ""
-  mym_debug.3.a: "Close"
-  mym_debug.3.b: "--- CALLBACK PING ---"
+  mym_debug.2.e: "--- CALLBACK PING ---"
