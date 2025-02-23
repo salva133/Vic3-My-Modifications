@@ -20,3 +20,9 @@ is_possible_ideology_anarchist = {
 	has_technology_researched = anarchism
 }
 
+ideology_secular_humanitarian_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_intelligentsia
+		is_interest_group_type = ig_trade_unions
+	}
+}
