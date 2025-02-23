@@ -1,5 +1,5 @@
 ﻿ideology_timocrat = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_timocrat.dds"
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_timocrat.dds
 	
 	character_ideology = yes
 	
@@ -69,7 +69,7 @@
 }
 
 ideology_national_fascist = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_national_fascist.dds"
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_national_fascist.dds
 	
 	character_ideology = yes
 
@@ -301,7 +301,7 @@ ideology_national_fascist = {
 }
 
 ideology_anarcho_libertarian = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_anarcho_libertarian.dds"
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_anarcho_libertarian.dds
 	
 	character_ideology = yes
 	lawgroup_distribution_of_power = {
@@ -467,7 +467,7 @@ ideology_anarcho_libertarian = {
 }
 
 ideology_anti_statist = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_anti_statist.dds"
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_anti_statist.dds
 
 	character_ideology = yes
 
@@ -623,7 +623,7 @@ ideology_anti_statist = {
 }
 
 ideology_anti_feminist = {
-    icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_anti_feminist.dds"
+    icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_anti_feminist.dds
     
     character_ideology = yes
     
@@ -759,7 +759,7 @@ ideology_anti_feminist = {
 }
 
 ideology_secular_humanitarian = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_secular_humanitarism.dds"
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_secular_humanitarism.dds
 	
 	character_ideology = yes
 

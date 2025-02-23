@@ -1,5 +1,5 @@
 ﻿pm_home_workshops_no_building_subsistence_farms = {
-	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/no_home_workshops.dds
 	unlocking_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture
@@ -15,7 +15,7 @@
 }		
 
 pm_home_workshops_building_subsistence_farms = {
-	texture = "gfx/interface/icons/production_method_icons/home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/home_workshops.dds
 	disallowing_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture
@@ -31,7 +31,7 @@ pm_home_workshops_building_subsistence_farms = {
 }
 
 pm_serfdom_no = {
-	texture = "gfx/interface/icons/production_method_icons/no_serfdom.dds"
+	texture = gfx/interface/icons/production_method_icons/no_serfdom.dds
 	unlocking_laws = {
 		law_tenant_farmers
 		law_commercialized_agriculture
@@ -45,7 +45,7 @@ pm_serfdom_no = {
 }
 
 pm_home_workshops_no_building_subsistence_orchards = {
-	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/no_home_workshops.dds
 	unlocking_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture
@@ -61,7 +61,7 @@ pm_home_workshops_no_building_subsistence_orchards = {
 }		
 
 pm_home_workshops_building_subsistence_orchards = {
-	texture = "gfx/interface/icons/production_method_icons/home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/home_workshops.dds
 	disallowing_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture
@@ -77,7 +77,7 @@ pm_home_workshops_building_subsistence_orchards = {
 }
 
 pm_home_workshops_no_building_subsistence_pastures = {
-	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/no_home_workshops.dds
 	unlocking_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture
@@ -92,7 +92,7 @@ pm_home_workshops_no_building_subsistence_pastures = {
 }		
 
 pm_home_workshops_building_subsistence_pastures = {
-	texture = "gfx/interface/icons/production_method_icons/home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/home_workshops.dds
 	disallowing_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture
@@ -108,7 +108,7 @@ pm_home_workshops_building_subsistence_pastures = {
 }
 
 pm_home_workshops_no_building_subsistence_fishing_villages = {
-	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/no_home_workshops.dds
 	unlocking_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture
@@ -124,7 +124,7 @@ pm_home_workshops_no_building_subsistence_fishing_villages = {
 }		
 
 pm_home_workshops_building_subsistence_fishing_villages = {
-	texture = "gfx/interface/icons/production_method_icons/home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/home_workshops.dds
 	disallowing_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture
@@ -140,7 +140,7 @@ pm_home_workshops_building_subsistence_fishing_villages = {
 }
 
 pm_home_workshops_no_building_subsistence_rice_paddies = {
-	texture = "gfx/interface/icons/production_method_icons/no_home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/no_home_workshops.dds
 	unlocking_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture
@@ -156,7 +156,7 @@ pm_home_workshops_no_building_subsistence_rice_paddies = {
 }		
 
 pm_home_workshops_building_subsistence_rice_paddies = {
-	texture = "gfx/interface/icons/production_method_icons/home_workshops.dds"
+	texture = gfx/interface/icons/production_method_icons/home_workshops.dds
 	disallowing_laws = {
 		law_full_collectivization
 		law_collectivized_agriculture

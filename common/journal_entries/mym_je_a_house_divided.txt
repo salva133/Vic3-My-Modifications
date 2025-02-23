@@ -1,5 +1,5 @@
 ﻿je_a_house_divided = {
-	icon = "gfx/interface/icons/event_icons/event_newspaper.dds" # Replace with an icon of a house split in have, maybe one side grey and one side blue
+	icon = gfx/interface/icons/event_icons/event_newspaper.dds # Replace with an icon of a house split in have, maybe one side grey and one side blue
 
 	group = je_group_historical_content
 

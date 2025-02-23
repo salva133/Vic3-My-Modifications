@@ -21,7 +21,7 @@ mym_debug.1 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = gfx/interface/icons/event_icons/waving_flag.dds
 
 	option = {
 		name = mym_debug.1.a
@@ -286,7 +286,7 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = gfx/interface/icons/event_icons/waving_flag.dds
 
 	option = {
 		name = mym_debug.2.a
