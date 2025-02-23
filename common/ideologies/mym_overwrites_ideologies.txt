@@ -1,5 +1,5 @@
 ﻿ideology_pacifist = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_pacifist.dds"
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_pacifist.dds
 	
 	character_ideology = yes
 
@@ -138,7 +138,7 @@
 }
 
 ideology_luddite = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/luddite.dds"
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/luddite.dds
 	
 	character_ideology = yes
 
