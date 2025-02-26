@@ -399,12 +399,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger = {
 			exists = ideology:ideology_timocrat
-			NOT = {
-				ruler = {
-					has_ideology = ideology:ideology_timocrat
-				}
-				any_scope_character = {
-					is_agitator = yes
+			ruler = {
+				NOT = {
 					has_ideology = ideology:ideology_timocrat
 				}
 			}
@@ -412,15 +408,16 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		if = {
 			limit = {
 				any_scope_character = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_timocrat
 				}
 			}
 			random_scope_character = {
 				limit = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_timocrat
 				}
+				remove_character_role = agitator
 				set_character_as_ruler = yes
 			}
 		}
@@ -438,12 +435,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger = {
 			exists = ideology:ideology_national_fascist
-			NOT = {
-				ruler = {
-					has_ideology = ideology:ideology_national_fascist
-				}
-				any_scope_character = {
-					is_agitator = yes
+			ruler = {
+				NOT = {
 					has_ideology = ideology:ideology_national_fascist
 				}
 			}
@@ -451,15 +444,16 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		if = {
 			limit = {
 				any_scope_character = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_national_fascist
 				}
 			}
 			random_scope_character = {
 				limit = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_national_fascist
 				}
+				remove_character_role = agitator
 				set_character_as_ruler = yes
 			}
 		}
@@ -477,12 +471,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger = {
 			exists = ideology:ideology_anarcho_libertarian
-			NOT = {
-				ruler = {
-					has_ideology = ideology:ideology_anarcho_libertarian
-				}
-				any_scope_character = {
-					is_agitator = yes
+			ruler = {
+				NOT = {
 					has_ideology = ideology:ideology_anarcho_libertarian
 				}
 			}
@@ -490,15 +480,16 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		if = {
 			limit = {
 				any_scope_character = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_anarcho_libertarian
 				}
 			}
 			random_scope_character = {
 				limit = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_anarcho_libertarian
 				}
+				remove_character_role = agitator
 				set_character_as_ruler = yes
 			}
 		}
@@ -516,12 +507,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger = {
 			exists = ideology:ideology_anti_statist
-			NOT = {
-				ruler = {
-					has_ideology = ideology:ideology_anti_statist
-				}
-				any_scope_character = {
-					is_agitator = yes
+			ruler = {
+				NOT = {
 					has_ideology = ideology:ideology_anti_statist
 				}
 			}
@@ -529,15 +516,16 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		if = {
 			limit = {
 				any_scope_character = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_anti_statist
 				}
 			}
 			random_scope_character = {
 				limit = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_anti_statist
 				}
+				remove_character_role = agitator
 				set_character_as_ruler = yes
 			}
 		}
@@ -555,12 +543,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger = {
 			exists = ideology:ideology_anti_feminist
-			NOT = {
-				ruler = {
-					has_ideology = ideology:ideology_anti_feminist
-				}
-				any_scope_character = {
-					is_agitator = yes
+			ruler = {
+				NOT = {
 					has_ideology = ideology:ideology_anti_feminist
 				}
 			}
@@ -568,15 +552,16 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		if = {
 			limit = {
 				any_scope_character = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_anti_feminist
 				}
 			}
 			random_scope_character = {
 				limit = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_anti_feminist
 				}
+				remove_character_role = agitator
 				set_character_as_ruler = yes
 			}
 		}
@@ -594,12 +579,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger = {
 			exists = ideology:ideology_secular_humanitarian
-			NOT = {
-				ruler = {
-					has_ideology = ideology:ideology_secular_humanitarian
-				}
-				any_scope_character = {
-					is_agitator = yes
+			ruler = {
+				NOT = {
 					has_ideology = ideology:ideology_secular_humanitarian
 				}
 			}
@@ -607,15 +588,16 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		if = {
 			limit = {
 				any_scope_character = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_secular_humanitarian
 				}
 			}
 			random_scope_character = {
 				limit = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_secular_humanitarian
 				}
+				remove_character_role = agitator
 				set_character_as_ruler = yes
 			}
 		}
@@ -633,12 +615,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger = {
 			exists = ideology:ideology_burgundist_leader
-			NOT = {
-				ruler = {
-					has_ideology = ideology:ideology_burgundist_leader
-				}
-				any_scope_character = {
-					is_agitator = yes
+			ruler = {
+				NOT = {
 					has_ideology = ideology:ideology_burgundist_leader
 				}
 			}
@@ -646,15 +624,16 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		if = {
 			limit = {
 				any_scope_character = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_burgundist_leader
 				}
 			}
 			random_scope_character = {
 				limit = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_burgundist_leader
 				}
+				remove_character_role = agitator
 				set_character_as_ruler = yes
 			}
 		}
@@ -672,12 +651,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger = {
 			exists = ideology:ideology_accelerationist_leader
-			NOT = {
-				ruler = {
-					has_ideology = ideology:ideology_accelerationist_leader
-				}
-				any_scope_character = {
-					is_agitator = yes
+			ruler = {
+				NOT = {
 					has_ideology = ideology:ideology_accelerationist_leader
 				}
 			}
@@ -685,15 +660,16 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		if = {
 			limit = {
 				any_scope_character = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_accelerationist_leader
 				}
 			}
 			random_scope_character = {
 				limit = {
-					is_agitator = yes
+					has_role = agitator
 					has_ideology = ideology:ideology_accelerationist_leader
 				}
+				remove_character_role = agitator
 				set_character_as_ruler = yes
 			}
 		}
