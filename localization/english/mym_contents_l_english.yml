@@ -1,4 +1,6 @@
 ﻿l_english:
+  close_loc: "Close"
+
 # Corleone
   corleone.1.t: "New York Daily News"
   corleone.1.d: "Notorious Black Hand Leader Found Dead"
@@ -35,22 +37,22 @@
   hp_lovecraft.1.t: "Author has success with horror story"
   hp_lovecraft.1.d: "[SCOPE.sCharacter('hp_scope').GetFullName] has had success in a niche magazine with the terrifyingly gruesome story\n'The Call of Cthulu'."
   hp_lovecraft.1.f: "'The Call of Cthulhu' ranks among the best of weird fiction tales, blending a haunting sense of cosmic dread with the notion of incomprehensible beings from beyond. This story of ancient evils awakening from the depths of time serves as a grim reminder of mankind's fragile place in an infinite universe.\n\n#italic - from Weird Tales, February 1928 issue#!"
-  hp_lovecraft.1.a: "Close"
+  hp_lovecraft.1.a: "$close_loc$"
 
   hp_lovecraft.2.t: "Author has success with horror story"
   hp_lovecraft.2.d: "[SCOPE.sCharacter('hp_scope').GetFullName] has had success in a niche magazine with the terrifyingly gruesome story\n'Cthulus Ruf'."
   hp_lovecraft.2.f: "'Cthulus Ruf' ranks among the best of weird fiction tales, blending a haunting sense of cosmic dread with the notion of incomprehensible beings from beyond. This story of ancient evils awakening from the depths of time serves as a grim reminder of mankind's fragile place in an infinite universe.\n\n#italic - from Der Orchideengarten, February 1928 issue#!"
-  hp_lovecraft.2.a: "Close"
+  hp_lovecraft.2.a: "$close_loc$"
 
   hp_lovecraft.3.t: "Only nine years"
   hp_lovecraft.3.d: "[SCOPE.sCharacter('hp_scope').GetFullName] died after only nine years. [SCOPE.sCharacter('hp_scope').GetLastName] was diagnosed with bowel cancer, which was recognised and treated too late."
   hp_lovecraft.3.f: "\"I am practically dead, eternally ill. It is hard to have to die alone.\"\n\n#italic - [SCOPE.sCharacter('hp_scope').GetFullName]"
-  hp_lovecraft.3.a: "Close"
+  hp_lovecraft.3.a: "$close_loc$"
 
   albion_init.1.t: "Initializer"
   albion_init.1.d: ""
   albion_init.1.f: ""
-  albion_init.1.a: "Close"
+  albion_init.1.a: "$close_loc$"
 
   milei.1.t: "A new agitator appears"
   milei.1.d: "Who is this guy?"
@@ -61,7 +63,7 @@
   mym_debug.1.t: "MyM: Debugging 1"
   mym_debug.1.d: "Providing debugging options"
   mym_debug.1.f: "Only applies ideologies that are actually existing in the game.\nIf an ideology ain't applyable, then it is not existing in the current game."
-  mym_debug.1.a: "Close"
+  mym_debug.1.a: "$close_loc$"
   mym_debug.1.b: "Together, we will restore order and national glory!\nYou are part of our destiny"
   mym_debug.1.c: "Comrade, rise!\nOur future lies in unity, equality, and the collective will of the people"
   mym_debug.1.e: "Break your chains, friend!\nLet's build a world free from all forms of tyranny"
@@ -73,7 +75,19 @@
   mym_debug.2.t: "MyM: Debugging 2"
   mym_debug.2.d: "Providing debugging options"
   mym_debug.2.f: ""
-  mym_debug.2.a: "Close"
+  mym_debug.2.a: "$close_loc$"
   mym_debug.2.b: "All countries get era 4 tech"
   mym_debug.2.c: "All countries become independent"
   mym_debug.2.e: "--- CALLBACK PING ---"
+
+  mym_debug.3.t: "MyM: Character Spawn"
+  mym_debug.3.d: ""
+  mym_debug.3.f: ""
+  mym_debug.3.b: "Honor and merit shall guide us!\nWith wisdom and strength, the worthy will shape our destiny."
+  mym_debug.3.c: "Nation and blood above all!\nThrough unity, discipline, and willpower, we shall reclaim our rightful place!"
+  mym_debug.3.e: "Tear down the oppressors!\nTogether, we will forge a world where no chains bind us and no rulers command!"
+  mym_debug.3.g: "No masters, no servants!\nWe shall dismantle the state and embrace true self-governance!"
+  mym_debug.3.h: "Strength and tradition shall prevail!\nThe natural order must be restored, free from modern corruption!"
+  mym_debug.3.i: "Reason and progress above all!\nWith knowledge and compassion, we will create a better world for all."
+  mym_debug.3.j: "Sacrifice and order are the path to eternity!\nThrough unyielding discipline, we shall transcend weakness and forge a new empire!"
+  mym_debug.3.k: "Accelerate into the future!\nTogether, we will harness chaos to forge a new and boundless tomorrow."
