@@ -1,7 +1,8 @@
 ﻿advcm_add_building_throughput = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	country_max_weekly_construction_progress_add = 10000
-	country_trade_route_competitiveness_mult = 5
+	building_throughput_add = 10
+	# country_max_weekly_construction_progress_add = 10000
+	# country_trade_route_competitiveness_mult = 5
 }
 
 advcm_add_building_input_reduction = {
