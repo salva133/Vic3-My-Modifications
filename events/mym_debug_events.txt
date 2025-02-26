@@ -368,7 +368,7 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 	}
 }
 
-mym_debug.3 = { # Character Spawner
+mym_debug.3 = { # Character Spawner & Kingmaker
 	type = country_event
 	placement = ROOT
 	title = mym_debug.3.t
@@ -399,10 +399,38 @@ mym_debug.3 = { # Character Spawner
 		
 		trigger = {
 			exists = ideology:ideology_timocrat
+			NOT = {
+				ruler = {
+					has_ideology = ideology:ideology_timocrat
+				}
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_timocrat
+				}
+			}
 		}
-		create_character = {
-			ideology = ideology:ideology_timocrat
+		if = {
+			limit = {
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_timocrat
+				}
+			}
+			random_scope_character = {
+				limit = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_timocrat
+				}
+				set_character_as_ruler = yes
+			}
 		}
+		else = {
+			create_character = {
+				is_agitator = yes
+				ideology = ideology:ideology_timocrat
+			}
+		}
+		
 		trigger_event = mym_debug.3
 	}
 	option = {
@@ -410,10 +438,38 @@ mym_debug.3 = { # Character Spawner
 		
 		trigger = {
 			exists = ideology:ideology_national_fascist
+			NOT = {
+				ruler = {
+					has_ideology = ideology:ideology_national_fascist
+				}
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_national_fascist
+				}
+			}
 		}
-		create_character = {
-			ideology = ideology:ideology_national_fascist
+		if = {
+			limit = {
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_national_fascist
+				}
+			}
+			random_scope_character = {
+				limit = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_national_fascist
+				}
+				set_character_as_ruler = yes
+			}
 		}
+		else = {
+			create_character = {
+				is_agitator = yes
+				ideology = ideology:ideology_national_fascist
+			}
+		}
+		
 		trigger_event = mym_debug.3
 	}
 	option = {
@@ -421,10 +477,38 @@ mym_debug.3 = { # Character Spawner
 		
 		trigger = {
 			exists = ideology:ideology_anarcho_libertarian
+			NOT = {
+				ruler = {
+					has_ideology = ideology:ideology_anarcho_libertarian
+				}
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_anarcho_libertarian
+				}
+			}
 		}
-		create_character = {
-			ideology = ideology:ideology_anarcho_libertarian
+		if = {
+			limit = {
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_anarcho_libertarian
+				}
+			}
+			random_scope_character = {
+				limit = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_anarcho_libertarian
+				}
+				set_character_as_ruler = yes
+			}
 		}
+		else = {
+			create_character = {
+				is_agitator = yes
+				ideology = ideology:ideology_anarcho_libertarian
+			}
+		}
+		
 		trigger_event = mym_debug.3
 	}
 	option = {
@@ -432,10 +516,38 @@ mym_debug.3 = { # Character Spawner
 		
 		trigger = {
 			exists = ideology:ideology_anti_statist
+			NOT = {
+				ruler = {
+					has_ideology = ideology:ideology_anti_statist
+				}
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_anti_statist
+				}
+			}
 		}
-		create_character = {
-			ideology = ideology:ideology_anti_statist
+		if = {
+			limit = {
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_anti_statist
+				}
+			}
+			random_scope_character = {
+				limit = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_anti_statist
+				}
+				set_character_as_ruler = yes
+			}
 		}
+		else = {
+			create_character = {
+				is_agitator = yes
+				ideology = ideology:ideology_anti_statist
+			}
+		}
+		
 		trigger_event = mym_debug.3
 	}
 	option = {
@@ -443,10 +555,38 @@ mym_debug.3 = { # Character Spawner
 		
 		trigger = {
 			exists = ideology:ideology_anti_feminist
+			NOT = {
+				ruler = {
+					has_ideology = ideology:ideology_anti_feminist
+				}
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_anti_feminist
+				}
+			}
 		}
-		create_character = {
-			ideology = ideology:ideology_anti_feminist
+		if = {
+			limit = {
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_anti_feminist
+				}
+			}
+			random_scope_character = {
+				limit = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_anti_feminist
+				}
+				set_character_as_ruler = yes
+			}
 		}
+		else = {
+			create_character = {
+				is_agitator = yes
+				ideology = ideology:ideology_anti_feminist
+			}
+		}
+		
 		trigger_event = mym_debug.3
 	}
 	option = {
@@ -454,10 +594,38 @@ mym_debug.3 = { # Character Spawner
 		
 		trigger = {
 			exists = ideology:ideology_secular_humanitarian
+			NOT = {
+				ruler = {
+					has_ideology = ideology:ideology_secular_humanitarian
+				}
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_secular_humanitarian
+				}
+			}
 		}
-		create_character = {
-			ideology = ideology:ideology_secular_humanitarian
+		if = {
+			limit = {
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_secular_humanitarian
+				}
+			}
+			random_scope_character = {
+				limit = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_secular_humanitarian
+				}
+				set_character_as_ruler = yes
+			}
 		}
+		else = {
+			create_character = {
+				is_agitator = yes
+				ideology = ideology:ideology_secular_humanitarian
+			}
+		}
+		
 		trigger_event = mym_debug.3
 	}
 	option = {
@@ -465,10 +633,38 @@ mym_debug.3 = { # Character Spawner
 		
 		trigger = {
 			exists = ideology:ideology_burgundist_leader
+			NOT = {
+				ruler = {
+					has_ideology = ideology:ideology_burgundist_leader
+				}
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_burgundist_leader
+				}
+			}
 		}
-		create_character = {
-			ideology = ideology:ideology_burgundist_leader
+		if = {
+			limit = {
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_burgundist_leader
+				}
+			}
+			random_scope_character = {
+				limit = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_burgundist_leader
+				}
+				set_character_as_ruler = yes
+			}
 		}
+		else = {
+			create_character = {
+				is_agitator = yes
+				ideology = ideology:ideology_burgundist_leader
+			}
+		}
+		
 		trigger_event = mym_debug.3
 	}
 	option = {
@@ -476,10 +672,38 @@ mym_debug.3 = { # Character Spawner
 		
 		trigger = {
 			exists = ideology:ideology_accelerationist_leader
+			NOT = {
+				ruler = {
+					has_ideology = ideology:ideology_accelerationist_leader
+				}
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_accelerationist_leader
+				}
+			}
 		}
-		create_character = {
-			ideology = ideology:ideology_accelerationist_leader
+		if = {
+			limit = {
+				any_scope_character = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_accelerationist_leader
+				}
+			}
+			random_scope_character = {
+				limit = {
+					is_agitator = yes
+					has_ideology = ideology:ideology_accelerationist_leader
+				}
+				set_character_as_ruler = yes
+			}
 		}
+		else = {
+			create_character = {
+				is_agitator = yes
+				ideology = ideology:ideology_accelerationist_leader
+			}
+		}
+		
 		trigger_event = mym_debug.3
 	}
 }
