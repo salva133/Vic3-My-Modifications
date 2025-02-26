@@ -388,14 +388,14 @@ mym_debug.3 = { # Character Spawner
 	icon = gfx/interface/icons/event_icons/waving_flag.dds
 
 	option = {
-		name = mym_debug.3.a
+		name = close_loc
 		default_option = yes
 		ai_chance = {
 			base = 100
 		}
 	}
 	option = {
-		name = mym_debug.3.a
+		name = mym_debug.3.b
 		
 		trigger = {
 			exists = ideology:ideology_timocrat
@@ -406,7 +406,7 @@ mym_debug.3 = { # Character Spawner
 		trigger_event = mym_debug.3
 	}
 	option = {
-		name = mym_debug.3.a
+		name = mym_debug.3.c
 		
 		trigger = {
 			exists = ideology:ideology_national_fascist
@@ -417,7 +417,7 @@ mym_debug.3 = { # Character Spawner
 		trigger_event = mym_debug.3
 	}
 	option = {
-		name = mym_debug.3.a
+		name = mym_debug.3.e
 		
 		trigger = {
 			exists = ideology:ideology_anarcho_libertarian
@@ -428,7 +428,7 @@ mym_debug.3 = { # Character Spawner
 		trigger_event = mym_debug.3
 	}
 	option = {
-		name = mym_debug.3.a
+		name = mym_debug.3.g
 		
 		trigger = {
 			exists = ideology:ideology_anti_statist
@@ -439,7 +439,7 @@ mym_debug.3 = { # Character Spawner
 		trigger_event = mym_debug.3
 	}
 	option = {
-		name = mym_debug.3.a
+		name = mym_debug.3.h
 		
 		trigger = {
 			exists = ideology:ideology_anti_feminist
@@ -450,7 +450,7 @@ mym_debug.3 = { # Character Spawner
 		trigger_event = mym_debug.3
 	}
 	option = {
-		name = mym_debug.3.a
+		name = mym_debug.3.i
 		
 		trigger = {
 			exists = ideology:ideology_secular_humanitarian
@@ -461,7 +461,7 @@ mym_debug.3 = { # Character Spawner
 		trigger_event = mym_debug.3
 	}
 	option = {
-		name = mym_debug.3.a
+		name = mym_debug.3.j
 		
 		trigger = {
 			exists = ideology:ideology_burgundist_leader
@@ -472,7 +472,7 @@ mym_debug.3 = { # Character Spawner
 		trigger_event = mym_debug.3
 	}
 	option = {
-		name = mym_debug.3.a
+		name = mym_debug.3.k
 		
 		trigger = {
 			exists = ideology:ideology_accelerationist_leader
