@@ -5,15 +5,23 @@
 	}
 	
 	possible = {
-		overlord = {
-			relations:root >= relations_threshold:cordial
-		}
+		is_subject = yes
+		is_at_war = no
 	}
 
 	when_taken = {
-		change_relations = {
-			country = overlord
-			value = -200
+		root = {
+			create_diplomatic_play = {
+				name = dp_independence
+				type = dp_independence
+				war = yes
+				target_country = overlord
+				add_war_goal = {
+					holder = root
+					type = war_reparations
+					target_country = overlord
+				}
+			}
 		}
 	}
 
@@ -21,3 +29,4 @@
 		base = 0
 	}
 }
+ 
