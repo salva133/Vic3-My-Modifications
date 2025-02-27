@@ -5,22 +5,22 @@
   corleone.1.t: "New York Daily News"
   corleone.1.d: "Notorious Black Hand Leader Found Dead"
   corleone.1.f: "#italic Little Italy, New York City - #!In a shocking turn of events, the feared and influential leader of the Black Hand extortion racket, Don Fanucci, was found dead late last night. The incident occurred in the heart of Little Italy, on the corner of Mott and Hester Streets, sending waves of both relief and anxiety through the local immigrant community.\n\nEarwitnesses reported hearing several gunshots shortly after sundown, though the streets were unusually quiet at the time. Fanucci's body was discovered slumped in a doorway, with multiple gunshot wounds to the chest and head.\n\nPolice have yet to identify any suspects, but given Fanucci's extensive list of enemies, officials expect this case to prove difficult to solve. The local Sicilian-American community, which has been plagued by Fanucci's criminal dealings, remains tight-lipped.\n\nWhile the death of Fanucci is welcomed by many victims of his extortion, authorities are concerned this could spark a violent power struggle for control over his rackets in the neighborhood.\n\nThe murder of Don Fanucci adds to the growing unrest in New York's underworld, where tensions between rival gangs and criminal organizations are said to be nearing a boiling point."
-  corleone.1.a: ""
+  corleone.1.a: "$close_loc$"
 
   corleone.2.t: "New York Daily News"
   corleone.2.d: "Underworld Feud Leaves Siegel's Rivals Dead in Shootout"
   corleone.2.f: "#italic New York City - #!Two prominent rivals of notorious gangster Benjamin \"Bugsy\" Siegel were shot dead in a violent confrontation last night. The ambush signals the diminishing opposition to Siegel's control over the East Side, as he consolidates his power in the city's underworld.\n\n#bold New Gang Offers Protection in Little Italy, Replacing Fanucci's Reign of Terror#!\n\n#italic New York City#! - A new gang has emerged in Little Italy, providing protection to local business owners under more favorable conditions than the infamous Don Fanucci. Residents report that the gang's less aggressive approach has brought a sense of security and calm to the neighborhood, a stark contrast to the extortionist rule of Fanucci."
-  corleone.2.a: ""
+  corleone.2.a: "$close_loc$"
 
   corleone.3.t: "New York Daily News"
   corleone.3.d: "[SCOPE.sCharacter('ruler_scope').GetLastName] Signs Securities Exchange Act to Regulate Wall Street Practices"
   corleone.3.f: "#italic New York City - #![SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName] signed the Securities Exchange Act into law yesterday, marking a historic effort to regulate stock market practices following the 1929 crash. The act establishes the Securities and Exchange Commission (SEC) to oversee financial markets and prevent fraudulent activities. Wall Street brokers and financial institutions brace for the sweeping changes to their operations.\n\n#bold Police Report Alleged Gathering of Queens and Brooklyn Crime Bosses#!\n\n#italic Queens, New York City - #!According to police reports, several of the most powerful gangsters in Queens and Brooklyn are believed to have met recently in a secretive gathering in Queens. Authorities are monitoring the situation closely, fearing that the meeting could signify a shift in criminal power dynamics. The identities of those involved remain unclear, but law enforcement is on high alert in both boroughs."
-  corleone.3.a: ""
+  corleone.3.a: "$close_loc$"
 
   corleone.9.t: "New York Daily News"
   corleone.9.d: "Infamous Mafia Don [SCOPE.sCharacter('vito_corleone_scope').GetLastName] Dies Peacefully in His Garden"
   corleone.9.f: "#italic Long Island, New York#! - [SCOPE.sCharacter('vito_corleone_scope').GetFullName], the infamous head of one of New York's most powerful Mafia families, passed away peacefully yesterday afternoon. Corleone, who had retired from public life in recent years, was found in his garden by family members. Despite his long history of criminal influence, Corleone's death marks the end of an era in organized crime. No foul play is suspected. Rumour has it that his son [SCOPE.sCharacter('michael_corleone_scope').GetFirstName] will continue to run the business."
-  corleone.9.a: ""
+  corleone.9.a: "$close_loc$"
 
 # Stoker
   stoker.1.t: "A journey, like any other"
