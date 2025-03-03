@@ -124,72 +124,118 @@ mym_debug.1 = {
 		name = mym_debug.1.j
 
 		trigger = {
-			exists = ideology:ideology_accelerationist_leader
+			exists = ideology:ideology_neo_industrialist
 			is_possible_ideology_accelerationist = yes
 			any_scope_character = {
 				has_role = politician
-				NOT = { has_ideology = ideology:ideology_accelerationist_leader }
+				NOT = { has_ideology = ideology:ideology_neo_industrialist }
 			}
 		}
 
 		every_scope_character = {
 			limit = {
 				has_role = politician
-				NOT = { has_ideology = ideology:ideology_accelerationist_leader }
+				NOT = { has_ideology = ideology:ideology_neo_industrialist }
 				NOT = { has_ideology = ideology:ideology_burgundist_leader }
 			}
-			set_ideology = ideology:ideology_accelerationist_leader
+			set_ideology = ideology:ideology_neo_industrialist
 		}
 
 		trigger_event = mym_debug.1
 	}
-	# option = {
-	# 	name = mym_debug.1.h
+	option = {
+		name = mym_debug.1.j
 
-	# 	trigger = {
-	# 		NOT = {
-	# 			country_has_primary_culture = cu:aryan
-	# 			country_has_state_religion = rel:anti_islamic_agnostic
-	# 			has_variable = aia_conversion_happened_var
-	# 		}
-	# 	}
+		trigger = {
+			exists = ideology:ideology_hyper_individualist
+			is_possible_ideology_accelerationist = yes
+			any_scope_character = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_hyper_individualist }
+			}
+		}
 
-	# 	remove_primary_culture = cu:baganda
+		every_scope_character = {
+			limit = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_hyper_individualist }
+				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+			}
+			set_ideology = ideology:ideology_hyper_individualist
+		}
 
-	# 	if = {
-	# 		limit = {
-	# 			NOT = {
-	# 				country_has_primary_culture = cu:aryan
-	# 			}
-	# 		}
-	# 		add_primary_culture = cu:aryan
-	# 	}
-	# 	if = {
-	# 		limit = {
-	# 			NOT = {
-	# 				country_has_state_religion = rel:anti_islamic_agnostic
-	# 			}
-	# 		}
-	# 		set_state_religion = rel:anti_islamic_agnostic
-	# 		ig:ig_devout = {
-	# 			set_interest_group_name = anti_islam_committee
-	# 		}
-	# 	}
-	# 	if = {
-	# 		limit = { NOT = { has_variable = aia_conversion_happened_var } }
-	# 		set_variable = aia_conversion_happened_var
-	# 		capital = {
-	# 			create_pop = {
-	# 				culture = aryan
-	# 				religion = anti_islamic_agnostic
-	# 				size = 1000000
-	# 				pop_type = laborers
-	# 			}
-	# 		}
-	# 	}
-	# 
-	# trigger_event = mym_debug.1
-	# }
+		trigger_event = mym_debug.1
+	}
+	option = {
+		name = mym_debug.1.j
+
+		trigger = {
+			exists = ideology:ideology_recreationist
+			is_possible_ideology_accelerationist = yes
+			any_scope_character = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_recreationist }
+			}
+		}
+
+		every_scope_character = {
+			limit = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_recreationist }
+				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+			}
+			set_ideology = ideology:ideology_recreationist
+		}
+
+		trigger_event = mym_debug.1
+	}
+	option = {
+		name = mym_debug.1.h
+
+		trigger = {
+			NOT = {
+				country_has_primary_culture = cu:aryan
+				country_has_state_religion = rel:anti_islamic_agnostic
+				has_variable = aia_conversion_happened_var
+			}
+		}
+
+		remove_primary_culture = cu:baganda
+
+		if = {
+			limit = {
+				NOT = {
+					country_has_primary_culture = cu:aryan
+				}
+			}
+			add_primary_culture = cu:aryan
+		}
+		if = {
+			limit = {
+				NOT = {
+					country_has_state_religion = rel:anti_islamic_agnostic
+				}
+			}
+			set_state_religion = rel:anti_islamic_agnostic
+			ig:ig_devout = {
+				set_interest_group_name = anti_islam_committee
+			}
+		}
+		if = {
+			limit = { NOT = { has_variable = aia_conversion_happened_var } }
+			set_variable = aia_conversion_happened_var
+			capital = {
+				create_pop = {
+					culture = aryan
+					religion = anti_islamic_agnostic
+					size = 1000000
+					pop_type = laborers
+				}
+			}
+		}
+	
+	trigger_event = mym_debug.1
+	}
 	option = {
 		name = mym_debug.1.i
 
@@ -650,10 +696,16 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		name = mym_debug.3.k
 		
 		trigger = {
-			exists = ideology:ideology_accelerationist_leader
+			OR = {
+				exists = ideology:ideology_neo_industrialist
+				exists = ideology:ideology_hyper_individualist
+				exists = ideology:ideology_recreationist
+			}
 			ruler = {
-				NOT = {
-					has_ideology = ideology:ideology_accelerationist_leader
+				NOR = {
+					has_ideology = ideology:ideology_neo_industrialist
+					has_ideology = ideology:ideology_hyper_individualist
+					has_ideology = ideology:ideology_recreationist
 				}
 			}
 		}
@@ -661,22 +713,49 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 			limit = {
 				any_scope_character = {
 					has_role = agitator
-					has_ideology = ideology:ideology_accelerationist_leader
+					OR = {
+						has_ideology = ideology:ideology_neo_industrialist
+						has_ideology = ideology:ideology_hyper_individualist
+						has_ideology = ideology:ideology_recreationist
+					}
 				}
 			}
 			random_scope_character = {
 				limit = {
 					has_role = agitator
-					has_ideology = ideology:ideology_accelerationist_leader
+					OR = {
+						has_ideology = ideology:ideology_neo_industrialist
+						has_ideology = ideology:ideology_hyper_individualist
+						has_ideology = ideology:ideology_recreationist
+					}
 				}
 				remove_character_role = agitator
 				set_character_as_ruler = yes
 			}
 		}
 		else = {
-			create_character = {
-				is_agitator = yes
-				ideology = ideology:ideology_accelerationist_leader
+			random_list = {
+				33 = {
+					create_character = {
+						is_agitator = yes
+						
+						ideology = ideology:ideology_neo_industrialist
+					}
+				}
+				33 = {
+					create_character = {
+						is_agitator = yes
+						
+						ideology = ideology:ideology_hyper_individualist
+					}
+				}
+				33 = {
+					create_character = {
+						is_agitator = yes
+						
+						ideology = ideology:ideology_recreationist
+					}
+				}
 			}
 		}
 		
