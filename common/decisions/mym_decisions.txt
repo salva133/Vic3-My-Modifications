@@ -7,6 +7,7 @@
 	possible = {
 		is_subject = yes
 		is_at_war = no
+		NOT = { is_diplomatic_play_enemy_of = overlord }
 	}
 
 	when_taken = {
@@ -17,9 +18,10 @@
 				war = no
 				target_country = overlord
 				add_war_goal = {
-					holder = root
+					holder = ROOT
 					type = war_reparations
 					target_country = overlord
+					primary_demand = no
 				}
 			}
 		}
@@ -29,4 +31,3 @@
 		base = 0
 	}
 }
- 
