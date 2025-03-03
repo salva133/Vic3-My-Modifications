@@ -14,7 +14,7 @@
 			create_diplomatic_play = {
 				name = dp_independence
 				type = dp_independence
-				war = yes
+				war = no
 				target_country = overlord
 				add_war_goal = {
 					holder = root
