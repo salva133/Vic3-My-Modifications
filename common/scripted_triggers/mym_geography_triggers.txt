@@ -1,0 +1,10 @@
+﻿state_is_in_the_caribbean = {
+	region = sr:region_caribbean
+}
+
+country_is_in_the_caribbean = {
+	exists = capital
+	capital = {
+		state_is_in_the_caribbean = yes
+	}
+}

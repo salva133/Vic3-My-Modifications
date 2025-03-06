@@ -65,3 +65,16 @@ gov_monarchy_anarchy = {
 	on_government_type_change = { change_to_parliamentary_elective = yes }
 	on_post_government_type_change = { post_change_to_parliamentary_elective = yes }
 }
+
+gov_mym_pirate_commune = {
+	transfer_of_power = dictatorial
+	new_leader_on_reform_government = yes
+	male_ruler = "RULER_TITLE_MYM_CAPTAIN"
+	female_ruler = "RULER_TITLE_MYM_CAPTAIN"
+	possible = {
+		coa_pirate_commune_trigger = yes
+	}
+
+	on_government_type_change = { change_to_dictatorial = yes }
+	on_post_government_type_change = { post_change_to_dictatorial = yes }
+}
