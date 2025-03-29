@@ -26,7 +26,6 @@ albion_init.1 = {
 
 		scope:oberon_scope = {
 			set_character_as_ruler = yes
-			set_character_immortal = yes
 		}
 	}
 }

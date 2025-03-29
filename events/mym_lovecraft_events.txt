@@ -1,0 +1,134 @@
+﻿namespace = hp_lovecraft
+
+hp_lovecraft.1 = { # H.P. Lovecraft appears
+	type = country_event
+	placement = ROOT
+	title =  hp_lovecraft.1.t
+	desc =   hp_lovecraft.1.d
+	flavor = hp_lovecraft.1.f
+
+	left_icon = scope:hp_scope
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1928.2.13
+		NOT = { has_global_variable = hp_happened_globvar }
+	}
+
+	immediate = {
+		set_global_variable = hp_happened_globvar
+		random_country = {
+			limit = {
+				owns_entire_state_region = STATE_RHODE_ISLAND
+			}
+			save_scope_as = target_country_scope
+		}
+		scope:target_country_scope = {
+			create_character = {
+				template = hp_lovecraft_character_template
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_template = hp_lovecraft_character_template
+			}
+			save_scope_as = hp_scope
+		}
+	}
+
+	option = {
+		name = hp_lovecraft.1.a
+		default_option = yes
+	}
+}
+
+hp_lovecraft.2 = { # H.P. Liebkraft appears
+	type = country_event
+	placement = ROOT
+	title =  hp_lovecraft.2.t
+	desc =   hp_lovecraft.2.d
+	flavor = hp_lovecraft.2.f
+
+	left_icon = scope:hp_scope
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1928.2.13
+		NOT = { has_global_variable = hp_happened_globvar }
+	}
+
+	immediate = {
+		set_global_variable = hp_happened_globvar
+		random_country = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:alemannic
+				}
+			}
+			save_scope_as = target_country_scope
+		}
+		scope:target_country_scope = {
+			create_character = {
+				template = hp_liebkraft_character_template
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_template = hp_liebkraft_character_template
+			}
+			save_scope_as = hp_scope
+		}
+	}
+
+	option = {
+		name = hp_lovecraft.2.a
+		default_option = yes
+	}
+}
+
+hp_lovecraft.3 = { # H.P. dies historically
+	type = country_event
+	placement = ROOT
+	title =  hp_lovecraft.3.t
+	desc =   hp_lovecraft.3.d
+	flavor = hp_lovecraft.3.f
+
+	left_icon = scope:hp_scope
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1937.3.15
+		has_global_variable = hp_happened_globvar
+		NOT = { has_global_variable = hp_dead_globvar }
+	}
+
+	immediate = {
+		set_global_variable = hp_dead_globvar
+	}
+
+	option = {
+		name = hp_lovecraft.3.a
+		default_option = yes
+
+		scope:hp_scope = {
+			kill_character = yes
+		}
+	}
+}
