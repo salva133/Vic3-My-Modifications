@@ -1,4 +1,4 @@
-vito_corleone_character_template = {
+﻿vito_corleone_character_template = {
 	first_name = Vito
 	last_name = Corleone
 	historical = no
@@ -126,4 +126,25 @@ milei_character_template = {
 		set_global_variable = milei_happened_globvar
 	}
 }
+
+friedrich_nietzsche_character_template = {
+	first_name = Friedrich
+	last_name = Nietzsche
+	birth_date = 1844.10.15
+	female = no
+	historical = yes
+	is_agitator = yes
+	culture = cu:north_german
+	religion = rel:atheist
+	interest_group = ig_intelligentsia
+	ideology = ideology_atheist
+	noble = no
+	traits = {
+		erudite
+		arrogant
+		literary
+	}
+	on_created = {
+		set_global_variable = nietzsche_happened_globvar
+	}
 }
