@@ -60,6 +60,21 @@
   milei.1.f: "'We are facing one of the biggest economic disasters in our history and radical action is essential. Inflation is nothing more than a tax on the poorest. We will drastically downsize the state to end this evil. The state is not an engine of prosperity, but a machine of waste. We will reform it so that it serves and not dominates. The freedom of the individual is the highest good. Our reforms will be based on an unshakeable belief in the free market. We will create a society where everyone has the chance to get ahead through hard work and personal responsibility. [ROOT.GetCountry.GetNameNoFlag] will reposition itself as a partner of the free world and not as a vassal of ideological projects.'\n\n#italic - lurid anarcho-libertarian pamphlet#!"
   milei.1.a: "Wild."
 
+# Nietzsche
+  nietzsche.1.t: "A Strange Prophet"
+  nietzsche.1.d: "A former professor, long escaped from the academic world, has published a chaotic, poetico-philosophical work titled #bold Thus Spoke Zarathustra#!. In it, he proclaims the 'death of God,' scorns the masses, and praises a new type of human being - the 'Übermensch.'\n\nThe book is enigmatic, linguistically powerful, and philosophically provocative. Even among scholars, confusion reigns: Is this profound wisdom - or sheer madness?"
+  nietzsche.1.f: "\"I teach you the #bold Übermensch#!. Man is something that shall be overcome.\"\n\n#italic - Friedrich Nietzsche, 1883#!"
+  nietzsche.1.a: "A lone voice crying in the wilderness."
+  nietzsche.1.b: "This will make waves - sooner or later."
+  nietzsche.1.c: "Philosophical nonsense with a literary veneer."
+
+  nietzsche.2.t: "The Silence of Zarathustra"
+  nietzsche.2.d: "In the [GetCulture('north_italian').GetName] city of [SCOPE.sState('turin_scope').GetStateRegion.GetCityHubName], the philosopher Friedrich Nietzsche has suffered a sudden and dramatic collapse. Witnesses claim he embraced a beaten horse in the street, then fell weeping to the ground.\n\nSince then, he has descended into madness. He speaks in riddles, signs letters as 'Dionysus' and 'The Crucified,' and claims to be god, emperor, or both.\n\nThe mind that once challenged all moral certainties now drifts, unreachable."
+  nietzsche.2.f: "\"Beyond good and evil, beyond sanity and sorrow...\"\n\n#italic - Fragment from Nietzsche's final notes#!"
+  nietzsche.2.a: "Thus spoke - and fell - Zarathustra."
+  nietzsche.2.b: "Maybe he can recover with us.."
+  nietzsche.2.c: "The world will not accept! #bold I#! will not accept!"
+
 ### DEBUGGING EVENTS
   mym_debug.1.t: "MyM: Debugging 1"
   mym_debug.1.d: "Providing debugging options"

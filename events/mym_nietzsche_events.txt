@@ -1,0 +1,204 @@
+﻿namespace = nietzsche
+
+nietzsche.1 = { # Friedrich Nietzsche appears
+	type = country_event
+	placement = ROOT
+	title =  nietzsche.1.t
+	desc =   nietzsche.1.d
+	flavor = nietzsche.1.f
+
+	left_icon = scope:nietzsche_scope
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1883.2.13
+		empty_agitator_slots >= 1
+		any_scope_state = {
+			state_region = s:STATE_PIEDMONT
+		}
+		NOT = { has_global_variable = nietzsche_happened_globvar }
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_ANHALT
+				}
+			}
+			save_scope_as = home_country_scope
+		}
+		random_country = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_PIEDMONT
+				}
+			}
+			save_scope_as = target_country_scope
+		}
+		scope:home_country_scope = {
+			create_character = {
+				template = friedrich_nietzsche_character_template
+			}
+		}
+		random_character = {
+			limit = {
+				has_template = friedrich_nietzsche_character_template
+			}
+			save_scope_as = nietzsche_scope
+		}
+
+	}
+
+	option = {
+		name = nietzsche.1.a
+		default_option = yes
+
+		scope:nietzsche_scope = {
+			transfer_character = scope:target_country_scope
+
+			s:STATE_PIEDMONT = {
+				every_scope_state = {
+					add_radicals_in_state = {
+						pop_type = academics
+						value = small_radicals
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = nietzsche.1.b
+
+		scope:nietzsche_scope = {
+			transfer_character = scope:target_country_scope
+		}
+		s:STATE_PIEDMONT = {
+			every_scope_state = {
+				add_radicals_in_state = {
+					pop_type = clergymen
+					value = medium_radicals
+				}
+				add_loyalists_in_state = {
+					pop_type = academics
+					value = medium_radicals
+				}
+			}
+		}
+	}
+	option = {
+		name = nietzsche.1.c
+
+		s:STATE_PIEDMONT = {
+			every_scope_state = {
+				add_radicals_in_state = {
+					pop_type = academics
+					value = medium_radicals
+				}
+				add_loyalists_in_state = {
+					pop_type = clergymen
+					value = medium_radicals
+				}
+			}
+		}
+	}
+}
+
+nietzsche.2 = {
+	type = country_event
+	placement = ROOT
+	title =  nietzsche.2.t
+	desc =   nietzsche.2.d
+	flavor = nietzsche.2.f
+
+	left_icon = scope:nietzsche_scope
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1889.1.3
+		any_scope_character = {
+			has_template = friedrich_nietzsche_character_template
+		}
+		NOT = { has_global_variable = nietzsche.2_happened_globvar }
+	}
+
+	immediate = {
+		set_global_variable = nietzsche.2_happened_globvar
+		random_country = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_ANHALT
+				}
+			}
+			save_scope_as = home_country_scope
+		}
+		random_country = {
+			limit = {
+				any_scope_state = {
+					state_region = s:STATE_PIEDMONT
+				}
+			}
+			save_scope_as = turin_owner_scope
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_PIEDMONT
+			}
+			save_scope_as = turin_scope
+		}
+		random_scope_character = {
+			limit = {
+				has_template = friedrich_nietzsche_character_template
+			}
+			save_scope_as = nietzsche_scope
+		}
+	}
+
+	option = {
+		name = nietzsche.2.a
+		default_option = yes
+
+		scope:nietzsche_scope = {
+			add_trait = psychological_affliction
+			remove_character_role = agitator
+			transfer_character = scope:home_country_scope
+		}
+		custom_label = historical_label
+	}
+	option = {
+		name = nietzsche.2.b
+	
+		random_list = {
+			50 = {
+				scope:nietzsche_scope = {
+					add_trait = psychological_affliction
+					remove_character_role = agitator
+				}
+			}
+			50 = {
+
+			}
+		}
+	}
+	option = {
+		name = nietzsche.2.c
+		trigger = {
+			has_healthy_economy = yes
+		}
+		add_modifier = {
+			name = modifier_small_expedition_cost
+			multiplier = money_amount_multiplier_small
+			months = short_modifier_time
+		}
+	}
+}
