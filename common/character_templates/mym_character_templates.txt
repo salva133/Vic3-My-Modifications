@@ -1,4 +1,4 @@
-﻿vito_corleone_character_template = {
+vito_corleone_character_template = {
 	first_name = Vito
 	last_name = Corleone
 	historical = no
@@ -84,6 +84,7 @@ vlad_character_template = {
 	}
 	on_created = {
 		set_character_immortal = yes
+		set_global_variable = vlad_happened_globvar
 	}
 }
 
@@ -103,6 +104,10 @@ oberon_character_template = {
 		honorable
 		persistent
 	}
+	on_created = {
+		set_character_immortal = yes
+		set_global_variable = oberon_happened_globvar
+	}
 }
 
 milei_character_template = {
@@ -117,4 +122,8 @@ milei_character_template = {
 		ambitious
 		persistent
 	}
+	on_created = {
+		set_global_variable = milei_happened_globvar
+	}
+}
 }

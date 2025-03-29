@@ -1,0 +1,144 @@
+﻿namespace = corleone
+
+corleone.1 = { # The Murder of Don Fanucci 
+	type = country_event
+	placement = ROOT
+	title =  corleone.1.t
+	desc =   corleone.1.d
+	flavor = corleone.1.f
+
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = corleone.1.a
+	}
+}
+
+corleone.2 = { # New York Daily Chronicle, November 2, 1922
+	type = country_event
+	placement = ROOT
+	title =  corleone.2.t
+	desc =   corleone.2.d
+	flavor = corleone.2.f
+
+	event_image = {
+		video = "southamerica_public_figure_assassination"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+		set_global_variable = corleone_2_done
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = corleone.2.a
+	}
+}
+
+corleone.3 = { # New York Daily Chronicle, June 6, 1934
+	type = country_event
+	placement = ROOT
+	title =  corleone.3.t
+	desc =   corleone.3.d
+	flavor = corleone.3.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+	
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+		set_global_variable = corleone_3_done
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = corleone.3.a
+		if = {
+			limit = {
+				any_scope_character = {
+					NOT = { has_template = vito_corleone_character_template }
+				}
+			}
+			create_character = {
+				template = vito_corleone_character_template
+			}
+		}
+	}
+}
+
+corleone.9 = { # The Death of Don Corleone
+	type = country_event
+	placement = ROOT
+	title =  corleone.9.t
+	desc =   corleone.9.d
+	flavor = corleone.9.f
+
+	event_image = {
+		video = "ep1_printing_press"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = { has_template = vito_corleone_character_template }
+			save_scope_as = vito_corleone_scope
+		}
+		create_character = {
+			template = michael_corleone_character_template
+		}
+		random_scope_character = {
+			limit = { has_template = michael_corleone_character_template }
+			save_scope_as = michael_corleone_scope
+		}
+	}
+	
+	option = {
+		name = corleone.9.a
+		
+		scope:vito_corleone_scope = {
+			kill_character = yes
+		}
+		set_global_variable = vito_corleone_dead_globvar
+	}
+}

@@ -1,0 +1,58 @@
+﻿namespace = milei
+
+milei.1 = {
+	type = country_event
+	placement = ROOT
+	title =  milei.1.t
+	desc =   milei.1.d
+	flavor = milei.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "ep1_printing_press"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		NOT = { has_global_variable = milei_happened_globvar }
+		has_healthy_economy = no
+		bureaucracy < 0
+		tax_level >= high
+		owns_entire_state_region = STATE_BUENOS_AIRES
+		country_has_primary_culture = cu:argentine
+		has_technology_researched = anarchism
+		NAND = {
+			has_law = law_type:law_no_social_security
+			OR = {
+				has_law = law_type:law_no_health_system
+				has_law = law_type:law_private_health_insurance
+			}
+			OR = {
+				has_law = law_type:law_no_schools
+				has_law = law_type:law_private_schools
+			}
+			has_law = law_type:law_no_colonial_affairs
+			has_law = law_type:law_no_home_affairs
+			has_law = law_type:law_no_workers_rights
+			NOT = { has_law = law_type:law_total_war }
+			OR = {
+				has_law = law_type:law_no_police
+				has_law = law_type:law_anarchist_police
+			}
+		}
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = milei.1.a
+		default_option = yes
+
+		create_character = {
+			template = milei_character_template
+		}
+	}
+}
