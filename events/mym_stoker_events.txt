@@ -21,7 +21,10 @@ stoker.1 = { # The Dmitry sets sails
 		s:STATE_BULGARIA = {
 			has_building = building_port
 		}
-		NOT = { has_global_variable = dmitry_set_sails_globvar }
+		NOT = {
+			has_global_variable = dmitry_set_sails_globvar
+			has_global_variable = vlad_happened_globvar
+		}
 	}
 	
 	immediate = {
@@ -56,7 +59,10 @@ stoker.2 = { # The Dmitry is washed ashore
 			has_building = building_port
 		}
 		has_global_variable = dmitry_set_sails_globvar
-		NOT = { has_global_variable = dmitry_ran_ashore_at_whitby_globvar }
+		NOT = {
+			has_global_variable = dmitry_ran_ashore_at_whitby_globvar
+			has_global_variable = vlad_happened_globvar
+		}
 	}
 
 	immediate = {

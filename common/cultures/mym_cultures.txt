@@ -169,7 +169,7 @@ aryan = {
 	}
 
 	noble_last_names = {
-		von_Alten von_Arens am_Auxois von_Aussern zur_Aube
+		von_Alten von_Arens von_der_Auchs von_Aussern zur_Aube
 		von_Bisanz von_Bittenfeld von_Blomberg von_Borries von_Boyen von_Braunschweig von_Breitenbach von_Beuen von_Baar
 		von_Clemm von_Cramm
 		von_Doenhoff von_Dieskau von_Donnern
