@@ -129,11 +129,11 @@ nietzsche.2 = {
 		any_scope_character = {
 			has_template = friedrich_nietzsche_character_template
 		}
-		NOT = { has_global_variable = nietzsche.2_happened_globvar }
+		NOT = { has_global_variable = nietzsche_2_happened_globvar }
 	}
 
 	immediate = {
-		set_global_variable = nietzsche.2_happened_globvar
+		set_global_variable = nietzsche_2_happened_globvar
 		random_country = {
 			limit = {
 				any_scope_state = {

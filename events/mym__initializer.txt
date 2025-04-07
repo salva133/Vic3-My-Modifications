@@ -8,7 +8,7 @@ albion_init.1 = {
 	flavor = albion_init.1.f
 
 	trigger = {
-		# Triggered by on_action
+		NOT = { has_global_variable = oberon_happened_globvar }
 	}
 
 	immediate = {
