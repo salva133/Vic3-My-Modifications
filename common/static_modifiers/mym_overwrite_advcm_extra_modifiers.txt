@@ -2,12 +2,11 @@
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_throughput_add = 10
 	# country_max_weekly_construction_progress_add = 10000
-	# country_trade_route_competitiveness_mult = 5
 }
 
 advcm_add_building_input_reduction = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	building_goods_input_mult = -0.9999
+	building_goods_input_mult = -0.9
 }
 
 advcm_add_offense = {
@@ -23,7 +22,7 @@ advcm_add_defense = {
 advcm_add_kill_rate = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
 	unit_kill_rate_add = 1
-	unit_morale_loss_mult = -0.99
+	unit_morale_loss_mult = -0.9999
 }
 
 advcm_add_recovery_rate = {
