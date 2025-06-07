@@ -1,4 +1,16 @@
 ﻿l_english:
+# Law Group Economic Status
+  lawgroup_economic_status: "Economic Status"
+  lawgroup_economic_status_desc: "Showing how good overall your economy is performing."
+
+  law_economic_status_1: "Backwater Shithole"
+  law_economic_status_1_desc: "It's a stand-in"
+  law_economic_status_2: "Stable Economy"
+  law_economic_status_2_desc: "It's a stand-in"
+  law_economic_status_3: "Outta the Park"
+  law_economic_status_3_desc: "It's a stand-in"
+
+# Laws
   law_timocracy: "Timocracy"
   law_timocracy_desc: "All individuals are entitled to cast a vote; however, those who continue to advocate for the nation are accorded greater influence."
 
