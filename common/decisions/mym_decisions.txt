@@ -2,6 +2,7 @@
 
 	is_shown = {
 		is_subject = yes
+		is_player = yes
 	}
 	
 	possible = {
@@ -24,6 +25,34 @@
 					primary_demand = no
 				}
 			}
+		}
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+release_all_subject = {
+
+	is_shown = {
+		is_player = yes
+		is_subject = no
+	}
+	
+	possible = {
+		any_country = {
+			is_subject = yes
+		}
+	}
+
+	when_taken = {
+		every_country = {
+			limit = {
+				NOT = { is_country_type = decentralized }
+				is_subject = yes
+			}
+			make_independent = yes
 		}
 	}
 
