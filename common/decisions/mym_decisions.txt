@@ -33,11 +33,12 @@
 	}
 }
 
-release_all_subject = {
+release_all_subjects = {
 
 	is_shown = {
 		is_player = yes
 		is_subject = no
+		NOT = { has_global_variable = release_all_subjects_happened_var }
 	}
 	
 	possible = {
@@ -47,12 +48,16 @@ release_all_subject = {
 	}
 
 	when_taken = {
-		every_country = {
-			limit = {
-				NOT = { is_country_type = decentralized }
-				is_subject = yes
+		custom_tooltip = {
+			text = release_all_subjects_tt
+			every_country = {
+				limit = {
+					NOT = { is_country_type = decentralized }
+					is_subject = yes
+				}
+				make_independent = yes
 			}
-			make_independent = yes
+			set_global_variable = release_all_subjects_happened_var
 		}
 	}
 
