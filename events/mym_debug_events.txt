@@ -269,7 +269,7 @@ mym_debug.1 = {
 						country_has_primary_culture = cu:russian
 					}
 					ig:ig_secret_police = {
-						set_interest_group_name = ig_secret_police_russian
+						set_interest_group_name = ig_secret_police_RUS_communist
 					}
 				}
 				else_if = {

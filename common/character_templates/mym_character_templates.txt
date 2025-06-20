@@ -137,7 +137,7 @@ friedrich_nietzsche_character_template = {
 	culture = cu:north_german
 	religion = rel:atheist
 	interest_group = ig_intelligentsia
-	ideology = ideology_atheist
+	ideology = ideology_nihilist
 	noble = no
 	traits = {
 		erudite

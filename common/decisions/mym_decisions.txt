@@ -6,7 +6,6 @@
 	}
 	
 	possible = {
-		is_subject = yes
 		is_at_war = no
 		NOT = { is_diplomatic_play_enemy_of = overlord }
 	}
@@ -18,24 +17,20 @@
 				type = dp_independence
 				war = no
 				target_country = overlord
-				add_war_goal = {
-					holder = ROOT
-					type = war_reparations
-					target_country = overlord
-					primary_demand = no
-				}
 			}
 		}
+		change_infamy = 30
 	}
 
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 }
 
 release_all_subjects = {
 
 	is_shown = {
+		always = no
 		is_player = yes
 		is_subject = no
 		NOT = { has_global_variable = release_all_subjects_happened_var }
@@ -62,6 +57,6 @@ release_all_subjects = {
 	}
 
 	ai_chance = {
-		base = 0
+		value = 0
 	}
 }
