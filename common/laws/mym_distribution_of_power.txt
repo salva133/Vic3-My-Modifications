@@ -30,8 +30,8 @@
 		country_legitimacy_govt_total_clout_add = 100
 		country_legitimacy_govt_size_add = 1
 		country_legitimacy_ideological_incoherence_mult = 0.2
-		country_officers_voting_power_add = 50
-		country_soldiers_voting_power_add = 50
+		country_officers_voting_power_add = 200
+		country_soldiers_voting_power_add = 200
 		country_authority_add = 100
 	}
 	
