@@ -434,7 +434,7 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 	icon = gfx/interface/icons/event_icons/waving_flag.dds
 
 	option = {
-		name = close_loc
+		name = mym_debug.3.a
 		default_option = yes
 		ai_chance = {
 			base = 100
