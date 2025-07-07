@@ -33,7 +33,7 @@ release_all_subjects = {
 		always = no
 		is_player = yes
 		is_subject = no
-		NOT = { has_global_variable = release_all_subjects_happened_var }
+		NOT = { has_global_variable = release_all_subjects_happened_globvar }
 	}
 	
 	possible = {
@@ -52,7 +52,7 @@ release_all_subjects = {
 				}
 				make_independent = yes
 			}
-			set_global_variable = release_all_subjects_happened_var
+			set_global_variable = release_all_subjects_happened_globvar
 		}
 	}
 
