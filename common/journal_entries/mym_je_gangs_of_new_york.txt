@@ -4,7 +4,6 @@
 	group = je_group_internal_affairs
 
 	is_shown_when_inactive = {
-		# is_player = yes
 		game_date >= 1920.1.1
 		owner = {
 			owns_entire_state_region = STATE_NEW_YORK
