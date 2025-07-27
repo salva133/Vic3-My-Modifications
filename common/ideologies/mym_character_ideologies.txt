@@ -125,7 +125,7 @@ ideology_national_fascist = {
 		law_right_of_assembly = strongly_disapprove
 		law_censorship = neutral
 		law_outlawed_dissent = strongly_approve
-		law_commitment_state_security = approve
+		law_state_security = approve
 	}
 
 	lawgroup_policing = {
