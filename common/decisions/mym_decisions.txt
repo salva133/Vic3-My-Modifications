@@ -1,25 +1,48 @@
-﻿decision_want_to_be_free = {
+﻿decision_mym_debug_event_3 = {
 
 	is_shown = {
-		is_subject = yes
 		is_player = yes
 	}
-	
-	possible = {
-		is_at_war = no
-		NOT = { is_diplomatic_play_enemy_of = overlord }
-	}
+
+	possible = {}
 
 	when_taken = {
-		root = {
-			create_diplomatic_play = {
-				name = dp_independence
-				type = dp_independence
-				war = no
-				target_country = overlord
-			}
-		}
-		change_infamy = 30
+		trigger_event = { id = mym_debug.3 popup = yes }
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+decision_mym_debug_event_2 = {
+
+	is_shown = {
+		always = no
+		is_player = yes
+	}
+
+	possible = {}
+
+	when_taken = {
+		trigger_event = { id = mym_debug.2 popup = yes }
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+decision_mym_debug_event_1 = {
+
+	is_shown = {
+		is_player = yes
+	}
+
+	possible = {}
+
+	when_taken = {
+		trigger_event = { id = mym_debug.1 popup = yes }
 	}
 
 	ai_chance = {
@@ -61,51 +84,28 @@ decision_release_all_subjects = {
 	}
 }
 
-decision_mym_debug_event_1 = {
+decision_want_to_be_free = {
 
 	is_shown = {
+		is_subject = yes
 		is_player = yes
 	}
-
-	possible = {}
+	
+	possible = {
+		is_at_war = no
+		NOT = { is_diplomatic_play_enemy_of = overlord }
+	}
 
 	when_taken = {
-		trigger_event = { id = mym_debug.1 popup = yes }
-	}
-
-	ai_chance = {
-		value = 0
-	}
-}
-
-decision_mym_debug_event_2 = {
-
-	is_shown = {
-		always = no
-		is_player = yes
-	}
-
-	possible = {}
-
-	when_taken = {
-		trigger_event = { id = mym_debug.2 popup = yes }
-	}
-
-	ai_chance = {
-		value = 0
-	}
-}
-
-decision_mym_debug_event_3 = {
-
-	is_shown = {
-		is_player = yes
-	}
-
-	possible = {}
-
-	when_taken = {
-		trigger_event = { id = mym_debug.3 popup = yes }
+		root = {
+			create_diplomatic_play = {
+				name = dp_independence
+				type = dp_independence
+				war = no
+				target_country = overlord
+			}
+		}
+		change_infamy = 30
 	}
 
 	ai_chance = {
