@@ -1,5 +1,5 @@
 ﻿l_english:
-  want_to_be_free: "Do you want to be free?"
-  want_to_be_free_desc: "#bold I want to break free!#!"
-  release_all_subjects: "Set all free"
-  release_all_subjects_desc: "Can only be used once"
+  decision_want_to_be_free: "Do you want to be free?"
+  decision_want_to_be_free_desc: "#bold I want to break free!#!"
+  decision_release_all_subjects: "Set all free"
+  decision_release_all_subjects_desc: "Can only be used once"

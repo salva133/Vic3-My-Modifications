@@ -1,4 +1,4 @@
-﻿want_to_be_free = {
+﻿decision_want_to_be_free = {
 
 	is_shown = {
 		is_subject = yes
@@ -27,13 +27,13 @@
 	}
 }
 
-release_all_subjects = {
+decision_release_all_subjects = {
 
 	is_shown = {
 		always = no
 		is_player = yes
 		is_subject = no
-		NOT = { has_global_variable = release_all_subjects_happened_globvar }
+		NOT = { has_global_variable = decision_release_all_subjects_happened_globvar }
 	}
 	
 	possible = {
@@ -44,7 +44,7 @@ release_all_subjects = {
 
 	when_taken = {
 		custom_tooltip = {
-			text = release_all_subjects_tt
+			text = decision_release_all_subjects_tt
 			every_country = {
 				limit = {
 					NOT = { is_country_type = decentralized }
@@ -52,7 +52,7 @@ release_all_subjects = {
 				}
 				make_independent = yes
 			}
-			set_global_variable = release_all_subjects_happened_globvar
+			set_global_variable = decision_release_all_subjects_happened_globvar
 		}
 	}
 
