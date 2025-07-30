@@ -657,6 +657,42 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		trigger_event = mym_debug.3
 	}
 	option = {
+		name = mym_debug.3.l
+		
+		trigger = {
+			exists = ideology:ideology_libertarian_utopian
+			ruler = {
+				NOT = {
+					has_ideology = ideology:ideology_libertarian_utopian
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_scope_character = {
+					has_role = agitator
+					has_ideology = ideology:ideology_libertarian_utopian
+				}
+			}
+			random_scope_character = {
+				limit = {
+					has_role = agitator
+					has_ideology = ideology:ideology_libertarian_utopian
+				}
+				remove_character_role = agitator
+				set_character_as_ruler = yes
+			}
+		}
+		else = {
+			create_character = {
+				is_agitator = yes
+				ideology = ideology:ideology_libertarian_utopian
+			}
+		}
+		
+		trigger_event = mym_debug.3
+	}
+	option = {
 		name = mym_debug.3.j
 		
 		trigger = {
