@@ -21,11 +21,14 @@ mym_debug.1 = {
 
 	icon = gfx/interface/icons/event_icons/waving_flag.dds
 
+	# Closes the event with no additional effect.
 	option = {
 		name = mym_debug.1.a
 		default_option = yes
 		
 	}
+	
+	# Sets the ideology of all eligible politicians to fascist.
 	option = {
 		name = mym_debug.1.b
 
@@ -49,6 +52,8 @@ mym_debug.1 = {
 
 		trigger_event = mym_debug.1
 	}
+
+	# Sets the ideology of all eligible politicians to communist.
 	option = {
 		name = mym_debug.1.c
 		
@@ -72,6 +77,8 @@ mym_debug.1 = {
 
 		trigger_event = mym_debug.1
 	}
+
+	# Sets the ideology of all eligible politicians to anarchist.
 	option = {
 		name = mym_debug.1.e
 
@@ -95,6 +102,8 @@ mym_debug.1 = {
 
 		trigger_event = mym_debug.1
 	}
+
+	# Sets the ideology of all eligible politicians to anarcho-libertarian.
 	option = {
 		name = mym_debug.1.g
 
@@ -118,6 +127,8 @@ mym_debug.1 = {
 
 		trigger_event = mym_debug.1
 	}
+
+	# Sets the ideology of all eligible politicians to neo-industrialist.
 	option = {
 		name = mym_debug.1.j
 
@@ -141,6 +152,8 @@ mym_debug.1 = {
 
 		trigger_event = mym_debug.1
 	}
+
+	# Sets the ideology of all eligible politicians to hyper-individualist.
 	option = {
 		name = mym_debug.1.j
 
@@ -164,6 +177,8 @@ mym_debug.1 = {
 
 		trigger_event = mym_debug.1
 	}
+
+	# Sets the ideology of all eligible politicians to recreationist.
 	option = {
 		name = mym_debug.1.j
 
@@ -231,9 +246,10 @@ mym_debug.1 = {
 				}
 			}
 		}
-	
-	trigger_event = mym_debug.1
+		trigger_event = mym_debug.1
 	}
+	
+	# Sets the name of the secret police interest group based on the country's primary culture.
 	option = {
 		name = mym_debug.1.i
 
@@ -427,6 +443,7 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 
 	icon = gfx/interface/icons/event_icons/waving_flag.dds
 
+	# Closes the event with no additional effect.
 	option = {
 		name = mym_debug.3.a
 		default_option = yes
@@ -434,6 +451,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 			base = 100
 		}
 	}
+
+	# Makes a timocrat agitator the ruler if available, otherwise creates a new timocrat agitator and sets him as ruler.
 	option = {
 		name = mym_debug.3.b
 		
@@ -470,6 +489,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger_event = mym_debug.3
 	}
+
+	# Makes a national fascist agitator the ruler if available, otherwise creates a new national fascist agitator and sets him as ruler.
 	option = {
 		name = mym_debug.3.c
 		
@@ -506,6 +527,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger_event = mym_debug.3
 	}
+
+	# Makes an anarcho-libertarian agitator the ruler if available, otherwise creates a new anarcho-libertarian agitator and sets him as ruler.
 	option = {
 		name = mym_debug.3.e
 		
@@ -542,6 +565,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger_event = mym_debug.3
 	}
+
+	# Makes an anti-statist agitator the ruler if available, otherwise creates a new anti-statist agitator and sets him as ruler.
 	option = {
 		name = mym_debug.3.g
 		
@@ -578,6 +603,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger_event = mym_debug.3
 	}
+
+	# Makes an anti-feminist agitator the ruler if available, otherwise creates a new anti-feminist agitator and sets him as ruler.
 	option = {
 		name = mym_debug.3.h
 		
@@ -614,6 +641,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger_event = mym_debug.3
 	}
+
+	# Makes a secular humanitarian agitator the ruler if available, otherwise creates a new secular humanitarian agitator and sets him as ruler.
 	option = {
 		name = mym_debug.3.i
 		
@@ -650,6 +679,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger_event = mym_debug.3
 	}
+
+	# Makes a libertarian utopian agitator the ruler if available, otherwise creates a new libertarian utopian agitator and sets him as ruler.
 	option = {
 		name = mym_debug.3.l
 		
@@ -686,6 +717,8 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger_event = mym_debug.3
 	}
+
+	# Makes a burgundist leader agitator the ruler if available, otherwise creates a new burgundist leader agitator and sets him as ruler.
 	option = {
 		name = mym_debug.3.j
 		
@@ -722,6 +755,9 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		
 		trigger_event = mym_debug.3
 	}
+
+	# Makes an agitator with one of the accelerationist ideologies (neo-industrialist, hyper-individualist, or recreationist) the ruler if available,
+	# otherwise creates a new agitator with one of these ideologies and sets him as ruler (chosen randomly).
 	option = {
 		name = mym_debug.3.k
 		
