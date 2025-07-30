@@ -7,8 +7,6 @@ mym_debug.1 = {
 	desc = mym_debug.1.d
 	flavor = mym_debug.1.f
 
-	is_popup = yes
-
 	duration = 3
 
 	event_image = {
@@ -322,8 +320,6 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 	desc = mym_debug.2.d
 	flavor = mym_debug.2.f
 
-	is_popup = yes
-
 	duration = 3
 
 	event_image = {
@@ -420,8 +416,6 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 	title = mym_debug.3.t
 	desc = mym_debug.3.d
 	flavor = mym_debug.3.f
-
-	is_popup = yes
 
 	duration = 3
 
