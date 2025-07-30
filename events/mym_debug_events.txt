@@ -759,6 +759,23 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		}
 		if = {
 			limit = {
+				ig:ig_burgundists = {
+					is_in_government = yes
+				}
+				ruler = {
+					NOT = {
+						has_ideology = ideology:ideology_burgundist
+					}
+				}
+			}
+			ig:ig_burgundists = {
+				leader = {
+					set_character_as_ruler = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
 				any_scope_character = {
 					NOT = { has_role = ruler }
 					has_ideology = ideology:ideology_burgundist
