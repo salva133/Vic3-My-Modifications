@@ -60,3 +60,61 @@ release_all_subjects = {
 		value = 0
 	}
 }
+
+decision_mym_debug_event_1 = {
+
+	is_shown = {
+		is_player = yes
+	}
+
+	possible = {
+		
+	}
+
+	when_taken = {
+		trigger_event = { id = mym_debug.1 popup = yes }
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+decision_mym_debug_event_2 = {
+
+	is_shown = {
+		always = no
+		is_player = yes
+	}
+
+	possible = {
+		
+	}
+
+	when_taken = {
+		trigger_event = { id = mym_debug.2 popup = yes }
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+decision_mym_debug_event_3 = {
+
+	is_shown = {
+		is_player = yes
+	}
+
+	possible = {
+		
+	}
+
+	when_taken = {
+		trigger_event = { id = mym_debug.3 popup = yes }
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
