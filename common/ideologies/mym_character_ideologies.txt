@@ -479,7 +479,6 @@ ideology_anti_statist = {
 	lawgroup_trade_policy = {
 		law_free_trade = approve
 	}
-
 	lawgroup_welfare = {
 		law_poor_laws = disapprove
 		law_wage_subsidies = disapprove
@@ -1010,4 +1009,161 @@ ideology_secular_humanitarian = {
 			multiply = 0.5
 		}
 	}	
+}
+
+ideology_libertarian_utopian = {
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_anarcho_libertarian.dds
+	
+	character_ideology = yes
+
+	lawgroup_distribution_of_power = {
+		law_anarchy = disapprove
+		law_universal_suffrage = disapprove
+		law_census_voting = disapprove
+		law_wealth_voting = disapprove
+		law_timocracy = disapprove
+		law_landed_voting = disapprove
+		law_technocracy = disapprove
+		law_oligarchy = disapprove
+		law_autocracy = approve
+		law_single_party_state = disapprove
+	}
+	lawgroup_economic_system = {
+		law_cooperative_ownership = disapprove
+		law_command_economy = disapprove
+		law_interventionism = disapprove
+		law_agrarianism = disapprove
+		law_traditionalism = disapprove
+		law_laissez_faire = strongly_approve
+		law_industry_banned = strongly_disapprove
+	}
+	lawgroup_army_model = {
+		law_national_militia = approve
+		law_professional_army = disapprove
+		law_mass_conscription = strongly_disapprove
+		law_peasant_levies = strongly_disapprove
+		law_total_war = strongly_disapprove
+		law_full_disarmament = neutral
+	}
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_approve
+		law_right_of_assembly = approve
+		law_censorship = disapprove
+		law_outlawed_dissent = strongly_disapprove
+		law_state_security = strongly_disapprove
+	}
+	lawgroup_policing = {
+		law_no_police = neutral
+		law_local_police = disapprove
+		law_dedicated_police = disapprove
+		law_militarized_police = strongly_disapprove
+		law_extensive_police_powers = strongly_disapprove
+		law_anarchist_police = neutral
+	}
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_disapprove
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = disapprove
+		law_theocracy = strongly_disapprove
+		law_council_republic = disapprove
+	}
+	lawgroup_trade_policy = {
+		law_mercantilism = strongly_disapprove
+		law_protectionism = disapprove
+		law_free_trade = strongly_approve
+		law_isolationism = disapprove
+	}
+
+	country_trigger = {
+		has_technology_researched = anarchism
+	}
+	
+	non_interest_group_leader_trigger = {
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_anarchy
+				has_law = law_type:law_national_militia
+				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_protected_speech
+				OR = {
+					has_law = law_type:law_no_police
+					has_law = law_type:law_anarchist_police
+				}
+				has_law = law_type:law_council_republic
+			}
+		}
+		OR = {
+			is_interest_group_type = ig_rural_folk
+			is_interest_group_type = ig_intelligentsia
+			is_interest_group_type = ig_industrialists
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		NOR = {
+			has_variable = chose_vanguardism
+			has_variable = chose_communism
+			has_variable = chose_fascism
+		}
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 100
+		# More likely for angry IG's in council republic
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_council_republic
+				}
+				scope:interest_group = {
+					ig_approval <= -5
+				}
+			}
+			add = 100
+		}
+		# More likely when SoL is low in council republic
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_council_republic
+					average_sol <= 10
+				}
+			}
+			add = 50
+		}
+		# More likely if not in "government" under anarchy
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_anarchy }
+				}
+				scope:interest_group = {
+					is_in_government = yes
+				}
+			}
+			add = 75
+		}
+		if = {
+			limit = {
+				owner = { has_variable = communism_1_done }
+			}
+			multiply = 3
+		}
+		if = {
+			limit = {
+				owner = { has_variable = election_anarchist_support }
+			}
+			multiply = 2
+		}
+		# National Liberation Alliance
+		if = {
+			limit = {
+				owner = {
+					has_variable = national_liberation_alliance_variable
+					has_journal_entry = je_new_republic
+				}
+			}
+			multiply = 1.10
+		}
+	}
 }
