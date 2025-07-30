@@ -3,3 +3,11 @@
   decision_want_to_be_free_desc: "#bold I want to break free!#!"
   decision_release_all_subjects: "Set all free"
   decision_release_all_subjects_desc: "Can only be used once"
+
+# DEBUG EVENTS
+  decision_mym_debug_event_1: "#blue #bold MyM:!# Debug Menu 1!#"
+  decision_mym_debug_event_1_desc: ""
+  decision_mym_debug_event_2: "#blue #bold MyM:!# Debug Menu 2!#"
+  decision_mym_debug_event_2_desc: ""
+  decision_mym_debug_event_3: "#blue #bold MyM:!# Debug Menu 3!#"
+  decision_mym_debug_event_3_desc: ""
