@@ -766,10 +766,15 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 			}
 			random_scope_character = {
 				limit = {
-					has_role = agitator
+					NOT = { has_role = ruler }
 					has_ideology = ideology:ideology_burgundist
 				}
-				remove_character_role = agitator
+				if = {
+					limit = {
+						has_role = agitator
+					}
+					remove_character_role = agitator
+				}
 				set_character_as_ruler = yes
 			}
 		}
