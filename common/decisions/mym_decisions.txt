@@ -67,9 +67,7 @@ decision_mym_debug_event_1 = {
 		is_player = yes
 	}
 
-	possible = {
-		
-	}
+	possible = {}
 
 	when_taken = {
 		trigger_event = { id = mym_debug.1 popup = yes }
@@ -87,9 +85,7 @@ decision_mym_debug_event_2 = {
 		is_player = yes
 	}
 
-	possible = {
-		
-	}
+	possible = {}
 
 	when_taken = {
 		trigger_event = { id = mym_debug.2 popup = yes }
@@ -106,9 +102,7 @@ decision_mym_debug_event_3 = {
 		is_player = yes
 	}
 
-	possible = {
-		
-	}
+	possible = {}
 
 	when_taken = {
 		trigger_event = { id = mym_debug.3 popup = yes }
