@@ -45,7 +45,7 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_fascist }
-				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+				NOT = { has_ideology = ideology:ideology_burgundist }
 			}
 			set_ideology = ideology:ideology_fascist
 		}
@@ -70,7 +70,7 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_communist }
-				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+				NOT = { has_ideology = ideology:ideology_burgundist }
 			}
 			set_ideology = ideology:ideology_communist
 		}
@@ -95,7 +95,7 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_anarchist }
-				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+				NOT = { has_ideology = ideology:ideology_burgundist }
 			}
 			set_ideology = ideology:ideology_anarchist
 		}
@@ -120,7 +120,7 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
-				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+				NOT = { has_ideology = ideology:ideology_burgundist }
 			}
 			set_ideology = ideology:ideology_anarcho_libertarian
 		}
@@ -145,7 +145,7 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_libertarian_utopian }
-				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+				NOT = { has_ideology = ideology:ideology_burgundist }
 			}
 			set_ideology = ideology:ideology_libertarian_utopian
 		}
@@ -170,7 +170,7 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_neo_industrialist }
-				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+				NOT = { has_ideology = ideology:ideology_burgundist }
 			}
 			set_ideology = ideology:ideology_neo_industrialist
 		}
@@ -195,7 +195,7 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_hyper_individualist }
-				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+				NOT = { has_ideology = ideology:ideology_burgundist }
 			}
 			set_ideology = ideology:ideology_hyper_individualist
 		}
@@ -220,7 +220,7 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_recreationist }
-				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+				NOT = { has_ideology = ideology:ideology_burgundist }
 			}
 			set_ideology = ideology:ideology_recreationist
 		}
@@ -750,24 +750,24 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		name = mym_debug.3.j
 		
 		trigger = {
-			exists = ideology:ideology_burgundist_leader
+			exists = ideology:ideology_burgundist
 			ruler = {
 				NOT = {
-					has_ideology = ideology:ideology_burgundist_leader
+					has_ideology = ideology:ideology_burgundist
 				}
 			}
 		}
 		if = {
 			limit = {
 				any_scope_character = {
-					has_role = agitator
-					has_ideology = ideology:ideology_burgundist_leader
+					NOT = { has_role = ruler }
+					has_ideology = ideology:ideology_burgundist
 				}
 			}
 			random_scope_character = {
 				limit = {
 					has_role = agitator
-					has_ideology = ideology:ideology_burgundist_leader
+					has_ideology = ideology:ideology_burgundist
 				}
 				remove_character_role = agitator
 				set_character_as_ruler = yes
@@ -776,7 +776,7 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 		else = {
 			create_character = {
 				is_agitator = yes
-				ideology = ideology:ideology_burgundist_leader
+				ideology = ideology:ideology_burgundist
 			}
 		}
 		
