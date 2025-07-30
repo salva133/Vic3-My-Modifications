@@ -128,6 +128,31 @@ mym_debug.1 = {
 		trigger_event = { id = mym_debug.1 popup = yes }
 	}
 
+	# Sets the ideology of all eligible politicians to libertarian utopian.
+	option = {
+		name = mym_debug.1.g
+
+		trigger = {
+			exists = ideology:ideology_libertarian_utopian
+			is_possible_ideology_anarchist = yes
+			any_scope_character = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_libertarian_utopian }
+			}
+		}
+
+		every_scope_character = {
+			limit = {
+				has_role = politician
+				NOT = { has_ideology = ideology:ideology_libertarian_utopian }
+				NOT = { has_ideology = ideology:ideology_burgundist_leader }
+			}
+			set_ideology = ideology:ideology_libertarian_utopian
+		}
+
+		trigger_event = { id = mym_debug.1 popup = yes }
+	}
+
 	# Sets the ideology of all eligible politicians to neo-industrialist.
 	option = {
 		name = mym_debug.1.j
@@ -202,6 +227,8 @@ mym_debug.1 = {
 
 		trigger_event = { id = mym_debug.1 popup = yes }
 	}
+
+
 	option = {
 		name = mym_debug.1.h
 
