@@ -1,10 +1,10 @@
 ﻿l_english:
 # DEBUG EVENT Decisions
-  decision_mym_debug_event_3: "#blue #bold MyM:#! Debug Menu 3#!"
+  decision_mym_debug_event_3: "#blue MyM:#! Debug Menu 3"
   decision_mym_debug_event_3_desc: ""
-  decision_mym_debug_event_2: "#blue #bold MyM:#! Debug Menu 2#!"
+  decision_mym_debug_event_2: "#blue MyM:#! Debug Menu 2"
   decision_mym_debug_event_2_desc: ""
-  decision_mym_debug_event_1: "#blue #bold MyM:#! Debug Menu 1#!"
+  decision_mym_debug_event_1: "#blue MyM:#! Debug Menu 1"
   decision_mym_debug_event_1_desc: ""
 
 # MyM Decisions
