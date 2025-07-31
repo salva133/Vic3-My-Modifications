@@ -1,11 +1,11 @@
 ﻿l_english:
 # DEBUG EVENT Decisions
   decision_mym_debug_event_3: "#blue MyM:#! Debug Menu 3"
-  decision_mym_debug_event_3_desc: "Spawn [Concept('concept_agitator','Agitators')] with specific [concept_ideology]."
+  decision_mym_debug_event_3_desc: "Spawn [Concept('concept_agitator','Agitators')] with specific [concept_ideology]"
   decision_mym_debug_event_2: "#blue MyM:#! Debug Menu 2"
   decision_mym_debug_event_2_desc: ""
   decision_mym_debug_event_1: "#blue MyM:#! Debug Menu 1"
-  decision_mym_debug_event_1_desc: "Change [Concept('concept_ideology','Ideologies')] for all IG Leaders to non-vanilla [Concept('concept_ideology','Ideologies')] and force-set dynamic names for Secret Police IG."
+  decision_mym_debug_event_1_desc: "Change [Concept('concept_ideology','Ideologies')] for all [Concept('concept_leader','IG Leaders')] to non-vanilla Ideologies and force-set dynamic names for [Concept('concept_interest_group','Secret Police IG')]"
 
 # MyM Decisions
   decision_release_all_subjects: "Set all free"
