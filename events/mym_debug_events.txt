@@ -25,7 +25,12 @@ mym_debug.1 = {
 	option = {
 		name = mym_debug.1.a
 		default_option = yes
-		
+		if = {
+			limit = {
+				has_variable = mym_debug_menu_open_var
+			}
+			remove_variable = mym_debug_menu_open_var
+		}
 	}
 	
 	# Sets the ideology of all eligible politicians to fascist.
@@ -474,8 +479,11 @@ mym_debug.3 = { # Character Spawner & Kingmaker
 	option = {
 		name = mym_debug.3.a
 		default_option = yes
-		ai_chance = {
-			base = 100
+		if = {
+			limit = {
+				has_variable = mym_debug_menu_open_var
+			}
+			remove_variable = mym_debug_menu_open_var
 		}
 	}
 
