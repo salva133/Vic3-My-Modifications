@@ -31,6 +31,9 @@ mym_debug.1 = {
 			}
 			remove_variable = mym_debug_menu_open_var
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	
 	# Sets the ideology of all eligible politicians to fascist.
@@ -340,6 +343,12 @@ mym_debug.2 = {
 	option = {
 		name = mym_debug.2.a
 		default_option = yes
+		if = {
+			limit = {
+				has_variable = mym_debug_menu_open_var
+			}
+			remove_variable = mym_debug_menu_open_var
+		}
 		ai_chance = {
 			base = 100
 		}
@@ -448,6 +457,9 @@ mym_debug.3 = {
 				has_variable = mym_debug_menu_open_var
 			}
 			remove_variable = mym_debug_menu_open_var
+		}
+		ai_chance = {
+			base = 100
 		}
 	}
 
