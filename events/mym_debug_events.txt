@@ -313,7 +313,7 @@ mym_debug.1 = {
 	}
 }
 
-mym_debug.2 = { # Give all civilized countries era 4 tech & make them independent & Callback Ping
+mym_debug.2 = {
 	type = country_event
 	placement = ROOT
 	title = mym_debug.2.t
@@ -330,6 +330,13 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 
 	icon = gfx/interface/icons/event_icons/waving_flag.dds
 
+	immediate = {
+		random_primary_culture = {
+			save_scope_as = our_primary_culture
+		}
+	}
+
+	# Closes the event
 	option = {
 		name = mym_debug.2.a
 		default_option = yes
@@ -337,11 +344,10 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 			base = 100
 		}
 	}
+
+	# Gives Era 4 Tech to all civilized nations - Can be fired only once
 	option = {
 		name = mym_debug.2.b
-		ai_chance = {
-			base = 0
-		}
 
 		trigger = {
 			NOT = { has_variable = era_4_for_all_var }
@@ -360,6 +366,8 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 
 		trigger_event = { id = mym_debug.2 popup = yes }
 	}
+
+	# Frees all civilized subject nations from their respective Overlord
 	option = {
 		name = mym_debug.2.c
 		ai_chance = {
@@ -386,6 +394,10 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 
 		trigger_event = { id = mym_debug.2 popup = yes }
 	}
+
+	# CALLBACK PING -- Pretty much that, calls all members of the primary culture
+	# (a random one if there are multiple) and state religion 
+	# to the capital state of the applying nation
 	option = {
 		name = mym_debug.2.e
 		trigger = {
@@ -398,8 +410,8 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 			every_scope_state = {
 				every_scope_pop = {
 					limit = {
-						culture = cu:spanish
-						religion = rel:catholic
+						culture = scope:our_primary_culture
+						religion = scope:state_religion_scope
 					}
 					move_pop = ROOT.capital
 				}
@@ -410,7 +422,7 @@ mym_debug.2 = { # Give all civilized countries era 4 tech & make them independen
 	}
 }
 
-mym_debug.3 = { # Character Spawner & Kingmaker
+mym_debug.3 = {
 	type = country_event
 	placement = ROOT
 	title = mym_debug.3.t
