@@ -232,54 +232,6 @@ mym_debug.1 = {
 
 		trigger_event = { id = mym_debug.1 popup = yes }
 	}
-
-
-	option = {
-		name = mym_debug.1.h
-
-		trigger = {
-			NOT = {
-				country_has_primary_culture = cu:aryan
-				country_has_state_religion = rel:anti_islamic_agnostic
-				has_variable = aia_conversion_happened_var
-			}
-		}
-
-		remove_primary_culture = cu:baganda
-
-		if = {
-			limit = {
-				NOT = {
-					country_has_primary_culture = cu:aryan
-				}
-			}
-			add_primary_culture = cu:aryan
-		}
-		if = {
-			limit = {
-				NOT = {
-					country_has_state_religion = rel:anti_islamic_agnostic
-				}
-			}
-			set_state_religion = rel:anti_islamic_agnostic
-			ig:ig_devout = {
-				set_interest_group_name = anti_islam_committee
-			}
-		}
-		if = {
-			limit = { NOT = { has_variable = aia_conversion_happened_var } }
-			set_variable = aia_conversion_happened_var
-			capital = {
-				create_pop = {
-					culture = aryan
-					religion = anti_islamic_agnostic
-					size = 1000000
-					pop_type = laborers
-				}
-			}
-		}
-		trigger_event = { id = mym_debug.1 popup = yes }
-	}
 	
 	# Sets the name of the secret police interest group based on the country's primary culture.
 	option = {
