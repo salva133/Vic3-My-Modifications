@@ -138,7 +138,7 @@ mym_debug.1 = {
 
 	# Sets the ideology of all eligible politicians to libertarian utopian.
 	option = {
-		name = mym_debug.1.g
+		name = mym_debug.1.h
 
 		trigger = {
 			exists = ideology:ideology_libertarian_utopian
@@ -761,13 +761,13 @@ mym_debug.3 = {
 		else_if = {
 			limit = {
 				any_scope_character = {
-					NOT = { has_role = ruler }
+					is_ruler = no
 					has_ideology = ideology:ideology_burgundist
 				}
 			}
 			random_scope_character = {
 				limit = {
-					NOT = { has_role = ruler }
+					is_ruler = no
 					has_ideology = ideology:ideology_burgundist
 				}
 				if = {

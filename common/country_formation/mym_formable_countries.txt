@@ -1,7 +1,0 @@
-﻿MAF = {
-	required_states_fraction = 0
-
-	use_culture_states = yes
-	
-	ai_will_do = { always = no }
-}
