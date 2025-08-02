@@ -6,14 +6,6 @@
 	ai_will_do = { always = no }
 }
 
-MAF = {
-	states = {
-		STATE_UGANDA
-	}
-	
-	ai_will_do = { always = no }
-}
-
 ISR = {
 	states = {
 		STATE_PALESTINE
