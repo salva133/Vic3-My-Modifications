@@ -420,7 +420,7 @@ mym_debug.2 = {
 				every_scope_pop = {
 					limit = {
 						culture = scope:our_primary_culture
-						religion = scope:state_religion_scope
+						religion = root.religion
 					}
 					move_pop = ROOT.capital
 				}

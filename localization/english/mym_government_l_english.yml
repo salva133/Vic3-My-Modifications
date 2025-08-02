@@ -20,7 +20,6 @@
   gov_mym_pirate_commune: "Pirate Commune"
   gov_mym_pirate_commune_desc: "A unique [concept_government_type] of a [concept_country] where leadership is determined by the crew, and authority is shared among those who earn the trust and respect of their peers. Decisions are made collectively through councils of ship captains and quartermasters, with each crew having autonomy over its own affairs. While there is no formal central government, a loose confederation ensures cooperation in times of need. This system embodies the anarchic spirit of freedom, mutual aid, and self-governance upon the high seas.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
 
-
 ### RULER TITLE ###
   RULER_TITLE_MYM_SUPER_PRESIDENT: "Super President"
   RULER_TITLE_MYM_ROYAL_DEPUTY: "Royal Deputy"
