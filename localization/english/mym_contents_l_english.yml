@@ -83,6 +83,7 @@
   mym_debug.1.c: "Comrades, arise!"
   mym_debug.1.e: "Break your chains, friend!"
   mym_debug.1.g: "Embrace your freedom!"
+  mym_debug.1.h: "Trust noone!"
   mym_debug.1.j: "Accelerate into the future!"
   mym_debug.1.i: "Set Secret Police IG name dynamically (#green Global#!)"
 
