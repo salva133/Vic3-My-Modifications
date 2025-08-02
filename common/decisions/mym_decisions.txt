@@ -1,24 +1,4 @@
-﻿decision_mym_bgy_debug_event = {
-
-	is_shown = {
-		is_player = yes
-	}
-
-	possible = {
-		NOT = { has_variable = mym_debug_menu_open_var }
-	}
-
-	when_taken = {
-		set_variable = mym_debug_menu_open_var
-		trigger_event = { id = bgy_debug.1 popup = yes }
-	}
-
-	ai_chance = {
-		value = 0
-	}
-}
-
-decision_mym_debug_event_3 = {
+﻿decision_mym_debug_event_3 = {
 
 	is_shown = {
 		is_player = yes

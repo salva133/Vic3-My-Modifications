@@ -75,7 +75,7 @@
   nietzsche.2.c: "The world will not accept! #bold I#! will not accept!"
 
 ### DEBUGGING EVENTS
-  mym_debug.1.t: "MyM: Leader Ideology Changer"
+  mym_debug.1.t: "#blue MyM#!: Leader Ideology Changer"
   mym_debug.1.d: "Providing ideological options"
   mym_debug.1.f: "Only applies ideologies that are actually existing in the game.\nIf an ideology ain't applyable, then it is not existing in the current game."
   mym_debug.1.a: "Close"
@@ -87,15 +87,15 @@
   mym_debug.1.j: "Accelerate into the future!"
   mym_debug.1.i: "Set Secret Police IG name dynamically (#green Global#!)"
 
-  mym_debug.2.t: "MyM: Debugging 2"
+  mym_debug.2.t: "#blue MyM#!: Debugging 2"
   mym_debug.2.d: "Providing debugging options"
-  mym_debug.2.f: ""
+  mym_debug.2.f: "Some gamebreaking stuff here, have fun #red if you dare!#!"
   mym_debug.2.a: "Close"
   mym_debug.2.b: "All countries get era 4 tech"
   mym_debug.2.c: "All countries become independent"
   mym_debug.2.e: "--- CALLBACK PING ---"
 
-  mym_debug.3.t: "MyM: Character Spawn"
+  mym_debug.3.t: "#blue MyM#!: Character Spawn"
   mym_debug.3.d: "Choose your Agitator"
   mym_debug.3.f: "Selecting an option will spawn an Agitator with the corresponding Ideology. If such an Agitator already exists, he will be made the ruler."
   mym_debug.3.a: "Close"

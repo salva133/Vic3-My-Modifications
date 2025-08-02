@@ -1,7 +1,5 @@
 ﻿l_english:
 # DEBUG EVENT Decisions
-  decision_mym_bgy_debug_event: "#purple BGY:#! Debug Menu"
-  decision_mym_bgy_debug_event_desc: ""
   decision_mym_debug_event_3: "#blue MyM:#! Debug Menu 3"
   decision_mym_debug_event_3_desc: "Spawn [Concept('concept_agitator','Agitators')] with specific [concept_ideology]"
   decision_mym_debug_event_2: "#blue MyM:#! Debug Menu 2"
