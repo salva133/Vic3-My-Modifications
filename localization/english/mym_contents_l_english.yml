@@ -61,18 +61,18 @@
 
 # Nietzsche
   nietzsche.1.t: "A Strange Prophet"
-  nietzsche.1.d: "A former professor, long escaped from the academic world, has published a chaotic, poetico-philosophical work titled #bold Thus Spoke Zarathustra#!. In it, he proclaims the 'death of God,' scorns the masses, and praises a new type of human being - the 'Übermensch.'\n\nThe book is enigmatic, linguistically powerful, and philosophically provocative. Even among scholars, confusion reigns: Is this profound wisdom - or sheer madness?"
+  nietzsche.1.d: "A former professor, long escaped from the academic world, has published a chaotic, poetico-philosophical work titled #bold Thus Spoke Zarathustra#!. In it, he proclaims the 'death of God', scorns the masses, and praises a new type of human being - the 'Übermensch'.\n\nThe book is enigmatic, linguistically powerful, and philosophically provocative. Even among scholars, confusion reigns: Is this profound wisdom - or sheer madness?"
   nietzsche.1.f: "\"I teach you the #bold Übermensch#!. Man is something that shall be overcome.\"\n\n#italic - Friedrich Nietzsche, 1883#!"
   nietzsche.1.a: "A lone voice crying in the wilderness."
   nietzsche.1.b: "This will make waves - sooner or later."
   nietzsche.1.c: "Philosophical nonsense with a literary veneer."
 
   nietzsche.2.t: "The Silence of Zarathustra"
-  nietzsche.2.d: "In the [GetCulture('north_italian').GetName] city of [SCOPE.sState('turin_scope').GetStateRegion.GetCityHubName], the philosopher Friedrich Nietzsche has suffered a sudden and dramatic collapse. Witnesses claim he embraced a beaten horse in the street, then fell weeping to the ground.\n\nSince then, he has descended into madness. He speaks in riddles, signs letters as 'Dionysus' and 'The Crucified,' and claims to be god, emperor, or both.\n\nThe mind that once challenged all moral certainties now drifts, unreachable."
+  nietzsche.2.d: "In the city of [SCOPE.sState('turin_scope').GetStateRegion.GetCityHubName], the philosopher Friedrich Nietzsche has suffered a sudden and dramatic collapse. Witnesses claim he embraced a beaten horse in the street, then fell weeping to the ground.\n\nSince then, he has descended into madness. He speaks in riddles, signs letters as 'Dionysus' and 'The Crucified,' and claims to be god, emperor, or both.\n\nThe mind that once challenged all moral certainties now drifts, unreachable."
   nietzsche.2.f: "\"Beyond good and evil, beyond sanity and sorrow...\"\n\n#italic - Fragment from Nietzsche's final notes#!"
   nietzsche.2.a: "Thus spoke - and fell - Zarathustra."
   nietzsche.2.b: "Maybe he can recover with us.."
-  nietzsche.2.c: "The world will not accept! #bold I#! will not accept!"
+  nietzsche.2.c: "The people will not accept! #bold I#! will not accept!"
 
 ### DEBUGGING EVENTS
   mym_debug.1.t: "#blue MyM#!: Leader Ideology Changer"
