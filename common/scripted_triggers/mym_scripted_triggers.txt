@@ -26,3 +26,59 @@ ideology_secular_humanitarian_valid_trigger = {
 		is_interest_group_type = ig_trade_unions
 	}
 }
+
+at_least_one_politician_is_no_fascist = {
+	OR = {
+		exists = ideology:ideology_fascist
+		is_possible_ideology_fascist = yes
+		any_scope_character = {
+			has_role = politician
+			NOT = { has_ideology = ideology:ideology_fascist }
+		}
+	}
+}
+
+at_least_one_politician_is_no_communist = {
+	OR = {
+		exists = ideology:ideology_communist
+		is_possible_ideology_communist = yes
+		any_scope_character = {
+			has_role = politician
+			NOT = { has_ideology = ideology:ideology_communist }
+		}
+	}
+}
+
+at_least_one_politician_is_no_anarchist = {
+	OR = {
+		exists = ideology:ideology_anarchist
+		exists = ideology:ideology_anarcho_libertarian
+		exists = ideology:ideology_libertarian_utopian
+	}
+	is_possible_ideology_anarchist = yes
+	any_scope_character = {
+		has_role = politician
+		NAND = {
+			has_ideology = ideology:ideology_anarchist
+			has_ideology = ideology:ideology_anarcho_libertarian
+			has_ideology = ideology:ideology_libertarian_utopian
+		}
+	}
+}
+
+at_least_one_politician_is_no_accelerationist = {
+	OR = {
+		exists = ideology:ideology_neo_industrialist
+		exists = ideology:ideology_hyper_individualist
+		exists = ideology:ideology_recreationist
+	}
+	is_possible_ideology_accelerationist = yes
+	any_scope_character = {
+		has_role = politician
+		NAND = {
+			has_ideology = ideology:ideology_neo_industrialist
+			has_ideology = ideology:ideology_hyper_individualist
+			has_ideology = ideology:ideology_recreationist
+		}
+	}
+}
