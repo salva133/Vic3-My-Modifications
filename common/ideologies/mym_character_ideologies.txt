@@ -306,6 +306,7 @@ ideology_anarcho_libertarian = {
 	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_anarcho_libertarian.dds
 	
 	character_ideology = yes
+	
 	lawgroup_distribution_of_power = {
 		law_anarchy = strongly_approve
 		law_universal_suffrage = neutral
