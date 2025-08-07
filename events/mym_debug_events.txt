@@ -14,7 +14,7 @@ mym_debug.1 = {
 	}
 
 	trigger = {
-		
+		# Gets triggered by decision
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -57,8 +57,9 @@ mym_debug.1 = {
 			}
 			set_ideology = ideology:ideology_fascist
 		}
-
-		trigger_event = { id = mym_debug.1 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.1 popup = yes }
+		}
 	}
 
 	# Sets the ideology of all eligible politicians to communist.
@@ -83,7 +84,9 @@ mym_debug.1 = {
 			set_ideology = ideology:ideology_communist
 		}
 
-		trigger_event = { id = mym_debug.1 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.1 popup = yes }
+		}
 	}
 
 	# Sets the ideology of all eligible politicians to anarchist.
@@ -108,7 +111,9 @@ mym_debug.1 = {
 			set_ideology = ideology:ideology_anarchist
 		}
 
-		trigger_event = { id = mym_debug.1 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.1 popup = yes }
+		}
 	}
 
 	# Sets the ideology of all eligible politicians to anarcho-libertarian.
@@ -133,7 +138,9 @@ mym_debug.1 = {
 			set_ideology = ideology:ideology_anarcho_libertarian
 		}
 
-		trigger_event = { id = mym_debug.1 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.1 popup = yes }
+		}
 	}
 
 	# Sets the ideology of all eligible politicians to libertarian utopian.
@@ -158,7 +165,9 @@ mym_debug.1 = {
 			set_ideology = ideology:ideology_libertarian_utopian
 		}
 
-		trigger_event = { id = mym_debug.1 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.1 popup = yes }
+		}
 	}
 
 	# Sets the ideology of all eligible politicians to neo-industrialist.
@@ -183,7 +192,9 @@ mym_debug.1 = {
 			set_ideology = ideology:ideology_neo_industrialist
 		}
 
-		trigger_event = { id = mym_debug.1 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.1 popup = yes }
+		}
 	}
 
 	# Sets the ideology of all eligible politicians to hyper-individualist.
@@ -208,7 +219,9 @@ mym_debug.1 = {
 			set_ideology = ideology:ideology_hyper_individualist
 		}
 
-		trigger_event = { id = mym_debug.1 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.1 popup = yes }
+		}
 	}
 
 	# Sets the ideology of all eligible politicians to recreationist.
@@ -233,7 +246,9 @@ mym_debug.1 = {
 			set_ideology = ideology:ideology_recreationist
 		}
 
-		trigger_event = { id = mym_debug.1 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.1 popup = yes }
+		}
 	}
 	
 	# Sets the name of the secret police interest group based on the country's primary culture.
@@ -312,7 +327,9 @@ mym_debug.1 = {
 			}
 		}
 
-		trigger_event = { id = mym_debug.1 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.1 popup = yes }
+		}
 	}
 }
 
