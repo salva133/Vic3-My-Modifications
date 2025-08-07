@@ -257,6 +257,11 @@ mym_debug.1 = {
 
 		trigger = {
 			any_country = {
+				NOR = {
+					is_country_type = colonial
+					is_country_type = decentralized
+					is_country_type = unrecognized
+				}
 				exists = ig:ig_secret_police
 			}
 		}
@@ -390,19 +395,18 @@ mym_debug.2 = {
 			}
 		}
 
-		trigger_event = { id = mym_debug.2 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.2 popup = yes }
+		}
 	}
 
 	# Frees all civilized subject nations from their respective Overlord
 	option = {
 		name = mym_debug.2.c
-		ai_chance = {
-			base = 0
-		}
 
 		trigger = {
 			any_country = {
-				count > 0
+				NOT = { is_country_type = decentralized }
 				is_subject = yes
 			}
 		}
@@ -418,7 +422,9 @@ mym_debug.2 = {
 			}
 		}
 
-		trigger_event = { id = mym_debug.2 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.2 popup = yes }
+		}
 	}
 
 	# CALLBACK PING -- Pretty much that, calls all members of the primary culture
@@ -444,7 +450,9 @@ mym_debug.2 = {
 			}
 		}
 
-		trigger_event = { id = mym_debug.2 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.2 popup = yes }
+		}
 	}
 }
 
@@ -514,8 +522,10 @@ mym_debug.3 = {
 				ideology = ideology:ideology_timocrat
 			}
 		}
-		
-		trigger_event = { id = mym_debug.3 popup = yes }
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
 	}
 
 	# Makes a national fascist agitator the ruler if available, otherwise creates a new national fascist agitator and sets him as ruler.
@@ -553,7 +563,9 @@ mym_debug.3 = {
 			}
 		}
 		
-		trigger_event = { id = mym_debug.3 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
 	}
 
 	# Makes an anarcho-libertarian agitator the ruler if available, otherwise creates a new anarcho-libertarian agitator and sets him as ruler.
@@ -591,7 +603,9 @@ mym_debug.3 = {
 			}
 		}
 		
-		trigger_event = { id = mym_debug.3 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
 	}
 
 	# Makes an anti-statist agitator the ruler if available, otherwise creates a new anti-statist agitator and sets him as ruler.
@@ -629,7 +643,9 @@ mym_debug.3 = {
 			}
 		}
 		
-		trigger_event = { id = mym_debug.3 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
 	}
 
 	# Makes an anti-feminist agitator the ruler if available, otherwise creates a new anti-feminist agitator and sets him as ruler.
@@ -667,7 +683,9 @@ mym_debug.3 = {
 			}
 		}
 		
-		trigger_event = { id = mym_debug.3 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
 	}
 
 	# Makes a secular humanitarian agitator the ruler if available, otherwise creates a new secular humanitarian agitator and sets him as ruler.
@@ -705,7 +723,9 @@ mym_debug.3 = {
 			}
 		}
 		
-		trigger_event = { id = mym_debug.3 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
 	}
 
 	# Makes a libertarian utopian agitator the ruler if available, otherwise creates a new libertarian utopian agitator and sets him as ruler.
@@ -743,7 +763,9 @@ mym_debug.3 = {
 			}
 		}
 		
-		trigger_event = { id = mym_debug.3 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
 	}
 
 	# Makes a burgundist leader agitator the ruler if available, otherwise creates a new burgundist leader agitator and sets him as ruler.
@@ -803,7 +825,9 @@ mym_debug.3 = {
 			}
 		}
 		
-		trigger_event = { id = mym_debug.3 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
 	}
 
 	# Makes an agitator with one of the accelerationist ideologies (neo-industrialist, hyper-individualist, or recreationist) the ruler if available,
@@ -875,6 +899,8 @@ mym_debug.3 = {
 			}
 		}
 		
-		trigger_event = { id = mym_debug.3 popup = yes }
+		hidden_effect = {
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
 	}
 }
