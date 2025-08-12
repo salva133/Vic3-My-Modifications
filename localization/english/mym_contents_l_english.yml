@@ -86,6 +86,7 @@
   mym_debug.1.h: "Trust noone!"
   mym_debug.1.j: "Accelerate into the future!"
   mym_debug.1.i: "Set Secret Police IG name dynamically (#green Global#!)"
+  mym_debug.1.k: "Scramble every [Concept('concept_politician','Politicians')] $concept_ideology$"
 
   mym_debug.2.t: "#blue MyM#!: Debugging 2"
   mym_debug.2.d: "Providing debugging options"
@@ -93,7 +94,8 @@
   mym_debug.2.a: "Close"
   mym_debug.2.b: "All countries get era 4 tech"
   mym_debug.2.c: "All countries become independent"
-  mym_debug.2.e: "--- CALLBACK PING ---"
+  mym_debug.2.e: "#gold #bold --- CALLBACK PING ---#!#!"
+  mym_debug.2.g: "Give me all the Tech!"
 
   mym_debug.3.t: "#blue MyM#!: Character Spawn"
   mym_debug.3.d: "Choose your Agitator"

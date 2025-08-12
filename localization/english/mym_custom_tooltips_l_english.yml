@@ -1,16 +1,18 @@
 ﻿l_english:
+# Variables
   vito_corleone_is_alive_tt: "Vito Corleone is alive"
   vito_corleone_is_dead_tt: "Vito Corleone is dead"
-
   dmitry_did_not_set_sails_tt: "The Dmitry is #bold not yet#! on her way"
   dmitry_did_set_sails_tt: "The Dmitry is on her way"
   dmitry_arrived_tt: "The Dmitry has arrived"
-
-  je_stoker_varna_built_tt: "The State Region of [Concept('concept_state','$STATE_BULGARIA$')] has the Port of Varna"
   HP_is_alive_tt: "The writer is alive"
 
+# Journal Entries
+  je_stoker_varna_built_tt: "The State Region of [Concept('concept_state','$STATE_BULGARIA$')] has the Port of Varna"
   je_ahd_last_man_standing_tt: "Gentlemen, it's Last Man Standing, and we need to be that man"
 
+# Event Options
+  mym_debug.1.k_tt: "\"We are all individuals, we are all different...\", they said in unison"
   mym_debug.2.b_tt: "Every country will get research done up to the fourth era"
   mym_debug.2.c_tt: "Every subject will get released from their overlord"
 

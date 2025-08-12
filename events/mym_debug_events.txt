@@ -224,26 +224,60 @@ mym_debug.1 = {
 		}
 	}
 
-	# Sets the ideology of all eligible politicians to recreationist.
+	# Scrambles the ideos of all politicians
 	option = {
-		name = mym_debug.1.j
+		name = mym_debug.1.k
 
-		trigger = {
-			exists = ideology:ideology_recreationist
-			is_possible_ideology_accelerationist = yes
-			any_scope_character = {
-				has_role = politician
-				NOT = { has_ideology = ideology:ideology_recreationist }
+		custom_tooltip = {
+			text = mym_debug.1.k_tt
+			every_scope_character = {
+				limit = {
+					has_role = politician
+					NOT = { has_ideology = ideology:ideology_burgundist }
+				}
+				random_list = {
+					1 = { set_ideology = ideology:ideology_moderate }
+					1 = { set_ideology = ideology:ideology_traditionalist }
+					1 = { set_ideology = ideology:ideology_nihilist }
+					1 = { set_ideology = ideology:ideology_republican_leader }
+					1 = { set_ideology = ideology:ideology_radical }
+					1 = { set_ideology = ideology:ideology_reformer }
+					1 = { set_ideology = ideology:ideology_feminist }
+					1 = { set_ideology = ideology:ideology_abolitionist }
+					1 = { set_ideology = ideology:ideology_slaver }
+					1 = { set_ideology = ideology:ideology_pacifist }
+					1 = { set_ideology = ideology:ideology_jingoist_leader }
+					1 = { set_ideology = ideology:ideology_royalist }
+					1 = { set_ideology = ideology:ideology_social_democrat }
+					1 = { set_ideology = ideology:ideology_communist }
+					1 = { set_ideology = ideology:ideology_vanguardist }
+					1 = { set_ideology = ideology:ideology_fascist }
+					1 = { set_ideology = ideology:ideology_anarchist }
+					1 = { set_ideology = ideology:ideology_ethno_nationalist }
+					1 = { set_ideology = ideology:ideology_theocrat }
+					1 = { set_ideology = ideology:ideology_market_liberal }
+					1 = { set_ideology = ideology:ideology_luddite }
+					1 = { set_ideology = ideology:ideology_authoritarian }
+					1 = { set_ideology = ideology:ideology_protectionist }
+					1 = { set_ideology = ideology:ideology_humanitarian }
+					1 = { set_ideology = ideology:ideology_jacksonian_democrat }
+					1 = { set_ideology = ideology:ideology_positivist }
+					1 = { set_ideology = ideology:ideology_land_reformer }
+					1 = { set_ideology = ideology:ideology_integralist }
+					1 = { set_ideology = ideology:ideology_liberal_leader }
+					1 = { set_ideology = ideology:ideology_corporatist_leader }
+					1 = { set_ideology = ideology:ideology_humanitarian_royalist }
+					1 = { set_ideology = ideology:ideology_despotic_utopian }
+					1 = { set_ideology = ideology:ideology_utilitarian_leader }
+					1 = { set_ideology = ideology:ideology_sovereignist_leader }
+					1 = { set_ideology = ideology:ideology_utopian }
+					1 = { set_ideology = ideology:ideology_modernizer_leader }
+					1 = { set_ideology = ideology:ideology_neo_industrialist }
+					1 = { set_ideology = ideology:ideology_hyper_individualist }
+					1 = { set_ideology = ideology:ideology_recreationist }
+					1 = { set_ideology = ideology:ideology_secular_humanitarian }
+				}
 			}
-		}
-
-		every_scope_character = {
-			limit = {
-				has_role = politician
-				NOT = { has_ideology = ideology:ideology_recreationist }
-				NOT = { has_ideology = ideology:ideology_burgundist }
-			}
-			set_ideology = ideology:ideology_recreationist
 		}
 
 		hidden_effect = {
@@ -449,6 +483,19 @@ mym_debug.2 = {
 				}
 			}
 		}
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.2 popup = yes }
+		}
+	}
+
+	# Gives the root all the tech up to era 5 - clearly a cheat to circumvent achievement invalidation
+	option = {
+		name = mym_debug.2.g
+		trigger = {
+			has_researchable_technology = yes
+		}
+		add_era_researched = era_5
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.2 popup = yes }
