@@ -3,9 +3,9 @@
 corleone.1 = { # The Murder of Don Fanucci 
 	type = country_event
 	placement = ROOT
-	title =  corleone.1.t
-	desc =   corleone.1.d
-	flavor = corleone.1.f
+	title =  corleone.1.tt
+	desc =   corleone.1.dd
+	flavor = corleone.1.ff
 
 	event_image = {
 		video = "southamerica_public_figure_assassination"
@@ -31,9 +31,9 @@ corleone.1 = { # The Murder of Don Fanucci
 corleone.2 = { # New York Daily Chronicle, November 2, 1922
 	type = country_event
 	placement = ROOT
-	title =  corleone.2.t
-	desc =   corleone.2.d
-	flavor = corleone.2.f
+	title =  corleone.2.tt
+	desc =   corleone.2.dd
+	flavor = corleone.2.ff
 
 	event_image = {
 		video = "southamerica_public_figure_assassination"
@@ -62,9 +62,9 @@ corleone.2 = { # New York Daily Chronicle, November 2, 1922
 corleone.3 = { # New York Daily Chronicle, June 6, 1934
 	type = country_event
 	placement = ROOT
-	title =  corleone.3.t
-	desc =   corleone.3.d
-	flavor = corleone.3.f
+	title =  corleone.3.tt
+	desc =   corleone.3.dd
+	flavor = corleone.3.ff
 
 	event_image = {
 		video = "unspecific_signed_contract"

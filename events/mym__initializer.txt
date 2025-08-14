@@ -3,9 +3,9 @@
 albion_init.1 = {
 	type = country_event
 	placement = ROOT
-	title = albion_init.1.t
-	desc = albion_init.1.d
-	flavor = albion_init.1.f
+	title = albion_init.1.tt
+	desc = albion_init.1.dd
+	flavor = albion_init.1.ff
 
 	trigger = {
 		NOT = { has_global_variable = oberon_happened_globvar }
