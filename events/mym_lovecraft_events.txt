@@ -3,9 +3,9 @@
 hp_lovecraft.1 = { # H.P. Lovecraft appears
 	type = country_event
 	placement = ROOT
-	title =  hp_lovecraft.1.t
-	desc =   hp_lovecraft.1.d
-	flavor = hp_lovecraft.1.f
+	title =  hp_lovecraft.1.tt
+	desc =   hp_lovecraft.1.dd
+	flavor = hp_lovecraft.1.ff
 
 	left_icon = scope:hp_scope
 
@@ -50,9 +50,9 @@ hp_lovecraft.1 = { # H.P. Lovecraft appears
 hp_lovecraft.2 = { # H.P. Liebkraft appears
 	type = country_event
 	placement = ROOT
-	title =  hp_lovecraft.2.t
-	desc =   hp_lovecraft.2.d
-	flavor = hp_lovecraft.2.f
+	title =  hp_lovecraft.2.tt
+	desc =   hp_lovecraft.2.dd
+	flavor = hp_lovecraft.2.ff
 
 	left_icon = scope:hp_scope
 
@@ -101,9 +101,9 @@ hp_lovecraft.2 = { # H.P. Liebkraft appears
 hp_lovecraft.3 = { # H.P. dies historically
 	type = country_event
 	placement = ROOT
-	title =  hp_lovecraft.3.t
-	desc =   hp_lovecraft.3.d
-	flavor = hp_lovecraft.3.f
+	title =  hp_lovecraft.3.tt
+	desc =   hp_lovecraft.3.dd
+	flavor = hp_lovecraft.3.ff
 
 	left_icon = scope:hp_scope
 

@@ -3,9 +3,9 @@
 milei.1 = {
 	type = country_event
 	placement = ROOT
-	title =  milei.1.t
-	desc =   milei.1.d
-	flavor = milei.1.f
+	title =  milei.1.tt
+	desc =   milei.1.dd
+	flavor = milei.1.ff
 
 	duration = 3
 

@@ -3,9 +3,9 @@
 nietzsche.1 = { # Friedrich Nietzsche appears
 	type = country_event
 	placement = ROOT
-	title =  nietzsche.1.t
-	desc =   nietzsche.1.d
-	flavor = nietzsche.1.f
+	title =  nietzsche.1.tt
+	desc =   nietzsche.1.dd
+	flavor = nietzsche.1.ff
 
 	left_icon = scope:nietzsche_scope
 
@@ -112,9 +112,9 @@ nietzsche.1 = { # Friedrich Nietzsche appears
 nietzsche.2 = {
 	type = country_event
 	placement = ROOT
-	title =  nietzsche.2.t
-	desc =   nietzsche.2.d
-	flavor = nietzsche.2.f
+	title =  nietzsche.2.tt
+	desc =   nietzsche.2.dd
+	flavor = nietzsche.2.ff
 
 	left_icon = scope:nietzsche_scope
 

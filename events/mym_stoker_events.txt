@@ -3,9 +3,9 @@
 stoker.1 = { # The Dmitry sets sails
 	type = country_event
 	placement = ROOT
-	title =  stoker.1.t
-	desc =   stoker.1.d
-	flavor = stoker.1.f
+	title =  stoker.1.tt
+	desc =   stoker.1.dd
+	flavor = stoker.1.ff
 
 	event_image = {
 		video = "votp_gunboat_diplomacy"
@@ -40,9 +40,9 @@ stoker.1 = { # The Dmitry sets sails
 stoker.2 = { # The Dmitry is washed ashore
 	type = country_event
 	placement = ROOT
-	title =  stoker.2.t
-	desc =   stoker.2.d
-	flavor = stoker.2.f
+	title =  stoker.2.tt
+	desc =   stoker.2.dd
+	flavor = stoker.2.ff
 
 	event_image = {
 		texture = "/gfx/event_images/dmitry_shored.dds"

@@ -3,9 +3,9 @@
 mym_debug.1 = {
 	type = country_event
 	placement = ROOT
-	title = mym_debug.1.t
-	desc = mym_debug.1.d
-	flavor = mym_debug.1.f
+	title = mym_debug.1.tt
+	desc = mym_debug.1.dd
+	flavor = mym_debug.1.ff
 
 	duration = 3
 
@@ -370,9 +370,9 @@ mym_debug.1 = {
 mym_debug.2 = {
 	type = country_event
 	placement = ROOT
-	title = mym_debug.2.t
-	desc = mym_debug.2.d
-	flavor = mym_debug.2.f
+	title = mym_debug.2.tt
+	desc = mym_debug.2.dd
+	flavor = mym_debug.2.ff
 
 	duration = 3
 
@@ -501,9 +501,9 @@ mym_debug.2 = {
 mym_debug.3 = {
 	type = country_event
 	placement = ROOT
-	title = mym_debug.3.t
-	desc = mym_debug.3.d
-	flavor = mym_debug.3.f
+	title = mym_debug.3.tt
+	desc = mym_debug.3.dd
+	flavor = mym_debug.3.ff
 
 	duration = 3
 
