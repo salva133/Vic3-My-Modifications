@@ -1,4 +1,17 @@
-﻿on_monthly_pulse_country_mym_randoms = {
+﻿on_game_started_after_lobby = {
+	on_actions = {
+		on_game_started_mym_albionians_setup
+		on_game_started_mym_mennonites_setup
+	}
+}
+
+on_country_released_as_independent = {
+	on_actions = {
+		albion_init
+	}
+}
+
+on_monthly_pulse_country_mym_randoms = {
 	random_events = {
 		95 = hp_lovecraft.1
 		5 = hp_lovecraft.2
@@ -64,8 +77,96 @@ albion_init = {
 	}
 }
 
-on_country_released_as_independent = {
-	on_actions = {
-		albion_init
+on_game_started_mym_albionians_setup = {
+	effect = {
+		s:STATE_LANCASHIRE = {
+			on_game_started_create_albionians = yes
+		}
+		s:STATE_WALES = {
+			on_game_started_create_albionians = yes
+		}
+		s:STATE_LOWLANDS = {
+			on_game_started_create_albionians = yes
+		}
+		s:STATE_ULSTER = {
+			on_game_started_create_albionians = yes
+		}
+		s:STATE_LEINSTER = {
+			on_game_started_create_albionians = yes
+		}
+	}
+}
+
+on_game_started_mym_mennonites_setup = {
+	effect = {
+		s:STATE_VILNIUS = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_MAZOVIA = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_LESSER_POLAND = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_BREST = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_VOLHYNIA = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_KIEV = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_CRIMEA = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_KHARKOV = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_CHERSON = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_CHERNIHIV = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_TAURIDA = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_BESSARABIA = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_NORTH_CAUCASUS = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_STAVROPOL = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_CHELYABINSK = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_ORYOL = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_KURSK = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_ROSTOV = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_WEST_GALICIA = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_EAST_GALICIA = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_WEST_SLOVAKIA = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_EAST_SLOVAKIA = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_MOLDAVIA = {
+			on_game_started_create_mennonites = yes
+		}
 	}
 }

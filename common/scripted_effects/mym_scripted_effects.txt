@@ -1,0 +1,24 @@
+﻿on_game_started_create_albionians = {
+	add_homeland = cu:albionian
+	every_scope_state = {
+		convert_population = {
+			target = rel:druidism
+			value = 0.01
+		}
+		ordered_scope_pop = {
+			change_pop_culture = {
+				target = cu:albionian
+				value = 1
+			}
+		}
+	}
+}
+
+on_game_started_create_mennonites = {
+	every_scope_state = {
+		convert_population = {
+			target = rel:mennonite
+			value = 0.03
+		}
+	}
+}
