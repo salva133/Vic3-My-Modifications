@@ -1,6 +1,7 @@
 ﻿namespace = hp_lovecraft
 
-hp_lovecraft.1 = { # H.P. Lovecraft appears
+# H.P. Lovecraft appears
+hp_lovecraft.1 = {
 	type = country_event
 	placement = ROOT
 	title =  hp_lovecraft.1.tt
@@ -47,7 +48,8 @@ hp_lovecraft.1 = { # H.P. Lovecraft appears
 	}
 }
 
-hp_lovecraft.2 = { # H.P. Liebkraft appears
+# H.P. Liebkraft appears
+hp_lovecraft.2 = {
 	type = country_event
 	placement = ROOT
 	title =  hp_lovecraft.2.tt
@@ -98,7 +100,8 @@ hp_lovecraft.2 = { # H.P. Liebkraft appears
 	}
 }
 
-hp_lovecraft.3 = { # H.P. dies historically
+# H.P. dies historically
+hp_lovecraft.3 = {
 	type = country_event
 	placement = ROOT
 	title =  hp_lovecraft.3.tt
