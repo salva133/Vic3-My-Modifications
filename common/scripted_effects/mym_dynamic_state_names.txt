@@ -1,5 +1,12 @@
-﻿assign_state_hub_dynamic_names = {
-    if = { # Southern Africa Region
+﻿# Not working
+# needs to be assign_state_hub_dynamic_names
+# which overwrites vanilla assign_state_hub_dynamic_names
+# which means an overwrite needs to be implemented
+# which means this won't be implemented in the current form
+# wait for when those functions can be added incrementally
+
+mym_assign_state_hub_dynamic_names = {
+    if = {
     	limit = {
     		region = sr:region_england
     	}
@@ -10,12 +17,17 @@
 		assign_state_name_region_midlands = yes
 		assign_state_name_region_yorkshire = yes
 		assign_state_name_region_lancashire = yes
+		assign_state_name_region_east_anglia = yes
+    }
+    if = {
+    	limit = {
+    		region = sr:region_north_sea_coast
+    	}
 		assign_state_name_region_lowlands = yes
 		assign_state_name_region_highlands = yes
 		assign_state_name_region_ulster = yes
 		assign_state_name_region_leinster = yes
 		assign_state_name_region_connaught = yes
 		assign_state_name_region_munster = yes
-		assign_state_name_region_east_anglia = yes
     }
 }
