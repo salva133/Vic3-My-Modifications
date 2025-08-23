@@ -48,30 +48,7 @@ albion = {
 				c:ABI ?= scope:target
 			}
 			scope:target = {
-				activate_law = law_type:law_autocracy
-				activate_law = law_type:law_industry_banned
-				activate_law = law_type:law_homesteading
-				activate_law = law_type:law_consumption_based_taxation
-				activate_law = law_type:law_no_police
-				activate_law = law_type:law_national_militia
-				activate_law = law_type:law_frontier_colonization
-				activate_law = law_type:law_closed_borders
-				activate_law = law_type:law_isolationism
-				activate_law = law_type:law_racial_segregation
-				set_ruling_interest_groups = {
-					ig_rural_folk
-				}
-				create_character = {
-					template = oberon_character_template
-				}
-				if = {
-					limit = {
-						any_character = {
-							has_template = oberon_character_template
-						}
-					}
-					trigger_event = { id = albion.1 popup = yes }
-				}
+				set_up_albion_gov = yes
 			}
 		}
 	}

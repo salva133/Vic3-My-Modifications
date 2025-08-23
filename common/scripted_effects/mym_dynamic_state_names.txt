@@ -1,0 +1,21 @@
+﻿assign_state_hub_dynamic_names = {
+    if = { # Southern Africa Region
+    	limit = {
+    		region = sr:region_england
+    	}
+        assign_state_name_region_east_anglia = yes
+		assign_state_name_region_home_counties = yes
+		assign_state_name_region_west_country = yes
+		assign_state_name_region_wales = yes
+		assign_state_name_region_midlands = yes
+		assign_state_name_region_yorkshire = yes
+		assign_state_name_region_lancashire = yes
+		assign_state_name_region_lowlands = yes
+		assign_state_name_region_highlands = yes
+		assign_state_name_region_ulster = yes
+		assign_state_name_region_leinster = yes
+		assign_state_name_region_connaught = yes
+		assign_state_name_region_munster = yes
+		assign_state_name_region_east_anglia = yes
+    }
+}

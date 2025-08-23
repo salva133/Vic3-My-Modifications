@@ -6,7 +6,7 @@
 		adjective = dyn_c_USA_citizen_states_adj
 		
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1000
 		
 		trigger = {
 			scope:actor ?= {
@@ -21,7 +21,7 @@
 		name = dyn_c_USA_puppet_of_CSA
 		adjective = USA_ADJ
 
-		priority = 900
+		priority = 1000
 		trigger = {
 			exists = c:CSA
 			exists = scope:actor
@@ -36,7 +36,7 @@
 		name = dyn_c_USA_puppet_of_GBR_royal
 		adjective = USA_ADJ
 
-		priority = 900
+		priority = 1000
 		trigger = {
 			exists = c:GBR
 			exists = scope:actor
@@ -53,7 +53,7 @@
 		name = dyn_c_USA_puppet_of_GBR_rep
 		adjective = USA_ADJ
 
-		priority = 900
+		priority = 1000
 		trigger = {
 			exists = c:GBR
 			exists = scope:actor
@@ -73,7 +73,7 @@
 		name = dyn_c_USA_puppet_of_GBR_theo
 		adjective = USA_ADJ
 
-		priority = 900
+		priority = 1000
 		trigger = {
 			exists = c:GBR
 			exists = scope:actor
@@ -90,7 +90,7 @@
 		name = dyn_c_USA_puppet_of_GBR_communist
 		adjective = USA_ADJ
 
-		priority = 900
+		priority = 1000
 		trigger = {
 			exists = c:GBR
 			exists = scope:actor
@@ -108,7 +108,7 @@
 		adjective = USA_ADJ
 
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1000
 		
 		trigger = {
 			coa_def_republic_flag_trigger = yes
@@ -125,7 +125,7 @@
 		name = dyn_c_united_senators
 		adjective = USA_ADJ
 
-		priority = 1
+		priority = 1000
 		
 		trigger = {
 			exists = c:USA
@@ -146,7 +146,7 @@
 		name = dyn_c_united_state
 		adjective = USA_ADJ
 
-		priority = 1
+		priority = 1000
 		
 		trigger = {
 			exists = c:USA
@@ -164,7 +164,7 @@
 		adjective = dyn_c_united_sovereign_archduchy_adj
 		
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1000
 		
 		trigger = {
 			coa_def_monarchy_flag_trigger = yes
@@ -176,7 +176,7 @@
 		adjective = USA_ADJ
 		
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1000
 		
 		trigger = {
 			coa_def_communist_flag_trigger = yes
@@ -188,7 +188,7 @@
 		adjective = USA_ADJ
 		
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1000
 		
 		trigger = {
 			coa_def_theocracy_flag_trigger = yes
@@ -200,7 +200,7 @@
 		adjective = USA_ADJ
 		
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1000
 		
 		trigger = {
 			scope:actor ?= {
@@ -217,7 +217,7 @@ CSA = { # Confederated Governates of America
 		adjective = USA_ADJ
 		
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1000
 		
 		trigger = {
 			scope:actor ?= {
@@ -237,7 +237,7 @@ NSW = {
 		adjective = NSW_ADJ
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = 1000
 
 		trigger = {
 			scope:actor ?= {
@@ -251,7 +251,7 @@ NSW = {
 		adjective = NSW_ADJ
 
 		is_main_tag_only = yes
-		priority = 2
+		priority = 1000
 
 		trigger = {
 			scope:actor ?= {
