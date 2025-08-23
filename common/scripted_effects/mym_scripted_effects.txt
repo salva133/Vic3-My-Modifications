@@ -22,3 +22,60 @@ on_game_started_create_mennonites = {
 		}
 	}
 }
+
+set_up_albionian_claims = {
+		s:STATE_ULSTER = {
+			add_claim = c:ABI
+		}
+		s:STATE_LANCASHIRE = {
+			add_claim = c:ABI
+		}
+		s:STATE_LOWLANDS = {
+			add_claim = c:ABI
+		}
+		s:STATE_ULSTER = {
+			add_claim = c:ABI
+		}
+		s:STATE_LEINSTER = {
+			add_claim = c:ABI
+		}
+		s:STATE_WALES = {
+			add_claim = c:ABI
+		}
+}
+
+create_albion = {
+	create_country = {
+		tag = ABI
+		origin = c:GBR
+		state = s:STATE_LANCASHIRE.region_state:GBR
+	}
+	if = {
+		limit = { exists = s:STATE_LANCASHIRE.region_state:GBR }
+		s:STATE_LANCASHIRE.region_state:GBR = { set_state_owner = c:ABI }
+	}
+	if = {
+		limit = { exists = s:STATE_LANCASHIRE.region_state:ENG }
+		s:STATE_LANCASHIRE.region_state:ENG = { set_state_owner = c:ABI }
+	}
+	if = {
+		limit = { exists = s:STATE_LANCASHIRE.region_state:WLS }
+		s:STATE_LANCASHIRE.region_state:WLS = { set_state_owner = c:ABI }
+	}
+	if = {
+		limit = { exists = s:STATE_LANCASHIRE.region_state:IRE }
+		s:STATE_LANCASHIRE.region_state:IRE = { set_state_owner = c:ABI }
+	}
+	if = {
+		limit = { exists = s:STATE_LANCASHIRE.region_state:ULS }
+		s:STATE_LANCASHIRE.region_state:ULS = { set_state_owner = c:ABI }
+	}
+	if = {
+		limit = { exists = s:STATE_LANCASHIRE.region_state:SCO }
+		s:STATE_LANCASHIRE.region_state:SCO = { set_state_owner = c:ABI }
+	}
+	if = {
+		limit = { exists = s:STATE_LANCASHIRE.region_state:GBR }
+		s:STATE_LANCASHIRE.region_state:GBR = { set_state_owner = c:ABI }
+	}
+}

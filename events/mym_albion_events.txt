@@ -1,0 +1,79 @@
+﻿namespace = albion
+
+# Make Oberon leader
+albion.1 = {
+	type = country_event
+	placement = ROOT
+	title = albion.1.tt
+	desc = albion.1.dd
+	flavor = albion.1.ff
+
+	trigger = {
+		NOT = { has_global_variable = oberon_happened_globvar }
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				has_template = oberon_character_template
+			}
+			save_scope_as = oberon_scope
+		}
+	}
+
+	option = {
+		name = albion.1.a
+		default_option = yes
+
+		scope:oberon_scope = {
+			set_character_as_ruler = yes
+		}
+	}
+}
+
+# Albion seceedes from Britain
+albion.2 = {
+	type = country_event
+	placement = ROOT
+	title = albion.2.tt
+	desc = albion.2.dd
+	flavor = albion.2.ff
+
+	trigger = {
+		NOT = { has_global_variable = albion_seceeded_globvar }
+		s:STATE_LANCASHIRE = {
+			any_scope_state = {
+				radical_fraction = {
+					value = 0.5
+				}
+				any_scope_pop = {
+					percent = 0.4
+					culture = cu:albionian
+				}
+				any_scope_pop = {
+					percent = 0.4
+					religion = rel:druidism
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_global_variable = albion_seceeded_globvar
+		create_albion = yes
+	}
+
+	option = {
+		name = albion.2.a
+		default_option = yes
+
+		set_up_albionian_claims = yes
+	}
+
+	option = {
+		name = albion.2.b
+
+		set_up_albionian_claims = yes
+		play_as = c:ALB
+	}
+}

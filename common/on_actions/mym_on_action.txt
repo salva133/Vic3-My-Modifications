@@ -7,7 +7,7 @@
 
 on_country_released_as_independent = {
 	on_actions = {
-		albion_init
+		albion
 	}
 }
 
@@ -41,7 +41,7 @@ on_monthly_pulse_country = {
 	}
 }
 
-albion_init = {
+albion = {
 	effect = {
 		if = {
 			limit = {
@@ -70,7 +70,7 @@ albion_init = {
 							has_template = oberon_character_template
 						}
 					}
-					trigger_event = { id = albion_init.1 popup = yes }
+					trigger_event = { id = albion.1 popup = yes }
 				}
 			}
 		}
