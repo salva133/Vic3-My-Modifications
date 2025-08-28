@@ -225,7 +225,7 @@ mym_debug.1 = {
 		}
 	}
 	
-	# Sets the name of the secret police interest group based on the country's primary culture
+	# Sets the name of the secret police interest group dynamically
 	option = {
 		name = mym_debug.1.i
 
