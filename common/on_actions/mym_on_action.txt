@@ -29,6 +29,11 @@ on_monthly_pulse_country_mym_events = {
 
 		nietzsche.1
 		nietzsche.2
+
+		community_tension.1
+		community_tension.2
+		community_tension.3
+		community_tension.4
 	}
 }
 

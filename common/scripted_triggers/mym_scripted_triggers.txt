@@ -82,3 +82,15 @@ at_least_one_politician_is_no_accelerationist = {
 		}
 	}
 }
+
+is_a_judeo_christian_nation = {
+	custom_tooltip = {
+		text = is_a_judeo_christian_nation_tt
+		religion = {
+			OR = {
+				has_discrimination_trait = christian
+				has_discrimination_trait = jewish
+			}
+		}
+	}
+}

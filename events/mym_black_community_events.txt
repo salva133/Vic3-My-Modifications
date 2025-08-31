@@ -1,0 +1,217 @@
+namespace = community_tension
+
+# Black Crime arises
+community_tension.1 = {
+	type = state_event
+	placement = root
+
+	title = community_tension.1.tt
+	desc = community_tension.1.dd
+	flavor = community_tension.1.ff
+	
+	duration = 3
+
+	cooldown = {
+		months = 12
+	}
+
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
+
+	event_image = {
+		video = "southamerica_slaves_night"
+	}
+
+	trigger = {
+		is_a_judeo_christian_nation = yes
+		culture_percent_state = {
+			target = scope:black_pops
+			value > 0.13
+		}
+	}
+
+	immediate = {
+		random_scope_culture = {
+			limit = {
+				has_discrimination_trait = african_heritage
+			}
+			save_scope_as = black_pops
+		}
+	}
+
+	option = {
+		name = community_tension.1.a
+		default_option = yes
+
+		if = {
+			limit = {
+				NOT = { has_modifier = modifier_incompatible_communities }
+			}
+			add_modifier = modifier_incompatible_communities
+		}
+	}
+}
+
+# Black Crime subsides
+community_tension.2 = {
+	type = state_event
+	placement = root
+
+	title = community_tension.2.tt
+	desc = community_tension.2.dd
+	flavor = community_tension.2.ff
+	
+	duration = 3
+
+	cooldown = {
+		months = 12
+	}
+
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
+
+	event_image = {
+		video = "southamerica_slaves_night"
+	}
+
+	trigger = {
+		is_a_judeo_christian_nation = yes
+		culture_percent_state = {
+			target = scope:black_pops
+			value < 0.05
+		}
+	}
+
+	immediate = {
+		random_scope_culture = {
+			limit = {
+				has_discrimination_trait = african_heritage
+			}
+			save_scope_as = black_pops
+		}
+	}
+
+	option = {
+		name = community_tension.2.a
+		default_option = yes
+
+		if = {
+			limit = {
+				has_modifier = modifier_incompatible_communities
+			}
+			remove_modifier = modifier_incompatible_communities
+		}
+	}
+}
+
+# Arab-Muslim Crime arises
+community_tension.3 = {
+	type = state_event
+	placement = root
+
+	title = community_tension.3.tt
+	desc = community_tension.3.dd
+	flavor = community_tension.3.ff
+	
+	duration = 3
+
+	cooldown = {
+		months = 12
+	}
+
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
+
+	event_image = {
+		video = "southamerica_slaves_night"
+	}
+
+	trigger = {
+		is_a_judeo_christian_nation = yes
+		culture_percent_state = {
+			target = scope:arab_muslim_pops
+			value > 0.13
+		}
+	}
+
+	immediate = {
+		random_scope_pop = {
+			limit = {
+				culture = {
+					has_discrimination_trait = arab_speaking
+				}
+				religion = {
+					has_discrimination_trait = muslim
+				}
+			}
+			save_scope_as = arab_muslim_pops
+		}
+	}
+
+	option = {
+		name = community_tension.3.a
+		default_option = yes
+
+		if = {
+			limit = {
+				NOT = { has_modifier = modifier_incompatible_communities }
+			}
+			scope:state = {
+				add_modifier = modifier_incompatible_communities
+			}
+		}
+	}
+}
+
+# Arab-Muslim Crime subsides
+community_tension.4 = {
+	type = state_event
+	placement = root
+
+	title = community_tension.4.tt
+	desc = community_tension.4.dd
+	flavor = community_tension.4.ff
+	
+	duration = 3
+
+	cooldown = {
+		months = 12
+	}
+
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
+
+	event_image = {
+		video = "southamerica_slaves_night"
+	}
+
+	trigger = {
+		is_a_judeo_christian_nation = yes
+		culture_percent_state = {
+			target = scope:arab_muslim_pops
+			value < 0.05
+		}
+	}
+
+	immediate = {
+		random_scope_pop = {
+			limit = {
+				culture = {
+					has_discrimination_trait = arab_speaking
+				}
+				religion = {
+					has_discrimination_trait = muslim
+				}
+			}
+			save_scope_as = arab_muslim_pops
+		}
+	}
+
+	option = {
+		name = community_tension.4.a
+		default_option = yes
+
+		if = {
+			limit = {
+				has_modifier = modifier_incompatible_communities
+			}
+			remove_modifier = modifier_incompatible_communities
+		}
+	}
+}
