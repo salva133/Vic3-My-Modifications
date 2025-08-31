@@ -79,6 +79,27 @@
   nietzsche.2.b: "Maybe he can recover with us.."
   nietzsche.2.c: "The people will not accept! #bold I#! will not accept!"
 
+# Community Tensions
+  community_tension.1.tt: "Uprising in the Black Quarters"
+  community_tension.1.dd: "Tensions have erupted in several Black neighborhoods, as frustration over longstanding injustices has boiled over into open violence. Local authorities report clashes, looting, and sporadic arson, while community leaders struggle to regain control. The underlying causes of anger remain unresolved, and the unrest threatens to spread if not addressed."
+  community_tension.1.ff: "\"Sometimes, when the world refuses to listen, anger becomes the only language left.\"\n#italic - Anonymous nigger leader#!"
+  community_tension.1.a: "Tensions escalate"
+
+  community_tension.2.tt: "A Fragile Peace Returns"
+  community_tension.2.dd: "After days of turmoil, calm has returned to the Black communities. Mediation efforts, promises of reform, and a visible reduction in security presence have allowed daily life to cautiously resume. Yet, beneath the surface, mistrust remains—any spark could reignite tensions."
+  community_tension.2.ff: "\"Peace, if forced, is no peace at all. But for now, we breathe and hope.\"\n#italic - Local nigger activist#!"
+  community_tension.2.a: "Calm restored"
+
+  community_tension.3.tt: "Rage in the Arab-Muslim Districts"
+  community_tension.3.dd: "Widespread unrest has broken out among the Arab-Muslim population. Protests have rapidly escalated into riots, as anger over discrimination and broken promises ignites passions. Security forces face resistance in reestablishing order, while outside agitators may seek to exploit the chaos."
+  community_tension.3.ff: "\"The call for justice echoes louder than any decree. When will they listen?\"\n#italic - Some Imam at a midnight sermon"
+  community_tension.3.a: "Unrest spreads"
+
+  community_tension.4.tt: "Tensions Subside Among Arab-Muslims"
+  community_tension.4.dd: "The once-fiery streets of the Arab-Muslim quarters have grown quiet again. Whether due to outreach by local leaders, concessions from the government, or exhaustion, the violence has faded—for now. Many, however, warn that grievances remain unresolved, merely simmering below the surface."
+  community_tension.4.ff: "\"Calm is not the same as contentment. True peace requires more than silence.\"\n#italic - Community elder#!"
+  community_tension.4.a: "Order returns"
+
 ### DEBUGGING EVENTS
   mym_debug.pre.tt: "#blue My Modifications#!"
   mym_debug.1.tt: "$mym_debug.pre.tt$: Leader Ideology Changer"
