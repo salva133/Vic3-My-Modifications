@@ -76,5 +76,6 @@ stoker.2 = { # The Dmitry is washed ashore
 		create_character = {
 			template = vlad_character_template
 		}
+		set_global_variable = vlad_happened_globvar
 	}
 }
