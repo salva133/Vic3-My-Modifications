@@ -1,6 +1,7 @@
 ﻿namespace = stoker
 
-stoker.1 = { # The Dmitry sets sails
+# The Dmitry sets sails
+stoker.1 = {
 	type = country_event
 	placement = ROOT
 	title =  stoker.1.tt
@@ -37,7 +38,8 @@ stoker.1 = { # The Dmitry sets sails
 	}
 }
 
-stoker.2 = { # The Dmitry is washed ashore
+# The Dmitry is washed ashore
+stoker.2 = {
 	type = country_event
 	placement = ROOT
 	title =  stoker.2.tt
