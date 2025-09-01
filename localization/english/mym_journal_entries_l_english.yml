@@ -4,8 +4,8 @@
 
 # JE Gangs of New York
   je_gangs_of_new_york: "Gangs of [Concept('concept_state','$STATE_NEW_YORK$')]"
-  je_gangs_of_new_york_status: ""
-  je_gangs_of_new_york_reason: ""
+  je_gangs_of_new_york_status: "Maintain control over the entire state of New York as criminal networks rise and fall."
+  je_gangs_of_new_york_reason: "The roaring twenties have unleashed a wave of organized crime and underground power struggles. Whoever controls New York shapes the fate of its streets and the nation's criminal underworld."
 
 # JE A House Divided
   je_a_house_divided: "A House Divided"

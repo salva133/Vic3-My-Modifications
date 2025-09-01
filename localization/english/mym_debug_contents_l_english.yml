@@ -38,8 +38,8 @@
   mym_debug.3.l: "Absolute Power corrupts absolutely"
 
   mym_debug.4.tt: "$mym_debug.pre.tt$: Debug Menu"
-  mym_debug.4.dd: ""
-  mym_debug.4.ff: ""
+  mym_debug.4.dd: "Access various debugging tools and submenus for rapid testing and modification of game states. Use each option to navigate to specialized debug functions."
+  mym_debug.4.ff: "Behind every system lies a hidden panel—where the rules of the world are rewritten with a single choice."
   mym_debug.4.aa: "Close"
   mym_debug.4.a: "$mym_debug.1.tt$\n$mym_debug.1.dd$"
   mym_debug.4.b: "$mym_debug.2.tt$\n$mym_debug.2.dd$"
