@@ -2,11 +2,6 @@
 # JE Group
   je_group_ahistorical: "Ahistorical"
 
-# JE Stoker
-  je_stoker: "The [Concept('concept_dmitry','Dmitry')]'s Journey"
-  je_stoker_status: ""
-  je_stoker_reason: ""
-
 # JE Gangs of New York
   je_gangs_of_new_york: "Gangs of [Concept('concept_state','$STATE_NEW_YORK$')]"
   je_gangs_of_new_york_status: ""
