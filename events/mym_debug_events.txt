@@ -693,69 +693,6 @@ mym_debug.3 = {
 		}
 	}
 
-	# Makes a burgundist leader agitator the ruler if available, otherwise creates a new burgundist leader agitator and sets him as ruler
-	option = {
-		name = mym_debug.3.j
-		
-		trigger = {
-			exists = ideology:ideology_burgundist
-			ruler = {
-				NOT = {
-					has_ideology = ideology:ideology_burgundist
-				}
-			}
-		}
-		if = {
-			limit = {
-				exists = ig:ig_burgundists
-				ig:ig_burgundists = {
-					is_in_government = yes
-				}
-				ruler = {
-					NOT = {
-						has_ideology = ideology:ideology_burgundist
-					}
-				}
-			}
-			ig:ig_burgundists = {
-				leader = {
-					set_character_as_ruler = yes
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				any_scope_character = {
-					is_ruler = no
-					has_ideology = ideology:ideology_burgundist
-				}
-			}
-			random_scope_character = {
-				limit = {
-					is_ruler = no
-					has_ideology = ideology:ideology_burgundist
-				}
-				if = {
-					limit = {
-						has_role = agitator
-					}
-					remove_character_role = agitator
-				}
-				set_character_as_ruler = yes
-			}
-		}
-		else = {
-			create_character = {
-				is_agitator = yes
-				ideology = ideology:ideology_burgundist
-			}
-		}
-		
-		hidden_effect = {
-			trigger_event = { id = mym_debug.3 popup = yes }
-		}
-	}
-
 	# Makes an agitator with one of the accelerationist ideologies (neo-industrialist, hyper-individualist, or recreationist) the ruler if available,
 	# otherwise creates a new agitator with one of these ideologies and sets him as ruler (chosen randomly).
 	option = {
