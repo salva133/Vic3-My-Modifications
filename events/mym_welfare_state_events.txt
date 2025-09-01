@@ -113,15 +113,21 @@ welfare_state.1 = {
 		default_option = yes
 
 		scope:foreigner_dominated_states = {
-			add_modifier = {
-				name = modifier_attractive_welfare_state
-				months = 25
+			if = {
+				limit = { NOT = { has_modifier = modifier_attractive_welfare_state } }
+				add_modifier = {
+					name = modifier_attractive_welfare_state
+					months = 25
+				}
 			}
 		}
 		scope:regressive_igs = {
-			add_modifier = {
-				name = modifier_unwanted_immigration
-				months = 25
+			if = {
+				limit = { NOT = { has_modifier = modifier_unwanted_immigration } }
+				add_modifier = {
+					name = modifier_unwanted_immigration
+					months = 25
+				}
 			}
 		}
 	}
@@ -130,15 +136,21 @@ welfare_state.1 = {
 		name = welfare_state.1.b
 
 		scope:primary_culture_states = {
-			add_modifier = {
-				name = modifier_protective_government
-				months = 25
+			if = {
+				limit = { NOT = { has_modifier = modifier_protective_government } }
+				add_modifier = {
+					name = modifier_protective_government
+					months = 25
+				}
 			}
 		}
 		scope:progressive_igs = {
-			add_modifier = {
-				name = modifier_unwanted_immigration
-				months = 25
+			if = {
+				limit = { NOT = { has_modifier = modifier_disliking_xenophobia } }
+				add_modifier = {
+					name = modifier_disliking_xenophobia
+					months = 25
+				}
 			}
 		}
 	}
