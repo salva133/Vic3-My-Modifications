@@ -248,9 +248,9 @@ mym_debug.1 = {
 			trigger_event = { id = mym_debug.1 popup = yes }
 		}
 	}
-	
+
 	option = {
-		name = mym_debug.1.zzz
+		name = "Create Albion"
 
 		create_albion = yes
 
