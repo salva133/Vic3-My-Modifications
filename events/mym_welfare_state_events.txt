@@ -1,4 +1,4 @@
-namespace = welfare_state
+﻿namespace = welfare_state
 
 # Raises migration attraction and lowers approval of IGs who oppose social welfare or open borders
 welfare_state.1 = {
