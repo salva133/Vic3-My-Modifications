@@ -2,13 +2,13 @@ namespace = community_tension
 
 # Black Crime arises
 community_tension.1 = {
-	type = state_event
+	type = country_event
 	placement = root
 
 	title = community_tension.1.tt
 	desc = community_tension.1.dd
 	flavor = community_tension.1.ff
-	
+
 	duration = 3
 
 	cooldown = {
@@ -23,9 +23,11 @@ community_tension.1 = {
 
 	trigger = {
 		is_a_judeo_christian_nation = yes
-		culture_percent_state = {
-			target = scope:black_pops
-			value > 0.13
+		any_scope_state = {
+			culture_percent_state = {
+				target = scope:black_pops
+				value > 0.13
+			}
 		}
 	}
 
@@ -53,7 +55,7 @@ community_tension.1 = {
 
 # Black Crime subsides
 community_tension.2 = {
-	type = state_event
+	type = country_event
 	placement = root
 
 	title = community_tension.2.tt
@@ -74,9 +76,11 @@ community_tension.2 = {
 
 	trigger = {
 		is_a_judeo_christian_nation = yes
-		culture_percent_state = {
-			target = scope:black_pops
-			value < 0.05
+		any_scope_state = {
+			culture_percent_state = {
+				target = scope:black_pops
+				value < 0.05
+			}
 		}
 	}
 
@@ -104,7 +108,7 @@ community_tension.2 = {
 
 # Arab-Muslim Crime arises
 community_tension.3 = {
-	type = state_event
+	type = country_event
 	placement = root
 
 	title = community_tension.3.tt
@@ -120,14 +124,16 @@ community_tension.3 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
 
 	event_image = {
-		video = "southamerica_slaves_night"
+		video = "middleeast_upperclass_party"
 	}
 
 	trigger = {
 		is_a_judeo_christian_nation = yes
-		culture_percent_state = {
-			target = scope:arab_muslim_pops
-			value > 0.13
+			any_scope_state = {
+			culture_percent_state = {
+				target = scope:arab_muslim_pops
+				value > 0.13
+			}
 		}
 	}
 
@@ -162,7 +168,7 @@ community_tension.3 = {
 
 # Arab-Muslim Crime subsides
 community_tension.4 = {
-	type = state_event
+	type = country_event
 	placement = root
 
 	title = community_tension.4.tt
@@ -178,14 +184,17 @@ community_tension.4 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
 
 	event_image = {
-		video = "southamerica_slaves_night"
+		video = "middleeast_upperclass_party"
 	}
 
 	trigger = {
+		has_law = law_type:law_multicultural
 		is_a_judeo_christian_nation = yes
-		culture_percent_state = {
-			target = scope:arab_muslim_pops
-			value < 0.05
+		any_scope_state = {
+			culture_percent_state = {
+				target = scope:arab_muslim_pops
+				value < 0.05
+			}
 		}
 	}
 
