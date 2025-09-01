@@ -8,7 +8,6 @@
   HP_is_alive_tt: "The writer is alive"
 
 # Journal Entries
-  je_stoker_varna_built_tt: "The State Region of [Concept('concept_state','$STATE_BULGARIA$')] has the Port of Varna"
   je_ahd_last_man_standing_tt: "Gentlemen, it's Last Man Standing, and we need to be that man"
 
 # Event Options
