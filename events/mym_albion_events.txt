@@ -81,12 +81,6 @@ albion.2 = {
 	}
 
 	option = {
-		name = albion.2.aa
-		trigger = { always = no }
-		default_option = yes
-	}
-
-	option = {
 		name = albion.2.a
 		default_option = yes
 
