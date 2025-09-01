@@ -11,3 +11,7 @@
   advcm_add_education: "$advcm_preamble$ Added Education (READ MOTHERFUCKERS!)"
   advcm_add_birth_rate: "$advcm_preamble$ Added Birth Rate (FUCK MOTHERFUCKERS!)"
   modifier_incompatible_communities: "Incompatible Communities"
+  modifier_attractive_welfare_state: "Attractive Welfare State"
+  modifier_unwanted_immigration: "Unwanted Immigration"
+  modifier_disliking_xenophobia: "Disliking Xenophobia"
+  modifier_protective_government: "Protective Government"

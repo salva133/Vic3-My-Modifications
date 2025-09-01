@@ -3,3 +3,27 @@ modifier_incompatible_communities = {
 
 	state_radicals_from_political_movements_mult = 0.2
 }
+
+modifier_attractive_welfare_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+
+	state_migration_pull_mult = 0.2
+}
+
+modifier_unwanted_immigration = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	
+	interest_group_approval_add = -1
+}
+
+modifier_disliking_xenophobia = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	
+	interest_group_approval_add = -1
+}
+
+modifier_protective_government = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+
+	state_loyalism_increases_full_acceptance_mult = 0.02
+}
