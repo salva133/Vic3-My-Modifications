@@ -1,4 +1,4 @@
-namespace = community_tension
+﻿namespace = community_tension
 
 # Black Crime arises
 community_tension.1 = {
