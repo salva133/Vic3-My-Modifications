@@ -1,7 +1,7 @@
 ﻿l_english:
 # DEBUG MENU
   decision_mym_debug_menu: "$mym_debug.4.tt$"
-  decision_mym_debug_menu_desc: ""
+  decision_mym_debug_menu_desc: "Opens the MYM Debug Menu"
 
 # MyM Decisions
   decision_want_to_be_free: "Do you want to be free?"
