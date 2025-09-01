@@ -34,6 +34,7 @@ hp_lovecraft.1 = {
 				template = hp_lovecraft_character_template
 			}
 		}
+		set_global_variable = hp_happened_globvar
 		random_scope_character = {
 			limit = {
 				has_template = hp_lovecraft_character_template
@@ -86,6 +87,7 @@ hp_lovecraft.2 = {
 				template = hp_liebkraft_character_template
 			}
 		}
+		set_global_variable = hp_happened_globvar
 		random_scope_character = {
 			limit = {
 				has_template = hp_liebkraft_character_template

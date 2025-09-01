@@ -49,9 +49,6 @@ hp_lovecraft_character_template = {
 	traits = {
 		charismatic
 	}
-	on_created = {
-		set_global_variable = hp_happened_globvar
-	}
 }
 
 hp_liebkraft_character_template = {
@@ -64,9 +61,6 @@ hp_liebkraft_character_template = {
 	# death_date = 1937.3.15
 	traits = {
 		charismatic
-	}
-	on_created = {
-		set_global_variable = hp_happened_globvar
 	}
 }
 
@@ -84,7 +78,6 @@ vlad_character_template = {
 	}
 	on_created = {
 		set_character_immortal = yes
-		set_global_variable = vlad_happened_globvar
 	}
 }
 
