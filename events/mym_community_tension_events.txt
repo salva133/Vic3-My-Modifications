@@ -24,19 +24,28 @@ community_tension.1 = {
 	trigger = {
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
-			culture_percent_state = {
-				target = scope:black_pops
-				value > 0.13
+			NOT = { has_modifier = modifier_black_communities }
+			any_scope_pop = {
+				culture = {
+					has_discrimination_trait = african_heritage
+				}
+				percent > 0.13
 			}
 		}
 	}
 
 	immediate = {
-		random_scope_culture = {
+		random_scope_state = {
 			limit = {
-				has_discrimination_trait = african_heritage
+				NOT = { has_modifier = modifier_black_communities }
+				any_scope_pop = {
+					culture = {
+						has_discrimination_trait = african_heritage
+					}
+					percent > 0.13
+				}
 			}
-			save_scope_as = black_pops
+			save_scope_as = community_tension_state_blacks
 		}
 	}
 
@@ -44,11 +53,8 @@ community_tension.1 = {
 		name = community_tension.1.a
 		default_option = yes
 
-		if = {
-			limit = {
-				NOT = { has_modifier = modifier_incompatible_communities }
-			}
-			add_modifier = modifier_incompatible_communities
+		scope:community_tension_state_blacks = {
+			add_modifier = modifier_black_communities
 		}
 	}
 }
@@ -77,19 +83,28 @@ community_tension.2 = {
 	trigger = {
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
-			culture_percent_state = {
-				target = scope:black_pops
-				value < 0.05
+			has_modifier = modifier_black_communities
+			any_scope_pop = {
+				culture = {
+					has_discrimination_trait = african_heritage
+				}
+				percent < 0.05
 			}
 		}
 	}
 
 	immediate = {
-		random_scope_culture = {
+		random_scope_state = {
 			limit = {
-				has_discrimination_trait = african_heritage
+				has_modifier = modifier_black_communities
+				any_scope_pop = {
+					culture = {
+						has_discrimination_trait = african_heritage
+					}
+					percent < 0.05
+				}
 			}
-			save_scope_as = black_pops
+			save_scope_as = community_tension_state_blacks
 		}
 	}
 
@@ -97,11 +112,8 @@ community_tension.2 = {
 		name = community_tension.2.a
 		default_option = yes
 
-		if = {
-			limit = {
-				has_modifier = modifier_incompatible_communities
-			}
-			remove_modifier = modifier_incompatible_communities
+		scope:community_tension_state_blacks = {
+			remove_modifier = modifier_black_communities
 		}
 	}
 }
@@ -129,25 +141,29 @@ community_tension.3 = {
 
 	trigger = {
 		is_a_judeo_christian_nation = yes
-			any_scope_state = {
-			culture_percent_state = {
-				target = scope:arab_muslim_pops
-				value > 0.13
+		any_scope_state = {
+			NOT = { has_modifier = modifier_muslim_communities }
+			any_scope_pop = {
+				religion = {
+					has_discrimination_trait = muslim
+				}
+				percent > 0.13
 			}
 		}
 	}
 
 	immediate = {
-		random_scope_pop = {
+		random_scope_state = {
 			limit = {
-				culture = {
-					has_discrimination_trait = arab_speaking
-				}
-				religion = {
-					has_discrimination_trait = muslim
+				NOT = { has_modifier = modifier_muslim_communities }
+				any_scope_pop = {
+					religion = {
+						has_discrimination_trait = muslim
+					}
+					percent > 0.13
 				}
 			}
-			save_scope_as = arab_muslim_pops
+			save_scope_as = community_tension_state_muslims
 		}
 	}
 
@@ -155,13 +171,8 @@ community_tension.3 = {
 		name = community_tension.3.a
 		default_option = yes
 
-		if = {
-			limit = {
-				NOT = { has_modifier = modifier_incompatible_communities }
-			}
-			scope:state = {
-				add_modifier = modifier_incompatible_communities
-			}
+		scope:community_tension_state_muslims = {
+			add_modifier = modifier_muslim_communities
 		}
 	}
 }
@@ -191,24 +202,28 @@ community_tension.4 = {
 		has_law = law_type:law_multicultural
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
-			culture_percent_state = {
-				target = scope:arab_muslim_pops
-				value < 0.05
+			has_modifier = modifier_muslim_communities
+			any_scope_pop = {
+				religion = {
+					has_discrimination_trait = muslim
+				}
+				percent < 0.05
 			}
 		}
 	}
 
 	immediate = {
-		random_scope_pop = {
+		random_scope_state = {
 			limit = {
-				culture = {
-					has_discrimination_trait = arab_speaking
-				}
-				religion = {
-					has_discrimination_trait = muslim
+				has_modifier = modifier_muslim_communities
+				any_scope_pop = {
+					religion = {
+						has_discrimination_trait = muslim
+					}
+					percent < 0.05
 				}
 			}
-			save_scope_as = arab_muslim_pops
+			save_scope_as = community_tension_state_muslims
 		}
 	}
 
@@ -216,11 +231,8 @@ community_tension.4 = {
 		name = community_tension.4.a
 		default_option = yes
 
-		if = {
-			limit = {
-				has_modifier = modifier_incompatible_communities
-			}
-			remove_modifier = modifier_incompatible_communities
+		scope:community_tension_state_muslims = {
+			remove_modifier = modifier_muslim_communities
 		}
 	}
 }
@@ -247,50 +259,26 @@ community_tension.5 = {
 	}
 
 	trigger = {
+		NOT = { has_global_variable = dundee_incident_happened_globvar }
 		has_law = law_type:law_multicultural
 		has_technology_researched = camera
 		is_a_judeo_christian_nation = yes
-		owns_entire_state_region = STATE_LOWLANDS
 		s:STATE_LOWLANDS = {
 			any_scope_state = {
-				NOT = { has_variable = dundee_incident_happened_var }
 				any_scope_pop = {
+					has_muslim_indians = yes
 					percent > 0.12
-					culture = {
-						OR = {
-							has_discrimination_trait = arab_speaking
-							has_discrimination_trait = south_asian_heritage
-							has_discrimination_trait = indo_aryan_language
-						}
-					}
-					religion = {
-						has_discrimination_trait = muslim
-					}
-				}
+				}	
 			}
 		}
 	}
 
 	immediate = {
+		set_global_variable = dundee_incident_happened_globvar
 		s:STATE_LOWLANDS = {
 			every_scope_state = {
-				set_variable = dundee_incident_happened_var
-			}
-			random_scope_state = {
 				limit = {
-					any_scope_pop = {
-						percent > 0.12
-						culture = {
-							OR = {
-								has_discrimination_trait = arab_speaking
-								has_discrimination_trait = south_asian_heritage
-								has_discrimination_trait = indo_aryan_language
-							}
-						}
-						religion = {
-							has_discrimination_trait = muslim
-						}
-					}
+					owner = root
 				}
 				save_scope_as = incident_state
 			}

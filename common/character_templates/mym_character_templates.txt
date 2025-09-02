@@ -99,7 +99,6 @@ oberon_character_template = {
 	}
 	on_created = {
 		set_character_immortal = yes
-		set_global_variable = oberon_happened_globvar
 	}
 }
 

@@ -37,7 +37,6 @@ on_monthly_pulse_country_mym_events = {
 		community_tension.5
 
 		albion.1
-		albion.2
 
 		welfare_state.1
 	}

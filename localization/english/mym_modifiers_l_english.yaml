@@ -1,5 +1,5 @@
 ﻿l_english:
-  # ADVCM
+# ADVCM
   advcm_preamble: "CHEAT:"
   advcm_add_building_throughput: "$advcm_preamble$ Added Throughtput (hmmm... throughput.)"
   advcm_add_building_input_reduction: "$advcm_preamble$ Reduced Input (Nah, I'm good)"
@@ -10,7 +10,10 @@
   advcm_add_assimilation: "$advcm_preamble$ Added Assimilation (Resistance is equal to voltage divided by current)"
   advcm_add_education: "$advcm_preamble$ Added Education (READ MOTHERFUCKERS!)"
   advcm_add_birth_rate: "$advcm_preamble$ Added Birth Rate (FUCK MOTHERFUCKERS!)"
-  modifier_incompatible_communities: "Incompatible Communities"
+
+#  My Stuff
+  modifier_black_communities: "Black Crime"
+  modifier_muslim_communities: "Muslim Clan Crime"
   modifier_attractive_welfare_state: "Attractive Welfare State"
   modifier_unwanted_immigration: "Unwanted Immigration"
   modifier_disliking_xenophobia: "Disliking Xenophobia"
