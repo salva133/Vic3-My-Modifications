@@ -24,6 +24,7 @@ community_tension.1 = {
 	trigger = {
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
+			is_incorporated = yes
 			NOT = { has_modifier = modifier_black_communities }
 			any_scope_pop = {
 				culture = {
@@ -37,6 +38,7 @@ community_tension.1 = {
 	immediate = {
 		random_scope_state = {
 			limit = {
+				is_incorporated = yes
 				NOT = { has_modifier = modifier_black_communities }
 				any_scope_pop = {
 					culture = {
@@ -83,6 +85,7 @@ community_tension.2 = {
 	trigger = {
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
+			is_incorporated = yes
 			has_modifier = modifier_black_communities
 			any_scope_pop = {
 				culture = {
@@ -96,6 +99,7 @@ community_tension.2 = {
 	immediate = {
 		random_scope_state = {
 			limit = {
+				is_incorporated = yes
 				has_modifier = modifier_black_communities
 				any_scope_pop = {
 					culture = {
@@ -142,6 +146,7 @@ community_tension.3 = {
 	trigger = {
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
+			is_incorporated = yes
 			NOT = { has_modifier = modifier_muslim_communities }
 			any_scope_pop = {
 				religion = {
@@ -155,6 +160,7 @@ community_tension.3 = {
 	immediate = {
 		random_scope_state = {
 			limit = {
+				is_incorporated = yes
 				NOT = { has_modifier = modifier_muslim_communities }
 				any_scope_pop = {
 					religion = {
@@ -202,6 +208,7 @@ community_tension.4 = {
 		has_law = law_type:law_multicultural
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
+			is_incorporated = yes
 			has_modifier = modifier_muslim_communities
 			any_scope_pop = {
 				religion = {
@@ -215,6 +222,7 @@ community_tension.4 = {
 	immediate = {
 		random_scope_state = {
 			limit = {
+				is_incorporated = yes
 				has_modifier = modifier_muslim_communities
 				any_scope_pop = {
 					religion = {
@@ -265,6 +273,7 @@ community_tension.5 = {
 		is_a_judeo_christian_nation = yes
 		s:STATE_LOWLANDS = {
 			any_scope_state = {
+				is_incorporated = yes
 				any_scope_pop = {
 					has_muslim_indians = yes
 					percent > 0.12
@@ -279,6 +288,7 @@ community_tension.5 = {
 			every_scope_state = {
 				limit = {
 					owner = root
+					is_incorporated = yes
 				}
 				save_scope_as = incident_state
 			}
@@ -292,11 +302,11 @@ community_tension.5 = {
 		scope:incident_state = {
 			if = {
 				limit = {
-					NOT = { has_modifier = modifier_incompatible_communities }
+					NOT = { has_modifier = modifier_dundee_incident }
 				}
 				add_modifier = {
-					name = modifier_incompatible_communities
-					months = 25
+					name = modifier_dundee_incident
+					months = 37
 				}
 			}
 		}
