@@ -224,3 +224,93 @@ community_tension.4 = {
 		}
 	}
 }
+
+# Dundee Incident
+community_tension.5 = {
+	type = country_event
+	placement = root
+
+	title = community_tension.5.tt
+	desc = community_tension.5.dd
+	flavor = community_tension.5.ff
+
+	duration = 3
+
+	cooldown = {
+		months = 12
+	}
+
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
+
+	event_image = {
+		texture = gfx/event_images/dundee_girl.dds
+	}
+
+	trigger = {
+		has_law = law_type:law_multicultural
+		has_technology_researched = camera
+		is_a_judeo_christian_nation = yes
+		owns_entire_state_region = STATE_LOWLANDS
+		s:STATE_LOWLANDS = {
+			any_scope_state = {
+				NOT = { has_variable = dundee_incident_happened_var }
+				any_scope_pop = {
+					percent > 0.12
+					culture = {
+						OR = {
+							has_discrimination_trait = arab_speaking
+							has_discrimination_trait = south_asian_heritage
+							has_discrimination_trait = indo_aryan_language
+						}
+					}
+					religion = {
+						has_discrimination_trait = muslim
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		s:STATE_LOWLANDS = {
+			every_scope_state = {
+				set_variable = dundee_incident_happened_var
+			}
+			random_scope_state = {
+				limit = {
+					any_scope_pop = {
+						percent > 0.12
+						culture = {
+							OR = {
+								has_discrimination_trait = arab_speaking
+								has_discrimination_trait = south_asian_heritage
+								has_discrimination_trait = indo_aryan_language
+							}
+						}
+						religion = {
+							has_discrimination_trait = muslim
+						}
+					}
+				}
+				save_scope_as = incident_state
+			}
+		}
+	}
+
+	option = {
+		name = community_tension.5.a
+		default_option = yes
+
+		scope:incident_state = {
+			if = {
+				limit = {
+					NOT = { has_modifier = modifier_incompatible_communities }
+				}
+				add_modifier = {
+					name = modifier_incompatible_communities
+					months = 25
+				}
+			}
+		}
+	}
+}

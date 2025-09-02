@@ -4,10 +4,6 @@
 		is_interest_group_type = ig_petty_bourgeoisie
 		is_interest_group_type = ig_industrialists
 		is_interest_group_type = ig_landowners
-		AND = {
-			exists = ig:ig_burgundists
-			is_interest_group_type = ig_burgundists
-		}
 	}
 }
 
@@ -65,23 +61,6 @@ at_least_one_politician_is_no_anarchist = {
 			has_ideology = ideology:ideology_anarchist
 			has_ideology = ideology:ideology_anarcho_libertarian
 			has_ideology = ideology:ideology_libertarian_utopian
-		}
-	}
-}
-
-at_least_one_politician_is_no_accelerationist = {
-	OR = {
-		exists = ideology:ideology_neo_industrialist
-		exists = ideology:ideology_hyper_individualist
-		exists = ideology:ideology_recreationist
-	}
-	is_possible_ideology_accelerationist = yes
-	any_scope_character = {
-		has_role = politician
-		NAND = {
-			has_ideology = ideology:ideology_neo_industrialist
-			has_ideology = ideology:ideology_hyper_individualist
-			has_ideology = ideology:ideology_recreationist
 		}
 	}
 }

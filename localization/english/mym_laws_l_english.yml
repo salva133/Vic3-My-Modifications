@@ -1,10 +1,4 @@
 ﻿l_english:
-  law_timocracy: "Timocracy"
-  law_timocracy_desc: "All individuals are entitled to cast a vote; however, those who continue to advocate for the nation are accorded greater influence."
-
-  law_full_disarmament: "Full Disarmament"
-  law_full_disarmament_desc: "Violence is the root of all evil. By abolishing the military in its entirety, we will become a shining example of peace and a pioneer of pacifism.\n\nNo new military units can be built and the maintenance of already existing units will become unbearably expensive."
-
   law_full_collectivization: "Full Collectivization"
   law_full_collectivization_desc: "$law_full_collectivization$ aims to transfer the ownership and control of all businesses directly to the local workforce. This system abolishes private or state ownership of industries, placing all means of production in the hands of workers who operate them collectively. By eliminating hierarchical structures and central authorities, Full Collectivization promotes equality, local autonomy, and cooperative decision-making, ensuring that all profits and benefits are distributed among the workers themselves."
 
