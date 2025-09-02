@@ -1,7 +1,7 @@
 ﻿namespace = community_tension
 
 # Black Crime arises
-community_tension.1 = {
+community_tension.1 = {		# NEEDS TO BE FIXED
 	type = country_event
 	placement = root
 
@@ -21,12 +21,15 @@ community_tension.1 = {
 		video = "southamerica_slaves_night"
 	}
 
+	# >>>>>> NOTHING EVER WORKS!
 	trigger = {
+		always = no	# !!!
+
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
 			NOT = { has_modifier = modifier_black_communities }
-			any_scope_pop = {
+			any_scope_pop = { # HERE'S THE LITTLE SHIT!
 				culture = {
 					has_discrimination_trait = african_heritage
 				}
@@ -34,6 +37,7 @@ community_tension.1 = {
 			}
 		}
 	}
+	# <<<<<<
 
 	immediate = {
 		random_scope_state = {
@@ -62,7 +66,7 @@ community_tension.1 = {
 }
 
 # Black Crime subsides
-community_tension.2 = {
+community_tension.2 = {		# NEEDS TO BE FIXED
 	type = country_event
 	placement = root
 
@@ -82,12 +86,15 @@ community_tension.2 = {
 		video = "southamerica_slaves_night"
 	}
 
+	# >>>>>> NOTHING EVER WORKS!
 	trigger = {
+		always = no	# !!!
+
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
 			has_modifier = modifier_black_communities
-			any_scope_pop = {
+			any_scope_pop = { # HERE'S THE LITTLE SHIT!
 				culture = {
 					has_discrimination_trait = african_heritage
 				}
@@ -95,6 +102,7 @@ community_tension.2 = {
 			}
 		}
 	}
+	# <<<<<<
 
 	immediate = {
 		random_scope_state = {
@@ -123,7 +131,7 @@ community_tension.2 = {
 }
 
 # Arab-Muslim Crime arises
-community_tension.3 = {
+community_tension.3 = {		# NEEDS TO BE FIXED
 	type = country_event
 	placement = root
 
@@ -143,12 +151,15 @@ community_tension.3 = {
 		video = "middleeast_upperclass_party"
 	}
 
+	# >>>>>> NOTHING EVER WORKS!
 	trigger = {
+		always = no	# !!!
+
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
 			NOT = { has_modifier = modifier_muslim_communities }
-			any_scope_pop = {
+			any_scope_pop = { # HERE'S THE LITTLE SHIT!
 				religion = {
 					has_discrimination_trait = muslim
 				}
@@ -156,6 +167,7 @@ community_tension.3 = {
 			}
 		}
 	}
+	# <<<<<<
 
 	immediate = {
 		random_scope_state = {
@@ -184,7 +196,7 @@ community_tension.3 = {
 }
 
 # Arab-Muslim Crime subsides
-community_tension.4 = {
+community_tension.4 = {		# NEEDS TO BE FIXED
 	type = country_event
 	placement = root
 
@@ -204,13 +216,16 @@ community_tension.4 = {
 		video = "middleeast_upperclass_party"
 	}
 
+	# >>>>>> NOTHING EVER WORKS!
 	trigger = {
+		always = no	# !!!
+
 		has_law = law_type:law_multicultural
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
 			has_modifier = modifier_muslim_communities
-			any_scope_pop = {
+			any_scope_pop = { # HERE'S THE LITTLE SHIT!
 				religion = {
 					has_discrimination_trait = muslim
 				}
@@ -218,6 +233,7 @@ community_tension.4 = {
 			}
 		}
 	}
+	# <<<<<<
 
 	immediate = {
 		random_scope_state = {
