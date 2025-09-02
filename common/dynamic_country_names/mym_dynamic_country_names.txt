@@ -1,21 +1,5 @@
 ﻿USA = { # United States of America
 
-	# United Citizen States of America
-	dynamic_country_name = {
-		name = dyn_c_USA_citizen_states
-		adjective = dyn_c_USA_citizen_states_adj
-		
-		is_main_tag_only = yes
-		priority = 1000
-		
-		trigger = {
-			scope:actor ?= {
-				coa_republic_trigger = yes
-				has_law = law_type:law_timocracy
-			}
-		}
-	}
-
 	# Northern Territories
 	dynamic_country_name = {
 		name = dyn_c_USA_puppet_of_CSA
@@ -226,37 +210,6 @@ CSA = { # Confederated Governates of America
 					has_law = law_type:law_parliamentary_republic
 				}
 				country_has_voting_franchise = no
-			}
-		}
-	}
-}
-
-NSW = {
-	dynamic_country_name = {
-		name = dyn_c_NSW_council_auto
-		adjective = NSW_ADJ
-
-		is_main_tag_only = yes
-		priority = 1000
-
-		trigger = {
-			scope:actor ?= {
-				has_law = law_type:law_council_republic
-				country_has_voting_franchise = no
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_NSW_council_demo
-		adjective = NSW_ADJ
-
-		is_main_tag_only = yes
-		priority = 1000
-
-		trigger = {
-			scope:actor ?= {
-				has_law = law_type:law_council_republic
-				country_has_voting_franchise = yes
 			}
 		}
 	}

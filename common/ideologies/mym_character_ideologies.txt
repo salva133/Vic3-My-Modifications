@@ -1,74 +1,4 @@
-﻿ideology_timocrat = {
-	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_timocrat.dds
-	
-	character_ideology = yes
-	
-	lawgroup_distribution_of_power = {
-		law_autocracy = neutral
-		law_technocracy = neutral
-		law_oligarchy = neutral
-		law_timocracy = approve
-		law_landed_voting = neutral
-		law_wealth_voting = neutral
-		law_census_voting = neutral
-		law_universal_suffrage = neutral
-		law_anarchy = neutral
-		law_single_party_state = neutral
-	}
-	lawgroup_army_model = {
-		law_mass_conscription = approve
-		law_professional_army = approve
-		law_national_militia = approve
-		law_peasant_levies = strongly_disapprove
-		law_full_disarmament = strongly_disapprove
-		law_total_war = neutral
-	}
-
-	country_trigger = {
-		has_technology_researched = enlistment_offices
-	}
-
-	non_interest_group_leader_trigger = {
-		NOR = {
-			is_interest_group_type = ig_devout
-			is_interest_group_type = ig_rural_folk
-			has_variable = communist_ig_var
-			has_variable = chose_vanguardism
-			has_variable = chose_fascism
-		}
-	}
-	
-	non_interest_group_leader_weight = {
-		value = 0
-		# less likely if issues are not relevant
-		if = {
-			limit = {
-				owner = {
-					OR = {
-						has_law = law_type:law_mass_conscription
-						has_law = law_type:law_professional_army
-						has_law = law_type:law_timocracy
-					}
-				}
-			}
-			add = -75
-		}
-		# more likely if you're the defender in a war
-		if = {
-			limit = {
-				owner = {
-					is_at_war = yes
-					any_scope_war = {
-						defender_warleader = { THIS = ROOT.owner }
-					}
-				}
-			}
-			add = 50
-		}
-	}
-}
-
-ideology_national_fascist = {
+﻿ideology_national_fascist = {
 	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_national_fascist.dds
 	
 	character_ideology = yes
@@ -77,7 +7,6 @@ ideology_national_fascist = {
 		law_single_party_state = strongly_approve
 		law_autocracy = approve
 		law_oligarchy = neutral
-		law_timocracy = neutral
 		law_technocracy = strongly_disapprove
 		law_anarchy = strongly_disapprove
 		law_universal_suffrage = strongly_disapprove
@@ -116,7 +45,6 @@ ideology_national_fascist = {
 		law_professional_army = approve
 		law_national_militia = disapprove
 		law_peasant_levies = strongly_disapprove
-		law_full_disarmament = strongly_disapprove
 		law_total_war = approve
 	}
 
@@ -312,7 +240,6 @@ ideology_anarcho_libertarian = {
 		law_universal_suffrage = neutral
 		law_census_voting = disapprove
 		law_wealth_voting = disapprove
-		law_timocracy = disapprove
 		law_landed_voting = disapprove
 		law_technocracy = disapprove
 		law_oligarchy = disapprove
@@ -334,7 +261,6 @@ ideology_anarcho_libertarian = {
 		law_mass_conscription = strongly_disapprove
 		law_peasant_levies = strongly_disapprove
 		law_total_war = strongly_disapprove
-		law_full_disarmament = neutral
 	}
 	lawgroup_free_speech = {
 		law_protected_speech = strongly_approve
@@ -1022,7 +948,6 @@ ideology_libertarian_utopian = {
 		law_universal_suffrage = disapprove
 		law_census_voting = disapprove
 		law_wealth_voting = disapprove
-		law_timocracy = disapprove
 		law_landed_voting = disapprove
 		law_technocracy = disapprove
 		law_oligarchy = disapprove
@@ -1044,7 +969,6 @@ ideology_libertarian_utopian = {
 		law_mass_conscription = strongly_disapprove
 		law_peasant_levies = strongly_disapprove
 		law_total_war = strongly_disapprove
-		law_full_disarmament = neutral
 	}
 	lawgroup_free_speech = {
 		law_protected_speech = strongly_approve
