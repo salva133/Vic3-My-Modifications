@@ -37,10 +37,7 @@ milei.1 = {
 			has_law = law_type:law_no_home_affairs
 			has_law = law_type:law_no_workers_rights
 			NOT = { has_law = law_type:law_total_war }
-			OR = {
-				has_law = law_type:law_no_police
-				has_law = law_type:law_anarchist_police
-			}
+			has_law = law_type:law_no_police
 		}
 	}
 
