@@ -10,6 +10,12 @@ modifier_muslim_communities = {
 	state_radicals_from_political_movements_mult = 0.2
 }
 
+modifier_dundee_incident = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
+
+	state_radicals_from_political_movements_mult = 0.5
+}
+
 modifier_attractive_welfare_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 
