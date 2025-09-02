@@ -1,6 +1,6 @@
 ﻿namespace = albion
 
-# Make Oberon leader
+# Albion seceedes from Britain
 albion.1 = {
 	type = country_event
 	placement = ROOT
@@ -8,40 +8,7 @@ albion.1 = {
 	desc = albion.1.dd
 	flavor = albion.1.ff
 
-	event_image = {
-		texture = gfx/coat_of_arms/textured_emblems/albion.dds
-	}
-
-	trigger = {
-		NOT = { has_global_variable = oberon_happened_globvar }
-	}
-
-	immediate = {
-		random_scope_character = {
-			limit = {
-				has_template = oberon_character_template
-			}
-			save_scope_as = oberon_scope
-		}
-	}
-
-	option = {
-		name = albion.1.a
-		default_option = yes
-
-		scope:oberon_scope = {
-			set_character_as_ruler = yes
-		}
-	}
-}
-
-# Albion seceedes from Britain
-albion.2 = {
-	type = country_event
-	placement = ROOT
-	title = albion.2.tt
-	desc = albion.2.dd
-	flavor = albion.2.ff
+	duration = 1
 
 	event_image = {
 		texture = gfx/coat_of_arms/textured_emblems/albion.dds
@@ -81,36 +48,66 @@ albion.2 = {
 	}
 
 	option = {
-		name = albion.2.a
+		name = albion.1.a
 		default_option = yes
+	}
 
+	option = {
+		name = albion.1.b
+
+		trigger = { c:GBR = this }
+
+		play_as = c:ABI
+	}
+
+	after = {
 		set_up_albionian_claims = yes
 		c:ABI = {
 			create_character = {
 				template = oberon_character_template
-				on_created = {
-					set_character_as_ruler = yes
-				}
 			}
+		}
+		trigger_event = {
+			id = albion.2
+			popup = yes
+			days = 7
+		}
+	}
+}
+
+# Make Oberon leader
+albion.2 = {
+	type = country_event
+	placement = ROOT
+	title = albion.2.tt
+	desc = albion.2.dd
+	flavor = albion.2.ff
+
+	duration = 1
+
+	event_image = {
+		texture = gfx/coat_of_arms/textured_emblems/albion.dds
+	}
+
+	trigger = {
+		# Gets triggered by albion.1
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = {
+				has_template = oberon_character_template
+			}
+			save_scope_as = oberon_scope
 		}
 	}
 
 	option = {
-		name = albion.2.b
+		name = albion.2.a
+		default_option = yes
 
-		trigger = {
-			c:GBR = this
-		}
-
-		set_up_albionian_claims = yes
-		play_as = c:ABI
-		c:ABI = {
-			create_character = {
-				template = oberon_character_template
-				on_created = {
-					set_character_as_ruler = yes
-				}
-			}
+		scope:oberon_scope = {
+			set_character_as_ruler = yes
 		}
 	}
 }

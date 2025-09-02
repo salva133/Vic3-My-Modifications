@@ -76,3 +76,16 @@ is_a_judeo_christian_nation = {
 		}
 	}
 }
+
+has_muslim_indians = {
+	culture = {
+		OR = {
+			has_discrimination_trait = arab_speaking
+			has_discrimination_trait = south_asian_heritage
+			has_discrimination_trait = indo_aryan_language
+		}
+	}
+	religion = {
+		has_discrimination_trait = muslim
+	}
+}

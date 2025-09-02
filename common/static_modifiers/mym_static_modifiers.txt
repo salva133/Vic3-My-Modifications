@@ -1,4 +1,10 @@
-﻿modifier_incompatible_communities = {
+﻿modifier_black_communities = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
+
+	state_radicals_from_political_movements_mult = 0.2
+}
+
+modifier_muslim_communities = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
 
 	state_radicals_from_political_movements_mult = 0.2
