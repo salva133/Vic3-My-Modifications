@@ -62,7 +62,6 @@
 		law_dedicated_police = approve
 		law_militarized_police = strongly_approve
 		law_no_police = strongly_disapprove
-		law_anarchist_police = strongly_disapprove
 		law_extensive_police_powers = approve
 	}
 
@@ -274,7 +273,6 @@ ideology_anarcho_libertarian = {
 		law_dedicated_police = disapprove
 		law_militarized_police = strongly_disapprove
 		law_extensive_police_powers = strongly_disapprove
-		law_anarchist_police = approve
 	}
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
@@ -303,10 +301,7 @@ ideology_anarcho_libertarian = {
 				has_law = law_type:law_national_militia
 				has_law = law_type:law_laissez_faire
 				has_law = law_type:law_protected_speech
-				OR = {
-					has_law = law_type:law_no_police
-					has_law = law_type:law_anarchist_police
-				}
+				has_law = law_type:law_no_police
 				has_law = law_type:law_council_republic
 			}
 		}
@@ -457,10 +452,7 @@ ideology_anti_statist = {
 					has_law = law_type:law_no_colonial_affairs
 					has_law = law_type:law_no_home_affairs
 					has_law = law_type:law_no_workers_rights
-					OR = {
-						has_law = law_type:law_no_police
-						has_law = law_type:law_anarchist_police
-					}
+					has_law = law_type:law_no_police
 				}
 			}	
 		}
@@ -983,7 +975,6 @@ ideology_libertarian_utopian = {
 		law_dedicated_police = disapprove
 		law_militarized_police = strongly_disapprove
 		law_extensive_police_powers = strongly_disapprove
-		law_anarchist_police = neutral
 	}
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
@@ -1012,10 +1003,7 @@ ideology_libertarian_utopian = {
 				has_law = law_type:law_national_militia
 				has_law = law_type:law_laissez_faire
 				has_law = law_type:law_protected_speech
-				OR = {
-					has_law = law_type:law_no_police
-					has_law = law_type:law_anarchist_police
-				}
+				has_law = law_type:law_no_police
 				has_law = law_type:law_council_republic
 			}
 		}
