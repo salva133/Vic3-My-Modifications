@@ -155,5 +155,11 @@ on_game_started_mym_mennonites_setup = {
 		s:STATE_MOLDAVIA = {
 			on_game_started_create_mennonites = yes
 		}
+		s:STATE_UTAH = {
+			on_game_started_create_mennonites = yes
+		}
+		s:STATE_NEVADA = {
+			on_game_started_create_mennonites = yes
+		}
 	}
 }
