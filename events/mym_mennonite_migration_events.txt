@@ -1,0 +1,124 @@
+﻿namespace = mennonite_migration
+
+mennonite_migration.1 = {
+	type = country_event
+	placement = root
+	title  = mennonite_migration.1.tt
+	desc   = mennonite_migration.1.dd
+	flavor = mennonite_migration.1.ff
+
+	duration = 3
+
+	cooldown = {
+		months = 12
+	}
+
+	icon = gfx/interface/icons/event_icons/event_newspaper.dds
+
+	# event_image = {
+	# 	texture = ""
+	# }
+
+	trigger = {
+		exists = c:USA
+		c:USA = this
+		game_date > 1874.7.1
+		game_date < 1880.7.1
+		any_state = {
+			state_is_in_europe = yes
+			any_scope_pop = {
+				has_pop_religion = mennonite
+				count > 10
+			}
+		}
+	}
+
+	immediate = {
+		random_state = {
+			limit = {
+				any_scope_pop = {
+					has_pop_religion = mennonite
+					count > 10
+				}
+				state_is_in_europe = yes
+			}
+			save_scope_as = mennonite_origin_state
+			every_scope_pop = {
+				limit = {
+					has_pop_religion = mennonite
+				}
+				save_scope_as = mennonites_pop
+			}
+		}
+		random_state = {
+			limit = {
+				any_scope_pop = {
+					has_pop_culture = north_german
+					has_pop_religion = mennonite
+					count > 10
+				}
+				state_is_in_europe = yes
+			}
+			save_scope_as = german_mennonite_origin_state
+			every_scope_pop = {
+				limit = {
+					has_pop_culture = north_german
+					has_pop_religion = mennonite
+				}
+				save_scope_as = german_mennonites_pop
+			}
+		}
+
+		scope_historical_mennonite_target_states = yes
+
+	}
+
+	option = {
+		name = mennonite_migration.1.a
+		default_option = yes
+
+		trigger = {
+			exists = scope:mennonite_origin_state
+			exists = scope:mennonites_pop
+			exists = scope:german_mennonite_origin_state
+			exists = scope:german_mennonites_pop
+		}
+
+		if = {
+			limit = { exists = scope:mennonite_origin_state }
+			scope:mennonite_origin_state = {
+				if = {
+					limit = { exists = scope:mennonites_pop }
+					scope:mennonites_pop = {
+						move_mennonites = yes
+					}
+				}
+			}
+		}
+		if = {
+			limit = { exists = scope:german_mennonite_origin_state }
+			scope:german_mennonite_origin_state = {
+				if = {
+					limit = { exists = scope:german_mennonites_pop 
+				}
+					scope:german_mennonites_pop = {
+						move_mennonites = yes
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = mennonite_migration.1.b
+
+		trigger = {
+			NOT = {
+				exists = scope:mennonite_origin_state
+				exists = scope:mennonites_pop
+				exists = scope:german_mennonite_origin_state
+				exists = scope:german_mennonites_pop
+			}
+		}
+	}
+}

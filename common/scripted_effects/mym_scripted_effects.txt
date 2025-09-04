@@ -18,7 +18,7 @@ on_game_started_create_mennonites = {
 	every_scope_state = {
 		convert_population = {
 			target = rel:mennonite
-			value = 0.03
+			value = 0.01
 		}
 	}
 }
@@ -246,6 +246,126 @@ custom_tooltip = {
 				1 = { set_ideology = ideology:ideology_recreationist }
 				1 = { set_ideology = ideology:ideology_secular_humanitarian }
 			}
+		}
+	}
+}
+
+scope_historical_mennonite_target_states = {
+	s:STATE_KANSAS = {
+		random_scope_state = {
+			limit = {
+				owner = {
+					NOT = {
+						is_country_type = decentralized
+					}
+				}
+			}
+			save_scope_as = kansas_state
+		}
+	}
+	s:STATE_MANITOBA = {
+		random_scope_state = {
+			limit = {
+				owner = {
+					NOT = {
+						is_country_type = decentralized
+					}
+				}
+			}
+			save_scope_as = manitoba_state
+		}
+	}
+	s:STATE_NORTH_DAKOTA = {
+		random_scope_state = {
+			limit = {
+				owner = {
+					NOT = {
+						is_country_type = decentralized
+					}
+				}
+			}
+			save_scope_as = north_dakota_state
+		}
+	}
+	s:STATE_SOUTH_DAKOTA = {
+		random_scope_state = {
+			limit = {
+				owner = {
+					NOT = {
+						is_country_type = decentralized
+					}
+				}
+			}
+			save_scope_as = south_dakota_state
+		}
+	}
+	s:STATE_NEBRASKA = {
+		random_scope_state = {
+			limit = {
+				owner = {
+					NOT = {
+						is_country_type = decentralized
+					}
+				}
+			}
+			save_scope_as = nebraska_state
+		}
+	}
+	s:STATE_TEXAS = {
+		random_scope_state = {
+			limit = {
+				owner = {
+					NOT = {
+						is_country_type = decentralized
+					}
+				}
+			}
+			save_scope_as = texas_state
+		}
+	}
+}
+
+move_mennonites = {
+	if = {
+		limit = { exists = scope:kansas_state }
+		move_partial_pop = {
+			state = scope:kansas_state
+			population_ratio = 10
+		}
+	}
+	if = {
+		limit = { exists = scope:manitoba_state }
+		move_partial_pop = {
+			state = scope:manitoba_state
+			population_ratio = 9
+		}
+	}
+	if = {
+		limit = { exists = scope:north_dakota_state }
+		move_partial_pop = {
+			state = scope:north_dakota_state
+			population_ratio = 8
+		}
+	}
+	if = {
+		limit = { exists = scope:south_dakota_state }
+		move_partial_pop = {
+			state = scope:south_dakota_state
+			population_ratio = 7
+		}
+	}
+	if = {
+		limit = { exists = scope:nebraska_state }
+		move_partial_pop = {
+			state = scope:nebraska_state
+			population_ratio = 6
+		}
+	}
+	if = {
+		limit = { exists = scope:texas_state }
+		move_partial_pop = {
+			state = scope:texas_state
+			population_ratio = 5
 		}
 	}
 }
