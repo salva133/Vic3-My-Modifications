@@ -337,9 +337,7 @@ ideology_anarcho_libertarian = {
 				owner = {
 					NOT = { has_law = law_type:law_council_republic }
 				}
-				scope:interest_group = {
-					ig_approval <= -5
-				}
+				ig_approval <= -5
 			}
 			add = 100
 		}
@@ -1050,9 +1048,7 @@ ideology_libertarian_utopian = {
 				owner = {
 					NOT = { has_law = law_type:law_anarchy }
 				}
-				scope:interest_group = {
-					is_in_government = yes
-				}
+				is_in_government = no
 			}
 			add = 75
 		}
