@@ -1,0 +1,130 @@
+﻿on_game_started_mym_mennonites_setup_eastern_europe = {
+	s:STATE_VILNIUS = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_MAZOVIA = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_LESSER_POLAND = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_BREST = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_VOLHYNIA = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_KIEV = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_CRIMEA = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_KHARKOV = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_CHERSON = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_CHERNIHIV = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_TAURIDA = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_BESSARABIA = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_NORTH_CAUCASUS = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_STAVROPOL = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_CHELYABINSK = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_ORYOL = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_KURSK = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_ROSTOV = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_WEST_GALICIA = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_EAST_GALICIA = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_WEST_SLOVAKIA = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_EAST_SLOVAKIA = {
+		on_game_started_create_mennonites = yes
+	}
+	s:STATE_MOLDAVIA = {
+		on_game_started_create_mennonites = yes
+	}
+}
+
+on_game_started_mym_mennonites_setup_north_america = {
+	s:STATE_PENNSYLVANIA = {
+		every_scope_state = {
+			convert_population = {
+				target = rel:mennonite
+				value = 0.015
+			}
+		}
+	}
+	s:STATE_OHIO = {
+		every_scope_state = {
+			convert_population = {
+				target = rel:mennonite
+				value = 0.01
+			}
+		}
+	}
+	s:STATE_ONTARIO = {
+		every_scope_state = {
+			convert_population = {
+				target = rel:mennonite
+				value = 0.01
+			}
+		}
+	}
+	s:STATE_MARYLAND = {
+		every_scope_state = {
+			convert_population = {
+				target = rel:mennonite
+				value = 0.01
+			}
+		}
+	}
+	s:STATE_VIRGINIA = {
+		every_scope_state = {
+			convert_population = {
+				target = rel:mennonite
+				value = 0.01
+			}
+		}
+	}
+	s:STATE_NEW_YORK = {
+		every_scope_state = {
+			convert_population = {
+				target = rel:mennonite
+				value = 0.002
+			}
+		}
+	}
+	s:STATE_INDIANA = {
+		every_scope_state = {
+			convert_population = {
+				target = rel:mennonite
+				value = 0.001
+			}
+		}
+	}
+}
