@@ -263,18 +263,6 @@ scope_historical_mennonite_target_states = {
 			save_scope_as = kansas_state
 		}
 	}
-	s:STATE_MANITOBA = {
-		random_scope_state = {
-			limit = {
-				owner = {
-					NOT = {
-						is_country_type = decentralized
-					}
-				}
-			}
-			save_scope_as = manitoba_state
-		}
-	}
 	s:STATE_NORTH_DAKOTA = {
 		random_scope_state = {
 			limit = {
@@ -321,6 +309,18 @@ scope_historical_mennonite_target_states = {
 				}
 			}
 			save_scope_as = texas_state
+		}
+	}
+	s:STATE_MANITOBA = {
+		random_scope_state = {
+			limit = {
+				owner = {
+					NOT = {
+						is_country_type = decentralized
+					}
+				}
+			}
+			save_scope_as = manitoba_state
 		}
 	}
 }

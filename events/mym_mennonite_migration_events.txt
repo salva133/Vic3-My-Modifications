@@ -70,7 +70,6 @@ mennonite_migration.1 = {
 		}
 
 		scope_historical_mennonite_target_states = yes
-
 	}
 
 	option = {
