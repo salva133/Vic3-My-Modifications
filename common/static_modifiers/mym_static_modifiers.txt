@@ -39,3 +39,9 @@ modifier_protective_government = {
 
 	state_loyalism_increases_full_acceptance_mult = 0.02
 }
+
+modifier_excessive_social_welfare = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+
+	state_working_adult_ratio_add = -0.15
+}

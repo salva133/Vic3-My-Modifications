@@ -1,0 +1,34 @@
+﻿je_excessive_social_welfare = {
+	icon = gfx/interface/icons/religion_icons/spartanist.dds
+
+	group = je_group_internal_affairs
+
+	should_be_pinned_by_default = yes
+
+	is_shown_when_inactive = {
+		trigger_je_excessive_social_welfare = yes
+	}
+
+	possible = {
+		trigger_je_excessive_social_welfare = yes
+		government_legitimacy < 25
+	}
+
+	immediate = {
+	}
+
+	modifiers_while_active = {
+		modifier_excessive_social_welfare
+	}
+
+	complete = {
+		NOR = {
+			trigger_je_excessive_social_welfare = yes
+			government_legitimacy < 25
+		}
+	}
+
+	on_complete = {
+
+	}
+}

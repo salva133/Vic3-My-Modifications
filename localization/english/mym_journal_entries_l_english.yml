@@ -11,3 +11,8 @@
   je_a_house_divided: "A House Divided"
   je_a_house_divided_status: "Unify the country by eliminating the $CSA$ within ten years."
   je_a_house_divided_reason: "We have ten years to re-unify the States, otherwise the division will become permanent, and a new American order will rise from the ashes of civil conflict."
+
+# JE Excessive Social Welfare
+  je_excessive_social_welfare: "Excessive Social Welfare"
+  je_excessive_social_status: ""
+  je_excessive_social_reason: ""
