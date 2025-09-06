@@ -44,3 +44,9 @@
   mym_debug.4.a: "$mym_debug.1.tt$\n$mym_debug.1.dd$"
   mym_debug.4.b: "$mym_debug.2.tt$\n$mym_debug.2.dd$"
   mym_debug.4.c: "$mym_debug.3.tt$\n$mym_debug.3.dd$"
+  mym_debug.4.d: "$mym_debug.5.tt$\n$mym_debug.5.dd$"
+
+  mym_debug.5.tt: "$mym_debug.pre.tt$: Misc. Debug Functions"
+  mym_debug.5.dd: "Some functions for ad-hoc testing"
+  mym_debug.5.ff: ""
+  mym_debug.5.aa: "Close"
