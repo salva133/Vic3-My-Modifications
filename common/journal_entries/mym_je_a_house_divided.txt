@@ -25,6 +25,17 @@
 	}
 
 	immediate = {
+		every_state = {
+			limit = {
+				owner = c:CSA
+				NOT = {
+					has_claim_by = c:USA
+				}
+			}
+			state_region = {
+				add_claim = c:USA
+			}
+		}
 		set_variable = {
 			name = ahd_progress_var
 			value = 0
@@ -48,12 +59,36 @@
 	}
 
 	fail = {
-		scope:journal_entry = {
-			is_goal_complete = yes
+		custom_tooltip = {
+			text = je_a_house_divided_fail_tt
+			scope:journal_entry = {
+				is_goal_complete = yes
+			}
 		}
 	}
 
 	on_fail = {
+		# USA/FSA loses all claims on CSA territory
+		every_state = {
+			limit = {
+				exists = c:CSA
+				owner = c:CSA
+				has_claim_by = c:USA
+			}
+			state_region = {
+				remove_claim = c:USA
+			}
+		}
+		every_state = {
+			limit = {
+				exists = c:CSA
+				owner = c:CSA
+				has_claim_by = c:FSA
+			}
+			state_region = {
+				remove_claim = c:FSA
+			}
+		}
 		# USA turns into FSA
 		if = {
 			limit = {
@@ -66,23 +101,6 @@
 			limit = { country_has_primary_culture = cu:dixie }
 			remove_primary_culture = cu:dixie
 		}
-		# USA/FSA loses all claims on CSA territory
-		every_state = {
-			limit = {
-				exists = c:CSA
-				owner = c:CSA
-				OR = {
-					has_claim_by = c:USA
-					has_claim_by = c:FSA
-				}
-			}
-			state_region = {
-				remove_claim = c:USA
-				remove_claim = c:FSA
-			}
-		}
-
-		###
 		set_global_variable = a_house_divided_completed_globvar
 	}
 

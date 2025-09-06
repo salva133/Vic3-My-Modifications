@@ -7,7 +7,7 @@ mym_debug.1 = {
 	desc = mym_debug.1.dd
 	flavor = mym_debug.1.ff
 
-	duration = 3
+	
 
 	event_image = {
 		texture = gfx/event_images/mym_debug.dds
@@ -218,7 +218,7 @@ mym_debug.2 = {
 	desc = mym_debug.2.dd
 	flavor = mym_debug.2.ff
 
-	duration = 3
+	
 
 	event_image = {
 		texture = gfx/event_images/mym_debug.dds
@@ -344,7 +344,7 @@ mym_debug.3 = {
 	desc = mym_debug.3.dd
 	flavor = mym_debug.3.ff
 
-	duration = 3
+	
 
 	event_image = {
 		texture = gfx/event_images/mym_debug.dds
@@ -679,6 +679,7 @@ mym_debug.3 = {
 	}
 }
 
+# MyM Debug Main Menu
 mym_debug.4 = {
 	type = country_event
 	placement = ROOT
@@ -686,7 +687,7 @@ mym_debug.4 = {
 	desc = mym_debug.4.dd
 	flavor = mym_debug.4.ff
 
-	duration = 3
+	
 
 	event_image = {
 		texture = gfx/event_images/mym_debug.dds
@@ -726,5 +727,126 @@ mym_debug.4 = {
 		name = mym_debug.4.c
 
 		trigger_event = { id = mym_debug.3 popup = yes }
+	}
+	option = {
+		name = mym_debug.4.d
+
+		trigger_event = { id = mym_debug.5 popup = yes }
+	}
+}
+
+# Misc Debug Functions Menu
+mym_debug.5 = {
+	type = country_event
+	placement = ROOT
+	title = mym_debug.5.tt
+	desc = mym_debug.5.dd
+	flavor = mym_debug.5.ff
+
+	
+
+	event_image = {
+		texture = gfx/event_images/mym_debug.dds
+	}
+
+	trigger = {
+		# Gets triggered by decision
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = gfx/interface/icons/event_icons/waving_flag.dds
+
+	# Closes the event with no additional effect
+	option = {
+		name = mym_debug.3.aa
+		default_option = yes
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.4 popup = yes }
+		}
+	}
+
+	option = {
+		name = create_csa_in_NC
+
+		trigger = {
+			NOT = { exists = c:CSA }
+		}
+
+		create_country = {
+			tag = CSA
+			origin = this
+			state = s:STATE_NORTH_CAROLINA.region_state:USA
+		}
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.4 popup = yes }
+		}
+	}
+	option = {
+		name = give_usa_claims_on_csa_territory
+
+		trigger = {
+			exists = c:CSA
+			any_state = {
+				owner = c:CSA
+				NOT = { has_claim_by = c:USA }
+			}
+		}
+
+		every_state = {
+			limit = {
+				owner = c:CSA
+			}
+			state_region = {
+				add_claim = c:USA
+			}
+		}
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.4 popup = yes }
+		}
+	}
+	option = {
+		name = remove_us_claims_on_csa_territory
+
+		trigger = {
+			exists = c:CSA
+			any_state = {
+				owner = c:CSA
+				has_claim_by = c:USA
+			}
+		}
+
+		every_state = {
+			limit = {
+				owner = c:CSA
+				has_claim_by = c:USA
+			}
+			state_region = {
+				remove_claim = c:USA
+			}
+		}
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.4 popup = yes }
+		}
+	}
+	option = {
+		name = re-annex_csa_into_usa
+
+		trigger = {
+			exists = c:USA
+			exists = c:CSA
+		}
+
+		c:USA = {
+			annex = c:CSA
+		}
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.4 popup = yes }
+		}
 	}
 }
