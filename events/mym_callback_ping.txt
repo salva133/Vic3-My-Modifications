@@ -1,0 +1,43 @@
+﻿namespace = callback_ping
+
+callback_ping.1 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		has_variable = callback_ping_active_var
+	}
+
+	immediate = {
+		#Set-up
+		random_country = {
+			limit = {
+				country_can_have_mass_migration_to = root
+				any_scope_culture = {
+					shares_heritage_and_other_trait_with_any_primary_culture = root
+				}
+			}
+			save_scope_as = mass_migration_source_country
+			random_scope_culture = {
+				limit = {
+					shares_heritage_and_other_trait_with_any_primary_culture = root
+				}
+				save_scope_as = mass_migration_source_culture
+			}
+		}
+		random_scope_state = {
+			limit = {
+				state_is_eligible_as_mass_migration_target = yes
+			}
+			save_scope_as = mass_migration_target_state
+		}
+
+		# Execution
+		scope:mass_migration_target_state = {
+			create_mass_migration = {
+				origin = scope:mass_migration_source_country
+				culture = scope:mass_migration_source_culture
+			}
+		}
+	}
+}

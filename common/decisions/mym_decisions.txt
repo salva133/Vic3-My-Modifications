@@ -46,3 +46,39 @@ decision_want_to_be_free = {
 		value = 0
 	}
 }
+
+decision_activate_callback_ping = {
+
+	is_shown = {
+		is_player = yes
+		NOT = { has_variable = callback_ping_active_var }
+	}
+
+	possible = {
+		has_law = law_type:law_no_migration_controls
+		any_scope_state= {
+			state_is_eligible_as_mass_migration_target = yes
+		}
+		any_country = {
+			country_can_have_mass_migration_to = root
+		}
+	}
+
+	when_taken = {
+		set_variable = callback_ping_active_var
+		custom_tooltip = activate_callback_ping_tt
+	}
+}
+
+decision_deactivate_callback_ping = {
+
+	is_shown = {
+		is_player = yes
+		has_variable = callback_ping_active_var
+	}
+
+	when_taken = {
+		remove_variable = callback_ping_active_var
+		custom_tooltip = deactivate_callback_ping_tt
+	}
+}

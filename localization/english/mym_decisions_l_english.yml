@@ -6,3 +6,9 @@
 # MyM Decisions
   decision_want_to_be_free: "Do you want to be free?"
   decision_want_to_be_free_desc: "#bold I wAnT t0 bReAk FrE3!#!"
+
+# Callback Ping
+decision_activate_callback_ping: "Activate the Callback Ping"
+decision_activate_callback_ping_desc: "#italic meinletmeinletmeinletmeinletmeinlet"
+decision_deactivate_callback_ping: "Deactivate the Callback Ping"
+decision_deactivate_callback_ping_desc: ""

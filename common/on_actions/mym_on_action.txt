@@ -39,6 +39,8 @@ on_monthly_pulse_country_mym_events = {
 		albion.1
 
 		welfare_state.1
+
+		callback_ping.1
 	}
 }
 
