@@ -17,6 +17,3 @@
   mym_debug.2.c_tt: "Every subject will get released from their overlord"
   historical_label: "#gold #bold Historical#!"
   is_a_judeo_christian_nation_tt: "Is a #gold Judeo-Christian#! Nation"
-
-  activate_callback_ping_tt: "Enables $modifier_callback_ping$"
-  deactivate_callback_ping_tt: "Disables $modifier_callback_ping$"
