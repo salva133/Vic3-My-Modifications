@@ -1,7 +1,7 @@
 ﻿namespace = community_tension
 
 # Black Crime arises
-community_tension.1 = {		# NEEDS TO BE FIXED
+community_tension.1 = {
 	type = country_event
 	placement = root
 
@@ -21,23 +21,23 @@ community_tension.1 = {		# NEEDS TO BE FIXED
 		video = "southamerica_slaves_night"
 	}
 
-	# >>>>>> NOTHING EVER WORKS!
 	trigger = {
-		always = no	# !!!
-
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
 			NOT = { has_modifier = modifier_black_communities }
-			any_scope_pop = { # HERE'S THE LITTLE SHIT!
+			any_scope_pop = {
 				culture = {
-					has_discrimination_trait = african_heritage
+					OR = {
+						has_discrimination_trait = african_heritage
+						has_discrimination_trait = middle_eastern_heritage
+						has_discrimination_trait = south_asian_heritage
+					}
 				}
 				percent > 0.13
 			}
 		}
 	}
-	# <<<<<<
 
 	immediate = {
 		random_scope_state = {
@@ -46,7 +46,11 @@ community_tension.1 = {		# NEEDS TO BE FIXED
 				NOT = { has_modifier = modifier_black_communities }
 				any_scope_pop = {
 					culture = {
-						has_discrimination_trait = african_heritage
+						OR = {
+							has_discrimination_trait = african_heritage
+							has_discrimination_trait = middle_eastern_heritage
+							has_discrimination_trait = south_asian_heritage
+						}
 					}
 					percent > 0.13
 				}
@@ -66,7 +70,7 @@ community_tension.1 = {		# NEEDS TO BE FIXED
 }
 
 # Black Crime subsides
-community_tension.2 = {		# NEEDS TO BE FIXED
+community_tension.2 = {
 	type = country_event
 	placement = root
 
@@ -86,32 +90,30 @@ community_tension.2 = {		# NEEDS TO BE FIXED
 		video = "southamerica_slaves_night"
 	}
 
-	# >>>>>> NOTHING EVER WORKS!
 	trigger = {
-		always = no	# !!!
-
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
-			is_incorporated = yes
 			has_modifier = modifier_black_communities
-			any_scope_pop = { # HERE'S THE LITTLE SHIT!
+			any_scope_pop = {
 				culture = {
 					has_discrimination_trait = african_heritage
+					has_discrimination_trait = middle_eastern_heritage
+					has_discrimination_trait = south_asian_heritage
 				}
 				percent < 0.05
 			}
 		}
 	}
-	# <<<<<<
 
 	immediate = {
 		random_scope_state = {
 			limit = {
-				is_incorporated = yes
 				has_modifier = modifier_black_communities
 				any_scope_pop = {
 					culture = {
 						has_discrimination_trait = african_heritage
+						has_discrimination_trait = middle_eastern_heritage
+						has_discrimination_trait = south_asian_heritage
 					}
 					percent < 0.05
 				}
@@ -131,7 +133,7 @@ community_tension.2 = {		# NEEDS TO BE FIXED
 }
 
 # Arab-Muslim Crime arises
-community_tension.3 = {		# NEEDS TO BE FIXED
+community_tension.3 = {
 	type = country_event
 	placement = root
 
@@ -151,15 +153,12 @@ community_tension.3 = {		# NEEDS TO BE FIXED
 		video = "middleeast_upperclass_party"
 	}
 
-	# >>>>>> NOTHING EVER WORKS!
 	trigger = {
-		always = no	# !!!
-
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
 			NOT = { has_modifier = modifier_muslim_communities }
-			any_scope_pop = { # HERE'S THE LITTLE SHIT!
+			any_scope_pop = {
 				religion = {
 					has_discrimination_trait = muslim
 				}
@@ -167,7 +166,6 @@ community_tension.3 = {		# NEEDS TO BE FIXED
 			}
 		}
 	}
-	# <<<<<<
 
 	immediate = {
 		random_scope_state = {
@@ -196,7 +194,7 @@ community_tension.3 = {		# NEEDS TO BE FIXED
 }
 
 # Arab-Muslim Crime subsides
-community_tension.4 = {		# NEEDS TO BE FIXED
+community_tension.4 = {
 	type = country_event
 	placement = root
 
@@ -216,16 +214,13 @@ community_tension.4 = {		# NEEDS TO BE FIXED
 		video = "middleeast_upperclass_party"
 	}
 
-	# >>>>>> NOTHING EVER WORKS!
 	trigger = {
-		always = no	# !!!
-
 		has_law = law_type:law_multicultural
 		is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
 			has_modifier = modifier_muslim_communities
-			any_scope_pop = { # HERE'S THE LITTLE SHIT!
+			any_scope_pop = {
 				religion = {
 					has_discrimination_trait = muslim
 				}
@@ -233,7 +228,6 @@ community_tension.4 = {		# NEEDS TO BE FIXED
 			}
 		}
 	}
-	# <<<<<<
 
 	immediate = {
 		random_scope_state = {
@@ -293,7 +287,7 @@ community_tension.5 = {
 				any_scope_pop = {
 					has_muslim_indians = yes
 					percent > 0.12
-				}	
+				}
 			}
 		}
 	}
