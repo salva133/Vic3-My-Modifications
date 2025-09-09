@@ -65,9 +65,9 @@ at_least_one_politician_is_no_anarchist = {
 	}
 }
 
-is_a_judeo_christian_nation = {
+country_is_a_judeo_christian_nation = {
 	custom_tooltip = {
-		text = is_a_judeo_christian_nation_tt
+		text = country_is_a_judeo_christian_nation_tt
 		religion = {
 			OR = {
 				has_discrimination_trait = christian
@@ -77,7 +77,7 @@ is_a_judeo_christian_nation = {
 	}
 }
 
-has_muslim_indians = {
+state_has_muslim_indians = {
 	culture = {
 		OR = {
 			has_discrimination_trait = arab_speaking

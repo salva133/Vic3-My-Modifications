@@ -1,9 +1,0 @@
-﻿coa_monanarchy_trigger = {
-	coa_monarchy_trigger = yes
-	coa_anarchy_trigger = yes
-}
-
-coa_pirate_commune_trigger = {
-	country_is_in_the_caribbean = yes
-	coa_anarchy_trigger = yes
-}

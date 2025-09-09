@@ -173,7 +173,7 @@ nietzsche.2 = {
 			remove_character_role = agitator
 			transfer_character = scope:home_country_scope
 		}
-		custom_label = historical_label
+		custom_label = historical_label_tt
 	}
 	option = {
 		name = nietzsche.2.b
