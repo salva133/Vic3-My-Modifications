@@ -49,3 +49,10 @@ modifier_excessive_social_welfare = {
 modifier_callback_ping = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 }
+
+modifier_nationalist_agitation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+
+	state_radicals_from_political_movements_mult = 0.05
+	state_pop_support_movement_cultural_majority_mult = 0.1
+}

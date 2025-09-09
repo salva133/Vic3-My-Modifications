@@ -1,3 +1,5 @@
 ﻿l_english:
   concept_dmitry: "The Dmitry"
-  concept_dmitry_desc: " is a russian schooner currently active in the Black Sea Region."
+  concept_dmitry_desc: "$concept_dmitry$ is a russian schooner currently active in the Black Sea Region."
+  concept_judeo_christian_nation: "Judeo-Christian Nation"
+  concept_judeo_christian_nation_desc: "A $concept_judeo_christian_nation$ is a country whose core values are based on the shared traditions and ethics of Judaism and Christianity, often emphasizing biblical morality and a fusion of both religious heritages."

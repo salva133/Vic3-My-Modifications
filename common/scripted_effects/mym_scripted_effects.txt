@@ -24,10 +24,13 @@ on_game_started_create_mennonites = {
 }
 
 create_albion = {
-	create_country = {
-		tag = ABI
-		origin = c:GBR
-		state = s:STATE_LANCASHIRE.region_state:GBR
+	if = {
+		limit = { NOT = { exists = c:ABI } }
+		create_country = {
+			tag = ABI
+			origin = c:GBR
+			state = s:STATE_LANCASHIRE.region_state:GBR
+		}
 	}
 	if = {
 		limit = { exists = s:STATE_LANCASHIRE.region_state:ENG }

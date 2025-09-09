@@ -1,1 +1,2 @@
 ﻿concept_dmitry = {}
+concept_judeo_christian_nation = { is_loading_tip = yes }

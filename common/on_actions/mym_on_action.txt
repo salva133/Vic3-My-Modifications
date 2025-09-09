@@ -24,23 +24,26 @@ on_monthly_pulse_country_mym_events = {
 		stoker.2
 		
 		hp_lovecraft.3
-
+		
 		milei.1
-
+		
 		nietzsche.1
 		nietzsche.2
-
+		
+		albion.1
+		
+		callback_ping.1
+		
 		community_tension.1
 		community_tension.2
 		community_tension.3
 		community_tension.4
 		community_tension.5
-
-		albion.1
-
+		community_tension.6
+		
+		mennonite_migration.1
+		
 		welfare_state.1
-
-		callback_ping.1
 	}
 }
 
