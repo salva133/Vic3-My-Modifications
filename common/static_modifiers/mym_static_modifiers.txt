@@ -56,3 +56,14 @@ modifier_nationalist_agitation = {
 	state_radicals_from_political_movements_mult = 0.05
 	state_pop_support_movement_cultural_majority_mult = 0.1
 }
+
+modifier_chosen_people = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+
+	unit_kill_rate_add = 10
+	unit_morale_damage_mult = 10
+	unit_recovery_rate_add = 10
+	unit_advancement_speed_mult = 10
+	unit_army_offense_mult = 10
+	unit_army_defense_mult = 10
+}
