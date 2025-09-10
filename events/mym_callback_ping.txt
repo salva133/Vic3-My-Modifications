@@ -6,6 +6,7 @@ callback_ping.1 = {
 
 	trigger = {
 		has_modifier = modifier_callback_ping
+		total_population <= 10000000
 	}
 
 	immediate = {
@@ -39,5 +40,19 @@ callback_ping.1 = {
 				culture = scope:mass_migration_source_culture
 			}
 		}
+	}
+}
+
+callback_ping.2 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		has_modifier = modifier_callback_ping
+		total_population > 10000000
+	}
+
+	immediate = {
+		remove_modifier = modifier_callback_ping
 	}
 }
