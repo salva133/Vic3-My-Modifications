@@ -33,6 +33,7 @@ on_monthly_pulse_country_mym_events = {
 		albion.1
 		
 		callback_ping.1
+		callback_ping.2
 
 		chosen_people.1
 		chosen_people.2
