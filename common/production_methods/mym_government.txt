@@ -1,38 +1,8 @@
-﻿pm_technocratic_bureaucrats = {
-	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
+﻿pm_aristocratic_bureaucrats = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_aristocratic_fleur_de_lis.dds"
 
-	disallowing_laws = {
-		law_state_religion
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_engineers_add = 250
-			building_employment_bureaucrats_add = 250
-		}
-	}
-}
-
-pm_technocratic_academia = {
-	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
-
-	disallowing_laws = {
-		law_state_religion
-	}
-
-	building_modifiers = {
-		level_scaled = {
-			building_employment_engineers_add = 250
-			building_employment_academics_add = 250
-		}
-	}
-}
-
-pm_aristocratic_bureaucrats = {
-	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
-
-	disallowing_laws = {
-		law_state_religion
+	unlocking_laws = {
+		law_hereditary_bureaucrats
 	}
 
 	building_modifiers = {
@@ -44,10 +14,10 @@ pm_aristocratic_bureaucrats = {
 }
 
 pm_aristocratic_academia = {
-	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
+	texture = "gfx/interface/icons/production_method_icons/ownership_aristocratic_fleur_de_lis.dds"
 
-	disallowing_laws = {
-		law_state_religion
+	unlocking_laws = {
+		law_hereditary_bureaucrats
 	}
 
 	building_modifiers = {
@@ -59,7 +29,7 @@ pm_aristocratic_academia = {
 }
 
 pm_military_bureaucrats = {
-	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
+	texture = "gfx/interface/icons/production_method_icons/ownership_military.dds"
 
 	disallowing_laws = {
 		law_state_religion
@@ -74,7 +44,7 @@ pm_military_bureaucrats = {
 }
 
 pm_military_academia = {
-	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
+	texture = "gfx/interface/icons/production_method_icons/ownership_military.dds"
 
 	disallowing_laws = {
 		law_state_religion
@@ -88,11 +58,41 @@ pm_military_academia = {
 	}
 }
 
-pm_workers_bureaucrats = {
-	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
+pm_technocratic_bureaucrats = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_technocrats.dds"
 
-	disallowing_laws = {
-		law_state_religion
+	unlocking_laws = {
+		law_technocracy	
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_engineers_add = 250
+			building_employment_bureaucrats_add = 250
+		}
+	}
+}
+
+pm_technocratic_academia = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_technocrats.dds"
+
+	unlocking_laws = {
+		law_technocracy	
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_engineers_add = 250
+			building_employment_academics_add = 250
+		}
+	}
+}
+
+pm_workers_bureaucrats = {
+	texture = "gfx/interface/icons/production_method_icons/ownership_worker.dds"
+
+	unlocking_laws = {
+		law_council_republic
 	}
 
 	building_modifiers = {
@@ -106,10 +106,10 @@ pm_workers_bureaucrats = {
 }
 
 pm_workers_academia = {
-	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
+	texture = "gfx/interface/icons/production_method_icons/ownership_worker.dds"
 
-	disallowing_laws = {
-		law_state_religion
+	unlocking_laws = {
+		law_council_republic
 	}
 
 	building_modifiers = {
@@ -122,11 +122,12 @@ pm_workers_academia = {
 	}
 }
 
-pm_bourgeois_bureaucrats = {
+pm_mercantile_bureaucrats = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_bureacrats.dds"
 
 	disallowing_laws = {
-		law_state_religion
+		law_cooperative_ownership
+		law_command_economy
 	}
 
 	building_modifiers = {
@@ -137,11 +138,12 @@ pm_bourgeois_bureaucrats = {
 	}
 }
 
-pm_bourgeois_academia = {
+pm_mercantile_academia = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
 
 	disallowing_laws = {
-		law_state_religion
+		law_cooperative_ownership
+		law_command_economy
 	}
 
 	building_modifiers = {

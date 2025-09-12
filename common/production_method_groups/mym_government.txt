@@ -3,13 +3,13 @@
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_religious_bureaucrats
-		pm_secular_bureaucrats
-		pm_technocratic_bureaucrats
 		pm_aristocratic_bureaucrats
 		pm_military_bureaucrats
+		pm_religious_bureaucrats
+		pm_secular_bureaucrats
+		pm_mercantile_bureaucrats
+		pm_technocratic_bureaucrats
 		pm_workers_bureaucrats
-		pm_bourgeois_bureaucrats
 	}
 }
 
@@ -18,12 +18,12 @@ pmg_university_academia = {
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_religious_academia
-		pm_secular_academia
-		pm_technocratic_academia
 		pm_aristocratic_academia
 		pm_military_academia
+		pm_religious_academia
+		pm_secular_academia
+		pm_mercantile_academia
+		pm_technocratic_academia
 		pm_workers_academia
-		pm_bourgeois_academia
 	}
 }
