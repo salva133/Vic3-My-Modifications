@@ -249,7 +249,7 @@ mym_debug.2 = {
 		name = mym_debug.2.a
 
 		trigger = {
-			NOT = { has_variable = era_4_for_all_var }
+			NOT = { has_variable = era_5_for_all_var }
 		}
 
 		custom_tooltip = {
@@ -258,8 +258,8 @@ mym_debug.2 = {
 				limit = {
 					NOT = { is_country_type = decentralized }
 				}
-				add_era_researched = era_4
-				set_variable = era_4_for_all_var
+				add_era_researched = era_5
+				set_variable = era_5_for_all_var
 			}
 		}
 

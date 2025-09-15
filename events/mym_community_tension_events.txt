@@ -22,6 +22,7 @@ community_tension.1 = {
 	}
 
 	trigger = {
+		game_date > 1860.1.1
 		country_is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
@@ -154,6 +155,7 @@ community_tension.3 = {
 	}
 
 	trigger = {
+		game_date > 1860.1.1
 		country_is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
