@@ -1,6 +1,7 @@
 ﻿namespace = welfare_state
 
-# Raises migration attraction and lowers approval of IGs who oppose social welfare or open borders
+# Raises migration attraction and lowers approval of IGs
+# who oppose social welfare or open borders
 welfare_state.1 = {
 	type = country_event
 	placement = root
@@ -35,7 +36,8 @@ welfare_state.1 = {
 			institution = institution_workplace_safety
 			value = 5
 		}
-		# At least one IG does not have the modifiers and is either anti-welfare or anti-open-borders
+		# At least one IG does not have the modifiers
+		# and is either anti-welfare or anti-open-borders
 		any_interest_group = {
 			OR = {
 				AND = {
@@ -96,12 +98,14 @@ welfare_state.1 = {
 		}
 		every_scope_state = {
 			limit = {
+				is_incorporated = yes
 				primary_cultures_percent_state > 0.5
 			}
 			save_scope_as = primary_culture_states
 		}
 		every_scope_state = {
 			limit = {
+				is_incorporated = yes
 				primary_cultures_percent_state < 0.5
 			}
 			save_scope_as = foreigner_dominated_states
@@ -112,15 +116,17 @@ welfare_state.1 = {
 		name = welfare_state.1.a
 		default_option = yes
 
-		scope:foreigner_dominated_states = {
-			if = {
-				limit = { NOT = { has_modifier = modifier_attractive_welfare_state } }
-				add_modifier = {
-					name = modifier_attractive_welfare_state
-					months = 25
-				}
+		every_scope_state = {
+			limit = {
+				is_incorporated = yes
+				NOT = { has_modifier = modifier_attractive_welfare_state }
+			}
+			add_modifier = {
+				name = modifier_attractive_welfare_state
+				months = 25
 			}
 		}
+
 		scope:regressive_igs = {
 			if = {
 				limit = { NOT = { has_modifier = modifier_unwanted_immigration } }

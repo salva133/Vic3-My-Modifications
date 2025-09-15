@@ -2,12 +2,14 @@
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
 
 	state_radicals_from_political_movements_mult = 0.2
+	state_pop_support_movement_cultural_minority_mult = 0.2
 }
 
 modifier_muslim_communities = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_black.dds
 
 	state_radicals_from_political_movements_mult = 0.2
+	state_pop_support_movement_religious_minority_mult = 0.2
 }
 
 modifier_dundee_incident = {
