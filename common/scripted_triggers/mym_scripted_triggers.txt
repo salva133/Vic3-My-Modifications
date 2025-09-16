@@ -95,13 +95,14 @@ trigger_je_excessive_social_welfare = {
 	has_law = law_type:law_worker_protections
 	institution_investment_level = {
 		institution = institution_social_security
-		value = 5
+		value > 4
 	}
 	institution_investment_level = {
 		institution = institution_workplace_safety
-		value = 5
+		value > 4
 	}
 	radical_fraction = {
 		value > 0.6
 	}
+	government_legitimacy < 50
 }

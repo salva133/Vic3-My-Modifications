@@ -1,8 +1,8 @@
 ﻿l_english:
   
 ### DEBUGGING EVENTS
-  mym_debug.pre.tt: "#blue My Modifications#!"
-  mym_debug.1.tt: "$mym_debug.pre.tt$: Leader Ideology Changer"
+  mym_debug.pre.tt: "#blue My Modifications:#!"
+  mym_debug.1.tt: "$mym_debug.pre.tt$ Leader Ideology Changer"
   mym_debug.1.dd: "Providing ideological options"
   mym_debug.1.ff: "Only applies ideologies that are actually existing in the game.\nIf an ideology ain't applyable, then it is not existing in the current game."
   mym_debug.1.aa: "Back"
@@ -15,7 +15,7 @@
   mym_debug.1.g: "Set Secret Police IG name dynamically (#green Global#!)"
   mym_debug.1.h: "Create Albion"
 
-  mym_debug.2.tt: "$mym_debug.pre.tt$: Game Breaker"
+  mym_debug.2.tt: "$mym_debug.pre.tt$ Game Breaker"
   mym_debug.2.dd: "Providing debugging options"
   mym_debug.2.ff: "Some gamebreaking stuff here, have fun #red if you dare!#!"
   mym_debug.2.aa: "Back"
@@ -23,8 +23,9 @@
   mym_debug.2.b: "All countries become independent"
   mym_debug.2.c: "#gold #bold --- CALLBACK PING ---#!#!"
   mym_debug.2.d: "Give me all the Tech, du Dreck!"
+  mym_debug.2.e: "Add JE $je_excessive_social_welfare$"
 
-  mym_debug.3.tt: "$mym_debug.pre.tt$: Character Spawn"
+  mym_debug.3.tt: "$mym_debug.pre.tt$ Character Spawn"
   mym_debug.3.dd: "Choose your Agitator"
   mym_debug.3.ff: "Selecting an option will spawn an Agitator with the corresponding Ideology. If such an Agitator already exists, he will be made the ruler."
   mym_debug.3.aa: "Back"
@@ -37,7 +38,7 @@
   mym_debug.3.g: "Accelerate into the future!"
   mym_debug.3.h: "Absolute Power corrupts absolutely"
 
-  mym_debug.4.tt: "$mym_debug.pre.tt$: Debug Menu"
+  mym_debug.4.tt: "$mym_debug.pre.tt$ Debug Menu"
   mym_debug.4.dd: "Access various debugging tools and submenus for rapid testing and modification of game states. Use each option to navigate to specialized debug functions."
   mym_debug.4.ff: "Behind every system lies a hidden panel—where the rules of the world are rewritten with a single choice."
   mym_debug.4.aa: "Close"
@@ -46,7 +47,7 @@
   mym_debug.4.c: "$mym_debug.3.tt$\n$mym_debug.3.dd$"
   mym_debug.4.d: "$mym_debug.5.tt$\n$mym_debug.5.dd$"
 
-  mym_debug.5.tt: "$mym_debug.pre.tt$: Misc. Debug Functions"
+  mym_debug.5.tt: "$mym_debug.pre.tt$ Misc. Debug Functions"
   mym_debug.5.dd: "Some functions for ad-hoc testing"
   mym_debug.5.ff: ""
   mym_debug.5.aa: "Close"

@@ -46,6 +46,7 @@ modifier_excessive_social_welfare = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 
 	state_working_adult_ratio_add = -0.15
+	state_radicalism_increases_full_acceptance_mult = 0.2
 }
 
 modifier_callback_ping = {
