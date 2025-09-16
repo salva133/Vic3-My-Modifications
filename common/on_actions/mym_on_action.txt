@@ -34,16 +34,6 @@ on_monthly_pulse_country_mym_events = {
 		
 		callback_ping.1
 		callback_ping.2
-
-		chosen_people.1
-		chosen_people.2
-		
-		community_tension.1
-		community_tension.2
-		community_tension.3
-		community_tension.4
-		community_tension.5
-		community_tension.6
 		
 		mennonite_migration.1
 		

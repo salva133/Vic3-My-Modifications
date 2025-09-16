@@ -77,44 +77,6 @@
   nietzsche.2.b:  "Maybe he can recover with us.."
   nietzsche.2.c:  "The people will not accept! #bold I#! will not accept!"
 
-# Community Tensions
-  community_tension.1.tt: "Uprising in the Black Quarters"
-  community_tension.1.dd: "Tensions have erupted in several Black neighborhoods, as frustration over longstanding injustices has boiled over into open violence. Local authorities report clashes, looting, and sporadic arson, while community leaders struggle to regain control. The underlying causes of anger remain unresolved, and the unrest threatens to spread if not addressed."
-  community_tension.1.ff: "\"Sometimes, when the world refuses to listen, anger becomes the only language left.\"\n#italic - Anonymous nigger leader#!"
-  community_tension.1.a:  "Tensions escalate"
-
-  community_tension.2.tt: "A Fragile Peace Returns"
-  community_tension.2.dd: "After days of turmoil, calm has returned to the Black communities. Mediation efforts, promises of reform, and a visible reduction in security presence have allowed daily life to cautiously resume. Yet, beneath the surface, mistrust remains—any spark could reignite tensions."
-  community_tension.2.ff: "\"Peace, if forced, is no peace at all. But for now, we breathe and hope.\"\n#italic - Local nigger activist#!"
-  community_tension.2.a:  "Calm restored"
-
-  community_tension.3.tt: "Rage in the Arab-Muslim Districts"
-  community_tension.3.dd: "Widespread unrest has broken out among the Arab-Muslim population. Protests have rapidly escalated into riots, as anger over discrimination and broken promises ignites passions. Security forces face resistance in reestablishing order, while outside agitators may seek to exploit the chaos."
-  community_tension.3.ff: "\"The call for justice echoes louder than any decree. When will they listen?\"\n#italic - Some Imam at a midnight sermon"
-  community_tension.3.a:  "Unrest spreads"
-
-  community_tension.4.tt: "Tensions Subside Among Arab-Muslims"
-  community_tension.4.dd: "The once-fiery streets of the Arab-Muslim quarters have grown quiet again. Whether due to outreach by local leaders, concessions from the government, or exhaustion, the violence has faded—for now. Many, however, warn that grievances remain unresolved, merely simmering below the surface."
-  community_tension.4.ff: "\"Calm is not the same as contentment. True peace requires more than silence.\"\n#italic - Community elder#!"
-  community_tension.4.a:  "Order returns"
-
-  community_tension.5.tt: "Incident in Dundee"
-  community_tension.5.dd: "A confrontation has erupted in Dundee, sparked by rising tensions between local communities and recently arrived minorities. The situation has drawn national attention, raising questions about integration, multiculturalism, and the limits of tolerance."
-  community_tension.5.ff: "\"Dundee stands as proof: the fabric of our nation frays when foreign customs take root. Tolerance, yes—but not at the cost of our traditions.\"\n\n#italic - Editorial, The Lowland Standard#!"
-  community_tension.5.a:  "Take notice."
-
-  community_tension.6.tt: "WE WILL NOT BE REPLACED!"
-  community_tension.6.dd: "A surge of nationalist agitation sweeps through the country as large segments of the population fear cultural displacement. Political movements demanding protection for the cultural majority are gaining strength and legitimacy in the eyes of many."
-  community_tension.6.ff: "\"We are told to embrace change, but at what cost? The voices in our streets grow louder: 'We will not be strangers in our own land.'\n\n#italic - Editorial, National Tribune#\""
-  community_tension.6.a:  "The movement grows."
-
-# Welfare State
-  welfare_state.1.tt: "The Welfare State Triumphs"
-  welfare_state.1.dd: "The combination of generous $law_old_age_pension$, robust $law_worker_protections$, and maximum investments in Social [Concept('concept_institution','Institutions')] has transformed our nation into a beacon for migrants. However, some [Concept('concept_interest_group','Interest Groups')] oppose these policies, resenting both the rising influx of newcomers and the perceived burden on employers and taxpayers."
-  welfare_state.1.ff: "\"The true measure of a nation lies not in its wealth, but in how it treats its most vulnerable citizens.\""
-  welfare_state.1.a:  "Prosperity for All (kotz)"
-  welfare_state.1.b:  "We will protect our Citizens"
-
 # Mennonite Migration
   mennonite_migration.1.tt: "Exodus of the Mennonites"
   mennonite_migration.1.dd: "A wave of Mennonite families has begun leaving their ancestral homes in Russia, seeking a new life in the open lands of North America. Driven by changing policies and the erosion of their religious freedoms, they set out to build new communities far from the reach of the Tsar."
