@@ -1,34 +1,46 @@
 ﻿je_excessive_social_welfare = {
-	icon = gfx/interface/icons/religion_icons/spartanist.dds
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_humanitarism.dds
 
 	group = je_group_internal_affairs
 
 	should_be_pinned_by_default = yes
 
-	is_shown_when_inactive = {
-		trigger_je_excessive_social_welfare = yes
-	}
+	is_shown_when_inactive = {}
 
 	possible = {
 		trigger_je_excessive_social_welfare = yes
-		government_legitimacy < 25
 	}
 
 	immediate = {
-	}
-
-	modifiers_while_active = {
-		modifier_excessive_social_welfare
-	}
-
-	complete = {
-		NOR = {
-			trigger_je_excessive_social_welfare = yes
-			government_legitimacy < 25
+		capital = {
+			add_modifier = modifier_excessive_social_welfare
 		}
 	}
 
-	on_complete = {
+	modifiers_while_active = {}
 
+	complete = {
+		trigger_je_excessive_social_welfare = no
+	}
+
+	on_complete = {
+		every_scope_state = {
+			limit = {
+				has_modifier = modifier_excessive_social_welfare
+			}
+			remove_modifier = modifier_excessive_social_welfare
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			random_scope_state = {
+				limit = {
+					NOT = { has_modifier = modifier_excessive_social_welfare }
+					is_incorporated = yes
+				}
+				add_modifier = modifier_excessive_social_welfare
+			}
+		}
 	}
 }

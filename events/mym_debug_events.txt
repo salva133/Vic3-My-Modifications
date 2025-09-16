@@ -326,6 +326,7 @@ mym_debug.2 = {
 	# Gives the root all the tech up to era 5 - clearly a cheat to circumvent achievement invalidation
 	option = {
 		name = mym_debug.2.d
+
 		trigger = {
 			has_researchable_technology = yes
 		}
