@@ -22,7 +22,7 @@ community_tension.1 = {
 	}
 
 	trigger = {
-		game_date > 1860.1.1
+		game_date > 1900.1.1
 		country_is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
@@ -92,16 +92,21 @@ community_tension.2 = {
 	}
 
 	trigger = {
-		country_is_a_judeo_christian_nation = yes
-		any_scope_state = {
-			has_modifier = modifier_black_communities
-			any_scope_pop = {
-				culture = {
-					has_discrimination_trait = african_heritage
-					has_discrimination_trait = middle_eastern_heritage
-					has_discrimination_trait = south_asian_heritage
+		OR = {
+			game_date < 1900.1.1
+			AND = {
+				country_is_a_judeo_christian_nation = yes
+				any_scope_state = {
+					has_modifier = modifier_black_communities
+					any_scope_pop = {
+						culture = {
+							has_discrimination_trait = african_heritage
+							has_discrimination_trait = middle_eastern_heritage
+							has_discrimination_trait = south_asian_heritage
+						}
+						percent < 0.05
+					}
 				}
-				percent < 0.05
 			}
 		}
 	}
@@ -155,7 +160,7 @@ community_tension.3 = {
 	}
 
 	trigger = {
-		game_date > 1860.1.1
+		game_date > 1900.1.1
 		country_is_a_judeo_christian_nation = yes
 		any_scope_state = {
 			is_incorporated = yes
@@ -217,16 +222,20 @@ community_tension.4 = {
 	}
 
 	trigger = {
-		has_law = law_type:law_multicultural
-		country_is_a_judeo_christian_nation = yes
-		any_scope_state = {
-			is_incorporated = yes
-			has_modifier = modifier_muslim_communities
-			any_scope_pop = {
-				religion = {
-					has_discrimination_trait = muslim
+		OR = {
+			game_date < 1900.1.1
+			AND = {
+				country_is_a_judeo_christian_nation = yes
+				any_scope_state = {
+					is_incorporated = yes
+					has_modifier = modifier_muslim_communities
+					any_scope_pop = {
+						religion = {
+							has_discrimination_trait = muslim
+						}
+						percent < 0.05
+					}
 				}
-				percent < 0.05
 			}
 		}
 	}
