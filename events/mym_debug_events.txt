@@ -7,8 +7,6 @@ mym_debug.1 = {
 	desc = mym_debug.1.dd
 	flavor = mym_debug.1.ff
 
-	
-
 	event_image = {
 		texture = gfx/event_images/mym_debug.dds
 	}
@@ -25,7 +23,7 @@ mym_debug.1 = {
 	option = {
 		name = mym_debug.1.aa
 		default_option = yes
-		
+
 		hidden_effect = {
 			trigger_event = { id = mym_debug.4 popup = yes }
 		}
@@ -43,7 +41,7 @@ mym_debug.1 = {
 				NOT = { has_ideology = ideology:ideology_fascist }
 			}
 		}
-		
+
 		every_scope_character = {
 			limit = {
 				has_role = politician
@@ -52,6 +50,7 @@ mym_debug.1 = {
 			}
 			set_ideology = ideology:ideology_fascist
 		}
+
 		hidden_effect = {
 			trigger_event = { id = mym_debug.1 popup = yes }
 		}
@@ -60,7 +59,7 @@ mym_debug.1 = {
 	# Sets the ideology of all eligible politicians to communist
 	option = {
 		name = mym_debug.1.b
-		
+
 		trigger = {
 			exists = ideology:ideology_communist
 			is_possible_ideology_communist = yes
@@ -688,8 +687,6 @@ mym_debug.4 = {
 	desc = mym_debug.4.dd
 	flavor = mym_debug.4.ff
 
-	
-
 	event_image = {
 		texture = gfx/event_images/mym_debug.dds
 	}
@@ -713,7 +710,6 @@ mym_debug.4 = {
 			remove_variable = mym_debug_menu_open_var
 		}
 	}
-	
 	option = {
 		name = mym_debug.4.a
 
@@ -744,8 +740,6 @@ mym_debug.5 = {
 	desc = mym_debug.5.dd
 	flavor = mym_debug.5.ff
 
-	
-
 	event_image = {
 		texture = gfx/event_images/mym_debug.dds
 	}
@@ -767,7 +761,6 @@ mym_debug.5 = {
 			trigger_event = { id = mym_debug.4 popup = yes }
 		}
 	}
-
 	option = {
 		name = create_csa_in_NC
 
