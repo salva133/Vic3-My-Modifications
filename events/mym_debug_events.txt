@@ -364,46 +364,6 @@ mym_debug.3 = {
 		}
 	}
 
-	# Makes a national fascist agitator the ruler if available, otherwise creates a new national fascist agitator and sets him as ruler
-	option = {
-		name = mym_debug.3.a
-		
-		trigger = {
-			exists = ideology:ideology_national_fascist
-			ruler = {
-				NOT = {
-					has_ideology = ideology:ideology_national_fascist
-				}
-			}
-		}
-		if = {
-			limit = {
-				any_scope_character = {
-					has_role = agitator
-					has_ideology = ideology:ideology_national_fascist
-				}
-			}
-			random_scope_character = {
-				limit = {
-					has_role = agitator
-					has_ideology = ideology:ideology_national_fascist
-				}
-				remove_character_role = agitator
-				set_character_as_ruler = yes
-			}
-		}
-		else = {
-			create_character = {
-				is_agitator = yes
-				ideology = ideology:ideology_national_fascist
-			}
-		}
-		
-		hidden_effect = {
-			trigger_event = { id = mym_debug.3 popup = yes }
-		}
-	}
-
 	# Makes an anarcho-libertarian agitator the ruler if available, otherwise creates a new anarcho-libertarian agitator and sets him as ruler
 	option = {
 		name = mym_debug.3.b
