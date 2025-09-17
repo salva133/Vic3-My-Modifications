@@ -23,6 +23,7 @@
   mym_debug.2.b: "All countries become independent"
   mym_debug.2.c: "#gold #bold --- CALLBACK PING ---#!#!"
   mym_debug.2.d: "Give me all the Tech, du Dreck!"
+  mym_debug.2.e: "Add JE $je_excessive_social_welfare$"
 
   mym_debug.3.tt: "$mym_debug.pre.tt$ Character Spawn"
   mym_debug.3.dd: "Choose your Agitator"
