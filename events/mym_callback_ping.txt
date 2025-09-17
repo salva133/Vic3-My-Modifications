@@ -11,13 +11,15 @@ callback_ping.1 = {
 
 	immediate = {
 		#Set-up
-		random_country = {
+		ordered_country = {
 			limit = {
 				country_can_have_mass_migration_to = root
 				any_scope_culture = {
 					shares_heritage_and_other_trait_with_any_primary_culture = root
 				}
 			}
+			order_by = global_population
+			position = 0
 			save_scope_as = mass_migration_source_country
 			random_scope_culture = {
 				limit = {
@@ -26,18 +28,27 @@ callback_ping.1 = {
 				save_scope_as = mass_migration_source_culture
 			}
 		}
-		random_scope_state = {
+		ordered_scope_state = {
 			limit = {
 				state_is_eligible_as_mass_migration_target = yes
 			}
+			order_by = state_population
+			position = 999
 			save_scope_as = mass_migration_target_state
 		}
 
-		# Execution
-		scope:mass_migration_target_state = {
-			create_mass_migration = {
-				origin = scope:mass_migration_source_country
-				culture = scope:mass_migration_source_culture
+		# Conditioned Execution
+		if = {
+			limit = {
+				exists = scope:mass_migration_source_country
+				exists = scope:mass_migration_source_culture
+				exists = scope:mass_migration_target_state
+			}
+			scope:mass_migration_target_state = {
+				create_mass_migration = {
+					origin = scope:mass_migration_source_country
+					culture = scope:mass_migration_source_culture
+				}
 			}
 		}
 	}
