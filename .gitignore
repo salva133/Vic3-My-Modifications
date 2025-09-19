@@ -19,3 +19,9 @@ save_game_analysis.txt
 settings_layout.txt
 
 *.code-workspace
+
+changes.txt
+*.py
+localizations_*.txt
+scripts_*.txt
+diff.txt
