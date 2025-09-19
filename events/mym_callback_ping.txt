@@ -31,6 +31,7 @@ callback_ping.1 = {
 		ordered_scope_state = {
 			limit = {
 				state_is_eligible_as_mass_migration_target = yes
+				has_decree = decree_greener_grass_campaign
 			}
 			order_by = state_population
 			position = 999
