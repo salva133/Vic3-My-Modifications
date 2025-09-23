@@ -184,7 +184,7 @@ set_secret_police_ig_name = {
 	else_if = {
 		limit = {
 			any_primary_culture = {
-				has_discrimination_trait = iberian_culture_group
+				has_discrimination_trait = heritage_iberian
 			}
 		}
 		ig:ig_secret_police = {
@@ -193,9 +193,8 @@ set_secret_police_ig_name = {
 	}
 	else_if = {
 		limit = {
-			any_primary_culture = {
-				has_discrimination_trait = jewish_group
-			}
+			exists = c:ISR
+			c:ISR ?= this
 		}
 		ig:ig_secret_police = {
 			set_interest_group_name = ig_secret_police_israel
