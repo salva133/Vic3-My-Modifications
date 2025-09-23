@@ -1,7 +1,8 @@
 ﻿albionian = {
 	color= rgb{ 0 80 0 }
 	religion = druidism
-	traits = { celtic_people anglophone european_heritage }
+	heritage = heritage_british
+	language = language_brythonic
 
 	male_common_first_names = {
 		Aedan Aillin Ainmire Alasdair Angus Artan
@@ -71,7 +72,7 @@
 		Lacey Larkin Lennon Lynch Lyons
 		Malone McCabe McCarthy McDermott Murphy
 		Nolan Norris
-		O_Brien O_Connell O_Connor O_Donnell O_Neil O_Neill
+		O_Brien O_Connell O_Connor O_Donnell O_Neil
 		Quinn Quinlan
 		Reilly Roche Ryan
 		Sheehan Sweeney

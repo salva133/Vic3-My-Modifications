@@ -15,7 +15,10 @@ callback_ping.1 = {
 			limit = {
 				country_can_have_mass_migration_to = root
 				any_scope_culture = {
-					shares_heritage_and_other_trait_with_any_primary_culture = root
+					OR = {
+						shares_language_trait_group_with_any_primary_culture = root
+						shares_heritage_trait_group_with_any_primary_culture = root
+					}
 				}
 			}
 			order_by = global_population
@@ -23,7 +26,10 @@ callback_ping.1 = {
 			save_scope_as = mass_migration_source_country
 			random_scope_culture = {
 				limit = {
-					shares_heritage_and_other_trait_with_any_primary_culture = root
+					OR = {
+						shares_language_trait_group_with_any_primary_culture = root
+						shares_heritage_trait_group_with_any_primary_culture = root
+					}
 				}
 				save_scope_as = mass_migration_source_culture
 			}

@@ -59,10 +59,10 @@
 	s:STATE_EAST_GALICIA = {
 		on_game_started_create_mennonites = yes
 	}
-	s:STATE_WEST_SLOVAKIA = {
+	s:STATE_MORAVIA = {
 		on_game_started_create_mennonites = yes
 	}
-	s:STATE_EAST_SLOVAKIA = {
+	s:STATE_SLOVAKIA = {
 		on_game_started_create_mennonites = yes
 	}
 	s:STATE_MOLDAVIA = {

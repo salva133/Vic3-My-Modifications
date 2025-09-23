@@ -1,7 +1,0 @@
-﻿teutonic = {
-	heritage = yes
-}
-
-pagan = {
-	heritage = yes
-}
