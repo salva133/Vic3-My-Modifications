@@ -78,6 +78,10 @@ decision_deactivate_callback_ping = {
 		total_population <= 10000000
 	}
 
+	possible = {
+		has_modifier = modifier_callback_ping
+	}
+
 	when_taken = {
 		remove_modifier = modifier_callback_ping
 	}
