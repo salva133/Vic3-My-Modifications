@@ -36,8 +36,6 @@ on_monthly_pulse_country_mym_events = {
 		callback_ping.2
 		
 		mennonite_migration.1
-		
-		welfare_state.1
 	}
 }
 
