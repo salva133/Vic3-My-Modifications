@@ -47,7 +47,7 @@ stoker.2 = {
 	flavor = stoker.2.ff
 
 	event_image = {
-		texture = "/gfx/event_images/dmitry_shored.dds"
+		texture = "gfx/event_pictures/dmitry_shored.dds"
 	}
 
 	duration = 3

@@ -47,6 +47,6 @@
   mym_debug.4.d: "$mym_debug.5.tt$\n$mym_debug.5.dd$"
 
   mym_debug.5.tt: "$mym_debug.pre.tt$ Misc. Debug Functions"
-  mym_debug.5.dd: "Some functions for ad-hoc testing"
-  mym_debug.5.ff: ""
+  mym_debug.5.dd: "For ad-hoc testing"
+  mym_debug.5.ff: "Create options here if you need to, and for christ sake, clean up afterwards. We do not need any log bloating."
   mym_debug.5.aa: "Close"
