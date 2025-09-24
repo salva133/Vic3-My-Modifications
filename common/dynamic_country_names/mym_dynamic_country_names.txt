@@ -27,7 +27,7 @@
 			scope:actor ?= {
 				is_subject_of = c:GBR
 				c:GBR = {
-					has_law = law_type:law_monarchy
+					has_law_or_variant = law_type:law_monarchy
 				}
 			}
 		}
@@ -45,8 +45,8 @@
 				is_subject_of = c:GBR
 				c:GBR = {
 					OR = {
-						has_law = law_type:law_presidential_republic
-						has_law = law_type:law_parliamentary_republic
+						has_law_or_variant = law_type:law_presidential_republic
+						has_law_or_variant = law_type:law_parliamentary_republic
 					}
 				}
 			}
@@ -64,7 +64,7 @@
 			scope:actor ?= {
 				is_subject_of = c:GBR
 				c:GBR = {
-					has_law = law_type:law_theocracy
+					has_law_or_variant = law_type:law_theocracy
 				}
 			}
 		}
@@ -81,7 +81,7 @@
 			scope:actor ?= {
 				is_subject_of = c:GBR
 				c:GBR = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 			}
 		}
@@ -99,7 +99,7 @@
 			NOT = { coa_def_communist_flag_trigger = yes }
 			NOT = {	
 				scope:actor ?= {
-					has_law = law_type:law_technocracy
+					has_law_or_variant = law_type:law_technocracy
 				}
 			}
 		}
@@ -189,7 +189,7 @@
 		trigger = {
 			scope:actor ?= {
 				coa_republic_trigger = yes
-				has_law = law_type:law_technocracy
+				has_law_or_variant = law_type:law_technocracy
 			}
 		}
 	}
@@ -206,8 +206,8 @@ CSA = { # Confederated Governates of America
 		trigger = {
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
 				}
 				country_has_voting_franchise = no
 			}

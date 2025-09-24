@@ -69,7 +69,7 @@ callback_ping.2 = {
 		has_modifier = modifier_callback_ping
 		OR = {
 			total_population > 10000000
-			has_law = law_type:law_closed_borders
+			has_law_or_variant = law_type:law_closed_borders
 		}
 	}
 

@@ -17,8 +17,8 @@
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_commercialized_agriculture
-					has_law = law_type:law_homesteading
+					has_law_or_variant = law_type:law_commercialized_agriculture
+					has_law_or_variant = law_type:law_homesteading
 				}
 			}
 			custom_tooltip = farmers_pb_ig_shift_effect_negative_tt
@@ -49,15 +49,15 @@
 		}
 		if = {
 			limit = { 
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_council_republic
 			}
 			add = 250
 		}
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_cooperative_ownership
-					has_law = law_type:law_command_economy
+					has_law_or_variant = law_type:law_cooperative_ownership
+					has_law_or_variant = law_type:law_command_economy
 				}
 			}
 			add = 100

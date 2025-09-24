@@ -24,20 +24,20 @@ milei.1 = {
 		country_has_primary_culture = cu:argentine
 		has_technology_researched = anarchism
 		NAND = {
-			has_law = law_type:law_no_social_security
+			has_law_or_variant = law_type:law_no_social_security
 			OR = {
-				has_law = law_type:law_no_health_system
-				has_law = law_type:law_private_health_insurance
+				has_law_or_variant = law_type:law_no_health_system
+				has_law_or_variant = law_type:law_private_health_insurance
 			}
 			OR = {
-				has_law = law_type:law_no_schools
-				has_law = law_type:law_private_schools
+				has_law_or_variant = law_type:law_no_schools
+				has_law_or_variant = law_type:law_private_schools
 			}
-			has_law = law_type:law_no_colonial_affairs
-			has_law = law_type:law_no_home_affairs
-			has_law = law_type:law_no_workers_rights
-			NOT = { has_law = law_type:law_total_war }
-			has_law = law_type:law_no_police
+			has_law_or_variant = law_type:law_no_colonial_affairs
+			has_law_or_variant = law_type:law_no_home_affairs
+			has_law_or_variant = law_type:law_no_workers_rights
+			NOT = { has_law_or_variant = law_type:law_total_war }
+			has_law_or_variant = law_type:law_no_police
 		}
 	}
 
