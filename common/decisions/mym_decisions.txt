@@ -56,7 +56,7 @@ decision_activate_callback_ping = {
 	}
 
 	possible = {
-		NOT = { has_law = law_type:law_closed_borders }
+		NOT = { has_law_or_variant = law_type:law_closed_borders }
 		any_scope_state= {
 			state_is_eligible_as_mass_migration_target = yes
 		}

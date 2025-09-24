@@ -66,18 +66,18 @@
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_anarchy
-				has_law = law_type:law_national_militia
-				has_law = law_type:law_laissez_faire
-				has_law = law_type:law_protected_speech
-				has_law = law_type:law_no_police
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_anarchy
+				has_law_or_variant = law_type:law_national_militia
+				has_law_or_variant = law_type:law_laissez_faire
+				has_law_or_variant = law_type:law_protected_speech
+				has_law_or_variant = law_type:law_no_police
+				has_law_or_variant = law_type:law_council_republic
 			}
 		}
 		# Monarchs cannot be anarcho_libertarian
 		NAND = {
 			owner = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 			OR = {
 				is_ruler = yes
@@ -104,7 +104,7 @@
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law = law_type:law_council_republic }
+					NOT = { has_law_or_variant = law_type:law_council_republic }
 				}
 				ig_approval <= -5
 			}
@@ -114,7 +114,7 @@
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law = law_type:law_council_republic }
+					NOT = { has_law_or_variant = law_type:law_council_republic }
 					average_sol <= 10
 				}
 			}
@@ -124,7 +124,7 @@
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_anarchy
+					has_law_or_variant = law_type:law_anarchy
 				}
 				scope:interest_group = {
 					is_in_government = yes
@@ -213,20 +213,20 @@ ideology_anti_statist = {
 			has_role = agitator
 			NOR = {
 				owner = {
-					has_law = law_type:law_no_social_security
-					has_law = law_type:law_no_health_system
-					has_law = law_type:law_no_schools
-					has_law = law_type:law_no_colonial_affairs
-					has_law = law_type:law_no_home_affairs
-					has_law = law_type:law_no_workers_rights
-					has_law = law_type:law_no_police
+					has_law_or_variant = law_type:law_no_social_security
+					has_law_or_variant = law_type:law_no_health_system
+					has_law_or_variant = law_type:law_no_schools
+					has_law_or_variant = law_type:law_no_colonial_affairs
+					has_law_or_variant = law_type:law_no_home_affairs
+					has_law_or_variant = law_type:law_no_workers_rights
+					has_law_or_variant = law_type:law_no_police
 				}
 			}	
 		}
 		# Monarchs cannot be anti_statist
 		NAND = {
 			owner = {
-				has_law = law_type:law_monarchy
+				has_law_or_variant = law_type:law_monarchy
 			}
 			OR = {
 				is_ruler = yes
@@ -254,7 +254,7 @@ ideology_anti_statist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law = law_type:law_council_republic }
+					NOT = { has_law_or_variant = law_type:law_council_republic }
 				}
 				scope:interest_group = {
 					ig_approval <= -5
@@ -266,7 +266,7 @@ ideology_anti_statist = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law = law_type:law_council_republic }
+					NOT = { has_law_or_variant = law_type:law_council_republic }
 					average_sol <= 10
 				}
 			}
@@ -276,7 +276,7 @@ ideology_anti_statist = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_anarchy
+					has_law_or_variant = law_type:law_anarchy
 				}
 				scope:interest_group = {
 					is_in_government = yes
@@ -332,7 +332,7 @@ ideology_anti_feminist = {
     non_interest_group_leader_trigger = {
         has_role = agitator
         owner = {
-            has_law = law_type:law_womens_suffrage
+            has_law_or_variant = law_type:law_womens_suffrage
         }
         interest_group = {
             ideology_anti_feminist_valid_trigger = yes
@@ -359,8 +359,8 @@ ideology_anti_feminist = {
                 limit = {
                     owner = { 
                         NOR = {
-                            has_law = law_type:law_no_womens_rights
-                            has_law = law_type:law_women_own_property
+                            has_law_or_variant = law_type:law_no_womens_rights
+                            has_law_or_variant = law_type:law_women_own_property
                         }
                     }
                 }
@@ -486,12 +486,12 @@ ideology_secular_humanitarian = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_multicultural
-				has_law = law_type:law_guaranteed_liberties
-				has_law = law_type:law_protected_speech
-				has_law = law_type:law_womens_suffrage
-				has_law = law_type:law_compulsory_primary_school
-				has_law = law_type:law_total_separation
+				has_law_or_variant = law_type:law_multicultural
+				has_law_or_variant = law_type:law_guaranteed_liberties
+				has_law_or_variant = law_type:law_protected_speech
+				has_law_or_variant = law_type:law_womens_suffrage
+				has_law_or_variant = law_type:law_compulsory_primary_school
+				has_law_or_variant = law_type:law_total_separation
 			}
 		}
 		interest_group = {
@@ -512,7 +512,7 @@ ideology_secular_humanitarian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_multicultural
+					has_law_or_variant = law_type:law_multicultural
 				}
 			}
 			add = -25
@@ -520,7 +520,7 @@ ideology_secular_humanitarian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_guaranteed_liberties
+					has_law_or_variant = law_type:law_guaranteed_liberties
 				}
 			}
 			add = -25
@@ -528,7 +528,7 @@ ideology_secular_humanitarian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_protected_speech
+					has_law_or_variant = law_type:law_protected_speech
 				}
 			}
 			add = -25
@@ -536,7 +536,7 @@ ideology_secular_humanitarian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_womens_suffrage
+					has_law_or_variant = law_type:law_womens_suffrage
 				}
 			}
 			add = -25
@@ -544,7 +544,7 @@ ideology_secular_humanitarian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_compulsory_primary_school
+					has_law_or_variant = law_type:law_compulsory_primary_school
 				}
 			}
 			add = -25
@@ -552,7 +552,7 @@ ideology_secular_humanitarian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_total_separation
+					has_law_or_variant = law_type:law_total_separation
 				}
 			}
 			add = -25
@@ -562,8 +562,8 @@ ideology_secular_humanitarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_ethnostate
-						has_law = law_type:law_national_supremacy
+						has_law_or_variant = law_type:law_ethnostate
+						has_law_or_variant = law_type:law_national_supremacy
 					}
 				}
 			}
@@ -573,8 +573,8 @@ ideology_secular_humanitarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_national_guard
-						has_law = law_type:law_secret_police
+						has_law_or_variant = law_type:law_national_guard
+						has_law_or_variant = law_type:law_secret_police
 					}
 				}
 			}
@@ -584,8 +584,8 @@ ideology_secular_humanitarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_censorship
-						has_law = law_type:law_outlawed_dissent
+						has_law_or_variant = law_type:law_censorship
+						has_law_or_variant = law_type:law_outlawed_dissent
 					}
 				}
 			}
@@ -595,8 +595,8 @@ ideology_secular_humanitarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_no_womens_rights
-						has_law = law_type:law_women_own_property
+						has_law_or_variant = law_type:law_no_womens_rights
+						has_law_or_variant = law_type:law_women_own_property
 					}
 				}
 			}
@@ -606,8 +606,8 @@ ideology_secular_humanitarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_restricted_child_labor
-						has_law = law_type:law_compulsory_primary_school
+						has_law_or_variant = law_type:law_restricted_child_labor
+						has_law_or_variant = law_type:law_compulsory_primary_school
 					}
 				}
 			}
@@ -617,8 +617,8 @@ ideology_secular_humanitarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_state_religion
-						has_law = law_type:law_freedom_of_conscience
+						has_law_or_variant = law_type:law_state_religion
+						has_law_or_variant = law_type:law_freedom_of_conscience
 					}
 				}
 			}
@@ -766,12 +766,12 @@ ideology_libertarian_utopian = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_anarchy
-				has_law = law_type:law_national_militia
-				has_law = law_type:law_laissez_faire
-				has_law = law_type:law_protected_speech
-				has_law = law_type:law_no_police
-				has_law = law_type:law_council_republic
+				has_law_or_variant = law_type:law_anarchy
+				has_law_or_variant = law_type:law_national_militia
+				has_law_or_variant = law_type:law_laissez_faire
+				has_law_or_variant = law_type:law_protected_speech
+				has_law_or_variant = law_type:law_no_police
+				has_law_or_variant = law_type:law_council_republic
 			}
 		}
 		OR = {
@@ -793,7 +793,7 @@ ideology_libertarian_utopian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 				}
 				scope:interest_group = {
 					ig_approval <= -5
@@ -805,7 +805,7 @@ ideology_libertarian_utopian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_council_republic
+					has_law_or_variant = law_type:law_council_republic
 					average_sol <= 10
 				}
 			}
@@ -815,7 +815,7 @@ ideology_libertarian_utopian = {
 		if = {
 			limit = {
 				owner = {
-					NOT = { has_law = law_type:law_anarchy }
+					NOT = { has_law_or_variant = law_type:law_anarchy }
 				}
 				is_in_government = no
 			}
