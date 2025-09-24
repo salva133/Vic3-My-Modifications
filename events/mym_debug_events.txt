@@ -8,7 +8,7 @@ mym_debug.1 = {
 	flavor = mym_debug.1.ff
 
 	event_image = {
-		texture = gfx/event_images/mym_debug.dds
+		texture = gfx/event_pictures/mym_debug.dds
 	}
 
 	trigger = {
@@ -220,7 +220,7 @@ mym_debug.2 = {
 	
 
 	event_image = {
-		texture = gfx/event_images/mym_debug.dds
+		texture = gfx/event_pictures/mym_debug.dds
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -347,7 +347,7 @@ mym_debug.3 = {
 	
 
 	event_image = {
-		texture = gfx/event_images/mym_debug.dds
+		texture = gfx/event_pictures/mym_debug.dds
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -648,7 +648,7 @@ mym_debug.4 = {
 	flavor = mym_debug.4.ff
 
 	event_image = {
-		texture = gfx/event_images/mym_debug.dds
+		texture = gfx/event_pictures/mym_debug.dds
 	}
 
 	trigger = {
@@ -701,7 +701,7 @@ mym_debug.5 = {
 	flavor = mym_debug.5.ff
 
 	event_image = {
-		texture = gfx/event_images/mym_debug.dds
+		texture = gfx/event_pictures/mym_debug.dds
 	}
 
 	trigger = {
@@ -716,88 +716,6 @@ mym_debug.5 = {
 	option = {
 		name = mym_debug.3.aa
 		default_option = yes
-
-		hidden_effect = {
-			trigger_event = { id = mym_debug.4 popup = yes }
-		}
-	}
-	option = {
-		name = create_csa_in_NC
-
-		trigger = {
-			NOT = { exists = c:CSA }
-		}
-
-		create_country = {
-			tag = CSA
-			origin = this
-			state = s:STATE_NORTH_CAROLINA.region_state:USA
-		}
-
-		hidden_effect = {
-			trigger_event = { id = mym_debug.4 popup = yes }
-		}
-	}
-	option = {
-		name = give_usa_claims_on_csa_territory
-
-		trigger = {
-			exists = c:CSA
-			any_state = {
-				owner = c:CSA
-				NOT = { has_claim_by = c:USA }
-			}
-		}
-
-		every_state = {
-			limit = {
-				owner = c:CSA
-			}
-			state_region = {
-				add_claim = c:USA
-			}
-		}
-
-		hidden_effect = {
-			trigger_event = { id = mym_debug.4 popup = yes }
-		}
-	}
-	option = {
-		name = remove_us_claims_on_csa_territory
-
-		trigger = {
-			exists = c:CSA
-			any_state = {
-				owner = c:CSA
-				has_claim_by = c:USA
-			}
-		}
-
-		every_state = {
-			limit = {
-				owner = c:CSA
-				has_claim_by = c:USA
-			}
-			state_region = {
-				remove_claim = c:USA
-			}
-		}
-
-		hidden_effect = {
-			trigger_event = { id = mym_debug.4 popup = yes }
-		}
-	}
-	option = {
-		name = re-annex_csa_into_usa
-
-		trigger = {
-			exists = c:USA
-			exists = c:CSA
-		}
-
-		c:USA = {
-			annex = c:CSA
-		}
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.4 popup = yes }
