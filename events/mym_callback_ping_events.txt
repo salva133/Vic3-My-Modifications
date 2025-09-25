@@ -7,6 +7,20 @@ callback_ping.1 = {
 	trigger = {
 		has_modifier = modifier_callback_ping
 		total_population <= 10000000
+
+		any_country = {
+			country_can_have_mass_migration_to = root
+			any_scope_culture = {
+				OR = {
+					shares_heritage_trait_with_any_primary_culture = root
+					shares_language_trait_with_any_primary_culture = root
+				}
+			}
+		}
+		any_scope_state = {
+			state_is_eligible_as_mass_migration_target = yes
+			has_decree = decree_greener_grass_campaign
+		}
 	}
 
 	immediate = {
@@ -16,19 +30,18 @@ callback_ping.1 = {
 				country_can_have_mass_migration_to = root
 				any_scope_culture = {
 					OR = {
-						shares_language_trait_with_any_primary_culture = root
 						shares_heritage_trait_with_any_primary_culture = root
+						shares_language_trait_with_any_primary_culture = root
 					}
 				}
 			}
 			order_by = global_population
-			position = 0
 			save_scope_as = mass_migration_source_country
 			random_scope_culture = {
 				limit = {
 					OR = {
-						shares_language_trait_with_any_primary_culture = root
 						shares_heritage_trait_with_any_primary_culture = root
+						shares_language_trait_with_any_primary_culture = root
 					}
 				}
 				save_scope_as = mass_migration_source_culture
@@ -40,7 +53,7 @@ callback_ping.1 = {
 				has_decree = decree_greener_grass_campaign
 			}
 			order_by = state_population
-			position = 999
+			position > 200
 			save_scope_as = mass_migration_target_state
 		}
 
