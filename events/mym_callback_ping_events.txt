@@ -21,7 +21,7 @@ callback_ping.1 = {
 					}
 				}
 			}
-			order_by = total_population
+			order_by = global_population
 			position = 0
 			save_scope_as = mass_migration_source_country
 			random_scope_culture = {
