@@ -15,6 +15,9 @@ callback_ping.1 = {
 					shares_heritage_trait_with_any_primary_culture = root
 					shares_language_trait_with_any_primary_culture = root
 				}
+				any_scope_pop = {
+					count > 10000
+				}
 			}
 		}
 		any_scope_state = {
@@ -33,11 +36,14 @@ callback_ping.1 = {
 						shares_heritage_trait_with_any_primary_culture = root
 						shares_language_trait_with_any_primary_culture = root
 					}
+					any_scope_pop = {
+						count > 10000
+					}
 				}
 			}
-			order_by = global_population
+			order_by = total_population
 			save_scope_as = mass_migration_source_country
-			random_scope_culture = {
+			ordered_scope_culture = {
 				limit = {
 					OR = {
 						shares_heritage_trait_with_any_primary_culture = root

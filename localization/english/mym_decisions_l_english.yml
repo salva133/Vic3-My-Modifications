@@ -8,7 +8,14 @@
   decision_want_to_be_free_desc: "#bold I wAnT t0 bReAk FrE3!#!"
 
 # Callback Ping
-decision_activate_callback_ping: "Activate the Callback Ping"
-decision_activate_callback_ping_desc: "#italic meinletmeinletmeinletmeinletmeinlet"
-decision_deactivate_callback_ping: "Deactivate the Callback Ping"
-decision_deactivate_callback_ping_desc: ""
+  decision_activate_callback_ping: "Activate the Callback Ping"
+  decision_activate_callback_ping_desc: "#italic meinletmeinletmeinletmeinletmeinlet"
+  decision_deactivate_callback_ping: "Deactivate the Callback Ping"
+  decision_deactivate_callback_ping_desc: ""
+
+
+
+
+# Extra-Modificational Corrections
+  Turn_on_off_ADVCM_decrees: "#red Toggle ADVCM Decrees"
+  Turn_on_off_ADVCM_decrees_desc: ""
