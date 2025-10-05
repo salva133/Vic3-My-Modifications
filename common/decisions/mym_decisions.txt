@@ -48,7 +48,6 @@ decision_want_to_be_free = {
 }
 
 decision_activate_callback_ping = {
-
 	is_shown = {
 		is_player = yes
 		NOT = { has_modifier = modifier_callback_ping }
@@ -81,7 +80,6 @@ decision_activate_callback_ping = {
 }
 
 decision_deactivate_callback_ping = {
-
 	is_shown = {
 		is_player = yes
 		has_modifier = modifier_callback_ping
