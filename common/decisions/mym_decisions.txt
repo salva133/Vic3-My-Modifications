@@ -1,15 +1,10 @@
 ﻿decision_mym_debug_menu = {
 
-	is_shown = {
-		is_player = yes
-	}
+	is_shown = { is_player = yes }
 
-	possible = {
-		NOT = { has_variable = mym_debug_menu_open_var }
-	}
+	possible = {}
 
 	when_taken = {
-		set_variable = mym_debug_menu_open_var
 		trigger_event = { id = mym_debug.4 popup = yes }
 	}
 
