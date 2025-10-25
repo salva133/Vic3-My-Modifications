@@ -15,9 +15,6 @@ callback_ping.1 = {
 					shares_heritage_trait_with_any_primary_culture = root
 					shares_language_trait_with_any_primary_culture = root
 				}
-				any_scope_pop = {
-					count > 10000
-				}
 			}
 		}
 		any_scope_state = {
