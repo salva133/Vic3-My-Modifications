@@ -3,6 +3,9 @@
 
 	group = je_group_internal_affairs
 
+	can_deactivate = yes
+	inheritable = yes
+
 	is_shown_when_inactive = {
 		game_date >= 1920.1.1
 		owner = {
@@ -15,8 +18,12 @@
 		owner = {
 			owns_entire_state_region = STATE_NEW_YORK
 		}
+		cultural_acceptance_base = {
+			target = cu:south_italian
+			value > acceptance_status_3
+		}
 	}
-	
+
 	immediate = {
 		trigger_event = { id = corleone.1 }
 	}
@@ -28,10 +35,6 @@
 
 	on_complete = {
 		trigger_event = { id = corleone.9 }
-	}
-
-	fail = {
-		NOT = { owns_entire_state_region = STATE_NEW_YORK }
 	}
 
 	on_weekly_pulse = {

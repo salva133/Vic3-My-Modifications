@@ -1,6 +1,4 @@
-﻿# Niche party for anarcho-libertarians in specific circumstances
-
-anarcho_libertarian_party = {
+﻿anarcho_libertarian_party = { # Niche party for anarcho-libertarians in specific circumstances
 	color = rgb{ 36 32 0 }
 	name = {
 		first_valid = {

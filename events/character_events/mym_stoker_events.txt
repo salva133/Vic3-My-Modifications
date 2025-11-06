@@ -78,6 +78,5 @@ stoker.2 = {
 		create_character = {
 			template = vlad_character_template
 		}
-		set_global_variable = vlad_happened_globvar
 	}
 }

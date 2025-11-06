@@ -4,11 +4,10 @@
 	historical = no
 	culture = cu:south_italian
 	religion = rel:catholic
-	interest_group = ig_industrialists
 	is_agitator = yes
 	female = no
 	birth_date = 1891.12.7
-	ideology = ideology_market_liberal
+	interest_group = ig_industrialists
 	traits = {
 		charismatic
 		ambitious
@@ -24,11 +23,10 @@ michael_corleone_character_template = {
 	historical = no
 	culture = cu:south_italian
 	religion = rel:catholic
-	interest_group = ig_industrialists
 	is_agitator = yes
 	female = no
 	birth_date = 1920.3.23
-	ideology = ideology_market_liberal
+	interest_group = ig_industrialists
 	traits = {
 		charismatic
 		ambitious
@@ -38,25 +36,12 @@ michael_corleone_character_template = {
 	}
 }
 
-hp_lovecraft_character_template = {
-	first_name = Howard_Phillips
-	last_name = Lovecraft
-	historical = yes
-	interest_group = ig_intelligentsia
-	female = no
-	birth_date = 1890.8.20
-	# death_date = 1937.3.15
-	traits = {
-		charismatic
-	}
-}
-
 hp_liebkraft_character_template = {
 	first_name = Hans_Peter
 	last_name = Liebkraft
 	historical = no
-	interest_group = ig_intelligentsia
 	female = no
+	interest_group = ig_intelligentsia
 	birth_date = 1890.8.20
 	# death_date = 1937.3.15
 	traits = {
@@ -66,18 +51,19 @@ hp_liebkraft_character_template = {
 
 vlad_character_template = {
 	first_name = Vlad
-	ideology = ideology_feminist
+	ideology = ideology_nihilist
 	is_agitator = yes
-	interest_group = ig_intelligentsia
 	culture = cu:romanian
+	religion = rel:atheist
 	age = 64
 	female = no
-	dna = dna_dracula 
+	dna = dna_dracula
 	traits = {
 		imposing
 	}
 	on_created = {
 		set_character_immortal = yes
+		set_global_variable = vlad_happened_globvar
 	}
 }
 
@@ -86,7 +72,6 @@ oberon_character_template = {
 	last_name = Oberon
 	female = no
 	age = 40
-	interest_group = ig_rural_folk
 	ideology = ideology_luddite
 	ig_leader = yes
 	traits = {
@@ -99,6 +84,7 @@ oberon_character_template = {
 	}
 	on_created = {
 		set_character_immortal = yes
+		set_global_variable = oberon_happened_globvar
 	}
 }
 
@@ -106,7 +92,6 @@ milei_character_template = {
 	last_name = Milei
 	female = no
 	age = 30
-	interest_group = ig_industrialists
 	ideology = ideology_anti_statist
 	is_agitator = yes
 	traits = {
@@ -116,27 +101,5 @@ milei_character_template = {
 	}
 	on_created = {
 		set_global_variable = milei_happened_globvar
-	}
-}
-
-friedrich_nietzsche_character_template = {
-	first_name = Friedrich
-	last_name = Nietzsche
-	birth_date = 1844.10.15
-	female = no
-	historical = yes
-	is_agitator = yes
-	culture = cu:north_german
-	religion = rel:atheist
-	interest_group = ig_intelligentsia
-	ideology = ideology_nihilist
-	noble = no
-	traits = {
-		erudite
-		arrogant
-		literary
-	}
-	on_created = {
-		set_global_variable = nietzsche_happened_globvar
 	}
 }
