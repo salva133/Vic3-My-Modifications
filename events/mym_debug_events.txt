@@ -716,42 +716,7 @@ mym_debug.5 = {
 		}
 	}
 	option = {
-		name = add_bias
-
-		every_country = {
-			limit = {
-				OR = {
-					c:RUS = this
-					overlord = c:RUS
-				}
-			}
-			every_scope_state = {
-				limit = {
-					NOT = {
-						has_modifier = modifier_strong_communist_bias
-					}
-				}
-				add_modifier = {
-					name = modifier_strong_communist_bias
-					years = 100
-					is_decaying = yes
-				}
-			}
-		}
-
-		c:ITA ?= {
-			every_scope_state = {
-				limit = {
-					NOT = {
-						has_modifier = modifier_strong_fascist_bias
-					}
-				}
-				add_modifier = {
-					name = modifier_strong_fascist_bias
-					years = 100
-					is_decaying = yes
-				}
-			}
-		}
+		name = mym_debug.3.a
+		
 	}
 }
