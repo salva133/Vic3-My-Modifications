@@ -2,8 +2,7 @@
 	color = "red"
 
 	possible = {
-		exists = c:ABI
-		THIS = c:ABI
+		c:ABI ?= this
 		has_law_or_variant = law_type:law_council_republic
 	}
 }

@@ -18,11 +18,11 @@ hp_lovecraft.1 = {
 
 	trigger = {
 		game_date > 1928.2.13
-		NOT = { has_global_variable = hp_happened_globvar }
+		NOT = { has_global_variable = lovecraft_happened_globvar }
 	}
 
 	immediate = {
-		set_global_variable = hp_happened_globvar
+		set_global_variable = lovecraft_happened_globvar
 		random_country = {
 			limit = {
 				owns_entire_state_region = STATE_RHODE_ISLAND
@@ -34,7 +34,6 @@ hp_lovecraft.1 = {
 				template = hp_lovecraft_character_template
 			}
 		}
-		set_global_variable = hp_happened_globvar
 		random_scope_character = {
 			limit = {
 				has_template = hp_lovecraft_character_template
@@ -67,11 +66,11 @@ hp_lovecraft.2 = {
 
 	trigger = {
 		game_date > 1928.2.13
-		NOT = { has_global_variable = hp_happened_globvar }
+		NOT = { has_global_variable = lovecraft_happened_globvar }
 	}
 
 	immediate = {
-		set_global_variable = hp_happened_globvar
+		set_global_variable = lovecraft_happened_globvar
 		random_country = {
 			limit = {
 				OR = {
@@ -87,7 +86,6 @@ hp_lovecraft.2 = {
 				template = hp_liebkraft_character_template
 			}
 		}
-		set_global_variable = hp_happened_globvar
 		random_scope_character = {
 			limit = {
 				has_template = hp_liebkraft_character_template
@@ -120,7 +118,7 @@ hp_lovecraft.3 = {
 
 	trigger = {
 		game_date > 1937.3.15
-		has_global_variable = hp_happened_globvar
+		has_global_variable = lovecraft_happened_globvar
 		NOT = { has_global_variable = hp_dead_globvar }
 	}
 

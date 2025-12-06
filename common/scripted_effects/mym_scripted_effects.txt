@@ -74,9 +74,7 @@ set_up_albionian_claims = {
 	if = {
 		limit = {
 			NOT = {
-				c:ABI = {
-					has_claim = s:STATE_ULSTER
-				}
+				c:ABI ?= { has_claim = s:STATE_ULSTER }
 			}
 		}
 		s:STATE_ULSTER = {
@@ -86,9 +84,7 @@ set_up_albionian_claims = {
 	if = {
 		limit = {
 			NOT = {
-				c:ABI = {
-					has_claim = s:STATE_LANCASHIRE
-				}
+				c:ABI ?= { has_claim = s:STATE_LANCASHIRE }
 			}
 		}
 		s:STATE_LANCASHIRE = {
@@ -98,9 +94,7 @@ set_up_albionian_claims = {
 	if = {
 		limit = {
 			NOT = {
-				c:ABI = {
-					has_claim = s:STATE_LOWLANDS
-				}
+				c:ABI ?= { has_claim = s:STATE_LOWLANDS }
 			}
 		}
 		s:STATE_LOWLANDS = {
@@ -110,9 +104,7 @@ set_up_albionian_claims = {
 	if = {
 		limit = {
 			NOT = {
-				c:ABI = {
-					has_claim = s:STATE_LEINSTER
-				}
+				c:ABI ?= { has_claim = s:STATE_LEINSTER }
 			}
 		}
 		s:STATE_LEINSTER = {
@@ -122,9 +114,7 @@ set_up_albionian_claims = {
 	if = {
 		limit = {
 			NOT = {
-				c:ABI = {
-					has_claim = s:STATE_WALES
-				}
+				c:ABI ?= { has_claim = s:STATE_WALES }
 			}
 		}
 		s:STATE_WALES = {
@@ -160,6 +150,7 @@ set_secret_police_ig_name = {
 	else_if = {
 		limit = {
 			country_has_primary_culture = cu:russian
+			has_law = law_type:law_council_republic
 		}
 		ig:ig_secret_police = {
 			set_interest_group_name = ig_secret_police_RUS_communist
@@ -167,10 +158,18 @@ set_secret_police_ig_name = {
 	}
 	else_if = {
 		limit = {
+			country_has_primary_culture = cu:russian
+		}
+		ig:ig_secret_police = {
+			set_interest_group_name = ig_secret_police_RUS
+		}
+	}
+	else_if = {
+		limit = {
 			country_has_primary_culture = cu:romanian
 		}
 		ig:ig_secret_police = {
-			set_interest_group_name = ig_secret_police_romanian
+			set_interest_group_name = ig_secret_police_ROM
 		}
 	}
 	else_if = {
@@ -178,7 +177,7 @@ set_secret_police_ig_name = {
 			country_has_primary_culture = cu:finnish
 		}
 		ig:ig_secret_police = {
-			set_interest_group_name = ig_secret_police_finnish
+			set_interest_group_name = ig_secret_police_FIN
 		}
 	}
 	else_if = {
@@ -188,16 +187,28 @@ set_secret_police_ig_name = {
 			}
 		}
 		ig:ig_secret_police = {
-			set_interest_group_name = ig_secret_police_spanish
+			set_interest_group_name = ig_secret_police_SPA
+		}
+	}
+	else_if = {
+		limit = { c:ISR ?= this }
+		ig:ig_secret_police = {
+			set_interest_group_name = ig_secret_police_ISR
 		}
 	}
 	else_if = {
 		limit = {
-			exists = c:ISR
-			c:ISR ?= this
+			c:JAP ?= this
+			c:JAP ?= { has_government_type = gov_fascist_state }
 		}
 		ig:ig_secret_police = {
-			set_interest_group_name = ig_secret_police_israel
+			set_interest_group_name = ig_secret_police_ITA_fascist
+		}
+	}
+	else_if = {
+		limit = { c:ITA ?= this }
+		ig:ig_secret_police = {
+			set_interest_group_name = ig_secret_police_ITA
 		}
 	}
 }
