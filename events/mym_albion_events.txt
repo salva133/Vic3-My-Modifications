@@ -42,9 +42,7 @@ albion.1 = {
 	immediate = {
 		set_global_variable = albion_seceeded_globvar
 		create_albion = yes
-		c:ABI = {
-			set_up_albion_gov = yes
-		}
+		c:ABI ?= { set_up_albion_gov = yes }
 	}
 
 	option = {
@@ -55,16 +53,19 @@ albion.1 = {
 	option = {
 		name = albion.1.b
 
-		trigger = { c:GBR = this }
+		trigger = { c:GBR ?= this }
 
 		play_as = c:ABI
 	}
 
 	after = {
 		set_up_albionian_claims = yes
-		c:ABI = {
-			create_character = {
-				template = oberon_character_template
+		if = {
+			limit = { NOT = { has_global_variable = oberon_happened_globvar } }
+			c:ABI ?= {
+				create_character = {
+					template = oberon_character_template
+				}
 			}
 		}
 		trigger_event = {

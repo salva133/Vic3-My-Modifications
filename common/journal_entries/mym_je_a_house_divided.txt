@@ -4,21 +4,20 @@
 	group = je_group_historical_content
 
 	is_shown_when_inactive = {
-		exists = c:USA
-		c:USA = ROOT
+		c:USA ?= ROOT
 		exists = c:CSA
-		NOT = { exists = c:FSA }
-		NOT = { has_global_variable = a_house_divided_completed_globvar }
+		NOT = {
+			exists = c:FSA
+			has_global_variable = a_house_divided_completed_globvar
+		}
 	}
 	
 	possible = {
-		exists = c:USA
-		c:USA = {
+		c:USA ?= {
 			is_at_war = no
 			has_revolution = no
 		}
-		exists = c:CSA
-		c:CSA = {
+		c:CSA ?= {
 			is_at_war = no
 			has_revolution = no
 		}
@@ -28,13 +27,9 @@
 		every_state = {
 			limit = {
 				owner = c:CSA
-				NOT = {
-					has_claim_by = c:USA
-				}
+				NOT = { has_claim_by = c:USA }
 			}
-			state_region = {
-				add_claim = c:USA
-			}
+			state_region = { add_claim = c:USA }
 		}
 		set_variable = {
 			name = ahd_progress_var
@@ -92,8 +87,7 @@
 		# USA turns into FSA
 		if = {
 			limit = {
-				exists = c:USA
-				c:USA = ROOT
+				c:USA ?= ROOT
 			}
 			change_tag = FSA
 		}
