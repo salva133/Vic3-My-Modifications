@@ -717,6 +717,5 @@ mym_debug.5 = {
 	}
 	option = {
 		name = mym_debug.3.a
-		
 	}
 }
