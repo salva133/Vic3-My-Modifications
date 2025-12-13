@@ -77,32 +77,16 @@ country_is_a_judeo_christian_nation = {
 	}
 }
 
-state_has_muslim_indians = {
-	culture = {
-		OR = {
-			has_discrimination_trait = arab_speaking
-			has_discrimination_trait = south_asian_heritage
-			has_discrimination_trait = indo_aryan_language
-		}
-	}
-	religion = {
-		has_discrimination_trait = muslim
-	}
-}
-
-trigger_je_excessive_social_welfare = {
+is_welfare_state_with_low_legitimacy = {
 	has_law_or_variant = law_type:law_old_age_pension
 	has_law_or_variant = law_type:law_worker_protections
 	institution_investment_level = {
 		institution = institution_social_security
-		value > 4
+		value = 5
 	}
 	institution_investment_level = {
 		institution = institution_workplace_safety
-		value > 4
+		value = 5
 	}
-	radical_fraction = {
-		value > 0.6
-	}
-	government_legitimacy < 50
+	government_legitimacy < 25
 }
