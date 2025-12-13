@@ -1,5 +1,5 @@
 ﻿je_gangs_of_new_york = {
-	icon = gfx/interface/icons/event_icons/event_newspaper.dds
+	icon = gfx/interface/icons/event_icons/je_gangs_of_new_york.dds
 
 	group = je_group_internal_affairs
 
@@ -8,15 +8,19 @@
 
 	is_shown_when_inactive = {
 		game_date >= 1920.1.1
-		owner = {
-			owns_entire_state_region = STATE_NEW_YORK
+		s:STATE_NEW_YORK = {
+			any_scope_state = {
+				owner = root
+			}
 		}
 	}
-
+	
 	possible = {
 		game_date >= 1920.8.16
-		owner = {
-			owns_entire_state_region = STATE_NEW_YORK
+		s:STATE_NEW_YORK = {
+			any_scope_state = {
+				owner = root
+			}
 		}
 		cultural_acceptance_base = {
 			target = cu:south_italian
