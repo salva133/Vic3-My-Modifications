@@ -1,0 +1,33 @@
+﻿namespace = anarchist_balkanisation
+
+anarchist_balkanisation.1 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		has_law_or_variant = law_type:law_anarchy
+		government_legitimacy < 0.5
+		any_scope_state = {
+			is_capital = no
+			radical_fraction = {
+				value > 0.5
+			}
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				is_capital = no
+				radical_fraction = {
+					value > 0.5
+				}
+			}
+			create_dynamic_country = {
+				origin = owner
+				country_type = recognized
+				capital = this
+			}
+		}
+	}
+}
