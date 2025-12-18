@@ -4,7 +4,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 5
+		priority = 0
 
 		trigger = {
 			scope:actor ?= {
@@ -19,7 +19,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 5
+		priority = 0
 
 		trigger = {
 			scope:actor ?= {
@@ -36,7 +36,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 5
+		priority = 0
 
 		trigger = {
 			scope:actor ?= {
@@ -59,7 +59,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 5
+		priority = 0
 
 		trigger = {
 			scope:actor ?= {
@@ -73,7 +73,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 5
+		priority = 0
 
 		trigger = {
 			scope:actor ?= {
@@ -87,7 +87,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 5
+		priority = 0
 
 		trigger = {
 			scope:actor ?= {
@@ -101,7 +101,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 5
+		priority = 0
 
 		trigger = {
 			scope:actor ?= {
@@ -115,7 +115,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 5
+		priority = 0
 
 		trigger = {
 			scope:actor ?= {
@@ -130,7 +130,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 6
+		priority = 1
 
 		trigger = {
 			scope:actor ?= {
@@ -155,14 +155,14 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 6
+		priority = 1
 
 		trigger = {
 			scope:actor ?= {
 				OR = {
-					AND = { exists = c:UZH c:UZH = ROOT }
-					AND = { exists = c:KZH c:KZH = ROOT }
-					AND = { exists = c:OZH c:OZH = ROOT }
+					c:UZH ?= this
+					c:KZH ?= this
+					c:OZH ?= this
 				}
 				NOT = { is_subject_type = subject_type_crown_land }
 				has_gov_regency = no
@@ -174,7 +174,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 6
+		priority = 1
 
 		trigger = {
 			scope:actor ?= {
@@ -191,7 +191,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 5
+		priority = 0
 
 		trigger = {
 			scope:actor ?= {
