@@ -1,22 +1,4 @@
-﻿building_group_bg_agriculture_allowed_collectivization_add={
-	decimals=0
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
-}
-
-building_group_bg_ranching_allowed_collectivization_add={
-	decimals=0
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
-}
-
-state_mennonite_standard_of_living_add={
+﻿state_mennonite_standard_of_living_add={
 	decimals=1
 	color=good
 	game_data={
