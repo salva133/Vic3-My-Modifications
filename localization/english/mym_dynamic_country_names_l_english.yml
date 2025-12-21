@@ -12,3 +12,6 @@
   dyn_c_technocracy: "$ADJECTIVE$ Science Directorate"
   dyn_c_junta: "$ADJECTIVE$ Junta"
   dyn_c_zhuz: "$ADJECTIVE$ Zhuz"
+
+# Country- & Government-based Names
+  dyn_c_bananada: "Bananada"
