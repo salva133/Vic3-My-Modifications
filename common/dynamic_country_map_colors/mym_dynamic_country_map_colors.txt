@@ -6,3 +6,26 @@
 		has_law_or_variant = law_type:law_council_republic
 	}
 }
+
+bananada = {
+	color = "orange"
+
+	possible = {
+		c:CAN ?= THIS
+		NOT = { is_subject_of = c:GBR }
+		has_law_or_variant = law_type:law_presidential_republic
+		country_has_voting_franchise = no
+		NAND = {
+			is_involved_in_journal_entry = je_peru_bolivia
+			has_variable = pbc_member
+		}
+		any_scope_state = {
+			has_building = building_banana_plantation
+		}
+		market = {
+			mg:fruit = {
+				market_goods_exports >= 200
+			}
+		}
+	}
+}
