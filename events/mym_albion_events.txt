@@ -22,9 +22,7 @@ albion.1 = {
 		owns_entire_state_region = STATE_LANCASHIRE
 		s:STATE_LANCASHIRE = {
 			any_scope_state = {
-				radical_fraction = {
-					value = 0.5
-				}
+				radical_fraction = { value = 0.5 }
 				OR = {
 					any_scope_pop = {
 						percent = 0.4
