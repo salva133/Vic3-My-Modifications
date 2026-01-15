@@ -3,21 +3,18 @@
 mennonite_migration.1 = {
 	type = country_event
 	placement = root
+
 	title  = mennonite_migration.1.tt
 	desc   = mennonite_migration.1.dd
 	flavor = mennonite_migration.1.ff
 
 	duration = 3
 
-	cooldown = {
-		months = 12
-	}
+	cooldown = { months = 12 }
 
 	icon = gfx/interface/icons/event_icons/event_newspaper.dds
 
-	# event_image = {
-	# 	texture = ""
-	# }
+	event_image = { texture = gfx/event_pictures/mennonite_1.dds }
 
 	trigger = {
 		c:USA ?= this
@@ -43,9 +40,7 @@ mennonite_migration.1 = {
 			}
 			save_scope_as = mennonite_origin_state
 			every_scope_pop = {
-				limit = {
-					has_pop_religion = mennonite
-				}
+				limit = { has_pop_religion = mennonite }
 				save_scope_as = mennonites_pop
 			}
 		}
@@ -67,7 +62,6 @@ mennonite_migration.1 = {
 				save_scope_as = german_mennonites_pop
 			}
 		}
-
 		scope_historical_mennonite_target_states = yes
 	}
 
@@ -75,21 +69,12 @@ mennonite_migration.1 = {
 		name = mennonite_migration.1.a
 		default_option = yes
 
-		trigger = {
-			exists = scope:mennonite_origin_state
-			exists = scope:mennonites_pop
-			exists = scope:german_mennonite_origin_state
-			exists = scope:german_mennonites_pop
-		}
-
 		if = {
 			limit = { exists = scope:mennonite_origin_state }
 			scope:mennonite_origin_state = {
 				if = {
 					limit = { exists = scope:mennonites_pop }
-					scope:mennonites_pop = {
-						move_mennonites = yes
-					}
+					scope:mennonites_pop = { move_mennonites = yes }
 				}
 			}
 		}
@@ -97,25 +82,9 @@ mennonite_migration.1 = {
 			limit = { exists = scope:german_mennonite_origin_state }
 			scope:german_mennonite_origin_state = {
 				if = {
-					limit = { exists = scope:german_mennonites_pop 
+					limit = { exists = scope:german_mennonites_pop }
+					scope:german_mennonites_pop = { move_mennonites = yes }
 				}
-					scope:german_mennonites_pop = {
-						move_mennonites = yes
-					}
-				}
-			}
-		}
-	}
-
-	option = {
-		name = mennonite_migration.1.b
-
-		trigger = {
-			NOT = {
-				exists = scope:mennonite_origin_state
-				exists = scope:mennonites_pop
-				exists = scope:german_mennonite_origin_state
-				exists = scope:german_mennonites_pop
 			}
 		}
 	}
