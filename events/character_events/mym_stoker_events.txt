@@ -8,9 +8,7 @@ stoker.1 = {
 	desc =   stoker.1.dd
 	flavor = stoker.1.ff
 
-	event_image = {
-		video = "votp_gunboat_diplomacy"
-	}
+	event_image = { video = "votp_gunboat_diplomacy" }
 	
 	duration = 3
 	
@@ -46,9 +44,7 @@ stoker.2 = {
 	desc =   stoker.2.dd
 	flavor = stoker.2.ff
 
-	event_image = {
-		texture = "gfx/event_pictures/dmitry_shored.dds"
-	}
+	event_image = { texture = "gfx/event_pictures/dmitry_shored.dds" }
 
 	duration = 3
 

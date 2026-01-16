@@ -7,9 +7,7 @@ corleone.1 = { # The Murder of Don Fanucci
 	desc =   corleone.1.dd
 	flavor = corleone.1.ff
 
-	event_image = {
-		video = "southamerica_public_figure_assassination"
-	}
+	event_image = { video = "southamerica_public_figure_assassination" }
 
 	duration = 3
 
@@ -35,9 +33,7 @@ corleone.2 = { # New York Daily Chronicle, November 2, 1922
 	desc =   corleone.2.dd
 	flavor = corleone.2.ff
 
-	event_image = {
-		video = "southamerica_public_figure_assassination"
-	}
+	event_image = { video = "southamerica_public_figure_assassination" }
 
 	duration = 3
 
@@ -66,9 +62,7 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 	desc =   corleone.3.dd
 	flavor = corleone.3.ff
 
-	event_image = {
-		video = "unspecific_signed_contract"
-	}
+	event_image = { video = "unspecific_signed_contract" }
 	
 	duration = 3
 
@@ -107,9 +101,7 @@ corleone.9 = { # The Death of Don Corleone
 	desc =   corleone.9.d
 	flavor = corleone.9.f
 
-	event_image = {
-		video = "ep1_printing_press"
-	}
+	event_image = { video = "ep1_printing_press" }
 
 	duration = 3
 
