@@ -10,9 +10,7 @@ albion.1 = {
 
 	duration = 1
 
-	event_image = {
-		texture = gfx/coat_of_arms/textured_emblems/albion.dds
-	}
+	event_image = { texture = gfx/coat_of_arms/textured_emblems/albion.dds }
 
 	trigger = {
 		NOT = {
@@ -84,9 +82,7 @@ albion.2 = {
 
 	duration = 1
 
-	event_image = {
-		texture = gfx/coat_of_arms/textured_emblems/albion.dds
-	}
+	event_image = { texture = gfx/coat_of_arms/textured_emblems/albion.dds }
 
 	trigger = {
 		# Gets triggered by albion.1

@@ -7,9 +7,7 @@ mym_debug.1 = {
 	desc = mym_debug.1.dd
 	flavor = mym_debug.1.ff
 
-	event_image = {
-		texture = gfx/event_pictures/mym_debug.dds
-	}
+	event_image = { texture = gfx/event_pictures/mym_debug.dds }
 
 	trigger = {
 		# Gets triggered by decision
@@ -219,9 +217,7 @@ mym_debug.2 = {
 
 	
 
-	event_image = {
-		texture = gfx/event_pictures/mym_debug.dds
-	}
+	event_image = { texture = gfx/event_pictures/mym_debug.dds }
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -346,9 +342,7 @@ mym_debug.3 = {
 
 	
 
-	event_image = {
-		texture = gfx/event_pictures/mym_debug.dds
-	}
+	event_image = { texture = gfx/event_pictures/mym_debug.dds }
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -647,9 +641,7 @@ mym_debug.4 = {
 	desc = mym_debug.4.dd
 	flavor = mym_debug.4.ff
 
-	event_image = {
-		texture = gfx/event_pictures/mym_debug.dds
-	}
+	event_image = { texture = gfx/event_pictures/mym_debug.dds }
 
 	trigger = {
 		# Gets triggered by decision
@@ -694,9 +686,7 @@ mym_debug.5 = {
 	desc = mym_debug.5.dd
 	flavor = mym_debug.5.ff
 
-	event_image = {
-		texture = gfx/event_pictures/mym_debug.dds
-	}
+	event_image = { texture = gfx/event_pictures/mym_debug.dds }
 
 	trigger = {
 		# Gets triggered by decision
