@@ -24,33 +24,26 @@ on_game_started_create_mennonites = {
 }
 
 create_albion = {
+	s:STATE_LANCASHIRE = {
+		every_scope_state = {
+			save_scope_as = lancashire_state
+		}
+	}
 	if = {
 		limit = { NOT = { exists = c:ABI } }
 		create_country = {
 			tag = ABI
 			origin = c:GBR
-			state = s:STATE_LANCASHIRE.region_state:GBR
+			state = scope:lancashire_state
+			on_created = {
+				every_scope_pop = {
+					convert_population = {
+						target = rel:druidism
+						value = 0.9
+					}
+				}
+			}
 		}
-	}
-	if = {
-		limit = { exists = s:STATE_LANCASHIRE.region_state:ENG }
-		s:STATE_LANCASHIRE.region_state:ENG = { set_state_owner = c:ABI }
-	}
-	if = {
-		limit = { exists = s:STATE_LANCASHIRE.region_state:WLS }
-		s:STATE_LANCASHIRE.region_state:WLS = { set_state_owner = c:ABI }
-	}
-	if = {
-		limit = { exists = s:STATE_LANCASHIRE.region_state:IRE }
-		s:STATE_LANCASHIRE.region_state:IRE = { set_state_owner = c:ABI }
-	}
-	if = {
-		limit = { exists = s:STATE_LANCASHIRE.region_state:ULS }
-		s:STATE_LANCASHIRE.region_state:ULS = { set_state_owner = c:ABI }
-	}
-	if = {
-		limit = { exists = s:STATE_LANCASHIRE.region_state:SCO }
-		s:STATE_LANCASHIRE.region_state:SCO = { set_state_owner = c:ABI }
 	}
 }
 
