@@ -13,5 +13,3 @@
 
   dyn_c_CSA_confederated_governates: "Confederated Governates of America"
   dyn_c_CSA_confederated_governates_adj: "$CSA_ADJ$"
-
-  dyn_c_ulster_republic: "Republic of $NAME$"

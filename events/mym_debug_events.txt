@@ -707,10 +707,5 @@ mym_debug.5 = {
 	}
 	option = {
 		name = mym_debug.3.a
-
-		trigger_event =  {
-			id = puppet_management.2
-			popup = yes
-		}
 	}
 }
