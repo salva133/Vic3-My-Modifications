@@ -128,7 +128,7 @@ set_secret_police_ig_name = {
 		limit = {
 			country_has_primary_culture = cu:north_german
 		}
-		ig:ig_secret_police = {
+		ig:ig_secret_police ?= {
 			set_interest_group_name = ig_secret_police_north_german
 		}
 	}
@@ -136,7 +136,7 @@ set_secret_police_ig_name = {
 		limit = {
 			country_has_primary_culture = cu:south_german
 		}
-		ig:ig_secret_police = {
+		ig:ig_secret_police ?= {
 			set_interest_group_name = ig_secret_police_south_german
 		}
 	}
@@ -145,7 +145,7 @@ set_secret_police_ig_name = {
 			country_has_primary_culture = cu:russian
 			has_law = law_type:law_council_republic
 		}
-		ig:ig_secret_police = {
+		ig:ig_secret_police ?= {
 			set_interest_group_name = ig_secret_police_RUS_communist
 		}
 	}
@@ -153,7 +153,7 @@ set_secret_police_ig_name = {
 		limit = {
 			country_has_primary_culture = cu:russian
 		}
-		ig:ig_secret_police = {
+		ig:ig_secret_police ?= {
 			set_interest_group_name = ig_secret_police_RUS
 		}
 	}
@@ -161,7 +161,7 @@ set_secret_police_ig_name = {
 		limit = {
 			country_has_primary_culture = cu:romanian
 		}
-		ig:ig_secret_police = {
+		ig:ig_secret_police ?= {
 			set_interest_group_name = ig_secret_police_ROM
 		}
 	}
@@ -169,7 +169,7 @@ set_secret_police_ig_name = {
 		limit = {
 			country_has_primary_culture = cu:finnish
 		}
-		ig:ig_secret_police = {
+		ig:ig_secret_police ?= {
 			set_interest_group_name = ig_secret_police_FIN
 		}
 	}
@@ -179,14 +179,20 @@ set_secret_police_ig_name = {
 				has_discrimination_trait = heritage_iberian
 			}
 		}
-		ig:ig_secret_police = {
+		ig:ig_secret_police ?= {
 			set_interest_group_name = ig_secret_police_SPA
 		}
 	}
 	else_if = {
 		limit = { c:ISR ?= this }
-		ig:ig_secret_police = {
+		ig:ig_secret_police ?= {
 			set_interest_group_name = ig_secret_police_ISR
+		}
+	}
+	else_if = {
+		limit = { c:ITA ?= this }
+		ig:ig_secret_police ?= {
+			set_interest_group_name = ig_secret_police_ITA
 		}
 	}
 	else_if = {
@@ -194,14 +200,25 @@ set_secret_police_ig_name = {
 			c:JAP ?= this
 			c:JAP ?= { has_government_type = gov_fascist_state }
 		}
-		ig:ig_secret_police = {
-			set_interest_group_name = ig_secret_police_ITA_fascist
+		ig:ig_secret_police ?= {
+			set_interest_group_name = ig_secret_police_JAP
 		}
 	}
 	else_if = {
-		limit = { c:ITA ?= this }
-		ig:ig_secret_police = {
-			set_interest_group_name = ig_secret_police_ITA
+		limit = { c:JAP ?= this }
+		ig:ig_secret_police ?= {
+			set_interest_group_name = ig_secret_police_JAP_fascist
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:dixie
+			}
+		}
+		ig:ig_secret_police ?= {
+			set_interest_group_name = ig_secret_police_american
 		}
 	}
 }
