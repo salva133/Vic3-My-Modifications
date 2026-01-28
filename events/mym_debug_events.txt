@@ -9,9 +9,7 @@ mym_debug.1 = {
 
 	event_image = { texture = gfx/event_pictures/mym_debug.dds }
 
-	trigger = {
-		# Gets triggered by decision
-	}
+	trigger = {} # Gets triggered by decision
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -188,9 +186,7 @@ mym_debug.1 = {
 			}
 		}
 
-		every_country = {
-			set_secret_police_ig_name_globally = yes
-		}
+		every_country = { set_secret_police_ig_name_globally = yes }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.1 popup = yes }
@@ -295,9 +291,9 @@ mym_debug.2 = {
 	# to the capital state of the applying nation
 	option = {
 		name = mym_debug.2.c
-		trigger = {
-			ROOT = THIS
-		}
+
+		trigger = { ROOT = THIS }
+
 		every_country = {
 			limit = {
 				NOT = { ROOT = THIS }
@@ -322,9 +318,8 @@ mym_debug.2 = {
 	option = {
 		name = mym_debug.2.d
 
-		trigger = {
-			has_researchable_technology = yes
-		}
+		trigger = { has_researchable_technology = yes }
+
 		add_era_researched = era_5
 
 		hidden_effect = {
@@ -365,11 +360,10 @@ mym_debug.3 = {
 		trigger = {
 			exists = ideology:ideology_anarcho_libertarian
 			ruler = {
-				NOT = {
-					has_ideology = ideology:ideology_anarcho_libertarian
-				}
+				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
 			}
 		}
+
 		if = {
 			limit = {
 				any_scope_character = {
@@ -405,11 +399,10 @@ mym_debug.3 = {
 		trigger = {
 			exists = ideology:ideology_anti_statist
 			ruler = {
-				NOT = {
-					has_ideology = ideology:ideology_anti_statist
-				}
+				NOT = { has_ideology = ideology:ideology_anti_statist }
 			}
 		}
+
 		if = {
 			limit = {
 				any_scope_character = {
@@ -445,11 +438,10 @@ mym_debug.3 = {
 		trigger = {
 			exists = ideology:ideology_anti_feminist
 			ruler = {
-				NOT = {
-					has_ideology = ideology:ideology_anti_feminist
-				}
+				NOT = { has_ideology = ideology:ideology_anti_feminist }
 			}
 		}
+
 		if = {
 			limit = {
 				any_scope_character = {
@@ -485,11 +477,10 @@ mym_debug.3 = {
 		trigger = {
 			exists = ideology:ideology_secular_humanitarian
 			ruler = {
-				NOT = {
-					has_ideology = ideology:ideology_secular_humanitarian
-				}
+				NOT = { has_ideology = ideology:ideology_secular_humanitarian }
 			}
 		}
+
 		if = {
 			limit = {
 				any_scope_character = {
@@ -525,11 +516,10 @@ mym_debug.3 = {
 		trigger = {
 			exists = ideology:ideology_libertarian_utopian
 			ruler = {
-				NOT = {
-					has_ideology = ideology:ideology_libertarian_utopian
-				}
+				NOT = { has_ideology = ideology:ideology_libertarian_utopian }
 			}
 		}
+
 		if = {
 			limit = {
 				any_scope_character = {
@@ -577,6 +567,7 @@ mym_debug.3 = {
 				}
 			}
 		}
+
 		if = {
 			limit = {
 				any_scope_character = {
@@ -643,9 +634,7 @@ mym_debug.4 = {
 
 	event_image = { texture = gfx/event_pictures/mym_debug.dds }
 
-	trigger = {
-		# Gets triggered by decision
-	}
+	trigger = {} # Gets triggered by decision
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -688,9 +677,7 @@ mym_debug.5 = {
 
 	event_image = { texture = gfx/event_pictures/mym_debug.dds }
 
-	trigger = {
-		# Gets triggered by decision
-	}
+	trigger = {} # Gets triggered by decision
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
