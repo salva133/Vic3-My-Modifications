@@ -170,28 +170,6 @@ mym_debug.1 = {
 			trigger_event = { id = mym_debug.1 popup = yes }
 		}
 	}
-	
-	# Sets the name of the secret police interest group dynamically
-	option = {
-		name = mym_debug.1.g
-
-		trigger = {
-			any_country = {
-				NOR = {
-					is_country_type = colonial
-					is_country_type = decentralized
-					is_country_type = unrecognized
-				}
-				exists = ig:ig_secret_police
-			}
-		}
-
-		every_country = { set_secret_police_ig_name_globally = yes }
-
-		hidden_effect = {
-			trigger_event = { id = mym_debug.1 popup = yes }
-		}
-	}
 
 	option = {
 		name = mym_debug.1.h
