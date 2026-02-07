@@ -67,27 +67,6 @@ vlad_character_template = {
 	}
 }
 
-oberon_character_template = {
-	first_name = NoName
-	last_name = Oberon
-	female = no
-	age = 40
-	ideology = ideology_luddite
-	ig_leader = yes
-	traits = {
-		charismatic
-		ambitious
-		popular_commander
-		brave
-		honorable
-		persistent
-	}
-	on_created = {
-		set_character_immortal = yes
-		set_global_variable = oberon_happened_globvar
-	}
-}
-
 milei_character_template = {
 	last_name = Milei
 	female = no
