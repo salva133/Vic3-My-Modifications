@@ -14,7 +14,7 @@
 			}
 		}
 	}
-	
+
 	possible = {
 		game_date >= 1920.8.16
 		s:STATE_NEW_YORK = {

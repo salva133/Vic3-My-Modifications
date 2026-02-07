@@ -3,9 +3,3 @@
 	heritage = heritage_christian
 	color = rgb{ 45 94 101 }
 }
-
-druidism = {
-	icon = gfx/interface/icons/religion_icons/druidism.dds
-	heritage = heritage_british
-	color = rgb{ 0 50 0 }
-}
