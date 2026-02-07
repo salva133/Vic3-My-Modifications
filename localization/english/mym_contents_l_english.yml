@@ -47,16 +47,6 @@
   hp_lovecraft.3.ff: "\"I am practically dead, eternally ill. It is hard to have to die alone.\"\n\n#italic - [SCOPE.sCharacter('hp_scope').GetFullName]"
   hp_lovecraft.3.a: "Close"
 
-  albion.1.tt: "Albion arises"
-  albion.1.dd: "Amidst rising unrest and a surge of cultural revival, Albion has broken away from Britain. The new nation prepares to chart its own path under the banner of tradition and renewal."
-  albion.1.ff: "Old bonds are broken. A new realm stands ready to write its own story."
-  albion.1.a: "Good Lord!"
-  albion.1.b: "The Return of the True King"
-  albion.2.tt: "Albion arises"
-  albion.2.dd: "A mysterious figure known as Oberon steps forward to lead the Albionians, marking the beginning of a new chapter for this ancient land."
-  albion.2.ff: "Éiríonn laochra na hAlban as an scéal chun ceannas a ghlacadh arís.\n\n(From legend into reality, Albion calls forth its champion to reclaim a forgotten destiny.)\n\n#italic - excerpt from an old albionian folk song"
-  albion.2.a: "Long live the King"
-
   milei.1.tt: "A new agitator appears"
   milei.1.dd: "Who is this guy?"
   milei.1.ff: "'We are facing one of the biggest economic disasters in our history and radical action is essential. Inflation is nothing more than a tax on the poorest. We will drastically downsize the state to end this evil. The state is not an engine of prosperity, but a machine of waste. We will reform it so that it serves and not dominates. The freedom of the individual is the highest good. Our reforms will be based on an unshakeable belief in the free market. We will create a society where everyone has the chance to get ahead through hard work and personal responsibility. [ROOT.GetCountry.GetNameNoFlag] will reposition itself as a partner of the free world and not as a vassal of ideological projects.'\n\n#italic - lurid anarcho-libertarian pamphlet#!"

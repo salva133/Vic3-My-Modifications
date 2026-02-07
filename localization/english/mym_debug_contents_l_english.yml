@@ -13,7 +13,6 @@
   mym_debug.1.e: "Trust noone!"
   mym_debug.1.f: "Scramble every [Concept('concept_politician','Politicians')] $concept_ideology$"
   mym_debug.1.g: "Set Secret Police IG name dynamically (#green Global#!)"
-  mym_debug.1.h: "Create Albion"
 
   mym_debug.2.tt: "$mym_debug.pre.tt$ Game Breaker"
   mym_debug.2.dd: "Providing debugging options"

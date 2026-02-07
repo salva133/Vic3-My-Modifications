@@ -1,7 +1,4 @@
 ﻿l_english:
-  ABI: "Albion"
-  ABI_ADJ: "Albionian"
-
 # Dynamic countries
   dyn_c_USA_citizen_states: "Citizen States of America"
   dyn_c_USA_citizen_states_adj: "Citizen-American"
