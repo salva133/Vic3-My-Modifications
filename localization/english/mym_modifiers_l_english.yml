@@ -13,4 +13,4 @@
   advcm_add_birth_rate: "$advcm_preamble$ Added Birth Rate (FUCK MOTHERFUCKERS!)"
 
 # My Stuff
-  modifier_callback_ping: "Callback Ping"
+  modifier_callback_ping: "#bold #yellow Callback Ping#!#!"
