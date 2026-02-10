@@ -187,11 +187,7 @@ mym_debug.2 = {
 
 	icon = gfx/interface/icons/event_icons/waving_flag.dds
 
-	immediate = {
-		random_primary_culture = {
-			save_scope_as = our_primary_culture
-		}
-	}
+	immediate = {}
 
 	# Closes the event
 	option = {
@@ -254,36 +250,7 @@ mym_debug.2 = {
 		}
 	}
 
-	# CALLBACK PING -- Pretty much that, calls all members of the primary culture
-	# (a random one if there are multiple) and state religion 
-	# to the capital state of the applying nation
-	option = {
-		name = mym_debug.2.c
-
-		trigger = { ROOT = THIS }
-
-		every_country = {
-			limit = {
-				NOT = { ROOT = THIS }
-			}
-			every_scope_state = {
-				every_scope_pop = {
-					limit = {
-						culture = scope:our_primary_culture
-						religion = root.religion
-					}
-					move_pop = ROOT.capital
-				}
-			}
-		}
-
-		hidden_effect = {
-			trigger_event = { id = mym_debug.2 popup = yes }
-		}
-	}
-
-	# Gives the root all the tech up to era 5 - clearly a cheat to circumvent achievement invalidation
-	option = {
+	option = { # Gives the root all the tech up to era 5 - clearly a cheat to circumvent achievement invalidation
 		name = mym_debug.2.d
 
 		trigger = { has_researchable_technology = yes }
@@ -311,8 +278,7 @@ mym_debug.3 = {
 
 	icon = gfx/interface/icons/event_icons/waving_flag.dds
 
-	# Closes the event with no additional effect
-	option = {
+	option = { # Closes the event with no additional effect
 		name = mym_debug.3.aa
 		default_option = yes
 
@@ -321,8 +287,7 @@ mym_debug.3 = {
 		}
 	}
 
-	# Makes an anarcho-libertarian agitator the ruler if available, otherwise creates a new anarcho-libertarian agitator and sets him as ruler
-	option = {
+	option = {	# Makes an anarcho-libertarian agitator the ruler if available, otherwise creates a new anarcho-libertarian agitator and sets him as ruler
 		name = mym_debug.3.b
 		
 		trigger = {
@@ -360,8 +325,7 @@ mym_debug.3 = {
 		}
 	}
 
-	# Makes an anti-statist agitator the ruler if available, otherwise creates a new anti-statist agitator and sets him as ruler
-	option = {
+	option = { # Makes an anti-statist agitator the ruler if available, otherwise creates a new anti-statist agitator and sets him as ruler
 		name = mym_debug.3.c
 		
 		trigger = {
@@ -399,8 +363,7 @@ mym_debug.3 = {
 		}
 	}
 
-	# Makes an anti-feminist agitator the ruler if available, otherwise creates a new anti-feminist agitator and sets him as ruler
-	option = {
+	option = { # Makes an anti-feminist agitator the ruler if available, otherwise creates a new anti-feminist agitator and sets him as ruler
 		name = mym_debug.3.d
 		
 		trigger = {
@@ -438,8 +401,7 @@ mym_debug.3 = {
 		}
 	}
 
-	# Makes a secular humanitarian agitator the ruler if available, otherwise creates a new secular humanitarian agitator and sets him as ruler
-	option = {
+	option = { # Makes a secular humanitarian agitator the ruler if available, otherwise creates a new secular humanitarian agitator and sets him as ruler
 		name = mym_debug.3.e
 		
 		trigger = {

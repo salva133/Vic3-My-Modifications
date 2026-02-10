@@ -11,6 +11,3 @@
   advcm_add_assimilation: "$advcm_preamble$ Added Assimilation (Resistance is equal to voltage divided by current)"
   advcm_add_education: "$advcm_preamble$ Added Education (READ MOTHERFUCKERS!)"
   advcm_add_birth_rate: "$advcm_preamble$ Added Birth Rate (FUCK MOTHERFUCKERS!)"
-
-# My Stuff
-  modifier_callback_ping: "#bold #yellow Callback Ping#!#!"

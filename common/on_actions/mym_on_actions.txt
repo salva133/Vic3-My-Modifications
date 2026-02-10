@@ -27,9 +27,6 @@ on_monthly_pulse_country_mym_character_events = {
 
 on_monthly_pulse_country_mym_events = {
 	events = {		
-		callback_ping.1
-		callback_ping.2
-		
 		mennonite_migration.1
 
 		anarchist_balkanisation.1

@@ -1,3 +1,0 @@
-﻿modifier_callback_ping = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_callback_ping.dds
-}
