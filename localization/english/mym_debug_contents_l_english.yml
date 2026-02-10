@@ -20,7 +20,6 @@
   mym_debug.2.aa: "Back"
   mym_debug.2.a: "All countries get era 5 tech"
   mym_debug.2.b: "All countries become independent"
-  mym_debug.2.c: "#gold #bold --- CALLBACK PING ---#!#!"
   mym_debug.2.d: "Give me all the Tech, du Dreck!"
 
   mym_debug.3.tt: "$mym_debug.pre.tt$ Character Spawn"
