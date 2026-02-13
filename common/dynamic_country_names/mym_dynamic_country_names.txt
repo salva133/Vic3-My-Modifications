@@ -4,7 +4,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1
 
 		trigger = {
 			scope:actor ?= {
@@ -19,7 +19,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1
 
 		trigger = {
 			scope:actor ?= {
@@ -36,7 +36,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1
 
 		trigger = {
 			scope:actor ?= {
@@ -59,7 +59,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1
 
 		trigger = {
 			scope:actor ?= {
@@ -74,7 +74,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = 2
 
 		trigger = {
 			scope:actor ?= {
@@ -99,7 +99,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = 2
 
 		trigger = {
 			scope:actor ?= {
@@ -118,12 +118,15 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = 2
 
 		trigger = {
 			scope:actor ?= {
 				NOT = { has_law_or_variant = law_type:law_monarchy }
-				country_has_voting_franchise = yes
+				OR = {
+					has_law_or_variant = law_type:law_state_religion
+					has_law_or_variant = law_type:law_freedom_of_conscience
+				}
 				religion = {
 					has_discrimination_trait = heritage_islamic
 				}
@@ -135,10 +138,11 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 0
+		priority = 1
 
 		trigger = {
 			scope:actor ?= {
+				NOT = { has_law_or_variant = law_type:law_monarchy }
 				has_law_or_variant = law_type:law_technocracy
 			}
 		}
@@ -151,12 +155,11 @@ TRY_INJECT:CAN = {
 		adjective = root_adj
 	
 		is_main_tag_only = yes
-		priority = 100
+		priority = 200
 	
 		trigger = {
 			scope:actor ?= {
 				c:CAN ?= THIS
-				NOT = { is_subject_of = c:GBR }
 				has_law_or_variant = law_type:law_presidential_republic
 				country_has_voting_franchise = no
 				NAND = {
