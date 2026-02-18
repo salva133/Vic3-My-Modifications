@@ -97,7 +97,7 @@
 			has_variable = chose_ethno_nationalism
 		}
 	}
-	
+
 	non_interest_group_leader_weight = {
 		value = 100
 		# More likely for angry IG's outside of council republic
@@ -106,7 +106,9 @@
 				owner = {
 					NOT = { has_law_or_variant = law_type:law_council_republic }
 				}
-				ig_approval <= -5
+				interest_group ?= {
+					ig_approval <= -5
+				}
 			}
 			add = 100
 		}
@@ -126,7 +128,7 @@
 				owner = {
 					has_law_or_variant = law_type:law_anarchy
 				}
-				scope:interest_group = {
+				interest_group ?= {
 					is_in_government = yes
 				}
 			}
@@ -256,7 +258,7 @@ ideology_anti_statist = {
 				owner = {
 					NOT = { has_law_or_variant = law_type:law_council_republic }
 				}
-				scope:interest_group = {
+				interest_group ?= {
 					ig_approval <= -5
 				}
 			}
@@ -278,7 +280,7 @@ ideology_anti_statist = {
 				owner = {
 					has_law_or_variant = law_type:law_anarchy
 				}
-				scope:interest_group = {
+				interest_group ?= {
 					is_in_government = yes
 				}
 			}
@@ -334,7 +336,7 @@ ideology_anti_feminist = {
         owner = {
             has_law_or_variant = law_type:law_womens_suffrage
         }
-        interest_group = {
+        interest_group ?= {
             ideology_anti_feminist_valid_trigger = yes
         }
     }
@@ -413,7 +415,7 @@ ideology_anti_feminist = {
         value = 100
         if = {
             limit = {
-                interest_group = {
+                interest_group ?= {
                     OR = {
                         has_variable = communist_ig_var
                         has_variable = chose_vanguardism
@@ -494,7 +496,7 @@ ideology_secular_humanitarian = {
 				has_law_or_variant = law_type:law_total_separation
 			}
 		}
-		interest_group = {
+		interest_group ?= {
 			ideology_secular_humanitarian_valid_trigger = yes
 		}
 	}
@@ -630,8 +632,10 @@ ideology_secular_humanitarian = {
 				owner = {
 					has_technology_researched = socialism
 				}
-				is_interest_group_type = ig_trade_unions
-				ig_approval < 5
+				interest_group ?= {
+					is_interest_group_type = ig_trade_unions
+					ig_approval < 5
+				}
 			}
 			add = -50
 		}
@@ -671,7 +675,7 @@ ideology_secular_humanitarian = {
 		value = 100
 		if = {
 			limit = {
-				interest_group = {
+				interest_group ?= {
 					OR = {
 						has_variable = chose_ethno_nationalism
 						has_variable = chose_conservatism
@@ -683,7 +687,7 @@ ideology_secular_humanitarian = {
 		}
 		else_if = {
 			limit = {
-				interest_group = {
+				interest_group ?= {
 					OR = {
 						has_variable = communist_ig_var
 						has_variable = chose_vanguardism
@@ -795,9 +799,7 @@ ideology_libertarian_utopian = {
 				owner = {
 					has_law_or_variant = law_type:law_council_republic
 				}
-				scope:interest_group = {
-					ig_approval <= -5
-				}
+				interest_group ?= { ig_approval <= -5 }
 			}
 			add = 100
 		}
@@ -817,7 +819,7 @@ ideology_libertarian_utopian = {
 				owner = {
 					NOT = { has_law_or_variant = law_type:law_anarchy }
 				}
-				is_in_government = no
+				interest_group ?= { is_in_government = no }
 			}
 			add = 75
 		}

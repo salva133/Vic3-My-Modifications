@@ -4,7 +4,6 @@
 	group = je_group_internal_affairs
 
 	can_deactivate = yes
-	inheritable = yes
 
 	is_shown_when_inactive = {
 		game_date >= 1920.1.1
