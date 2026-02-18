@@ -13,13 +13,9 @@ corleone.1 = { # The Murder of Don Fanucci
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	trigger = {
-		# Triggered by JE
-	}
+	trigger = {} # Triggered by JE
 
-	immediate = {
-		
-	}
+	immediate = {}
 
 	option = {
 		name = corleone.1.a
@@ -39,15 +35,11 @@ corleone.2 = { # New York Daily Chronicle, November 2, 1922
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	trigger = {
-		# Triggered by JE
-	}
+	trigger = {} # Triggered by JE
 
 	immediate = {
 		set_global_variable = corleone_2_done
-		ruler = {
-			save_scope_as = ruler_scope
-		}
+		ruler = { save_scope_as = ruler_scope }
 	}
 
 	option = {
@@ -68,15 +60,11 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	trigger = {
-		# Triggered by JE
-	}
+	trigger = {} # Triggered by JE
 
 	immediate = {
 		set_global_variable = corleone_3_done
-		ruler = {
-			save_scope_as = ruler_scope
-		}
+		ruler = { save_scope_as = ruler_scope }
 	}
 
 	option = {
@@ -87,9 +75,7 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 					NOT = { has_template = vito_corleone_character_template }
 				}
 			}
-			create_character = {
-				template = vito_corleone_character_template
-			}
+			create_character = { template = vito_corleone_character_template }
 		}
 	}
 }
@@ -107,30 +93,24 @@ corleone.9 = { # The Death of Don Corleone
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	trigger = {
-		# Triggered by JE
-	}
+	trigger = {} # Triggered by JE
 
 	immediate = {
 		random_scope_character = {
 			limit = { has_template = vito_corleone_character_template }
-			save_scope_as = vito_corleone_scope
+			save_scope_as = vito_corleone
 		}
-		create_character = {
-			template = michael_corleone_character_template
-		}
+		create_character = { template = michael_corleone_character_template }
 		random_scope_character = {
 			limit = { has_template = michael_corleone_character_template }
 			save_scope_as = michael_corleone_scope
 		}
+		set_global_variable = vito_corleone_dead_globvar
 	}
 	
 	option = {
 		name = corleone.9.a
 		
-		scope:vito_corleone_scope = {
-			kill_character = yes
-		}
-		set_global_variable = vito_corleone_dead_globvar
+		scope:vito_corleone = { kill_character = yes }
 	}
 }
