@@ -1,13 +1,4 @@
-﻿ABI_communist = {
-	color = "red"
-
-	possible = {
-		c:ABI ?= this
-		has_law_or_variant = law_type:law_council_republic
-	}
-}
-
-bananada = {
+﻿bananada = {
 	color = "orange"
 
 	possible = {

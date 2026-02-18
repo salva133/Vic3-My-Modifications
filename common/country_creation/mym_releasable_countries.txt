@@ -1,7 +1,0 @@
-﻿ABI = {
-	states = {
-		STATE_LANCASHIRE
-	}
-
-	ai_will_do = { always = no }
-}
