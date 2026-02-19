@@ -1,0 +1,125 @@
+modifier_attraction_anarchist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_anarchist_mult = 99999
+}
+
+modifier_attraction_communist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_communist_mult = 99999
+}
+
+modifier_attraction_corporatist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_corporatist_mult = 99999
+}
+
+modifier_attraction_cultural_majority = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_cultural_majority_mult = 99999
+}
+
+modifier_attraction_cultural_minority = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_cultural_minority_mult = 99999
+}
+
+modifier_attraction_despotic_utopist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_despotic_utopist_mult = 99999
+}
+
+modifier_attraction_fascist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_fascist_mult = 99999
+}
+
+modifier_attraction_feminist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_feminist_mult =  99999
+}
+
+modifier_attraction_labor = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_labor_mult =  99999
+}
+
+modifier_attraction_land_reform = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_land_reform_mult =  99999
+}
+
+modifier_attraction_modernizer = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_modernizer_mult =  99999
+}
+
+modifier_attraction_nihilist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_nihilist_mult =  99999
+}
+
+modifier_attraction_positivist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_positivist_mult =  99999
+}
+
+modifier_attraction_pro_slavery = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_pro_slavery_mult =  99999
+}
+
+modifier_attraction_radical = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_radical_mult =  99999
+}
+
+modifier_attraction_reactionary = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_reactionary_mult =  99999
+}
+
+modifier_attraction_religious_majority = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_religious_majority_mult =  99999
+}
+
+modifier_attraction_royalist_absolutist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_royalist_absolutist_mult = 99999
+}
+
+modifier_attraction_royalist_constitutional = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_royalist_constitutional_mult = 99999
+}
+
+modifier_attraction_socialist = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_socialist_mult = 99999
+}
+
+modifier_attraction_utilitarian = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_utilitarian_mult = 99999
+}

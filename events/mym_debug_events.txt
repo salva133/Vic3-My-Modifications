@@ -595,14 +595,20 @@ mym_debug.4 = {
 
 		trigger_event = { id = mym_debug.5 popup = yes }
 	}
+	option = {
+		name = mym_debug.4.e
+
+		trigger_event = { id = mym_debug.6 popup = yes }
+	}
 }
 
 # Misc Debug Functions Menu
 mym_debug.5 = {
 	type = country_event
 	placement = ROOT
-	title = mym_debug.5.tt
-	desc = mym_debug.5.dd
+
+	title  = mym_debug.5.tt
+	desc   = mym_debug.5.dd
 	flavor = mym_debug.5.ff
 
 	event_image = { texture = gfx/event_pictures/mym_debug.dds }
@@ -627,6 +633,240 @@ mym_debug.5 = {
 		trigger_event = {
 			id = bgy_debug.1
 			popup = yes
+		}
+	}
+}
+
+mym_debug.6 = {
+	type = country_event
+	placement = root
+
+	title  = mym_debug.6.tt
+	desc   = mym_debug.6.dd
+	flavor = mym_debug.6.ff
+
+	icon = gfx/interface/icons/event_icons/waving_flag.dds
+
+	event_image = { texture = gfx/event_pictures/mym_debug.dds }
+
+	trigger = {}
+
+	# Closes the event with no additional effect
+	option = {
+		name = mym_debug.3.aa
+		default_option = yes
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.4 popup = yes }
+		}
+	}
+	option = {
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_anarchist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.a
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_communist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.b
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_corporatist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.c
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_cultural_majority
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.d
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_cultural_minority
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.e
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_despotic_utopist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.f
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_fascist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.g
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_feminist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.h
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_labor
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.i
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_land_reform
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.k
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_modernizer
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.l
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_nihilist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.m
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_positivist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.n
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_pro_slavery
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.o
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_radical
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.p
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_reactionary
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.q
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_religious_majority
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.r
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_royalist_absolutist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.s
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_royalist_constitutional
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.t
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_socialist
+				years = 1
+				is_decaying = yes
+			}
+		}
+	}
+	option = {
+		name = mym_debug.6.v
+		every_scope_state = {
+			add_modifier = {
+				name = modifier_attraction_utilitarian
+				years = 1
+				is_decaying = yes
+			}
 		}
 	}
 }
