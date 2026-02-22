@@ -1,4 +1,4 @@
-modifier_attraction_anarchist = {
+﻿modifier_attraction_anarchist = {
 	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
 
 	state_pop_support_movement_anarchist_mult = 99999
