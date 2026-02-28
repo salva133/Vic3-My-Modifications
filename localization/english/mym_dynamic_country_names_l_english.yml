@@ -1,7 +1,7 @@
 ﻿l_english:
   root_adj: "$ADJECTIVE$"
 # Government-based Names
-  dyn_c_communist_autocracy: "Democratic $ADJECTIVE$ Republic"
+  dyn_c_communist_autocracy: "Democratic Republic of $NAME$"
   dyn_c_communist_democracy: "$ADJECTIVE$ People's Republic"
   dyn_c_fascist_state: "$ADJECTIVE$ State "
   dyn_c_republic: "$ADJECTIVE$ Republic"
