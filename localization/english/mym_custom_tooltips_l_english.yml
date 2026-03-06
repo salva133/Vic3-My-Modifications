@@ -7,10 +7,6 @@
   dmitry_arrived_tt: "The Dmitry has arrived"
   HP_is_alive_tt: "The writer is alive"
 
-# Journal Entries
-  je_a_house_divided_fail_tt: "Time's up"
-  je_ahd_last_man_standing_tt: "Gentlemen, it's Last Man Standing, and we need to be that man"
-
 # Event Options
   mym_debug.1.k_tt: "\"We are all individuals, we are all different...\", they said in unison"
   mym_debug.2.b_tt: "Every country will get research done up to the fifth era"
