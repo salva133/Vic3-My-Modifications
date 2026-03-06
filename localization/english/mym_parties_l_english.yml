@@ -1,3 +1,9 @@
 ﻿l_english:
-  party_anarcho_libertarian: "Anarcho-Libertarians"
-  party_anarcho_libertarian_germans: "Party of Entrepreneurship"
+  # Anarcho-Libertarian Party
+                 party_anarcho_libertarian: "Anarcho-Libertarian Party"
+         party_anarcho_libertarian_germans: "#italic Entrepreneur#! Party"
+  party_anarcho_libertarian_north_armerica: "Liberty Vanguard Collective"
+   party_anarcho_libertarian_south_america: "Sovereign Anarchy League"
+          party_anarcho_libertarian_europe: "Radical Autonomy Union"
+            party_anarcho_libertarian_asia: "Voluntary Freedom Front"
+          party_anarcho_libertarian_africa: "No-State Liberty Syndicate"
