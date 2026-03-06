@@ -1,5 +1,5 @@
 ﻿mennonite = {
 	icon = gfx/interface/icons/religion_icons/mennonite.dds
 	heritage = heritage_christian
-	color = rgb{ 45 94 101 }
+	color = mennonite_turquoise
 }

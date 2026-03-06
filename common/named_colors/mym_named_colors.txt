@@ -1,0 +1,6 @@
+colors = {
+	# Party
+	anarcho_libertarian_yellow = hsv360{ 53 100 70 }
+	# Religion
+	mennonite_turquoise        = hsv360{ 188 50 70 }
+}
