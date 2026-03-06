@@ -3,8 +3,3 @@
   je_gangs_of_new_york: "Gangs of [Concept('concept_state','$STATE_NEW_YORK$')]"
   je_gangs_of_new_york_status: "Maintain control over the entire state of New York as criminal networks rise and fall."
   je_gangs_of_new_york_reason: "The roaring twenties have unleashed a wave of organized crime and underground power struggles. Whoever controls New York shapes the fate of its streets and the nation's criminal underworld."
-
-# JE A House Divided
-  je_a_house_divided: "A House Divided"
-  je_a_house_divided_status: "Unify the country by eliminating the $CSA$ within ten years."
-  je_a_house_divided_reason: "We have ten years to re-unify the States, otherwise the division will become permanent, and a new American order will rise from the ashes of civil conflict."
