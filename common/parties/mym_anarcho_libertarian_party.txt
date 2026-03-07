@@ -1,5 +1,5 @@
 ﻿anarcho_libertarian_party = { # Niche party for anarcho-libertarians in specific circumstances
-	color = anarcho_libertarian_yellow
+	color = hsv360{ 53 100 70 }
 	name = {
 		first_valid = {
 			# German-specific
