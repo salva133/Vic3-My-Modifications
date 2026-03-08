@@ -84,8 +84,9 @@
 					has_law_or_variant = law_type:law_mass_conscription
 					has_law_or_variant = law_type:law_professional_army
 				}
-				ig:ig_armed_forces ?= {
-					is_in_government = yes
+				ruler = {
+					has_role = general
+					is_interest_group_type = ig:ig_armed_forces
 				}
 				NAND = {
 					is_involved_in_journal_entry = je_peru_bolivia
@@ -104,13 +105,17 @@
 		trigger = {
 			scope:actor ?= {
 				has_law_or_variant = law_type:law_presidential_republic
-				has_law_or_variant = law_type:law_autocracy
+				OR = {
+					has_law_or_variant = law_type:law_autocracy
+					has_law_or_variant = law_type:law_oligarchy
+				}
 				OR = {
 					has_law_or_variant = law_type:law_mass_conscription
 					has_law_or_variant = law_type:law_professional_army
 				}
-				ig:ig_armed_forces ?= {
-					is_in_government = yes
+				ruler = {
+					has_role = general
+					is_interest_group_type = ig:ig_armed_forces
 				}
 				NOT = { # Hispanic/Portuguese countries get juntas instead
 					any_primary_culture = {
