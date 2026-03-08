@@ -70,8 +70,8 @@ country_is_a_judeo_christian_nation = {
 		text = country_is_a_judeo_christian_nation_tt
 		religion = {
 			OR = {
-				has_discrimination_trait = christian
-				has_discrimination_trait = jewish
+				has_discrimination_trait = heritage_christian
+				has_discrimination_trait = heritage_jewish
 			}
 		}
 	}
