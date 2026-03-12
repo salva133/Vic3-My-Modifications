@@ -63,8 +63,11 @@
 
 		trigger = {
 			scope:actor ?= {
-				NOT = { c:USA ?= this }
-				NOT = { has_law_or_variant = law_type:law_monarchy }
+				NOT = {
+					c:USA ?= this
+					c:CSA ?= this
+					has_law_or_variant = law_type:law_monarchy
+				}
 				country_has_voting_franchise = yes
 			}
 		}
