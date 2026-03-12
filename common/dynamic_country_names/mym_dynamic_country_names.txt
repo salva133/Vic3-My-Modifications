@@ -197,7 +197,7 @@
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_theocracy
+		name = dyn_c_theocracy_christian
 		adjective = root_adj
 
 		is_main_tag_only = yes
@@ -205,9 +205,37 @@
 
 		trigger = {
 			scope:actor ?= {
-				religion = {
-					NOT = { has_discrimination_trait = heritage_islamic }
-				}
+				is_christian = yes
+				has_law_or_variant = law_type:law_theocracy
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_theocracy_jewish
+		adjective = root_adj
+
+		is_main_tag_only = yes
+		priority = 3
+
+		trigger = {
+			scope:actor ?= {
+				is_jewish = yes
+				has_law_or_variant = law_type:law_theocracy
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_theocracy_islamic
+		adjective = root_adj
+
+		is_main_tag_only = yes
+		priority = 3
+
+		trigger = {
+			scope:actor ?= {
+				is_muslim = yes
 				has_law_or_variant = law_type:law_theocracy
 				country_has_voting_franchise = no
 			}
