@@ -253,6 +253,9 @@
 
 		trigger = {
 			scope:actor ?= {
+				NOT = {
+					c:PAP ?= this
+				}
 				religion = {
 					NOT = { has_discrimination_trait = heritage_islamic }
 				}
