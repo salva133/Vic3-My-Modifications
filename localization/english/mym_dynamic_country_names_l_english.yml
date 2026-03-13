@@ -11,7 +11,7 @@
   dyn_c_junta: "$ADJECTIVE$ Junta"
   dyn_c_high_command: "$ADJECTIVE$ High Command"
   dyn_c_zhuz: "$ADJECTIVE$ Zhuz"
-  dyn_c_theocracy_christian: "Concordat of $NAME$"
+  dyn_c_theocracy_christian: "Conclave of $NAME$"
   dyn_c_theocracy_jewish: "Rabbinate of $NAME$"
   dyn_c_theocracy_islamic: "$ADJECTIVE$ Khalifate"
   dyn_c_theocracy_voting: "Holy $ADJECTIVE$ Republic"
