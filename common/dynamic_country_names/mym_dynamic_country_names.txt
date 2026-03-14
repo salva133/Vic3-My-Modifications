@@ -160,7 +160,10 @@
 
 		trigger = {
 			scope:actor ?= {
-				NOT = { has_law_or_variant = law_type:law_monarchy }
+				NOT = {
+					has_law_or_variant = law_type:law_monarchy
+					is_country_type = decentralized
+				}
 				OR = {
 					has_law_or_variant = law_type:law_state_religion
 					has_law_or_variant = law_type:law_freedom_of_conscience
