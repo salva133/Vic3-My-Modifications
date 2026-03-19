@@ -8,6 +8,6 @@ on:
 
 jobs:
   block-invalid-release-pr:
-    uses: salva133/My-Workflows/.github/workflows/block-invalid-release-branches.yml@13b252b367ac2423dd2a5c2676675590b8f6c8a3
+    uses: salva133/My-Workflows/.github/workflows/block-invalid-release-branches.yml@7229769e5562f12fc2a33062b309e3d396eaf0ef
     with:
       head_ref: ${{ github.head_ref }}
