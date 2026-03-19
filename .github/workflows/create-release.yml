@@ -1,0 +1,18 @@
+﻿name: Create Release
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - master
+
+  workflow_dispatch:
+
+jobs:
+  create-release:
+    if: github.event.pull_request.merged == true
+    uses: salva133/My-Workflows/.github/workflows/create-release.yml@648a7285d488ccc119533cf17cbe0b0f7a111541
+    with:
+      branch_name: ${{ github.event.pull_request.head.ref }}
+      pr_number: ${{ github.event.pull_request.number }}
+      pr_body: ${{ github.event.pull_request.body }}
