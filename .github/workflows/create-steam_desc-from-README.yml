@@ -11,4 +11,4 @@ on:
 
 jobs:
   create-steam_desc-from-README:
-    uses: salva133/My-Workflows/.github/workflows/create-steam_desc-from-README.yml@7229769e5562f12fc2a33062b309e3d396eaf0ef
+    uses: salva133/My-Workflows/.github/workflows/create-steam_desc-from-README.yml@a7b34cd4067123ab5623d7caadbe45f7cf8e8fa4
