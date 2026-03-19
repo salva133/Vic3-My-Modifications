@@ -5,11 +5,10 @@ on:
     types: [closed]
     branches:
       - master
-  workflow_dispatch:
 
 jobs:
   bump-build-number:
     if: github.event.pull_request.merged == true
-    uses: salva133/My-Workflows/.github/workflows/bump-build-number.yml@13b252b367ac2423dd2a5c2676675590b8f6c8a3
+    uses: salva133/My-Workflows/.github/workflows/bump-build-number.yml@7229769e5562f12fc2a33062b309e3d396eaf0ef
     with:
       pr_number: ${{ github.event.pull_request.number }}
