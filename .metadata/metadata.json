@@ -1,8 +1,8 @@
 {
   "name" : "My Modifications",
   "id" : "",
-  "version" : "",
-  "supported_game_version" : "1.12.*",
+  "version" : "0.0.312",
+  "supported_game_version" : "1.12.5",
   "short_description" : "",
   "tags" : [],
   "relationships" : [],
