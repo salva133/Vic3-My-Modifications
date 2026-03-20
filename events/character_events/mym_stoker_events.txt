@@ -9,11 +9,11 @@ stoker.1 = {
 	flavor = stoker.1.ff
 
 	event_image = { video = "votp_gunboat_diplomacy" }
-	
+
 	duration = 3
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	
+
 	trigger = {
 		game_date > 1885.7.24
 		owns_entire_state_region = STATE_BULGARIA
@@ -25,11 +25,11 @@ stoker.1 = {
 			has_global_variable = vlad_happened_globvar
 		}
 	}
-	
+
 	immediate = {
 		set_global_variable = dmitry_set_sails_globvar
 	}
-	
+
 	option = {
 		name = stoker.1.a
 		default_option = yes
@@ -66,7 +66,7 @@ stoker.2 = {
 	immediate = {
 		set_global_variable = dmitry_ran_ashore_at_whitby_globvar
 	}
-	
+
 	option = {
 		name = stoker.2.a
 		default_option = yes

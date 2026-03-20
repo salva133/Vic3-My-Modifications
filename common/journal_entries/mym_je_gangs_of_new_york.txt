@@ -47,7 +47,7 @@
 				}
 				if = {
 					limit = {
-						game_date > 1922.11.2 
+						game_date > 1922.11.2
 						NOT = { has_global_variable = corleone_2_done }
 					}
 					trigger_event = { id = corleone.2 }

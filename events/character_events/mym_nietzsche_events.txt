@@ -177,7 +177,7 @@ nietzsche.2 = {
 	}
 	option = {
 		name = nietzsche.2.b
-	
+
 		random_list = {
 			50 = {
 				scope:nietzsche_scope = {

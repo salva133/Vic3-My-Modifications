@@ -1,6 +1,6 @@
 ﻿namespace = corleone
 
-corleone.1 = { # The Murder of Don Fanucci 
+corleone.1 = { # The Murder of Don Fanucci
 	type = country_event
 	placement = ROOT
 	title =  corleone.1.tt
@@ -55,7 +55,7 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 	flavor = corleone.3.ff
 
 	event_image = { video = "unspecific_signed_contract" }
-	
+
 	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -107,10 +107,10 @@ corleone.9 = { # The Death of Don Corleone
 		}
 		set_global_variable = vito_corleone_dead_globvar
 	}
-	
+
 	option = {
 		name = corleone.9.a
-		
+
 		scope:vito_corleone = { kill_character = yes }
 	}
 }
