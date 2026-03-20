@@ -1,5 +1,5 @@
 ﻿l_english:
-  
+
 ### DEBUGGING EVENTS
   mym_debug.pre.tt: "#blue My Modifications:#!"
   mym_debug.1.tt: "$mym_debug.pre.tt$ Leader Ideology Changer"

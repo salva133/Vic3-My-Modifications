@@ -1,10 +1,13 @@
 ﻿name: Trim Trailing Whitespace
 
 on:
-  push:
-    branches: [ main, master ]
   pull_request:
-    branches: [ main, master ]
+    types: [closed]
+    branches:
+      - master
+  push:
+    branches:
+      - master
 
 permissions:
   contents: write
@@ -13,7 +16,7 @@ jobs:
   trim:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: ${{ github.head_ref || github.ref_name }}
 

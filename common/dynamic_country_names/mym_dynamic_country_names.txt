@@ -275,10 +275,10 @@ TRY_INJECT:CAN = {
 	dynamic_country_name = {
 		name = dyn_c_bananada
 		adjective = root_adj
-	
+
 		is_main_tag_only = yes
 		priority = 200
-	
+
 		trigger = {
 			scope:actor ?= {
 				c:CAN ?= THIS

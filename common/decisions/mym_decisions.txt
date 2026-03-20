@@ -19,7 +19,7 @@ decision_want_to_be_free = {
 		is_subject = yes
 		is_player = yes
 	}
-	
+
 	possible = {
 		is_at_war = no
 		NOT = { is_diplomatic_play_enemy_of = overlord }

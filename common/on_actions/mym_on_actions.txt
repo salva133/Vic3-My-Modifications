@@ -15,18 +15,18 @@ on_monthly_pulse_country_mym_character_events = {
 	events = {
 		stoker.1
 		stoker.2
-		
+
 		hp_lovecraft.3
-		
+
 		milei.1
-		
+
 		nietzsche.1
-		nietzsche.2	
+		nietzsche.2
 	}
 }
 
 on_monthly_pulse_country_mym_events = {
-	events = {		
+	events = {
 		mennonite_migration.1
 
 		anarchist_balkanisation.1
@@ -45,7 +45,7 @@ on_game_started_mym_mennonites_setup = {
 	effect = {
 		# Eastern Europe
 		on_game_started_mym_mennonites_setup_eastern_europe = yes
-		
+
 		# North America
 		on_game_started_mym_mennonites_setup_north_america = yes
 	}

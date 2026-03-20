@@ -79,7 +79,7 @@
 			has_ideology = ideology:ideology_anarcho_libertarian
 		}
 	}
-	
+
 	# Root - IG considering joining
 	# scope:number - the number of IGs that would join this party before the ROOT IG
 	join_weight = {
