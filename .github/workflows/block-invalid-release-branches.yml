@@ -2,12 +2,11 @@
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
     branches:
       - master
 
 jobs:
   block-invalid-release-pr:
-    uses: salva133/My-Workflows/.github/workflows/block-invalid-release-branches.yml@c1243e8785cbe3442c689ce1131a4a016b880961
+    uses: salva133/My-Workflows/.github/workflows/block-invalid-release-branches.yml@4420419345e92b199dcf148a8deeb20de565d3aa
     with:
       head_ref: ${{ github.head_ref }}
