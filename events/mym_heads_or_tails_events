@@ -17,13 +17,57 @@ heads_or_tails.1 = {
 		NOT = {
 			has_variable = heads_or_tails_var
 		}
+		has_journal_entry = je_grand_exhibition
 	}
 
 	immediate = {
 		set_variable = heads_or_tails_var
+		random_scope_character = {
+			limit = {
+				has_role = politician
+			}
+			save_scope_as = heads_or_tails_character
+		}
 	}
 
 	option = {
 		name = heads_or_tails.1.a
+		scope:heads_or_tails_character = {
+			set_variable = heads_character_var
+		}
+	}
+	option = {
+		name = heads_or_tails.1.b
+		scope:heads_or_tails_character = {
+			set_variable = tails_character_var
+		}
+	}
+
+	after = {
+		trigger_event = {
+			id = heads_or_tails.2
+			popup = yes
+		}
+	}
+}
+
+heads_or_tails.2 = {
+	type = country_event
+	placement = root
+
+	title  = heads_or_tails.2.tt
+	desc   = heads_or_tails.2.dd
+	flavor = heads_or_tails.2.ff
+
+	event_image = {
+		texture = gfx/event_pictures/heads_or_tails_1.dds
+	}
+
+	trigger = {}
+
+	immediate = {}
+
+	option = {
+		name = heads_or_tails.2.a
 	}
 }
