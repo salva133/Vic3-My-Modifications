@@ -1,0 +1,29 @@
+﻿namespace = heads_or_tails
+
+heads_or_tails.1 = {
+	type = country_event
+	placement = root
+
+	title  = heads_or_tails.1.tt
+	desc   = heads_or_tails.1.dd
+	flavor = heads_or_tails.1.ff
+
+	event_image = {
+		texture = gfx/event_pictures/heads_or_tails_1.dds
+	}
+
+	trigger = {
+		is_player = yes
+		NOT = {
+			has_variable = heads_or_tails_var
+		}
+	}
+
+	immediate = {
+		set_variable = heads_or_tails_var
+	}
+
+	option = {
+		name = heads_or_tails.1.a
+	}
+}
