@@ -89,7 +89,7 @@
 				}
 				ruler = {
 					has_role = general
-					is_interest_group_type = ig:ig_armed_forces
+					is_interest_group_type = ig_armed_forces
 				}
 				NAND = {
 					is_involved_in_journal_entry = je_peru_bolivia
@@ -115,7 +115,7 @@
 				}
 				ruler = {
 					has_role = general
-					is_interest_group_type = ig:ig_armed_forces
+					is_interest_group_type = ig_armed_forces
 				}
 				NOT = { # Hispanic/Portuguese countries get juntas instead
 					any_primary_culture = {
