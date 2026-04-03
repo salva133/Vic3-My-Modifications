@@ -31,6 +31,29 @@ on_monthly_pulse_country_mym_events = {
 
 		anarchist_balkanisation.1
 	}
+	on_actions = {
+		on_monthly_pulse_country_mym
+	}
+}
+
+on_monthly_pulse_country_mym = {
+	effect = {
+		if = {
+			limit = {
+				has_healthy_economy = yes
+				has_modifier = modifier_has_unhealthy_economy
+			}
+			remove_modifier = modifier_has_unhealthy_economy
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_modifier = modifier_has_unhealthy_economy
+				}
+			}
+			add_modifier = modifier_has_unhealthy_economy
+		}
+	}
 }
 
 on_monthly_pulse_country = {
