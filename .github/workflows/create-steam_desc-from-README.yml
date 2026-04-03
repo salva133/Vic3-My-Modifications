@@ -2,8 +2,6 @@ name: Create steam_desc from README
 
 on:
   push:
-    branches:
-      - master
     paths:
       - 'README.md'
 
@@ -11,4 +9,4 @@ on:
 
 jobs:
   create-steam_desc-from-README:
-    uses: salva133/My-Workflows/.github/workflows/create-steam_desc-from-README.yml@b50545973ea68303c6a280235f9112d958bb3298
+    uses: salva133/My-Workflows/.github/workflows/create-steam_desc-from-README.yml@70c9f5298a4b28bb4bfd5596a339d07642b19a89
