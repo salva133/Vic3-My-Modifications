@@ -123,3 +123,9 @@ modifier_attraction_utilitarian = {
 
 	state_pop_support_movement_utilitarian_mult = 99999.99
 }
+
+modifier_attraction_liberal = {
+	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
+
+	state_pop_support_movement_liberal_mult = 99999.99
+}
