@@ -1,6 +1,8 @@
 ﻿decision_mym_debug_menu = {
 
-	is_shown = { is_player = yes }
+	is_shown = {
+		is_player = yes
+	}
 
 	possible = {}
 
@@ -35,6 +37,40 @@ decision_want_to_be_free = {
 			}
 		}
 		change_infamy = 30
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+decision_mym_enact_the_act = {
+
+	is_shown = {
+		is_player = yes
+		country_has_voting_franchise = yes
+		coa_republic_trigger = yes
+	}
+
+	possible = {
+		any_interest_group_in_government = {
+			law_stance = {
+				law = law_type:law_autocracy
+				value > neutral
+			}
+		}
+		ruler = {
+			interest_group = {
+				law_stance = {
+					law = law_type:law_autocracy
+					value > neutral
+				}
+			}
+		}
+	}
+
+	when_taken = {
+		activate_law = law_type:law_autocracy
 	}
 
 	ai_chance = {
