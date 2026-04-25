@@ -77,3 +77,18 @@ decision_mym_enact_the_act = {
 		value = 0
 	}
 }
+
+decision_mym_force_privatization = {
+	is_shown = {
+		NOR = {
+			has_law = law_type:law_laissez_faire
+			has_modifier = modifier_force_privatization
+		}
+	}
+	when_taken = {
+		add_modifier = {
+			name = modifier_force_privatization
+			months = 3
+		}
+	}
+}

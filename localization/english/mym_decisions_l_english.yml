@@ -1,14 +1,16 @@
 ﻿l_english:
 # DEBUG MENU
-  decision_mym_debug_menu:      "$mym_debug.4.tt$"
+  decision_mym_debug_menu: "$mym_debug.4.tt$"
   decision_mym_debug_menu_desc: "Opens the MYM Debug Menu"
 
 # MyM Decisions
-  decision_want_to_be_free:        "$mym_debug.4.tt$: Do you want to be free?"
-  decision_want_to_be_free_desc:   "#bold I wAnT t0 bReAk FrE3!#!"
-  decision_mym_enact_the_act:      "$mym_debug.4.tt$: Enact #blue The#! #red Act#!"
+  decision_want_to_be_free: "$mym_debug.pre.tt$: Do you want to be free?"
+  decision_want_to_be_free_desc: "#bold I wAnT t0 bReAk FrE3!#!"
+  decision_mym_enact_the_act: "$mym_debug.pre.tt$: Enact #blue The#! #red Act#!"
   decision_mym_enact_the_act_desc: "Consolidate the Power"
+  decision_mym_force_privatization: "$mym_debug.pre.tt$: Force Privatization"
+  decision_mym_force_privatization_desc: ""
 
 # Extra-Modificational Corrections
-  Turn_on_off_ADVCM_decrees:      "#red Toggle ADVCM Decrees"
+  Turn_on_off_ADVCM_decrees: "#red Toggle ADVCM Decrees"
   Turn_on_off_ADVCM_decrees_desc: ""
