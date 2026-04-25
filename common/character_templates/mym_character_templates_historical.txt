@@ -14,6 +14,96 @@
 	}
 }
 
+georg_von_schoenerer_character_template = {
+	first_name = Georg
+	last_name = von_Schoenerer
+	historical = yes
+	is_agitator = yes
+	female = no
+	noble = yes
+	culture = cu:south_german
+	religion = rel:protestant
+	ideology = ideology_folkist
+	birth_date = 1842.7.17
+	traits = {
+		charismatic
+		arrogant
+		demagogue
+	}
+	agitator_usage = {
+		country_trigger = {
+			country_has_primary_culture = cu:south_german
+			has_technology_researched = pan-nationalism
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1873.1.1
+		latest_usage_date = 1907.1.1
+		chance = 100
+	}
+}
+
+adolf_stoecker_character_template = {
+	first_name = Adolf
+	last_name = Stoecker
+	historical = yes
+	is_agitator = yes
+	female = no
+	noble = no
+	culture = cu:north_german
+	religion = rel:protestant
+	ideology = ideology_folkist
+	birth_date = 1835.12.11
+	traits = {
+		charismatic
+		pious
+		inspirational_orator
+	}
+	agitator_usage = {
+		country_trigger = {
+			country_has_primary_culture = cu:north_german
+			has_technology_researched = pan-nationalism
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1874.1.1
+		latest_usage_date = 1909.2.2
+		chance = 100
+	}
+}
+
+eugen_duehring_character_template = {
+	first_name = Eugen
+	last_name = Duehring
+	historical = yes
+	is_agitator = yes
+	female = no
+	noble = no
+	culture = cu:north_german
+	religion = rel:atheist
+	ideology = ideology_folkist
+	birth_date = 1833.1.12
+	traits = {
+		erudite
+		arrogant
+		literary
+	}
+	agitator_usage = {
+		country_trigger = {
+			country_has_primary_culture = cu:north_german
+			has_technology_researched = socialism
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1865.1.1
+		latest_usage_date = 1921.9.21
+		chance = 60
+	}
+}
+
 friedrich_nietzsche_character_template = {
 	first_name = Friedrich
 	last_name = Nietzsche
@@ -29,8 +119,5 @@ friedrich_nietzsche_character_template = {
 		erudite
 		arrogant
 		literary
-	}
-	on_created = {
-		set_global_variable = nietzsche_happened_globvar
 	}
 }

@@ -7,6 +7,17 @@
 	}
 }
 
+ideology_folkist_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_rural_folk
+		is_interest_group_type = ig_petty_bourgeoisie
+		is_interest_group_type = ig_devout
+		is_interest_group_type = ig_trade_unions
+		is_interest_group_type = ig_industrialists
+		is_interest_group_type = ig_intelligentsia
+	}
+}
+
 is_possible_ideology_fascist = {
 	has_technology_researched = mass_propaganda
 }
