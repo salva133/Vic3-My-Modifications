@@ -1,3 +1,7 @@
 modifier_has_unhealthy_economy = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 }
+
+modifier_force_privatization = {
+    country_force_privatization_bool = yes
+}
