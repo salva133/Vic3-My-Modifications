@@ -42,7 +42,6 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_fascist }
-				NOT = { has_ideology = ideology:ideology_solist }
 			}
 			set_ideology = ideology:ideology_fascist
 		}
@@ -69,7 +68,6 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_communist }
-				NOT = { has_ideology = ideology:ideology_solist }
 			}
 			set_ideology = ideology:ideology_communist
 		}
@@ -96,7 +94,6 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_anarchist }
-				NOT = { has_ideology = ideology:ideology_solist }
 			}
 			set_ideology = ideology:ideology_anarchist
 		}
@@ -123,7 +120,6 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
-				NOT = { has_ideology = ideology:ideology_solist }
 			}
 			set_ideology = ideology:ideology_anarcho_libertarian
 		}
@@ -150,7 +146,6 @@ mym_debug.1 = {
 			limit = {
 				has_role = politician
 				NOT = { has_ideology = ideology:ideology_libertarian_utopian }
-				NOT = { has_ideology = ideology:ideology_solist }
 			}
 			set_ideology = ideology:ideology_libertarian_utopian
 		}
@@ -477,81 +472,6 @@ mym_debug.3 = {
 			trigger_event = { id = mym_debug.3 popup = yes }
 		}
 	}
-
-	# Makes an agitator with one of the accelerationist ideologies (neo-industrialist, hyper-individualist, or recreationist) the ruler if available,
-	# otherwise creates a new agitator with one of these ideologies and sets him as ruler (chosen randomly).
-	option = {
-		name = mym_debug.3.g
-
-		trigger = {
-			OR = {
-				exists = ideology:ideology_neo_industrialist
-				exists = ideology:ideology_hyper_individualist
-				exists = ideology:ideology_restorationist
-			}
-			ruler = {
-				NOR = {
-					has_ideology = ideology:ideology_neo_industrialist
-					has_ideology = ideology:ideology_hyper_individualist
-					has_ideology = ideology:ideology_restorationist
-				}
-			}
-		}
-
-		if = {
-			limit = {
-				any_scope_character = {
-					has_role = agitator
-					OR = {
-						has_ideology = ideology:ideology_neo_industrialist
-						has_ideology = ideology:ideology_hyper_individualist
-						has_ideology = ideology:ideology_restorationist
-					}
-				}
-			}
-			random_scope_character = {
-				limit = {
-					has_role = agitator
-					OR = {
-						has_ideology = ideology:ideology_neo_industrialist
-						has_ideology = ideology:ideology_hyper_individualist
-						has_ideology = ideology:ideology_restorationist
-					}
-				}
-				remove_character_role = agitator
-				set_character_as_ruler = yes
-			}
-		}
-		else = {
-			random_list = {
-				33 = {
-					create_character = {
-						is_agitator = yes
-
-						ideology = ideology:ideology_neo_industrialist
-					}
-				}
-				33 = {
-					create_character = {
-						is_agitator = yes
-
-						ideology = ideology:ideology_hyper_individualist
-					}
-				}
-				33 = {
-					create_character = {
-						is_agitator = yes
-
-						ideology = ideology:ideology_restorationist
-					}
-				}
-			}
-		}
-
-		hidden_effect = {
-			trigger_event = { id = mym_debug.3 popup = yes }
-		}
-	}
 }
 
 # MyM Debug Main Menu
@@ -629,12 +549,25 @@ mym_debug.5 = {
 		}
 	}
 	option = {
-		name = mym_debug.3.a
-		trigger_event = {
-			id = ssm_debug.1
-			popup = yes
+		name = "Create Folkist"
+		default_option = yes
+
+		create_character = {
+			is_agitator = yes
+			ideology = ideology_folkist
+		}
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.4 popup = yes }
 		}
 	}
+	# option = {
+	# 	name = mym_debug.3.a
+	# 	trigger_event = {
+	# 		id = ssm_debug.1
+	# 		popup = yes
+	# 	}
+	# }
 }
 
 mym_debug.6 = {

@@ -14,3 +14,6 @@
 
   ideology_libertarian_utopian: "Libertarian Utopian"
   ideology_libertarian_utopian_desc: "#italic Power corrupts. Absolute power corrupts absolutely.#!\nLibertarian utopianism refers to the idea of a lean state in which maximum economic and social freedom is guaranteed. Citizens are as free as possible, there are no social security funds or state redistribution, and the state's influence on private life is kept to a minimum. At the top is an autocrat who rules without democratic participation in order to protect society from harmful interference, abuse of power by parties, and a creeping development towards socialism or communism. The goal is a stable order in which individual freedom and property are permanently guaranteed.
+
+  ideology_folkist: "Folkist"
+  ideology_folkist_desc: "The $ideology_folkist$ holds that the nation is not merely a political unit, but the organic expression of a people bound by shared blood, culture, and history. The state, in this view, is the guardian of that living community — obliged to shield its workers from exploitation, secure their welfare in old age, and raise their children as future bearers of the national heritage. What the nation provides, it provides for its own."
