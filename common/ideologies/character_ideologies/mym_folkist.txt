@@ -2,7 +2,7 @@
     icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_folkist.dds
 
     character_ideology = yes
-    
+
     lawgroup_citizenship = {
         law_subjecthood        = disapprove
         law_ethnostate         = strongly_approve
