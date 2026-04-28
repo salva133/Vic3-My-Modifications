@@ -51,7 +51,7 @@
     non_interest_group_leader_trigger = {
         # Agitator only spawns if at least one of the core folkist goals is not yet achieved
         NAND = {
-            has_role = agitator
+            has_role_of_type = agitator
             owner = {
                 has_law_or_variant = law_type:law_ethnostate
                 has_law_or_variant = law_type:law_worker_protections
