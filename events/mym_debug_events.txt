@@ -33,14 +33,14 @@ mym_debug.1 = {
 			exists = ideology:ideology_fascist
 			is_possible_ideology_fascist = yes
 			any_scope_character = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_fascist }
 			}
 		}
 
 		every_scope_character = {
 			limit = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_fascist }
 			}
 			set_ideology = ideology:ideology_fascist
@@ -59,14 +59,14 @@ mym_debug.1 = {
 			exists = ideology:ideology_communist
 			is_possible_ideology_communist = yes
 			any_scope_character = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_communist }
 			}
 		}
 
 		every_scope_character = {
 			limit = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_communist }
 			}
 			set_ideology = ideology:ideology_communist
@@ -85,14 +85,14 @@ mym_debug.1 = {
 			exists = ideology:ideology_anarchist
 			is_possible_ideology_anarchist = yes
 			any_scope_character = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_anarchist }
 			}
 		}
 
 		every_scope_character = {
 			limit = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_anarchist }
 			}
 			set_ideology = ideology:ideology_anarchist
@@ -111,14 +111,14 @@ mym_debug.1 = {
 			exists = ideology:ideology_anarcho_libertarian
 			is_possible_ideology_anarchist = yes
 			any_scope_character = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
 			}
 		}
 
 		every_scope_character = {
 			limit = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
 			}
 			set_ideology = ideology:ideology_anarcho_libertarian
@@ -137,14 +137,14 @@ mym_debug.1 = {
 			exists = ideology:ideology_libertarian_utopian
 			is_possible_ideology_anarchist = yes
 			any_scope_character = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_libertarian_utopian }
 			}
 		}
 
 		every_scope_character = {
 			limit = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_libertarian_utopian }
 			}
 			set_ideology = ideology:ideology_libertarian_utopian
@@ -295,13 +295,13 @@ mym_debug.3 = {
 		if = {
 			limit = {
 				any_scope_character = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_anarcho_libertarian
 				}
 			}
 			random_scope_character = {
 				limit = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_anarcho_libertarian
 				}
 				remove_character_role = agitator
@@ -333,13 +333,13 @@ mym_debug.3 = {
 		if = {
 			limit = {
 				any_scope_character = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_anti_statist
 				}
 			}
 			random_scope_character = {
 				limit = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_anti_statist
 				}
 				remove_character_role = agitator
@@ -371,13 +371,13 @@ mym_debug.3 = {
 		if = {
 			limit = {
 				any_scope_character = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_anti_feminist
 				}
 			}
 			random_scope_character = {
 				limit = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_anti_feminist
 				}
 				remove_character_role = agitator
@@ -409,13 +409,13 @@ mym_debug.3 = {
 		if = {
 			limit = {
 				any_scope_character = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_secular_humanitarian
 				}
 			}
 			random_scope_character = {
 				limit = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_secular_humanitarian
 				}
 				remove_character_role = agitator
@@ -448,13 +448,13 @@ mym_debug.3 = {
 		if = {
 			limit = {
 				any_scope_character = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_libertarian_utopian
 				}
 			}
 			random_scope_character = {
 				limit = {
-					has_role = agitator
+					has_role_of_type = agitator
 					has_ideology = ideology:ideology_libertarian_utopian
 				}
 				remove_character_role = agitator

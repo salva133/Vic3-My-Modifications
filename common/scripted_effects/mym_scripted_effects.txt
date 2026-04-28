@@ -12,7 +12,7 @@ custom_tooltip = {
 		text = mym_debug.1.k_tt
 		every_scope_character = {
 			limit = {
-				has_role = politician
+				has_role_of_type = politician
 				NOT = { has_ideology = ideology:ideology_solist }
 			}
 			random_list = {

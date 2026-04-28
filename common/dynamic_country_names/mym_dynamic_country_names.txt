@@ -88,7 +88,7 @@
 					has_law_or_variant = law_type:law_professional_army
 				}
 				ruler = {
-					has_role = general
+					has_role_of_type = general
 					is_interest_group_type = ig_armed_forces
 				}
 				NAND = {
@@ -114,7 +114,7 @@
 					has_law_or_variant = law_type:law_professional_army
 				}
 				ruler = {
-					has_role = general
+					has_role_of_type = general
 					is_interest_group_type = ig_armed_forces
 				}
 				NOT = { # Hispanic/Portuguese countries get juntas instead

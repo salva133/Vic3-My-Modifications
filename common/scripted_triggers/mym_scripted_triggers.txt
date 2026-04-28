@@ -42,7 +42,7 @@ at_least_one_politician_is_no_fascist = {
 		exists = ideology:ideology_fascist
 		is_possible_ideology_fascist = yes
 		any_scope_character = {
-			has_role = politician
+			has_role_of_type = politician
 			NOT = { has_ideology = ideology:ideology_fascist }
 		}
 	}
@@ -53,7 +53,7 @@ at_least_one_politician_is_no_communist = {
 		exists = ideology:ideology_communist
 		is_possible_ideology_communist = yes
 		any_scope_character = {
-			has_role = politician
+			has_role_of_type = politician
 			NOT = { has_ideology = ideology:ideology_communist }
 		}
 	}
@@ -67,7 +67,7 @@ at_least_one_politician_is_no_anarchist = {
 	}
 	is_possible_ideology_anarchist = yes
 	any_scope_character = {
-		has_role = politician
+		has_role_of_type = politician
 		NAND = {
 			has_ideology = ideology:ideology_anarchist
 			has_ideology = ideology:ideology_anarcho_libertarian
