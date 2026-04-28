@@ -21,7 +21,7 @@ mennonite_migration.1 = {
 		game_date > 1874.7.1
 		game_date < 1880.7.1
 		any_state = {
-			state_is_in_europe = yes
+			mym_state_is_in_europe = yes
 			any_scope_pop = {
 				has_pop_religion = mennonite
 				count > 10
@@ -36,7 +36,7 @@ mennonite_migration.1 = {
 					has_pop_religion = mennonite
 					count > 10
 				}
-				state_is_in_europe = yes
+				mym_state_is_in_europe = yes
 			}
 			save_scope_as = mennonite_origin_state
 			every_scope_pop = {
@@ -51,7 +51,7 @@ mennonite_migration.1 = {
 					has_pop_religion = mennonite
 					count > 10
 				}
-				state_is_in_europe = yes
+				mym_state_is_in_europe = yes
 			}
 			save_scope_as = german_mennonite_origin_state
 			every_scope_pop = {
