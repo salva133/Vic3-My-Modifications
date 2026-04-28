@@ -1,0 +1,11 @@
+mym_is_christian = {
+	religion = {
+		has_discrimination_trait = heritage_christian
+	}
+}
+
+mym_is_jewish = {
+	religion = {
+		has_discrimination_trait = heritage_jewish
+	}
+}

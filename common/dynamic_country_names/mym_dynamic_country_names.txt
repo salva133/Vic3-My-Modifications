@@ -211,7 +211,7 @@
 
 		trigger = {
 			scope:actor ?= {
-				is_christian = yes
+				mym_is_christian = yes
 				has_law_or_variant = law_type:law_theocracy
 				country_has_voting_franchise = no
 			}
@@ -226,7 +226,7 @@
 
 		trigger = {
 			scope:actor ?= {
-				is_jewish = yes
+				mym_is_jewish = yes
 				has_law_or_variant = law_type:law_theocracy
 				country_has_voting_franchise = no
 			}
