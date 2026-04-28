@@ -16,33 +16,33 @@
 			triggered_desc = {
 				desc = party_anarcho_libertarian_north_armerica
 				trigger = {
-					country_is_in_north_america = yes
+					mym_country_is_in_north_america = yes
 				}
 			}
 			triggered_desc = {
 				desc = party_anarcho_libertarian_south_america
 				trigger = {
 					OR = {
-						country_is_in_south_america = yes
-						country_is_in_central_america = yes
+						mym_country_is_in_south_america = yes
+						mym_country_is_in_central_america = yes
 					}
 				}
 			}
 			triggered_desc = {
 				desc = party_anarcho_libertarian_europe
 				trigger = {
-					country_is_in_europe = yes
+					mym_country_is_in_europe = yes
 				}
 			}
 			triggered_desc = {
 				desc = party_anarcho_libertarian_asia
 				trigger = {
 					OR = {
-						country_is_in_central_asia = yes
-						country_is_in_china = yes
-						country_is_in_east_asia = yes
-						country_is_in_india = yes
-						country_is_in_southeast_asia = yes
+						mym_country_is_in_central_asia = yes
+						mym_country_is_in_china = yes
+						mym_country_is_in_east_asia = yes
+						mym_country_is_in_india = yes
+						mym_country_is_in_southeast_asia = yes
 					}
 				}
 			}
@@ -50,8 +50,8 @@
 				desc = party_anarcho_libertarian_africa
 				trigger = {
 					OR = {
-						country_is_in_africa = yes
-						country_is_in_middle_east = yes
+						mym_country_is_in_africa = yes
+						mym_country_is_in_middle_east = yes
 					}
 				}
 			}
