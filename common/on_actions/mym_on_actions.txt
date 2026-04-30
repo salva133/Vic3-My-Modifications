@@ -47,9 +47,8 @@ on_monthly_pulse_country_mym = {
 		}
 		else_if = {
 			limit = {
-				NOT = {
-					has_modifier = modifier_has_unhealthy_economy
-				}
+				has_healthy_economy = no
+				NOT = { has_modifier = modifier_has_unhealthy_economy }
 			}
 			add_modifier = modifier_has_unhealthy_economy
 		}
