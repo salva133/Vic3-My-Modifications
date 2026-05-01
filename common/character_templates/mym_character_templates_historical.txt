@@ -100,7 +100,7 @@ eugen_duehring_character_template = {
 		}
 		earliest_usage_date = 1865.1.1
 		latest_usage_date = 1921.9.21
-		chance = 60
+		chance = 100
 	}
 }
 
@@ -119,5 +119,44 @@ friedrich_nietzsche_character_template = {
 		erudite
 		arrogant
 		literary
+	}
+}
+
+alisa_rosenbaum_character_template = {
+	first_name = Alisa
+	last_name = Rosenbaum
+	historical = yes
+	is_agitator = yes
+	female = yes
+	noble = no
+	culture = cu:ashkenazi
+	religion = rel:atheist
+	ideology = ideology_market_liberal
+	birth_date = 1905.2.2
+	traits = {
+		erudite
+		arrogant
+		literary
+	}
+	agitator_usage = {
+		country_trigger = {
+			this = c:USA
+			has_technology_researched = international_trade
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1926.1.1 # She fled Russia and moved to NYC
+		latest_usage_date = 1982.3.6
+		chance = 100
+	}
+	on_created = {
+		s:STATE_INGRIA = {
+			random_scope_state = {
+				save_scope_as = alisa_rosenbaum_home_state
+			}
+		}
+		set_home_country_definition = cd:RUS
+		set_home_state = scope:alisa_rosenbaum_home_state
 	}
 }
