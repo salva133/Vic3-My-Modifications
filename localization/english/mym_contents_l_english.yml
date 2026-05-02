@@ -77,3 +77,10 @@
   heads_or_tails.2.dd: "The small coin flies through the air and comes to rest with a clatter on the round porcelain of her plate.\n\n#bold Heads#!."
   heads_or_tails.2.ff: "A Gentleman: 'Told you', he says, with a hint of disappointment in his voice.\nShe hums briefly, as if to confirm it, and adds another chalk line to the half of the board that is titled 'Heads'.\nA Gentleman: 'I never find that as satisfying as I'd imagined.'\nWith an elegant movement, she brings her hand to his face, and her fingertip gently touches the lower edge of his clean-shaven chin, before lifting his face upwards.\nA Lady: 'Chin up. There's always next time.'\nA Gentleman: 'I suppose there is.'"
   heads_or_tails.2.a:  "Well, that was awkward"
+
+# Anarchist Balkanisation
+  anarchist_balkanisation.1.tt: "The Centre Cannot Hold"
+  anarchist_balkanisation.1.dd: "Our doctrine has reached its inevitable conclusion. In [SCOPE.sState('breakaway_state').GetName], the radicals have proclaimed a new commune, refusing all ties to a government they consider as obsolete as the kings before it. There is no army left obedient enough to be sent against them, no decree binding enough to rein them in."
+  anarchist_balkanisation.1.ff: "#lore 'The State, in its dying breath, shall give birth to a thousand free associations of free people. Such is the destiny of mankind.'\n\n#italic — pamphlet circulated in the markets of [SCOPE.sState('breakaway_state').GetCityHubName] in the days before the proclamation#!"
+  anarchist_balkanisation.1.a:  "It was always going to come to this."
+  anarchist_balkanisation.1.b:  "We will bring them back to heel."

@@ -1,17 +1,34 @@
-﻿namespace = anarchist_balkanisation
+namespace = anarchist_balkanisation
 
+# Triggered monthly via on_monthly_pulse_country_mym_events.
+# Anarchist countries with low legitimacy and a radicalized non-capital state
+# see that state secede as a new dynamic country.
 anarchist_balkanisation.1 = {
 	type = country_event
-	hidden = yes
+	placement = root
+
+	title  = anarchist_balkanisation.1.tt
+	desc   = anarchist_balkanisation.1.dd
+	flavor = anarchist_balkanisation.1.ff
+
+	duration = 5
+
+	cooldown = { months = 12 }
+
+	event_image = {
+		video = "votp_barricade"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
 		has_law_or_variant = law_type:law_anarchy
 		government_legitimacy < 0.5
 		any_scope_state = {
 			is_capital = no
-			radical_fraction = {
-				value > 0.5
-			}
+			radical_fraction = { value > 0.5 }
 		}
 	}
 
@@ -19,15 +36,53 @@ anarchist_balkanisation.1 = {
 		random_scope_state = {
 			limit = {
 				is_capital = no
-				radical_fraction = {
-					value > 0.5
+				radical_fraction = { value > 0.5 }
+			}
+			save_scope_as = breakaway_state
+		}
+
+		# Mirror parent's country type so an unrecognized parent does not
+		# accidentally spawn a recognized successor.
+		if = {
+			limit = { is_country_type = recognized }
+			scope:breakaway_state = {
+				create_dynamic_country = {
+					origin = root
+					country_type = recognized
+					capital = this
+					on_created = {
+						save_scope_as = breakaway_country
+					}
 				}
 			}
-			create_dynamic_country = {
-				origin = owner
-				country_type = recognized
-				capital = this
+		}
+		else = {
+			scope:breakaway_state = {
+				create_dynamic_country = {
+					origin = root
+					country_type = unrecognized
+					capital = this
+					on_created = {
+						save_scope_as = breakaway_country
+					}
+				}
 			}
+		}
+	}
+
+	option = {
+		name = anarchist_balkanisation.1.a
+		default_option = yes
+		# Resigned acceptance — there is no central authority left to crush them.
+	}
+
+	option = {
+		name = anarchist_balkanisation.1.b
+		# Refuse to recognize the secession — open an annexation play.
+		create_diplomatic_play = {
+			name = annex_war
+			target_country = scope:breakaway_country
+			type = dp_annex_war
 		}
 	}
 }
