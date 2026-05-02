@@ -1,10 +1,4 @@
-﻿on_game_started = {
-	on_actions = {
-		on_game_started_mym_mennonites_setup
-	}
-}
-
-on_monthly_pulse_country_mym_random_character_events = {
+﻿on_monthly_pulse_country_mym_random_character_events = {
 	random_events = {
 		95 = hp_lovecraft.1
 		5 = hp_lovecraft.2
@@ -27,8 +21,6 @@ on_monthly_pulse_country_mym_character_events = {
 
 on_monthly_pulse_country_mym_events = {
 	events = {
-		mennonite_migration.1
-
 		anarchist_balkanisation.1
 	}
 	on_actions = {
@@ -71,15 +63,5 @@ on_monthly_pulse_country = {
 		on_monthly_pulse_country_mym_events
 		delay = { days = 21 }
 		on_monthly_pulse_country_mym_heads_or_tails
-	}
-}
-
-on_game_started_mym_mennonites_setup = {
-	effect = {
-		# Eastern Europe
-		on_game_started_mym_mennonites_setup_eastern_europe = yes
-
-		# North America
-		on_game_started_mym_mennonites_setup_north_america = yes
 	}
 }
