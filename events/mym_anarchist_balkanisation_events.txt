@@ -25,7 +25,7 @@ anarchist_balkanisation.1 = {
 
 	trigger = {
 		has_law_or_variant = law_type:law_anarchy
-		government_legitimacy < 0.5
+		government_legitimacy < 50
 		any_scope_state = {
 			is_capital = no
 			radical_fraction = { value > 0.5 }
