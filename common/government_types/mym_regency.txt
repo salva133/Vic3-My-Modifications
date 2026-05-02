@@ -1,0 +1,59 @@
+### Military Regency
+# Triggered when the country has an active regency (gov_regency) and the
+# selected Regent is the leader of the Armed Forces interest group.
+# The regency modifier modifier_regency_armed_forces is added by vanilla
+# (see scripted_effect add_regency_modifier) exactly in that situation.
+# File is named 00_* so it is evaluated before 01_regencies.txt and takes
+# priority over the generic monarchy regency types.
+gov_regency_mym_military = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_MYM_LORD_COMMANDER"
+	female_ruler = "RULER_TITLE_MYM_LORD_COMMANDER"
+
+	male_heir = "RULER_TITLE_KING"
+	female_heir = "RULER_TITLE_QUEEN"
+
+	possible = {
+		country_has_monarchy_law = yes
+		has_gov_regency = yes
+		has_modifier = modifier_regency_armed_forces
+		NOT = { is_subject_type = subject_type_crown_land }
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+### Noble Regency
+# Triggered when the country has an active regency (gov_regency) and the
+# selected Regent is the leader of the Landowners interest group.
+# The regency modifier modifier_regency_landowners is added by vanilla
+# (see scripted_effect add_regency_modifier) exactly in that situation.
+gov_regency_mym_noble = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_MYM_LORD_REGENT"
+	female_ruler = "RULER_TITLE_MYM_LORD_REGENT"
+
+	male_heir = "RULER_TITLE_KING"
+	female_heir = "RULER_TITLE_QUEEN"
+
+	possible = {
+		country_has_monarchy_law = yes
+		has_gov_regency = yes
+		has_modifier = modifier_regency_landowners
+		NOT = { is_subject_type = subject_type_crown_land }
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
