@@ -55,11 +55,22 @@ on_monthly_pulse_country_mym = {
 	}
 }
 
+on_monthly_pulse_country_mym_heads_or_tails = {
+	events = {
+		heads_or_tails.1
+	}
+}
+
 on_monthly_pulse_country = {
 	on_actions = {
+		delay = { days = 1 }
 		on_monthly_pulse_country_mym_random_character_events
+		delay = { days = 7 }
 		on_monthly_pulse_country_mym_character_events
+		delay = { days = 14 }
 		on_monthly_pulse_country_mym_events
+		delay = { days = 21 }
+		on_monthly_pulse_country_mym_heads_or_tails
 	}
 }
 
