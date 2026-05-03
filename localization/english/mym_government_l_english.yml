@@ -22,7 +22,7 @@
 
 # Military Regency
   gov_regency_mym_military: "Military Regency"
-  gov_regency_mym_military_desc: "A [concept_government_type] where the throne is vacant and authority has fallen to the leader of the Armed Forces, who rules as [Concept('concept_ruler','$RULER_TITLE_MYM_LORD_COMMANDER$')] on behalf of a monarch unable to take the throne. The military serves as both guardian and steward of the crown, lending the regime its discipline and its swords.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+  gov_regency_mym_military_desc: "A [concept_government_type] where the throne is vacant and authority has fallen to the leader of the $ig_variant_armed_forces$, who rules as [Concept('concept_ruler','$RULER_TITLE_MYM_LORD_COMMANDER$')] on behalf of a monarch unable to take the throne. The military serves as both guardian and steward of the crown, lending the regime its discipline and its swords.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
 
 # Noble Regency
   gov_regency_mym_noble: "Noble Regency"
