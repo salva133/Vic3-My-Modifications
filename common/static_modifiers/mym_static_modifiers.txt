@@ -1,4 +1,4 @@
-modifier_has_unhealthy_economy = {
+﻿modifier_has_unhealthy_economy = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 }
 

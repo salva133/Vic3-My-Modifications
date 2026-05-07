@@ -1,4 +1,4 @@
-namespace = anarchist_balkanisation
+﻿namespace = anarchist_balkanisation
 
 # Triggered monthly via on_monthly_pulse_country_mym_events.
 # Anarchist countries with low legitimacy and a radicalized non-capital state
