@@ -1,4 +1,4 @@
-### Military Regency
+﻿### Military Regency
 # Triggered when the country has an active regency (gov_regency) and the
 # selected Regent is the leader of the Armed Forces interest group.
 # The regency modifier modifier_regency_armed_forces is added by vanilla
