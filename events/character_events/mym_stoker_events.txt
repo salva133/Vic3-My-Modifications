@@ -20,7 +20,7 @@ stoker.1 = {
 		s:STATE_BULGARIA = {
 			has_building = building_port
 		}
-		NOT = {
+		NOR = {
 			has_global_variable = dmitry_set_sails_globvar
 			has_global_variable = vlad_happened_globvar
 		}
@@ -57,7 +57,7 @@ stoker.2 = {
 			has_building = building_port
 		}
 		has_global_variable = dmitry_set_sails_globvar
-		NOT = {
+		NOR = {
 			has_global_variable = dmitry_ran_ashore_at_whitby_globvar
 			has_global_variable = vlad_happened_globvar
 		}

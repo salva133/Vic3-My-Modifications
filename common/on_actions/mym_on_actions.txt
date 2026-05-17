@@ -23,13 +23,8 @@ on_monthly_pulse_country_mym_events = {
 	events = {
 		anarchist_balkanisation.1
 	}
-	on_actions = {
-		on_monthly_pulse_country_mym
-	}
-}
-
-on_monthly_pulse_country_mym = {
 	effect = {
+		# Keep modifier_has_unhealthy_economy in sync with the economy flag.
 		if = {
 			limit = {
 				has_healthy_economy = yes

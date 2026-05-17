@@ -1,4 +1,4 @@
-﻿set_politician_ideos_randomly = {
+set_politician_ideos_randomly = {
 custom_tooltip = {
 		text = mym_debug.1.k_tt
 		every_scope_character = {
@@ -54,87 +54,206 @@ custom_tooltip = {
 
 # Refresh the cached global heritage population stats used by the
 # je_mym_global_religion_tracker journal entry. Called from on_monthly_pulse
-# (and once at game start) so the JE only triggers the costly every_country
-# aggregation a single time per month, no matter how many countries hold it.
+# (and once at game start) so the JE only triggers the aggregation a single
+# time per month, no matter how many countries hold it.
+#
+# Single every_country pass: accumulates total world population and all seven
+# heritage populations in one sweep. Shares are then computed from cached
+# globvars (no more every_country loops in the share phase).
 mym_refresh_global_religion_stats = {
-	# Per-heritage absolute populations
-	set_global_variable = {
-		name = mym_heritage_christian_pop
-		value = mym_heritage_christian_global_pop_sv
-	}
-	set_global_variable = {
-		name = mym_heritage_islamic_pop
-		value = mym_heritage_islamic_global_pop_sv
-	}
-	set_global_variable = {
-		name = mym_heritage_jewish_pop
-		value = mym_heritage_jewish_global_pop_sv
-	}
-	set_global_variable = {
-		name = mym_heritage_dharmic_pop
-		value = mym_heritage_dharmic_global_pop_sv
-	}
-	set_global_variable = {
-		name = mym_heritage_taoic_pop
-		value = mym_heritage_taoic_global_pop_sv
-	}
-	set_global_variable = {
-		name = mym_heritage_indigenous_pop
-		value = mym_heritage_indigenous_global_pop_sv
-	}
-	set_global_variable = {
-		name = mym_heritage_materialist_pop
-		value = mym_heritage_materialist_global_pop_sv
+	# Reset accumulators before the sweep
+	set_global_variable = { name = mym_global_population value = 0 }
+	set_global_variable = { name = mym_heritage_christian_pop  value = 0 }
+	set_global_variable = { name = mym_heritage_islamic_pop    value = 0 }
+	set_global_variable = { name = mym_heritage_jewish_pop     value = 0 }
+	set_global_variable = { name = mym_heritage_dharmic_pop    value = 0 }
+	set_global_variable = { name = mym_heritage_taoic_pop      value = 0 }
+	set_global_variable = { name = mym_heritage_indigenous_pop value = 0 }
+	set_global_variable = { name = mym_heritage_materialist_pop value = 0 }
+
+	# Single pass across every country
+	every_country = {
+		change_global_variable = {
+			name = mym_global_population
+			add = total_population
+		}
+		change_global_variable = {
+			name = mym_heritage_christian_pop
+			add = {
+				value = total_population
+				multiply = {
+					value = 0
+					add = "this.religion_percent_country(rel:catholic)"
+					add = "this.religion_percent_country(rel:protestant)"
+					add = "this.religion_percent_country(rel:orthodox)"
+					add = "this.religion_percent_country(rel:oriental_orthodox)"
+				}
+			}
+		}
+		change_global_variable = {
+			name = mym_heritage_islamic_pop
+			add = {
+				value = total_population
+				multiply = {
+					value = 0
+					add = "this.religion_percent_country(rel:sunni)"
+					add = "this.religion_percent_country(rel:shiite)"
+					add = "this.religion_percent_country(rel:ibadi)"
+				}
+			}
+		}
+		change_global_variable = {
+			name = mym_heritage_jewish_pop
+			add = {
+				value = total_population
+				multiply = "this.religion_percent_country(rel:jewish)"
+			}
+		}
+		change_global_variable = {
+			name = mym_heritage_dharmic_pop
+			add = {
+				value = total_population
+				multiply = {
+					value = 0
+					add = "this.religion_percent_country(rel:mahayana)"
+					add = "this.religion_percent_country(rel:gelugpa)"
+					add = "this.religion_percent_country(rel:theravada)"
+					add = "this.religion_percent_country(rel:hindu)"
+					add = "this.religion_percent_country(rel:sikh)"
+				}
+			}
+		}
+		change_global_variable = {
+			name = mym_heritage_taoic_pop
+			add = {
+				value = total_population
+				multiply = {
+					value = 0
+					add = "this.religion_percent_country(rel:confucian)"
+					add = "this.religion_percent_country(rel:shinto)"
+				}
+			}
+		}
+		change_global_variable = {
+			name = mym_heritage_indigenous_pop
+			add = {
+				value = total_population
+				multiply = "this.religion_percent_country(rel:animist)"
+			}
+		}
+		change_global_variable = {
+			name = mym_heritage_materialist_pop
+			add = {
+				value = total_population
+				multiply = "this.religion_percent_country(rel:atheist)"
+			}
+		}
 	}
 
-	# Per-heritage shares of total world population (0..1)
+	# Shares of the total world population (0..1), computed from the cached
+	# globvars above so this phase costs no additional every_country loops.
 	set_global_variable = {
 		name = mym_heritage_christian_share
 		value = {
-			value = mym_heritage_christian_global_pop_sv
-			divide = mym_global_population_sv
+			value = global_var:mym_heritage_christian_pop
+			divide = global_var:mym_global_population
 		}
 	}
 	set_global_variable = {
 		name = mym_heritage_islamic_share
 		value = {
-			value = mym_heritage_islamic_global_pop_sv
-			divide = mym_global_population_sv
+			value = global_var:mym_heritage_islamic_pop
+			divide = global_var:mym_global_population
 		}
 	}
 	set_global_variable = {
 		name = mym_heritage_jewish_share
 		value = {
-			value = mym_heritage_jewish_global_pop_sv
-			divide = mym_global_population_sv
+			value = global_var:mym_heritage_jewish_pop
+			divide = global_var:mym_global_population
 		}
 	}
 	set_global_variable = {
 		name = mym_heritage_dharmic_share
 		value = {
-			value = mym_heritage_dharmic_global_pop_sv
-			divide = mym_global_population_sv
+			value = global_var:mym_heritage_dharmic_pop
+			divide = global_var:mym_global_population
 		}
 	}
 	set_global_variable = {
 		name = mym_heritage_taoic_share
 		value = {
-			value = mym_heritage_taoic_global_pop_sv
-			divide = mym_global_population_sv
+			value = global_var:mym_heritage_taoic_pop
+			divide = global_var:mym_global_population
 		}
 	}
 	set_global_variable = {
 		name = mym_heritage_indigenous_share
 		value = {
-			value = mym_heritage_indigenous_global_pop_sv
-			divide = mym_global_population_sv
+			value = global_var:mym_heritage_indigenous_pop
+			divide = global_var:mym_global_population
 		}
 	}
 	set_global_variable = {
 		name = mym_heritage_materialist_share
 		value = {
-			value = mym_heritage_materialist_global_pop_sv
-			divide = mym_global_population_sv
+			value = global_var:mym_heritage_materialist_pop
+			divide = global_var:mym_global_population
+		}
+	}
+}
+
+# ---------------------------------------------------------------------------
+# Debug helpers: shared building blocks for the mym_debug menu options.
+# Macro substitution keeps the per-ideology / per-attraction options short.
+# ---------------------------------------------------------------------------
+
+# Sets every politician that does not already hold $IDEOLOGY$ to $IDEOLOGY$.
+mym_set_all_politicians_ideology = {
+	every_scope_character = {
+		limit = {
+			has_role_of_type = politician
+			NOT = { has_ideology = ideology:$IDEOLOGY$ }
+		}
+		set_ideology = ideology:$IDEOLOGY$
+	}
+}
+
+# Promotes an existing $IDEOLOGY$ agitator to ruler, or creates one and lets
+# the next political turn pick them up.
+mym_make_agitator_ruler_or_create = {
+	if = {
+		limit = {
+			any_scope_character = {
+				has_role_of_type = agitator
+				has_ideology = ideology:$IDEOLOGY$
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_role_of_type = agitator
+				has_ideology = ideology:$IDEOLOGY$
+			}
+			remove_character_role = agitator
+			set_character_as_ruler = yes
+		}
+	}
+	else = {
+		create_character = {
+			is_agitator = yes
+			ideology = ideology:$IDEOLOGY$
+		}
+	}
+}
+
+# Adds a one-year decaying movement-attraction cheat modifier to every owned
+# state. $ATTRACTION$ is the suffix of modifier_attraction_$ATTRACTION$.
+mym_add_attraction_modifier_to_all_states = {
+	every_scope_state = {
+		add_modifier = {
+			name = modifier_attraction_$ATTRACTION$
+			years = 1
+			is_decaying = yes
 		}
 	}
 }

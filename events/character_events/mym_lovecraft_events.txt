@@ -22,7 +22,7 @@ hp_lovecraft.1 = {
 	}
 
 	immediate = {
-		set_global_variable = lovecraft_happened_globvar
+		# lovecraft_happened_globvar is set by hp_lovecraft_character_template's on_created
 		random_country = {
 			limit = {
 				owns_entire_state_region = STATE_RHODE_ISLAND
@@ -70,7 +70,7 @@ hp_lovecraft.2 = {
 	}
 
 	immediate = {
-		set_global_variable = lovecraft_happened_globvar
+		# lovecraft_happened_globvar is set by hp_liebkraft_character_template's on_created
 		random_country = {
 			limit = {
 				OR = {
