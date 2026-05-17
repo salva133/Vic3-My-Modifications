@@ -120,6 +120,9 @@ friedrich_nietzsche_character_template = {
 		arrogant
 		literary
 	}
+	on_created = {
+		set_global_variable = nietzsche_happened_globvar
+	}
 }
 
 alisa_rosenbaum_character_template = {
