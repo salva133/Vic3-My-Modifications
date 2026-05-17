@@ -52,3 +52,89 @@ custom_tooltip = {
 	}
 }
 
+# Refresh the cached global heritage population stats used by the
+# je_mym_global_religion_tracker journal entry. Called from on_monthly_pulse
+# (and once at game start) so the JE only triggers the costly every_country
+# aggregation a single time per month, no matter how many countries hold it.
+mym_refresh_global_religion_stats = {
+	# Per-heritage absolute populations
+	set_global_variable = {
+		name = mym_heritage_christian_pop
+		value = mym_heritage_christian_global_pop_sv
+	}
+	set_global_variable = {
+		name = mym_heritage_islamic_pop
+		value = mym_heritage_islamic_global_pop_sv
+	}
+	set_global_variable = {
+		name = mym_heritage_jewish_pop
+		value = mym_heritage_jewish_global_pop_sv
+	}
+	set_global_variable = {
+		name = mym_heritage_dharmic_pop
+		value = mym_heritage_dharmic_global_pop_sv
+	}
+	set_global_variable = {
+		name = mym_heritage_taoic_pop
+		value = mym_heritage_taoic_global_pop_sv
+	}
+	set_global_variable = {
+		name = mym_heritage_indigenous_pop
+		value = mym_heritage_indigenous_global_pop_sv
+	}
+	set_global_variable = {
+		name = mym_heritage_materialist_pop
+		value = mym_heritage_materialist_global_pop_sv
+	}
+
+	# Per-heritage shares of total world population (0..1)
+	set_global_variable = {
+		name = mym_heritage_christian_share
+		value = {
+			value = mym_heritage_christian_global_pop_sv
+			divide = mym_global_population_sv
+		}
+	}
+	set_global_variable = {
+		name = mym_heritage_islamic_share
+		value = {
+			value = mym_heritage_islamic_global_pop_sv
+			divide = mym_global_population_sv
+		}
+	}
+	set_global_variable = {
+		name = mym_heritage_jewish_share
+		value = {
+			value = mym_heritage_jewish_global_pop_sv
+			divide = mym_global_population_sv
+		}
+	}
+	set_global_variable = {
+		name = mym_heritage_dharmic_share
+		value = {
+			value = mym_heritage_dharmic_global_pop_sv
+			divide = mym_global_population_sv
+		}
+	}
+	set_global_variable = {
+		name = mym_heritage_taoic_share
+		value = {
+			value = mym_heritage_taoic_global_pop_sv
+			divide = mym_global_population_sv
+		}
+	}
+	set_global_variable = {
+		name = mym_heritage_indigenous_share
+		value = {
+			value = mym_heritage_indigenous_global_pop_sv
+			divide = mym_global_population_sv
+		}
+	}
+	set_global_variable = {
+		name = mym_heritage_materialist_share
+		value = {
+			value = mym_heritage_materialist_global_pop_sv
+			divide = mym_global_population_sv
+		}
+	}
+}

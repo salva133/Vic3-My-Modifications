@@ -1,0 +1,103 @@
+# Global population aggregated across every existing country
+mym_global_population_sv = {
+	value = 0
+	every_country = {
+		add = total_population
+	}
+}
+
+# Per-heritage global population sums
+# Each value is the sum, across every country, of total_population multiplied
+# by the share of pops belonging to any religion that has the given heritage.
+
+mym_heritage_christian_global_pop_sv = {
+	value = 0
+	every_country = {
+		add = {
+			value = total_population
+			multiply = {
+				value = 0
+				add = "this.religion_percent_country(rel:catholic)"
+				add = "this.religion_percent_country(rel:protestant)"
+				add = "this.religion_percent_country(rel:orthodox)"
+				add = "this.religion_percent_country(rel:oriental_orthodox)"
+			}
+		}
+	}
+}
+
+mym_heritage_islamic_global_pop_sv = {
+	value = 0
+	every_country = {
+		add = {
+			value = total_population
+			multiply = {
+				value = 0
+				add = "this.religion_percent_country(rel:sunni)"
+				add = "this.religion_percent_country(rel:shiite)"
+				add = "this.religion_percent_country(rel:ibadi)"
+			}
+		}
+	}
+}
+
+mym_heritage_jewish_global_pop_sv = {
+	value = 0
+	every_country = {
+		add = {
+			value = total_population
+			multiply = "this.religion_percent_country(rel:jewish)"
+		}
+	}
+}
+
+mym_heritage_dharmic_global_pop_sv = {
+	value = 0
+	every_country = {
+		add = {
+			value = total_population
+			multiply = {
+				value = 0
+				add = "this.religion_percent_country(rel:mahayana)"
+				add = "this.religion_percent_country(rel:gelugpa)"
+				add = "this.religion_percent_country(rel:theravada)"
+				add = "this.religion_percent_country(rel:hindu)"
+				add = "this.religion_percent_country(rel:sikh)"
+			}
+		}
+	}
+}
+
+mym_heritage_taoic_global_pop_sv = {
+	value = 0
+	every_country = {
+		add = {
+			value = total_population
+			multiply = {
+				value = 0
+				add = "this.religion_percent_country(rel:confucian)"
+				add = "this.religion_percent_country(rel:shinto)"
+			}
+		}
+	}
+}
+
+mym_heritage_indigenous_global_pop_sv = {
+	value = 0
+	every_country = {
+		add = {
+			value = total_population
+			multiply = "this.religion_percent_country(rel:animist)"
+		}
+	}
+}
+
+mym_heritage_materialist_global_pop_sv = {
+	value = 0
+	every_country = {
+		add = {
+			value = total_population
+			multiply = "this.religion_percent_country(rel:atheist)"
+		}
+	}
+}
