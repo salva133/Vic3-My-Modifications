@@ -1,4 +1,4 @@
-﻿namespace = mym_debug
+namespace = mym_debug
 
 mym_debug.1 = {
 	type = country_event
@@ -38,13 +38,7 @@ mym_debug.1 = {
 			}
 		}
 
-		every_scope_character = {
-			limit = {
-				has_role_of_type = politician
-				NOT = { has_ideology = ideology:ideology_fascist }
-			}
-			set_ideology = ideology:ideology_fascist
-		}
+		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_fascist }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.1 popup = yes }
@@ -64,13 +58,7 @@ mym_debug.1 = {
 			}
 		}
 
-		every_scope_character = {
-			limit = {
-				has_role_of_type = politician
-				NOT = { has_ideology = ideology:ideology_communist }
-			}
-			set_ideology = ideology:ideology_communist
-		}
+		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_communist }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.1 popup = yes }
@@ -90,13 +78,7 @@ mym_debug.1 = {
 			}
 		}
 
-		every_scope_character = {
-			limit = {
-				has_role_of_type = politician
-				NOT = { has_ideology = ideology:ideology_anarchist }
-			}
-			set_ideology = ideology:ideology_anarchist
-		}
+		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_anarchist }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.1 popup = yes }
@@ -116,13 +98,7 @@ mym_debug.1 = {
 			}
 		}
 
-		every_scope_character = {
-			limit = {
-				has_role_of_type = politician
-				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
-			}
-			set_ideology = ideology:ideology_anarcho_libertarian
-		}
+		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_anarcho_libertarian }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.1 popup = yes }
@@ -142,13 +118,7 @@ mym_debug.1 = {
 			}
 		}
 
-		every_scope_character = {
-			limit = {
-				has_role_of_type = politician
-				NOT = { has_ideology = ideology:ideology_libertarian_utopian }
-			}
-			set_ideology = ideology:ideology_libertarian_utopian
-		}
+		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_libertarian_utopian }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.1 popup = yes }
@@ -292,28 +262,7 @@ mym_debug.3 = {
 			}
 		}
 
-		if = {
-			limit = {
-				any_scope_character = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_anarcho_libertarian
-				}
-			}
-			random_scope_character = {
-				limit = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_anarcho_libertarian
-				}
-				remove_character_role = agitator
-				set_character_as_ruler = yes
-			}
-		}
-		else = {
-			create_character = {
-				is_agitator = yes
-				ideology = ideology:ideology_anarcho_libertarian
-			}
-		}
+		mym_make_agitator_ruler_or_create = { IDEOLOGY = ideology_anarcho_libertarian }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.3 popup = yes }
@@ -330,28 +279,7 @@ mym_debug.3 = {
 			}
 		}
 
-		if = {
-			limit = {
-				any_scope_character = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_anti_statist
-				}
-			}
-			random_scope_character = {
-				limit = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_anti_statist
-				}
-				remove_character_role = agitator
-				set_character_as_ruler = yes
-			}
-		}
-		else = {
-			create_character = {
-				is_agitator = yes
-				ideology = ideology:ideology_anti_statist
-			}
-		}
+		mym_make_agitator_ruler_or_create = { IDEOLOGY = ideology_anti_statist }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.3 popup = yes }
@@ -368,28 +296,7 @@ mym_debug.3 = {
 			}
 		}
 
-		if = {
-			limit = {
-				any_scope_character = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_anti_feminist
-				}
-			}
-			random_scope_character = {
-				limit = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_anti_feminist
-				}
-				remove_character_role = agitator
-				set_character_as_ruler = yes
-			}
-		}
-		else = {
-			create_character = {
-				is_agitator = yes
-				ideology = ideology:ideology_anti_feminist
-			}
-		}
+		mym_make_agitator_ruler_or_create = { IDEOLOGY = ideology_anti_feminist }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.3 popup = yes }
@@ -406,28 +313,7 @@ mym_debug.3 = {
 			}
 		}
 
-		if = {
-			limit = {
-				any_scope_character = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_secular_humanitarian
-				}
-			}
-			random_scope_character = {
-				limit = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_secular_humanitarian
-				}
-				remove_character_role = agitator
-				set_character_as_ruler = yes
-			}
-		}
-		else = {
-			create_character = {
-				is_agitator = yes
-				ideology = ideology:ideology_secular_humanitarian
-			}
-		}
+		mym_make_agitator_ruler_or_create = { IDEOLOGY = ideology_secular_humanitarian }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.3 popup = yes }
@@ -445,28 +331,7 @@ mym_debug.3 = {
 			}
 		}
 
-		if = {
-			limit = {
-				any_scope_character = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_libertarian_utopian
-				}
-			}
-			random_scope_character = {
-				limit = {
-					has_role_of_type = agitator
-					has_ideology = ideology:ideology_libertarian_utopian
-				}
-				remove_character_role = agitator
-				set_character_as_ruler = yes
-			}
-		}
-		else = {
-			create_character = {
-				is_agitator = yes
-				ideology = ideology:ideology_libertarian_utopian
-			}
-		}
+		mym_make_agitator_ruler_or_create = { IDEOLOGY = ideology_libertarian_utopian }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.3 popup = yes }
@@ -550,7 +415,6 @@ mym_debug.5 = {
 	}
 	option = {
 		name = "Create Folkist"
-		default_option = yes
 
 		create_character = {
 			is_agitator = yes
@@ -594,212 +458,86 @@ mym_debug.6 = {
 		}
 	}
 	option = {
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_anarchist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = anarchist }
 	}
 	option = {
 		name = mym_debug.6.a
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_communist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = communist }
 	}
 	option = {
 		name = mym_debug.6.b
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_corporatist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = corporatist }
 	}
 	option = {
 		name = mym_debug.6.c
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_cultural_majority
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = cultural_majority }
 	}
 	option = {
 		name = mym_debug.6.d
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_cultural_minority
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = cultural_minority }
 	}
 	option = {
 		name = mym_debug.6.e
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_despotic_utopist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = despotic_utopist }
 	}
 	option = {
 		name = mym_debug.6.f
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_fascist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = fascist }
 	}
 	option = {
 		name = mym_debug.6.g
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_feminist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = feminist }
 	}
 	option = {
 		name = mym_debug.6.h
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_labor
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = labor }
 	}
 	option = {
 		name = mym_debug.6.i
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_land_reform
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = land_reform }
 	}
 	option = {
 		name = mym_debug.6.k
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_modernizer
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = modernizer }
 	}
 	option = {
 		name = mym_debug.6.l
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_nihilist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = nihilist }
 	}
 	option = {
 		name = mym_debug.6.m
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_positivist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = positivist }
 	}
 	option = {
 		name = mym_debug.6.n
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_pro_slavery
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = pro_slavery }
 	}
 	option = {
 		name = mym_debug.6.o
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_radical
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = radical }
 	}
 	option = {
 		name = mym_debug.6.p
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_reactionary
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = reactionary }
 	}
 	option = {
 		name = mym_debug.6.q
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_religious_majority
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = religious_majority }
 	}
 	option = {
 		name = mym_debug.6.r
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_royalist_absolutist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = royalist_absolutist }
 	}
 	option = {
 		name = mym_debug.6.s
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_royalist_constitutional
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = royalist_constitutional }
 	}
 	option = {
 		name = mym_debug.6.t
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_socialist
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = socialist }
 	}
 	option = {
 		name = mym_debug.6.v
-		every_scope_state = {
-			add_modifier = {
-				name = modifier_attraction_utilitarian
-				years = 1
-				is_decaying = yes
-			}
-		}
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = utilitarian }
 	}
 }
