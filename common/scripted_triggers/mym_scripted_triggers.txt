@@ -64,14 +64,14 @@ at_least_one_politician_is_no_anarchist = {
 		exists = ideology:ideology_anarchist
 		exists = ideology:ideology_anarcho_libertarian
 		exists = ideology:ideology_libertarian_utopian
-	}
-	is_possible_ideology_anarchist = yes
-	any_scope_character = {
-		has_role_of_type = politician
-		NAND = {
-			has_ideology = ideology:ideology_anarchist
-			has_ideology = ideology:ideology_anarcho_libertarian
-			has_ideology = ideology:ideology_libertarian_utopian
+		is_possible_ideology_anarchist = yes
+		any_scope_character = {
+			has_role_of_type = politician
+			NOR = {
+				has_ideology = ideology:ideology_anarchist
+				has_ideology = ideology:ideology_anarcho_libertarian
+				has_ideology = ideology:ideology_libertarian_utopian
+			}
 		}
 	}
 }
