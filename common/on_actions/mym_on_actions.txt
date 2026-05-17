@@ -65,3 +65,42 @@ on_monthly_pulse_country = {
 		on_monthly_pulse_country_mym_heads_or_tails
 	}
 }
+
+# Hand the global religion tracker journal entry to every country present at game start.
+on_game_started_after_lobby = {
+	effect = {
+		every_country = {
+			limit = {
+				NOT = { has_journal_entry = je_mym_global_religion_tracker }
+			}
+			add_journal_entry = {
+				type = je_mym_global_religion_tracker
+			}
+		}
+		# Seed the cached heritage stats once so the JE has something to show before
+		# the first monthly pulse fires.
+		mym_refresh_global_religion_stats = yes
+	}
+}
+
+# Make sure newly formed / released countries also receive the tracker.
+on_country_formed = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_journal_entry = je_mym_global_religion_tracker }
+			}
+			add_journal_entry = {
+				type = je_mym_global_religion_tracker
+			}
+		}
+	}
+}
+
+# Recompute the cached per-heritage global stats once per month, no matter how
+# many countries hold the tracker journal entry.
+on_monthly_pulse = {
+	effect = {
+		mym_refresh_global_religion_stats = yes
+	}
+}

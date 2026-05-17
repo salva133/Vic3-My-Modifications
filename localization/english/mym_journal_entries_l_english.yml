@@ -3,3 +3,8 @@
   je_gangs_of_new_york: "Gangs of [Concept('concept_state','$STATE_NEW_YORK$')]"
   je_gangs_of_new_york_status: "Maintain control over the entire state of New York as criminal networks rise and fall."
   je_gangs_of_new_york_reason: "The roaring twenties have unleashed a wave of organized crime and underground power struggles. Whoever controls New York shapes the fate of its streets and the nation's criminal underworld."
+
+# JE Global Religion Heritage Tracker
+  je_mym_global_religion_tracker: "Faiths of the World"
+  je_mym_global_religion_tracker_reason: "A monthly tally of how the world's population breaks down by religious heritage."
+  je_mym_global_religion_tracker_status: "Share of the global population by religious heritage (updated monthly):\n#bold Christian#!: [GetGlobalVariable('mym_heritage_christian_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_christian_pop').GetValue|0])\n#bold Islamic#!: [GetGlobalVariable('mym_heritage_islamic_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_islamic_pop').GetValue|0])\n#bold Jewish#!: [GetGlobalVariable('mym_heritage_jewish_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_jewish_pop').GetValue|0])\n#bold Dharmic#!: [GetGlobalVariable('mym_heritage_dharmic_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_dharmic_pop').GetValue|0])\n#bold Taoic#!: [GetGlobalVariable('mym_heritage_taoic_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_taoic_pop').GetValue|0])\n#bold Indigenous#!: [GetGlobalVariable('mym_heritage_indigenous_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_indigenous_pop').GetValue|0])\n#bold Materialist#!: [GetGlobalVariable('mym_heritage_materialist_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_materialist_pop').GetValue|0])"
