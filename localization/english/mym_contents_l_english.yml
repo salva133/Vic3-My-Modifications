@@ -15,9 +15,9 @@
   corleone.3.ff: "#lore #italic New York City - #![SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName] signed the Securities Exchange Act into law yesterday, marking a historic effort to regulate stock market practices following the 1929 crash. The act establishes the Securities and Exchange Commission (SEC) to oversee financial markets and prevent fraudulent activities. Wall Street brokers and financial institutions brace for the sweeping changes to their operations.\n\n#bold Police Report Alleged Gathering of Queens and Brooklyn Crime Bosses#!\n\n#italic Queens, New York City - #!According to police reports, several of the most powerful gangsters in Queens and Brooklyn are believed to have met recently in a secretive gathering in Queens. Authorities are monitoring the situation closely, fearing that the meeting could signify a shift in criminal power dynamics. The identities of those involved remain unclear, but law enforcement is on high alert in both boroughs."
   corleone.3.a: "Close"
 
-  corleone.9.t: "New York Daily News"
-  corleone.9.d: "Infamous Mafia Don [SCOPE.sCharacter('vito_corleone_scope').GetLastName] Dies Peacefully in His Garden"
-  corleone.9.f: "#italic Long Island, New York#! - [SCOPE.sCharacter('vito_corleone_scope').GetFullName], the infamous head of one of New York's most powerful Mafia families, passed away peacefully yesterday afternoon. Corleone, who had retired from public life in recent years, was found in his garden by family members. Despite his long history of criminal influence, Corleone's death marks the end of an era in organized crime. No foul play is suspected. Rumour has it that his son [SCOPE.sCharacter('michael_corleone_scope').GetFirstName] will continue to run the business."
+  corleone.9.tt: "New York Daily News"
+  corleone.9.dd: "Infamous Mafia Don [SCOPE.sCharacter('vito_corleone_scope').GetLastName] Dies Peacefully in His Garden"
+  corleone.9.ff: "#italic Long Island, New York#! - [SCOPE.sCharacter('vito_corleone_scope').GetFullName], the infamous head of one of New York's most powerful Mafia families, passed away peacefully yesterday afternoon. Corleone, who had retired from public life in recent years, was found in his garden by family members. Despite his long history of criminal influence, Corleone's death marks the end of an era in organized crime. No foul play is suspected. Rumour has it that his son [SCOPE.sCharacter('michael_corleone_scope').GetFirstName] will continue to run the business."
   corleone.9.a: "Close"
 
 # Stoker
