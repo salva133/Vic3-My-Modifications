@@ -38,7 +38,7 @@ corleone.2 = { # New York Daily Chronicle, November 2, 1922
 	trigger = {} # Triggered by JE
 
 	immediate = {
-		set_global_variable = corleone_2_done
+		set_global_variable = corleone_2_done_globvar
 		ruler = { save_scope_as = ruler_scope }
 	}
 
@@ -63,7 +63,7 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 	trigger = {} # Triggered by JE
 
 	immediate = {
-		set_global_variable = corleone_3_done
+		set_global_variable = corleone_3_done_globvar
 		ruler = { save_scope_as = ruler_scope }
 	}
 
@@ -71,8 +71,8 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 		name = corleone.3.a
 		if = {
 			limit = {
-				any_scope_character = {
-					NOT = { has_template = vito_corleone_character_template }
+				NOT = {
+					any_scope_character = { has_template = vito_corleone_character_template }
 				}
 			}
 			create_character = { template = vito_corleone_character_template }
@@ -83,9 +83,9 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 corleone.9 = { # The Death of Don Corleone
 	type = country_event
 	placement = ROOT
-	title =  corleone.9.t
-	desc =   corleone.9.d
-	flavor = corleone.9.f
+	title =  corleone.9.tt
+	desc =   corleone.9.dd
+	flavor = corleone.9.ff
 
 	event_image = { video = "ep1_printing_press" }
 

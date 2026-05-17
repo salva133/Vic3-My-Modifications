@@ -48,14 +48,14 @@
 				if = {
 					limit = {
 						game_date > 1922.11.2
-						NOT = { has_global_variable = corleone_2_done }
+						NOT = { has_global_variable = corleone_2_done_globvar }
 					}
 					trigger_event = { id = corleone.2 }
 				}
 				if = {
 					limit = {
 						game_date > 1934.6.6
-						NOT = { has_global_variable = corleone_3_done }
+						NOT = { has_global_variable = corleone_3_done_globvar }
 					}
 					trigger_event = { id = corleone.3 }
 				}
