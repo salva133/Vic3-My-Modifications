@@ -63,7 +63,7 @@
 
 		trigger = {
 			scope:actor ?= {
-				NOT = {
+				NOR = {
 					c:USA ?= this
 					c:CSA ?= this
 					has_law_or_variant = law_type:law_monarchy
@@ -160,7 +160,7 @@
 
 		trigger = {
 			scope:actor ?= {
-				NOT = {
+				NOR = {
 					has_law_or_variant = law_type:law_monarchy
 					is_country_type = decentralized
 				}
