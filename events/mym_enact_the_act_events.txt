@@ -1,0 +1,37 @@
+﻿namespace = enact_the_act
+
+# The Act — consolidate executive power in the ruler, replacing the republic with law_autocracy
+enact_the_act.1 = {
+	type = country_event
+	placement = ROOT
+
+	title  = enact_the_act.1.tt
+	desc   = enact_the_act.1.dd
+	flavor = enact_the_act.1.ff
+
+	event_image = { video = "unspecific_military_parade" }
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = gfx/interface/icons/event_icons/event_parliament.dds
+
+	trigger = {} # Triggered by decision_mym_enact_the_act
+
+	immediate = {
+		ruler = { save_scope_as = ruler_scope }
+	}
+
+	# Sign the Act — pass law_autocracy
+	option = {
+		name = enact_the_act.1.a
+		default_option = yes
+		activate_law = law_type:law_autocracy
+	}
+
+	# Reconsider — leave the chamber as it stands
+	option = {
+		name = enact_the_act.1.b
+	}
+}

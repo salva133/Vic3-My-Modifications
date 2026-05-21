@@ -84,3 +84,10 @@
   anarchist_balkanisation.1.ff: "#lore 'The State, in its dying breath, shall give birth to a thousand free associations of free people. Such is the destiny of mankind.'\n\n#italic — pamphlet circulated in the markets of [SCOPE.sState('breakaway_state').GetCityHubName] in the days before the proclamation#!"
   anarchist_balkanisation.1.a:  "It was always going to come to this."
   anarchist_balkanisation.1.b:  "We will bring them back to heel."
+
+# Enact the Act
+  enact_the_act.1.tt: "The Act"
+  enact_the_act.1.dd: "Emergency Powers Bill Reaches the Floor"
+  enact_the_act.1.ff: "#lore #italic The Capital - #!The chamber is full. Galleries packed, doors barred, the press benches three rows deep. On the table before [SCOPE.sCharacter('ruler_scope').GetFullName] lies a single bound dossier — the Bill commonly known as #bold The Act#!.\n\nIn plain language, it transfers the powers of the legislature to the office of [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] for the duration of the present crisis, and for so long thereafter as the [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] judges the crisis to persist. Its drafters call it a stabilisation measure. Its critics, where they still speak, call it the end of the Republic.\n\nThe order paper allows no amendments. There will be no second reading. The vote, when it comes, will be a formality — the question is only whether [SCOPE.sCharacter('ruler_scope').GetLastName] signs.\n\n#italic A clerk clears his throat. The Speaker turns toward the rostrum. The room waits.#!"
+  enact_the_act.1.a: "Sign #bold The Act#! into law."
+  enact_the_act.1.b: "Adjourn. The Republic stands — for now."
