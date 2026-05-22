@@ -1,4 +1,4 @@
-namespace = mym_debug
+﻿namespace = mym_debug
 
 mym_debug.1 = {
 	type = country_event
@@ -21,7 +21,7 @@ mym_debug.1 = {
 		default_option = yes
 
 		hidden_effect = {
-			trigger_event = { id = mym_debug.4 popup = yes }
+			trigger_event = { id = mym_debug.7 popup = yes }
 		}
 	}
 
@@ -160,7 +160,7 @@ mym_debug.2 = {
 		default_option = yes
 
 		hidden_effect = {
-			trigger_event = { id = mym_debug.4 popup = yes }
+			trigger_event = { id = mym_debug.7 popup = yes }
 		}
 	}
 
@@ -248,7 +248,7 @@ mym_debug.3 = {
 		default_option = yes
 
 		hidden_effect = {
-			trigger_event = { id = mym_debug.4 popup = yes }
+			trigger_event = { id = mym_debug.7 popup = yes }
 		}
 	}
 
@@ -360,30 +360,17 @@ mym_debug.4 = {
 		name = mym_debug.4.aa
 		default_option = yes
 	}
+	# Cheats submenu (bundles the cheat-flavoured submenus and inline cheats)
 	option = {
 		name = mym_debug.4.a
 
-		trigger_event = { id = mym_debug.1 popup = yes }
+		trigger_event = { id = mym_debug.7 popup = yes }
 	}
+	# Misc debug functions submenu
 	option = {
 		name = mym_debug.4.b
 
-		trigger_event = { id = mym_debug.2 popup = yes }
-	}
-	option = {
-		name = mym_debug.4.c
-
-		trigger_event = { id = mym_debug.3 popup = yes }
-	}
-	option = {
-		name = mym_debug.4.d
-
 		trigger_event = { id = mym_debug.5 popup = yes }
-	}
-	option = {
-		name = mym_debug.4.e
-
-		trigger_event = { id = mym_debug.6 popup = yes }
 	}
 }
 
@@ -454,7 +441,7 @@ mym_debug.6 = {
 		default_option = yes
 
 		hidden_effect = {
-			trigger_event = { id = mym_debug.4 popup = yes }
+			trigger_event = { id = mym_debug.7 popup = yes }
 		}
 	}
 	option = {
@@ -539,5 +526,103 @@ mym_debug.6 = {
 	option = {
 		name = mym_debug.6.v
 		mym_add_attraction_modifier_to_all_states = { ATTRACTION = utilitarian }
+	}
+}
+
+# MyM Debug Cheats Submenu - bundles the existing cheat-flavoured submenus
+# (Leader Ideology Changer, Game Breaker, Character Spawn, Movement Attraction)
+# and exposes inline one-shot cheats. Reached from the main debug menu .4.
+mym_debug.7 = {
+	type = country_event
+	placement = ROOT
+	title = mym_debug.7.tt
+	desc = mym_debug.7.dd
+	flavor = mym_debug.7.ff
+
+	event_image = { texture = gfx/event_pictures/mym_debug.dds }
+
+	trigger = {} # Gets triggered by the main debug menu
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = gfx/interface/icons/event_icons/waving_flag.dds
+
+	# Back to main menu
+	option = {
+		name = mym_debug.7.aa
+		default_option = yes
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.4 popup = yes }
+		}
+	}
+
+	# Leader Ideology Changer submenu
+	option = {
+		name = mym_debug.7.a
+
+		trigger_event = { id = mym_debug.1 popup = yes }
+	}
+
+	# Game Breaker submenu
+	option = {
+		name = mym_debug.7.b
+
+		trigger_event = { id = mym_debug.2 popup = yes }
+	}
+
+	# Character Spawn submenu
+	option = {
+		name = mym_debug.7.c
+
+		trigger_event = { id = mym_debug.3 popup = yes }
+	}
+
+	# Movement Attraction Modifiers submenu
+	option = {
+		name = mym_debug.7.d
+
+		trigger_event = { id = mym_debug.6 popup = yes }
+	}
+
+	# Inline cheat: Prussia swallows every European country whose primary
+	# culture is north_german. Gated on ROOT being Prussia and at least one
+	# valid target existing so the option is hidden when meaningless.
+	option = {
+		name = mym_debug.7.e
+
+		trigger = {
+			c:PRU ?= ROOT
+			any_country = {
+				NOT = { this = ROOT }
+				country_has_primary_culture = cu:north_german
+				mym_country_is_in_europe = yes
+			}
+		}
+
+		mym_cheat_pru_annex_north_german_europe = yes
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.7 popup = yes }
+		}
+	}
+
+	# Inline cheat: scatter 100 levels each of rubber, oil and sulfur
+	# buildings across ROOT's randomly chosen states. Capacity caps are
+	# ignored on purpose - rebuilds after demolition are on the player.
+	option = {
+		name = mym_debug.7.f
+
+		trigger = {
+			any_scope_state = { owner = ROOT }
+		}
+
+		mym_cheat_spread_building_levels = { BUILDING = building_rubber_plantation }
+		mym_cheat_spread_building_levels = { BUILDING = building_oil_rig }
+		mym_cheat_spread_building_levels = { BUILDING = building_sulfur_mine }
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.7 popup = yes }
+		}
 	}
 }
