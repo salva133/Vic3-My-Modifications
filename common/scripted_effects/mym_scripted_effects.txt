@@ -1,4 +1,4 @@
-set_politician_ideos_randomly = {
+﻿set_politician_ideos_randomly = {
 custom_tooltip = {
 		text = mym_debug.1.k_tt
 		every_scope_character = {
@@ -256,4 +256,44 @@ mym_add_attraction_modifier_to_all_states = {
 			is_decaying = yes
 		}
 	}
+}
+
+# Lets ROOT (intended: c:PRU) swallow every European country whose primary
+# culture is north_german. ROOT itself is excluded so the cheat is a no-op
+# when fired from Prussia against itself. The option that calls this in
+# mym_debug.7 already gates on ROOT being PRU and at least one valid target.
+mym_cheat_pru_annex_north_german_europe = {
+	every_country = {
+		limit = {
+			NOT = { this = ROOT }
+			country_has_primary_culture = cu:north_german
+			mym_country_is_in_europe = yes
+		}
+		save_scope_as = mym_pru_annex_target
+		ROOT = { annex = scope:mym_pru_annex_target }
+	}
+}
+
+# Adds 100 levels of $BUILDING$ to ROOT's territory, one level per random
+# state, re-rolling the state per iteration so the buildings spread out
+# instead of stacking in one place. Doubles on the same state are tolerated
+# per the cheat's spec. create_building is additive on existing buildings.
+# State capacity is intentionally ignored: levels above the resource cap
+# work while they stand, but cannot be rebuilt after demolition. That trade
+# is the player's responsibility.
+mym_cheat_spread_building_levels = {
+	set_variable = { name = mym_cheat_spread_counter_var value = 0 }
+	while = {
+		limit = { var:mym_cheat_spread_counter_var < 100 }
+		random_scope_state = {
+			limit = { owner = ROOT }
+			create_building = {
+				building = "$BUILDING$"
+				level = 1
+				reserves = 1
+			}
+		}
+		change_variable = { name = mym_cheat_spread_counter_var add = 1 }
+	}
+	remove_variable = mym_cheat_spread_counter_var
 }
