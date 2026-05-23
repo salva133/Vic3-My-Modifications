@@ -69,7 +69,7 @@
 
 # Heads or Tails (BioShock Infinite Reference)
   heads_or_tails.1.tt: "An Encounter of the Constant Kind"
-  heads_or_tails.1.dd: "The Grand Exhibition is currently taking place in [SCOPE.sState('grand_exhibition_state').GetCityHubName]. [SCOPE.sCharacter('heads_or_tails_character').GetLastName] is walking past an unassuming stall when he is approached by the couple standing behind it."
+  heads_or_tails.1.dd: "The Grand Exhibition is currently taking place in [ROOT.GetCapital.GetCityHubName]. [SCOPE.sCharacter('heads_or_tails_character').GetLastName] is walking past an unassuming stall when he is approached by the couple standing behind it."
   heads_or_tails.1.ff: "A Gentleman: 'Heads?'\nA Lady: 'Or tails?'\n\n[SCOPE.sCharacter('heads_or_tails_character').GetFullName] reacts with surprise, completely taken aback by the unusual question the two of them are asking him.\n\n[SCOPE.sCharacter('heads_or_tails_character').GetLastName]: '...what?'\nThe man tosses a coin to him, and [SCOPE.sCharacter('heads_or_tails_character').GetLastName] catches it.\n\nA Gentleman: 'Heads?'\nA Lady: 'Or tails?'\n\n[SCOPE.sCharacter('heads_or_tails_character').GetLastName]: 'Erm...'"
   heads_or_tails.1.a:  "Heads"
   heads_or_tails.1.b:  "Tails"
