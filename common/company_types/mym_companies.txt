@@ -1,0 +1,50 @@
+﻿company_mym_railways = {
+	icon = "gfx/interface/icons/building_icons/building_railway.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+
+	category = bureaucrat_owned
+
+	flavored_company = no
+
+	uses_dynamic_naming = yes
+
+	dynamic_company_type_names = {
+		"dynamic_company_type_company"
+		"dynamic_company_type_corporation"
+		"dynamic_company_type_consortium"
+		"dynamic_company_type_conglomerate"
+		"dynamic_company_type_syndicate"
+		"dynamic_company_type_combine"
+	}
+
+	building_types = {
+		building_railway
+	}
+
+	extension_building_types = {
+		building_power_plant
+	}
+
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_railway
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		state_infrastructure_from_population_max_add = 15
+		state_trade_capacity_mult = 0.05
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_railway
+				level >= 3
+			}
+		}
+	}
+}
