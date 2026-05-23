@@ -1,5 +1,0 @@
-# This file used to host per-heritage every_country script_values that the
-# religion tracker refresh effect called separately for each heritage and
-# each share. Those values have been folded into a single every_country pass
-# inside mym_refresh_global_religion_stats (see common/scripted_effects).
-# Kept empty so future searches land here and follow the trail.
