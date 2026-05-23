@@ -1,0 +1,79 @@
+﻿### Swiss Confederation flavour government types.
+### Three variants mirror the vanilla gov_french_* / gov_american_* pattern:
+### the pre-1848 Tagsatzung, the post-1848 Federal State, and an
+### emergency-powers regime when the Confederation suspends the franchise.
+### Filename is prefixed 00_ so this file is loaded before the vanilla
+### 01-06 government_types files and the SWI-specific entries below win
+### the first-match-wins evaluation over vanilla fallbacks such as
+### gov_parliamentary_democracy.
+
+# Pre-1848 Diet of the loose confederation. The presiding canton (Vorort)
+# rotates annually; the Landammann of Switzerland is the figurehead.
+gov_swiss_diet = {
+	transfer_of_power = parliamentary_elective
+	new_leader_on_reform_government = yes
+
+	male_ruler = "RULER_TITLE_LANDAMMANN"
+	female_ruler = "RULER_TITLE_LANDAMMANN"
+
+	possible = {
+		c:SWI ?= this
+		has_law_or_variant = law_type:law_parliamentary_republic
+		country_has_voting_franchise = yes
+		game_date < 1848.1.1
+	}
+
+	on_government_type_change = {
+		change_to_parliamentary_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_parliamentary_elective = yes
+	}
+}
+
+# Post-1848 Federal State under the Bundesrat. The Federal Presidency
+# rotates yearly between the seven councillors; the title is primus
+# inter pares, not a head of state.
+gov_swiss_federation = {
+	transfer_of_power = parliamentary_elective
+	new_leader_on_reform_government = yes
+
+	male_ruler = "RULER_TITLE_FEDERAL_PRESIDENT"
+	female_ruler = "RULER_TITLE_FEDERAL_PRESIDENT"
+
+	possible = {
+		c:SWI ?= this
+		has_law_or_variant = law_type:law_parliamentary_republic
+		country_has_voting_franchise = yes
+		game_date >= 1848.1.1
+	}
+
+	on_government_type_change = {
+		change_to_parliamentary_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_parliamentary_elective = yes
+	}
+}
+
+# Federal Council ruling by Vollmachten (plenipotentiary emergency
+# powers) when the ordinary franchise is suspended.
+gov_swiss_federation_dictator = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_PLENIPOTENTIARY"
+	female_ruler = "RULER_TITLE_PLENIPOTENTIARY"
+
+	possible = {
+		c:SWI ?= this
+		has_law_or_variant = law_type:law_parliamentary_republic
+		country_has_voting_franchise = no
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}

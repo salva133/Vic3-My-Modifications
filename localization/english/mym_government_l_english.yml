@@ -8,6 +8,19 @@
   gov_regency_mym_noble: "Noble Regency"
   gov_regency_mym_noble_desc: "A [concept_government_type] where the throne is vacant and authority has fallen to the foremost magnate of the realm, who rules as [Concept('concept_ruler','$RULER_TITLE_MYM_LORD_REGENT$')] on behalf of a monarch unable to take the throne. The aristocracy lends the regime the legitimacy of ancient title and the weight of its estates.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
 
+# Swiss Confederation flavour government types
+  gov_swiss_diet: "The Tagsatzung"
+  gov_swiss_diet_desc: "A loose confederation of sovereign cantons. Its presiding canton — the #italic Vorort#! — rotates annually between Zürich, Bern and Lucerne, and at its head stands the [Concept('concept_ruler','$RULER_TITLE_LANDAMMANN$')] of Switzerland, spokesman of the assembled estates rather than head of state.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+  gov_swiss_federation: "Swiss Confederation"
+  gov_swiss_federation_desc: "A federal state under the Constitution of 1848. Executive authority rests with the seven-member #italic Bundesrat#!, whose chairmanship rotates annually; the [Concept('concept_ruler','$RULER_TITLE_FEDERAL_PRESIDENT$')] is primus inter pares, not head of state.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+  gov_swiss_federation_dictator: "Plenipotentiary Regime"
+  gov_swiss_federation_dictator_desc: "The Federal Council governs by emergency decree under #italic Vollmachten#! granted outside the ordinary constitutional process. Parliament and people are bypassed; the [Concept('concept_ruler','$RULER_TITLE_PLENIPOTENTIARY$')] rules the Confederation by fiat.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
 ### RULER TITLE ###
   RULER_TITLE_MYM_LORD_COMMANDER: "Lord Commander"
   RULER_TITLE_MYM_LORD_REGENT: "Lord Regent"
+  RULER_TITLE_LANDAMMANN: "Landammann"
+  RULER_TITLE_FEDERAL_PRESIDENT: "Federal President"
+  RULER_TITLE_PLENIPOTENTIARY: "Plenipotentiary Chair"
