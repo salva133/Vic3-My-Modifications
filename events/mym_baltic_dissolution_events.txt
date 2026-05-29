@@ -1,0 +1,326 @@
+﻿namespace = baltic_dissolution
+
+# Fires when je_mym_baltic_dissolution completes.
+# Creates LIT, LAT, EST from UBD's owned Baltic homeland states,
+# sets up bilateral pacts and +200 opinion between all created nations,
+# then asks the player which country to continue as.
+baltic_dissolution.1 = {
+	type = country_event
+	placement = root
+
+	title  = baltic_dissolution.1.tt
+	desc   = baltic_dissolution.1.dd
+	flavor = baltic_dissolution.1.ff
+
+	duration = 1
+
+	event_image = {
+		video = "europenorthern_forest"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	immediate = {
+		if = {
+			limit = { exists = c:LAT }
+			play_as = c:LAT
+		}
+		else = {
+			change_tag = LAT
+		}
+		# --- Create Lithuania from UBD-owned Lithuanian homeland states ---
+		if = {
+			limit = {
+				NOT = { exists = c:LIT }
+				any_scope_state = { state_region = { is_homeland = cu:lithuanian } }
+			}
+			random_scope_state = {
+				limit = { state_region = { is_homeland = cu:lithuanian } }
+				save_scope_as = lit_capital_var
+			}
+			create_country = {
+				tag    = LIT
+				origin = root
+				state  = scope:lit_capital_var
+			}
+		}
+		# Transfer remaining UBD-owned Lithuanian homeland states to LIT.
+		if = {
+			limit = {
+				exists = c:LIT
+				any_scope_state = { state_region = { is_homeland = cu:lithuanian } }
+			}
+			every_scope_state = {
+				limit = { state_region = { is_homeland = cu:lithuanian } }
+				set_state_owner = c:LIT
+			}
+		}
+
+		# --- Create Latvia from UBD-owned Latvian homeland states ---
+		if = {
+			limit = {
+				NOT = { exists = c:LAT }
+				any_scope_state = { state_region = { is_homeland = cu:latvian } }
+			}
+			random_scope_state = {
+				limit = { state_region = { is_homeland = cu:latvian } }
+				save_scope_as = lat_capital_var
+			}
+			create_country = {
+				tag    = LAT
+				origin = root
+				state  = scope:lat_capital_var
+			}
+		}
+		if = {
+			limit = {
+				exists = c:LAT
+				any_scope_state = { state_region = { is_homeland = cu:latvian } }
+			}
+			every_scope_state = {
+				limit = { state_region = { is_homeland = cu:latvian } }
+				set_state_owner = c:LAT
+			}
+		}
+
+		# --- Create Estonia from UBD-owned Estonian homeland states ---
+		if = {
+			limit = {
+				NOT = { exists = c:EST }
+				any_scope_state = { state_region = { is_homeland = cu:estonian } }
+			}
+			random_scope_state = {
+				limit = { state_region = { is_homeland = cu:estonian } }
+				save_scope_as = est_capital_var
+			}
+			create_country = {
+				tag    = EST
+				origin = root
+				state  = scope:est_capital_var
+			}
+		}
+		if = {
+			limit = {
+				exists = c:EST
+				any_scope_state = { state_region = { is_homeland = cu:estonian } }
+			}
+			every_scope_state = {
+				limit = { state_region = { is_homeland = cu:estonian } }
+				set_state_owner = c:EST
+			}
+		}
+
+		# --- Bilateral pacts and opinion: LIT <-> LAT ---
+		if = {
+			limit = { exists = c:LIT  exists = c:LAT }
+			create_treaty = {
+				first_country = c:LIT
+				second_country = c:LAT
+				binding_period = { years = 25 }
+				articles_to_create = {
+					{
+						article = alliance
+					}
+					{
+						article = foreign_investment_rights
+						source_country = c:LIT
+						target_country = c:LAT
+					}
+					{
+						article = foreign_investment_rights
+						source_country = c:LAT
+						target_country = c:LIT
+					}
+					{
+						article = trade_privilege
+						source_country = c:LIT
+						target_country = c:LAT
+					}
+					{
+						article = trade_privilege
+						source_country = c:LAT
+						target_country = c:LIT
+					}
+					{
+						article = military_access
+						source_country = c:LIT
+						target_country = c:LAT
+					}
+					{
+						article = military_access
+						source_country = c:LAT
+						target_country = c:LIT
+					}
+					{
+						article = transit_rights
+						source_country = c:LIT
+						target_country = c:LAT
+					}
+					{
+						article = transit_rights
+						source_country = c:LAT
+						target_country = c:LIT
+					}
+				}
+			}
+			c:LIT = {
+				change_relations = { country = c:LAT  value = 200 }
+			}
+			c:LAT = {
+				change_relations = { country = c:LIT  value = 200 }
+			}
+		}
+
+		# --- Bilateral pacts and opinion: LIT <-> EST ---
+		if = {
+			limit = { exists = c:LIT  exists = c:LAT }
+			create_treaty = {
+				first_country = c:LIT
+				second_country = c:EST
+				binding_period = { years = 25 }
+				articles_to_create = {
+					{
+						article = alliance
+					}
+					{
+						article = foreign_investment_rights
+						source_country = c:LIT
+						target_country = c:EST
+					}
+					{
+						article = foreign_investment_rights
+						source_country = c:EST
+						target_country = c:LIT
+					}
+					{
+						article = trade_privilege
+						source_country = c:LIT
+						target_country = c:EST
+					}
+					{
+						article = trade_privilege
+						source_country = c:EST
+						target_country = c:LIT
+					}
+					{
+						article = military_access
+						source_country = c:LIT
+						target_country = c:EST
+					}
+					{
+						article = military_access
+						source_country = c:EST
+						target_country = c:LIT
+					}
+					{
+						article = transit_rights
+						source_country = c:LIT
+						target_country = c:EST
+					}
+					{
+						article = transit_rights
+						source_country = c:EST
+						target_country = c:LIT
+					}
+				}
+			}
+			c:LIT = {
+				change_relations = { country = c:LAT  value = 200 }
+			}
+			c:EST = {
+				change_relations = { country = c:LIT  value = 200 }
+			}
+		}
+
+		# --- Bilateral pacts and opinion: LAT <-> EST ---
+		if = {
+			limit = { exists = c:LAT  exists = c:EST }
+			create_treaty = {
+				first_country = c:LAT
+				second_country = c:EST
+				binding_period = { years = 25 }
+				articles_to_create = {
+					{
+						article = alliance
+					}
+					{
+						article = foreign_investment_rights
+						source_country = c:LAT
+						target_country = c:EST
+					}
+					{
+						article = foreign_investment_rights
+						source_country = c:EST
+						target_country = c:LAT
+					}
+					{
+						article = trade_privilege
+						source_country = c:LAT
+						target_country = c:EST
+					}
+					{
+						article = trade_privilege
+						source_country = c:EST
+						target_country = c:LAT
+					}
+					{
+						article = military_access
+						source_country = c:LAT
+						target_country = c:EST
+					}
+					{
+						article = military_access
+						source_country = c:EST
+						target_country = c:LAT
+					}
+					{
+						article = transit_rights
+						source_country = c:LAT
+						target_country = c:EST
+					}
+					{
+						article = transit_rights
+						source_country = c:EST
+						target_country = c:LAT
+					}
+				}
+			}
+			c:LAT = {
+				change_relations = { country = c:LAT  value = 200 }
+			}
+			c:EST = {
+				change_relations = { country = c:LIT  value = 200 }
+			}
+		}
+	}
+
+	# Player chooses which newly independent nation to continue as.
+	option = {
+		name = baltic_dissolution.1.a
+		trigger = {
+			NOT = { c:LIT = this }
+			exists = c:LIT
+		}
+		play_as = c:LIT
+	}
+
+	option = {
+		name = baltic_dissolution.1.b
+		trigger = {
+			NOT = { c:LAT = this }
+			exists = c:LAT
+		}
+		play_as = c:LAT
+	}
+
+	option = {
+		name = baltic_dissolution.1.c
+		trigger = {
+			NOT = { c:EST = this }
+			exists = c:EST
+		}
+		play_as = c:EST
+	}
+}
