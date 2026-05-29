@@ -79,6 +79,7 @@ decision_mym_enact_the_act = {
 
 decision_mym_force_privatization = {
 	is_shown = {
+		is_player = yes
 		NOR = {
 			has_law = law_type:law_laissez_faire
 			has_modifier = modifier_force_privatization
@@ -89,5 +90,8 @@ decision_mym_force_privatization = {
 			name = modifier_force_privatization
 			months = 3
 		}
+	}
+	ai_chance = {
+		value = 0
 	}
 }

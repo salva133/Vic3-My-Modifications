@@ -13,4 +13,5 @@
   advcm_add_birth_rate: "$advcm_preamble$ Added Birth Rate (FUCK MOTHERFUCKERS!)"
 
 # MyM
-  modifier_has_unhealthy_economy: "Has unhealthy economy"
+  modifier_has_unhealthy_economy: "Has Unhealthy Economy"
+  modifier_force_privatization: "Forced Privatization"
