@@ -8,3 +8,8 @@
   je_mym_global_religion_tracker: "Faiths of the World"
   je_mym_global_religion_tracker_reason: "A monthly tally of how the world's population breaks down by religious heritage."
   je_mym_global_religion_tracker_status: "Share of the global population by religious heritage (updated monthly):\n#bold Christian#!: [GetGlobalVariable('mym_heritage_christian_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_christian_pop').GetValue|0])\n#bold Islamic#!: [GetGlobalVariable('mym_heritage_islamic_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_islamic_pop').GetValue|0])\n#bold Jewish#!: [GetGlobalVariable('mym_heritage_jewish_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_jewish_pop').GetValue|0])\n#bold Dharmic#!: [GetGlobalVariable('mym_heritage_dharmic_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_dharmic_pop').GetValue|0])\n#bold Taoic#!: [GetGlobalVariable('mym_heritage_taoic_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_taoic_pop').GetValue|0])\n#bold Indigenous#!: [GetGlobalVariable('mym_heritage_indigenous_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_indigenous_pop').GetValue|0])\n#bold Materialist#!: [GetGlobalVariable('mym_heritage_materialist_share').GetValue|%1] ([GetGlobalVariable('mym_heritage_materialist_pop').GetValue|0])"
+
+# JE Baltic Dissolution (UBD only)
+  je_mym_baltic_dissolution: "The Fracture of the Duchy"
+  je_mym_baltic_dissolution_reason: "The Duchy holds the homelands of peoples who have now discovered the word #italic nation#!. The doctrine of $nationalism$ makes the present borders untenable."
+  je_mym_baltic_dissolution_status: "Hold homeland states of at least two Baltic peoples — Lithuanian, Latvian, Estonian — and the Duchy will fracture into its constituent nations."

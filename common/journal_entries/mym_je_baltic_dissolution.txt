@@ -1,0 +1,55 @@
+﻿je_mym_baltic_dissolution = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	group = je_group_internal_affairs
+
+	# Shown only for the United Baltic Duchy while the player controls it.
+	is_shown_when_inactive = {
+		c:UBD = this
+		is_player = yes
+	}
+
+	possible = {
+		always = no
+		c:UBD = this
+		is_player = yes
+		is_subject = no
+		has_technology_researched = nationalism
+		# Must own at least one homeland state of any Baltic culture to activate.
+		OR = {
+			any_scope_state = { state_region = { is_homeland = cu:lithuanian } }
+			any_scope_state = { state_region = { is_homeland = cu:latvian } }
+			any_scope_state = { state_region = { is_homeland = cu:estonian } }
+		}
+	}
+
+	# Completes once UBD holds homeland states from at least two of the three Baltic cultures.
+	complete = {
+		OR = {
+			AND = {
+				any_scope_state = { state_region = { is_homeland = cu:lithuanian } }
+				any_scope_state = { state_region = { is_homeland = cu:latvian } }
+			}
+			AND = {
+				any_scope_state = { state_region = { is_homeland = cu:lithuanian } }
+				any_scope_state = { state_region = { is_homeland = cu:estonian } }
+			}
+			AND = {
+				any_scope_state = { state_region = { is_homeland = cu:latvian } }
+				any_scope_state = { state_region = { is_homeland = cu:estonian } }
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = baltic_dissolution.1 }
+	}
+
+	fail = {
+		OR = {
+			NOT = { c:UBD = this }
+			is_subject = yes
+			NOT = { is_player = yes }
+		}
+	}
+}
