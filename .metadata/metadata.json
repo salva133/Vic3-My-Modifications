@@ -8,7 +8,7 @@
   "relationships": [
     {
       "rel_type": "dependency",
-      "id": "dsr",
+      "id": "3737342643",
       "display_name": "DonSantanian Resources",
       "resource_type": "mod",
       "version": "0.*"
