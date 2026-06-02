@@ -104,27 +104,6 @@ eugen_duehring_character_template = {
 	}
 }
 
-friedrich_nietzsche_character_template = {
-	first_name = Friedrich
-	last_name = Nietzsche
-	birth_date = 1844.10.15
-	female = no
-	historical = yes
-	is_agitator = yes
-	culture = cu:north_german
-	religion = rel:atheist
-	ideology = ideology_nihilist
-	noble = no
-	traits = {
-		erudite
-		arrogant
-		literary
-	}
-	on_created = {
-		set_global_variable = nietzsche_happened_globvar
-	}
-}
-
 alisa_rosenbaum_character_template = {
 	first_name = Alisa
 	last_name = Rosenbaum

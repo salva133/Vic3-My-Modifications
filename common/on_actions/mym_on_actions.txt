@@ -13,9 +13,6 @@ on_monthly_pulse_country_mym_character_events = {
 		hp_lovecraft.3
 
 		milei.1
-
-		nietzsche.1
-		nietzsche.2
 	}
 }
 
