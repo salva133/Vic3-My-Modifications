@@ -596,7 +596,7 @@ mym_debug.7 = {
 			any_country = {
 				NOT = { this = ROOT }
 				country_has_primary_culture = cu:north_german
-				mym_country_is_in_europe = yes
+				country_is_in_europe = yes
 			}
 		}
 

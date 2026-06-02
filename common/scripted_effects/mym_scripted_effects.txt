@@ -267,7 +267,7 @@ mym_cheat_pru_annex_north_german_europe = {
 		limit = {
 			NOT = { this = ROOT }
 			country_has_primary_culture = cu:north_german
-			mym_country_is_in_europe = yes
+			country_is_in_europe = yes
 		}
 		save_scope_as = mym_pru_annex_target
 		ROOT = { annex = scope:mym_pru_annex_target }
