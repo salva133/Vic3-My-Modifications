@@ -18,18 +18,6 @@ ideology_folkist_valid_trigger = {
 	}
 }
 
-is_possible_ideology_fascist = {
-	has_technology_researched = mass_propaganda
-}
-
-is_possible_ideology_communist = {
-	has_technology_researched = socialism
-}
-
-is_possible_ideology_anarchist = {
-	has_technology_researched = anarchism
-}
-
 ideology_secular_humanitarian_valid_trigger = {
 	OR = {
 		is_interest_group_type = ig_intelligentsia
@@ -74,30 +62,4 @@ at_least_one_politician_is_no_anarchist = {
 			}
 		}
 	}
-}
-
-country_is_a_judeo_christian_nation = {
-	custom_tooltip = {
-		text = country_is_a_judeo_christian_nation_tt
-		religion = {
-			OR = {
-				has_discrimination_trait = heritage_christian
-				has_discrimination_trait = heritage_jewish
-			}
-		}
-	}
-}
-
-is_welfare_state_with_low_legitimacy = {
-	has_law_or_variant = law_type:law_old_age_pension
-	has_law_or_variant = law_type:law_worker_protections
-	institution_investment_level = {
-		institution = institution_social_security
-		value = 5
-	}
-	institution_investment_level = {
-		institution = institution_workplace_safety
-		value = 5
-	}
-	government_legitimacy < 25
 }
