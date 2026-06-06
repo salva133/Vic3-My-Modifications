@@ -335,7 +335,7 @@ baltic_dissolution.1 = {
 			play_as = c:EST
 		}
 	}
-	
+
 	after = {
 		c:LAT = {
 			every_primary_culture = {
