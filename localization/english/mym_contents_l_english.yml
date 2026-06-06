@@ -54,13 +54,13 @@
 
 # Heads or Tails (BioShock Infinite Reference)
   heads_or_tails.1.tt: "An Encounter of the Constant Kind"
-  heads_or_tails.1.dd: "The Grand Exhibition is currently taking place in [ROOT.GetCapital.GetCityHubName]. [SCOPE.sCharacter('heads_or_tails_character').GetLastName] is walking past an unassuming stall when he is approached by the couple standing behind it."
+  heads_or_tails.1.dd: "The Grand Exhibition is currently taking place in [ROOT.GetCountry.GetCapital.GetCityHubName]. [SCOPE.sCharacter('heads_or_tails_character').GetLastName] is walking past an unassuming stall when he is approached by the couple standing behind it."
   heads_or_tails.1.ff: "A Gentleman: 'Heads?'\nA Lady: 'Or tails?'\n\n[SCOPE.sCharacter('heads_or_tails_character').GetFullName] reacts with surprise, completely taken aback by the unusual question the two of them are asking him.\n\n[SCOPE.sCharacter('heads_or_tails_character').GetLastName]: '...what?'\nThe man tosses a coin to him, and [SCOPE.sCharacter('heads_or_tails_character').GetLastName] catches it.\n\nA Gentleman: 'Heads?'\nA Lady: 'Or tails?'\n\n[SCOPE.sCharacter('heads_or_tails_character').GetLastName]: 'Erm...'"
   heads_or_tails.1.a:  "Heads"
   heads_or_tails.1.b:  "Tails"
   heads_or_tails.2.tt: "Flip Coin"
   heads_or_tails.2.dd: "The small coin flies through the air and comes to rest with a clatter on the round porcelain of her plate.\n\n#bold Heads#!."
-  heads_or_tails.2.ff: "A Gentleman: 'Told you', he says, with a hint of disappointment in his voice.\nShe hums briefly, as if to confirm it, and adds another chalk line to the half of the board that is titled 'Heads'.\nA Gentleman: 'I never find that as satisfying as I'd imagined.'\nWith an elegant movement, she brings her hand to his face, and her fingertip gently touches the lower edge of his clean-shaven chin, before lifting his face upwards.\nA Lady: 'Chin up. There's always next time.'\nA Gentleman: 'I suppose there is.'"
+  heads_or_tails.2.ff: "A Gentleman: 'Told you', he says, with a hint of disappointment in his voice.\n\nShe hums briefly, as if to confirm it, and adds another chalk line to the half of the board that is titled 'Heads'.\n\nA Gentleman: 'I never find that as satisfying as I'd imagined.'\n\nWith an elegant movement, she brings her hand to his face, and her fingertip gently touches the lower edge of his clean-shaven chin, before lifting his face upwards.\n\nA Lady: 'Chin up. There's always next time.'\n\nA Gentleman: 'I suppose there is.'"
   heads_or_tails.2.a:  "Well, that was awkward"
 
 # Anarchist Balkanisation
