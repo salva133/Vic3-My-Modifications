@@ -309,7 +309,7 @@ baltic_dissolution.1 = {
 			play_as = c:LIT
 		}
 	}
-	
+
 	option = {
 		name = baltic_dissolution.1.b
 		trigger = {
@@ -322,7 +322,7 @@ baltic_dissolution.1 = {
 			play_as = c:LAT
 		}
 	}
-	
+
 	option = {
 		name = baltic_dissolution.1.c
 		trigger = {
