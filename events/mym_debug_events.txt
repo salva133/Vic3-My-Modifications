@@ -530,8 +530,9 @@ mym_debug.6 = {
 }
 
 # MyM Debug Cheats Submenu - bundles the existing cheat-flavoured submenus
-# (Leader Ideology Changer, Game Breaker, Character Spawn, Movement Attraction)
-# and exposes inline one-shot cheats. Reached from the main debug menu .4.
+# (Leader Ideology Changer, Game Breaker, Character Spawn, Movement Attraction,
+# Journal Entry Spawner) and exposes inline one-shot cheats. Reached from the
+# main debug menu .4.
 mym_debug.7 = {
 	type = country_event
 	placement = ROOT
@@ -585,6 +586,13 @@ mym_debug.7 = {
 		trigger_event = { id = mym_debug.6 popup = yes }
 	}
 
+	# Journal Entry Spawner submenu
+	option = {
+		name = mym_debug.7.g
+
+		trigger_event = { id = mym_debug.8 popup = yes }
+	}
+
 	# Inline cheat: Prussia swallows every European country whose primary
 	# culture is north_german. Gated on ROOT being Prussia and at least one
 	# valid target existing so the option is hidden when meaningless.
@@ -623,6 +631,79 @@ mym_debug.7 = {
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.7 popup = yes }
+		}
+	}
+}
+
+# MyM Journal Entry Spawner - force-adds any mod-owned journal entry to ROOT,
+# skipping its normal activation conditions. Reached from the cheats submenu .7.
+mym_debug.8 = {
+	type = country_event
+	placement = ROOT
+	title = mym_debug.8.tt
+	desc = mym_debug.8.dd
+	flavor = mym_debug.8.ff
+
+	event_image = { texture = gfx/event_pictures/mym_debug.dds }
+
+	trigger = {} # Gets triggered by the cheats submenu
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = gfx/interface/icons/event_icons/waving_flag.dds
+
+	# Back to cheats submenu
+	option = {
+		name = mym_debug.8.aa
+		default_option = yes
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.7 popup = yes }
+		}
+	}
+
+	# Adds the Gangs of New York journal entry
+	option = {
+		name = mym_debug.8.a
+
+		trigger = {
+			NOT = { has_journal_entry = je_gangs_of_new_york }
+		}
+
+		add_journal_entry = { type = je_gangs_of_new_york }
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.8 popup = yes }
+		}
+	}
+
+	# Adds the Baltic Dissolution journal entry
+	option = {
+		name = mym_debug.8.b
+
+		trigger = {
+			NOT = { has_journal_entry = je_mym_baltic_dissolution }
+		}
+
+		add_journal_entry = { type = je_mym_baltic_dissolution }
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.8 popup = yes }
+		}
+	}
+
+	# Adds the global religion tracker journal entry
+	option = {
+		name = mym_debug.8.c
+
+		trigger = {
+			NOT = { has_journal_entry = je_mym_global_religion_tracker }
+		}
+
+		add_journal_entry = { type = je_mym_global_religion_tracker }
+
+		hidden_effect = {
+			trigger_event = { id = mym_debug.8 popup = yes }
 		}
 	}
 }

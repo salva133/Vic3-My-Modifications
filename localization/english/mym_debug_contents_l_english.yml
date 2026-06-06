@@ -59,3 +59,12 @@
   mym_debug.7.d: "$mym_debug.6.tt$\n$mym_debug.6.dd$"
   mym_debug.7.e: "Heim ins Reich! — annex every European country whose primary culture is North German."
   mym_debug.7.f: "Stuff the ground! — scatter 100 levels each of Rubber Plantation, Oil Rig and Sulfur Mine across random owned states. Over-cap levels stay until demolished, then they're gone."
+  mym_debug.7.g: "$mym_debug.8.tt$\n$mym_debug.8.dd$"
+
+  mym_debug.8.tt: "$mym_debug.pre.tt$ Journal Entry Spawner"
+  mym_debug.8.dd: "Force-add any My Modifications journal entry, skipping its usual requirements."
+  mym_debug.8.ff: "#lore The journal writes itself tonight. No questions asked.#!"
+  mym_debug.8.aa: "Back"
+  mym_debug.8.a: "Add #bold $je_gangs_of_new_york$#!"
+  mym_debug.8.b: "Add #bold $je_mym_baltic_dissolution$#!"
+  mym_debug.8.c: "Add #bold $je_mym_global_religion_tracker$#!"
