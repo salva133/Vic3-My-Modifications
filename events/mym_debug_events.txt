@@ -412,13 +412,6 @@ mym_debug.5 = {
 			trigger_event = { id = mym_debug.4 popup = yes }
 		}
 	}
-	# option = {
-	# 	name = mym_debug.3.a
-	# 	trigger_event = {
-	# 		id = ssm_debug.1
-	# 		popup = yes
-	# 	}
-	# }
 }
 
 mym_debug.6 = {
