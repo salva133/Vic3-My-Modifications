@@ -79,7 +79,7 @@
 
 # Baltic Dissolution Event
   baltic_dissolution.1.tt: "The Hour of Separation"
-  baltic_dissolution.1.dd: "#italic [GetCapitalName], [GetYear]#!#!\n\n#bold THE BALTIC DUCHY DISSOLVES — THREE PEOPLES RECLAIM THEIR NAMES#!\n\nThe Ministry of the Interior has ceased to function. The garrison commanders of [GetName] have sent word that they will not fire upon their own peoples. The nationalists were right about one thing: a state built on the suppression of three distinct nations cannot survive the century that gave those nations a vocabulary.\n\nLithuania, Latvia, Estonia — each has a capital, a flag, and an expectation. The only question remaining is in which republic your hand shall guide what comes next."
+  baltic_dissolution.1.dd: "#italic [ROOT.GetCountry.GetCapital.GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\n#bold THE BALTIC DUCHY DISSOLVES — THREE PEOPLES RECLAIM THEIR NAMES#!\n\nThe Ministry of the Interior has ceased to function. The garrison commanders of the Duchy have sent word that they will not fire upon their own peoples. The nationalists were right about one thing: a state built on the suppression of three distinct nations cannot survive the century that gave those nations a vocabulary.\n\nLithuania, Latvia, Estonia — each has a capital, a flag, and an expectation. The only question remaining is in which republic your hand shall guide what comes next."
   baltic_dissolution.1.ff: "#lore #italic 'Three peoples. Three flags. One brief, embarrassing decade as a Duchy.'#!\n\n#italic — anonymous editorial, date and publication unknown#!"
   baltic_dissolution.1.a: "Guide the Lithuanian Republic."
   baltic_dissolution.1.b: "Guide the Latvian Republic."
