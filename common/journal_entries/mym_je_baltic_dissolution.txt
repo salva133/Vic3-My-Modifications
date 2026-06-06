@@ -5,12 +5,12 @@
 
 	# Shown only for the United Baltic Duchy while the player controls it.
 	is_shown_when_inactive = {
-		c:UBD = this
+		c:UBD ?= this
 		is_player = yes
 	}
 
 	possible = {
-		c:UBD = this
+		c:UBD ?= this
 		is_player = yes
 		is_subject = no
 		has_technology_researched = nationalism
