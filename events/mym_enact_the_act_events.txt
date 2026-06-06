@@ -28,6 +28,12 @@ enact_the_act.1 = {
 		name = enact_the_act.1.a
 		default_option = yes
 		activate_law = law_type:law_autocracy
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_womens_suffrage
+			}
+			activate_law = law_type:law_women_in_the_workplace
+		}
 	}
 
 	# Reconsider — leave the chamber as it stands
