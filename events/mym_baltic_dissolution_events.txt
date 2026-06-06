@@ -15,7 +15,7 @@ baltic_dissolution.1 = {
 	duration = 1
 
 	event_image = {
-		video = "europenorthern_forest"
+		video = "europenorthamerica_springtime_of_nations"
 	}
 
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
@@ -300,27 +300,39 @@ baltic_dissolution.1 = {
 	option = {
 		name = baltic_dissolution.1.a
 		trigger = {
-			NOT = { c:LIT = this }
 			exists = c:LIT
 		}
-		play_as = c:LIT
+		if = {
+			limit = {
+				NOT = { c:LIT = this }
+			}
+			play_as = c:LIT
+		}
 	}
-
+	
 	option = {
 		name = baltic_dissolution.1.b
 		trigger = {
-			NOT = { c:LAT = this }
 			exists = c:LAT
 		}
-		play_as = c:LAT
+		if = {
+			limit = {
+				NOT = { c:LAT = this }
+			}
+			play_as = c:LAT
+		}
 	}
-
+	
 	option = {
 		name = baltic_dissolution.1.c
 		trigger = {
-			NOT = { c:EST = this }
 			exists = c:EST
 		}
-		play_as = c:EST
+		if = {
+			limit = {
+				NOT = { c:EST = this }
+			}
+			play_as = c:EST
+		}
 	}
 }
