@@ -668,6 +668,13 @@ mym_debug.8 = {
 
 		trigger = {
 			NOT = { has_journal_entry = je_gangs_of_new_york }
+			# Mirrors the journal entry's possible block
+			game_date >= 1920.8.16
+			s:STATE_NEW_YORK = { root_owns_state_in_region = yes }
+			cultural_acceptance_base = {
+				target = cu:south_italian
+				value > acceptance_status_3
+			}
 		}
 
 		add_journal_entry = { type = je_gangs_of_new_york }
@@ -683,6 +690,16 @@ mym_debug.8 = {
 
 		trigger = {
 			NOT = { has_journal_entry = je_mym_baltic_dissolution }
+			# Mirrors the journal entry's possible block
+			c:UBD = this
+			is_player = yes
+			is_subject = no
+			has_technology_researched = nationalism
+			OR = {
+				any_scope_state = { state_region = { is_homeland = cu:lithuanian } }
+				any_scope_state = { state_region = { is_homeland = cu:latvian } }
+				any_scope_state = { state_region = { is_homeland = cu:estonian } }
+			}
 		}
 
 		add_journal_entry = { type = je_mym_baltic_dissolution }
