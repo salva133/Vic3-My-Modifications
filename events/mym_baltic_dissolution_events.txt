@@ -321,12 +321,16 @@ baltic_dissolution.1 = {
 			}
 			play_as = c:LAT
 		}
-		# Align primary cultures with LAT's country definition (latvian only);
-		# the change_tag from UBD carries over estonian and lithuanian.
+		# Strip every primary culture LAT's country definition does not list;
+		# the change_tag from UBD carries the full UBD culture set over.
 		c:LAT = {
+			every_primary_culture = {
+				limit = {
+					NOT = { prev = { country_definition_has_culture = prev } }
+				}
+				prev = { remove_primary_culture = prev }
+			}
 			add_primary_culture = cu:latvian
-			remove_primary_culture = cu:lithuanian
-			remove_primary_culture = cu:estonian
 		}
 	}
 	
