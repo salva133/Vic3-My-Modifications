@@ -402,15 +402,17 @@ mym_debug.5 = {
 	}
 	option = {
 		name = "Create Folkist"
-
-		create_character = {
-			is_agitator = yes
-			ideology = ideology_folkist
+		c:EST ?= {
+			remove_all_economy_buildings_from_country = yes
 		}
+		# create_character = {
+		# 	is_agitator = yes
+		# 	ideology = ideology_folkist
+		# }
 
-		hidden_effect = {
-			trigger_event = { id = mym_debug.4 popup = yes }
-		}
+		# hidden_effect = {
+		# 	trigger_event = { id = mym_debug.4 popup = yes }
+		# }
 	}
 }
 
