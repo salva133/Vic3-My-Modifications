@@ -10,7 +10,6 @@
 	}
 
 	possible = {
-		always = no
 		c:UBD = this
 		is_player = yes
 		is_subject = no
@@ -43,13 +42,5 @@
 
 	on_complete = {
 		trigger_event = { id = baltic_dissolution.1 }
-	}
-
-	fail = {
-		OR = {
-			NOT = { c:UBD = this }
-			is_subject = yes
-			NOT = { is_player = yes }
-		}
 	}
 }
