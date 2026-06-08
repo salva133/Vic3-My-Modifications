@@ -5,3 +5,9 @@
 modifier_force_privatization = {
     country_force_privatization_bool = yes
 }
+
+modifier_miskatonic_acquisition = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+    country_prestige_add = 10
+    interest_group_ig_intelligentsia_approval_add = 1
+}
