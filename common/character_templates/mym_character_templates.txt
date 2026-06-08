@@ -1,4 +1,4 @@
-vito_corleone_character_template = {
+﻿vito_corleone_character_template = {
 	first_name = Vito
 	last_name = Corleone
 	historical = no
@@ -49,6 +49,21 @@ hp_liebkraft_character_template = {
 	}
 	on_created = {
 		set_global_variable = lovecraft_happened_globvar
+	}
+}
+
+pickman_character_template = {
+	first_name = Richard_Upton
+	last_name = Pickman
+	historical = no
+	female = no
+	interest_group = ig_intelligentsia
+	birth_date = 1888.1.1
+	traits = {
+		meticulous
+	}
+	on_created = {
+		set_global_variable = pickman_happened_globvar
 	}
 }
 

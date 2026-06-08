@@ -135,3 +135,60 @@ hp_lovecraft.3 = {
 		}
 	}
 }
+
+# Pickman exhibits — Miskatonic takes interest (English press)
+hp_lovecraft.4 = {
+	type = country_event
+	placement = ROOT
+	title =  hp_lovecraft.4.tt
+	desc =   hp_lovecraft.4.dd
+	flavor = hp_lovecraft.4.ff
+
+	left_icon = scope:pickman_scope
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		has_global_variable = lovecraft_happened_globvar
+		NOT = { has_global_variable = pickman_happened_globvar }
+	}
+
+	immediate = {
+		# pickman_happened_globvar is set by pickman_character_template's on_created
+		random_country = {
+			limit = {
+				owns_entire_state_region = STATE_MASSACHUSETTS
+			}
+			save_scope_as = target_country_scope
+		}
+		scope:target_country_scope = {
+			create_character = {
+				template = pickman_character_template
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_template = pickman_character_template
+			}
+			save_scope_as = pickman_scope
+		}
+	}
+
+	option = {
+		name = hp_lovecraft.4.a
+		default_option = yes
+
+		custom_tooltip = miskatonic_acquisition_tt
+		add_modifier = {
+			name = modifier_miskatonic_acquisition
+			months = 60
+		}
+	}
+	option = {
+		name = hp_lovecraft.4.b
+	}
+}
