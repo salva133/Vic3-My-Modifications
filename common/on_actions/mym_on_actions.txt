@@ -3,7 +3,6 @@
 		95 = hp_lovecraft.1
 		5 = hp_lovecraft.2
 		95 = hp_lovecraft.4
-		5 = hp_lovecraft.5
 	}
 }
 

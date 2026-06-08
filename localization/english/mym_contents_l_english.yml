@@ -53,12 +53,6 @@
   hp_lovecraft.4.a: "Let Miskatonic University take the canvases"
   hp_lovecraft.4.b: "The painter has vanished — seal the studio"
 
-  hp_lovecraft.5.tt: "Painter's canvases unsettle the salons"
-  hp_lovecraft.5.dd: "[SCOPE.sCharacter('pickman_scope').GetFullName] has exhibited a series of canvases so grotesquely lifelike that the salon closed its doors within the week. Scholars from Miskatonic University in Arkham have quietly enquired after the collection."
-  hp_lovecraft.5.ff: "#lore 'Pickman's Model' belongs to the finest of weird fiction. What froze the blood was not the deviltry of the subjects but the photographic, almost clinical fidelity with which they were set down — as though the artist had not imagined his ghouls at all, but painted them from life.\n\n#italic - from Der Orchideengarten, October 1927 issue#!"
-  hp_lovecraft.5.a: "Let Miskatonic University take the canvases"
-  hp_lovecraft.5.b: "The painter has vanished — seal the studio"
-
   miskatonic_acquisition_tt: "Miskatonic University acquires the canvases — a quiet prestige and the gratitude of the $ig_intelligentsia$"
 
   milei.1.tt: "A new agitator appears"
