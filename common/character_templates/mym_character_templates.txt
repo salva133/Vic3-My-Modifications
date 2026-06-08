@@ -96,7 +96,4 @@ milei_character_template = {
 		ambitious
 		persistent
 	}
-	on_created = {
-		set_global_variable = milei_happened_globvar
-	}
 }
