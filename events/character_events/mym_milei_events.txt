@@ -3,8 +3,8 @@
 milei.1 = {
 	type = country_event
 	placement = ROOT
-	title =  milei.1.tt
-	desc =   milei.1.dd
+	title = milei.1.tt
+	desc = milei.1.dd
 	flavor = milei.1.ff
 
 	duration = 3
@@ -34,7 +34,7 @@ milei.1 = {
 			has_law_or_variant = law_type:law_no_colonial_affairs
 			has_law_or_variant = law_type:law_no_home_affairs
 			has_law_or_variant = law_type:law_no_workers_rights
-			NOT = { has_law_or_variant = law_type:law_total_war }
+			NOT = { has_law_or_variant = law_type:law_command_economy }
 			has_law_or_variant = law_type:law_no_police
 		}
 	}
