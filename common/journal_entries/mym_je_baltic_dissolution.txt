@@ -3,6 +3,8 @@
 
 	group = je_group_internal_affairs
 
+	should_be_pinned_by_default_uninvolved_or_context = yes
+
 	# Shown only for the United Baltic Duchy while the player controls it.
 	is_shown_when_inactive = {
 		c:UBD ?= this
