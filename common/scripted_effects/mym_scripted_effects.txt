@@ -297,3 +297,31 @@ mym_cheat_spread_building_levels = {
 	}
 	remove_variable = mym_cheat_spread_counter_var
 }
+
+# Creates a 25-year bilateral pact between the two Baltic successor states
+# $FIRST$ and $SECOND$ (tags such as LIT / LAT / EST) and maxes out their
+# mutual opinion. baltic_dissolution.1 calls this once per surviving pair,
+# so the shared article list lives in a single place instead of three
+# near-identical copies. is_draft = no signs the treaty immediately rather
+# than leaving it as a proposal both sides would still have to accept.
+mym_create_baltic_pact = {
+	create_treaty = {
+		first_country  = c:$FIRST$
+		second_country = c:$SECOND$
+		is_draft = no
+		binding_period = { years = 25 }
+		articles_to_create = {
+			{ article = alliance }
+			{ article = foreign_investment_rights  source_country = c:$FIRST$   target_country = c:$SECOND$ }
+			{ article = foreign_investment_rights  source_country = c:$SECOND$  target_country = c:$FIRST$  }
+			{ article = trade_privilege            source_country = c:$FIRST$   target_country = c:$SECOND$ }
+			{ article = trade_privilege            source_country = c:$SECOND$  target_country = c:$FIRST$  }
+			{ article = military_access            source_country = c:$FIRST$   target_country = c:$SECOND$ }
+			{ article = military_access            source_country = c:$SECOND$  target_country = c:$FIRST$  }
+			{ article = transit_rights             source_country = c:$FIRST$   target_country = c:$SECOND$ }
+			{ article = transit_rights             source_country = c:$SECOND$  target_country = c:$FIRST$  }
+		}
+	}
+	c:$FIRST$  = { change_relations = { country = c:$SECOND$  value = 200 } }
+	c:$SECOND$ = { change_relations = { country = c:$FIRST$   value = 200 } }
+}
