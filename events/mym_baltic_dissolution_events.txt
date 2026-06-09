@@ -59,6 +59,8 @@ baltic_dissolution.1 = {
 				origin = root
 				state  = scope:lit_capital_var
 			}
+			# Take over the dissolving Duchy's now-republican law set.
+			c:LIT ?= { copy_laws = root }
 		}
 		# Transfer remaining UBD-owned Lithuanian homeland states to LIT.
 		if = {
@@ -114,6 +116,8 @@ baltic_dissolution.1 = {
 				origin = root
 				state  = scope:est_capital_var
 			}
+			# Take over the dissolving Duchy's now-republican law set.
+			c:EST ?= { copy_laws = root }
 		}
 		if = {
 			limit = {
