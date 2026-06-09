@@ -639,6 +639,11 @@ mym_debug.6 = {
 		mym_add_attraction_modifier_to_all_states = { ATTRACTION = utilitarian }
 		hidden_effect = { trigger_event = { id = mym_debug.6 popup = yes } }
 	}
+	option = {
+		name = mym_debug.6.v
+		mym_add_attraction_modifier_to_all_states = { ATTRACTION = liberal }
+		hidden_effect = { trigger_event = { id = mym_debug.6 popup = yes } }
+	}
 }
 
 # Journal Entry Spawner - force-adds a mod-owned journal entry to ROOT. Each

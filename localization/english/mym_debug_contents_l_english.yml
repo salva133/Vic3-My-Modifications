@@ -85,6 +85,7 @@
   mym_debug.6.s: "Royalist (Constitutional)"
   mym_debug.6.t: "Socialist"
   mym_debug.6.u: "Utilitarian"
+  mym_debug.6.v: "Liberal"
 
 # .7 Journal Entry Spawner
   mym_debug.7.tt: "$mym_debug.pre.tt$ Journal Entry Spawner"
