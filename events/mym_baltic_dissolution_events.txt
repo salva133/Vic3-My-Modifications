@@ -130,6 +130,12 @@ baltic_dissolution.1 = {
 			}
 		}
 
+		# Incorporate every state the successor nations hold — states gained via
+		# create_country / set_state_owner are not incorporated by default.
+		c:LIT ?= { every_scope_state = { set_state_type = incorporated } }
+		c:LAT ?= { every_scope_state = { set_state_type = incorporated } }
+		c:EST ?= { every_scope_state = { set_state_type = incorporated } }
+
 		# --- Bilateral pacts + maximum opinion between every surviving pair ---
 		# The shared article list lives in mym_create_baltic_pact; each if-guard
 		# forms a pact only when both partners actually came into existence.
