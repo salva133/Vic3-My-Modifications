@@ -112,187 +112,20 @@ baltic_dissolution.1 = {
 			}
 		}
 
-		# --- Bilateral pacts and opinion: LIT <-> LAT ---
+		# --- Bilateral pacts + maximum opinion between every surviving pair ---
+		# The shared article list lives in mym_create_baltic_pact; each if-guard
+		# forms a pact only when both partners actually came into existence.
 		if = {
 			limit = { exists = c:LIT  exists = c:LAT }
-			create_treaty = {
-				first_country = c:LIT
-				second_country = c:LAT
-				binding_period = { years = 25 }
-				articles_to_create = {
-					{
-						article = alliance
-					}
-					{
-						article = foreign_investment_rights
-						source_country = c:LIT
-						target_country = c:LAT
-					}
-					{
-						article = foreign_investment_rights
-						source_country = c:LAT
-						target_country = c:LIT
-					}
-					{
-						article = trade_privilege
-						source_country = c:LIT
-						target_country = c:LAT
-					}
-					{
-						article = trade_privilege
-						source_country = c:LAT
-						target_country = c:LIT
-					}
-					{
-						article = military_access
-						source_country = c:LIT
-						target_country = c:LAT
-					}
-					{
-						article = military_access
-						source_country = c:LAT
-						target_country = c:LIT
-					}
-					{
-						article = transit_rights
-						source_country = c:LIT
-						target_country = c:LAT
-					}
-					{
-						article = transit_rights
-						source_country = c:LAT
-						target_country = c:LIT
-					}
-				}
-			}
-			c:LIT = {
-				change_relations = { country = c:LAT  value = 200 }
-			}
-			c:LAT = {
-				change_relations = { country = c:LIT  value = 200 }
-			}
+			mym_create_baltic_pact = { FIRST = LIT  SECOND = LAT }
 		}
-
-		# --- Bilateral pacts and opinion: LIT <-> EST ---
 		if = {
-			limit = { exists = c:LIT  exists = c:LAT }
-			create_treaty = {
-				first_country = c:LIT
-				second_country = c:EST
-				binding_period = { years = 25 }
-				articles_to_create = {
-					{
-						article = alliance
-					}
-					{
-						article = foreign_investment_rights
-						source_country = c:LIT
-						target_country = c:EST
-					}
-					{
-						article = foreign_investment_rights
-						source_country = c:EST
-						target_country = c:LIT
-					}
-					{
-						article = trade_privilege
-						source_country = c:LIT
-						target_country = c:EST
-					}
-					{
-						article = trade_privilege
-						source_country = c:EST
-						target_country = c:LIT
-					}
-					{
-						article = military_access
-						source_country = c:LIT
-						target_country = c:EST
-					}
-					{
-						article = military_access
-						source_country = c:EST
-						target_country = c:LIT
-					}
-					{
-						article = transit_rights
-						source_country = c:LIT
-						target_country = c:EST
-					}
-					{
-						article = transit_rights
-						source_country = c:EST
-						target_country = c:LIT
-					}
-				}
-			}
-			c:LIT = {
-				change_relations = { country = c:LAT  value = 200 }
-			}
-			c:EST = {
-				change_relations = { country = c:LIT  value = 200 }
-			}
+			limit = { exists = c:LIT  exists = c:EST }
+			mym_create_baltic_pact = { FIRST = LIT  SECOND = EST }
 		}
-
-		# --- Bilateral pacts and opinion: LAT <-> EST ---
 		if = {
 			limit = { exists = c:LAT  exists = c:EST }
-			create_treaty = {
-				first_country = c:LAT
-				second_country = c:EST
-				binding_period = { years = 25 }
-				articles_to_create = {
-					{
-						article = alliance
-					}
-					{
-						article = foreign_investment_rights
-						source_country = c:LAT
-						target_country = c:EST
-					}
-					{
-						article = foreign_investment_rights
-						source_country = c:EST
-						target_country = c:LAT
-					}
-					{
-						article = trade_privilege
-						source_country = c:LAT
-						target_country = c:EST
-					}
-					{
-						article = trade_privilege
-						source_country = c:EST
-						target_country = c:LAT
-					}
-					{
-						article = military_access
-						source_country = c:LAT
-						target_country = c:EST
-					}
-					{
-						article = military_access
-						source_country = c:EST
-						target_country = c:LAT
-					}
-					{
-						article = transit_rights
-						source_country = c:LAT
-						target_country = c:EST
-					}
-					{
-						article = transit_rights
-						source_country = c:EST
-						target_country = c:LAT
-					}
-				}
-			}
-			c:LAT = {
-				change_relations = { country = c:LAT  value = 200 }
-			}
-			c:EST = {
-				change_relations = { country = c:LIT  value = 200 }
-			}
+			mym_create_baltic_pact = { FIRST = LAT  SECOND = EST }
 		}
 	}
 
