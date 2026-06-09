@@ -7,7 +7,7 @@
 	possible = {}
 
 	when_taken = {
-		trigger_event = { id = mym_debug.4 popup = yes }
+		trigger_event = { id = mym_debug.1 popup = yes }
 	}
 
 	ai_chance = {
