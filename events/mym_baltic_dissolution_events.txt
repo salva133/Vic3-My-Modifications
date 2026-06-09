@@ -136,6 +136,21 @@ baltic_dissolution.1 = {
 		c:LAT ?= { every_scope_state = { set_state_type = incorporated } }
 		c:EST ?= { every_scope_state = { set_state_type = incorporated } }
 
+		# LAT continued from the dissolving Duchy via change_tag and so still
+		# carries UBD's primary cultures. Drop every primary culture that isn't
+		# part of Latvia's own country definition, then guarantee Latvian is
+		# primary. Done here in immediate so it always runs, regardless of which
+		# successor the player continues as in the options below.
+		c:LAT ?= {
+			every_primary_culture = {
+				limit = {
+					NOT = { prev = { country_definition_has_culture = prev } }
+				}
+				prev = { remove_primary_culture = prev }
+			}
+			add_primary_culture = cu:latvian
+		}
+
 		# --- Bilateral pacts + maximum opinion between every surviving pair ---
 		# The shared article list lives in mym_create_baltic_pact; each if-guard
 		# forms a pact only when both partners actually came into existence.
@@ -159,12 +174,7 @@ baltic_dissolution.1 = {
 		trigger = {
 			exists = c:LIT
 		}
-		if = {
-			limit = {
-				NOT = { c:LIT = this }
-			}
-			play_as = c:LIT
-		}
+		play_as = c:LIT
 	}
 
 	option = {
@@ -172,12 +182,7 @@ baltic_dissolution.1 = {
 		trigger = {
 			exists = c:LAT
 		}
-		if = {
-			limit = {
-				NOT = { c:LAT = this }
-			}
-			play_as = c:LAT
-		}
+		play_as = c:LAT
 	}
 
 	option = {
@@ -185,23 +190,6 @@ baltic_dissolution.1 = {
 		trigger = {
 			exists = c:EST
 		}
-		if = {
-			limit = {
-				NOT = { c:EST = this }
-			}
-			play_as = c:EST
-		}
-	}
-
-	after = {
-		c:LAT = {
-			every_primary_culture = {
-				limit = {
-					NOT = { prev = { country_definition_has_culture = prev } }
-				}
-				prev = { remove_primary_culture = prev }
-			}
-			add_primary_culture = cu:latvian
-		}
+		play_as = c:EST
 	}
 }
