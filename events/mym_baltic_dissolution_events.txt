@@ -23,6 +23,20 @@ baltic_dissolution.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	immediate = {
+		# Republicanise the dissolving Duchy before it splits: a Baltic
+		# monarchy, social monarchy or theocracy gives way to a presidential
+		# republic. root is still UBD here, so the entity continued via
+		# change_tag below carries the new governance law over into LAT.
+		if = {
+			limit = {
+				OR = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_social_monarchy
+					has_law = law_type:law_theocracy
+				}
+			}
+			activate_law = law_type:law_presidential_republic
+		}
 		if = {
 			limit = { exists = c:LAT }
 			play_as = c:LAT
