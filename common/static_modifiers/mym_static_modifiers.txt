@@ -14,5 +14,6 @@ modifier_miskatonic_acquisition = {
 
 modifier_no_assimilation = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
-    state_assimilation_mult = -1.0
+    # law_multicultural already grants -0.25, so the nationwide total is exactly -100%.
+    state_assimilation_mult = -0.75
 }
