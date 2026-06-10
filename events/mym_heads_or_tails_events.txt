@@ -12,6 +12,8 @@ heads_or_tails.1 = {
 		texture = gfx/event_pictures/heads_or_tails_1.dds
 	}
 
+	duration = 3
+
 	trigger = {
 		is_player = yes
 		NOT = {
