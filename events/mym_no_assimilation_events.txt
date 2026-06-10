@@ -1,0 +1,27 @@
+namespace = no_assimilation
+
+# Monthly safety net that keeps modifier_no_assimilation in sync with the
+# citizenship law: multicultural countries do not assimilate their pops.
+# The primary sync happens instantly via on_law_activated; this event only
+# fires when the modifier somehow drifted out of sync anyway.
+no_assimilation.1 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				has_law_or_variant = law_type:law_multicultural
+				NOT = { has_modifier = modifier_no_assimilation }
+			}
+			AND = {
+				NOT = { has_law_or_variant = law_type:law_multicultural }
+				has_modifier = modifier_no_assimilation
+			}
+		}
+	}
+
+	immediate = {
+		mym_sync_no_assimilation_modifier = yes
+	}
+}

@@ -20,6 +20,7 @@ on_monthly_pulse_country_mym_character_events = {
 on_monthly_pulse_country_mym_events = {
 	events = {
 		anarchist_balkanisation.1
+		no_assimilation.1
 	}
 	effect = {
 		# Keep modifier_has_unhealthy_economy in sync with the economy flag.
@@ -73,6 +74,11 @@ on_game_started_after_lobby = {
 		# Seed the cached heritage stats once so the JE has something to show before
 		# the first monthly pulse fires.
 		mym_refresh_global_religion_stats = yes
+		# Apply the no-assimilation modifier to countries that start multicultural,
+		# instead of waiting for the first monthly pulse.
+		every_country = {
+			mym_sync_no_assimilation_modifier = yes
+		}
 	}
 }
 
@@ -86,6 +92,18 @@ on_country_formed = {
 			add_journal_entry = {
 				type = je_mym_global_religion_tracker
 			}
+		}
+		mym_sync_no_assimilation_modifier = yes
+	}
+}
+
+# Sync the no-assimilation modifier the moment any law comes into force
+# (enacted, imposed or switched to a variant), instead of waiting for the
+# monthly pulse. Scope is the law; owner is the country.
+on_law_activated = {
+	effect = {
+		owner = {
+			mym_sync_no_assimilation_modifier = yes
 		}
 	}
 }

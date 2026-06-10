@@ -325,3 +325,22 @@ mym_create_baltic_pact = {
 	c:$FIRST$  = { change_relations = { country = c:$SECOND$  value = 200 } }
 	c:$SECOND$ = { change_relations = { country = c:$FIRST$   value = 200 } }
 }
+
+# Keeps modifier_no_assimilation in sync with the citizenship law.
+# Idempotent and safe to call from any country scope at any time.
+mym_sync_no_assimilation_modifier = {
+	if = {
+		limit = {
+			has_law_or_variant = law_type:law_multicultural
+			NOT = { has_modifier = modifier_no_assimilation }
+		}
+		add_modifier = modifier_no_assimilation
+	}
+	else_if = {
+		limit = {
+			NOT = { has_law_or_variant = law_type:law_multicultural }
+			has_modifier = modifier_no_assimilation
+		}
+		remove_modifier = modifier_no_assimilation
+	}
+}
