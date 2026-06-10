@@ -1,0 +1,36 @@
+namespace = no_assimilation
+
+# Keeps modifier_no_assimilation in sync with the citizenship law:
+# Multicultural countries do not assimilate their pops at all.
+no_assimilation.1 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				has_law_or_variant = law_type:law_multicultural
+				NOT = { has_modifier = modifier_no_assimilation }
+			}
+			AND = {
+				NOT = { has_law_or_variant = law_type:law_multicultural }
+				has_modifier = modifier_no_assimilation
+			}
+		}
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_multicultural
+			}
+			add_modifier = modifier_no_assimilation
+		}
+		else_if = {
+			limit = {
+				has_modifier = modifier_no_assimilation
+			}
+			remove_modifier = modifier_no_assimilation
+		}
+	}
+}
