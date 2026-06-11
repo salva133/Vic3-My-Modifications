@@ -5,7 +5,8 @@
 # its respective country tier, mirroring the generic vanilla types:
 #   - Viceroyalty        -> kingdom tier              (mirrors gov_kingdom)
 #   - Vice-Duchy         -> principality tier, Europe (mirrors gov_duchy)
-#   - Vice-Principality  -> principality tier, rest   (mirrors gov_principality)
+#   - Vice-Principality  -> principality and grand_principality tier, rest
+#                           (mirrors gov_principality / gov_grand_principality)
 # File is named 00_* so it is evaluated before 01_monarchies.txt and takes
 # priority over the generic tier-based monarchy types. Culturally specific
 # vanilla flavour for puppet monarchies (Indian princely states, the Swahili
@@ -80,7 +81,10 @@ gov_mym_vice_principality = {
 
 	possible = {
 		has_law = law_type:law_monarchy
-		country_tier = principality
+		OR = {
+			country_tier = principality
+			country_tier = grand_principality
+		}
 		OR = { # Montenegro is a Principality despite being in Europe, mirrors gov_absolute_principality
 			is_not_in_geographic_region = geographic_region_europe
 			c:MON ?= ROOT
