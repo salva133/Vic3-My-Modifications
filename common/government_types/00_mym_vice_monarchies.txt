@@ -1,0 +1,104 @@
+### Vice-Monarchies
+# Government types for monarchies that are ruled as a puppet of another
+# power: the crown is held in trust for the overlord, and the local ruler
+# reigns under a vice-regal title. Each type only applies to monarchies of
+# its respective country tier, mirroring the generic vanilla types:
+#   - Viceroyalty        -> kingdom tier              (mirrors gov_kingdom)
+#   - Vice-Duchy         -> principality tier, Europe (mirrors gov_duchy)
+#   - Vice-Principality  -> principality tier, rest   (mirrors gov_principality)
+# File is named 00_* so it is evaluated before 01_monarchies.txt and takes
+# priority over the generic tier-based monarchy types. Culturally specific
+# vanilla flavour for puppet monarchies (Indian princely states, the Swahili
+# wilayah, the Ottoman vilayet of Tripoli, Haiti) is excluded explicitly so
+# those types keep applying.
+
+gov_mym_viceroyalty = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_MYM_VICEROY"
+	female_ruler = "RULER_TITLE_MYM_VICEREINE"
+
+	male_heir = "RULER_TITLE_PRINCE"
+	female_heir = "RULER_TITLE_PRINCESS"
+
+	possible = {
+		has_law = law_type:law_monarchy
+		country_tier = kingdom
+		is_subject_type = subject_type_puppet
+		has_indian_primary_culture = no # princely states keep their flavour types
+		has_gov_regency = no
+		is_domain_alliance_gov = no
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_mym_vice_duchy = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_MYM_VICE_DUKE"
+	female_ruler = "RULER_TITLE_MYM_VICE_DUCHESS"
+
+	male_heir = "" # Empty on purpose, mirrors gov_duchy
+	female_heir = "" # Empty on purpose, mirrors gov_duchy
+
+	possible = {
+		has_law = law_type:law_monarchy
+		country_tier = principality
+		is_in_geographic_region = geographic_region_europe
+		is_subject_type = subject_type_puppet
+		hidden_trigger = { # Monaco is a Principality despite being in Europe, mirrors gov_duchy
+			NOT = {
+				c:MON ?= ROOT
+			}
+		}
+		has_gov_regency = no
+		is_domain_alliance_gov = no
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_mym_vice_principality = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_MYM_VICE_PRINCE"
+	female_ruler = "RULER_TITLE_MYM_VICE_PRINCESS"
+
+	male_heir = "" # Empty on purpose, mirrors gov_principality
+	female_heir = "" # Empty on purpose, mirrors gov_principality
+
+	possible = {
+		has_law = law_type:law_monarchy
+		country_tier = principality
+		OR = { # Monaco is a Principality despite being in Europe, mirrors gov_absolute_principality
+			is_not_in_geographic_region = geographic_region_europe
+			c:MON ?= ROOT
+		}
+		is_subject_type = subject_type_puppet
+		# Keep the culturally specific vanilla flavour types for puppets
+		has_indian_primary_culture = no
+		NOT = { country_has_primary_culture = cu:swahili }
+		NOT = { c:TRI ?= this }
+		NOT = { c:HAI ?= this }
+		has_gov_regency = no
+		is_domain_alliance_gov = no
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
