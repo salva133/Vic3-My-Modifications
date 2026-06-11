@@ -18,9 +18,29 @@
   gov_swiss_federation_dictator: "Plenipotentiary Regime"
   gov_swiss_federation_dictator_desc: "The Federal Council governs by emergency decree under #italic Vollmachten#! granted outside the ordinary constitutional process. Parliament and people are bypassed; the [Concept('concept_ruler','$RULER_TITLE_PLENIPOTENTIARY$')] rules the Confederation by fiat.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
 
+# Vice-Monarchies
+  gov_mym_viceroyalty: "Viceroyalty"
+  gov_mym_viceroyalty_desc: "A [concept_government_type] where a kingdom is governed as a [concept_puppet] of a foreign power. Its [Concept('concept_ruler','$RULER_TITLE_MYM_VICEROY$')] or [Concept('concept_ruler','$RULER_TITLE_MYM_VICEREINE$')] wears the trappings of royalty, but reigns in the name — and at the pleasure — of the [concept_overlord].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+  gov_mym_vice_duchy: "Vice-Duchy"
+  gov_mym_vice_duchy_desc: "A [concept_government_type] where a duchy is governed as a [concept_puppet] of a foreign power. Its [Concept('concept_ruler','$RULER_TITLE_MYM_VICE_DUKE$')] or [Concept('concept_ruler','$RULER_TITLE_MYM_VICE_DUCHESS$')] holds court at home, but the ducal seal is set to no document the [concept_overlord] would not countersign.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+  gov_mym_vice_principality: "Vice-Principality"
+  gov_mym_vice_principality_desc: "A [concept_government_type] where a principality is governed as a [concept_puppet] of a foreign power. Its [Concept('concept_ruler','$RULER_TITLE_MYM_VICE_PRINCE$')] or [Concept('concept_ruler','$RULER_TITLE_MYM_VICE_PRINCESS$')] rules by hereditary right, yet every act of state defers to the will of the [concept_overlord].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+  gov_mym_vice_regency: "Vice-Regency"
+  gov_mym_vice_regency_desc: "A [concept_government_type] where the throne of a [concept_puppet] monarchy stands vacant. A [Concept('concept_ruler','$RULER_TITLE_MYM_VICE_REGENT$')] carries on the government in the name of a monarch unable to take the throne — and, above them, in the name of the [concept_overlord], at whose pleasure the regency is suffered to continue.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
 ### RULER TITLE ###
   RULER_TITLE_MYM_LORD_COMMANDER: "Lord Commander"
   RULER_TITLE_MYM_LORD_REGENT: "Lord Regent"
   RULER_TITLE_LANDAMMANN: "Landammann"
   RULER_TITLE_FEDERAL_PRESIDENT: "Federal President"
   RULER_TITLE_PLENIPOTENTIARY: "Plenipotentiary Chair"
+  RULER_TITLE_MYM_VICEROY: "Viceroy"
+  RULER_TITLE_MYM_VICEREINE: "Vicereine"
+  RULER_TITLE_MYM_VICE_DUKE: "Vice-Duke"
+  RULER_TITLE_MYM_VICE_DUCHESS: "Vice-Duchess"
+  RULER_TITLE_MYM_VICE_PRINCE: "Vice-Prince"
+  RULER_TITLE_MYM_VICE_PRINCESS: "Vice-Princess"
+  RULER_TITLE_MYM_VICE_REGENT: "Vice-Regent"
