@@ -1,4 +1,47 @@
-﻿### Military Regency
+﻿### Vice-Regency
+# Regency counterpart to the vice-monarchy family (see
+# 00_mym_vice_monarchies.txt): a puppet monarchy whose throne stands vacant.
+# The Vice-Regent governs on behalf of the absent monarch and, above them,
+# of the overlord. Listed first in this file so that for puppets it takes
+# priority over the Military and Noble Regency below — the puppet status
+# defines the regime no matter which interest group the Regent comes from.
+gov_mym_vice_regency = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_MYM_VICE_REGENT"
+	female_ruler = "RULER_TITLE_MYM_VICE_REGENT"
+
+	male_heir = "RULER_TITLE_HEIR_APPARENT"
+	female_heir = "RULER_TITLE_HEIR_APPARENT"
+
+	possible = {
+		country_has_monarchy_law = yes
+		is_subject_type = subject_type_puppet
+		OR = { # Same tier coverage as the vice-monarchy family
+			country_tier = kingdom
+			country_tier = principality
+			AND = {
+				country_tier = grand_principality
+				is_not_in_geographic_region = geographic_region_europe
+			}
+		}
+		# Keep the culturally specific vanilla regency flavour types
+		has_indian_primary_culture = no
+		NOT = { country_has_primary_culture = cu:swahili }
+		NOT = { c:TRI ?= this }
+		NOT = { c:HAI ?= this }
+		has_gov_regency = yes
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+### Military Regency
 # Triggered when the country has an active regency (gov_regency) and the
 # selected Regent is the leader of the Armed Forces interest group.
 # The regency modifier modifier_regency_armed_forces is added by vanilla

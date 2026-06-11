@@ -7,6 +7,8 @@
 #   - Vice-Duchy         -> principality tier, Europe (mirrors gov_duchy)
 #   - Vice-Principality  -> principality and grand_principality tier, rest
 #                           (mirrors gov_principality / gov_grand_principality)
+# The regency counterpart (Vice-Regency, gov_mym_vice_regency) lives in
+# 00_mym_regency.txt together with the other regency types.
 # File is named 00_* so it is evaluated before 01_monarchies.txt and takes
 # priority over the generic tier-based monarchy types. Culturally specific
 # vanilla flavour for puppet monarchies (Indian princely states, the Swahili
