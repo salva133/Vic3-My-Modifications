@@ -1,10 +1,25 @@
-﻿INJECT:DEFAULT = {
+﻿# MyM dynamic country names.
+#
+# The generic government-type names below use NEGATIVE priorities so that ANY vanilla
+# dynamic country name (vanilla uses priority >= 0) always wins. This keeps vanilla flavour
+# names intact - e.g. a communist Russia stays "Soviet Union" / "Russian Soviet Republic"
+# instead of becoming the generic communist name, and tagged republics keep "Russian Republic"
+# etc. Relative order among the MyM names is preserved:
+#   -1  theocracy_* / anarchic   (was 3)
+#   -2  junta / high_command / islamic_republic   (was 2)
+#   -3  communist_* / fascist_state / republic / technocracy   (was 1)
+# Tie-break (see dynamic_country_names.md): equal priority -> first defined in load order wins,
+# and 00_dynamic_country_names.txt loads before this file, so vanilla also wins any tie at 0.
+#
+# Kept above vanilla on purpose: dyn_c_zhuz (UZH/KZH/OZH have no vanilla dynamic names) and
+# dyn_c_bananada (deliberate flavour override for a banana-republic Canada).
+INJECT:DEFAULT = {
 	dynamic_country_name = {
 		name = dyn_c_communist_democracy
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = -3
 
 		trigger = {
 			scope:actor ?= {
@@ -19,7 +34,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = -3
 
 		trigger = {
 			scope:actor ?= {
@@ -36,7 +51,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = -3
 
 		trigger = {
 			scope:actor ?= {
@@ -59,7 +74,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = -3
 
 		trigger = {
 			scope:actor ?= {
@@ -77,7 +92,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 2
+		priority = -2
 
 		trigger = {
 			scope:actor ?= {
@@ -103,7 +118,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 2
+		priority = -2
 
 		trigger = {
 			scope:actor ?= {
@@ -156,7 +171,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 2
+		priority = -2
 
 		trigger = {
 			scope:actor ?= {
@@ -179,7 +194,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 1
+		priority = -3
 
 		trigger = {
 			scope:actor ?= {
@@ -193,7 +208,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 3
+		priority = -1
 
 		trigger = {
 			scope:actor ?= {
@@ -207,7 +222,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 3
+		priority = -1
 
 		trigger = {
 			scope:actor ?= {
@@ -222,7 +237,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 3
+		priority = -1
 
 		trigger = {
 			scope:actor ?= {
@@ -237,7 +252,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 3
+		priority = -1
 
 		trigger = {
 			scope:actor ?= {
@@ -254,7 +269,7 @@
 		adjective = root_adj
 
 		is_main_tag_only = yes
-		priority = 3
+		priority = -1
 
 		trigger = {
 			scope:actor ?= {
