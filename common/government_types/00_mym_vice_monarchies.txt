@@ -52,7 +52,7 @@ gov_mym_vice_duchy = {
 		country_tier = principality
 		is_in_geographic_region = geographic_region_europe
 		is_subject_type = subject_type_puppet
-		hidden_trigger = { # Monaco is a Principality despite being in Europe, mirrors gov_duchy
+		hidden_trigger = { # Montenegro is a Principality despite being in Europe, mirrors gov_duchy
 			NOT = {
 				c:MON ?= ROOT
 			}
@@ -81,7 +81,7 @@ gov_mym_vice_principality = {
 	possible = {
 		has_law = law_type:law_monarchy
 		country_tier = principality
-		OR = { # Monaco is a Principality despite being in Europe, mirrors gov_absolute_principality
+		OR = { # Montenegro is a Principality despite being in Europe, mirrors gov_absolute_principality
 			is_not_in_geographic_region = geographic_region_europe
 			c:MON ?= ROOT
 		}
