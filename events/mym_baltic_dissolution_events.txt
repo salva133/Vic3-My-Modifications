@@ -179,6 +179,9 @@ baltic_dissolution.1 = {
 
 	option = {
 		name = baltic_dissolution.1.b
+		# LAT is always guaranteed here (the dissolving Duchy continues as LAT via
+		# play_as / change_tag in immediate), so it is the safe fallback default.
+		default_option = yes
 		trigger = {
 			exists = c:LAT
 		}

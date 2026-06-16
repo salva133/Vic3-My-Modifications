@@ -1,4 +1,4 @@
-je_mym_global_religion_tracker = {
+﻿je_mym_global_religion_tracker = {
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
 
 	group = je_group_internal_affairs
