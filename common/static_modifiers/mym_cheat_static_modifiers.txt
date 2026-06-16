@@ -28,12 +28,6 @@ modifier_attraction_cultural_minority = {
 	state_pop_support_movement_cultural_minority_mult = 99999.99
 }
 
-modifier_attraction_despotic_utopist = {
-	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
-
-	state_pop_support_movement_despotic_utopist_mult = 99999.99
-}
-
 modifier_attraction_fascist = {
 	icon = gfx/interface/icons/goods_icons/unused/lightbulbs.dds
 

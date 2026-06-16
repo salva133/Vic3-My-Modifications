@@ -1,4 +1,4 @@
-namespace = no_assimilation
+﻿namespace = no_assimilation
 
 # Monthly safety net that keeps modifier_no_assimilation in sync with the
 # citizenship law: multicultural countries do not assimilate their pops.

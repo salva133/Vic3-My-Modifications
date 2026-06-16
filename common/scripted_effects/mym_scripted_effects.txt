@@ -288,7 +288,7 @@ mym_cheat_spread_building_levels = {
 		random_scope_state = {
 			limit = { owner = ROOT }
 			create_building = {
-				building = "$BUILDING$"
+				building = $BUILDING$
 				level = 1
 				reserves = 1
 			}

@@ -1,4 +1,4 @@
-### Vice-Monarchies
+﻿### Vice-Monarchies
 # Government types for monarchies that are ruled as a puppet of another
 # power: the crown is held in trust for the overlord, and the local ruler
 # reigns under a vice-regal title. Each type only applies to monarchies of

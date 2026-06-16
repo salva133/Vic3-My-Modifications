@@ -61,7 +61,14 @@ on_monthly_pulse_country = {
 }
 
 # Hand the global religion tracker journal entry to every country present at game start.
+# Registered as a child on_action instead of attaching a competing effect = {} to the
+# vanilla on_action: the on_actions list merges additively across files, whereas a second
+# effect = {} would clash with vanilla's own (only one survives, "more than one effect").
 on_game_started_after_lobby = {
+	on_actions = { on_game_started_after_lobby_mym }
+}
+
+on_game_started_after_lobby_mym = {
 	effect = {
 		every_country = {
 			limit = {
@@ -84,6 +91,10 @@ on_game_started_after_lobby = {
 
 # Make sure newly formed / released countries also receive the tracker.
 on_country_formed = {
+	on_actions = { on_country_formed_mym }
+}
+
+on_country_formed_mym = {
 	effect = {
 		if = {
 			limit = {
@@ -101,6 +112,10 @@ on_country_formed = {
 # (enacted, imposed or switched to a variant), instead of waiting for the
 # monthly pulse. Scope is the law; owner is the country.
 on_law_activated = {
+	on_actions = { on_law_activated_mym }
+}
+
+on_law_activated_mym = {
 	effect = {
 		owner = {
 			mym_sync_no_assimilation_modifier = yes
@@ -111,6 +126,10 @@ on_law_activated = {
 # Recompute the cached per-heritage global stats once per month, no matter how
 # many countries hold the tracker journal entry.
 on_monthly_pulse = {
+	on_actions = { on_monthly_pulse_mym }
+}
+
+on_monthly_pulse_mym = {
 	effect = {
 		mym_refresh_global_religion_stats = yes
 	}

@@ -34,6 +34,7 @@ heads_or_tails.1 = {
 
 	option = {
 		name = heads_or_tails.1.a
+		default_option = yes
 		scope:heads_or_tails_character = {
 			set_variable = heads_character_var
 		}
