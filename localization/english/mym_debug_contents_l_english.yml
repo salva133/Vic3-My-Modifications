@@ -93,7 +93,6 @@
   mym_debug.7.aa: "Back"
   mym_debug.7.a: "Add #bold $je_gangs_of_new_york$#!"
   mym_debug.7.b: "Add #bold $je_mym_baltic_dissolution$#!"
-  mym_debug.7.c: "Add #bold $je_mym_global_religion_tracker$#!"
 
 # .8 Misc Debug Functions
   mym_debug.8.tt: "$mym_debug.pre.tt$ Misc. Debug Functions"

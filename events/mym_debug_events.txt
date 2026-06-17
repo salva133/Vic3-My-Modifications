@@ -716,24 +716,6 @@ mym_debug.7 = {
 			trigger_event = { id = mym_debug.7 popup = yes }
 		}
 	}
-
-	# Adds the global religion tracker journal entry. je_mym_global_religion_tracker
-	# has no possible block (it is a passive global tracker handed to every
-	# country via on_actions), so there is nothing to mirror beyond the
-	# duplicate guard.
-	option = {
-		name = mym_debug.7.c
-
-		trigger = {
-			NOT = { has_journal_entry = je_mym_global_religion_tracker }
-		}
-
-		add_journal_entry = { type = je_mym_global_religion_tracker }
-
-		hidden_effect = {
-			trigger_event = { id = mym_debug.7 popup = yes }
-		}
-	}
 }
 
 # Misc Debug Functions - scratch space for ad-hoc testing. Reached from the

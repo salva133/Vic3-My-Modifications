@@ -60,7 +60,9 @@ on_monthly_pulse_country = {
 	}
 }
 
-# Hand the global religion tracker journal entry to every country present at game start.
+# Apply the no-assimilation modifier to every country present at game start, so
+# countries that begin multicultural have it from turn one instead of waiting for
+# the first monthly pulse.
 # Registered as a child on_action instead of attaching a competing effect = {} to the
 # vanilla on_action: the on_actions list merges additively across files, whereas a second
 # effect = {} would clash with vanilla's own (only one survives, "more than one effect").
@@ -71,39 +73,19 @@ on_game_started_after_lobby = {
 on_game_started_after_lobby_mym = {
 	effect = {
 		every_country = {
-			limit = {
-				NOT = { has_journal_entry = je_mym_global_religion_tracker }
-			}
-			add_journal_entry = {
-				type = je_mym_global_religion_tracker
-			}
-		}
-		# Seed the cached heritage stats once so the JE has something to show before
-		# the first monthly pulse fires.
-		mym_refresh_global_religion_stats = yes
-		# Apply the no-assimilation modifier to countries that start multicultural,
-		# instead of waiting for the first monthly pulse.
-		every_country = {
 			mym_sync_no_assimilation_modifier = yes
 		}
 	}
 }
 
-# Make sure newly formed / released countries also receive the tracker.
+# Make sure newly formed / released countries get the no-assimilation modifier
+# synced to their citizenship law right away.
 on_country_formed = {
 	on_actions = { on_country_formed_mym }
 }
 
 on_country_formed_mym = {
 	effect = {
-		if = {
-			limit = {
-				NOT = { has_journal_entry = je_mym_global_religion_tracker }
-			}
-			add_journal_entry = {
-				type = je_mym_global_religion_tracker
-			}
-		}
 		mym_sync_no_assimilation_modifier = yes
 	}
 }
@@ -120,17 +102,5 @@ on_law_activated_mym = {
 		owner = {
 			mym_sync_no_assimilation_modifier = yes
 		}
-	}
-}
-
-# Recompute the cached per-heritage global stats once per month, no matter how
-# many countries hold the tracker journal entry.
-on_monthly_pulse = {
-	on_actions = { on_monthly_pulse_mym }
-}
-
-on_monthly_pulse_mym = {
-	effect = {
-		mym_refresh_global_religion_stats = yes
 	}
 }
