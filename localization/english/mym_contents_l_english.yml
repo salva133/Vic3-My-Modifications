@@ -101,6 +101,6 @@
   australian_flavour.1.b: "We do not exile our own. Let them stew at home."
 
   australian_flavour.2.tt: "New Hands for [SCOPE.sState('destination_state').GetName]"
-  australian_flavour.2.dd: "#italic [SCOPE.sState('destination_state').GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\nThe convict transports from [SCOPE.sCountry('deporting_country').GetName] have made landfall. Where the manifests promised radicals and firebrands, the gangways disgorge tired families clutching what they could carry — convicts with little appetite left for revolution and every reason to begin again.\n\nThey are ours now, in name and in tongue. [SCOPE.sState('destination_state').GetName] gains their backs and their grievances alike."
+  australian_flavour.2.dd: "#italic [SCOPE.sState('destination_state').GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\nThe convict transports from [SCOPE.sCountry('transporting_country').GetName] have made landfall. Where the manifests promised radicals and firebrands, the gangways disgorge tired families clutching what they could carry — convicts with little appetite left for revolution and every reason to begin again.\n\nThey are ours now, in name and in tongue. [SCOPE.sState('destination_state').GetName] gains their backs and their grievances alike."
   australian_flavour.2.ff: "#lore #italic 'They arrived as a problem solved elsewhere. Whether they remain one is now our affair.'#!"
   australian_flavour.2.a: "Put them to work."
