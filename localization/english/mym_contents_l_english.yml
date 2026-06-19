@@ -93,14 +93,14 @@
   baltic_dissolution.1.b: "Guide the Latvian Republic."
   baltic_dissolution.1.c: "Guide the Estonian Republic."
 
-# Radical Assimilation — transportation of radicals to an Australian subject
-  radical_assimilation.1.tt: "Transportation Beyond the Seas"
-  radical_assimilation.1.dd: "#italic [ROOT.GetCountry.GetCapital.GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\n[SCOPE.sState('radical_state').GetName] is no longer governed so much as endured. More than half its people are counted as radicals, and the loudest of them speak the King's own English — agitators who quote our liberties back at us as they tear at the order that granted them.\n\nThe Home Office proposes the old remedy in modern dress: round up the most troublesome of them and put them aboard the transports bound for [SCOPE.sCountry('destination_country').GetName]. In [SCOPE.sState('destination_state').GetName] there is land enough, and labour wanting, and an ocean between us. Half of the worst pop would go; the rest would be left to consider their position."
-  radical_assimilation.1.ff: "#lore #italic 'A malcontent in the Antipodes is a settler. A malcontent in the home counties is a revolution waiting on a date.'#!\n\n#italic — minute attributed to an under-secretary at the Home Office#!"
-  radical_assimilation.1.a: "Fill the transports. Let the Antipodes have them."
-  radical_assimilation.1.b: "We do not exile our own. Let them stew at home."
+# Australian Flavour — transportation of radicals to an Australian subject
+  australian_flavour.1.tt: "Transportation Beyond the Seas"
+  australian_flavour.1.dd: "#italic [ROOT.GetCountry.GetCapital.GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\n[SCOPE.sState('radical_state').GetName] is no longer governed so much as endured. More than half its people are counted as radicals, and the loudest of them speak the King's own English — agitators who quote our liberties back at us as they tear at the order that granted them.\n\nThe Home Office proposes the old remedy in modern dress: round up the most troublesome of them and put them aboard the transports bound for [SCOPE.sCountry('destination_country').GetName]. In [SCOPE.sState('destination_state').GetName] there is land enough, and labour wanting, and an ocean between us. Half of the worst pop would go; the rest would be left to consider their position."
+  australian_flavour.1.ff: "#lore #italic 'A malcontent in the Antipodes is a settler. A malcontent in the home counties is a revolution waiting on a date.'#!\n\n#italic — minute attributed to an under-secretary at the Home Office#!"
+  australian_flavour.1.a: "Fill the transports. Let the Antipodes have them."
+  australian_flavour.1.b: "We do not exile our own. Let them stew at home."
 
-  radical_assimilation.2.tt: "New Hands for [SCOPE.sState('destination_state').GetName]"
-  radical_assimilation.2.dd: "#italic [SCOPE.sState('destination_state').GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\nThe transports from [SCOPE.sCountry('deporting_country').GetName] have made landfall. Where the manifests promised radicals and firebrands, the gangways disgorge tired families clutching what they could carry — deportees with little appetite left for revolution and every reason to begin again.\n\nThey are ours now, in name and in tongue. [SCOPE.sState('destination_state').GetName] gains their backs and their grievances alike."
-  radical_assimilation.2.ff: "#lore #italic 'They arrived as a problem solved elsewhere. Whether they remain one is now our affair.'#!"
-  radical_assimilation.2.a: "Put them to work."
+  australian_flavour.2.tt: "New Hands for [SCOPE.sState('destination_state').GetName]"
+  australian_flavour.2.dd: "#italic [SCOPE.sState('destination_state').GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\nThe transports from [SCOPE.sCountry('deporting_country').GetName] have made landfall. Where the manifests promised radicals and firebrands, the gangways disgorge tired families clutching what they could carry — deportees with little appetite left for revolution and every reason to begin again.\n\nThey are ours now, in name and in tongue. [SCOPE.sState('destination_state').GetName] gains their backs and their grievances alike."
+  australian_flavour.2.ff: "#lore #italic 'They arrived as a problem solved elsewhere. Whether they remain one is now our affair.'#!"
+  australian_flavour.2.a: "Put them to work."

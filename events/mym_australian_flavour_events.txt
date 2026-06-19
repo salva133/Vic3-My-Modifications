@@ -1,17 +1,17 @@
-﻿namespace = radical_assimilation
+﻿namespace = australian_flavour
 
 # Recurring GBR event, hooked into on_monthly_pulse_country_mym_events with a
 # 5-year cooldown. When one of Britain's incorporated home states is overrun by
 # radicals who speak a British primary language, the Crown may transport half of
 # the worst-affected pop to one of its Australian-cultured subjects, assimilating
 # the deportees to Australian on the way out.
-radical_assimilation.1 = {
+australian_flavour.1 = {
 	type = country_event
 	placement = scope:radical_state
 
-	title  = radical_assimilation.1.tt
-	desc   = radical_assimilation.1.dd
-	flavor = radical_assimilation.1.ff
+	title  = australian_flavour.1.tt
+	desc   = australian_flavour.1.dd
+	flavor = australian_flavour.1.ff
 
 	duration = 5
 
@@ -79,7 +79,7 @@ radical_assimilation.1 = {
 	}
 
 	option = {
-		name = radical_assimilation.1.a
+		name = australian_flavour.1.a
 		default_option = yes
 		# Assimilate half of the offending pop to Australian, then ship the
 		# freshly-Australian deportees off to the chosen subject state; the
@@ -100,25 +100,25 @@ radical_assimilation.1 = {
 		}
 		# Let the receiving subject know the transports are on their way.
 		scope:destination_country = {
-			trigger_event = { id = radical_assimilation.2 }
+			trigger_event = { id = australian_flavour.2 }
 		}
 	}
 
 	option = {
-		name = radical_assimilation.1.b
+		name = australian_flavour.1.b
 		# The Crown will not exile its own subjects. Nothing happens.
 	}
 }
 
 # Notification fired on the receiving Australian subject when the deportees
 # arrive. ROOT here is the subject; the destination state appears in the title.
-radical_assimilation.2 = {
+australian_flavour.2 = {
 	type = country_event
 	placement = scope:destination_state
 
-	title  = radical_assimilation.2.tt
-	desc   = radical_assimilation.2.dd
-	flavor = radical_assimilation.2.ff
+	title  = australian_flavour.2.tt
+	desc   = australian_flavour.2.dd
+	flavor = australian_flavour.2.ff
 
 	duration = 5
 
@@ -131,7 +131,7 @@ radical_assimilation.2 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	option = {
-		name = radical_assimilation.2.a
+		name = australian_flavour.2.a
 		default_option = yes
 	}
 }
