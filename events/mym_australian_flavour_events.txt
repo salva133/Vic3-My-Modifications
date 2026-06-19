@@ -1,0 +1,136 @@
+﻿namespace = australian_flavour
+
+# Recurring GBR event, hooked into on_monthly_pulse_country_mym_events with a
+# 5-year cooldown. When one of Britain's incorporated home states is overrun by
+# radicals who speak a British primary language, the Crown may transport half of
+# the worst-affected pop to one of its Australian-cultured subjects, assimilating
+# the deportees to Australian on the way out.
+australian_flavour.1 = {
+	type = country_event
+	placement = scope:radical_state
+
+	title  = australian_flavour.1.tt
+	desc   = australian_flavour.1.dd
+	flavor = australian_flavour.1.ff
+
+	duration = 3
+
+	cooldown = { years = 5 }
+
+	event_image = {
+		video = "asia_poor_people_moving"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Great Britain only.
+		c:GBR ?= root
+
+		# At least one subject (or sub-subject) is Australian by primary culture
+		# to receive the deportees.
+		any_subject_or_below = {
+			country_has_primary_culture = cu:australian
+		}
+
+		# At least one incorporated state is radical-majority with a strong
+		# British-speaking radical contingent.
+		any_scope_state = {
+			mym_state_ripe_for_radical_deportation = yes
+		}
+	}
+
+	immediate = {
+		# ROOT is GBR here; remembered for the receiving subject's notification.
+		save_scope_as = deporting_country
+
+		random_scope_state = {
+			limit = { mym_state_ripe_for_radical_deportation = yes }
+			save_scope_as = radical_state
+
+			# The single pop holding the most radicals among those that share a
+			# British primary language, i.e. the largest sharing-language pop
+			# with the largest share of radicals (mym_pop_radical_count ranks on
+			# size * radical fraction; position 0 is the highest).
+			ordered_scope_pop = {
+				limit = {
+					culture = {
+						shares_language_trait_with_any_primary_culture = root
+					}
+				}
+				order_by = mym_pop_radical_count
+				position = 0
+				check_range_bounds = no
+				save_scope_as = deported_pop
+			}
+		}
+
+		# Destination: a random state of a random Australian-cultured subject.
+		random_subject_or_below = {
+			limit = { country_has_primary_culture = cu:australian }
+			save_scope_as = destination_country
+			random_scope_state = {
+				save_scope_as = destination_state
+			}
+		}
+	}
+
+	option = {
+		name = australian_flavour.1.a
+		default_option = yes
+		# Assimilate half of the offending pop to Australian, then ship the
+		# freshly-Australian deportees off to the chosen subject state; the
+		# other half stays behind. change_pop_culture only takes a literal
+		# fraction, so we recolour in place and move the resulting Australian
+		# pop rather than trying to recolour pops after the move.
+		scope:deported_pop = {
+			change_pop_culture = {
+				target = cu:australian
+				value  = 0.5
+			}
+		}
+		scope:radical_state = {
+			every_scope_pop = {
+				limit = { culture = cu:australian }
+				move_pop = scope:destination_state
+			}
+		}
+		# Let the receiving subject know the transports are on their way.
+		scope:destination_country = {
+			trigger_event = { id = australian_flavour.2 }
+		}
+	}
+
+	option = {
+		name = australian_flavour.1.b
+		# The Crown will not exile its own subjects. Nothing happens.
+	}
+}
+
+# Notification fired on the receiving Australian subject when the deportees
+# arrive. ROOT here is the subject; the destination state appears in the title.
+australian_flavour.2 = {
+	type = country_event
+	placement = scope:destination_state
+
+	title  = australian_flavour.2.tt
+	desc   = australian_flavour.2.dd
+	flavor = australian_flavour.2.ff
+
+	duration = 5
+
+	event_image = {
+		video = "asia_poor_people_moving"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	option = {
+		name = australian_flavour.2.a
+		default_option = yes
+	}
+}

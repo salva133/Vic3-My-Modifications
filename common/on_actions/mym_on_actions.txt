@@ -21,6 +21,7 @@ on_monthly_pulse_country_mym_events = {
 	events = {
 		anarchist_balkanisation.1
 		no_assimilation.1
+		australian_flavour.1
 	}
 	effect = {
 		# Keep modifier_has_unhealthy_economy in sync with the economy flag.
