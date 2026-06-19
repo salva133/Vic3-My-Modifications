@@ -91,8 +91,8 @@ on_country_formed_mym = {
 	}
 }
 
-# Sync the no-assimilation modifier the moment any law comes into force
-# (enacted, imposed or switched to a variant), instead of waiting for the
+# Reconcile a country's modifiers with its law set the moment any law comes into
+# force (enacted, imposed or switched to a variant), instead of waiting for the
 # monthly pulse. Scope is the law; owner is the country.
 on_law_activated = {
 	on_actions = { on_law_activated_mym }
@@ -102,6 +102,15 @@ on_law_activated_mym = {
 	effect = {
 		owner = {
 			mym_sync_no_assimilation_modifier = yes
+			# Legal Guardianship is incompatible with the natalism campaign, so
+			# enacting it strips the Advertising Natalism modifier.
+			if = {
+				limit = {
+					has_law = law_type:law_no_womens_rights
+					has_modifier = modifier_advertising_natalism
+				}
+				remove_modifier = modifier_advertising_natalism
+			}
 		}
 	}
 }
