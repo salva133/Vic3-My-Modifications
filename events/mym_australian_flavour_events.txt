@@ -4,7 +4,7 @@
 # 5-year cooldown. When one of Britain's incorporated home states is overrun by
 # radicals who speak a British primary language, the Crown may transport half of
 # the worst-affected pop to one of its Australian-cultured subjects, assimilating
-# the deportees to Australian on the way out.
+# the convicts to Australian on the way out.
 australian_flavour.1 = {
 	type = country_event
 	placement = scope:radical_state
@@ -30,7 +30,7 @@ australian_flavour.1 = {
 		c:GBR ?= root
 
 		# At least one subject (or sub-subject) is Australian by primary culture
-		# to receive the deportees.
+		# to receive the convicts.
 		any_subject_or_below = {
 			country_has_primary_culture = cu:australian
 		}
@@ -38,16 +38,16 @@ australian_flavour.1 = {
 		# At least one incorporated state is radical-majority with a strong
 		# British-speaking radical contingent.
 		any_scope_state = {
-			mym_state_ripe_for_radical_deportation = yes
+			mym_state_ripe_for_convict_transportation = yes
 		}
 	}
 
 	immediate = {
 		# ROOT is GBR here; remembered for the receiving subject's notification.
-		save_scope_as = deporting_country
+		save_scope_as = transporting_country
 
 		random_scope_state = {
-			limit = { mym_state_ripe_for_radical_deportation = yes }
+			limit = { mym_state_ripe_for_convict_transportation = yes }
 			save_scope_as = radical_state
 
 			# The single pop holding the most radicals among those that share a
@@ -63,7 +63,7 @@ australian_flavour.1 = {
 				order_by = mym_pop_radical_count
 				position = 0
 				check_range_bounds = no
-				save_scope_as = deported_pop
+				save_scope_as = convict_pop
 			}
 		}
 
@@ -103,11 +103,11 @@ australian_flavour.1 = {
 		name = australian_flavour.1.a
 		default_option = yes
 		# Assimilate half of the offending pop to Australian, then ship the
-		# freshly-Australian deportees off to the chosen subject state; the
+		# freshly-Australian convicts off to the chosen subject state; the
 		# other half stays behind. change_pop_culture only takes a literal
 		# fraction, so we recolour in place and move the resulting Australian
 		# pop rather than trying to recolour pops after the move.
-		scope:deported_pop = {
+		scope:convict_pop = {
 			change_pop_culture = {
 				target = cu:australian
 				value  = 0.5
@@ -131,8 +131,8 @@ australian_flavour.1 = {
 	}
 }
 
-# Notification fired on the receiving Australian subject when the deportees
-# arrive. ROOT here is the subject; the destination state appears in the title.
+# Notification fired on the receiving Australian subject when the convict
+# transports arrive. ROOT here is the subject; the destination state appears in the title.
 australian_flavour.2 = {
 	type = country_event
 	placement = scope:destination_state

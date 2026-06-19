@@ -1,12 +1,12 @@
-﻿# Trigger backing the GBR radical-deportation event (australian_flavour.1).
+﻿# Trigger backing the GBR convict-transportation event (australian_flavour.1).
 # Kept in its own file alongside mym_australian_flavour_values.txt so the
 # whole feature stays in one place.
 
 # True for an incorporated state of ROOT (intended: GBR) that is ripe for the
-# deportation: high state turmoil (at least 75%) on top of a radical majority,
+# transportation: high state turmoil (at least 75%) on top of a radical majority,
 # of whom at least a quarter belong to cultures sharing the language of one of
 # ROOT's primary cultures.
-mym_state_ripe_for_radical_deportation = {
+mym_state_ripe_for_convict_transportation = {
 	is_incorporated = yes
 	turmoil >= 0.75
 	radical_fraction = { value > 0.5 }

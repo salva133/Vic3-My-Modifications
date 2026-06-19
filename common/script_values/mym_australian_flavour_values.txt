@@ -1,6 +1,6 @@
-﻿# Script values backing the GBR radical-deportation event (australian_flavour.1).
+﻿# Script values backing the GBR convict-transportation event (australian_flavour.1).
 # The three state-level values iterate the pops of the state they are evaluated
-# in. ROOT is the deporting country (Great Britain).
+# in. ROOT is the transporting country (Great Britain).
 
 # Radicals living in a single pop: its size weighted by its radical fraction.
 # Evaluated in pop scope. Used both to rank the language-sharing pops (so the
