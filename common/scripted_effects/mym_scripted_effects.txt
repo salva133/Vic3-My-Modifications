@@ -4,7 +4,6 @@ custom_tooltip = {
 		every_scope_character = {
 			limit = {
 				has_role_of_type = politician
-				NOT = { has_ideology = ideology:ideology_solist }
 			}
 			random_list = {
 				1 = { set_ideology = ideology:ideology_moderate }
@@ -43,9 +42,6 @@ custom_tooltip = {
 				1 = { set_ideology = ideology:ideology_sovereignist_leader }
 				1 = { set_ideology = ideology:ideology_utopian }
 				1 = { set_ideology = ideology:ideology_modernizer_leader }
-				1 = { set_ideology = ideology:ideology_neo_industrialist }
-				1 = { set_ideology = ideology:ideology_hyper_individualist }
-				1 = { set_ideology = ideology:ideology_restorationist }
 				1 = { set_ideology = ideology:ideology_secular_humanitarian }
 			}
 		}
