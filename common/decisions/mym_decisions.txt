@@ -95,3 +95,37 @@ decision_mym_force_privatization = {
 		value = 0
 	}
 }
+
+decision_mym_natalist_advertisement = {
+
+	is_shown = {
+		is_player = yes
+		NOT = { has_modifier = modifier_advertising_natalism }
+	}
+
+	when_taken = {
+		add_modifier = {
+			name = modifier_advertising_natalism
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
+
+decision_mym_end_natalist_advertisement = {
+
+	is_shown = {
+		is_player = yes
+		has_modifier = modifier_advertising_natalism
+	}
+
+	when_taken = {
+		remove_modifier = modifier_advertising_natalism
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
