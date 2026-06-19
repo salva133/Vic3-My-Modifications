@@ -3,11 +3,12 @@
 # whole feature stays in one place.
 
 # True for an incorporated state of ROOT (intended: GBR) that is ripe for the
-# deportation: a radical supermajority (over three-quarters of the state), of
-# whom at least a quarter belong to cultures sharing the language of one of
+# deportation: high state turmoil (at least 75%) on top of a radical majority,
+# of whom at least a quarter belong to cultures sharing the language of one of
 # ROOT's primary cultures.
 mym_state_ripe_for_radical_deportation = {
 	is_incorporated = yes
-	radical_fraction = { value > 0.75 }
+	turmoil >= 0.75
+	radical_fraction = { value > 0.5 }
 	mym_state_radicals_sharing_primary_language >= mym_state_radicals_total_quarter
 }
