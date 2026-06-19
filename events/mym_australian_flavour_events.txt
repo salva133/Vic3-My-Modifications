@@ -68,11 +68,33 @@ australian_flavour.1 = {
 		}
 
 		# Destination: a random state of a random Australian-cultured subject.
-		random_subject_or_below = {
-			limit = { country_has_primary_culture = cu:australian }
-			save_scope_as = destination_country
-			random_scope_state = {
-				save_scope_as = destination_state
+		# Prefer a player-controlled Australian subject; only when none of the
+		# Australian-cultured subjects is a player do we fall back to a random one.
+		if = {
+			limit = {
+				any_subject_or_below = {
+					country_has_primary_culture = cu:australian
+					is_player = yes
+				}
+			}
+			random_subject_or_below = {
+				limit = {
+					country_has_primary_culture = cu:australian
+					is_player = yes
+				}
+				save_scope_as = destination_country
+				random_scope_state = {
+					save_scope_as = destination_state
+				}
+			}
+		}
+		else = {
+			random_subject_or_below = {
+				limit = { country_has_primary_culture = cu:australian }
+				save_scope_as = destination_country
+				random_scope_state = {
+					save_scope_as = destination_state
+				}
 			}
 		}
 	}
