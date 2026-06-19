@@ -193,3 +193,17 @@ mym_sync_no_assimilation_modifier = {
 		remove_modifier = modifier_no_assimilation
 	}
 }
+
+# Strips modifier_advertising_natalism while Legal Guardianship is in force.
+# The campaign is only ever started through decision_mym_natalist_advertisement,
+# which is gated against the law, so this only ever needs to remove.
+# Idempotent and safe to call from any country scope at any time.
+mym_sync_natalism_modifier = {
+	if = {
+		limit = {
+			has_law = law_type:law_no_womens_rights
+			has_modifier = modifier_advertising_natalism
+		}
+		remove_modifier = modifier_advertising_natalism
+	}
+}
