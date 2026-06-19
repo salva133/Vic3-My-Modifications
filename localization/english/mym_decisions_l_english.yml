@@ -10,6 +10,10 @@
   decision_mym_enact_the_act_desc: "Consolidate the Power"
   decision_mym_force_privatization: "$mym_debug.pre.tt$: Force Privatization"
   decision_mym_force_privatization_desc: ""
+  decision_mym_natalist_advertisement: "$mym_debug.pre.tt$: Advertise Natalism"
+  decision_mym_natalist_advertisement_desc: "Launch a nationwide campaign extolling the joys of a large family. More cradles to fill means fewer hands at the workbench."
+  decision_mym_end_natalist_advertisement: "$mym_debug.pre.tt$: End Natalist Advertising"
+  decision_mym_end_natalist_advertisement_desc: "Take down the posters and let the nation get back to work."
 
 # Extra-Modificational Corrections
   Turn_on_off_ADVCM_decrees: "#red Toggle ADVCM Decrees"
