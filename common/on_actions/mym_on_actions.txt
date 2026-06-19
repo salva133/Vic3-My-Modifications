@@ -102,15 +102,7 @@ on_law_activated_mym = {
 	effect = {
 		owner = {
 			mym_sync_no_assimilation_modifier = yes
-			# Legal Guardianship is incompatible with the natalism campaign, so
-			# enacting it strips the Advertising Natalism modifier.
-			if = {
-				limit = {
-					has_law = law_type:law_no_womens_rights
-					has_modifier = modifier_advertising_natalism
-				}
-				remove_modifier = modifier_advertising_natalism
-			}
+			mym_sync_natalism_modifier = yes
 		}
 	}
 }
