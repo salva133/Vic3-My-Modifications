@@ -34,7 +34,7 @@
 			}
 		}
 	}
-	
+
 	prosperity_modifier = {
 		country_max_companies_add = 1
 		state_infrastructure_from_population_max_add = 15
