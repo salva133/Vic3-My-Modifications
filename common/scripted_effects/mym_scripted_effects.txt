@@ -1,6 +1,6 @@
 ﻿set_politician_ideos_randomly = {
 custom_tooltip = {
-		text = mym_debug.3.k_tt
+		text = mym_debug.2.k_tt
 		every_scope_character = {
 			limit = {
 				has_role_of_type = politician
@@ -110,7 +110,7 @@ mym_add_attraction_modifier_to_all_states = {
 # Lets ROOT (intended: c:PRU) swallow every European country whose primary
 # culture is north_german. ROOT itself is excluded so the cheat is a no-op
 # when fired from Prussia against itself. The option that calls this in
-# mym_debug.2 already gates on ROOT being PRU and at least one valid target.
+# mym_debug.1 already gates on ROOT being PRU and at least one valid target.
 mym_cheat_pru_annex_north_german_europe = {
 	every_country = {
 		limit = {
