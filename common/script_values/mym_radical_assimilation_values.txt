@@ -1,0 +1,41 @@
+﻿# Script values backing the GBR radical-deportation event (radical_assimilation.1).
+# The three state-level values iterate the pops of the state they are evaluated
+# in. ROOT is the deporting country (Great Britain).
+
+# Radicals living in a single pop: its size weighted by its radical fraction.
+# Evaluated in pop scope. Used both to rank the language-sharing pops (so the
+# event can grab the one holding the most radicals) and to sum radicals across
+# a state below.
+mym_pop_radical_count = {
+	value = total_size
+	multiply = pop_radical_fraction
+}
+
+# Total number of radicals living in the state.
+mym_state_radicals_total = {
+	value = 0
+	every_scope_pop = {
+		add = mym_pop_radical_count
+	}
+}
+
+# A quarter of the state's radicals — the bar the language-sharing radicals
+# must clear for the state to qualify for the event.
+mym_state_radicals_total_quarter = {
+	value = mym_state_radicals_total
+	multiply = 0.25
+}
+
+# Radicals in the state that belong to a culture sharing the language trait
+# with one of ROOT's primary cultures.
+mym_state_radicals_sharing_primary_language = {
+	value = 0
+	every_scope_pop = {
+		limit = {
+			culture = {
+				shares_language_trait_with_any_primary_culture = root
+			}
+		}
+		add = mym_pop_radical_count
+	}
+}
