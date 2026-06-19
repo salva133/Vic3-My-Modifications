@@ -27,8 +27,7 @@ australian_flavour.1 = {
 
 	trigger = {
 		# Great Britain only.
-		exists = c:GBR
-		c:GBR = root
+		c:GBR ?= root
 
 		# At least one subject (or sub-subject) is Australian by primary culture
 		# to receive the deportees.
