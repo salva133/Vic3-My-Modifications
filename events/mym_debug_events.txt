@@ -167,7 +167,7 @@ mym_debug.2 = {
 			}
 		}
 
-		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_fascist }
+		set_all_politicians_ideology = { IDEOLOGY = ideology_fascist }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.2 popup = yes }
@@ -187,7 +187,7 @@ mym_debug.2 = {
 			}
 		}
 
-		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_communist }
+		set_all_politicians_ideology = { IDEOLOGY = ideology_communist }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.2 popup = yes }
@@ -207,7 +207,7 @@ mym_debug.2 = {
 			}
 		}
 
-		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_anarchist }
+		set_all_politicians_ideology = { IDEOLOGY = ideology_anarchist }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.2 popup = yes }
@@ -227,7 +227,7 @@ mym_debug.2 = {
 			}
 		}
 
-		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_anarcho_libertarian }
+		set_all_politicians_ideology = { IDEOLOGY = ideology_anarcho_libertarian }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.2 popup = yes }
@@ -247,7 +247,7 @@ mym_debug.2 = {
 			}
 		}
 
-		mym_set_all_politicians_ideology = { IDEOLOGY = ideology_libertarian_utopian }
+		set_all_politicians_ideology = { IDEOLOGY = ideology_libertarian_utopian }
 
 		hidden_effect = {
 			trigger_event = { id = mym_debug.2 popup = yes }
