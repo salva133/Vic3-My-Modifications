@@ -53,17 +53,6 @@ custom_tooltip = {
 # Macro substitution keeps the per-ideology / per-attraction options short.
 # ---------------------------------------------------------------------------
 
-# Sets every politician that does not already hold $IDEOLOGY$ to $IDEOLOGY$.
-mym_set_all_politicians_ideology = {
-	every_scope_character = {
-		limit = {
-			has_role_of_type = politician
-			NOT = { has_ideology = ideology:$IDEOLOGY$ }
-		}
-		set_ideology = ideology:$IDEOLOGY$
-	}
-}
-
 # Promotes an existing $IDEOLOGY$ agitator to ruler, or creates one and lets
 # the next political turn pick them up.
 mym_make_agitator_ruler_or_create = {
