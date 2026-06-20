@@ -9,9 +9,24 @@
 #
 # Because everything here shares priority 0, the FIRST matching entry wins, so the entries are
 # ordered from most to least specific to reproduce the original precedence:
-#   theocracy_* / anarchic                              (were priority 3)
-#   junta / high_command / zhuz / islamic_republic      (were priority 2)
-#   communist_* / fascist_state / republic / technocracy (were priority 1)
+#   theocracy_* / anarchic                                                       (were priority 3)
+#   junta / high_command / zhuz / islamic_republic                               (were priority 2)
+#   communist_* / fascist_state / presidential_republic / parliamentary_republic / republic / technocracy (were priority 1)
+#
+# presidential_republic and parliamentary_republic are MyM-original flavour names (not vanilla
+# re-implementations). They specialise the generic dyn_c_republic so the two democratic republic
+# forms read differently, and sit directly before it so the generic "$ADJECTIVE$ Republic" only
+# applies to the remaining franchise forms (e.g. corporate state, chiefdom):
+#   - presidential_republic -> "$ADJECTIVE$ Federal Republic": the strong-president, federal-union
+#     model that dominated 19th-century presidential republics (USA, the United Mexican States,
+#     the United States of Venezuela/Colombia, Brazil, Argentina). Vanilla even titles this
+#     ruler the "Federal President".
+#   - parliamentary_republic -> "$ADJECTIVE$ Commonwealth": "commonwealth" is the English loan of
+#     res publica / common weal and, since the Commonwealth of England (1649-1660), denotes a
+#     state ruled in the name of parliamentary supremacy - the natural fit for a republic whose
+#     head of state is the leader of the legislature.
+# Both require a voting franchise (matching dyn_c_republic) and exclude USA/CSA so their iconic
+# base names survive. Any higher-priority vanilla name (e.g. dyn_c_french_republic) still wins.
 #
 # dyn_c_bananada keeps priority 200 on purpose: a deliberate flavour override for a
 # banana-republic Canada (the one place MyM intentionally beats the vanilla name).
@@ -252,6 +267,42 @@ INJECT:DEFAULT = {
 					has_law_or_variant = law_type:law_single_party_state
 				}
 				coa_fascist_trigger = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_presidential_republic
+		adjective = root_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor ?= {
+				NOR = {
+					c:USA ?= this
+					c:CSA ?= this
+				}
+				has_law_or_variant = law_type:law_presidential_republic
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_parliamentary_republic
+		adjective = root_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor ?= {
+				NOR = {
+					c:USA ?= this
+					c:CSA ?= this
+				}
+				has_law_or_variant = law_type:law_parliamentary_republic
+				country_has_voting_franchise = yes
 			}
 		}
 	}
