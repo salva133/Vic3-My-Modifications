@@ -88,8 +88,20 @@ decision_mym_force_privatization = {
 	when_taken = {
 		add_modifier = {
 			name = modifier_force_privatization
-			months = 3
 		}
+	}
+	ai_chance = {
+		value = 0
+	}
+}
+
+decision_mym_end_force_privatization = {
+	is_shown = {
+		is_player = yes
+		has_modifier = modifier_force_privatization
+	}
+	when_taken = {
+		remove_modifier = modifier_force_privatization
 	}
 	ai_chance = {
 		value = 0
