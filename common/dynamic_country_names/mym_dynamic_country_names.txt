@@ -23,10 +23,23 @@
 # dyn_c_bananada keeps priority 200 on purpose: a deliberate flavour override for a
 # banana-republic Canada (the one place MyM intentionally beats the vanilla name).
 #
+# Confessional theocracy names (law_theocracy, no voting franchise) are split by the religion's
+# heritage. Each is mutually exclusive - a country has one religion, hence one heritage - so the
+# relative order among them is irrelevant; they only all need to sit BEFORE theocracy_generic:
+#   theocracy_christian    heritage_christian     "$ADJECTIVE$ Hierocracy"
+#   theocracy_islamic      heritage_islamic       "$ADJECTIVE$ Khalifate"
+#   theocracy_jewish       heritage_jewish        "$ADJECTIVE$ Kohanate"
+#   theocracy_dharmic      heritage_dharmic       "$ADJECTIVE$ Dharmarajya"   (Buddhist/Hindu/Sikh)
+#   theocracy_taoic        heritage_taoic         "$ADJECTIVE$ Celestial State" (Confucian/Shinto)
+#   theocracy_indigenous   heritage_indigenous    "$ADJECTIVE$ Shamanate"      (animist)
+#   theocracy_materialist  heritage_materialist   "$ADJECTIVE$ Cult of Reason" (atheist)
+# When the Israel Expanded mod is present, its own higher-priority Jewish theocracy name
+# overrides theocracy_jewish below.
+#
 # Gap-filler entries (also priority 0, slotted by specificity like the rest):
-#   theocracy_generic - theocracy w/o franchise that is not Christian/Muslim (and, when the
-#                       Israel Expanded mod is present, not Jewish either - that name lives there)
-#                       (sits after the confessional theocracy names)
+#   theocracy_generic - theocracy w/o franchise whose religion's heritage is none of the seven
+#                       confessional ones above (e.g. a modded religion with a novel/blank
+#                       heritage); sits after the confessional theocracy names
 #   dictatorship      - autocratic presidential/parliamentary/corporate state, after the
 #                       junta/high_command/islamic_republic/fascist_state names had their say
 #   oligarchy         - oligarchic presidential/parliamentary/corporate state, same slot
@@ -55,7 +68,9 @@ INJECT:DEFAULT = {
 
 		trigger = {
 			scope:actor ?= {
-				is_christian = yes
+				religion = {
+					has_discrimination_trait = heritage_christian
+				}
 				has_law_or_variant = law_type:law_theocracy
 				country_has_voting_franchise = no
 			}
@@ -72,6 +87,91 @@ INJECT:DEFAULT = {
 			scope:actor ?= {
 				religion = {
 					has_discrimination_trait = heritage_islamic
+				}
+				has_law_or_variant = law_type:law_theocracy
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_theocracy_jewish
+		adjective = root_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor ?= {
+				religion = {
+					has_discrimination_trait = heritage_jewish
+				}
+				has_law_or_variant = law_type:law_theocracy
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_theocracy_dharmic
+		adjective = root_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor ?= {
+				religion = {
+					has_discrimination_trait = heritage_dharmic
+				}
+				has_law_or_variant = law_type:law_theocracy
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_theocracy_taoic
+		adjective = root_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor ?= {
+				religion = {
+					has_discrimination_trait = heritage_taoic
+				}
+				has_law_or_variant = law_type:law_theocracy
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_theocracy_indigenous
+		adjective = root_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor ?= {
+				religion = {
+					has_discrimination_trait = heritage_indigenous
+				}
+				has_law_or_variant = law_type:law_theocracy
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_theocracy_materialist
+		adjective = root_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			scope:actor ?= {
+				religion = {
+					has_discrimination_trait = heritage_materialist
 				}
 				has_law_or_variant = law_type:law_theocracy
 				country_has_voting_franchise = no
