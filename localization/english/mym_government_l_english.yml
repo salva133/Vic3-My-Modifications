@@ -31,9 +31,13 @@
   gov_mym_vice_regency: "Vice-Regency"
   gov_mym_vice_regency_desc: "A [concept_government_type] where the throne of a [concept_puppet] monarchy stands vacant. A [Concept('concept_ruler','$RULER_TITLE_MYM_VICE_REGENT$')] carries on the government in the name of a monarch unable to take the throne — and, above them, in the name of the [concept_overlord], at whose pleasure the regency is suffered to continue.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
 
-# Patrician Republic (renamed from vanilla "Oligarchic Republic" — Brazilian República Velha)
-  gov_brazil_oligarchic_republic_presidential: "Patrician Republic"
-  gov_brazil_oligarchic_republic_presidential_desc: "A [concept_government_type] where the [concept_country] is ruled by a [Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')] [Concept('concept_election','$concept_elected$')] by a narrow patriciate of landed notables, whose estates and ancient names furnish the republic its electors and its officeholders alike.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+# Patrician Republic — presidential/parliamentary republic governed under the Oligarchy distribution-of-power law
+# (overrides vanilla "Presidential Oligarchy" and "Oligarchy")
+  gov_presidential_oligarchy: "Patrician Republic"
+  gov_presidential_oligarchy_desc: "A [concept_government_type] where the [concept_country] is governed by its [Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')] on behalf of a narrow patriciate of propertied notables. There is no popular franchise; office and influence pass among the same handful of great families and their clients.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+
+  gov_parliamentary_oligarchy: "Patrician Republic"
+  gov_parliamentary_oligarchy_desc: "A [concept_government_type] where the [concept_country] is governed by a [Concept('concept_ruler','$RULER_TITLE_CHANCELLOR$')] answerable to an assembly drawn from a narrow patriciate of propertied notables. There is no popular franchise; office and influence pass among the same handful of great families and their clients.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
 
 ### RULER TITLE ###
   RULER_TITLE_MYM_LORD_COMMANDER: "Lord Commander"
