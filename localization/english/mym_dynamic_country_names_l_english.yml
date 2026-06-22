@@ -16,6 +16,11 @@
   dyn_c_zhuz: "$ADJECTIVE$ Zhuz"
   dyn_c_theocracy_christian: "$ADJECTIVE$ Hierocracy"
   dyn_c_theocracy_islamic: "$ADJECTIVE$ Khalifate"
+  dyn_c_theocracy_jewish: "$ADJECTIVE$ Kohanate"
+  dyn_c_theocracy_dharmic: "$ADJECTIVE$ Dharmarajya"
+  dyn_c_theocracy_taoic: "$ADJECTIVE$ Celestial State"
+  dyn_c_theocracy_indigenous: "$ADJECTIVE$ Shamanate"
+  dyn_c_theocracy_materialist: "$ADJECTIVE$ Cult of Reason"
   dyn_c_theocracy_generic: "$ADJECTIVE$ Theocracy"
   dyn_c_theocracy_voting: "Holy $ADJECTIVE$ Republic"
 
