@@ -8,7 +8,7 @@
   dyn_c_islamic_republic: "$ADJECTIVE$ Islamic Republic"
   dyn_c_technocracy: "$ADJECTIVE$ Directorate"
   dyn_c_dictatorship: "$ADJECTIVE$ National Republic"
-  dyn_c_oligarchy: "$ADJECTIVE$ Oligarchic Republic"
+  dyn_c_oligarchy: "$ADJECTIVE$ Republic"
   dyn_c_anarchic: "$ADJECTIVE$ Communes"
   dyn_c_junta: "$ADJECTIVE$ Junta"
   dyn_c_high_command: "$ADJECTIVE$ High Command"
