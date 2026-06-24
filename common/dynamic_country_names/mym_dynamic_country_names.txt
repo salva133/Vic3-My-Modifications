@@ -35,9 +35,6 @@
 #                       heritage); sits after the confessional theocracy names
 #   dictatorship      - autocratic presidential/parliamentary/corporate state, after the
 #                       junta/high_command/islamic_republic/fascist_state names had their say
-#   oligarchy         - oligarchic presidential/parliamentary/corporate state, same slot;
-#                       reads as the plain "$ADJECTIVE$ Republic", but oligarchies lack a voting
-#                       franchise so they miss dyn_c_republic - this entry maps them onto it
 # Monarchies and social monarchies are intentionally left to their base / vanilla names.
 INJECT:DEFAULT = {
 	dynamic_country_name = {
@@ -380,24 +377,6 @@ INJECT:DEFAULT = {
 					has_law_or_variant = law_type:law_corporate_state
 				}
 				has_law_or_variant = law_type:law_autocracy
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_oligarchy
-		adjective = root_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			scope:actor ?= {
-				OR = {
-					has_law_or_variant = law_type:law_presidential_republic
-					has_law_or_variant = law_type:law_parliamentary_republic
-					has_law_or_variant = law_type:law_corporate_state
-				}
-				has_law_or_variant = law_type:law_oligarchy
 			}
 		}
 	}
