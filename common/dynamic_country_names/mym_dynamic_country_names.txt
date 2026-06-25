@@ -11,14 +11,7 @@
 # ordered from most to least specific to reproduce the original precedence:
 #   theocracy_* / anarchic                                             (were priority 3)
 #   junta / high_command / zhuz / islamic_republic                     (were priority 2)
-#   communist_* / fascist_state / parliamentary_republic / republic / technocracy (were priority 1)
-#
-# parliamentary_republic is a MyM-original flavour name (not a vanilla re-implementation). It
-# specialises the generic dyn_c_republic and sits directly before it so that ONLY parliamentary
-# republics read as "$ADJECTIVE$ Federal Republic", while presidential republics (and the other
-# franchise forms, e.g. corporate state, chiefdom) keep the plain "$ADJECTIVE$ Republic". It
-# requires a voting franchise (matching dyn_c_republic) and excludes USA/CSA so their iconic base
-# names survive. Any higher-priority vanilla name (e.g. dyn_c_french_republic) still wins.
+#   communist_* / fascist_state / republic / technocracy             (were priority 1)
 #
 # dyn_c_bananada keeps priority 200 on purpose: a deliberate flavour override for a
 # banana-republic Canada (the one place MyM intentionally beats the vanilla name).
@@ -42,7 +35,6 @@
 #                       heritage); sits after the confessional theocracy names
 #   dictatorship      - autocratic presidential/parliamentary/corporate state, after the
 #                       junta/high_command/islamic_republic/fascist_state names had their say
-#   oligarchy         - oligarchic presidential/parliamentary/corporate state, same slot
 # Monarchies and social monarchies are intentionally left to their base / vanilla names.
 INJECT:DEFAULT = {
 	dynamic_country_name = {
@@ -385,42 +377,6 @@ INJECT:DEFAULT = {
 					has_law_or_variant = law_type:law_corporate_state
 				}
 				has_law_or_variant = law_type:law_autocracy
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_oligarchy
-		adjective = root_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			scope:actor ?= {
-				OR = {
-					has_law_or_variant = law_type:law_presidential_republic
-					has_law_or_variant = law_type:law_parliamentary_republic
-					has_law_or_variant = law_type:law_corporate_state
-				}
-				has_law_or_variant = law_type:law_oligarchy
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_parliamentary_republic
-		adjective = root_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			scope:actor ?= {
-				NOR = {
-					c:USA ?= this
-					c:CSA ?= this
-				}
-				has_law_or_variant = law_type:law_parliamentary_republic
-				country_has_voting_franchise = yes
 			}
 		}
 	}
