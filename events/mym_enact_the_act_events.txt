@@ -20,7 +20,7 @@ enact_the_act.1 = {
 	trigger = {} # Triggered by decision_mym_enact_the_act
 
 	immediate = {
-		ruler = { save_scope_as = ruler_scope }
+		ruler ?= { save_scope_as = ruler_scope }
 	}
 
 	# Sign the Act — pass law_autocracy
