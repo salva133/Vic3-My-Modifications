@@ -219,7 +219,7 @@ INJECT:DEFAULT = {
 					has_law_or_variant = law_type:law_mass_conscription
 					has_law_or_variant = law_type:law_professional_army
 				}
-				ruler = {
+				ruler ?= {
 					has_role_of_type = general
 					is_interest_group_type = ig_armed_forces
 				}
@@ -245,7 +245,7 @@ INJECT:DEFAULT = {
 					has_law_or_variant = law_type:law_mass_conscription
 					has_law_or_variant = law_type:law_professional_army
 				}
-				ruler = {
+				ruler ?= {
 					has_role_of_type = general
 					is_interest_group_type = ig_armed_forces
 				}

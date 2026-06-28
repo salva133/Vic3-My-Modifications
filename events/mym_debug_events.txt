@@ -390,7 +390,7 @@ mym_debug.4 = {
 
 		trigger = {
 			exists = ideology:ideology_anarcho_libertarian
-			ruler = {
+			ruler ?= {
 				NOT = { has_ideology = ideology:ideology_anarcho_libertarian }
 			}
 		}
@@ -408,7 +408,7 @@ mym_debug.4 = {
 
 		trigger = {
 			exists = ideology:ideology_anti_statist
-			ruler = {
+			ruler ?= {
 				NOT = { has_ideology = ideology:ideology_anti_statist }
 			}
 		}
@@ -426,7 +426,7 @@ mym_debug.4 = {
 
 		trigger = {
 			exists = ideology:ideology_anti_feminist
-			ruler = {
+			ruler ?= {
 				NOT = { has_ideology = ideology:ideology_anti_feminist }
 			}
 		}
@@ -444,7 +444,7 @@ mym_debug.4 = {
 
 		trigger = {
 			exists = ideology:ideology_secular_humanitarian
-			ruler = {
+			ruler ?= {
 				NOT = { has_ideology = ideology:ideology_secular_humanitarian }
 			}
 		}
@@ -462,7 +462,7 @@ mym_debug.4 = {
 
 		trigger = {
 			exists = ideology:ideology_libertarian_utopian
-			ruler = {
+			ruler ?= {
 				NOT = { has_ideology = ideology:ideology_libertarian_utopian }
 			}
 		}

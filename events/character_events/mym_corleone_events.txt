@@ -39,7 +39,7 @@ corleone.2 = { # New York Daily Chronicle, November 2, 1922
 
 	immediate = {
 		set_global_variable = corleone_2_done_globvar
-		ruler = { save_scope_as = ruler_scope }
+		ruler ?= { save_scope_as = ruler_scope }
 	}
 
 	option = {
@@ -64,7 +64,7 @@ corleone.3 = { # New York Daily Chronicle, June 6, 1934
 
 	immediate = {
 		set_global_variable = corleone_3_done_globvar
-		ruler = { save_scope_as = ruler_scope }
+		ruler ?= { save_scope_as = ruler_scope }
 	}
 
 	option = {
