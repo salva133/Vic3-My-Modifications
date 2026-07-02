@@ -63,3 +63,14 @@ at_least_one_politician_is_no_anarchist = {
 		}
 	}
 }
+
+# Pop belongs to the "bottom two percent" purge target group (mym_debug.3):
+# unemployed AND inside the country's bottom-2% population band by literacy
+# AND inside the bottom-2% band by standard of living. Only meaningful while
+# mym_cheat_purge_bottom_two_percent has its threshold variables set on ROOT
+# (the purging country) - do not use it anywhere else.
+mym_pop_is_purge_target = {
+	is_employed = no
+	literacy_rate < ROOT.var:mym_purge_lit_thr_var
+	standard_of_living < ROOT.var:mym_purge_sol_thr_var
+}

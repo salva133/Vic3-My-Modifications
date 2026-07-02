@@ -38,6 +38,8 @@
   mym_debug.3.a: "All countries get era 5 tech"
   mym_debug.3.b: "All countries become independent"
   mym_debug.3.d: "Give me all the Tech, du Dreck!"
+  mym_debug.3.e: "Purge the bottom two percent"
+  mym_debug.3.e_tt: "Captures every #bold unemployed#! pop that sits in both the bottom-2% [concept_literacy] band and the bottom-2% [concept_sol] band of the population — and kills them. The two bands intersect, so at most 2% of the population dies. Deaths are dealt per state and culture, so employed pops of the same culture may catch some of the volley. Available once every #bold 50 years#!."
 
 # .4 Character Spawn
   mym_debug.4.tt: "$mym_debug.pre.tt$ Character Spawn"
