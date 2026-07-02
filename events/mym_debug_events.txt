@@ -361,6 +361,7 @@ mym_debug.3 = {
 	# living band. Variable-gated 50 year cooldown. The percentile bands are
 	# only computed when the button is pressed, so the menu gates on the
 	# cheapest necessary condition: somebody has to be unemployed at all.
+	# Inspired by Asmongold
 	option = {
 		name = mym_debug.3.e
 
