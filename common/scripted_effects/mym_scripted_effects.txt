@@ -132,6 +132,110 @@ mym_cheat_spread_building_levels = {
 	remove_variable = mym_cheat_spread_counter_var
 }
 
+# Purges the "bottom two percent" (mym_debug.3): captures and kills every
+# unemployed pop that sits in the intersection of the country's bottom-2%
+# population band by literacy and its bottom-2% band by standard of living.
+# Being an intersection, at most 2% of the population dies.
+#
+# Both bands are true population-weighted percentiles: a threshold is raised
+# step by step until the pops below it cover at least 2% of total_population.
+# Pops are chunky, so the band can overshoot slightly - the pop that crosses
+# the 2% line is included whole.
+#
+# The kill runs per state and culture through kill_population_in_state,
+# because kill effects only exist on country/state scope, never on pop scope
+# (see dsr_state_effects.txt in DonSantanian Resources). The engine spreads
+# those deaths across every pop of that culture in the state, so employed
+# pops of the same culture catch part of the volley meant for the target
+# group. The head count is exact; the individual victims are approximate.
+mym_cheat_purge_bottom_two_percent = {
+	# Band size both percentile searches aim for: 2% of the population
+	set_variable = {
+		name = mym_purge_band_var
+		value = {
+			value = total_population
+			multiply = 0.02
+		}
+	}
+
+	# Literacy percentile: raise the threshold in 1pp steps until the pops
+	# below it cover the band. Literacy is 0..1, so 100 steps at most.
+	set_variable = { name = mym_purge_lit_thr_var value = 0 }
+	set_variable = { name = mym_purge_cum_var value = 0 }
+	while = {
+		limit = {
+			var:mym_purge_cum_var < var:mym_purge_band_var
+			var:mym_purge_lit_thr_var < 1
+		}
+		change_variable = { name = mym_purge_lit_thr_var add = 0.01 }
+		set_variable = { name = mym_purge_cum_var value = 0 }
+		every_scope_pop = {
+			limit = { literacy_rate < ROOT.var:mym_purge_lit_thr_var }
+			ROOT = {
+				change_variable = { name = mym_purge_cum_var add = prev.total_size }
+			}
+		}
+	}
+
+	# Standard of living percentile: same search on the 0..99 wellbeing
+	# scale, so the step is a whole point.
+	set_variable = { name = mym_purge_sol_thr_var value = 0 }
+	set_variable = { name = mym_purge_cum_var value = 0 }
+	while = {
+		limit = {
+			var:mym_purge_cum_var < var:mym_purge_band_var
+			var:mym_purge_sol_thr_var < 99
+		}
+		change_variable = { name = mym_purge_sol_thr_var add = 1 }
+		set_variable = { name = mym_purge_cum_var value = 0 }
+		every_scope_pop = {
+			limit = { standard_of_living < ROOT.var:mym_purge_sol_thr_var }
+			ROOT = {
+				change_variable = { name = mym_purge_cum_var add = prev.total_size }
+			}
+		}
+	}
+
+	# The purge: per state and culture, count the target pops and kill
+	# exactly that many people of that culture in that state.
+	every_scope_state = {
+		limit = {
+			any_scope_pop = { mym_pop_is_purge_target = yes }
+		}
+		every_scope_culture = {
+			save_temporary_scope_as = mym_purge_culture
+			prev = {
+				ROOT = {
+					set_variable = { name = mym_purge_kill_var value = 0 }
+				}
+				every_scope_pop = {
+					limit = {
+						culture = scope:mym_purge_culture
+						mym_pop_is_purge_target = yes
+					}
+					ROOT = {
+						change_variable = { name = mym_purge_kill_var add = prev.total_size }
+					}
+				}
+				if = {
+					limit = { ROOT.var:mym_purge_kill_var > 0 }
+					kill_population_in_state = {
+						value = ROOT.var:mym_purge_kill_var
+						culture = scope:mym_purge_culture
+					}
+				}
+			}
+		}
+	}
+
+	# Leave no scratch state behind
+	remove_variable = mym_purge_band_var
+	remove_variable = mym_purge_cum_var
+	remove_variable = mym_purge_lit_thr_var
+	remove_variable = mym_purge_sol_thr_var
+	remove_variable = mym_purge_kill_var
+}
+
 # Creates a 25-year bilateral pact between the two Baltic successor states
 # $FIRST$ and $SECOND$ (tags such as LIT / LAT / EST) and maxes out their
 # mutual opinion. baltic_dissolution.1 calls this once per surviving pair,

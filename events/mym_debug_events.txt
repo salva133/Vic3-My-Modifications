@@ -355,6 +355,35 @@ mym_debug.3 = {
 			trigger_event = { id = mym_debug.3 popup = yes }
 		}
 	}
+
+	# Purges the bottom two percent: kills every unemployed pop inside both
+	# the country's bottom-2% literacy band and its bottom-2% standard of
+	# living band. Variable-gated 50 year cooldown. The percentile bands are
+	# only computed when the button is pressed, so the menu gates on the
+	# cheapest necessary condition: somebody has to be unemployed at all.
+	option = {
+		name = mym_debug.3.e
+
+		trigger = {
+			NOT = { has_variable = mym_purge_cooldown_var }
+			any_scope_state = {
+				any_scope_pop = { is_employed = no }
+			}
+		}
+
+		custom_tooltip = {
+			text = mym_debug.3.e_tt
+			mym_cheat_purge_bottom_two_percent = yes
+		}
+
+		hidden_effect = {
+			set_variable = {
+				name = mym_purge_cooldown_var
+				years = 50
+			}
+			trigger_event = { id = mym_debug.3 popup = yes }
+		}
+	}
 }
 
 # Character Spawn - promotes (or creates) an agitator of the chosen ideology
