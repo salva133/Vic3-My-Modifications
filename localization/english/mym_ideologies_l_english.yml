@@ -17,3 +17,7 @@
 
   ideology_folkist: "Folkist"
   ideology_folkist_desc: "The $ideology_folkist$ holds that the nation is the organic expression of a people bound by shared blood, culture, and history, and never a mere political unit. The state, in this view, is the guardian of that living community: obliged to shield its workers from exploitation, secure their welfare in old age, and raise their children as future bearers of the national heritage. What the nation provides, it provides for its own."
+
+  ideology_archaeofuturism: "Archaeofuturism"
+  ideology_archaeofuturist: "Archaeofuturist"
+  ideology_archaeofuturist_desc: "$ideology_archaeofuturism$ refuses the choice between the museum and the machine. It holds that the egalitarian, individualist project of modernity is a spent force, and that what follows the coming catastrophe will not be a return to the past but a fusion of the most archaic values with the most advanced technology. Hierarchy, rootedness, and the ancestral order of peoples are to be married to techno-science and the conquest of the future. The $ideology_archaeofuturist$ is therefore neither reactionary nor progressive: he looks backward and forward at once, and holds both the plough and the reactor sacred."

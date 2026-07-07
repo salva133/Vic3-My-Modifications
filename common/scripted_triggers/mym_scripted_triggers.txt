@@ -25,6 +25,15 @@ ideology_secular_humanitarian_valid_trigger = {
 	}
 }
 
+ideology_archaeofuturist_valid_trigger = {
+	OR = {
+		is_interest_group_type = ig_intelligentsia
+		is_interest_group_type = ig_petty_bourgeoisie
+		is_interest_group_type = ig_armed_forces
+		is_interest_group_type = ig_landowners
+	}
+}
+
 at_least_one_politician_is_no_fascist = {
 	OR = {
 		exists = ideology:ideology_fascist
