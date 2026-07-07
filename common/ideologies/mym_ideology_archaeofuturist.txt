@@ -1,5 +1,5 @@
 ﻿ideology_archaeofuturist = {
-	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_folkist.dds
+	icon = gfx/interface/icons/ideology_icons/ideology_leader/ideology_archaeofuturist.dds
 
 	character_ideology = yes
 
