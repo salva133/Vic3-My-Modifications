@@ -7,6 +7,8 @@
   dyn_c_republic: "$ADJECTIVE$ Republic"
   dyn_c_islamic_republic: "$ADJECTIVE$ Islamic Republic"
   dyn_c_technocracy: "$ADJECTIVE$ Directorate"
+  dyn_c_pirate_communes: "Caribbean Pirate Communes"
+  adj_pirate: "Pirate"
   dyn_c_dictatorship: "$ADJECTIVE$ National Republic"
   dyn_c_anarchic: "$ADJECTIVE$ Communes"
   dyn_c_junta: "$ADJECTIVE$ Junta"

@@ -378,6 +378,20 @@
 			}
 		}
 	}
+	dynamic_country_name = {
+		name = dyn_c_pirate_communes
+		adjective = adj_pirate
+
+		is_main_tag_only = yes
+		priority = 300
+
+		trigger = {
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_anarchy
+				country_is_in_the_caribbean = yes
+			}
+		}
+	}
 }
 
 TRY_INJECT:CAN = {
