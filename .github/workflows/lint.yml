@@ -1,0 +1,15 @@
+name: Lint
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  lint:
+    permissions:
+      contents: write
+    uses: salva133/My-Workflows/.github/workflows/lint-vic3-mod.yml@latest
+    secrets: inherit
