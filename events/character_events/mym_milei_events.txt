@@ -14,6 +14,7 @@ milei.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
+		is_country_alive = yes
 		NOT = { has_global_variable = milei_happened_globvar }
 		NOT = { is_country_type = decentralized }
 		country_has_primary_culture = cu:argentine

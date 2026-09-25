@@ -25,9 +25,15 @@ on_monthly_pulse_country_mym_events = {
 	}
 	effect = {
 		# Keep modifier_has_unhealthy_economy in sync with the economy flag.
-		# Decentralized nations have no budget; has_healthy_economy crashes on them.
+		# has_healthy_economy crashes on countries without a budget: decentralized nations,
+		# and countries that ceased to exist during the on_action delay.
 		if = {
-			limit = { is_country_type = decentralized }
+			limit = {
+				OR = {
+					is_country_alive = no
+					is_country_type = decentralized
+				}
+			}
 		}
 		else_if = {
 			limit = {
