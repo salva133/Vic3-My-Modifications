@@ -1,0 +1,106 @@
+﻿l_german:
+# Corleone
+  corleone.1.tt: "New York Daily News"
+  corleone.1.dd: "Berüchtigter Anführer der Schwarzen Hand tot aufgefunden"
+  corleone.1.ff: "#lore #italic Little Italy, New York City - #!In einer schockierenden Wendung der Ereignisse wurde der gefürchtete und einflussreiche Anführer des Schutzgeldrings der Schwarzen Hand, Don Fanucci, gestern spätabends tot aufgefunden. Der Vorfall ereignete sich im Herzen von Little Italy, an der Ecke Mott Street und Hester Street, und löste in der örtlichen Einwanderergemeinde Wellen der Erleichterung wie auch der Beunruhigung aus.\n\nAnwohner in Hörweite berichteten kurz nach Sonnenuntergang von mehreren Schüssen, obwohl die Straßen zu diesem Zeitpunkt ungewöhnlich ruhig waren. Fanuccis Leiche wurde zusammengesackt in einem Hauseingang gefunden, mit mehreren Schusswunden in Brust und Kopf.\n\nDie Polizei hat bislang keine Verdächtigen ermittelt, doch angesichts von Fanuccis langer Liste an Feinden rechnen die Behörden damit, dass sich der Fall als schwer lösbar erweisen wird. Die örtliche sizilianisch-amerikanische Gemeinde, die unter Fanuccis kriminellen Machenschaften gelitten hat, hüllt sich in Schweigen.\n\nWährend viele Opfer seiner Erpressungen Fanuccis Tod begrüßen, befürchten die Behörden, dass dies einen gewaltsamen Machtkampf um die Kontrolle über seine Geschäfte im Viertel auslösen könnte.\n\nDer Mord an Don Fanucci verschärft die wachsende Unruhe in New Yorks Unterwelt, wo die Spannungen zwischen rivalisierenden Banden und kriminellen Organisationen angeblich kurz vor dem Siedepunkt stehen."
+  corleone.1.a: "Schließen"
+
+  corleone.2.tt: "New York Daily News"
+  corleone.2.dd: "Fehde in der Unterwelt: Siegels Rivalen bei Schießerei getötet"
+  corleone.2.ff: "#lore #italic New York City - #!Zwei prominente Rivalen des berüchtigten Gangsters Benjamin 'Bugsy' Siegel wurden gestern Nacht bei einer gewaltsamen Auseinandersetzung erschossen. Der Hinterhalt zeigt, wie die Opposition gegen Siegels Herrschaft über die East Side schwindet, während er seine Macht in der Unterwelt der Stadt festigt.\n\n#bold Neue Bande bietet Schutz in Little Italy und löst Fanuccis Schreckensherrschaft ab#!\n\n#italic New York City#! - In Little Italy ist eine neue Bande aufgetaucht, die den örtlichen Geschäftsleuten Schutz zu günstigeren Bedingungen bietet als der berüchtigte Don Fanucci. Anwohner berichten, dass das weniger aggressive Vorgehen der Bande dem Viertel ein Gefühl von Sicherheit und Ruhe gebracht habe – ein krasser Gegensatz zur Erpresserherrschaft Fanuccis."
+  corleone.2.a: "Schließen"
+
+  corleone.3.tt: "New York Daily News"
+  corleone.3.dd: "[SCOPE.sCharacter('ruler_scope').GetLastName] unterzeichnet Wertpapierbörsengesetz zur Regulierung der Praktiken an der Wall Street"
+  corleone.3.ff: "#lore #italic New York City - #![SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName] hat gestern den Securities Exchange Act unterzeichnet und damit einen historischen Versuch unternommen, die Praktiken am Aktienmarkt nach dem Crash von 1929 zu regulieren. Das Gesetz richtet die Securities and Exchange Commission (SEC) ein, die die Finanzmärkte beaufsichtigen und betrügerische Machenschaften verhindern soll. Die Makler und Finanzinstitute der Wall Street wappnen sich für die tiefgreifenden Veränderungen ihres Geschäfts.\n\n#bold Polizei meldet mutmaßliches Treffen von Verbrecherbossen aus Queens und Brooklyn#!\n\n#italic Queens, New York City - #!Polizeiberichten zufolge sollen sich kürzlich mehrere der mächtigsten Gangster aus Queens und Brooklyn zu einem geheimen Treffen in Queens versammelt haben. Die Behörden beobachten die Lage genau und befürchten, dass das Treffen eine Verschiebung der kriminellen Machtverhältnisse bedeuten könnte. Die Identität der Beteiligten ist weiterhin unklar, doch die Polizei ist in beiden Bezirken in höchster Alarmbereitschaft."
+  corleone.3.a: "Schließen"
+
+  corleone.9.tt: "New York Daily News"
+  corleone.9.dd: "Berüchtigter Mafia-Don [SCOPE.sCharacter('vito_corleone_scope').GetLastName] stirbt friedlich in seinem Garten"
+  corleone.9.ff: "#italic Long Island, New York#! - [SCOPE.sCharacter('vito_corleone_scope').GetFullName], das berüchtigte Oberhaupt einer der mächtigsten Mafiafamilien New Yorks, ist gestern Nachmittag friedlich verstorben. Corleone, der sich in den letzten Jahren aus dem öffentlichen Leben zurückgezogen hatte, wurde von Familienangehörigen in seinem Garten gefunden. Trotz seines langjährigen kriminellen Einflusses markiert Corleones Tod das Ende einer Ära des organisierten Verbrechens. Ein Fremdverschulden wird nicht vermutet. Gerüchten zufolge wird sein Sohn [SCOPE.sCharacter('michael_corleone_scope').GetFirstName] das Geschäft weiterführen."
+  corleone.9.a: "Schließen"
+
+# Stoker
+  stoker.1.tt: "Eine Reise wie jede andere"
+  stoker.1.dd: "Auf nach England."
+  stoker.1.ff: "#lore Am 6. Juli beendeten wir das Laden der Fracht, Silbersand und Kisten mit Erde. Mittags Segel gesetzt; Ostwind, frisch. Mannschaft: fünf Mann... zwei Maate, Koch und ich selbst (Kapitän).\n\n#italic  - Logbuch des Kapitäns der Dmitry#!"
+  stoker.1.a: "Mast- und Schotbruch!"
+
+  stoker.2.tt: "Ein Schoner, an Land getrieben"
+  stoker.2.dd: "Ein unerwartetes Ende."
+  stoker.2.ff: "#lore 4. August. Noch immer Nebel, den die aufgehende Sonne nicht durchdringen kann; ich weiß, dass etwas an Bord ist, und wage doch nicht, es auszusprechen. Die Männer sind jenseits aller Furcht, arbeiten stumpf und geduldig, auf das Schlimmste gefasst. Wir haben die Straße von Dover passiert, und je näher wir England kommen, desto größer wird mein Grauen. Gott gebe, dass wir niemals Land sehen! Ich bin am Ende meiner Kräfte. Ich kann kaum schreiben, kaum denken, doch ich weiß, dass es zu spät sein könnte, wenn ich nicht bald handle. Die Mannschaft der Dmitry ist tot oder verschwunden, ich allein bin übrig, um das Schiff zu führen.\n\nGott steh uns bei!\n\n#italic  - Logbuch des Kapitäns, letzter Eintrag der Dmitry#!"
+  stoker.2.a: "Tollwut, ganz klar. Fall abgeschlossen."
+
+# Lovecraft
+  hp_lovecraft.1.tt: "Autor hat Erfolg mit Horrorgeschichte"
+  hp_lovecraft.1.dd: "[SCOPE.sCharacter('hp_scope').GetFullName] hat in einem Nischenmagazin Erfolg mit der schrecklich grausigen Geschichte\n'The Call of Cthulhu'."
+  hp_lovecraft.1.ff: "#lore 'The Call of Cthulhu' zählt zu den besten Erzählungen der unheimlichen Phantastik und verbindet ein beklemmendes Gefühl kosmischen Grauens mit der Vorstellung unbegreiflicher Wesen aus dem Jenseits. Diese Geschichte uralter Übel, die aus den Tiefen der Zeit erwachen, ist eine düstere Mahnung an den zerbrechlichen Platz der Menschheit in einem unendlichen Universum.\n\n#italic - aus Weird Tales, Ausgabe Februar 1928#!"
+  hp_lovecraft.1.a: "Schließen"
+
+  hp_lovecraft.2.tt: "Autor hat Erfolg mit Horrorgeschichte"
+  hp_lovecraft.2.dd: "[SCOPE.sCharacter('hp_scope').GetFullName] hat in einem Nischenmagazin Erfolg mit der schrecklich grausigen Geschichte\n'Cthulus Ruf'."
+  hp_lovecraft.2.ff: "#lore 'Cthulus Ruf' zählt zu den besten Erzählungen der unheimlichen Phantastik und verbindet ein beklemmendes Gefühl kosmischen Grauens mit der Vorstellung unbegreiflicher Wesen aus dem Jenseits. Diese Geschichte uralter Übel, die aus den Tiefen der Zeit erwachen, ist eine düstere Mahnung an den zerbrechlichen Platz der Menschheit in einem unendlichen Universum.\n\n#italic - aus Der Orchideengarten, Ausgabe Februar 1928#!"
+  hp_lovecraft.2.a: "Schließen"
+
+  hp_lovecraft.3.tt: "Nur neun Jahre"
+  hp_lovecraft.3.dd: "[SCOPE.sCharacter('hp_scope').GetFullName] ist nach nur neun Jahren gestorben. Bei [SCOPE.sCharacter('hp_scope').GetLastName] wurde Darmkrebs diagnostiziert, der zu spät erkannt und behandelt wurde."
+  hp_lovecraft.3.ff: "#lore 'Ich bin praktisch tot, ewig krank. Es ist hart, allein sterben zu müssen.'\n\n#italic - [SCOPE.sCharacter('hp_scope').GetFullName]"
+  hp_lovecraft.3.a: "Schließen"
+
+  hp_lovecraft.4.tt: "Bostoner Maler verstört die Öffentlichkeit mit seinen Leinwänden"
+  hp_lovecraft.4.dd: "[SCOPE.sCharacter('pickman_scope').GetFullName], ein Maler aus dem North End, hat eine Reihe von Leinwänden ausgestellt, die so grotesk lebensecht sind, dass die Galerie noch in derselben Woche schloss. Gelehrte der Miskatonic University in Arkham haben sich diskret nach der Sammlung erkundigt."
+  hp_lovecraft.4.ff: "#lore 'Pickman's Model' gehört zum Feinsten der unheimlichen Phantastik. Was das Blut gefrieren ließ, war nicht das Teuflische der Motive, sondern die fotografische, beinahe klinische Treue, mit der sie festgehalten waren – als hätte der Künstler seine Ghule gar nicht erfunden, sondern nach dem Leben gemalt.\n\n#italic - aus Weird Tales, Ausgabe Oktober 1927#!"
+  hp_lovecraft.4.a: "Soll die Miskatonic University die Leinwände nehmen"
+  hp_lovecraft.4.b: "Der Maler ist verschwunden – versiegelt das Atelier"
+
+  miskatonic_acquisition_tt: "Die Miskatonic University erwirbt die Leinwände – ein stilles Prestige und die Dankbarkeit der $ig_intelligentsia$"
+
+  milei.1.tt: "In [ROOT.GetCountry.GetCapital.GetCityHubName] kursiert ein Flugblatt"
+  milei.1.dd: "Ein unbekannter Hitzkopf wettert gegen den Staat, den Steuereintreiber und die gesamte politische Klasse."
+  milei.1.ff: "#lore 'Wir stehen vor einer der größten wirtschaftlichen Katastrophen unserer Geschichte, und radikales Handeln ist unerlässlich. Inflation ist nichts anderes als eine Steuer auf die Ärmsten. Wir werden den Staat drastisch verkleinern, um dieses Übel zu beenden. Der Staat ist kein Motor des Wohlstands, sondern eine Maschine der Verschwendung. Wir werden ihn so reformieren, dass er dient und nicht beherrscht. Die Freiheit des Einzelnen ist das höchste Gut. Unsere Reformen werden auf dem unerschütterlichen Glauben an den freien Markt beruhen. Wir werden eine Gesellschaft schaffen, in der jeder die Chance hat, durch harte Arbeit und Eigenverantwortung voranzukommen. [ROOT.GetCountry.GetNameNoFlag] wird sich als Partner der freien Welt neu aufstellen und nicht als Vasall ideologischer Projekte.'\n\n#italic - reißerisches anarcholibertäres Flugblatt#!"
+  milei.1.a: "Lasst den Mann predigen."
+
+# Heads or Tails (BioShock Infinite Reference)
+  heads_or_tails.1.tt: "Eine Begegnung der beständigen Art"
+  heads_or_tails.1.dd: "In [ROOT.GetCountry.GetCapital.GetCityHubName] findet derzeit die Große Ausstellung statt. [SCOPE.sCharacter('heads_or_tails_character').GetLastName] geht gerade an einem unscheinbaren Stand vorbei, als ihn das Paar dahinter anspricht."
+  heads_or_tails.1.ff: "Ein Herr: 'Kopf?'\nEine Dame: 'Oder Zahl?'\n\n[SCOPE.sCharacter('heads_or_tails_character').GetFullName] reagiert überrascht, völlig verdutzt von der ungewöhnlichen Frage, die die beiden ihm stellen.\n\n[SCOPE.sCharacter('heads_or_tails_character').GetLastName]: '...was?'\nDer Mann wirft ihm eine Münze zu, und [SCOPE.sCharacter('heads_or_tails_character').GetLastName] fängt sie auf.\n\nEin Herr: 'Kopf?'\nEine Dame: 'Oder Zahl?'\n\n[SCOPE.sCharacter('heads_or_tails_character').GetLastName]: 'Ähm...'"
+  heads_or_tails.1.a:  "Kopf"
+  heads_or_tails.1.b:  "Zahl"
+  heads_or_tails.2.tt: "Münzwurf"
+  heads_or_tails.2.dd: "Die kleine Münze fliegt durch die Luft und kommt klirrend auf dem runden Porzellan ihres Tellers zum Liegen.\n\n#bold Kopf#!."
+  heads_or_tails.2.ff: "Ein Herr: 'Hab ich doch gesagt', sagt er mit einem Hauch von Enttäuschung in der Stimme.\n\nSie summt kurz, wie zur Bestätigung, und setzt einen weiteren Kreidestrich auf die Hälfte der Tafel, die mit 'Kopf' überschrieben ist.\n\nEin Herr: 'Ich finde das nie so befriedigend, wie ich es mir vorgestellt habe.'\n\nMit einer eleganten Bewegung führt sie ihre Hand an sein Gesicht, und ihre Fingerspitze berührt sanft den unteren Rand seines glattrasierten Kinns, bevor sie sein Gesicht emporhebt.\n\nEine Dame: 'Kopf hoch. Es gibt immer ein nächstes Mal.'\n\nEin Herr: 'Das nehme ich an.'"
+  heads_or_tails.2.a:  "Tja, das war peinlich"
+
+# Anarchist Balkanisation
+  anarchist_balkanisation.1.tt: "Die Mitte kann nicht halten"
+  anarchist_balkanisation.1.dd: "Unsere Lehre ist an ihrem unausweichlichen Ende angelangt. In [SCOPE.sState('breakaway_state').GetName] haben die Radikalen eine neue Kommune ausgerufen und jede Bindung an eine Regierung zurückgewiesen, die sie für ebenso überholt halten wie die Könige vor ihr. Es gibt keine Armee mehr, die gehorsam genug wäre, um gegen sie ausgesandt zu werden, kein Dekret, das bindend genug wäre, um sie zu zügeln."
+  anarchist_balkanisation.1.ff: "#lore 'Der Staat wird mit seinem letzten Atemzug tausend freie Vereinigungen freier Menschen gebären. Das ist die Bestimmung der Menschheit.'\n\n#italic — Flugblatt, das in den Tagen vor der Ausrufung auf den Märkten von [SCOPE.sState('breakaway_state').GetCityHubName] verteilt wurde#!"
+  anarchist_balkanisation.1.a:  "Es musste ja so kommen."
+  anarchist_balkanisation.1.b:  "Wir werden sie wieder an die Kandare nehmen."
+
+# Enact the Act
+  enact_the_act.1.tt: "Das Gesetz"
+  enact_the_act.1.dd: "Notstandsgesetz kommt zur Abstimmung"
+  enact_the_act.1.ff: "#lore #italic Die Hauptstadt - #!Der Saal ist voll. Die Galerien sind gedrängt, die Türen verriegelt, die Pressebänke drei Reihen tief besetzt. Auf dem Tisch vor [SCOPE.sCharacter('ruler_scope').GetFullName] liegt ein einziges gebundenes Dossier – die Vorlage, die gemeinhin als #bold Das Gesetz#! bekannt ist.\n\nIn schlichten Worten überträgt sie die Befugnisse der Legislative auf das Amt des [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] für die Dauer der gegenwärtigen Krise und so lange darüber hinaus, wie der [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] die Krise für fortbestehend erachtet. Ihre Verfasser nennen sie eine Stabilisierungsmaßnahme. Ihre Kritiker, sofern sie noch sprechen, nennen sie das Ende der Republik.\n\nDie Tagesordnung lässt keine Änderungsanträge zu. Es wird keine zweite Lesung geben. Die Abstimmung wird, wenn sie kommt, eine Formsache sein – die Frage ist nur, ob [SCOPE.sCharacter('ruler_scope').GetLastName] unterschreibt.\n\n#italic Ein Schriftführer räuspert sich. Der Präsident des Hauses wendet sich dem Rednerpult zu. Der Saal wartet.#!"
+  enact_the_act.1.a: "#bold Das Gesetz#! in Kraft setzen."
+  enact_the_act.1.b: "Vertagen. Die Republik besteht – vorerst."
+
+# Baltic Dissolution Event
+  baltic_dissolution.1.tt: "Die Stunde der Trennung"
+  baltic_dissolution.1.dd: "#italic [ROOT.GetCountry.GetCapital.GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\n#bold DAS BALTISCHE HERZOGTUM LÖST SICH AUF – DREI VÖLKER FORDERN IHRE NAMEN ZURÜCK#!\n\nDas Innenministerium hat seine Arbeit eingestellt. Die Garnisonskommandanten des Herzogtums haben mitteilen lassen, dass sie nicht auf ihre eigenen Völker schießen werden. In einem Punkt hatten die Nationalisten recht: Ein Staat, der auf der Unterdrückung dreier eigenständiger Nationen beruht, kann das Jahrhundert nicht überdauern, das diesen Nationen eine Sprache gegeben hat.\n\nLitauen, Lettland, Estland – jedes hat eine Hauptstadt, eine Flagge und eine Erwartung. Die einzige verbleibende Frage ist, in welcher Republik Eure Hand lenken soll, was als Nächstes kommt."
+  baltic_dissolution.1.ff: "#lore #italic 'Drei Völker. Drei Flaggen. Ein kurzes, peinliches Jahrzehnt als Herzogtum.'#!\n\n#italic — anonymer Leitartikel, Datum und Publikation unbekannt#!"
+  baltic_dissolution.1.a: "Die Litauische Republik lenken."
+  baltic_dissolution.1.b: "Die Lettische Republik lenken."
+  baltic_dissolution.1.c: "Die Estnische Republik lenken."
+
+# Australian Flavour — transportation of radicals to an Australian subject
+  australian_flavour.1.tt: "Deportation nach Übersee"
+  australian_flavour.1.dd: "#italic [ROOT.GetCountry.GetCapital.GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\n[SCOPE.sState('radical_state').GetName] wird nicht mehr so sehr regiert als vielmehr ertragen. Mehr als die Hälfte seiner Bevölkerung gilt als radikal, und die Lautesten unter ihnen sprechen das Englisch des Königs selbst – Agitatoren, die uns unsere Freiheiten vorhalten, während sie an der Ordnung zerren, die sie ihnen gewährt hat.\n\nDas Innenministerium schlägt das alte Heilmittel in modernem Gewand vor: Die Unruhigsten unter ihnen sollen als #bold Sträflinge#! verurteilt und auf die Transportschiffe nach [SCOPE.sCountry('destination_country').GetName] gebracht werden. In [SCOPE.sState('destination_state').GetName] gibt es Land genug, Arbeitskräfte werden gebraucht, und ein Ozean liegt zwischen uns. Die Hälfte der schlimmsten Pop würde verurteilt und verschifft; der Rest dürfte über seine Lage nachdenken."
+  australian_flavour.1.ff: "#lore #italic 'Ein Unzufriedener bei den Antipoden ist ein Siedler. Ein Unzufriedener in den Home Counties ist eine Revolution, die nur auf ihr Datum wartet.'#!\n\n#italic — Aktennotiz, einem Unterstaatssekretär im Innenministerium zugeschrieben#!"
+  australian_flavour.1.a: "Verurteilt sie als Sträflinge. Sollen die Antipoden sie haben."
+  australian_flavour.1.b: "Wir verbannen die Unseren nicht. Sollen sie daheim schmoren."
+
+  australian_flavour.2.tt: "Neue Hände für [SCOPE.sState('destination_state').GetName]"
+  australian_flavour.2.dd: "#italic [SCOPE.sState('destination_state').GetCityHubName], [TimeKeeper.GetCurrentDate.GetString] - #!\n\nDie Sträflingstransporte aus [SCOPE.sCountry('transporting_country').GetName] sind gelandet. Wo die Frachtlisten Radikale und Aufrührer versprachen, entlassen die Gangways müde Familien, die an sich klammern, was sie tragen konnten – Sträflinge mit wenig Appetit auf Revolution und allen Gründen, neu anzufangen.\n\nSie gehören jetzt zu uns, dem Namen und der Zunge nach. [SCOPE.sState('destination_state').GetName] gewinnt ihre Rücken und ihre Beschwerden gleichermaßen."
+  australian_flavour.2.ff: "#lore #italic 'Sie kamen als ein anderswo gelöstes Problem. Ob sie eines bleiben, ist nun unsere Sache.'#!"
+  australian_flavour.2.a: "Schickt sie an die Arbeit."

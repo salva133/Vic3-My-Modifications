@@ -1,0 +1,14 @@
+﻿l_german:
+# Variables
+  vito_corleone_is_alive_tt: "Vito Corleone lebt"
+  vito_corleone_is_dead_tt: "Vito Corleone ist tot"
+  dmitry_did_not_set_sails_tt: "Die Dmitry ist #bold noch nicht#! unterwegs"
+  dmitry_did_set_sails_tt: "Die Dmitry ist unterwegs"
+  dmitry_arrived_tt: "Die Dmitry ist angekommen"
+  HP_is_alive_tt: "Der Schriftsteller lebt"
+
+# Event Options
+  mym_debug.2.k_tt: "\"Wir sind alle Individuen, wir sind alle verschieden...\", sagten sie im Chor"
+  mym_debug.3.b_tt: "Jedes Land erhält die Forschung bis einschließlich der fünften Ära"
+  mym_debug.3.c_tt: "Jedes Subjekt wird von seinem Oberherrn entlassen"
+  historical_label_tt: "#gold #bold Historisch#!"

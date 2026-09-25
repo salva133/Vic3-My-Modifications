@@ -1,0 +1,23 @@
+﻿l_german:
+  ideology_anarcho_libertarianism: "Anarcholibertarismus"
+  ideology_anarcho_libertarian: "Anarcholibertär"
+  ideology_anarcho_libertarian_desc: "Der $ideology_anarcho_libertarianism$ tritt für freiwillige Zusammenarbeit, absolute individuelle Freiheit und dezentrale, marktgetriebene Lösungen ein. Er lehnt staatliche Autorität ab und stellt persönliche Selbstbestimmung und Privateigentum über alles."
+
+  ideology_anti_statist: "Antietatistisch"
+  ideology_anti_statist_desc: "Antietatismus ist die Ablehnung staatlicher Eingriffe in persönliche, wirtschaftliche oder gesellschaftliche Angelegenheiten und tritt für minimale oder gar keine Regierungskontrolle ein."
+
+  ideology_anti_feminist: "Antifeministisch"
+  ideology_anti_feminist_desc: "Die Einbeziehung der Frauen in den politischen Diskurs war ein Fehlschlag."
+
+  ideology_secular_humanitarian: "Säkular-humanitär"
+  ideology_secular_humanitarian_desc: "Der säkulare Humanitarismus betont Vernunft, Mitgefühl und ethische Grundsätze, ohne sich auf religiöse Überzeugungen zu stützen. Er tritt für universelle Menschenrechte, soziale Gerechtigkeit und die angeborene Würde jedes Einzelnen ein. Diese Ideologie fördert die Trennung von Religion und Regierung und setzt auf eine vernunftgeleitete Politik, die durch Empathie, wissenschaftlichen Fortschritt und weltweite Zusammenarbeit das Wohlergehen aller Mitglieder der Gesellschaft verbessern soll."
+
+  ideology_libertarian_utopian: "Libertär-utopisch"
+  ideology_libertarian_utopian_desc: "#italic Macht korrumpiert. Absolute Macht korrumpiert absolut.#!\nDer libertäre Utopismus bezeichnet die Idee eines schlanken Staates, in dem ein Höchstmaß an wirtschaftlicher und gesellschaftlicher Freiheit gewährleistet ist. Die Bürger sind so frei wie möglich, es gibt keine Sozialkassen und keine staatliche Umverteilung, und der Einfluss des Staates auf das Privatleben wird auf ein Minimum beschränkt. An der Spitze steht ein Autokrat, der ohne demokratische Beteiligung herrscht, um die Gesellschaft vor schädlicher Einmischung, dem Machtmissbrauch der Parteien und einem schleichenden Abgleiten in Sozialismus oder Kommunismus zu bewahren. Ziel ist eine stabile Ordnung, in der individuelle Freiheit und Eigentum dauerhaft gesichert sind."
+
+  ideology_folkist: "Völkisch"
+  ideology_folkist_desc: "Für den Völkischen ist die Nation der organische Ausdruck eines Volkes, das durch gemeinsames Blut, gemeinsame Kultur und gemeinsame Geschichte verbunden ist, und niemals bloß eine politische Einheit. Der Staat ist in dieser Sicht der Hüter dieser lebendigen Gemeinschaft: verpflichtet, seine Arbeiter vor Ausbeutung zu schützen, ihr Auskommen im Alter zu sichern und ihre Kinder als künftige Träger des nationalen Erbes zu erziehen. Was die Nation gewährt, gewährt sie den Ihren."
+
+  ideology_archaeofuturism: "Archäofuturismus"
+  ideology_archaeofuturist: "Archäofuturistisch"
+  ideology_archaeofuturist_desc: "Der $ideology_archaeofuturism$ verweigert die Wahl zwischen Museum und Maschine. Er hält das egalitäre, individualistische Projekt der Moderne für erschöpft und ist überzeugt, dass auf die kommende Katastrophe keine Rückkehr in die Vergangenheit folgen wird, sondern eine Verschmelzung der archaischsten Werte mit der fortschrittlichsten Technik. Hierarchie, Verwurzelung und die angestammte Ordnung der Völker sollen mit der Technowissenschaft und der Eroberung der Zukunft vermählt werden. Der Archäofuturist ist daher weder reaktionär noch progressiv: Er blickt zugleich zurück und nach vorn und hält den Pflug ebenso heilig wie den Reaktor."

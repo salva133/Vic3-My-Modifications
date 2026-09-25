@@ -1,0 +1,12 @@
+﻿l_german:
+# Dynamic countries
+  dyn_c_USA_citizen_states: "Bürgerstaaten von Amerika"
+  dyn_c_USA_citizen_states_adj: "Bürgeramerikanisch"
+  dyn_c_USA_puppet_of_CSA: "Nördliche Territorien"
+  dyn_c_USA_puppet_of_GBR_royal: "Kronkolonie Neubritannien"
+  dyn_c_USA_puppet_of_GBR_rep: "Lordprotektorat Neubritannien"
+  dyn_c_USA_puppet_of_GBR_theo: "Synode von Neubritannien"
+  dyn_c_USA_puppet_of_GBR_communist: "Arbeiterkomitee Nordamerikas"
+
+  dyn_c_CSA_confederated_governates: "Konföderierte Gouvernements von Amerika"
+  dyn_c_CSA_confederated_governates_adj: "$CSA_ADJ$"
