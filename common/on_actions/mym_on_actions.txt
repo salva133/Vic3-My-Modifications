@@ -23,33 +23,6 @@ on_monthly_pulse_country_mym_events = {
 		no_assimilation.1
 		australian_flavour.1
 	}
-	effect = {
-		# Keep modifier_has_unhealthy_economy in sync with the economy flag.
-		# has_healthy_economy crashes on countries without a budget: decentralized nations,
-		# and countries that ceased to exist during the on_action delay.
-		if = {
-			limit = {
-				OR = {
-					is_country_alive = no
-					is_country_type = decentralized
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				has_healthy_economy = yes
-				has_modifier = modifier_has_unhealthy_economy
-			}
-			remove_modifier = modifier_has_unhealthy_economy
-		}
-		else_if = {
-			limit = {
-				has_healthy_economy = no
-				NOT = { has_modifier = modifier_has_unhealthy_economy }
-			}
-			add_modifier = modifier_has_unhealthy_economy
-		}
-	}
 }
 
 on_monthly_pulse_country_mym_heads_or_tails = {

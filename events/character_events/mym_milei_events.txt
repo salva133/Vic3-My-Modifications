@@ -21,7 +21,7 @@ milei.1 = {
 		owns_entire_state_region = STATE_BUENOS_AIRES
 		bureaucracy < 0
 		tax_level >= high
-		has_healthy_economy = no
+		mym_has_healthy_economy = no
 		has_technology_researched = anarchism
 		NAND = {
 			has_law_or_variant = law_type:law_no_social_security

@@ -83,3 +83,11 @@ mym_pop_is_purge_target = {
 	literacy_rate < ROOT.var:mym_purge_lit_thr_var
 	standard_of_living < ROOT.var:mym_purge_sol_thr_var
 }
+
+# Stand-in for has_healthy_economy, which computes the budget breakdown through
+# interface-only code and crashes the game when evaluated from gamestate script
+# (on_actions, event triggers, AI weights). Reads stored values only.
+mym_has_healthy_economy = {
+	in_default = no
+	scaled_debt <= 0.1
+}
