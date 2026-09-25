@@ -15,11 +15,12 @@ milei.1 = {
 
 	trigger = {
 		NOT = { has_global_variable = milei_happened_globvar }
-		has_healthy_economy = no
+		NOT = { is_country_type = decentralized }
+		country_has_primary_culture = cu:argentine
+		owns_entire_state_region = STATE_BUENOS_AIRES
 		bureaucracy < 0
 		tax_level >= high
-		owns_entire_state_region = STATE_BUENOS_AIRES
-		country_has_primary_culture = cu:argentine
+		has_healthy_economy = no
 		has_technology_researched = anarchism
 		NAND = {
 			has_law_or_variant = law_type:law_no_social_security
