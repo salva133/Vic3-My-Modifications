@@ -1,0 +1,22 @@
+﻿l_german:
+# DEBUG MENU
+  decision_mym_debug_menu: "$mym_debug.1.tt$"
+  decision_mym_debug_menu_desc: "Öffnet das MYM-Debug-Menü"
+
+# MyM Decisions
+  decision_want_to_be_free: "$mym_debug.pre.tt$: Willst du frei sein?"
+  decision_want_to_be_free_desc: "#bold IcH wIlL aUsBr3cH3n!#!"
+  decision_mym_enact_the_act: "$mym_debug.pre.tt$: #blue Das#! #red Gesetz#! erlassen"
+  decision_mym_enact_the_act_desc: "Die Macht festigen"
+  decision_mym_force_privatization: "$mym_debug.pre.tt$: Privatisierung erzwingen"
+  decision_mym_force_privatization_desc: ""
+  decision_mym_end_force_privatization: "$mym_debug.pre.tt$: Erzwungene Privatisierung beenden"
+  decision_mym_end_force_privatization_desc: ""
+  decision_mym_natalist_advertisement: "$mym_debug.pre.tt$: Für Natalismus werben"
+  decision_mym_natalist_advertisement_desc: "Startet eine landesweite Kampagne, die die Freuden einer großen Familie preist. Mehr Wiegen zu füllen heißt weniger Hände an der Werkbank."
+  decision_mym_end_natalist_advertisement: "$mym_debug.pre.tt$: Natalistische Werbung beenden"
+  decision_mym_end_natalist_advertisement_desc: "Hängt die Plakate ab und lasst die Nation wieder an die Arbeit gehen."
+
+# Extra-Modificational Corrections
+  Turn_on_off_ADVCM_decrees: "#red ADVCM-Dekrete umschalten"
+  Turn_on_off_ADVCM_decrees_desc: ""

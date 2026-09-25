@@ -1,0 +1,20 @@
+﻿l_german:
+
+# ADVCM
+  advcm_preamble: "CHEAT:"
+  advcm_add_building_throughput: "$advcm_preamble$ Durchsatz erhöht (hmmm... Durchsatz.)"
+  advcm_add_building_input_reduction: "$advcm_preamble$ Input reduziert (Nee, passt schon)"
+  advcm_add_offense: "$advcm_preamble$ Angriff erhöht"
+  advcm_add_defense: "$advcm_preamble$ Verteidigung erhöht"
+  advcm_add_kill_rate: "$advcm_preamble$ Tötungsrate erhöht (STIRB!)"
+  advcm_add_recovery_rate: "$advcm_preamble$ Genesungsrate erhöht (Erhebt euch!)"
+  advcm_add_assimilation: "$advcm_preamble$ Assimilation erhöht (Widerstand ist gleich Spannung geteilt durch Stromstärke)"
+  advcm_add_education: "$advcm_preamble$ Bildung erhöht (LEST, IHR MOTHERFUCKER!)"
+  advcm_add_birth_rate: "$advcm_preamble$ Geburtenrate erhöht (FICKT, IHR MOTHERFUCKER!)"
+
+# MyM
+  modifier_has_unhealthy_economy: "Hat eine ungesunde Wirtschaft"
+  modifier_force_privatization: "Erzwungene Privatisierung"
+  modifier_miskatonic_acquisition: "Miskatonic-Erwerbung"
+  modifier_no_assimilation: "Keine Assimilation"
+  modifier_advertising_natalism: "Werbung für Natalismus"

@@ -1,0 +1,28 @@
+﻿l_german:
+  root_adj: "$ADJECTIVE$"
+# Government-based Names
+  dyn_c_communist_autocracy: "Demokratische Republik $NAME$"
+  dyn_c_communist_democracy: "$ADJECTIVE$e Volksrepublik"
+  dyn_c_fascist_state: "$ADJECTIVE$er Staat"
+  dyn_c_republic: "$ADJECTIVE$e Republik"
+  dyn_c_islamic_republic: "$ADJECTIVE$e Islamische Republik"
+  dyn_c_technocracy: "$ADJECTIVE$es Direktorium"
+  dyn_c_pirate_communes: "Karibische Piratenkommunen"
+  adj_pirate: "Piratisch"
+  dyn_c_dictatorship: "$ADJECTIVE$e Nationalrepublik"
+  dyn_c_anarchic: "$ADJECTIVE$e Kommunen"
+  dyn_c_junta: "$ADJECTIVE$e Junta"
+  dyn_c_high_command: "$ADJECTIVE$es Oberkommando"
+  dyn_c_zhuz: "$ADJECTIVE$er Zhuz"
+  dyn_c_theocracy_christian: "$ADJECTIVE$e Hierokratie"
+  dyn_c_theocracy_islamic: "$ADJECTIVE$es Kalifat"
+  dyn_c_theocracy_jewish: "$ADJECTIVE$es Kohanat"
+  dyn_c_theocracy_dharmic: "$ADJECTIVE$es Dharmarajya"
+  dyn_c_theocracy_taoic: "$ADJECTIVE$er Himmelsstaat"
+  dyn_c_theocracy_indigenous: "$ADJECTIVE$es Schamanat"
+  dyn_c_theocracy_materialist: "$ADJECTIVE$er Kult der Vernunft"
+  dyn_c_theocracy_generic: "$ADJECTIVE$e Theokratie"
+  dyn_c_theocracy_voting: "Heilige $ADJECTIVE$e Republik"
+
+# Country- & Government-based Names
+  dyn_c_bananada: "Bananada"

@@ -1,0 +1,10 @@
+﻿l_german:
+# JE Gangs of New York
+  je_gangs_of_new_york: "Gangs of [Concept('concept_state','$STATE_NEW_YORK$')]"
+  je_gangs_of_new_york_status: "Behaltet die Kontrolle über den gesamten Staat New York, während kriminelle Netzwerke aufsteigen und zerfallen."
+  je_gangs_of_new_york_reason: "Die Goldenen Zwanziger haben eine Welle des organisierten Verbrechens und unterirdischer Machtkämpfe entfesselt. Wer New York beherrscht, bestimmt das Schicksal seiner Straßen und der Unterwelt der ganzen Nation."
+
+# JE Baltic Dissolution (UBD only)
+  je_mym_baltic_dissolution: "Der Zerfall des Herzogtums"
+  je_mym_baltic_dissolution_reason: "Das Herzogtum umfasst die Heimatländer von Völkern, die nun das Wort #italic Nation#! für sich entdeckt haben. Die Lehre des $nationalism$ macht die gegenwärtigen Grenzen unhaltbar."
+  je_mym_baltic_dissolution_status: "Haltet Heimatstaaten von mindestens zwei baltischen Völkern – Litauern, Letten, Esten –, und das Herzogtum wird in seine einzelnen Nationen zerfallen."
